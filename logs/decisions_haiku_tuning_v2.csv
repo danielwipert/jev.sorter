@@ -470,3 +470,32 @@ train_09448,Since when were there charges for taking out cash from my account? I
 train_09493,"The past few times I've been to the ATM, I was charged a withdrawal fee. Have your policies changed regarding fees?",anthropic/claude-haiku-4.5,v2,v1,cash_withdrawal_charge,95.0,auto_accept,,false,cash_withdrawal_charge,true,953,0.001912
 train_09511,I noticed a different charge while I was taking my money out.,anthropic/claude-haiku-4.5,v2,v1,cash_withdrawal_charge,85.0,auto_accept,,false,cash_withdrawal_charge,true,844,0.001899
 train_09512,Why was I charged a fee for withdrawing money?,anthropic/claude-haiku-4.5,v2,v1,cash_withdrawal_charge,95.0,auto_accept,,false,cash_withdrawal_charge,true,889,0.001897
+train_09543,I'm in China and need a new card. Please help.,anthropic/claude-haiku-4.5,v2,v1,country_support,45.0,auto_accept,,false,card_about_to_expire,false,893,0.001889
+train_09550,Where can I order a card when I am in China?,anthropic/claude-haiku-4.5,v2,v1,country_support,75.0,auto_accept,,false,card_about_to_expire,false,1683,0.001888
+train_09551,How do I replace a card that's going to expire?,anthropic/claude-haiku-4.5,v2,v1,card_about_to_expire,85.0,auto_accept,,false,card_about_to_expire,true,801,0.001908
+train_09560,Is ordering a new card from China available?,anthropic/claude-haiku-4.5,v2,v1,country_support,75.0,auto_accept,,false,card_about_to_expire,false,933,0.001885
+train_09596,What should I do once my card expires?,anthropic/claude-haiku-4.5,v2,v1,card_about_to_expire,85.0,auto_accept,,false,card_about_to_expire,true,960,0.001905
+train_09632,My card is almost expired.  How fast will I get a new one and what is the cost?,anthropic/claude-haiku-4.5,v2,v1,card_about_to_expire,95.0,auto_accept,,false,card_about_to_expire,true,797,0.001917
+train_09633,What is the process to get a new card when your old one expires?,anthropic/claude-haiku-4.5,v2,v1,card_about_to_expire,85.0,auto_accept,,false,card_about_to_expire,true,843,0.001911
+train_09646,why top up is not working even if I got my American Express in Apple Bay?,anthropic/claude-haiku-4.5,v2,v1,top_up_failed,75.0,auto_accept,,false,apple_pay_or_google_pay,false,847,0.001903
+train_09658,Is top-up possible with Apple Pay?,anthropic/claude-haiku-4.5,v2,v1,apple_pay_or_google_pay,85.0,auto_accept,,false,apple_pay_or_google_pay,true,904,0.001915
+train_09686,is apple pay a top up service?,anthropic/claude-haiku-4.5,v2,v1,apple_pay_or_google_pay,75.0,auto_accept,,false,apple_pay_or_google_pay,true,995,0.001914
+train_09699,Are top-ups allowed using Apple Pay?,anthropic/claude-haiku-4.5,v2,v1,apple_pay_or_google_pay,85.0,auto_accept,,false,apple_pay_or_google_pay,true,879,0.001915
+train_09704,"Using Google Pay, can I top up?",anthropic/claude-haiku-4.5,v2,v1,topping_up_by_card,75.0,auto_accept,,false,apple_pay_or_google_pay,false,968,0.00191
+train_09717,I can't get google pay to work right.,anthropic/claude-haiku-4.5,v2,v1,apple_pay_or_google_pay,95.0,auto_accept,,false,apple_pay_or_google_pay,true,954,0.001916
+train_09722,I cannot get my google pay to work.,anthropic/claude-haiku-4.5,v2,v1,apple_pay_or_google_pay,95.0,auto_accept,,false,apple_pay_or_google_pay,true,881,0.001915
+train_09728,What are the steps needed to top up with Apple Pay?,anthropic/claude-haiku-4.5,v2,v1,apple_pay_or_google_pay,92.0,auto_accept,,false,apple_pay_or_google_pay,true,984,0.001918
+train_09771,How can I prove I am me?,anthropic/claude-haiku-4.5,v2,v1,verify_my_identity,92.0,review,keyword_miss,true,verify_my_identity,true,926,0.001894
+train_09774,How do I verify my identity online,anthropic/claude-haiku-4.5,v2,v1,verify_my_identity,95.0,auto_accept,,false,verify_my_identity,true,891,0.001893
+train_09806,What do I need in regards to identification?,anthropic/claude-haiku-4.5,v2,v1,verify_my_identity,92.0,auto_accept,,false,verify_my_identity,true,947,0.001895
+train_09816,why do I have to show my ID,anthropic/claude-haiku-4.5,v2,v1,why_verify_identity,95.0,auto_accept,,false,verify_my_identity,false,884,0.001894
+train_09820,Let me know what the steps for the identity checks are,anthropic/claude-haiku-4.5,v2,v1,verify_my_identity,95.0,auto_accept,,false,verify_my_identity,true,963,0.001897
+train_09863,What are the steps for the identity checks?,anthropic/claude-haiku-4.5,v2,v1,verify_my_identity,85.0,auto_accept,,false,verify_my_identity,true,813,0.001925
+train_09865,How do I complete the ID check?,anthropic/claude-haiku-4.5,v2,v1,verify_my_identity,95.0,auto_accept,,false,verify_my_identity,true,788,0.001894
+train_09876,How do I get a card if I live in the US?,anthropic/claude-haiku-4.5,v2,v1,country_support,85.0,auto_accept,,false,country_support,true,833,0.001889
+train_09893,I live in the EU - can I get a card?,anthropic/claude-haiku-4.5,v2,v1,country_support,85.0,auto_accept,,false,country_support,true,890,0.001888
+train_09923,Can I use it outside of Europe?,anthropic/claude-haiku-4.5,v2,v1,country_support,85.0,review,keyword_miss,true,country_support,true,828,0.001884
+train_09965,In which countries can I get a card?,anthropic/claude-haiku-4.5,v2,v1,country_support,85.0,auto_accept,,false,country_support,true,881,0.001885
+train_09967,Can I have a card even if I am not living in the UK?,anthropic/claude-haiku-4.5,v2,v1,country_support,85.0,auto_accept,,false,country_support,true,845,0.001891
+train_09968,You operate in which countries?,anthropic/claude-haiku-4.5,v2,v1,country_support,92.0,auto_accept,,false,country_support,true,894,0.001882
+train_09977,What countries can I use the card in?,anthropic/claude-haiku-4.5,v2,v1,country_support,85.0,auto_accept,,false,country_support,true,1202,0.001885
