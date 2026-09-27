@@ -36,10 +36,15 @@ _Rewritten at the end of every session. Keep it short._
   - **Jev tuning, v1 / v2 / v3:** all answers 79.0 / 83.0 / 82.6%; auto-accepted accuracy @50: 94.2 / 97.0 / 96.4; **@70: 90.3 / 93.4 / 93.8**; @85: 85.4 / 87.8 / 88.1. $/1000: 0.071 / 0.100 / 0.121.
   - v2→v3: 16 fixed, 18 broken. Rewritten categories 75.4→82.3%, but others fell 85.7→82.7%. Side effects: new `extra_charge_on_statement` ("unfamiliar/unexplained charge") pulls in card_payment_not_recognised (6) + direct_debit (1); broader `pending_transfer` pulls in transfer_not_received_by_recipient (3); edited `card_arrival` pulls 2 card_delivery_estimate.
   - **Decision (Dan): final descriptions = v2.** Round 2 was a wash; v2 is cheaper with fewer side effects. Logged in `CHANGELOG.md`. v3 kept in repo, unused. Round 2 is reported as "tried, no net gain".
+- **2.4** `ask_claude()` in `run.py`: fixed prompt (77 names + descriptions, message, JSON instruction), one call, extended thinking off, `response_format=json_object`, strips ```json fences (Haiku adds them). Unreadable reply → raw text as category → fails check 1.
+  - Tuning, v2 descriptions (Jev / Sonnet 5 / Haiku 4.5): all answers **83.0 / 79.4 / 76.4%**; hard hallucinations 0 / 0 / 0; auto-accepted accuracy @70% target **93.4 / 89.4 / 84.9%**; $/1000 **0.10 / 5.26 / 1.90**; median ms 220 / 1856 / 879.
+  - Claude confidences cluster on round numbers (Sonnet: 90, 85, 95...; Haiku: 95, 85, 92...), so realized auto-accept overshoots badly: @70% target Sonnet accepts 75.2%, Haiku 80.8% (Jev 70.0%). Rows are not at equal volume. Flag this on the results page; don't move the goalposts.
+  - Calibration 90–100 band: Jev 93.6%, Sonnet 96.6%, Haiku 88.3%.
+  - Caveat: v2 descriptions were tuned on Jev's tuning mistakes (tilt toward Jev); test set is the real check.
 
 ## Next session: do these, in order
-1. Step 2.4: add `ask_claude()` to `run.py` (JSON `{"category", "confidence"}`, one call per message, **v2** descriptions). Test on 5, then Sonnet 5 + Haiku 4.5 on tuning (for thresholds), then on test.
-2. Step 2.5: Jev v1 (A) and Jev v2 (B) on test; cascade (E) from B + C logs.
+1. Step 2.5: open the test set (`--confirm-test`). Run Jev v1 (A), Jev v2 (B), Sonnet v2 (C), Haiku v2 (D) on `data/test.csv` (~$7.30 total, mostly Sonnet). Then `analyze.py`; add cascade (E) = Jev B if auto-accepted else Sonnet C, computed from logs.
+2. Step 2.6: `docs/index.md` + README, enable GitHub Pages on `/docs`.
 
 ## Notes
 - Always pin `typesafe/jev-1.13`. Never `jev-latest` or `jev-router`.
