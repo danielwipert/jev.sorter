@@ -32,10 +32,14 @@ _Rewritten at the end of every session. Keep it short._
   - Caveat: improvement is measured on the same tuning messages the rewrites were based on; the test set is the real check.
   - Cost per 1,000 Jev calls up $0.07 → $0.10 (longer descriptions = more input tokens).
   - New side effect: `declined_transfer`'s new wording ("technical issues") now pulls in `failed_transfer` messages (2 broken).
+- **2.3** Round 2. `draft_rewrites.py` hardened (logs every call incl. failed to `drafts/vN_calls.jsonl`, counted in spend; low reasoning effort + 16k budget; `--also PAIR`). 3 failed Sonnet calls first (~$0.09). v3: 15 categories, 11 accepted as-is, 4 edited by Dan (card_arrival, declined_transfer, failed_transfer, reverted_card_payment?).
+  - **Jev tuning, v1 / v2 / v3:** all answers 79.0 / 83.0 / 82.6%; auto-accepted accuracy @50: 94.2 / 97.0 / 96.4; **@70: 90.3 / 93.4 / 93.8**; @85: 85.4 / 87.8 / 88.1. $/1000: 0.071 / 0.100 / 0.121.
+  - v2→v3: 16 fixed, 18 broken. Rewritten categories 75.4→82.3%, but others fell 85.7→82.7%. Side effects: new `extra_charge_on_statement` ("unfamiliar/unexplained charge") pulls in card_payment_not_recognised (6) + direct_debit (1); broader `pending_transfer` pulls in transfer_not_received_by_recipient (3); edited `card_arrival` pulls 2 card_delivery_estimate.
+  - **Open decision (Dan): which version is "final" (contender B)?** v2, v3, or v3 with the 2 side-effect rewrites reverted to v2 text.
 
 ## Next session: do these, in order
-1. Step 2.3 (round 2, last one): `python draft_rewrites.py --from v2` → Dan reviews `drafts/v3_approved.json` → `--apply` → `run.py --model jev --set tuning --categories v3` → compare. Top v2 pairs: card_arrival/card_delivery_estimate, pending_transfer/transfer_timing, declined_card_payment/reverted_card_payment?, card_arrival/order_physical_card, card_about_to_expire/order_physical_card (3 each). Watch declined_transfer vs failed_transfer.
-2. Step 2.4: add `ask_claude()` to `run.py`.
+1. Settle the final description version (above), record it in `CHANGELOG.md`.
+2. Step 2.4: add `ask_claude()` to `run.py` (JSON `{"category", "confidence"}`, one call per message, same final descriptions). Test on 5, then Sonnet 5 + Haiku 4.5 on tuning (for thresholds).
 
 ## Notes
 - Always pin `typesafe/jev-1.13`. Never `jev-latest` or `jev-router`.
