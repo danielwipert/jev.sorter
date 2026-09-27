@@ -255,3 +255,7 @@ test_00741,When I top up what are the amoutn limits.,anthropic/claude-sonnet-5,v
 test_00742,Is there a limit on top-ups?,anthropic/claude-sonnet-5,v2,v1,top_up_limits,98.0,auto_accept,,false,top_up_limits,true,1683,0.00522
 test_00744,Are there limits to top-ups?,anthropic/claude-sonnet-5,v2,v1,top_up_limits,98.0,auto_accept,,false,top_up_limits,true,2051,0.005218
 test_00746,Do you have a top-up limit?,anthropic/claude-sonnet-5,v2,v1,top_up_limits,98.0,auto_accept,,false,top_up_limits,true,1652,0.005218
+test_00748,What is the limit to top-up?,anthropic/claude-sonnet-5,v2,v1,top_up_limits,97.0,auto_accept,,false,top_up_limits,true,1918,0.005216
+test_00755,Is there a maximum i can top up?,anthropic/claude-sonnet-5,v2,v1,top_up_limits,95.0,auto_accept,,false,top_up_limits,true,1891,0.00522
+test_00756,How can I tell if there is a top-up limit?,anthropic/claude-sonnet-5,v2,v1,top_up_limits,95.0,auto_accept,,false,top_up_limits,true,1879,0.005226
+test_00759,What are the top-up limits?,anthropic/claude-sonnet-5,v2,v1,top_up_limits,98.0,auto_accept,,false,top_up_limits,true,1867,0.005214

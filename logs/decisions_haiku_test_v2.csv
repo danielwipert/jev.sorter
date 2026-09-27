@@ -505,3 +505,12 @@ test_01462,Can someone please assist me with finding my nearest ATM?,anthropic/c
 test_01465,What type of ATMs accept this card?,anthropic/claude-haiku-4.5,v2,v1,atm_support,92.0,auto_accept,,false,atm_support,true,810,0.00189
 test_01468,What ATMs can I withdraw money from?,anthropic/claude-haiku-4.5,v2,v1,atm_support,95.0,auto_accept,,false,atm_support,true,787,0.00189
 test_01474,At which ATMs can I use this card?,anthropic/claude-haiku-4.5,v2,v1,atm_support,95.0,auto_accept,,false,atm_support,true,858,0.001891
+test_01475,Are there certain ATMs that I can use this card at?,anthropic/claude-haiku-4.5,v2,v1,atm_support,92.0,auto_accept,,false,atm_support,true,816,0.001894
+test_01476,Do you know the closest ATM?,anthropic/claude-haiku-4.5,v2,v1,atm_support,95.0,auto_accept,,false,atm_support,true,763,0.001889
+test_01480,Help me.  There is a Direct Debit that I didn't make.,anthropic/claude-haiku-4.5,v2,v1,direct_debit_payment_not_recognised,95.0,auto_accept,,false,direct_debit_payment_not_recognised,true,939,0.001928
+test_01488,There's a debit on my account that I didn't do.,anthropic/claude-haiku-4.5,v2,v1,card_payment_not_recognised,75.0,review,keyword_miss,true,direct_debit_payment_not_recognised,false,907,0.00191
+test_01494,What is this direct debit I am seeing?,anthropic/claude-haiku-4.5,v2,v1,direct_debit_payment_not_recognised,85.0,auto_accept,,false,direct_debit_payment_not_recognised,true,1186,0.001921
+test_01497,There is a suspicious direct debit payment.,anthropic/claude-haiku-4.5,v2,v1,direct_debit_payment_not_recognised,92.0,auto_accept,,false,direct_debit_payment_not_recognised,true,827,0.00192
+test_01498,There is a transaction from my account that I don't recognize can you trace back the information so I can make sure it's something I did or not?,anthropic/claude-haiku-4.5,v2,v1,card_payment_not_recognised,75.0,auto_accept,,false,direct_debit_payment_not_recognised,false,927,0.001927
+test_01502,This Direct Debit payment may not be right.,anthropic/claude-haiku-4.5,v2,v1,direct_debit_payment_not_recognised,92.0,auto_accept,,false,direct_debit_payment_not_recognised,true,830,0.001922
+test_01503,why does the app show a direct debit payment that I did not authorize,anthropic/claude-haiku-4.5,v2,v1,direct_debit_payment_not_recognised,95.0,auto_accept,,false,direct_debit_payment_not_recognised,true,822,0.001926
