@@ -26,6 +26,9 @@ load_dotenv()  # only used when running locally; an existing env variable wins
 
 JEV_MODEL = "typesafe/jev-1.13"  # pinned. Never jev-latest or jev-router.
 JEV_INPUT_PRICE = 0.042 / 1_000_000  # $ per input token; used only if OpenRouter omits cost
+# Copied from OpenRouter's model list (2026-09-27), not typed from memory.
+CLAUDE_MODELS = {"sonnet": "anthropic/claude-sonnet-5", "haiku": "anthropic/claude-haiku-4.5"}
+OPENROUTER_CHAT_URL = "https://openrouter.ai/api/v1"
 INSTRUCTIONS = "Which category best describes this bank customer's message?"
 
 LOG_COLUMNS = [

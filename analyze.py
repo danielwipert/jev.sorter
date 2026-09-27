@@ -135,6 +135,9 @@ def report(path):
 
 def spend_summary(paths):
     logs = pd.concat([pd.read_csv(p, usecols=["model", "cost_usd"]) for p in paths])
+    # Description-drafting calls (Learn stage) count too.
+    drafts = [json.loads(p.read_text()) for p in sorted(Path("drafts").glob("*_sonnet.json"))]
+    logs = pd.concat([logs, pd.DataFrame([{"model": d["model"] + " (drafting)", "cost_usd": d["cost_usd"]} for d in drafts])])
     print("Running spend per model (all logs):")
     for model, cost in logs.groupby("model")["cost_usd"].sum().items():
         print(f"  {model}: ${cost:.4f}")
