@@ -299,3 +299,48 @@ test_00859,I sent money.  They haven't received it.,typesafe/jev-1.13-20260917,v
 test_00862,"I'm having a problem with a money transfer.  I sent some money to a friend a couple of hours ago, and they haven't received it yet.  Why hasn't it gotten to them? How long do transfers need to go through?",typesafe/jev-1.13-20260917,v1,v1,transfer_not_received_by_recipient,92.0,auto_accept,,false,transfer_not_received_by_recipient,true,267,7.2492e-05
 test_00864,Where is the transaction I made to a friend?,typesafe/jev-1.13-20260917,v1,v1,pending_transfer,52.0,review,keyword_miss,true,transfer_not_received_by_recipient,false,228,7.0812e-05
 test_00867,I made a transaction and it is taking a very long time to go through.,typesafe/jev-1.13-20260917,v1,v1,transfer_timing,45.0,auto_accept,,false,transfer_not_received_by_recipient,false,253,7.1064e-05
+test_00869,How long will it take for my transaction to be completed?,typesafe/jev-1.13-20260917,v1,v1,transfer_timing,90.0,auto_accept,,false,transfer_not_received_by_recipient,false,224,7.0896e-05
+test_00871,I sent my friend some money a few hours ago but she has not received it yet. She really needs it. How long does this take?,typesafe/jev-1.13-20260917,v1,v1,transfer_not_received_by_recipient,66.0,auto_accept,,false,transfer_not_received_by_recipient,true,244,7.161e-05
+test_00874,"How long does it take for transfers to finish?  I sent funds to my pal, and she says that she has not gotten anything.",typesafe/jev-1.13-20260917,v1,v1,transfer_not_received_by_recipient,73.0,auto_accept,,false,transfer_not_received_by_recipient,true,250,7.1568e-05
+test_00879,I transferred some money but the recipient is having trouble withdrawing.,typesafe/jev-1.13-20260917,v1,v1,receiving_money,33.0,auto_accept,,false,transfer_not_received_by_recipient,false,193,7.0896e-05
+test_00881,"I need support options, I want to top my card",typesafe/jev-1.13-20260917,v1,v1,topping_up_by_card,97.0,auto_accept,,false,supported_cards_and_currencies,false,196,7.0854e-05
+test_00887,"If I only have 1 other US card, can you take it?",typesafe/jev-1.13-20260917,v1,v1,topping_up_by_card,32.0,auto_accept,,false,supported_cards_and_currencies,false,221,7.1022e-05
+test_00889,can you tell me what cards and currencies you take?,typesafe/jev-1.13-20260917,v1,v1,supported_cards_and_currencies,100,auto_accept,,false,supported_cards_and_currencies,true,189,7.0854e-05
+test_00897,What cards and currencies do you support?,typesafe/jev-1.13-20260917,v1,v1,supported_cards_and_currencies,100,auto_accept,,false,supported_cards_and_currencies,true,206,7.0728e-05
+test_00900,"When adding money, what are the currencies you take?",typesafe/jev-1.13-20260917,v1,v1,supported_cards_and_currencies,77.0,auto_accept,,false,supported_cards_and_currencies,true,181,7.0854e-05
+test_00903,"I want to add money but don't know what currencies you accept, can you tell me?",typesafe/jev-1.13-20260917,v1,v1,supported_cards_and_currencies,51.0,auto_accept,,false,supported_cards_and_currencies,true,211,7.119e-05
+test_00907,Which credit or debit cards can I use to top up?,typesafe/jev-1.13-20260917,v1,v1,supported_cards_and_currencies,54.0,auto_accept,,false,supported_cards_and_currencies,true,216,7.0896e-05
+test_00911,What cards to do you support to top up.,typesafe/jev-1.13-20260917,v1,v1,supported_cards_and_currencies,61.0,auto_accept,,false,supported_cards_and_currencies,true,228,7.0812e-05
+test_00912,Do you accept other currencies besides US Dollars?,typesafe/jev-1.13-20260917,v1,v1,fiat_currency_support,67.0,auto_accept,,false,supported_cards_and_currencies,false,224,7.077e-05
+test_00926,Can you tell me how to order a virtual card?,typesafe/jev-1.13-20260917,v1,v1,getting_virtual_card,98.0,auto_accept,,false,getting_virtual_card,true,203,7.0854e-05
+test_00927,Where is the virtual card?,typesafe/jev-1.13-20260917,v1,v1,getting_virtual_card,93.0,auto_accept,,false,getting_virtual_card,true,228,7.0644e-05
+test_00929,how do i get a virtual card?,typesafe/jev-1.13-20260917,v1,v1,getting_virtual_card,99.0,auto_accept,,false,getting_virtual_card,true,192,7.0728e-05
+test_00930,Where do I order a virtual card from?,typesafe/jev-1.13-20260917,v1,v1,getting_virtual_card,97.0,auto_accept,,false,getting_virtual_card,true,271,7.077e-05
+test_00932,How can I order virtual cards?,typesafe/jev-1.13-20260917,v1,v1,getting_virtual_card,98.0,auto_accept,,false,getting_virtual_card,true,438,7.0686e-05
+test_00937,help me obtain a virtual card,typesafe/jev-1.13-20260917,v1,v1,getting_virtual_card,99.0,auto_accept,,false,getting_virtual_card,true,244,7.0644e-05
+test_00940,Where do I obtain my virtual card?,typesafe/jev-1.13-20260917,v1,v1,getting_virtual_card,99.0,auto_accept,,false,getting_virtual_card,true,201,7.0728e-05
+test_00942,I want one of those virtual cards!,typesafe/jev-1.13-20260917,v1,v1,getting_virtual_card,96.0,auto_accept,,false,getting_virtual_card,true,238,7.0728e-05
+test_00944,Can you help me sign up for a virtual card?,typesafe/jev-1.13-20260917,v1,v1,getting_virtual_card,98.0,auto_accept,,false,getting_virtual_card,true,244,7.0854e-05
+test_00945,Can I get a copy of the card by email?,typesafe/jev-1.13-20260917,v1,v1,getting_virtual_card,84.0,auto_accept,,false,getting_virtual_card,true,202,7.0854e-05
+test_00949,"I thought I was going to get a virtual card but I haven't received it yet, how can we resolve this?",typesafe/jev-1.13-20260917,v1,v1,getting_virtual_card,97.0,auto_accept,,false,getting_virtual_card,true,199,7.14e-05
+test_00952,Where can I go to get a virtual card?,typesafe/jev-1.13-20260917,v1,v1,getting_virtual_card,99.0,auto_accept,,false,getting_virtual_card,true,228,7.0812e-05
+test_00962,Can I use my card for payment all over the world?,typesafe/jev-1.13-20260917,v1,v1,country_support,58.0,review,keyword_miss,true,card_acceptance,false,247,7.0896e-05
+test_00964,Where can the card be used?,typesafe/jev-1.13-20260917,v1,v1,card_acceptance,87.0,auto_accept,,false,card_acceptance,true,200,7.0686e-05
+test_00965,Can my card be used everywhere?,typesafe/jev-1.13-20260917,v1,v1,card_acceptance,96.0,auto_accept,,false,card_acceptance,true,262,7.0686e-05
+test_00978,Which outlets accept my card?,typesafe/jev-1.13-20260917,v1,v1,card_acceptance,100,auto_accept,,false,card_acceptance,true,211,7.0644e-05
+test_00979,"I am traveling to Germany, Will I be able to use my card there?",typesafe/jev-1.13-20260917,v1,v1,country_support,92.0,review,keyword_miss,true,card_acceptance,false,232,7.1064e-05
+test_00990,places i can use the card,typesafe/jev-1.13-20260917,v1,v1,card_acceptance,98.0,auto_accept,,false,card_acceptance,true,254,7.0644e-05
+test_00998,What can I use my card to pay for?,typesafe/jev-1.13-20260917,v1,v1,card_acceptance,97.0,auto_accept,,false,card_acceptance,true,225,7.0812e-05
+test_00999,Who accepts my card?,typesafe/jev-1.13-20260917,v1,v1,card_acceptance,99.0,auto_accept,,false,card_acceptance,true,274,7.0602e-05
+test_01001,How do I fix a reverted top up?,typesafe/jev-1.13-20260917,v1,v1,top_up_reverted,100,auto_accept,,false,top_up_reverted,true,264,7.077e-05
+test_01003,"My top-up showed as complete, but it's no longer there! What's going on here?",typesafe/jev-1.13-20260917,v1,v1,top_up_reverted,96.0,auto_accept,,false,top_up_reverted,true,227,7.1232e-05
+test_01005,It seems my top up is reverted?,typesafe/jev-1.13-20260917,v1,v1,top_up_reverted,100,auto_accept,,false,top_up_reverted,true,340,7.0728e-05
+test_01010,I put money into my account for the minimum balance but the application didn't accept.,typesafe/jev-1.13-20260917,v1,v1,top_up_failed,87.0,review,keyword_miss,true,top_up_reverted,false,221,7.1106e-05
+test_01011,Can you tell me if my top-up has been cancelled?,typesafe/jev-1.13-20260917,v1,v1,top_up_reverted,41.0,auto_accept,,false,top_up_reverted,true,263,7.0896e-05
+test_01017,I believed crypto top up with something you offered. This does not seem to be working. The money has been removed from my account though so what's going on?,typesafe/jev-1.13-20260917,v1,v1,top_up_failed,95.0,auto_accept,,false,top_up_reverted,false,213,7.1778e-05
+test_01018,I topped up but the app reverted it,typesafe/jev-1.13-20260917,v1,v1,top_up_reverted,100,auto_accept,,false,top_up_reverted,true,263,7.0728e-05
+test_01023,"When I topped up, the app reverted my funds.",typesafe/jev-1.13-20260917,v1,v1,top_up_reverted,100,auto_accept,,false,top_up_reverted,true,237,7.0854e-05
+test_01025,I tryed to make a top-up with cryptocurrency but the payment was referted.,typesafe/jev-1.13-20260917,v1,v1,top_up_reverted,99.0,auto_accept,,false,top_up_reverted,true,204,7.1148e-05
+test_01027,The app reverted my action when I topped up.,typesafe/jev-1.13-20260917,v1,v1,top_up_reverted,100,auto_accept,,false,top_up_reverted,true,210,7.0812e-05
+test_01029,"I see my top-up was canceled, but why?",typesafe/jev-1.13-20260917,v1,v1,top_up_failed,54.0,auto_accept,,false,top_up_reverted,false,229,7.0854e-05
+test_01032,My top-up was revoked.,typesafe/jev-1.13-20260917,v1,v1,top_up_reverted,99.0,auto_accept,,false,top_up_reverted,true,214,7.0644e-05

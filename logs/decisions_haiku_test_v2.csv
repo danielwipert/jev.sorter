@@ -74,3 +74,22 @@ test_00220,Why do I have a pending cash withdrawal?,anthropic/claude-haiku-4.5,v
 test_00221,I have a pending cash withdrawal,anthropic/claude-haiku-4.5,v2,v1,pending_cash_withdrawal,95.0,auto_accept,,false,pending_cash_withdrawal,true,806,0.001892
 test_00226,My cash withdrawal is still showing as pending.,anthropic/claude-haiku-4.5,v2,v1,pending_cash_withdrawal,95.0,auto_accept,,false,pending_cash_withdrawal,true,1160,0.001895
 test_00227,Why am I unable to take money from my card but the statement says the transaction is still pending?,anthropic/claude-haiku-4.5,v2,v1,pending_card_payment,92.0,auto_accept,,false,pending_cash_withdrawal,false,869,0.001906
+test_00229,I have a pending transaction in my app. How is it still pending if I pulled the cash out from the ATM earlier?,anthropic/claude-haiku-4.5,v2,v1,pending_cash_withdrawal,92.0,auto_accept,,false,pending_cash_withdrawal,true,788,0.001912
+test_00231,"I received cash from the ATM earlier, but this shows up as pending in the app.  I've got the cash already.  How can this be still pending?",anthropic/claude-haiku-4.5,v2,v1,pending_cash_withdrawal,95.0,auto_accept,,false,pending_cash_withdrawal,true,758,0.001921
+test_00233,Why does it say pending cash withdrawal on my statement?,anthropic/claude-haiku-4.5,v2,v1,pending_cash_withdrawal,95.0,auto_accept,,false,pending_cash_withdrawal,true,853,0.001897
+test_00237,how long does it take to post atm with drawl,anthropic/claude-haiku-4.5,v2,v1,"```json
+{""category"": ""transfer_timing"", ""confidence"": 45}
+```
+
+Wait, let me reconsider. The customer is asking about how long it takes for an ATM withdrawal to post/appear in their account. This is about the timing of when a cash withdrawal transaction shows up.
+
+```json
+{""category"": ""pending_cash_withdrawal"", ""confidence"": 65}
+```",0.0,review,invalid_category,,pending_cash_withdrawal,false,1458,0.002223
+test_00238,Why is my cash withdrawal from the ATM still not yet showing as confirmed in my account?,anthropic/claude-haiku-4.5,v2,v1,pending_cash_withdrawal,85.0,auto_accept,,false,pending_cash_withdrawal,true,1755,0.001935
+test_00239,"What's a pending transaction? My card was declined at an ATM, but my account says it's still pending. Can I cancel the payment?",anthropic/claude-haiku-4.5,v2,v1,pending_cash_withdrawal,85.0,auto_accept,,false,pending_cash_withdrawal,true,887,0.001916
+test_00240,"If I request that my funds be held, what currencies do you use?",anthropic/claude-haiku-4.5,v2,v1,fiat_currency_support,75.0,auto_accept,,false,fiat_currency_support,true,845,0.001906
+test_00243,Does your system support multiple currency.,anthropic/claude-haiku-4.5,v2,v1,supported_cards_and_currencies,92.0,auto_accept,,false,fiat_currency_support,false,856,0.001903
+test_00246,"There is an incoming payment into my account, but it is deactivated. Will they still be processed?",anthropic/claude-haiku-4.5,v2,v1,receiving_money,75.0,review,keyword_miss,true,fiat_currency_support,false,801,0.001898
+test_00247,What currencies do you do exchanges for?,anthropic/claude-haiku-4.5,v2,v1,exchange_rate,92.0,auto_accept,,false,fiat_currency_support,false,840,0.001884
+test_00251,Is it permissible to hold money in multiple currencies?,anthropic/claude-haiku-4.5,v2,v1,fiat_currency_support,75.0,auto_accept,,false,fiat_currency_support,true,798,0.001903
