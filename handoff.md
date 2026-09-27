@@ -5,7 +5,7 @@ _Rewritten at the end of every session. Keep it short._
 **Last session:** 2026-09-27
 
 ## What we did
-Week 1, steps 1.1–1.6 done.
+**Week 1 done** (steps 1.1–1.7).
 - **1.1** Pinned `requirements.txt`. `OPENROUTER_API_KEY` set in the cloud environment and verified. Reusing an existing key (Dan's choice, $50 limit, has other spend), so project spend comes from our logs' `cost_usd`, not the OpenRouter dashboard.
 - **1.2** `sample_data.py` → `data/tuning.csv` (500) and `data/test.csv` (1,000), seed 42. Source: PolyAI's Banking77 CSVs pinned to commit `57ec275` (the Hugging Face copy no longer loads). Columns: `message_id`, `text`, `label`. Some tuning categories are thin (`contactless_not_working` has 1).
 - **1.3** `explore/jev_first_call.py`: one Jev call works.
@@ -20,10 +20,15 @@ Week 1, steps 1.1–1.6 done.
   - Ran Jev v1 on all 500 tuning messages → `logs/decisions_jev_tuning_v1.csv`. **79.0% accuracy (all answers), $0.036 total, ~0.2 s/call, 0 invalid categories.**
   - `keyword_miss`: 1.5% of correct answers, 14.3% of wrong ones. Promising for step 2.1 (rule of thumb < 10%).
   - Biggest early confusion: `card_arrival` vs `card_delivery_estimate`.
+- **1.7** `analyze.py` (`python analyze.py` = all logs). Re-gates every row with `gate()`; thresholds always from the model's tuning log for the same description version. Cascade (contender E) not built yet (step 2.5).
+  - Jev v1 on tuning: thresholds 97 / 85 / 66 → realized auto-accept 52.4 / 70.6 / 85.4%, accuracy on auto-accepted **93.9 / 90.1 / 85.0%**. (Realized overshoots target because Jev's confidences are whole numbers and tie at the threshold.)
+  - Calibration: 90–100 band is 91.7% right (325 msgs); lower bands are noisy and small.
+  - Keyword false-alarm rate: 1.5% of correct answers.
+  - Top confused pairs: card_arrival/card_delivery_estimate (5), card_payment_wrong_exchange_rate/exchange_rate (5), verify_my_identity/why_verify_identity (4), change_pin/get_physical_card (4), get_physical_card/order_physical_card (4), card_payment/direct_debit_payment_not_recognised (3), card_not_working/declined_card_payment (3), beneficiary_not_allowed/declined_transfer (3).
 
 ## Next session: do these, in order
-1. Step 1.7: `analyze.py` on `logs/decisions_jev_tuning_v1.csv`: accuracy, top ~8 confused pairs with 3 examples each, threshold curve (50/70/85%, via `gate()`, ties by message_id), calibration bands (50–59 … 90–100), spend per model.
-2. Then week 2: step 2.1 (keyword flag vs block), 2.2 (tuning round 1).
+1. Step 2.1: keyword check flag vs block. False-alarm rate is 1.5% (< 10% rule) → likely promote (`KEYWORD_CHECK_BLOCKS = True`). Dan decides; log it in `CHANGELOG.md`.
+2. Step 2.2: `draft_rewrites.py` → one Sonnet 5 call drafting descriptions for the 16 categories in the top 8 pairs → Dan approves → `categories/v2.json` → `run.py --model jev --set tuning --categories v2` → compare. Copy the Sonnet 5 slug from OpenRouter's model page; don't type from memory.
 
 ## Notes
 - Always pin `typesafe/jev-1.13`. Never `jev-latest` or `jev-router`.
