@@ -4,7 +4,7 @@ Checks, in order. The first failure sends the message to review.
   1. invalid_category  predicted label is not exactly one of the category names
   2. empty_input       message is empty after stripping whitespace
   3. keyword_miss      message has none of the predicted category's keywords
-                       (flag only until step 2.1: logged, does not block)
+                       (blocking since step 2.1; see CHANGELOG.md)
   4. low_confidence    confidence (0-100) is below the threshold
 
 threshold=None runs checks 1-3 only. run.py logs that; analyze.py re-runs the gate with
@@ -13,7 +13,7 @@ each model's thresholds (Section 8).
 
 import re
 
-KEYWORD_CHECK_BLOCKS = False  # step 2.1 decides whether to switch this on
+KEYWORD_CHECK_BLOCKS = True  # step 2.1: false alarms on 1.5% of correct answers (< 10% rule)
 
 
 def words(text):

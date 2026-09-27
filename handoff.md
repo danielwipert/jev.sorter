@@ -25,10 +25,11 @@ _Rewritten at the end of every session. Keep it short._
   - Calibration: 90–100 band is 91.7% right (325 msgs); lower bands are noisy and small.
   - Keyword false-alarm rate: 1.5% of correct answers.
   - Top confused pairs: card_arrival/card_delivery_estimate (5), card_payment_wrong_exchange_rate/exchange_rate (5), verify_my_identity/why_verify_identity (4), change_pin/get_physical_card (4), get_physical_card/order_physical_card (4), card_payment/direct_debit_payment_not_recognised (3), card_not_working/declined_card_payment (3), beneficiary_not_allowed/declined_transfer (3).
+- **2.1** Keyword check promoted to **blocking** (`KEYWORD_CHECK_BLOCKS = True`), logged in `CHANGELOG.md` (Dan's decision). Jev v1 tuning accuracy on auto-accepted now **94.2 / 90.3 / 85.4%** at 50/70/85% (was 93.9 / 90.1 / 85.0). The `gate_result` column in `decisions_jev_tuning_v1.csv` was written flag-only; `analyze.py` re-gates, so that's fine.
 
 ## Next session: do these, in order
-1. Step 2.1: keyword check flag vs block. False-alarm rate is 1.5% (< 10% rule) → likely promote (`KEYWORD_CHECK_BLOCKS = True`). Dan decides; log it in `CHANGELOG.md`.
-2. Step 2.2: `draft_rewrites.py` → one Sonnet 5 call drafting descriptions for the 16 categories in the top 8 pairs → Dan approves → `categories/v2.json` → `run.py --model jev --set tuning --categories v2` → compare. Copy the Sonnet 5 slug from OpenRouter's model page; don't type from memory.
+1. Step 2.2: `draft_rewrites.py` → one Sonnet 5 call drafting descriptions for the 16 categories in the top 8 confused pairs (from `analyze.py`) → Dan approves each → `categories/v2.json` → `run.py --model jev --set tuning --categories v2` → compare with v1. Copy the Sonnet 5 slug from OpenRouter's model page; don't type from memory. Log in `CHANGELOG.md`.
+2. Step 2.3: tuning round 2 → `v3.json`.
 
 ## Notes
 - Always pin `typesafe/jev-1.13`. Never `jev-latest` or `jev-router`.

@@ -26,24 +26,26 @@ def test_empty_input():
     assert check("card_arrival", message="   \n") == ("review", "empty_input", False)
 
 
-def test_keyword_flag_only():
-    # "Where is my card" has no keyword for lost_or_stolen_card: flagged but not blocked.
-    assert check("lost_or_stolen_card") == ("auto_accept", "", True)
+def test_keyword_blocking():
+    # "Where is my card" has no keyword for lost_or_stolen_card: sent to review.
+    assert gate.KEYWORD_CHECK_BLOCKS  # the setting chosen at step 2.1
+    assert check("lost_or_stolen_card") == ("review", "keyword_miss", True)
     assert check("card_arrival") == ("auto_accept", "", False)
 
 
-def test_keyword_blocking():
-    gate.KEYWORD_CHECK_BLOCKS = True
+def test_keyword_flag_only():
+    # With blocking off, a keyword miss is logged but does not stop the message.
+    gate.KEYWORD_CHECK_BLOCKS = False
     try:
-        assert check("lost_or_stolen_card") == ("review", "keyword_miss", True)
+        assert check("lost_or_stolen_card") == ("auto_accept", "", True)
     finally:
-        gate.KEYWORD_CHECK_BLOCKS = False
+        gate.KEYWORD_CHECK_BLOCKS = True
 
 
 def test_keyword_whole_words_only():
     # "cards" is not "card": keywords match whole words, case-insensitive.
     assert check("card_arrival", message="My CARD, please") == ("auto_accept", "", False)
-    assert check("card_arrival", message="My cards please") == ("auto_accept", "", True)
+    assert check("card_arrival", message="My cards please") == ("review", "keyword_miss", True)
 
 
 def test_confidence_threshold():
