@@ -26,10 +26,16 @@ _Rewritten at the end of every session. Keep it short._
   - Keyword false-alarm rate: 1.5% of correct answers.
   - Top confused pairs: card_arrival/card_delivery_estimate (5), card_payment_wrong_exchange_rate/exchange_rate (5), verify_my_identity/why_verify_identity (4), change_pin/get_physical_card (4), get_physical_card/order_physical_card (4), card_payment/direct_debit_payment_not_recognised (3), card_not_working/declined_card_payment (3), beneficiary_not_allowed/declined_transfer (3).
 - **2.1** Keyword check promoted to **blocking** (`KEYWORD_CHECK_BLOCKS = True`), logged in `CHANGELOG.md` (Dan's decision). Jev v1 tuning accuracy on auto-accepted now **94.2 / 90.3 / 85.4%** at 50/70/85% (was 93.9 / 90.1 / 85.0). The `gate_result` column in `decisions_jev_tuning_v1.csv` was written flag-only; `analyze.py` re-gates, so that's fine.
+- **2.2** `draft_rewrites.py` (two passes: draft → Dan edits `drafts/vN_approved.json` → `--apply` builds `categories/vN.json` + CHANGELOG row). Sonnet 5 slug `anthropic/claude-sonnet-5`, Haiku `anthropic/claude-haiku-4.5` (in `run.py` `CLAUDE_MODELS`, copied from OpenRouter).
+  - v2: 15 categories rewritten; 14 accepted as-is, 1 edited by Dan (`get_physical_card` → about the PIN). Draft cost $0.03.
+  - **Jev v2 on tuning: 83.0% overall (v1: 79.0%); auto-accepted accuracy 97.0 / 93.4 / 87.8% at 50/70/85% (v1: 94.2 / 90.3 / 85.4).** 29 fixed, 9 broken. Rewritten categories 66.4% → 83.2%; others unchanged (82.9%).
+  - Caveat: improvement is measured on the same tuning messages the rewrites were based on; the test set is the real check.
+  - Cost per 1,000 Jev calls up $0.07 → $0.10 (longer descriptions = more input tokens).
+  - New side effect: `declined_transfer`'s new wording ("technical issues") now pulls in `failed_transfer` messages (2 broken).
 
 ## Next session: do these, in order
-1. Step 2.2: `draft_rewrites.py` → one Sonnet 5 call drafting descriptions for the 16 categories in the top 8 confused pairs (from `analyze.py`) → Dan approves each → `categories/v2.json` → `run.py --model jev --set tuning --categories v2` → compare with v1. Copy the Sonnet 5 slug from OpenRouter's model page; don't type from memory. Log in `CHANGELOG.md`.
-2. Step 2.3: tuning round 2 → `v3.json`.
+1. Step 2.3 (round 2, last one): `python draft_rewrites.py --from v2` → Dan reviews `drafts/v3_approved.json` → `--apply` → `run.py --model jev --set tuning --categories v3` → compare. Top v2 pairs: card_arrival/card_delivery_estimate, pending_transfer/transfer_timing, declined_card_payment/reverted_card_payment?, card_arrival/order_physical_card, card_about_to_expire/order_physical_card (3 each). Watch declined_transfer vs failed_transfer.
+2. Step 2.4: add `ask_claude()` to `run.py`.
 
 ## Notes
 - Always pin `typesafe/jev-1.13`. Never `jev-latest` or `jev-router`.
