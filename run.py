@@ -3,6 +3,7 @@
 Examples:
   python run.py --model jev --set tuning --categories v1 --limit 20
   python run.py --model jev --set tuning --categories v1
+  python run.py --model sonnet --set tuning --categories v2 --limit 5
 
 Rows are written as they come in. Re-running the same command skips messages already in
 the log, so an interrupted run picks up where it stopped (and paid calls aren't repeated).
@@ -13,9 +14,11 @@ import argparse
 import csv
 import json
 import os
+import re
 import time
 from pathlib import Path
 
+import openai
 import pandas as pd
 from dotenv import load_dotenv
 from typesafe_sdk import Choice, TypeSafeClient
@@ -66,8 +69,52 @@ def ask_jev(message, categories):
     return answer["choice"], answer["confidence"] * 100, ms, cost, raw["model"]
 
 
+CLAUDE_PROMPT = """Classify this bank customer's message into exactly one of the categories below.
+
+Categories (name: description):
+{categories}
+
+Message:
+{message}
+
+Reply with JSON only, in this form: {{"category": "<exact category name>", "confidence": <0-100>}}
+"category" must be copied exactly from the list. "confidence" is how sure you are, 0 to 100."""
+
+_claude_client = None
+
+
 def ask_claude(message, categories, model):
-    raise NotImplementedError("Claude models are added in step 2.4.")
+    """Return (category, confidence 0-100, milliseconds, cost_usd, model_version).
+
+    One call, self-reported confidence (spec Section 7). A reply that can't be read returns the
+    raw text as the category, so gate check 1 counts it as a hard hallucination.
+    """
+    global _claude_client
+    if _claude_client is None:
+        _claude_client = openai.OpenAI(api_key=os.environ["OPENROUTER_API_KEY"], base_url=OPENROUTER_CHAT_URL)
+    prompt = CLAUDE_PROMPT.format(
+        categories="\n".join(f"- {name}: {description}" for name, description in categories.items()),
+        message=message,
+    )
+    start = time.perf_counter()
+    response = _claude_client.chat.completions.create(
+        model=CLAUDE_MODELS[model],
+        messages=[{"role": "user", "content": prompt}],
+        max_tokens=200,
+        response_format={"type": "json_object"},
+        # No extended thinking: one plain answer per message (Sonnet 5 thinks by default).
+        extra_body={"reasoning": {"enabled": False}},
+    )
+    ms = round((time.perf_counter() - start) * 1000)
+    reply = response.choices[0].message.content or ""
+    cost = response.model_dump()["usage"]["cost"]
+    # Haiku sometimes wraps the JSON in ```json ... ```. Strip that packaging only.
+    text = re.sub(r"^```(?:json)?\s*|\s*```$", "", reply.strip())
+    try:
+        answer = json.loads(text)
+        return str(answer["category"]), float(answer["confidence"]), ms, cost, response.model
+    except (ValueError, KeyError, TypeError):
+        return reply, 0.0, ms, cost, response.model
 
 
 def fmt_bool(value):
