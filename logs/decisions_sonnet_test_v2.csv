@@ -28,3 +28,11 @@ test_00088,How are exchange rates calculated?,anthropic/claude-sonnet-5,v2,v1,ex
 test_00093,Is it a good time to exchange?,anthropic/claude-sonnet-5,v2,v1,exchange_rate,75.0,auto_accept,,false,exchange_rate,true,1731,0.005218
 test_00096,Can you tell me where you get your exchange rates?,anthropic/claude-sonnet-5,v2,v1,exchange_rate,95.0,auto_accept,,false,exchange_rate,true,1644,0.005228
 test_00100,What is the base of the exchange rates?,anthropic/claude-sonnet-5,v2,v1,exchange_rate,90.0,auto_accept,,false,exchange_rate,true,1968,0.00522
+test_00102,The exchange rates are?,anthropic/claude-sonnet-5,v2,v1,exchange_rate,95.0,auto_accept,,false,exchange_rate,true,1844,0.005212
+test_00104,What foreign exchange rate will you use?,anthropic/claude-sonnet-5,v2,v1,exchange_rate,90.0,auto_accept,,false,exchange_rate,true,2067,0.005222
+test_00108,How do your exchange rates work?,anthropic/claude-sonnet-5,v2,v1,exchange_rate,95.0,auto_accept,,false,exchange_rate,true,1887,0.005216
+test_00109,what is the exchange rate?,anthropic/claude-sonnet-5,v2,v1,exchange_rate,95.0,auto_accept,,false,exchange_rate,true,1927,0.005214
+test_00111,How are you determining your exchange rates?,anthropic/claude-sonnet-5,v2,v1,exchange_rate,97.0,auto_accept,,false,exchange_rate,true,1671,0.00522
+test_00120,I purchased something in a foreign currency but the rate applied is wrong,anthropic/claude-sonnet-5,v2,v1,card_payment_wrong_exchange_rate,95.0,auto_accept,,false,card_payment_wrong_exchange_rate,true,1771,0.00533
+test_00123,The exchange rate was wrong when I bought something outside the country.,anthropic/claude-sonnet-5,v2,v1,card_payment_wrong_exchange_rate,95.0,auto_accept,,false,card_payment_wrong_exchange_rate,true,1869,0.005326
+test_00124,The exchange rate on my purchase is wrong.,anthropic/claude-sonnet-5,v2,v1,card_payment_wrong_exchange_rate,90.0,auto_accept,,false,card_payment_wrong_exchange_rate,true,1905,0.005318

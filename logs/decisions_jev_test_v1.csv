@@ -238,3 +238,64 @@ test_00676,Topping up my card is not working because I believe the top up is pen
 test_00677,When will my top-up process?,typesafe/jev-1.13-20260917,v1,v1,pending_top_up,98.0,auto_accept,,false,pending_top_up,true,219,7.0686e-05
 test_00678,"The top-up has a definite problem! I regularly use your service and haven't had a problem before, but now the top-up just shows pending. Please tell my why it continues to show pending.",typesafe/jev-1.13-20260917,v1,v1,pending_top_up,100,auto_accept,,false,pending_top_up,true,239,7.2072e-05
 test_00679,"I tried topping up but my funds seem to be pending. I want to buy something right now, what do I do?",typesafe/jev-1.13-20260917,v1,v1,pending_top_up,100,auto_accept,,false,pending_top_up,true,184,7.1442e-05
+test_00680,I made a transaction this morning and would like to revert it.,typesafe/jev-1.13-20260917,v1,v1,reverted_card_payment?,57.0,review,keyword_miss,true,cancel_transfer,false,243,7.0938e-05
+test_00682,Can I cancel my transaction?,typesafe/jev-1.13-20260917,v1,v1,cancel_transfer,99.0,auto_accept,,false,cancel_transfer,true,219,7.0644e-05
+test_00685,I need you to cancel a transfer that I made.  It is the wrong account number and the app won't let me stop the transaction.  Please stop it!,typesafe/jev-1.13-20260917,v1,v1,cancel_transfer,99.0,auto_accept,,false,cancel_transfer,true,189,7.182e-05
+test_00691,I accidentally made a transaction to the wrong account.,typesafe/jev-1.13-20260917,v1,v1,cancel_transfer,60.0,auto_accept,,false,cancel_transfer,true,181,7.0812e-05
+test_00693,Help me cancel my transaction,typesafe/jev-1.13-20260917,v1,v1,cancel_transfer,98.0,auto_accept,,false,cancel_transfer,true,236,7.0602e-05
+test_00695,Can I cancel a transfer,typesafe/jev-1.13-20260917,v1,v1,cancel_transfer,100,auto_accept,,false,cancel_transfer,true,195,7.0602e-05
+test_00700,I transferred the wrong amount and would like to cancel the transaction.,typesafe/jev-1.13-20260917,v1,v1,cancel_transfer,100,auto_accept,,false,cancel_transfer,true,315,7.0938e-05
+test_00705,I submitted a transaction to the incorrect account.,typesafe/jev-1.13-20260917,v1,v1,cancel_transfer,49.0,auto_accept,,false,cancel_transfer,true,247,7.077e-05
+test_00707,I want to go back on what I did this morning,typesafe/jev-1.13-20260917,v1,v1,cancel_transfer,52.0,auto_accept,,false,cancel_transfer,true,281,7.0854e-05
+test_00718,Can I change the amount I made on a payment that I made to the payment is correct.,typesafe/jev-1.13-20260917,v1,v1,cancel_transfer,20.0,auto_accept,,false,cancel_transfer,true,195,7.119e-05
+test_00727,what is the top up limit,typesafe/jev-1.13-20260917,v1,v1,top_up_limits,100,auto_accept,,false,top_up_limits,true,239,7.0644e-05
+test_00729,Do you have a limit to top ups?,typesafe/jev-1.13-20260917,v1,v1,top_up_limits,100,auto_accept,,false,top_up_limits,true,222,7.077e-05
+test_00736,Tell me if there are any top-up limits?,typesafe/jev-1.13-20260917,v1,v1,top_up_limits,100,auto_accept,,false,top_up_limits,true,428,7.0812e-05
+test_00741,When I top up what are the amoutn limits.,typesafe/jev-1.13-20260917,v1,v1,top_up_limits,100,auto_accept,,false,top_up_limits,true,214,7.0896e-05
+test_00742,Is there a limit on top-ups?,typesafe/jev-1.13-20260917,v1,v1,top_up_limits,100,auto_accept,,false,top_up_limits,true,194,7.0728e-05
+test_00744,Are there limits to top-ups?,typesafe/jev-1.13-20260917,v1,v1,top_up_limits,100,auto_accept,,false,top_up_limits,true,225,7.0686e-05
+test_00746,Do you have a top-up limit?,typesafe/jev-1.13-20260917,v1,v1,top_up_limits,100,auto_accept,,false,top_up_limits,true,239,7.0728e-05
+test_00748,What is the limit to top-up?,typesafe/jev-1.13-20260917,v1,v1,top_up_limits,100,auto_accept,,false,top_up_limits,true,220,7.0728e-05
+test_00755,Is there a maximum i can top up?,typesafe/jev-1.13-20260917,v1,v1,top_up_limits,100,auto_accept,,false,top_up_limits,true,209,7.077e-05
+test_00756,How can I tell if there is a top-up limit?,typesafe/jev-1.13-20260917,v1,v1,top_up_limits,100,auto_accept,,false,top_up_limits,true,198,7.0896e-05
+test_00759,What are the top-up limits?,typesafe/jev-1.13-20260917,v1,v1,top_up_limits,100,auto_accept,,false,top_up_limits,true,235,7.0686e-05
+test_00761,I didn't get all the cash I requested for at the ATM,typesafe/jev-1.13-20260917,v1,v1,wrong_amount_of_cash_received,99.0,auto_accept,,false,wrong_amount_of_cash_received,true,256,7.0938e-05
+test_00764,I got less cash than the one I specified in the ATM,typesafe/jev-1.13-20260917,v1,v1,wrong_amount_of_cash_received,100,auto_accept,,false,wrong_amount_of_cash_received,true,215,7.0896e-05
+test_00765,The amount of cash I received was incorrect,typesafe/jev-1.13-20260917,v1,v1,wrong_amount_of_cash_received,100,auto_accept,,false,wrong_amount_of_cash_received,true,224,7.0728e-05
+test_00767,The ATM gave me the wrong amount of cash today when I went to withdraw. The app says it was more.,typesafe/jev-1.13-20260917,v1,v1,wrong_amount_of_cash_received,100,auto_accept,,false,wrong_amount_of_cash_received,true,203,7.1358e-05
+test_00772,"How can I request cash back? The ATM just gave me the wrong amount, the app shows the amount that I've been actually charged though...",typesafe/jev-1.13-20260917,v1,v1,wrong_amount_of_cash_received,99.0,auto_accept,,false,wrong_amount_of_cash_received,true,226,7.161e-05
+test_00776,Why did I only get $20 when I tried to get $100,typesafe/jev-1.13-20260917,v1,v1,wrong_amount_of_cash_received,100,auto_accept,,false,wrong_amount_of_cash_received,true,250,7.1106e-05
+test_00781,I asked for $100 cash but only got $20?,typesafe/jev-1.13-20260917,v1,v1,wrong_amount_of_cash_received,100,auto_accept,,false,wrong_amount_of_cash_received,true,233,7.1022e-05
+test_00783,I withdrew money but the full amount wasn't dispensed.,typesafe/jev-1.13-20260917,v1,v1,wrong_amount_of_cash_received,100,auto_accept,,false,wrong_amount_of_cash_received,true,229,7.0938e-05
+test_00785,I have got out the wrong amount from an ATM. Please tell me the process to get the cash back as in app its showing the amount i have been actually received.,typesafe/jev-1.13-20260917,v1,v1,wrong_amount_of_cash_received,100,auto_accept,,false,wrong_amount_of_cash_received,true,230,7.182e-05
+test_00787,I didn't receive the right amount of cash back,typesafe/jev-1.13-20260917,v1,v1,wrong_amount_of_cash_received,100,auto_accept,,false,wrong_amount_of_cash_received,true,194,7.0812e-05
+test_00789,"I didn't get as much cash as I asked for from the ATM, why?",typesafe/jev-1.13-20260917,v1,v1,wrong_amount_of_cash_received,100,auto_accept,,false,wrong_amount_of_cash_received,true,196,7.1106e-05
+test_00790,What do I do if the ATM didn't give me the correct amount I withdrew? I pulled out 30 pounds and the ATM gave me 10 pounds.,typesafe/jev-1.13-20260917,v1,v1,wrong_amount_of_cash_received,100,auto_accept,,false,wrong_amount_of_cash_received,true,240,7.182e-05
+test_00794,The right amount of cash was not sent to me.,typesafe/jev-1.13-20260917,v1,v1,wrong_amount_of_cash_received,97.0,auto_accept,,false,wrong_amount_of_cash_received,true,202,7.0854e-05
+test_00798,did not receive correct cash upon withdrawal,typesafe/jev-1.13-20260917,v1,v1,wrong_amount_of_cash_received,100,auto_accept,,false,wrong_amount_of_cash_received,true,219,7.0686e-05
+test_00801,I was charged a fee after using my card and I shouldn't have been.,typesafe/jev-1.13-20260917,v1,v1,card_payment_fee_charged,99.0,auto_accept,,false,card_payment_fee_charged,true,196,7.1064e-05
+test_00802,Is there a reason I was charged a fee for using my card as payment? I've never had an extra fee before.,typesafe/jev-1.13-20260917,v1,v1,card_payment_fee_charged,100,auto_accept,,false,card_payment_fee_charged,true,199,7.1442e-05
+test_00803,"I show another charge on my card from when I used it, why?",typesafe/jev-1.13-20260917,v1,v1,extra_charge_on_statement,58.0,auto_accept,,false,card_payment_fee_charged,false,201,7.1022e-05
+test_00805,I used my card for a purchase and was charged a fee,typesafe/jev-1.13-20260917,v1,v1,card_payment_fee_charged,100,auto_accept,,false,card_payment_fee_charged,true,221,7.0896e-05
+test_00807,There is an unauthorized fee.,typesafe/jev-1.13-20260917,v1,v1,extra_charge_on_statement,89.0,auto_accept,,false,card_payment_fee_charged,false,184,7.0644e-05
+test_00809,Why was I charged an extra fee when paying with my card?,typesafe/jev-1.13-20260917,v1,v1,card_payment_fee_charged,98.0,auto_accept,,false,card_payment_fee_charged,true,232,7.0938e-05
+test_00810,Why did I have to pay extra because I paid with card?,typesafe/jev-1.13-20260917,v1,v1,card_payment_fee_charged,88.0,auto_accept,,false,card_payment_fee_charged,true,226,7.0938e-05
+test_00811,Why are there fees for card usage?,typesafe/jev-1.13-20260917,v1,v1,card_payment_fee_charged,99.0,auto_accept,,false,card_payment_fee_charged,true,449,7.0728e-05
+test_00812,im not sure what this charge is for,typesafe/jev-1.13-20260917,v1,v1,card_payment_not_recognised,61.0,review,keyword_miss,true,card_payment_fee_charged,false,242,7.0728e-05
+test_00817,I have been charged a fee for paying with card,typesafe/jev-1.13-20260917,v1,v1,card_payment_fee_charged,100,auto_accept,,false,card_payment_fee_charged,true,260,7.0812e-05
+test_00819,Why would I be charged a fee for card payment?,typesafe/jev-1.13-20260917,v1,v1,card_payment_fee_charged,100,auto_accept,,false,card_payment_fee_charged,true,312,7.0854e-05
+test_00829,Someone needs to make me aware when there are extra charges for payments. I happened to be looking at the app earlier and noticed a charge associated to a payment that was extra that no one made me aware of before at all.,typesafe/jev-1.13-20260917,v1,v1,extra_charge_on_statement,93.0,auto_accept,,false,card_payment_fee_charged,false,205,7.2282e-05
+test_00831,Why was I charged an extra fee when using a card?,typesafe/jev-1.13-20260917,v1,v1,card_payment_fee_charged,97.0,auto_accept,,false,card_payment_fee_charged,true,248,7.0896e-05
+test_00834,Why was I charged a fee when I paid with card?,typesafe/jev-1.13-20260917,v1,v1,card_payment_fee_charged,100,auto_accept,,false,card_payment_fee_charged,true,214,7.0896e-05
+test_00838,Why was a charged a fee for using the card?,typesafe/jev-1.13-20260917,v1,v1,card_payment_fee_charged,98.0,auto_accept,,false,card_payment_fee_charged,true,187,7.0854e-05
+test_00839,They charged me for paying with my card.,typesafe/jev-1.13-20260917,v1,v1,card_payment_fee_charged,98.0,auto_accept,,false,card_payment_fee_charged,true,190,7.077e-05
+test_00840,"I completed an in country transfer a few days ago and was sure to check the account information several times since the transaction was completed, but the funds are still not available. What is the problem?",typesafe/jev-1.13-20260917,v1,v1,balance_not_updated_after_bank_transfer,41.0,auto_accept,,false,transfer_not_received_by_recipient,false,200,7.203e-05
+test_00842,I am still waiting for a transaction to be completed,typesafe/jev-1.13-20260917,v1,v1,pending_transfer,92.0,auto_accept,,false,transfer_not_received_by_recipient,false,256,7.0812e-05
+test_00844,I tried to send someone money but they haven't received it.,typesafe/jev-1.13-20260917,v1,v1,transfer_not_received_by_recipient,100,auto_accept,,false,transfer_not_received_by_recipient,true,205,7.0938e-05
+test_00845,How long does it take for a transfer to get to a recipient?,typesafe/jev-1.13-20260917,v1,v1,transfer_timing,100,auto_accept,,false,transfer_not_received_by_recipient,false,200,7.098e-05
+test_00847,I transferred money but the recipient says it has not arrived. Why would this be?,typesafe/jev-1.13-20260917,v1,v1,transfer_not_received_by_recipient,100,auto_accept,,false,transfer_not_received_by_recipient,true,195,7.1106e-05
+test_00857,I need to find out why my transfer didn't get there.,typesafe/jev-1.13-20260917,v1,v1,transfer_not_received_by_recipient,98.0,auto_accept,,false,transfer_not_received_by_recipient,true,212,7.0938e-05
+test_00859,I sent money.  They haven't received it.,typesafe/jev-1.13-20260917,v1,v1,transfer_not_received_by_recipient,100,auto_accept,,false,transfer_not_received_by_recipient,true,216,7.0854e-05
+test_00862,"I'm having a problem with a money transfer.  I sent some money to a friend a couple of hours ago, and they haven't received it yet.  Why hasn't it gotten to them? How long do transfers need to go through?",typesafe/jev-1.13-20260917,v1,v1,transfer_not_received_by_recipient,92.0,auto_accept,,false,transfer_not_received_by_recipient,true,267,7.2492e-05
+test_00864,Where is the transaction I made to a friend?,typesafe/jev-1.13-20260917,v1,v1,pending_transfer,52.0,review,keyword_miss,true,transfer_not_received_by_recipient,false,228,7.0812e-05
+test_00867,I made a transaction and it is taking a very long time to go through.,typesafe/jev-1.13-20260917,v1,v1,transfer_timing,45.0,auto_accept,,false,transfer_not_received_by_recipient,false,253,7.1064e-05
