@@ -1,5 +1,4 @@
 typesafe-sdk==0.7.2    # official TypeSafe SDK (for Jev). NOT "typesafe" or "typesafe-ai".
 openai==3.19.2         # talks to OpenRouter's chat endpoint (for Claude models)
 pandas==3.0.6
-datasets==5.0.1        # loads Banking77
 python-dotenv==1.2.3   # reads OPENROUTER_API_KEY from .env

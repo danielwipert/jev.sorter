@@ -1,0 +1,501 @@
+message_id,text,label
+train_00003,Can I track my card while it is in the process of delivery?,card_arrival
+train_00014,It's been a week since I ordered my card and it's not here. Please help?,card_arrival
+train_00029,What is the expected delivery date for my card?,card_arrival
+train_00031,I would like to track the card you sent to me.,card_arrival
+train_00033,My new card hasn't came in.,card_arrival
+train_00035,Can I get an update on my replacement card?,card_arrival
+train_00039,My card still hasn't been delivered,card_arrival
+train_00076,My card hasn't shown up yet.,card_arrival
+train_00080,Is there a reason my new card hasn't arrived yet?,card_arrival
+train_00088,Can you tell me why I haven't received my new card yet?,card_arrival
+train_00092,What do I need to do to get my new card which I have requested 2 weeks ago?,card_arrival
+train_00096,Shouldn't my new card be here by now?,card_arrival
+train_00101,"I have not received my card and it's been a week, what do I do?",card_arrival
+train_00106,My card hasn't came in the mail yet?,card_arrival
+train_00107,I haven't received my card.,card_arrival
+train_00108,Is it possible for me to track the card is was mailed to me?,card_arrival
+train_00119,How long does it take to recieve my new card?,card_arrival
+train_00251,What do I do to link my new card?,card_linking
+train_00259,I found my card again. Can I put it back into the app?,card_linking
+train_00263,How do I get my card into the app?,card_linking
+train_00290,"My new card isn't in my app, how do I get it in there?",card_linking
+train_00303,What are you exchange rates?,exchange_rate
+train_00304,Do you have the best exchange rate?,exchange_rate
+train_00311,What do you use to figure out the exchange rate for the card?,exchange_rate
+train_00321,How is the exchange rate calculated?,exchange_rate
+train_00333,How do you find the exchange rate?,exchange_rate
+train_00346,How can I find your exchange rates?,exchange_rate
+train_00360,What factors effect the exchange rate?,exchange_rate
+train_00367,Is the exchange rate the same on weekends as the weekdays?,exchange_rate
+train_00388,what are your exchange rates at?,exchange_rate
+train_00416,An incorrect exchange rate was applied to an item I bought.,card_payment_wrong_exchange_rate
+train_00439,What if there is an error on the exchange rate?,card_payment_wrong_exchange_rate
+train_00483,It seems that the rate I got is incorrect.,card_payment_wrong_exchange_rate
+train_00487,My client was converting their Russian ruble into UK pound currency when they noticed their bill was much too high for the exchange. What happened?,card_payment_wrong_exchange_rate
+train_00500,Why is the exchange rate different from what I expected?,card_payment_wrong_exchange_rate
+train_00510,I want to change the wrong exchange rate.,card_payment_wrong_exchange_rate
+train_00518,I believe you charged me too much to exchange my money,card_payment_wrong_exchange_rate
+train_00568,"I  have been charged more than I should for the presents I bought  when abroad, the problem seems to be the exchange rate.",card_payment_wrong_exchange_rate
+train_00576,What is the $1 transaction on my account?,extra_charge_on_statement
+train_00582,"I have a strange transaction for £1 on my statement, what is that?",extra_charge_on_statement
+train_00621,"There must have been a mistake, why was I charged an extra pound?",extra_charge_on_statement
+train_00623,There is an extra small charge on my card! What do I do?,extra_charge_on_statement
+train_00624,"I looked at my statement, and there is a charge for 1£ that I don't recognize.  Why is it on there?",extra_charge_on_statement
+train_00668,"There seems to be an additional charge of £1 on my statement, what is the reason for this?",extra_charge_on_statement
+train_00673,There is a pending payment on my account that is very strange. I don't remember making this and it won't go away. Can you help me figure this out?,extra_charge_on_statement
+train_00713,Why is there a fee added to my statement?,extra_charge_on_statement
+train_00733,I've been charged an extra £1 and I don't know why,extra_charge_on_statement
+train_00735,Why is there a €1 charge on my statement?,extra_charge_on_statement
+train_00765,I made a cash withdrawal earlier and it's showing as pending.  What does that mean?,pending_cash_withdrawal
+train_00794,"My account says there are pending funds right now from withdrawing from an ATM, but my card was declined and I never took out any money. When will that money be deposited back into my account?",pending_cash_withdrawal
+train_00795,How long before I can see that my cash withdrawal has taken place?,pending_cash_withdrawal
+train_00799,I didn't receive my money earlier and it says the transaction is still in progress. Can you fix it?,pending_cash_withdrawal
+train_00850,In my account I noticed my ATM withdrawal is still pending,pending_cash_withdrawal
+train_00932,Will you be able to exchange to EUR?,fiat_currency_support
+train_00960,"I'm interested in holding and exchange for flat currencies, what do you support?",fiat_currency_support
+train_00965,How can I exchange to EUR?,fiat_currency_support
+train_00970,"Do you hold money and if so, what currencies do you accept?",fiat_currency_support
+train_01056,I need my card as quick as possible,card_delivery_estimate
+train_01076,how soon will my card arrive?,card_delivery_estimate
+train_01107,When can I expect my new card to get here?,card_delivery_estimate
+train_01111,How long does it take for something to be delivered to the U.S?,card_delivery_estimate
+train_01112,How long does it take for my physical card to be delivered.,card_delivery_estimate
+train_01121,I can't find the auto-top up option.,automatic_top_up
+train_01123,When do i activate auto top-up?,automatic_top_up
+train_01145,Is it possible to do auto top up?,automatic_top_up
+train_01147,I would like to top up my account automatically. How do I do that?,automatic_top_up
+train_01149,If I don't have much money in the account can I auto top-up?,automatic_top_up
+train_01155,"If there isn't a lot of money left, will it automatically top-up money?",automatic_top_up
+train_01156,In what increments can I top-up my card?,automatic_top_up
+train_01190,When I'm traveling is it possible to add money automatically at certain time points?,automatic_top_up
+train_01199,Can I set it up to add money every few days automatically while I am traveling?,automatic_top_up
+train_01224,how can i get it to add money automatically while travelling,automatic_top_up
+train_01277,What are ways to test why my card might not be working?,card_not_working
+train_01330,My card stopped working after multiple transactions. Why?,card_not_working
+train_01355,What should I do if my physical card isn't working?,card_not_working
+train_01369,Can I possibly change my currency to another?,exchange_via_app
+train_01373,Can turn my money into another currency?,exchange_via_app
+train_01393,Can I use your app to exchange between USD and GBP,exchange_via_app
+train_01413,Can I use this app to exchange currencies?,exchange_via_app
+train_01432,How can I exchange currencies with this app?,exchange_via_app
+train_01470,Can this app exchange American and English currency?,exchange_via_app
+train_01479,How do I replace a stolen card?,lost_or_stolen_card
+train_01496,Can you send me a new card and block my current one. I'm in Spain and my wallet was stolen.,lost_or_stolen_card
+train_01516,I have lost my card! What is my next step?,lost_or_stolen_card
+train_01543,Need help with a stolen card.,lost_or_stolen_card
+train_01576,Would it be possible to open up an account for children?,age_limit
+train_01599,What are the age requirements for service?,age_limit
+train_01616,What is the youngest age for an account?,age_limit
+train_01617,I have kids and I'm curious at what age could they start to use your service.,age_limit
+train_01623,Do you have a children account available?,age_limit
+train_01672,My PIN tries have run out. Now what?,pin_blocked
+train_01684,How can I unblock my PIN?,pin_blocked
+train_01688,How do I make my PIN work again?,pin_blocked
+train_01780,I punched in the wrong pin too many times and I'm locked out.,pin_blocked
+train_01783,How come when I tried to pay contactless at the bus it didnt work?,contactless_not_working
+train_01835,Am I charged for receiving money?,top_up_by_bank_transfer_charge
+train_01864,is there a fee for swift transfer,top_up_by_bank_transfer_charge
+train_01886,"I want to top up my account by a bank transfer, but will I be charged?",top_up_by_bank_transfer_charge
+train_01891,Can I transfer using SWIFT?,top_up_by_bank_transfer_charge
+train_01915,How much would I be charged for a transfer?,top_up_by_bank_transfer_charge
+train_01965,"My top up hasn't gone through yet, why?",pending_top_up
+train_01981,What do I do if my top-up has not gone through?,pending_top_up
+train_02069,Please sort your top up! My top up has been pending for an hour already. Can you please make it go through as soon as possible. I really need the money.,pending_top_up
+train_02124,Please cancel my last transaction.,cancel_transfer
+train_02149,I just realised I made the wrong payment yesterday. Can you please change it to the right account? It's my rent payment and really really needs to be in the right account by tomorrow,cancel_transfer
+train_02167,I need to cancel my recent transfer as soon as possible. I made an error there. Please help before it goes through.,cancel_transfer
+train_02178,Is it possible for a transaction to be cancelled?,cancel_transfer
+train_02191,How do I go about cancelling a transaction?,cancel_transfer
+train_02199,I made the incorrect payment for my rent yesterday and this needs to be fixed by no later than tomorrow. How can you help?,cancel_transfer
+train_02227,A transfer has been made in my account that I need to cancel.  This was a mistake on my part and I hope we can get this resolved quickly.,cancel_transfer
+train_02233,please cancel the transaction,cancel_transfer
+train_02249,Tell me if there is a limit to top-up.,top_up_limits
+train_02310,Can I use as many top-ups as I want?,top_up_limits
+train_02316,Is there a limit for top ups?,top_up_limits
+train_02328,limits on top ups,top_up_limits
+train_02340,"Hi, I used an ATM today to take money out of my account, but the amount it gave me is not the amount I requested. What should I do?",wrong_amount_of_cash_received
+train_02344,I didn't get all the cash I asked for,wrong_amount_of_cash_received
+train_02348,I wanted to withdraw $100 from the ATM but I only got $20,wrong_amount_of_cash_received
+train_02362,I'm at the ATM right now and it only allowed me to withdraw 10 pounds instead of my requested 30. What's going on? How can I fix this?,wrong_amount_of_cash_received
+train_02375,Why didn't I receive the right amount of cash at the ATM?,wrong_amount_of_cash_received
+train_02407,I was not able to receive the correct amount of cash.,wrong_amount_of_cash_received
+train_02447,i asked for 100 only got 80,wrong_amount_of_cash_received
+train_02455,The ATM didn't give me what I asked for but my balance says it did,wrong_amount_of_cash_received
+train_02464,"Hey I am standing in front of an ATM here, it only gave me 10 pounds even though I wanted to withdraw 30! Seems like the app has 30 pounds, what do I do??",wrong_amount_of_cash_received
+train_02478,The ATM is messed up. It gave me less than I wanted.,wrong_amount_of_cash_received
+train_02483,I tried pulling out money at the ATM and it gave me an incorrect amount back.,wrong_amount_of_cash_received
+train_02492,I asked for cash but I did not receive all the funds,wrong_amount_of_cash_received
+train_02519,A fee came along with me paying with card,card_payment_fee_charged
+train_02545,Can you explain why my payment was charged a fee?,card_payment_fee_charged
+train_02586,Let me know when you charge extra for payments please. I just checked the app earlier when I saw that there was an additional fee on one of the payments that I wasn't warned about before.,card_payment_fee_charged
+train_02620,Why was the price higher when I paid with my card?,card_payment_fee_charged
+train_02638,"I see I was charged extra when I used the card.  I am not sure why, please tell me why.",card_payment_fee_charged
+train_02680,"There was an extra fee when I paid with my card, why was i charged this extra fee?",card_payment_fee_charged
+train_02685,When do you charge fees on accounts? I just saw a charge on my statement.,card_payment_fee_charged
+train_02689,Can you explain why I was charged extra when I used the card?,card_payment_fee_charged
+train_02742,Why hasn't the transaction I did to my friend arrived yet?,transfer_not_received_by_recipient
+train_02766,Why hasn't a transaction I did to my friend arrived yet?,transfer_not_received_by_recipient
+train_02771,How long does it take for the transfer to go through?,transfer_not_received_by_recipient
+train_02777,The money has not yet been placed in recipients account.,transfer_not_received_by_recipient
+train_02855,I just sent money but the person I sent it to doesn't see it. What happened?,transfer_not_received_by_recipient
+train_02906,What currencies can I use?,supported_cards_and_currencies
+train_02930,Do you accept all cards and currencies?,supported_cards_and_currencies
+train_02948,"I want to top up by using a credit card, which ones do you support?",supported_cards_and_currencies
+train_03002,Can you give me a virtual card?,getting_virtual_card
+train_03007,Where is my virtual card?,getting_virtual_card
+train_03012,How to receive virtual card?,getting_virtual_card
+train_03024,How do I go about getting hold of a virtual card?,getting_virtual_card
+train_03032,I'm interested in getting a virtual card.  How do I get one?,getting_virtual_card
+train_03071,I ordered a virtual card but it hasn't come through yet,getting_virtual_card
+train_03131,Are there any places that won't take my card?,card_acceptance
+train_03146,Can I pay with my card anywhere?,card_acceptance
+train_03149,What businesses can I use this card with?,card_acceptance
+train_03181,Why would my top up be reverted?,top_up_reverted
+train_03204,What is the status of my top up?,top_up_reverted
+train_03231,Why was my top up cancelled?,top_up_reverted
+train_03288,"I attempted to complete a topup, and I thought all was well, but now the money is gone again. Has there been a glitch?",top_up_reverted
+train_03290,"I tried to add a topup to my account but the money isn't there, anymore. Did I do something wrong?",top_up_reverted
+train_03295,Why has my top up been returned?,top_up_reverted
+train_03314,Why is my money not in my account. I have already sent it out.,balance_not_updated_after_cheque_or_cash_deposit
+train_03315,I placed a cash deposit in my account but I can't see it yet.,balance_not_updated_after_cheque_or_cash_deposit
+train_03320,I did a cash deposit to my account but it doesn't show up,balance_not_updated_after_cheque_or_cash_deposit
+train_03352,Waiting for the cash I deposited this morning still,balance_not_updated_after_cheque_or_cash_deposit
+train_03379,The cheque I deposited isn't showing in my account,balance_not_updated_after_cheque_or_cash_deposit
+train_03381,Why isn't my cash deposit showing up in my account? I deposited it this morning.,balance_not_updated_after_cheque_or_cash_deposit
+train_03410,Why hasn't my balance been updated from the check deposit I made?,balance_not_updated_after_cheque_or_cash_deposit
+train_03412,I haven't received the cash from the check I deposited.,balance_not_updated_after_cheque_or_cash_deposit
+train_03429,"I did a cash deposit to my account, but I am not seeing it on my statement.",balance_not_updated_after_cheque_or_cash_deposit
+train_03441,The cast deposit from a week ago still is not in my account. Why?,balance_not_updated_after_cheque_or_cash_deposit
+train_03448,I made a check and cash deposit that wasn't credited to my account.,balance_not_updated_after_cheque_or_cash_deposit
+train_03464,My account balance has not updated since I deposited a cheque recently.,balance_not_updated_after_cheque_or_cash_deposit
+train_03473,I made a check deposit but the cash hasn't arrived in my account yet.,balance_not_updated_after_cheque_or_cash_deposit
+train_03495,I do not recognize the card payment.,card_payment_not_recognised
+train_03518,Why is there a random payment in my statement?,card_payment_not_recognised
+train_03532,Is it possible someone has access to my card? I noticed that there are a couple of payments in the app I'm sure I did not make. Can you find out what's going on here?,card_payment_not_recognised
+train_03543,There is a record of payment I never submitted on the app.,card_payment_not_recognised
+train_03544,I just looked over my statement and I don't recognize the name of a card payment.,card_payment_not_recognised
+train_03555,why do I have an unknown payment?,card_payment_not_recognised
+train_03597,I just checked my account on the App and there is a payment on there that I did not make.,card_payment_not_recognised
+train_03601,I didn't make this payment and it's on my app,card_payment_not_recognised
+train_03608,I see a strange payment in my account.,card_payment_not_recognised
+train_03689,after i got married i need to change my name,edit_personal_details
+train_03720,I got a new address and need to change my old one.,edit_personal_details
+train_03739,How do I input a new address?,edit_personal_details
+train_03798,What's the reason for needing to verify my identity?,why_verify_identity
+train_03815,It's requiring me to verify my identity?,why_verify_identity
+train_03827,How does identity check work?,why_verify_identity
+train_03857,how do I speed up identity verification?,why_verify_identity
+train_03859,Why do you need to perform identity verification?,why_verify_identity
+train_03860,Why am I being asked to verify my identity?,why_verify_identity
+train_03912,Why isn't my id verifying?,unable_to_verify_identity
+train_03942,What am i missing to verify my id?,unable_to_verify_identity
+train_03960,My app says that I'm not verified.,unable_to_verify_identity
+train_03979,Why hasn't the app verified my identity?,unable_to_verify_identity
+train_03989,I'm still waiting on my identity verification.,unable_to_verify_identity
+train_04001,i have yet to get my pin,get_physical_card
+train_04023,My card arrived but I don't know how to get my PIN.,get_physical_card
+train_04043,I didn't get a PIN yet. What gives?,get_physical_card
+train_04047,When will I have access to my pin number?,get_physical_card
+train_04058,Where can I find my PIN? I haven't gotten it yet.,get_physical_card
+train_04060,How do I know what my PIN is?,get_physical_card
+train_04112,If I can't choose my card type will I be able to use it everywhere?,visa_or_mastercard
+train_04127,would a visa or mastercard be more suited to me?,visa_or_mastercard
+train_04132,Can I choose from either Visa or Mastercard?,visa_or_mastercard
+train_04151,What cards do you offer?,visa_or_mastercard
+train_04161,I'd like to apply for a Visa Card.,visa_or_mastercard
+train_04169,Will the card be a Mastercard or a Visa?,visa_or_mastercard
+train_04192,"Given a choice, I'd rather have Mastercard.",visa_or_mastercard
+train_04209,Do I get Visa or Mastercard?,visa_or_mastercard
+train_04245,Is my account able to be topped up by my friends?,topping_up_by_card
+train_04246,Can anyone else top-up for me?,topping_up_by_card
+train_04270,Is it simple to transfer money using my credit card?,topping_up_by_card
+train_04332,I topped up my account but the money isn't there now.,topping_up_by_card
+train_04343,What are the guidelines for the disposable cards?,disposable_card_limits
+train_04352,Whats the maximum disposable virtual cards?,disposable_card_limits
+train_04367,I need to make several disposable cards per day.,disposable_card_limits
+train_04386,What are the restrictions on the virtual cards?,disposable_card_limits
+train_04407,How many active transactions can I make with a disposable card?,disposable_card_limits
+train_04415,I must make several disposable cards every day.,disposable_card_limits
+train_04474,Please tell me how you can stop unauthorized payments from being made on my card since on this bill I see that this has happened. There are transactions that I never made from a place I've never been to.,compromised_card
+train_04483,There is unusual activity on my account and I believe someone took my card.,compromised_card
+train_04518,What do I do if I think someone has used my card?,compromised_card
+train_04522,"My card was used without my permission, what do I do?",compromised_card
+train_04560,Can I use my card to withdraw from my account?,atm_support
+train_04565,Do I have to use bank approved ATM's,atm_support
+train_04608,Can this card be used at all ATMs?,atm_support
+train_04609,Are there any ATM's near me that accept this card?,atm_support
+train_04614,What ATMs can I use this card at?,atm_support
+train_04617,Where can I find a Mastercard ATM?,atm_support
+train_04625,Where can I find an ATM?,atm_support
+train_04657,I don't recognize the direct debit payment from the app.,direct_debit_payment_not_recognised
+train_04671,I don't know where a direct debit payment came from,direct_debit_payment_not_recognised
+train_04685,There is a direct debit transaction that I did not authorize,direct_debit_payment_not_recognised
+train_04689,How can I dispute a direct debit transaction?,direct_debit_payment_not_recognised
+train_04731,"I saw money was taken out of my account by a seller a while back. I do not recognize the seller, but I'm pretty certain I didn't make that payment. Can you track who the seller is?",direct_debit_payment_not_recognised
+train_04738,I didn't set up a direct debit payment on my account.,direct_debit_payment_not_recognised
+train_04755,Purchases I did not make are appearing in my bank statement?,direct_debit_payment_not_recognised
+train_04759,I didn't make the direct debit payment on my account.,direct_debit_payment_not_recognised
+train_04808,I checked my account and see that funds were deducted from a seller I didn't approve of. Can you help me understand?,direct_debit_payment_not_recognised
+train_04852,My passcode was denied.,passcode_forgotten
+train_04864,How can I reset the passcode if I need to do that?,passcode_forgotten
+train_04919,"I tried to withdraw cash and got declined, why is that?",declined_cash_withdrawal
+train_04932,Why was my ATM withdrawal cancelled?,declined_cash_withdrawal
+train_04938,The ATM keeps declining my Transaction . I tried two different ATMs already Would you please check if everything is okay with my account?,declined_cash_withdrawal
+train_04950,Why are my withdrawals suddenly being declined?,declined_cash_withdrawal
+train_04992,I attempted to get cash in the ATM but it was not authorized,declined_cash_withdrawal
+train_04993,Is there something wrong with my ATM Card?  Tried using it earlier and it did not work.,declined_cash_withdrawal
+train_05053,Is there something wrong with the ATM? It would not let me pull cash out of my account.,declined_cash_withdrawal
+train_05062,Why was my cash withdrawal cancelled at the ATM?,declined_cash_withdrawal
+train_05070,This is the first time I've tried to get my money out of an ATM and it didn't work. Please give me my money,declined_cash_withdrawal
+train_05090,I was declined when I tried to take out cash!,declined_cash_withdrawal
+train_05095,Is there a problem with the payment that I see is still pending?,pending_card_payment
+train_05114,After making a payment with my card it doesn't seem to have worked. It's just showing to be pending. When will this actually be going through?,pending_card_payment
+train_05129,Why is their a charge pending on my card still?,pending_card_payment
+train_05137,It looks like a payment I've made hasn't made it through yet.,pending_card_payment
+train_05192,Why would my payment for my card show as pending?,pending_card_payment
+train_05212,How long does it actually take for a card payment to go through? There's one stuck since a couple of days already that doesn't seem to move,pending_card_payment
+train_05272,I left my phone somewhere and can't use the app.,lost_or_stolen_phone
+train_05338,"My phone got stolen, how can I use the app?",lost_or_stolen_phone
+train_05377,"I am not sure how this will work, but I have not received a product I ordered.  I want a refund, but should I just cancel the payment?",request_refund
+train_05389,I am quite aggravated that I ordered online almost a month ago and I never got my package and I paid for it. I would really appreciate it if I could get a full refund back now.,request_refund
+train_05406,"If I bought something I didn't like, can I get a refund?",request_refund
+train_05457,Can I get a refund on an item?,request_refund
+train_05474,"I don't want to buy this car anymore, can I cancel the transaction and get a quick refund back?",request_refund
+train_05492,"the product is not working, can I get a refund?",request_refund
+train_05506,"I just bought an item and would like to stop payment, is this possible?  The item has not been received yet.",request_refund
+train_05550,I have transfered to my account before but it is being declined now?,declined_transfer
+train_05570,I tried to buy something online yesterday but it kept saying declined. Tried another time today but same thing happened. What's Broken?,declined_transfer
+train_05573,Why am I getting declines when trying to make a purchase online?,declined_transfer
+train_05589,Why are my transfers getting declined?,declined_transfer
+train_05617,I tried to do a transfer but I got a message that it was declined.,declined_transfer
+train_05665,"My transfers keep on getting declined. My card was working fine up until now, however it has suddenly stopped working. Why is this?",declined_transfer
+train_05702,"My refund has not arrived, and I am unsure why. Who do I contact?",Refund_not_showing_up
+train_05706,How can I check if I have received a refund if it is not yet on my statement?,Refund_not_showing_up
+train_05712,"Hi, Last week I have contacted the seller for a refund as directed by you, but i have not received the money yet. Please look into this issue with seller and help me in getting the refund.",Refund_not_showing_up
+train_05747,I cannot find my refund on my statement.,Refund_not_showing_up
+train_05748,"I have received my statement but I do not see my refund, why is that?",Refund_not_showing_up
+train_05836,I'm not sure why my card didn't work,declined_card_payment
+train_05837,My card is not working at stores.,declined_card_payment
+train_05839,Why isn't my card working? I was pumped to use my new card but it keeps getting declined. Help please.,declined_card_payment
+train_05846,What are the reasons why a card payment would be declined?,declined_card_payment
+train_05856,"Apparently, I went out today to use my new card and was informed my payment was decline. This is really embarrassing, what happen?",declined_card_payment
+train_05859,Why was my card declined in a shop?,declined_card_payment
+train_05903,Why won't you accept my payment? I keep trying with this card and it's not working.,declined_card_payment
+train_05909,Can you tell me why my card payment did not work?,declined_card_payment
+train_05911,I could not get my card to work at a shop.,declined_card_payment
+train_05957,"I keep trying to make a payment, but it doesn't work.",declined_card_payment
+train_05969,"I know there's money in my account, why did my account decline me?",declined_card_payment
+train_05987,My card payment was not successful.,declined_card_payment
+train_05991,"Transfers can take up to one day to process before departing for the beneficiary accounts. Please confirm that you've entered your account details correctly. SEPA transfers can take up to two working days, while SWIFT transfers can take up to five working days.",pending_transfer
+train_05993,"How long do transfers take, mine just says pending?",pending_transfer
+train_06001,"I transferred money to another country several days ago, but my transaction is still pending. i have checked that the accounts are keyed in correctly. what sees to be the problem?",pending_transfer
+train_06008,My payment shows that it is pending will I be charged more money?,pending_transfer
+train_06018,Why is my transfer pending?,pending_transfer
+train_06022,What is going on? I have checked over and over and the details of my account are right. Why is my transfer still pending? It's 2018 not 1818. Transfering money to another country can't be that hard.,pending_transfer
+train_06055,How come I have pending transfers?,pending_transfer
+train_06065,I am still waiting for a transfer to show,pending_transfer
+train_06066,When will my transfer move from pending to confirmed?,pending_transfer
+train_06069,I have a transfer that is pending.,pending_transfer
+train_06079,How long will my transfer be pending?,pending_transfer
+train_06114,there is a transfer pending.,pending_transfer
+train_06119,"It seems like I have been waiting forever for this international transfer. Why is it taking so long? C'mon, it's 2018, things happen at a click of a button. All of the account information is correct, so how long will this take?",pending_transfer
+train_06134,I need to know why a money transfer is available.,pending_transfer
+train_06148,"I need to delete my account, please.",terminate_account
+train_06152,How do I close my account?,terminate_account
+train_06203,How can I close my account?,terminate_account
+train_06220,Your service is bad.  Close my account.,terminate_account
+train_06223,I wish to remove my account.,terminate_account
+train_06249,What do I do if I can't get my card out of the ATM?,card_swallowed
+train_06271,How do I get my card out of the ATM?,card_swallowed
+train_06292,How do I get a new card as your machine swallowed mine!,card_swallowed
+train_06311,How do I query a payment on my card? It looks like I have paid for the same thing twice.,transaction_charged_twice
+train_06321,"I was charged twice for a restaurant, can you take the second charge off?",transaction_charged_twice
+train_06325,How do I get my money back for a duplicated charge?,transaction_charged_twice
+train_06351,"Looks like my card payment was duplicated after all. I went to pay at the store earlier, got declined once, second time it works. App still stays pending for one of the payments. Can you please remove one of them as it's wrong and clearly was declined?",transaction_charged_twice
+train_06385,My account is showing a double charge.,transaction_charged_twice
+train_06398,There is the same transaction showing more than once.,transaction_charged_twice
+train_06412,I received duplicate charges.,transaction_charged_twice
+train_06427,My statement shows different transaction times.,transaction_charged_twice
+train_06452,"Hey there, I just went through my most recent credit card payments and I notice the same charge for a restaurant was processed twice. There was only one meal at this place, so I would like one of the charges to be reversed and my money to be put back in the account.",transaction_charged_twice
+train_06460,"Looks like my card payment was duplicated after all. I went to pay at the store earlier, got declined once,second time it works. App still stays pending for one of the payments. Can you please remove one of them as it's wrong and was declined?",transaction_charged_twice
+train_06473,I have been charged twice for the same thing!,transaction_charged_twice
+train_06475,Why is there a payment showing twice?,transaction_charged_twice
+train_06478,My account seems a bit off and getting weird charges.,transaction_charged_twice
+train_06496,where to i get my funds from?,verify_source_of_funds
+train_06537,Where can I see where my funds came from?,verify_source_of_funds
+train_06547,Can you tell me how to tell where my funds come from?,verify_source_of_funds
+train_06553,where can I get the info for my funds,verify_source_of_funds
+train_06555,Is there a way to lookup where funds came from?,verify_source_of_funds
+train_06561,How can I tell the source for my available funds?,verify_source_of_funds
+train_06568,where did my funds come from?,verify_source_of_funds
+train_06586,What do I do to verify my source of funds?,verify_source_of_funds
+train_06670,I need to urgently transfer something from China. How long will it approximately take?,transfer_timing
+train_06693,When can I expect the transfer to arrive in my account?,transfer_timing
+train_06720,How long does it take to make an urgent transfer from China?,transfer_timing
+train_06726,Tell me why my card payment would be reverted.,reverted_card_payment?
+train_06728,I didn't cancel my card payment.,reverted_card_payment?
+train_06730,How come the money from the merchant appeared back into my account?,reverted_card_payment?
+train_06768,I had a payment reverted and would like to figure out why.,reverted_card_payment?
+train_06774,I was checking my statement and I think one of my card payments has reverted,reverted_card_payment?
+train_06785,I just found out from the seller that my money didn't go through. I checked my account and it was deducted at first but now it's back in my account. Can you  please fix this for me quickly?,reverted_card_payment?
+train_06803,I purchased something about one to two weeks ago but for some reason the payment was returned to my account today even though I've already received one of the items. Can you tell me what's going on?,reverted_card_payment?
+train_06804,"I've got a problem - I bought something with my card one or two weeks ago, but now exact same amount of the purchase is showing up in my account. I like more money in my account, but this is too good to be true. Can you tell me what's happening?",reverted_card_payment?
+train_06811,Can you tell me why my card isn't letting me make purchases online? It's been 2 weeks I've been trying.,reverted_card_payment?
+train_06815,My card payment's cancelled,reverted_card_payment?
+train_06829,I received a returned payment that I made.,reverted_card_payment?
+train_06830,Why did the funds for one of my purchase come back to my account?,reverted_card_payment?
+train_06832,It looks like my card payment was sent back.,reverted_card_payment?
+train_06875,I am not able to purchase anything online! I have been using my card on multiple sites over a period of two weeks and none of the payments have gone through. Why is this happening?,reverted_card_payment?
+train_06883,Is it possible for me to change my PIN number?,change_pin
+train_06890,If I want to can I set up a new PIN?,change_pin
+train_06901,If i want to change my pin number can I directly from an ATM?,change_pin
+train_06903,Can I change my PIN at any ATM?,change_pin
+train_06911,What cash machines will let me change my PIN?,change_pin
+train_06972,How can I change my old pin to a new one?,change_pin
+train_06978,Can my PIN be changed in any cash machine?,change_pin
+train_06992,Do I have to go to an actual bank to change my PIN?,change_pin
+train_06993,"Can I change my pin at ATMs?  If so, what ones?",change_pin
+train_07001,At what ATM can I change my PIN?,change_pin
+train_07020,I tried to transfer funds to a beneficiary and was denied. Can you tell me why?,beneficiary_not_allowed
+train_07023,Why am I not allowed to add a certain beneficiary?,beneficiary_not_allowed
+train_07076,A transfer was not allowed to an account.,beneficiary_not_allowed
+train_07111,Why am I unable to transfer money when I was able to before?,beneficiary_not_allowed
+train_07159,beneficiary transfer problems?,beneficiary_not_allowed
+train_07172,During the last month I used this account to make payments for my place abroad. I noticed the fees have increased and I wonder why. Shouldn't frequent users have less fees as incentive to keep using instead of increasing them out of nowhere?,transfer_fee_charged
+train_07194,Why was I charged an extra fee when doing a transfer?,transfer_fee_charged
+train_07207,Why has transferring money resulted in a charge?,transfer_fee_charged
+train_07209,How much do I have to pay if I want to transfer money?,transfer_fee_charged
+train_07217,Why was I charged this extra fee while doing a transfer?,transfer_fee_charged
+train_07255,I did a transfer and I was charged a fee that shouldn't be there!,transfer_fee_charged
+train_07263,Why was there an extra charge when I transferred money?,transfer_fee_charged
+train_07289,"After reviewing my charges, I see I was charged a fee for a transfer I did, why?",transfer_fee_charged
+train_07304,"After a transfer, I see an extra fee.  Why?",transfer_fee_charged
+train_07354,My salary is deposited in GBP. Do I need to choose the currency?,receiving_money
+train_07371,Can I receive money in a different countries money?,receiving_money
+train_07382,Can I get paid for this in another currency?,receiving_money
+train_07387,Can this app take my salary?,receiving_money
+train_07401,How can I receive my salary in another currency?,receiving_money
+train_07432,"I have made 5 attempts to make a very standard survey, yet I can't get it to work. What is the problem? Is there an issue related to your system?",failed_transfer
+train_07448,I really need some help to understand why my transfer keeps failing. I'm trying to send money to a friend. Please help.,failed_transfer
+train_07450,"Hi, I am currently in the process of buying a flat and I am waiting for the mortgage to go through but it keeps showing up as an error.  Do you know what could be causing this and can you help me get the money over.",failed_transfer
+train_07475,"Hi there, I've tried to make a transfer 5 different times and its not working. Is your system down or something?",failed_transfer
+train_07512,I'm trying to purchase a flat but i need my first payment for my mortgage to go through first. I keep getting an error. I'm not sure what is going on but i need help making this transfer.,failed_transfer
+train_07548,I need to know what is going on. I'm attempting to purchase a flat and need the money to pay on my initial mortgage payment. I'm only getting an error. Can you find out what's going on and help in making the transfer?,failed_transfer
+train_07552,I am unsuccessfully trying to make a transfer can you help?,failed_transfer
+train_07580,How can my account have money transferred into it?,transfer_into_account
+train_07646,Help! My account doesn't show any funds. Is transferring funds an option I can use?,transfer_into_account
+train_07647,How do I transfer cash my into my account?,transfer_into_account
+train_07661,Can you please explain the topping up transfer process?,transfer_into_account
+train_07684,How can I verify my top-up card?,verify_top_up
+train_07696,Where can I find the top up verification code?,verify_top_up
+train_07753,Is the verification number on the top up card,verify_top_up
+train_07769,Why should I verify the top-up?,verify_top_up
+train_07799,I need help finding the verification code on the top up card.,verify_top_up
+train_07812,What's the limit on total number of cards I can have?,getting_spare_card
+train_07825,Do you charge for sending out more cards?,getting_spare_card
+train_07852,I'd like to have extra cards. Will I have to pay for that?,getting_spare_card
+train_07911,Is it possible to have a second card?,getting_spare_card
+train_07924,I want a backup second card. Is this possible?,getting_spare_card
+train_07934,Do you have any options to top up with a cheque on my account?,top_up_by_cash_or_cheque
+train_07949,How do I use a cheque to top up?,top_up_by_cash_or_cheque
+train_07963,Who do I make a check out to if I want to top off my account?,top_up_by_cash_or_cheque
+train_07983,Can cash be used in physical locations to top up?,top_up_by_cash_or_cheque
+train_08019,Can I add to my account using a cheque?,top_up_by_cash_or_cheque
+train_08030,i have been trying to top up my account with a check but it won't work,top_up_by_cash_or_cheque
+train_08031,How do I add cash to my account?,top_up_by_cash_or_cheque
+train_08048,Where can the cards be delivered?,order_physical_card
+train_08072,Is a physical card also available,order_physical_card
+train_08080,Where are the cards delivered to,order_physical_card
+train_08117,Can I get an actual card,order_physical_card
+train_08126,I would really like a physical card.,order_physical_card
+train_08153,How much is a physical card?,order_physical_card
+train_08163,Where are the cards transported to?,order_physical_card
+train_08178,Is there a reason why my virtual card won't work?,virtual_card_not_working
+train_08184,How do I get this damn virtual card to work?,virtual_card_not_working
+train_08201,I tried to use my disposable virtual card to pay a subscription to the gym and it got rejected. Any ideas why?,virtual_card_not_working
+train_08206,I have a disposable card but it does not work?,virtual_card_not_working
+train_08237,"After I got my cash, I found out my exchange rate was wrong.",wrong_exchange_rate_for_cash_withdrawal
+train_08243,Someone may have made an error in figuring out the rate of exchange.  I should have received more cash than I did on my most recent withdrawal.,wrong_exchange_rate_for_cash_withdrawal
+train_08262,I don't think the exchange rate was right.,wrong_exchange_rate_for_cash_withdrawal
+train_08264,what is the exchange rate when i get cash,wrong_exchange_rate_for_cash_withdrawal
+train_08266,Why is the exchange rate so high? This should have been a much higher amount of cash for that to apply.,wrong_exchange_rate_for_cash_withdrawal
+train_08345,I withdrew cash and I think the exchange rate is wrong.,wrong_exchange_rate_for_cash_withdrawal
+train_08360,The exchange rate was wrong in the foreign country I got cash in.,wrong_exchange_rate_for_cash_withdrawal
+train_08421,What is the procedure for depositing a virtual card,get_disposable_virtual_card
+train_08425,Please tell me about disposable cards.,get_disposable_virtual_card
+train_08448,What do the disposable cards do?,get_disposable_virtual_card
+train_08449,How do I receive a disposable virtual card?,get_disposable_virtual_card
+train_08514,My credit card seems to have been declined for top up. Why is it not going through? Can you tell me what's going on?,top_up_failed
+train_08540,I really need to top-up my card today urgently but my card keeps getting declined!! Can you please resolve this problem or let me know if you have any alternatives,top_up_failed
+train_08563,Top up did not work on the app.,top_up_failed
+train_08573,Why did my top-up not work?,top_up_failed
+train_08578,"Hi, I am experiencing problems while trying to top-up with my card. I have never experienced any problems doing this before. Could you please help me?",top_up_failed
+train_08579,The top-up did not go through.,top_up_failed
+train_08596,I topped up my account but the app failed to process it.,top_up_failed
+train_08601,I don't think my top up worked,top_up_failed
+train_08617,After I transferred money the balance remained the same.,balance_not_updated_after_bank_transfer
+train_08686,How long do I need to wait to see an update after I make a bank transfer?,balance_not_updated_after_bank_transfer
+train_08695,Where is the transfer that I did?,balance_not_updated_after_bank_transfer
+train_08697,"How long does a transfer from a UK account take? I just made one and it doesn't seem to be working, wondering if everything is okay",balance_not_updated_after_bank_transfer
+train_08737,I made a transfer a couple hours ago but my balance has not been updated. Why is this? Shouldnt this be instant?,balance_not_updated_after_bank_transfer
+train_08789,Why do I see a random withdrawal in my app?,cash_withdrawal_not_recognised
+train_08816,Why is there extra cash in my account?,cash_withdrawal_not_recognised
+train_08821,Somebody made a withdrawal from my account for 500. I have my card so how can this be? Does somebody have a duplicate card or something? Help please.,cash_withdrawal_not_recognised
+train_08827,I see non-received cash in my app.,cash_withdrawal_not_recognised
+train_08856,I am seeing inside the App a some cash withdrawal that is not mine,cash_withdrawal_not_recognised
+train_08893,I think somebody made an unauthorized copy of my card.  My account has a cash withdrawal for 500£ that I did not make.  Please help.,cash_withdrawal_not_recognised
+train_08898,My wallet got stolen a couple hours ago and now I've seen there already is a withdrawal. Help this is absolutely urgent I don't want to loose more money,cash_withdrawal_not_recognised
+train_08927,There is a cash withdrawl I don't remember.,cash_withdrawal_not_recognised
+train_08968,What kind of costs are involved for exchanging currency?,exchange_charge
+train_08988,is there a frequent currency discount?,exchange_charge
+train_09020,What fee will be charged for exchanges?,exchange_charge
+train_09052,are there any exchange fees,exchange_charge
+train_09054,What is the fee for a foreign currency exchange?,exchange_charge
+train_09066,What is the fee for topping up a US card?,top_up_by_card_charge
+train_09128,what is the fee for topping up by card?,top_up_by_card_charge
+train_09134,how much for topping up by card?,top_up_by_card_charge
+train_09164,Are there fees for adding money with an International card?,top_up_by_card_charge
+train_09177,How much does top up fees cost?,top_up_by_card_charge
+train_09198,Can I get some help activating my new card?,activate_my_card
+train_09224,"Hi, would you please activate my card?",activate_my_card
+train_09241,I am having trouble activating my card.,activate_my_card
+train_09271,I would like to get help from someone in your customer service department with assisting me with activating my card.,activate_my_card
+train_09300,How can I switch on my new card?,activate_my_card
+train_09350,"Hello, I have a question concerning an unfamiliar fee that I notice on my account. I see that you guys charge for ATM withdrawal. Never notice this fee until now. Can you please explain?",cash_withdrawal_charge
+train_09361,Is the fee with my cash withdrawal a mistake?,cash_withdrawal_charge
+train_09372,"I am not supposed to be charged a cash withdrawal fee, but I was.",cash_withdrawal_charge
+train_09420,The bank charged me fees for withdrawing cash!,cash_withdrawal_charge
+train_09448,Since when were there charges for taking out cash from my account? It's always been free for me to do this before.  How much are the charges going to be?,cash_withdrawal_charge
+train_09493,"The past few times I've been to the ATM, I was charged a withdrawal fee. Have your policies changed regarding fees?",cash_withdrawal_charge
+train_09511,I noticed a different charge while I was taking my money out.,cash_withdrawal_charge
+train_09512,Why was I charged a fee for withdrawing money?,cash_withdrawal_charge
+train_09543,I'm in China and need a new card. Please help.,card_about_to_expire
+train_09550,Where can I order a card when I am in China?,card_about_to_expire
+train_09551,How do I replace a card that's going to expire?,card_about_to_expire
+train_09560,Is ordering a new card from China available?,card_about_to_expire
+train_09596,What should I do once my card expires?,card_about_to_expire
+train_09632,My card is almost expired.  How fast will I get a new one and what is the cost?,card_about_to_expire
+train_09633,What is the process to get a new card when your old one expires?,card_about_to_expire
+train_09646,why top up is not working even if I got my American Express in Apple Bay?,apple_pay_or_google_pay
+train_09658,Is top-up possible with Apple Pay?,apple_pay_or_google_pay
+train_09686,is apple pay a top up service?,apple_pay_or_google_pay
+train_09699,Are top-ups allowed using Apple Pay?,apple_pay_or_google_pay
+train_09704,"Using Google Pay, can I top up?",apple_pay_or_google_pay
+train_09717,I can't get google pay to work right.,apple_pay_or_google_pay
+train_09722,I cannot get my google pay to work.,apple_pay_or_google_pay
+train_09728,What are the steps needed to top up with Apple Pay?,apple_pay_or_google_pay
+train_09771,How can I prove I am me?,verify_my_identity
+train_09774,How do I verify my identity online,verify_my_identity
+train_09806,What do I need in regards to identification?,verify_my_identity
+train_09816,why do I have to show my ID,verify_my_identity
+train_09820,Let me know what the steps for the identity checks are,verify_my_identity
+train_09863,What are the steps for the identity checks?,verify_my_identity
+train_09865,How do I complete the ID check?,verify_my_identity
+train_09876,How do I get a card if I live in the US?,country_support
+train_09893,I live in the EU - can I get a card?,country_support
+train_09923,Can I use it outside of Europe?,country_support
+train_09965,In which countries can I get a card?,country_support
+train_09967,Can I have a card even if I am not living in the UK?,country_support
+train_09968,You operate in which countries?,country_support
+train_09977,What countries can I use the card in?,country_support
