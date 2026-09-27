@@ -10,11 +10,11 @@ data/tuning.csv, so the keyword check isn't graded on the messages it was built 
 """
 
 import json
-import re
 from pathlib import Path
 
 import pandas as pd
 
+from gate import words
 from sample_data import SOURCE_URL
 
 VERSION = "v1"
@@ -22,11 +22,6 @@ KEYWORDS_PER_CATEGORY = 10  # distinctive words added on top of the name words
 MIN_SHARE = 0.05  # a word must appear in at least 5% of a category's messages to count
 # Words in category names too common to be useful as keywords (e.g. "lost_or_stolen_card").
 NAME_STOPWORDS = {"a", "and", "by", "for", "in", "is", "my", "not", "of", "or", "the", "to", "why"}
-
-
-def words(text):
-    """Lowercase whole words. Same rule the gate uses to match keywords."""
-    return set(re.findall(r"[a-z]+", text.lower()))
 
 
 def distinctive_words(messages):

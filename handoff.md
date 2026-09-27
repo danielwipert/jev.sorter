@@ -27,13 +27,18 @@ _Rewritten at the end of every session. Keep it short._
   - Category names kept exactly as Banking77 has them, including capital `Refund_not_showing_up`.
   - Preview: 2.6% of tuning messages contain no keyword of their *true* category (well under the 10% rule of thumb). Some keywords are generic ("help", "here", "try"), so the check may be too permissive. Judge at step 2.1 with real predictions.
 
+- **Step 1.5 done.** `gate.py`: `gate(message, predicted, confidence, categories, keywords, threshold=None)` → `(gate_result, gate_reason, keyword_miss)`. Checks in spec order; first failure wins. `test_gate.py` (run `python test_gate.py`): 7 tests pass.
+  - `threshold=None` runs checks 1–3 only. **Design:** `run.py` logs with no threshold (log's `gate_result`/`gate_reason` = checks 1–3); `analyze.py` calls the same `gate()` with each model's 50/70/85% thresholds.
+  - `KEYWORD_CHECK_BLOCKS = False` in `gate.py`. Step 2.1 flips it if the false-alarm rate is low enough.
+  - `keyword_miss` is blank (None) when check 1 fails (no valid category to check).
+  - `words()` moved into `gate.py`; `build_categories.py` imports it (v1 files unchanged).
+
 ## Where we are
-Ready for step 1.5.
+Ready for step 1.6.
 
 ## Next session: do these, in order
-1. Step 1.5: `gate.py`, the four checks in order (invalid_category, empty_input, keyword_miss flag-only, low_confidence). Reuse `words()` for keyword matching.
-2. Step 1.6: `run.py`, Jev path. 20 messages first, then 500. Confidence ×100; cost from raw `usage.cost`.
-3. Step 1.7: `analyze.py`.
+1. Step 1.6: `run.py --model jev --set tuning --categories v1`. `ask_jev()` returns `(category, confidence×100, ms, cost)`; cost from `result.raw_http_response.json()["usage"]["cost"]`. Log columns per spec Section 12, to `logs/decisions_{model}_{set}_{categories}.csv`. Run 20 messages first, inspect by eye, then all 500 (~$0.04).
+2. Step 1.7: `analyze.py` (accuracy, confusion pairs, threshold curve via `gate()`, calibration bands, spend).
 
 ## Notes
 - Always pin `typesafe/jev-1.13`. Never `jev-latest` or `jev-router`.
