@@ -1,0 +1,237 @@
+message_id,message_text,model,categories_version,keywords_version,predicted,confidence,gate_result,gate_reason,keyword_miss,correct,is_correct,ms,cost_usd
+train_00003,Can I track my card while it is in the process of delivery?,anthropic/claude-sonnet-5,v2,v1,card_arrival,92.0,auto_accept,,false,card_arrival,true,2351,0.00522
+train_00014,It's been a week since I ordered my card and it's not here. Please help?,anthropic/claude-sonnet-5,v2,v1,card_arrival,95.0,auto_accept,,false,card_arrival,true,1995,0.00523
+train_00029,What is the expected delivery date for my card?,anthropic/claude-sonnet-5,v2,v1,card_delivery_estimate,70.0,auto_accept,,false,card_arrival,false,1887,0.005252
+train_00031,I would like to track the card you sent to me.,anthropic/claude-sonnet-5,v2,v1,card_arrival,95.0,auto_accept,,false,card_arrival,true,1674,0.005212
+train_00033,My new card hasn't came in.,anthropic/claude-sonnet-5,v2,v1,card_arrival,90.0,auto_accept,,false,card_arrival,true,3426,0.005206
+train_00035,Can I get an update on my replacement card?,anthropic/claude-sonnet-5,v2,v1,card_arrival,90.0,auto_accept,,false,card_arrival,true,2142,0.005212
+train_00039,My card still hasn't been delivered,anthropic/claude-sonnet-5,v2,v1,card_arrival,95.0,auto_accept,,false,card_arrival,true,1685,0.005208
+train_00076,My card hasn't shown up yet.,anthropic/claude-sonnet-5,v2,v1,card_arrival,95.0,auto_accept,,false,card_arrival,true,1841,0.00521
+train_00080,Is there a reason my new card hasn't arrived yet?,anthropic/claude-sonnet-5,v2,v1,card_arrival,95.0,auto_accept,,false,card_arrival,true,2076,0.005224
+train_00088,Can you tell me why I haven't received my new card yet?,anthropic/claude-sonnet-5,v2,v1,card_arrival,90.0,auto_accept,,false,card_arrival,true,1780,0.005222
+train_00092,What do I need to do to get my new card which I have requested 2 weeks ago?,anthropic/claude-sonnet-5,v2,v1,card_arrival,85.0,auto_accept,,false,card_arrival,true,2006,0.005236
+train_00096,Shouldn't my new card be here by now?,anthropic/claude-sonnet-5,v2,v1,card_arrival,92.0,auto_accept,,false,card_arrival,true,2013,0.005214
+train_00101,"I have not received my card and it's been a week, what do I do?",anthropic/claude-sonnet-5,v2,v1,card_arrival,90.0,auto_accept,,false,card_arrival,true,1818,0.005222
+train_00106,My card hasn't came in the mail yet?,anthropic/claude-sonnet-5,v2,v1,card_arrival,95.0,auto_accept,,false,card_arrival,true,1687,0.005214
+train_00107,I haven't received my card.,anthropic/claude-sonnet-5,v2,v1,card_arrival,90.0,auto_accept,,false,card_arrival,true,1790,0.005202
+train_00108,Is it possible for me to track the card is was mailed to me?,anthropic/claude-sonnet-5,v2,v1,card_arrival,95.0,auto_accept,,false,card_arrival,true,1731,0.005224
+train_00119,How long does it take to recieve my new card?,anthropic/claude-sonnet-5,v2,v1,card_delivery_estimate,85.0,auto_accept,,false,card_arrival,false,1840,0.005252
+train_00251,What do I do to link my new card?,anthropic/claude-sonnet-5,v2,v1,card_linking,95.0,auto_accept,,false,card_linking,true,3207,0.005196
+train_00259,I found my card again. Can I put it back into the app?,anthropic/claude-sonnet-5,v2,v1,card_linking,62.0,auto_accept,,false,card_linking,true,1815,0.005208
+train_00263,How do I get my card into the app?,anthropic/claude-sonnet-5,v2,v1,card_linking,75.0,auto_accept,,false,card_linking,true,1892,0.005196
+train_00290,"My new card isn't in my app, how do I get it in there?",anthropic/claude-sonnet-5,v2,v1,card_linking,80.0,auto_accept,,false,card_linking,true,2113,0.005212
+train_00303,What are you exchange rates?,anthropic/claude-sonnet-5,v2,v1,exchange_rate,95.0,auto_accept,,false,exchange_rate,true,2077,0.005214
+train_00304,Do you have the best exchange rate?,anthropic/claude-sonnet-5,v2,v1,exchange_rate,90.0,auto_accept,,false,exchange_rate,true,2012,0.00522
+train_00311,What do you use to figure out the exchange rate for the card?,anthropic/claude-sonnet-5,v2,v1,exchange_rate,85.0,auto_accept,,false,exchange_rate,true,1681,0.005232
+train_00321,How is the exchange rate calculated?,anthropic/claude-sonnet-5,v2,v1,exchange_rate,97.0,auto_accept,,false,exchange_rate,true,1707,0.00522
+train_00333,How do you find the exchange rate?,anthropic/claude-sonnet-5,v2,v1,exchange_rate,90.0,auto_accept,,false,exchange_rate,true,1782,0.005218
+train_00346,How can I find your exchange rates?,anthropic/claude-sonnet-5,v2,v1,exchange_rate,90.0,auto_accept,,false,exchange_rate,true,1708,0.005218
+train_00360,What factors effect the exchange rate?,anthropic/claude-sonnet-5,v2,v1,exchange_rate,96.0,auto_accept,,false,exchange_rate,true,1977,0.00522
+train_00367,Is the exchange rate the same on weekends as the weekdays?,anthropic/claude-sonnet-5,v2,v1,exchange_rate,92.0,auto_accept,,false,exchange_rate,true,1696,0.005238
+train_00388,what are your exchange rates at?,anthropic/claude-sonnet-5,v2,v1,exchange_rate,95.0,auto_accept,,false,exchange_rate,true,2083,0.005216
+train_00416,An incorrect exchange rate was applied to an item I bought.,anthropic/claude-sonnet-5,v2,v1,card_payment_wrong_exchange_rate,97.0,auto_accept,,false,card_payment_wrong_exchange_rate,true,1744,0.005326
+train_00439,What if there is an error on the exchange rate?,anthropic/claude-sonnet-5,v2,v1,card_payment_wrong_exchange_rate,65.0,auto_accept,,false,card_payment_wrong_exchange_rate,true,2296,0.005314
+train_00483,It seems that the rate I got is incorrect.,anthropic/claude-sonnet-5,v2,v1,card_payment_wrong_exchange_rate,55.0,auto_accept,,false,card_payment_wrong_exchange_rate,true,2033,0.005316
+train_00487,My client was converting their Russian ruble into UK pound currency when they noticed their bill was much too high for the exchange. What happened?,anthropic/claude-sonnet-5,v2,v1,card_payment_wrong_exchange_rate,75.0,auto_accept,,false,card_payment_wrong_exchange_rate,true,1830,0.005368
+train_00500,Why is the exchange rate different from what I expected?,anthropic/claude-sonnet-5,v2,v1,exchange_rate,70.0,auto_accept,,false,card_payment_wrong_exchange_rate,false,1988,0.005228
+train_00510,I want to change the wrong exchange rate.,anthropic/claude-sonnet-5,v2,v1,card_payment_wrong_exchange_rate,65.0,auto_accept,,false,card_payment_wrong_exchange_rate,true,1911,0.005314
+train_00518,I believe you charged me too much to exchange my money,anthropic/claude-sonnet-5,v2,v1,exchange_charge,78.0,auto_accept,,false,card_payment_wrong_exchange_rate,false,1939,0.005226
+train_00568,"I  have been charged more than I should for the presents I bought  when abroad, the problem seems to be the exchange rate.",anthropic/claude-sonnet-5,v2,v1,card_payment_wrong_exchange_rate,92.0,auto_accept,,false,card_payment_wrong_exchange_rate,true,1782,0.00536
+train_00576,What is the $1 transaction on my account?,anthropic/claude-sonnet-5,v2,v1,card_payment_not_recognised,68.0,review,keyword_miss,true,extra_charge_on_statement,false,2026,0.005262
+train_00582,"I have a strange transaction for £1 on my statement, what is that?",anthropic/claude-sonnet-5,v2,v1,extra_charge_on_statement,62.0,auto_accept,,false,extra_charge_on_statement,true,1829,0.005278
+train_00621,"There must have been a mistake, why was I charged an extra pound?",anthropic/claude-sonnet-5,v2,v1,extra_charge_on_statement,70.0,auto_accept,,false,extra_charge_on_statement,true,2138,0.005276
+train_00623,There is an extra small charge on my card! What do I do?,anthropic/claude-sonnet-5,v2,v1,extra_charge_on_statement,75.0,auto_accept,,false,extra_charge_on_statement,true,1870,0.00527
+train_00624,"I looked at my statement, and there is a charge for 1£ that I don't recognize.  Why is it on there?",anthropic/claude-sonnet-5,v2,v1,extra_charge_on_statement,65.0,auto_accept,,false,extra_charge_on_statement,true,2287,0.005306
+train_00668,"There seems to be an additional charge of £1 on my statement, what is the reason for this?",anthropic/claude-sonnet-5,v2,v1,extra_charge_on_statement,90.0,auto_accept,,false,extra_charge_on_statement,true,1700,0.00529
+train_00673,There is a pending payment on my account that is very strange. I don't remember making this and it won't go away. Can you help me figure this out?,anthropic/claude-sonnet-5,v2,v1,pending_card_payment,55.0,auto_accept,,false,extra_charge_on_statement,false,1792,0.005286
+train_00713,Why is there a fee added to my statement?,anthropic/claude-sonnet-5,v2,v1,extra_charge_on_statement,70.0,auto_accept,,false,extra_charge_on_statement,true,2283,0.005262
+train_00733,I've been charged an extra £1 and I don't know why,anthropic/claude-sonnet-5,v2,v1,extra_charge_on_statement,70.0,auto_accept,,false,extra_charge_on_statement,true,1719,0.00527
+train_00735,Why is there a €1 charge on my statement?,anthropic/claude-sonnet-5,v2,v1,extra_charge_on_statement,80.0,auto_accept,,false,extra_charge_on_statement,true,1880,0.005266
+train_00765,I made a cash withdrawal earlier and it's showing as pending.  What does that mean?,anthropic/claude-sonnet-5,v2,v1,pending_cash_withdrawal,95.0,auto_accept,,false,pending_cash_withdrawal,true,1739,0.005304
+train_00794,"My account says there are pending funds right now from withdrawing from an ATM, but my card was declined and I never took out any money. When will that money be deposited back into my account?",anthropic/claude-sonnet-5,v2,v1,declined_cash_withdrawal,75.0,auto_accept,,false,pending_cash_withdrawal,false,1646,0.005346
+train_00795,How long before I can see that my cash withdrawal has taken place?,anthropic/claude-sonnet-5,v2,v1,pending_cash_withdrawal,85.0,auto_accept,,false,pending_cash_withdrawal,true,1800,0.005286
+train_00799,I didn't receive my money earlier and it says the transaction is still in progress. Can you fix it?,anthropic/claude-sonnet-5,v2,v1,pending_transfer,75.0,auto_accept,,false,pending_cash_withdrawal,false,1774,0.005258
+train_00850,In my account I noticed my ATM withdrawal is still pending,anthropic/claude-sonnet-5,v2,v1,pending_cash_withdrawal,95.0,auto_accept,,false,pending_cash_withdrawal,true,1744,0.005286
+train_00932,Will you be able to exchange to EUR?,anthropic/claude-sonnet-5,v2,v1,exchange_via_app,62.0,auto_accept,,false,fiat_currency_support,false,1934,0.005234
+train_00960,"I'm interested in holding and exchange for flat currencies, what do you support?",anthropic/claude-sonnet-5,v2,v1,fiat_currency_support,90.0,auto_accept,,false,fiat_currency_support,true,1751,0.005264
+train_00965,How can I exchange to EUR?,anthropic/claude-sonnet-5,v2,v1,exchange_via_app,80.0,auto_accept,,false,fiat_currency_support,false,1963,0.005228
+train_00970,"Do you hold money and if so, what currencies do you accept?",anthropic/claude-sonnet-5,v2,v1,fiat_currency_support,75.0,auto_accept,,false,fiat_currency_support,true,1943,0.005254
+train_01056,I need my card as quick as possible,anthropic/claude-sonnet-5,v2,v1,card_delivery_estimate,62.0,auto_accept,,false,card_delivery_estimate,true,1674,0.005246
+train_01076,how soon will my card arrive?,anthropic/claude-sonnet-5,v2,v1,card_arrival,90.0,auto_accept,,false,card_delivery_estimate,false,1736,0.005206
+train_01107,When can I expect my new card to get here?,anthropic/claude-sonnet-5,v2,v1,card_arrival,80.0,auto_accept,,false,card_delivery_estimate,false,1840,0.00521
+train_01111,How long does it take for something to be delivered to the U.S?,anthropic/claude-sonnet-5,v2,v1,card_delivery_estimate,85.0,auto_accept,,false,card_delivery_estimate,true,2547,0.005262
+train_01112,How long does it take for my physical card to be delivered.,anthropic/claude-sonnet-5,v2,v1,card_delivery_estimate,95.0,auto_accept,,false,card_delivery_estimate,true,1776,0.005258
+train_01121,I can't find the auto-top up option.,anthropic/claude-sonnet-5,v2,v1,automatic_top_up,90.0,auto_accept,,false,automatic_top_up,true,2586,0.00523
+train_01123,When do i activate auto top-up?,anthropic/claude-sonnet-5,v2,v1,automatic_top_up,90.0,auto_accept,,false,automatic_top_up,true,1703,0.005228
+train_01145,Is it possible to do auto top up?,anthropic/claude-sonnet-5,v2,v1,automatic_top_up,95.0,auto_accept,,false,automatic_top_up,true,1806,0.00523
+train_01147,I would like to top up my account automatically. How do I do that?,anthropic/claude-sonnet-5,v2,v1,automatic_top_up,98.0,auto_accept,,false,automatic_top_up,true,1769,0.005242
+train_01149,If I don't have much money in the account can I auto top-up?,anthropic/claude-sonnet-5,v2,v1,automatic_top_up,90.0,auto_accept,,false,automatic_top_up,true,1950,0.005242
+train_01155,"If there isn't a lot of money left, will it automatically top-up money?",anthropic/claude-sonnet-5,v2,v1,automatic_top_up,90.0,auto_accept,,false,automatic_top_up,true,2031,0.00525
+train_01156,In what increments can I top-up my card?,anthropic/claude-sonnet-5,v2,v1,top_up_limits,70.0,auto_accept,,false,automatic_top_up,false,1728,0.00522
+train_01190,When I'm traveling is it possible to add money automatically at certain time points?,anthropic/claude-sonnet-5,v2,v1,automatic_top_up,90.0,auto_accept,,false,automatic_top_up,true,1900,0.005252
+train_01199,Can I set it up to add money every few days automatically while I am traveling?,anthropic/claude-sonnet-5,v2,v1,automatic_top_up,90.0,auto_accept,,false,automatic_top_up,true,1793,0.00525
+train_01224,how can i get it to add money automatically while travelling,anthropic/claude-sonnet-5,v2,v1,automatic_top_up,85.0,auto_accept,,false,automatic_top_up,true,1927,0.005236
+train_01277,What are ways to test why my card might not be working?,anthropic/claude-sonnet-5,v2,v1,card_not_working,90.0,auto_accept,,false,card_not_working,true,1809,0.005214
+train_01330,My card stopped working after multiple transactions. Why?,anthropic/claude-sonnet-5,v2,v1,card_not_working,85.0,auto_accept,,false,card_not_working,true,1781,0.00522
+train_01355,What should I do if my physical card isn't working?,anthropic/claude-sonnet-5,v2,v1,card_not_working,90.0,auto_accept,,false,card_not_working,true,1713,0.005214
+train_01369,Can I possibly change my currency to another?,anthropic/claude-sonnet-5,v2,v1,exchange_via_app,62.0,auto_accept,,false,exchange_via_app,true,1902,0.005232
+train_01373,Can turn my money into another currency?,anthropic/claude-sonnet-5,v2,v1,exchange_via_app,70.0,auto_accept,,false,exchange_via_app,true,2199,0.005228
+train_01393,Can I use your app to exchange between USD and GBP,anthropic/claude-sonnet-5,v2,v1,exchange_via_app,90.0,auto_accept,,false,exchange_via_app,true,1901,0.00524
+train_01413,Can I use this app to exchange currencies?,anthropic/claude-sonnet-5,v2,v1,exchange_via_app,90.0,auto_accept,,false,exchange_via_app,true,1964,0.005234
+train_01432,How can I exchange currencies with this app?,anthropic/claude-sonnet-5,v2,v1,exchange_via_app,95.0,auto_accept,,false,exchange_via_app,true,1986,0.005232
+train_01470,Can this app exchange American and English currency?,anthropic/claude-sonnet-5,v2,v1,fiat_currency_support,85.0,auto_accept,,false,exchange_via_app,false,1742,0.005242
+train_01479,How do I replace a stolen card?,anthropic/claude-sonnet-5,v2,v1,lost_or_stolen_card,90.0,auto_accept,,false,lost_or_stolen_card,true,1961,0.005258
+train_01496,Can you send me a new card and block my current one. I'm in Spain and my wallet was stolen.,anthropic/claude-sonnet-5,v2,v1,lost_or_stolen_card,95.0,auto_accept,,false,lost_or_stolen_card,true,2008,0.005298
+train_01516,I have lost my card! What is my next step?,anthropic/claude-sonnet-5,v2,v1,lost_or_stolen_card,98.0,auto_accept,,false,lost_or_stolen_card,true,1672,0.005262
+train_01543,Need help with a stolen card.,anthropic/claude-sonnet-5,v2,v1,lost_or_stolen_card,97.0,auto_accept,,false,lost_or_stolen_card,true,2079,0.005256
+train_01576,Would it be possible to open up an account for children?,anthropic/claude-sonnet-5,v2,v1,age_limit,90.0,auto_accept,,false,age_limit,true,1741,0.005204
+train_01599,What are the age requirements for service?,anthropic/claude-sonnet-5,v2,v1,age_limit,98.0,auto_accept,,false,age_limit,true,1700,0.005196
+train_01616,What is the youngest age for an account?,anthropic/claude-sonnet-5,v2,v1,age_limit,98.0,auto_accept,,false,age_limit,true,1678,0.005198
+train_01617,I have kids and I'm curious at what age could they start to use your service.,anthropic/claude-sonnet-5,v2,v1,age_limit,98.0,auto_accept,,false,age_limit,true,1658,0.005218
+train_01623,Do you have a children account available?,anthropic/claude-sonnet-5,v2,v1,age_limit,85.0,auto_accept,,false,age_limit,true,1787,0.005194
+train_01672,My PIN tries have run out. Now what?,anthropic/claude-sonnet-5,v2,v1,pin_blocked,95.0,auto_accept,,false,pin_blocked,true,1868,0.005224
+train_01684,How can I unblock my PIN?,anthropic/claude-sonnet-5,v2,v1,pin_blocked,90.0,auto_accept,,false,pin_blocked,true,1737,0.005218
+train_01688,How do I make my PIN work again?,anthropic/claude-sonnet-5,v2,v1,pin_blocked,75.0,auto_accept,,false,pin_blocked,true,2048,0.005218
+train_01780,I punched in the wrong pin too many times and I'm locked out.,anthropic/claude-sonnet-5,v2,v1,pin_blocked,97.0,auto_accept,,false,pin_blocked,true,1886,0.005238
+train_01783,How come when I tried to pay contactless at the bus it didnt work?,anthropic/claude-sonnet-5,v2,v1,contactless_not_working,90.0,auto_accept,,false,contactless_not_working,true,1997,0.00525
+train_01835,Am I charged for receiving money?,anthropic/claude-sonnet-5,v2,v1,receiving_money,85.0,auto_accept,,false,top_up_by_bank_transfer_charge,false,1874,0.005208
+train_01864,is there a fee for swift transfer,anthropic/claude-sonnet-5,v2,v1,transfer_fee_charged,75.0,auto_accept,,false,top_up_by_bank_transfer_charge,false,2377,0.005248
+train_01886,"I want to top up my account by a bank transfer, but will I be charged?",anthropic/claude-sonnet-5,v2,v1,top_up_by_bank_transfer_charge,97.0,auto_accept,,false,top_up_by_bank_transfer_charge,true,1927,0.00533
+train_01891,Can I transfer using SWIFT?,anthropic/claude-sonnet-5,v2,v1,transfer_into_account,45.0,auto_accept,,false,top_up_by_bank_transfer_charge,false,2072,0.005232
+train_01915,How much would I be charged for a transfer?,anthropic/claude-sonnet-5,v2,v1,transfer_fee_charged,80.0,auto_accept,,false,top_up_by_bank_transfer_charge,false,1914,0.005252
+train_01965,"My top up hasn't gone through yet, why?",anthropic/claude-sonnet-5,v2,v1,top_up_failed,75.0,auto_accept,,false,pending_top_up,false,1966,0.005226
+train_01981,What do I do if my top-up has not gone through?,anthropic/claude-sonnet-5,v2,v1,top_up_failed,90.0,auto_accept,,false,pending_top_up,false,1744,0.005226
+train_02069,Please sort your top up! My top up has been pending for an hour already. Can you please make it go through as soon as possible. I really need the money.,anthropic/claude-sonnet-5,v2,v1,pending_top_up,95.0,auto_accept,,false,pending_top_up,true,1818,0.00528
+train_02124,Please cancel my last transaction.,anthropic/claude-sonnet-5,v2,v1,cancel_transfer,65.0,auto_accept,,false,cancel_transfer,true,1725,0.005228
+train_02149,I just realised I made the wrong payment yesterday. Can you please change it to the right account? It's my rent payment and really really needs to be in the right account by tomorrow,anthropic/claude-sonnet-5,v2,v1,cancel_transfer,78.0,auto_accept,,false,cancel_transfer,true,1709,0.00531
+train_02167,I need to cancel my recent transfer as soon as possible. I made an error there. Please help before it goes through.,anthropic/claude-sonnet-5,v2,v1,cancel_transfer,98.0,auto_accept,,false,cancel_transfer,true,1641,0.005274
+train_02178,Is it possible for a transaction to be cancelled?,anthropic/claude-sonnet-5,v2,v1,cancel_transfer,65.0,auto_accept,,false,cancel_transfer,true,1728,0.00524
+train_02191,How do I go about cancelling a transaction?,anthropic/claude-sonnet-5,v2,v1,cancel_transfer,70.0,auto_accept,,false,cancel_transfer,true,1864,0.005234
+train_02199,I made the incorrect payment for my rent yesterday and this needs to be fixed by no later than tomorrow. How can you help?,anthropic/claude-sonnet-5,v2,v1,cancel_transfer,70.0,auto_accept,,false,cancel_transfer,true,2074,0.005288
+train_02227,A transfer has been made in my account that I need to cancel.  This was a mistake on my part and I hope we can get this resolved quickly.,anthropic/claude-sonnet-5,v2,v1,cancel_transfer,90.0,auto_accept,,false,cancel_transfer,true,1744,0.005292
+train_02233,please cancel the transaction,anthropic/claude-sonnet-5,v2,v1,cancel_transfer,60.0,auto_accept,,false,cancel_transfer,true,1756,0.005222
+train_02249,Tell me if there is a limit to top-up.,anthropic/claude-sonnet-5,v2,v1,top_up_limits,98.0,auto_accept,,false,top_up_limits,true,1841,0.005226
+train_02310,Can I use as many top-ups as I want?,anthropic/claude-sonnet-5,v2,v1,top_up_limits,80.0,auto_accept,,false,top_up_limits,true,1984,0.005224
+train_02316,Is there a limit for top ups?,anthropic/claude-sonnet-5,v2,v1,top_up_limits,98.0,auto_accept,,false,top_up_limits,true,2013,0.005218
+train_02328,limits on top ups,anthropic/claude-sonnet-5,v2,v1,top_up_limits,95.0,auto_accept,,false,top_up_limits,true,1820,0.005208
+train_02340,"Hi, I used an ATM today to take money out of my account, but the amount it gave me is not the amount I requested. What should I do?",anthropic/claude-sonnet-5,v2,v1,wrong_amount_of_cash_received,90.0,auto_accept,,false,wrong_amount_of_cash_received,true,1692,0.005348
+train_02344,I didn't get all the cash I asked for,anthropic/claude-sonnet-5,v2,v1,wrong_amount_of_cash_received,90.0,auto_accept,,false,wrong_amount_of_cash_received,true,1874,0.005292
+train_02348,I wanted to withdraw $100 from the ATM but I only got $20,anthropic/claude-sonnet-5,v2,v1,wrong_amount_of_cash_received,92.0,auto_accept,,false,wrong_amount_of_cash_received,true,1934,0.005312
+train_02362,I'm at the ATM right now and it only allowed me to withdraw 10 pounds instead of my requested 30. What's going on? How can I fix this?,anthropic/claude-sonnet-5,v2,v1,wrong_amount_of_cash_received,78.0,auto_accept,,false,wrong_amount_of_cash_received,true,2151,0.005364
+train_02375,Why didn't I receive the right amount of cash at the ATM?,anthropic/claude-sonnet-5,v2,v1,wrong_amount_of_cash_received,90.0,auto_accept,,false,wrong_amount_of_cash_received,true,2000,0.005308
+train_02407,I was not able to receive the correct amount of cash.,anthropic/claude-sonnet-5,v2,v1,wrong_amount_of_cash_received,95.0,auto_accept,,false,wrong_amount_of_cash_received,true,1810,0.005298
+train_02447,i asked for 100 only got 80,anthropic/claude-sonnet-5,v2,v1,wrong_amount_of_cash_received,90.0,auto_accept,,false,wrong_amount_of_cash_received,true,1903,0.005288
+train_02455,The ATM didn't give me what I asked for but my balance says it did,anthropic/claude-sonnet-5,v2,v1,wrong_amount_of_cash_received,90.0,auto_accept,,false,wrong_amount_of_cash_received,true,1852,0.005308
+train_02464,"Hey I am standing in front of an ATM here, it only gave me 10 pounds even though I wanted to withdraw 30! Seems like the app has 30 pounds, what do I do??",anthropic/claude-sonnet-5,v2,v1,wrong_amount_of_cash_received,90.0,auto_accept,,false,wrong_amount_of_cash_received,true,1734,0.005386
+train_02478,The ATM is messed up. It gave me less than I wanted.,anthropic/claude-sonnet-5,v2,v1,wrong_amount_of_cash_received,90.0,auto_accept,,false,wrong_amount_of_cash_received,true,2014,0.005306
+train_02483,I tried pulling out money at the ATM and it gave me an incorrect amount back.,anthropic/claude-sonnet-5,v2,v1,wrong_amount_of_cash_received,90.0,auto_accept,,false,wrong_amount_of_cash_received,true,2021,0.00532
+train_02492,I asked for cash but I did not receive all the funds,anthropic/claude-sonnet-5,v2,v1,wrong_amount_of_cash_received,90.0,auto_accept,,false,wrong_amount_of_cash_received,true,1806,0.005298
+train_02519,A fee came along with me paying with card,anthropic/claude-sonnet-5,v2,v1,card_payment_fee_charged,90.0,auto_accept,,false,card_payment_fee_charged,true,1750,0.005258
+train_02545,Can you explain why my payment was charged a fee?,anthropic/claude-sonnet-5,v2,v1,card_payment_fee_charged,70.0,auto_accept,,false,card_payment_fee_charged,true,1997,0.005268
+train_02586,Let me know when you charge extra for payments please. I just checked the app earlier when I saw that there was an additional fee on one of the payments that I wasn't warned about before.,anthropic/claude-sonnet-5,v2,v1,card_payment_fee_charged,78.0,auto_accept,,false,card_payment_fee_charged,true,1801,0.005342
+train_02620,Why was the price higher when I paid with my card?,anthropic/claude-sonnet-5,v2,v1,card_payment_wrong_exchange_rate,70.0,auto_accept,,false,card_payment_fee_charged,false,1826,0.005316
+train_02638,"I see I was charged extra when I used the card.  I am not sure why, please tell me why.",anthropic/claude-sonnet-5,v2,v1,extra_charge_on_statement,62.0,auto_accept,,false,card_payment_fee_charged,false,1835,0.005292
+train_02680,"There was an extra fee when I paid with my card, why was i charged this extra fee?",anthropic/claude-sonnet-5,v2,v1,card_payment_fee_charged,90.0,auto_accept,,false,card_payment_fee_charged,true,1951,0.005288
+train_02685,When do you charge fees on accounts? I just saw a charge on my statement.,anthropic/claude-sonnet-5,v2,v1,extra_charge_on_statement,65.0,auto_accept,,false,card_payment_fee_charged,false,1793,0.005284
+train_02689,Can you explain why I was charged extra when I used the card?,anthropic/claude-sonnet-5,v2,v1,extra_charge_on_statement,65.0,auto_accept,,false,card_payment_fee_charged,false,1684,0.005272
+train_02742,Why hasn't the transaction I did to my friend arrived yet?,anthropic/claude-sonnet-5,v2,v1,transfer_not_received_by_recipient,75.0,auto_accept,,false,transfer_not_received_by_recipient,true,1827,0.00531
+train_02766,Why hasn't a transaction I did to my friend arrived yet?,anthropic/claude-sonnet-5,v2,v1,transfer_not_received_by_recipient,75.0,auto_accept,,false,transfer_not_received_by_recipient,true,1894,0.00531
+train_02771,How long does it take for the transfer to go through?,anthropic/claude-sonnet-5,v2,v1,transfer_timing,95.0,auto_accept,,false,transfer_not_received_by_recipient,false,1670,0.005224
+train_02777,The money has not yet been placed in recipients account.,anthropic/claude-sonnet-5,v2,v1,transfer_not_received_by_recipient,85.0,review,keyword_miss,true,transfer_not_received_by_recipient,true,1736,0.005296
+train_02855,I just sent money but the person I sent it to doesn't see it. What happened?,anthropic/claude-sonnet-5,v2,v1,transfer_not_received_by_recipient,85.0,auto_accept,,false,transfer_not_received_by_recipient,true,1627,0.005314
+train_02906,What currencies can I use?,anthropic/claude-sonnet-5,v2,v1,fiat_currency_support,70.0,auto_accept,,false,supported_cards_and_currencies,false,1980,0.005232
+train_02930,Do you accept all cards and currencies?,anthropic/claude-sonnet-5,v2,v1,supported_cards_and_currencies,95.0,auto_accept,,false,supported_cards_and_currencies,true,1894,0.005272
+train_02948,"I want to top up by using a credit card, which ones do you support?",anthropic/claude-sonnet-5,v2,v1,supported_cards_and_currencies,85.0,auto_accept,,false,supported_cards_and_currencies,true,1779,0.005284
+train_03002,Can you give me a virtual card?,anthropic/claude-sonnet-5,v2,v1,getting_virtual_card,90.0,auto_accept,,false,getting_virtual_card,true,1921,0.005238
+train_03007,Where is my virtual card?,anthropic/claude-sonnet-5,v2,v1,getting_virtual_card,65.0,auto_accept,,false,getting_virtual_card,true,1915,0.005234
+train_03012,How to receive virtual card?,anthropic/claude-sonnet-5,v2,v1,getting_virtual_card,90.0,auto_accept,,false,getting_virtual_card,true,1790,0.005234
+train_03024,How do I go about getting hold of a virtual card?,anthropic/claude-sonnet-5,v2,v1,getting_virtual_card,95.0,auto_accept,,false,getting_virtual_card,true,1627,0.005248
+train_03032,I'm interested in getting a virtual card.  How do I get one?,anthropic/claude-sonnet-5,v2,v1,getting_virtual_card,95.0,auto_accept,,false,getting_virtual_card,true,1892,0.005258
+train_03071,I ordered a virtual card but it hasn't come through yet,anthropic/claude-sonnet-5,v2,v1,getting_virtual_card,70.0,auto_accept,,false,getting_virtual_card,true,2350,0.005254
+train_03131,Are there any places that won't take my card?,anthropic/claude-sonnet-5,v2,v1,card_acceptance,90.0,auto_accept,,false,card_acceptance,true,1839,0.00522
+train_03146,Can I pay with my card anywhere?,anthropic/claude-sonnet-5,v2,v1,card_acceptance,90.0,auto_accept,,false,card_acceptance,true,1660,0.005222
+train_03149,What businesses can I use this card with?,anthropic/claude-sonnet-5,v2,v1,card_acceptance,85.0,auto_accept,,false,card_acceptance,true,1896,0.005218
+train_03181,Why would my top up be reverted?,anthropic/claude-sonnet-5,v2,v1,top_up_reverted,95.0,auto_accept,,false,top_up_reverted,true,1945,0.005228
+train_03204,What is the status of my top up?,anthropic/claude-sonnet-5,v2,v1,pending_top_up,85.0,auto_accept,,false,top_up_reverted,false,1781,0.005214
+train_03231,Why was my top up cancelled?,anthropic/claude-sonnet-5,v2,v1,top_up_failed,75.0,auto_accept,,false,top_up_reverted,false,1666,0.005218
+train_03288,"I attempted to complete a topup, and I thought all was well, but now the money is gone again. Has there been a glitch?",anthropic/claude-sonnet-5,v2,v1,top_up_reverted,80.0,auto_accept,,false,top_up_reverted,true,1742,0.00528
+train_03290,"I tried to add a topup to my account but the money isn't there, anymore. Did I do something wrong?",anthropic/claude-sonnet-5,v2,v1,top_up_failed,65.0,review,keyword_miss,true,top_up_reverted,false,2370,0.00526
+train_03295,Why has my top up been returned?,anthropic/claude-sonnet-5,v2,v1,top_up_reverted,90.0,auto_accept,,false,top_up_reverted,true,1890,0.005226
+train_03314,Why is my money not in my account. I have already sent it out.,anthropic/claude-sonnet-5,v2,v1,transfer_not_received_by_recipient,55.0,review,keyword_miss,true,balance_not_updated_after_cheque_or_cash_deposit,false,2064,0.005302
+train_03315,I placed a cash deposit in my account but I can't see it yet.,anthropic/claude-sonnet-5,v2,v1,balance_not_updated_after_cheque_or_cash_deposit,92.0,auto_accept,,false,balance_not_updated_after_cheque_or_cash_deposit,true,1844,0.005398
+train_03320,I did a cash deposit to my account but it doesn't show up,anthropic/claude-sonnet-5,v2,v1,balance_not_updated_after_cheque_or_cash_deposit,95.0,auto_accept,,false,balance_not_updated_after_cheque_or_cash_deposit,true,2514,0.005394
+train_03352,Waiting for the cash I deposited this morning still,anthropic/claude-sonnet-5,v2,v1,balance_not_updated_after_cheque_or_cash_deposit,90.0,auto_accept,,false,balance_not_updated_after_cheque_or_cash_deposit,true,1953,0.005388
+train_03379,The cheque I deposited isn't showing in my account,anthropic/claude-sonnet-5,v2,v1,balance_not_updated_after_cheque_or_cash_deposit,95.0,auto_accept,,false,balance_not_updated_after_cheque_or_cash_deposit,true,2000,0.005388
+train_03381,Why isn't my cash deposit showing up in my account? I deposited it this morning.,anthropic/claude-sonnet-5,v2,v1,balance_not_updated_after_cheque_or_cash_deposit,95.0,auto_accept,,false,balance_not_updated_after_cheque_or_cash_deposit,true,1801,0.00541
+train_03410,Why hasn't my balance been updated from the check deposit I made?,anthropic/claude-sonnet-5,v2,v1,balance_not_updated_after_cheque_or_cash_deposit,97.0,auto_accept,,false,balance_not_updated_after_cheque_or_cash_deposit,true,1943,0.005398
+train_03412,I haven't received the cash from the check I deposited.,anthropic/claude-sonnet-5,v2,v1,balance_not_updated_after_cheque_or_cash_deposit,90.0,auto_accept,,false,balance_not_updated_after_cheque_or_cash_deposit,true,1776,0.005388
+train_03429,"I did a cash deposit to my account, but I am not seeing it on my statement.",anthropic/claude-sonnet-5,v2,v1,balance_not_updated_after_cheque_or_cash_deposit,97.0,auto_accept,,false,balance_not_updated_after_cheque_or_cash_deposit,true,2059,0.005406
+train_03441,The cast deposit from a week ago still is not in my account. Why?,anthropic/claude-sonnet-5,v2,v1,balance_not_updated_after_cheque_or_cash_deposit,85.0,auto_accept,,false,balance_not_updated_after_cheque_or_cash_deposit,true,1853,0.005398
+train_03448,I made a check and cash deposit that wasn't credited to my account.,anthropic/claude-sonnet-5,v2,v1,balance_not_updated_after_cheque_or_cash_deposit,97.0,auto_accept,,false,balance_not_updated_after_cheque_or_cash_deposit,true,1960,0.005398
+train_03464,My account balance has not updated since I deposited a cheque recently.,anthropic/claude-sonnet-5,v2,v1,balance_not_updated_after_cheque_or_cash_deposit,98.0,auto_accept,,false,balance_not_updated_after_cheque_or_cash_deposit,true,1886,0.005396
+train_03473,I made a check deposit but the cash hasn't arrived in my account yet.,anthropic/claude-sonnet-5,v2,v1,balance_not_updated_after_cheque_or_cash_deposit,90.0,auto_accept,,false,balance_not_updated_after_cheque_or_cash_deposit,true,1767,0.005404
+train_03495,I do not recognize the card payment.,anthropic/claude-sonnet-5,v2,v1,card_payment_not_recognised,95.0,auto_accept,,false,card_payment_not_recognised,true,1993,0.005258
+train_03518,Why is there a random payment in my statement?,anthropic/claude-sonnet-5,v2,v1,extra_charge_on_statement,62.0,auto_accept,,false,card_payment_not_recognised,false,1695,0.005262
+train_03532,Is it possible someone has access to my card? I noticed that there are a couple of payments in the app I'm sure I did not make. Can you find out what's going on here?,anthropic/claude-sonnet-5,v2,v1,compromised_card,85.0,auto_accept,,false,card_payment_not_recognised,false,1948,0.005286
+train_03543,There is a record of payment I never submitted on the app.,anthropic/claude-sonnet-5,v2,v1,card_payment_not_recognised,70.0,auto_accept,,false,card_payment_not_recognised,true,1983,0.005268
+train_03544,I just looked over my statement and I don't recognize the name of a card payment.,anthropic/claude-sonnet-5,v2,v1,card_payment_not_recognised,95.0,auto_accept,,false,card_payment_not_recognised,true,1837,0.005282
+train_03555,why do I have an unknown payment?,anthropic/claude-sonnet-5,v2,v1,card_payment_not_recognised,65.0,auto_accept,,false,card_payment_not_recognised,true,1806,0.005258
+train_03597,I just checked my account on the App and there is a payment on there that I did not make.,anthropic/claude-sonnet-5,v2,v1,card_payment_not_recognised,70.0,auto_accept,,false,card_payment_not_recognised,true,1713,0.005282
+train_03601,I didn't make this payment and it's on my app,anthropic/claude-sonnet-5,v2,v1,card_payment_not_recognised,80.0,auto_accept,,false,card_payment_not_recognised,true,1810,0.005264
+train_03608,I see a strange payment in my account.,anthropic/claude-sonnet-5,v2,v1,card_payment_not_recognised,60.0,auto_accept,,false,card_payment_not_recognised,true,2027,0.005258
+train_03689,after i got married i need to change my name,anthropic/claude-sonnet-5,v2,v1,edit_personal_details,92.0,auto_accept,,false,edit_personal_details,true,1735,0.005226
+train_03720,I got a new address and need to change my old one.,anthropic/claude-sonnet-5,v2,v1,edit_personal_details,95.0,auto_accept,,false,edit_personal_details,true,1809,0.005232
+train_03739,How do I input a new address?,anthropic/claude-sonnet-5,v2,v1,edit_personal_details,90.0,auto_accept,,false,edit_personal_details,true,1965,0.005222
+train_03798,What's the reason for needing to verify my identity?,anthropic/claude-sonnet-5,v2,v1,why_verify_identity,98.0,auto_accept,,false,why_verify_identity,true,1724,0.005236
+train_03815,It's requiring me to verify my identity?,anthropic/claude-sonnet-5,v2,v1,why_verify_identity,62.0,auto_accept,,false,why_verify_identity,true,1744,0.005232
+train_03827,How does identity check work?,anthropic/claude-sonnet-5,v2,v1,why_verify_identity,80.0,auto_accept,,false,why_verify_identity,true,1806,0.00522
+train_03857,how do I speed up identity verification?,anthropic/claude-sonnet-5,v2,v1,verify_my_identity,85.0,auto_accept,,false,why_verify_identity,false,1747,0.005228
+train_03859,Why do you need to perform identity verification?,anthropic/claude-sonnet-5,v2,v1,why_verify_identity,98.0,auto_accept,,false,why_verify_identity,true,1671,0.005232
+train_03860,Why am I being asked to verify my identity?,anthropic/claude-sonnet-5,v2,v1,why_verify_identity,97.0,auto_accept,,false,why_verify_identity,true,4289,0.005234
+train_03912,Why isn't my id verifying?,anthropic/claude-sonnet-5,v2,v1,unable_to_verify_identity,85.0,auto_accept,,false,unable_to_verify_identity,true,1963,0.005258
+train_03942,What am i missing to verify my id?,anthropic/claude-sonnet-5,v2,v1,verify_my_identity,85.0,auto_accept,,false,unable_to_verify_identity,false,1819,0.005228
+train_03960,My app says that I'm not verified.,anthropic/claude-sonnet-5,v2,v1,verify_my_identity,70.0,review,keyword_miss,true,unable_to_verify_identity,false,1741,0.005228
+train_03979,Why hasn't the app verified my identity?,anthropic/claude-sonnet-5,v2,v1,unable_to_verify_identity,78.0,auto_accept,,false,unable_to_verify_identity,true,1999,0.005264
+train_03989,I'm still waiting on my identity verification.,anthropic/claude-sonnet-5,v2,v1,unable_to_verify_identity,62.0,auto_accept,,false,unable_to_verify_identity,true,2617,0.005264
+train_04001,i have yet to get my pin,anthropic/claude-sonnet-5,v2,v1,get_physical_card,90.0,auto_accept,,false,get_physical_card,true,1670,0.005214
+train_04023,My card arrived but I don't know how to get my PIN.,anthropic/claude-sonnet-5,v2,v1,get_physical_card,85.0,auto_accept,,false,get_physical_card,true,2501,0.005232
+train_04043,I didn't get a PIN yet. What gives?,anthropic/claude-sonnet-5,v2,v1,get_physical_card,90.0,auto_accept,,false,get_physical_card,true,1893,0.005228
+train_04047,When will I have access to my pin number?,anthropic/claude-sonnet-5,v2,v1,get_physical_card,90.0,auto_accept,,false,get_physical_card,true,1750,0.005218
+train_04058,Where can I find my PIN? I haven't gotten it yet.,anthropic/claude-sonnet-5,v2,v1,get_physical_card,92.0,auto_accept,,false,get_physical_card,true,1756,0.005238
+train_04060,How do I know what my PIN is?,anthropic/claude-sonnet-5,v2,v1,get_physical_card,75.0,auto_accept,,false,get_physical_card,true,2002,0.005218
+train_04112,If I can't choose my card type will I be able to use it everywhere?,anthropic/claude-sonnet-5,v2,v1,card_acceptance,70.0,auto_accept,,false,visa_or_mastercard,false,2109,0.005238
+train_04127,would a visa or mastercard be more suited to me?,anthropic/claude-sonnet-5,v2,v1,visa_or_mastercard,95.0,auto_accept,,false,visa_or_mastercard,true,1894,0.005258
+train_04132,Can I choose from either Visa or Mastercard?,anthropic/claude-sonnet-5,v2,v1,visa_or_mastercard,97.0,auto_accept,,false,visa_or_mastercard,true,1778,0.00526
+train_04151,What cards do you offer?,anthropic/claude-sonnet-5,v2,v1,supported_cards_and_currencies,70.0,auto_accept,,false,visa_or_mastercard,false,2473,0.005262
+train_04161,I'd like to apply for a Visa Card.,anthropic/claude-sonnet-5,v2,v1,visa_or_mastercard,65.0,auto_accept,,false,visa_or_mastercard,true,1672,0.005256
+train_04169,Will the card be a Mastercard or a Visa?,anthropic/claude-sonnet-5,v2,v1,visa_or_mastercard,98.0,auto_accept,,false,visa_or_mastercard,true,1905,0.00526
+train_04192,"Given a choice, I'd rather have Mastercard.",anthropic/claude-sonnet-5,v2,v1,visa_or_mastercard,90.0,auto_accept,,false,visa_or_mastercard,true,1886,0.005262
+train_04209,Do I get Visa or Mastercard?,anthropic/claude-sonnet-5,v2,v1,visa_or_mastercard,98.0,auto_accept,,false,visa_or_mastercard,true,1719,0.005254
+train_04245,Is my account able to be topped up by my friends?,anthropic/claude-sonnet-5,v2,v1,receiving_money,70.0,review,keyword_miss,true,topping_up_by_card,false,2075,0.005216
+train_04246,Can anyone else top-up for me?,anthropic/claude-sonnet-5,v2,v1,automatic_top_up,45.0,auto_accept,,false,topping_up_by_card,false,1761,0.00523
+train_04270,Is it simple to transfer money using my credit card?,anthropic/claude-sonnet-5,v2,v1,topping_up_by_card,62.0,auto_accept,,false,topping_up_by_card,true,1707,0.005248
+train_04332,I topped up my account but the money isn't there now.,anthropic/claude-sonnet-5,v2,v1,top_up_failed,70.0,auto_accept,,false,topping_up_by_card,false,1953,0.005226
+train_04343,What are the guidelines for the disposable cards?,anthropic/claude-sonnet-5,v2,v1,disposable_card_limits,78.0,auto_accept,,false,disposable_card_limits,true,1728,0.005246
+train_04352,Whats the maximum disposable virtual cards?,anthropic/claude-sonnet-5,v2,v1,disposable_card_limits,85.0,auto_accept,,false,disposable_card_limits,true,1712,0.005248
+train_04367,I need to make several disposable cards per day.,anthropic/claude-sonnet-5,v2,v1,disposable_card_limits,85.0,auto_accept,,false,disposable_card_limits,true,1829,0.005242
+train_04386,What are the restrictions on the virtual cards?,anthropic/claude-sonnet-5,v2,v1,disposable_card_limits,55.0,auto_accept,,false,disposable_card_limits,true,1718,0.005246
+train_04407,How many active transactions can I make with a disposable card?,anthropic/claude-sonnet-5,v2,v1,disposable_card_limits,90.0,auto_accept,,false,disposable_card_limits,true,1702,0.005248
+train_04415,I must make several disposable cards every day.,anthropic/claude-sonnet-5,v2,v1,disposable_card_limits,85.0,auto_accept,,false,disposable_card_limits,true,1822,0.00524
+train_04474,Please tell me how you can stop unauthorized payments from being made on my card since on this bill I see that this has happened. There are transactions that I never made from a place I've never been to.,anthropic/claude-sonnet-5,v2,v1,card_payment_not_recognised,85.0,auto_accept,,false,compromised_card,false,1813,0.005344
+train_04483,There is unusual activity on my account and I believe someone took my card.,anthropic/claude-sonnet-5,v2,v1,lost_or_stolen_card,85.0,auto_accept,,false,compromised_card,false,1893,0.005276
+train_04518,What do I do if I think someone has used my card?,anthropic/claude-sonnet-5,v2,v1,compromised_card,90.0,auto_accept,,false,compromised_card,true,1817,0.005214
+train_04522,"My card was used without my permission, what do I do?",anthropic/claude-sonnet-5,v2,v1,compromised_card,90.0,auto_accept,,false,compromised_card,true,1655,0.005214
+train_04560,Can I use my card to withdraw from my account?,anthropic/claude-sonnet-5,v2,v1,atm_support,65.0,auto_accept,,false,atm_support,true,1928,0.005206
+train_04565,Do I have to use bank approved ATM's,anthropic/claude-sonnet-5,v2,v1,atm_support,85.0,auto_accept,,false,atm_support,true,1943,0.005204
+train_04608,Can this card be used at all ATMs?,anthropic/claude-sonnet-5,v2,v1,atm_support,85.0,auto_accept,,false,atm_support,true,1837,0.005202
+train_04609,Are there any ATM's near me that accept this card?,anthropic/claude-sonnet-5,v2,v1,atm_support,90.0,auto_accept,,false,atm_support,true,1917,0.005208
+train_04614,What ATMs can I use this card at?,anthropic/claude-sonnet-5,v2,v1,atm_support,90.0,auto_accept,,false,atm_support,true,1648,0.0052
+train_04617,Where can I find a Mastercard ATM?,anthropic/claude-sonnet-5,v2,v1,atm_support,85.0,auto_accept,,false,atm_support,true,1869,0.005206
+train_04625,Where can I find an ATM?,anthropic/claude-sonnet-5,v2,v1,atm_support,90.0,auto_accept,,false,atm_support,true,2057,0.005196
+train_04657,I don't recognize the direct debit payment from the app.,anthropic/claude-sonnet-5,v2,v1,direct_debit_payment_not_recognised,90.0,auto_accept,,false,direct_debit_payment_not_recognised,true,2174,0.00531
+train_04671,I don't know where a direct debit payment came from,anthropic/claude-sonnet-5,v2,v1,direct_debit_payment_not_recognised,90.0,auto_accept,,false,direct_debit_payment_not_recognised,true,1767,0.005304
+train_04685,There is a direct debit transaction that I did not authorize,anthropic/claude-sonnet-5,v2,v1,direct_debit_payment_not_recognised,98.0,auto_accept,,false,direct_debit_payment_not_recognised,true,2103,0.00531
+train_04689,How can I dispute a direct debit transaction?,anthropic/claude-sonnet-5,v2,v1,direct_debit_payment_not_recognised,78.0,auto_accept,,false,direct_debit_payment_not_recognised,true,1802,0.005306
+train_04731,"I saw money was taken out of my account by a seller a while back. I do not recognize the seller, but I'm pretty certain I didn't make that payment. Can you track who the seller is?",anthropic/claude-sonnet-5,v2,v1,card_payment_not_recognised,75.0,auto_accept,,false,direct_debit_payment_not_recognised,false,1814,0.00535
+train_04738,I didn't set up a direct debit payment on my account.,anthropic/claude-sonnet-5,v2,v1,direct_debit_payment_not_recognised,90.0,auto_accept,,false,direct_debit_payment_not_recognised,true,1784,0.00531
+train_04755,Purchases I did not make are appearing in my bank statement?,anthropic/claude-sonnet-5,v2,v1,card_payment_not_recognised,75.0,review,keyword_miss,true,direct_debit_payment_not_recognised,false,1817,0.005274
