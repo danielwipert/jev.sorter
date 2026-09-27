@@ -13,3 +13,4 @@ One line per description/keyword version: what changed, why, and whether Claude'
 | Date | Decision | Why |
 |---|---|---|
 | 2026-09-27 | Step 2.1: keyword check (check 3) promoted from flag to **blocking**. | On Jev v1 tuning log it flags 1.5% of correct answers (rule of thumb: block if < 10%) and 14.3% of wrong ones. Decided by Dan. |
+| 2026-09-27 | **Final descriptions = v2** (used for contender B, Sonnet 5, Haiku 4.5). v3 is kept in the repo but not used. | Round 2 (v3) was a wash on tuning: 16 fixed, 18 broken; accuracy on auto-accepted at 50/70/85% was 97.0/93.4/87.8 (v2) vs 96.4/93.8/88.1 (v3), within noise. v2 is simpler, cheaper per call ($0.10 vs $0.12 per 1,000) and has fewer side effects (v3's `extra_charge_on_statement` and `pending_transfer` pulled in neighboring categories). Choosing again would mean more tuning on the same 500 messages. Decided by Dan. |

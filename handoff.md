@@ -35,11 +35,11 @@ _Rewritten at the end of every session. Keep it short._
 - **2.3** Round 2. `draft_rewrites.py` hardened (logs every call incl. failed to `drafts/vN_calls.jsonl`, counted in spend; low reasoning effort + 16k budget; `--also PAIR`). 3 failed Sonnet calls first (~$0.09). v3: 15 categories, 11 accepted as-is, 4 edited by Dan (card_arrival, declined_transfer, failed_transfer, reverted_card_payment?).
   - **Jev tuning, v1 / v2 / v3:** all answers 79.0 / 83.0 / 82.6%; auto-accepted accuracy @50: 94.2 / 97.0 / 96.4; **@70: 90.3 / 93.4 / 93.8**; @85: 85.4 / 87.8 / 88.1. $/1000: 0.071 / 0.100 / 0.121.
   - v2→v3: 16 fixed, 18 broken. Rewritten categories 75.4→82.3%, but others fell 85.7→82.7%. Side effects: new `extra_charge_on_statement` ("unfamiliar/unexplained charge") pulls in card_payment_not_recognised (6) + direct_debit (1); broader `pending_transfer` pulls in transfer_not_received_by_recipient (3); edited `card_arrival` pulls 2 card_delivery_estimate.
-  - **Open decision (Dan): which version is "final" (contender B)?** v2, v3, or v3 with the 2 side-effect rewrites reverted to v2 text.
+  - **Decision (Dan): final descriptions = v2.** Round 2 was a wash; v2 is cheaper with fewer side effects. Logged in `CHANGELOG.md`. v3 kept in repo, unused. Round 2 is reported as "tried, no net gain".
 
 ## Next session: do these, in order
-1. Settle the final description version (above), record it in `CHANGELOG.md`.
-2. Step 2.4: add `ask_claude()` to `run.py` (JSON `{"category", "confidence"}`, one call per message, same final descriptions). Test on 5, then Sonnet 5 + Haiku 4.5 on tuning (for thresholds).
+1. Step 2.4: add `ask_claude()` to `run.py` (JSON `{"category", "confidence"}`, one call per message, **v2** descriptions). Test on 5, then Sonnet 5 + Haiku 4.5 on tuning (for thresholds), then on test.
+2. Step 2.5: Jev v1 (A) and Jev v2 (B) on test; cascade (E) from B + C logs.
 
 ## Notes
 - Always pin `typesafe/jev-1.13`. Never `jev-latest` or `jev-router`.
