@@ -41,10 +41,19 @@ _Rewritten at the end of every session. Keep it short._
   - Claude confidences cluster on round numbers (Sonnet: 90, 85, 95...; Haiku: 95, 85, 92...), so realized auto-accept overshoots badly: @70% target Sonnet accepts 75.2%, Haiku 80.8% (Jev 70.0%). Rows are not at equal volume. Flag this on the results page; don't move the goalposts.
   - Calibration 90–100 band: Jev 93.6%, Sonnet 96.6%, Haiku 88.3%.
   - Caveat: v2 descriptions were tuned on Jev's tuning mistakes (tilt toward Jev); test set is the real check.
+- **2.5** Test set opened. All 4 test logs complete (1,000 each). `python analyze.py` prints and saves `results/results_table.csv`, `results/cascade.csv`, `results/calibration.csv`, plus the verdict.
+  - **Verdict (Section 10, 70% row): JEV WINS.** Jev B 91.4% vs Sonnet C 91.0% on auto-accepted (Jev +0.4); $0.10 vs $5.25 per 1,000 (52x).
+  - Test, @50/70/85 accuracy on auto-accepted: A 96.0/90.5/85.7; B 97.0/91.4/87.4; C 93.8/91.0/87.4; D 89.4/84.6/81.6. All answers: A 79.3, B 81.6, C 82.3, D 76.9%.
+  - Realized auto-accept @70% target: B 73.1%, C 75.3%, D 81.4% (Claude's round-number confidences). Supporting check at equal volume (top 730 answers): Jev 91.4 vs Sonnet 91.8, so the verdict holds at matched volume too (not part of the pre-registered rule).
+  - B vs A (the loop): +0.9 pts @70, +2.3 pts all answers (smaller than on tuning: tuning lead partly overfit).
+  - Cascade E @70: Jev handles 73.1%, overall 82.8% at $1.51/1,000 vs Sonnet alone 82.3% at $5.25.
+  - Hard hallucinations: Jev 0, Sonnet 0, Haiku 2 (0.2%): both were valid JSON followed by extra commentary ("Wait, let me reconsider…"), unreadable → counted per spec. Neither would have been auto-accepted.
+  - Calibration 90–100 band: Jev B 92.5%, Sonnet 96.0%, Haiku 89.3%.
+  - **Total spend: $11.20** (Sonnet $7.88, Haiku $2.86, Jev $0.32, drafting $0.14).
 
 ## Next session: do these, in order
-1. Step 2.5: open the test set (`--confirm-test`). Run Jev v1 (A), Jev v2 (B), Sonnet v2 (C), Haiku v2 (D) on `data/test.csv` (~$7.30 total, mostly Sonnet). Then `analyze.py`; add cascade (E) = Jev B if auto-accepted else Sonnet C, computed from logs.
-2. Step 2.6: `docs/index.md` + README, enable GitHub Pages on `/docs`.
+1. Step 2.6: write `docs/index.md` (Section 15: question, harness + gate, what was tested + pre-registered bar verbatim, results table + calibration chart, verdict, caveats, phase 2, links to logs/versions) and finish `README.md`. Enable GitHub Pages on `/docs` (Dan does this in GitHub settings; needs the branch merged to the default branch or Pages pointed at this branch).
+2. Step 2.7: buffer. Contender F (Sonnet with v1) is optional (~$5).
 
 ## Notes
 - Always pin `typesafe/jev-1.13`. Never `jev-latest` or `jev-router`.
