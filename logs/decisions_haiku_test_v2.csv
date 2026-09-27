@@ -93,3 +93,415 @@ test_00243,Does your system support multiple currency.,anthropic/claude-haiku-4.
 test_00246,"There is an incoming payment into my account, but it is deactivated. Will they still be processed?",anthropic/claude-haiku-4.5,v2,v1,receiving_money,75.0,review,keyword_miss,true,fiat_currency_support,false,801,0.001898
 test_00247,What currencies do you do exchanges for?,anthropic/claude-haiku-4.5,v2,v1,exchange_rate,92.0,auto_accept,,false,fiat_currency_support,false,840,0.001884
 test_00251,Is it permissible to hold money in multiple currencies?,anthropic/claude-haiku-4.5,v2,v1,fiat_currency_support,75.0,auto_accept,,false,fiat_currency_support,true,798,0.001903
+test_00252,Can I exchange to EUR?,anthropic/claude-haiku-4.5,v2,v1,exchange_via_app,45.0,auto_accept,,false,fiat_currency_support,false,844,0.001892
+test_00254,Do you offer additional currency options?,anthropic/claude-haiku-4.5,v2,v1,fiat_currency_support,75.0,auto_accept,,false,fiat_currency_support,true,953,0.001898
+test_00256,What fiat currencies are supported for holding and exchange?,anthropic/claude-haiku-4.5,v2,v1,fiat_currency_support,95.0,auto_accept,,false,fiat_currency_support,true,894,0.001902
+test_00257,"When considering currency holdings and exchanges, what fiat currencies are supported?",anthropic/claude-haiku-4.5,v2,v1,fiat_currency_support,95.0,auto_accept,,false,fiat_currency_support,true,931,0.001905
+test_00259,Can I hold money in other currencies?,anthropic/claude-haiku-4.5,v2,v1,fiat_currency_support,85.0,auto_accept,,false,fiat_currency_support,true,970,0.001899
+test_00261,Do you happen to do exchanges of EUR?,anthropic/claude-haiku-4.5,v2,v1,fiat_currency_support,75.0,auto_accept,,false,fiat_currency_support,true,860,0.0019
+test_00263,Can you tell me what currency I can have?,anthropic/claude-haiku-4.5,v2,v1,supported_cards_and_currencies,85.0,review,keyword_miss,true,fiat_currency_support,false,906,0.001906
+test_00266,Which fiat currencies do you support?,anthropic/claude-haiku-4.5,v2,v1,fiat_currency_support,95.0,auto_accept,,false,fiat_currency_support,true,842,0.001899
+test_00270,What kind of currency can I hold money in?,anthropic/claude-haiku-4.5,v2,v1,fiat_currency_support,78.0,auto_accept,,false,fiat_currency_support,true,1919,0.001901
+test_00272,Do you work with all fiat currencies?,anthropic/claude-haiku-4.5,v2,v1,fiat_currency_support,95.0,auto_accept,,false,fiat_currency_support,true,890,0.0019
+test_00276,How do I accept exchanges to EU?,anthropic/claude-haiku-4.5,v2,v1,exchange_via_app,35.0,review,keyword_miss,true,fiat_currency_support,false,2308,0.001894
+test_00278,Do you support the exchange of EUR from my currency.,anthropic/claude-haiku-4.5,v2,v1,exchange_rate,85.0,auto_accept,,false,fiat_currency_support,false,996,0.001887
+test_00279,What countries can I travel to and have access to their currencies?,anthropic/claude-haiku-4.5,v2,v1,country_support,75.0,auto_accept,,false,fiat_currency_support,false,860,0.001889
+test_00282,i need my card quick,anthropic/claude-haiku-4.5,v2,v1,card_arrival,75.0,auto_accept,,false,card_delivery_estimate,false,805,0.001881
+test_00283,How long will it take to get to me?,anthropic/claude-haiku-4.5,v2,v1,card_delivery_estimate,72.0,auto_accept,,false,card_delivery_estimate,true,853,0.001896
+test_00288,When can I expect my card to be delivered to the US?,anthropic/claude-haiku-4.5,v2,v1,card_delivery_estimate,95.0,auto_accept,,false,card_delivery_estimate,true,841,0.001899
+test_00289,I need my card quickly,anthropic/claude-haiku-4.5,v2,v1,card_arrival,75.0,auto_accept,,false,card_delivery_estimate,false,1945,0.001911
+test_00291,How long will it take to arrive?,anthropic/claude-haiku-4.5,v2,v1,card_delivery_estimate,60.0,auto_accept,,false,card_delivery_estimate,true,970,0.001924
+test_00296,I need it delivered on a certain date.,anthropic/claude-haiku-4.5,v2,v1,card_delivery_estimate,65.0,auto_accept,,false,card_delivery_estimate,true,858,0.001925
+test_00298,How long does it take to get my card? Can I choose when to receive it?,anthropic/claude-haiku-4.5,v2,v1,card_delivery_estimate,92.0,auto_accept,,false,card_delivery_estimate,true,828,0.001904
+test_00299,How long will it take for the card to arrive?,anthropic/claude-haiku-4.5,v2,v1,card_delivery_estimate,95.0,auto_accept,,false,card_delivery_estimate,true,851,0.001897
+test_00309,How long until my card is delivered?,anthropic/claude-haiku-4.5,v2,v1,card_delivery_estimate,95.0,auto_accept,,false,card_delivery_estimate,true,913,0.001894
+test_00313,I need my card as soon as possible.,anthropic/claude-haiku-4.5,v2,v1,card_arrival,75.0,auto_accept,,false,card_delivery_estimate,false,809,0.001885
+test_00314,I need it delivered by Saturday.,anthropic/claude-haiku-4.5,v2,v1,card_delivery_estimate,45.0,auto_accept,,false,card_delivery_estimate,true,830,0.001893
+test_00315,What's the U.S. Delivery time?,anthropic/claude-haiku-4.5,v2,v1,card_delivery_estimate,75.0,auto_accept,,false,card_delivery_estimate,true,918,0.001897
+test_00318,Can I make sure my card is delivered on a specific day?,anthropic/claude-haiku-4.5,v2,v1,card_arrival,85.0,auto_accept,,false,card_delivery_estimate,false,981,0.001889
+test_00321,Is there a limit when using auto top-up?,anthropic/claude-haiku-4.5,v2,v1,top_up_limits,95.0,auto_accept,,false,automatic_top_up,false,800,0.001897
+test_00322,Will it automatically top-up or do I need to do that manually if there isn't much cash left?,anthropic/claude-haiku-4.5,v2,v1,automatic_top_up,92.0,auto_accept,,false,automatic_top_up,true,804,0.001908
+test_00324,How do I use auto top up?,anthropic/claude-haiku-4.5,v2,v1,automatic_top_up,95.0,auto_accept,,false,automatic_top_up,true,839,0.001894
+test_00325,Can it automatically top-up money if there isn't much left?,anthropic/claude-haiku-4.5,v2,v1,automatic_top_up,95.0,auto_accept,,false,automatic_top_up,true,799,0.0019
+test_00331,"I just activated auto top-up, but it is not letting me enable it. Why not?",anthropic/claude-haiku-4.5,v2,v1,automatic_top_up,92.0,auto_accept,,false,automatic_top_up,true,828,0.001906
+test_00332,Is there an auto top-up option?,anthropic/claude-haiku-4.5,v2,v1,automatic_top_up,95.0,auto_accept,,false,automatic_top_up,true,1114,0.001895
+test_00340,What's the limit on automatic top-up?,anthropic/claude-haiku-4.5,v2,v1,automatic_top_up,85.0,auto_accept,,false,automatic_top_up,true,839,0.001896
+test_00343,Can I have a auto top-up when my account is short?,anthropic/claude-haiku-4.5,v2,v1,automatic_top_up,95.0,auto_accept,,false,automatic_top_up,true,755,0.0019
+test_00346,Will it automatically top-up money if there isn't a lot left?,anthropic/claude-haiku-4.5,v2,v1,automatic_top_up,95.0,auto_accept,,false,automatic_top_up,true,812,0.001901
+test_00347,Can I have it add money automatically in certain intervals?,anthropic/claude-haiku-4.5,v2,v1,automatic_top_up,95.0,auto_accept,,false,automatic_top_up,true,894,0.001897
+test_00350,how do I top up my money automatically,anthropic/claude-haiku-4.5,v2,v1,automatic_top_up,95.0,auto_accept,,false,automatic_top_up,true,804,0.001894
+test_00351,Can I be topped up once I hit a certain balance?,anthropic/claude-haiku-4.5,v2,v1,automatic_top_up,95.0,auto_accept,,false,automatic_top_up,true,763,0.001898
+test_00353,Is there any way to Auto top-up?,anthropic/claude-haiku-4.5,v2,v1,automatic_top_up,95.0,auto_accept,,false,automatic_top_up,true,780,0.001896
+test_00354,Can you explain where I can find the auto-top option?,anthropic/claude-haiku-4.5,v2,v1,automatic_top_up,92.0,auto_accept,,false,automatic_top_up,true,877,0.001899
+test_00358,What is the highest limit for Auto Top?,anthropic/claude-haiku-4.5,v2,v1,automatic_top_up,85.0,auto_accept,,false,automatic_top_up,true,837,0.001925
+test_00361,I can't get my card to work.,anthropic/claude-haiku-4.5,v2,v1,card_not_working,85.0,auto_accept,,false,card_not_working,true,840,0.001895
+test_00365,My card won't work.,anthropic/claude-haiku-4.5,v2,v1,card_not_working,95.0,auto_accept,,false,card_not_working,true,799,0.001892
+test_00366,Why is my card not working?,anthropic/claude-haiku-4.5,v2,v1,card_not_working,95.0,auto_accept,,false,card_not_working,true,787,0.001893
+test_00367,Can you please identify the problem with my bank card?,anthropic/claude-haiku-4.5,v2,v1,card_not_working,45.0,auto_accept,,false,card_not_working,true,839,0.001897
+test_00368,How do I unblock my card using the app?,anthropic/claude-haiku-4.5,v2,v1,pin_blocked,45.0,auto_accept,,false,card_not_working,false,815,0.001887
+test_00370,How can I get my physical card to work?,anthropic/claude-haiku-4.5,v2,v1,card_not_working,85.0,auto_accept,,false,card_not_working,true,817,0.001896
+test_00381,Is my card broken?,anthropic/claude-haiku-4.5,v2,v1,card_not_working,92.0,auto_accept,,false,card_not_working,true,849,0.001891
+test_00387,I can't use my card.,anthropic/claude-haiku-4.5,v2,v1,card_not_working,85.0,auto_accept,,false,card_not_working,true,798,0.001923
+test_00393,I have tried to use my card several times and it does not work.,anthropic/claude-haiku-4.5,v2,v1,card_not_working,95.0,auto_accept,,false,card_not_working,true,728,0.001901
+test_00402,Can I change from one currency to another?,anthropic/claude-haiku-4.5,v2,v1,exchange_via_app,45.0,auto_accept,,false,exchange_via_app,true,824,0.001895
+test_00407,Can I exchange currencies with this app?,anthropic/claude-haiku-4.5,v2,v1,exchange_via_app,95.0,auto_accept,,false,exchange_via_app,true,878,0.001894
+test_00408,How do I make an exchange from one currency to another?,anthropic/claude-haiku-4.5,v2,v1,exchange_via_app,75.0,auto_accept,,false,exchange_via_app,true,816,0.001898
+test_00410,What all currencies can be exchanged?,anthropic/claude-haiku-4.5,v2,v1,supported_cards_and_currencies,85.0,auto_accept,,false,exchange_via_app,false,1255,0.001904
+test_00411,What is the best way to exchange currency between USD and GBP using your app?,anthropic/claude-haiku-4.5,v2,v1,exchange_via_app,92.0,auto_accept,,false,exchange_via_app,true,946,0.001904
+test_00414,Is it possible to change to another currency?,anthropic/claude-haiku-4.5,v2,v1,fiat_currency_support,75.0,auto_accept,,false,exchange_via_app,false,931,0.0019
+test_00415,How do I exchange my GBP to AUD?,anthropic/claude-haiku-4.5,v2,v1,exchange_via_app,75.0,auto_accept,,false,exchange_via_app,true,928,0.001898
+test_00416,How would I use my money in a different country?,anthropic/claude-haiku-4.5,v2,v1,country_support,75.0,auto_accept,,false,exchange_via_app,false,877,0.001887
+test_00420,What is the best way to exchange currency?,anthropic/claude-haiku-4.5,v2,v1,exchange_rate,92.0,auto_accept,,false,exchange_via_app,false,864,0.001885
+test_00422,I was wondering whether exchanging currencies can be done on this app.,anthropic/claude-haiku-4.5,v2,v1,exchange_via_app,95.0,auto_accept,,false,exchange_via_app,true,841,0.0019
+test_00423,"I might need AUD instead of GBP, how to change?",anthropic/claude-haiku-4.5,v2,v1,fiat_currency_support,85.0,review,keyword_miss,true,exchange_via_app,false,766,0.001906
+test_00424,How do I go through the process of currency exchange?,anthropic/claude-haiku-4.5,v2,v1,exchange_rate,92.0,auto_accept,,false,exchange_via_app,false,869,0.001887
+test_00430,Can this app help me exchange currencies?,anthropic/claude-haiku-4.5,v2,v1,exchange_via_app,85.0,auto_accept,,false,exchange_via_app,true,888,0.001894
+test_00432,Can I exchange between GBP and USD on the app?,anthropic/claude-haiku-4.5,v2,v1,exchange_via_app,95.0,auto_accept,,false,exchange_via_app,true,840,0.001899
+test_00433,Is there currency exchange on this app?,anthropic/claude-haiku-4.5,v2,v1,exchange_rate,92.0,auto_accept,,false,exchange_via_app,false,811,0.001884
+test_00435,"I think I want AUD and not GBP, can you help?",anthropic/claude-haiku-4.5,v2,v1,fiat_currency_support,75.0,review,keyword_miss,true,exchange_via_app,false,799,0.001907
+test_00436,How do I exchange currency?,anthropic/claude-haiku-4.5,v2,v1,exchange_rate,92.0,auto_accept,,false,exchange_via_app,false,789,0.001882
+test_00439,I would like to exchange currencies,anthropic/claude-haiku-4.5,v2,v1,exchange_rate,92.0,auto_accept,,false,exchange_via_app,false,933,0.001882
+test_00440,"My entire gym bag, including my wallet, was stolen out of my locker today. Everything in my wallet is gone - how do I block the card to make it can't be used?",anthropic/claude-haiku-4.5,v2,v1,lost_or_stolen_card,95.0,auto_accept,,false,lost_or_stolen_card,true,861,0.001935
+test_00443,"I cant find my card, it's gone.",anthropic/claude-haiku-4.5,v2,v1,lost_or_stolen_card,95.0,auto_accept,,false,lost_or_stolen_card,true,1063,0.001906
+test_00445,I lost my card,anthropic/claude-haiku-4.5,v2,v1,lost_or_stolen_card,95.0,auto_accept,,false,lost_or_stolen_card,true,746,0.001875
+test_00449,Help.  I have a stolen card!,anthropic/claude-haiku-4.5,v2,v1,lost_or_stolen_card,95.0,auto_accept,,false,lost_or_stolen_card,true,11284,0.001905
+test_00450,"card is lost, please help",anthropic/claude-haiku-4.5,v2,v1,lost_or_stolen_card,95.0,auto_accept,,false,lost_or_stolen_card,true,823,0.001902
+test_00456,Can you freeze my card it was stolen,anthropic/claude-haiku-4.5,v2,v1,lost_or_stolen_card,95.0,auto_accept,,false,lost_or_stolen_card,true,993,0.001904
+test_00457,Help!  I can't find my card.,anthropic/claude-haiku-4.5,v2,v1,lost_or_stolen_card,95.0,auto_accept,,false,lost_or_stolen_card,true,847,0.001906
+test_00460,I think my card was stolen.,anthropic/claude-haiku-4.5,v2,v1,lost_or_stolen_card,95.0,auto_accept,,false,lost_or_stolen_card,true,851,0.001933
+test_00461,"Someone stole my wallet earlier today, not sure exactly when, probably on Piccadilly circus. Can you check if there were any attempts to use the card and obviously block it?",anthropic/claude-haiku-4.5,v2,v1,lost_or_stolen_card,95.0,auto_accept,,false,lost_or_stolen_card,true,926,0.001934
+test_00462,I think I lost my card . I dont know how long it has been missing. Can you see if maybe someone else has been using it?,anthropic/claude-haiku-4.5,v2,v1,lost_or_stolen_card,95.0,auto_accept,,false,lost_or_stolen_card,true,862,0.001925
+test_00463,How can I freeze a stolen card?,anthropic/claude-haiku-4.5,v2,v1,lost_or_stolen_card,95.0,auto_accept,,false,lost_or_stolen_card,true,834,0.001904
+test_00464,What should I do if my card is missing?,anthropic/claude-haiku-4.5,v2,v1,lost_or_stolen_card,95.0,auto_accept,,false,lost_or_stolen_card,true,861,0.001906
+test_00471,My card is lost! What do I do now?,anthropic/claude-haiku-4.5,v2,v1,lost_or_stolen_card,95.0,auto_accept,,false,lost_or_stolen_card,true,924,0.001937
+test_00472,I'm in Spain and my stuff has been stolen. My card was with it and I need a new one shipped and the old one frozen.,anthropic/claude-haiku-4.5,v2,v1,lost_or_stolen_card,95.0,auto_accept,,false,lost_or_stolen_card,true,836,0.001925
+test_00478,My card got stolen!,anthropic/claude-haiku-4.5,v2,v1,lost_or_stolen_card,95.0,auto_accept,,false,lost_or_stolen_card,true,843,0.001901
+test_00479,Help me please!  My card was stolen!,anthropic/claude-haiku-4.5,v2,v1,lost_or_stolen_card,95.0,auto_accept,,false,lost_or_stolen_card,true,809,0.001906
+test_00480,how old do i need to be to get an account for myself,anthropic/claude-haiku-4.5,v2,v1,age_limit,95.0,auto_accept,,false,age_limit,true,839,0.001889
+test_00485,How do I go about setting up an account for my daughter?,anthropic/claude-haiku-4.5,v2,v1,age_limit,45.0,auto_accept,,false,age_limit,true,867,0.001889
+test_00486,Is there an age minimum?,anthropic/claude-haiku-4.5,v2,v1,age_limit,95.0,auto_accept,,false,age_limit,true,820,0.001882
+test_00495,How do I open up an account for my child?,anthropic/claude-haiku-4.5,v2,v1,age_limit,85.0,auto_accept,,false,age_limit,true,825,0.001887
+test_00498,Do you offer services for children to have money saving experience?,anthropic/claude-haiku-4.5,v2,v1,age_limit,75.0,auto_accept,,false,age_limit,true,826,0.001888
+test_00506,Do my kids have to be a certain age to use this service?,anthropic/claude-haiku-4.5,v2,v1,age_limit,95.0,auto_accept,,false,age_limit,true,882,0.00189
+test_00507,How old do you have to be to be able to open an account?,anthropic/claude-haiku-4.5,v2,v1,age_limit,95.0,auto_accept,,false,age_limit,true,870,0.001891
+test_00508,Is there an age limit?,anthropic/claude-haiku-4.5,v2,v1,age_limit,95.0,auto_accept,,false,age_limit,true,779,0.001882
+test_00509,What are the age requirements for opening an account?,anthropic/claude-haiku-4.5,v2,v1,age_limit,95.0,auto_accept,,false,age_limit,true,765,0.001886
+test_00511,How old do I need to be to open an account?,anthropic/claude-haiku-4.5,v2,v1,age_limit,95.0,auto_accept,,false,age_limit,true,855,0.001888
+test_00518,What is the youngest someone can be to open an account?,anthropic/claude-haiku-4.5,v2,v1,age_limit,95.0,auto_accept,,false,age_limit,true,870,0.001863
+test_00521,Where can I view my PIN?,anthropic/claude-haiku-4.5,v2,v1,get_physical_card,85.0,auto_accept,,false,pin_blocked,false,899,0.001893
+test_00522,Will you reinstate my PIN?,anthropic/claude-haiku-4.5,v2,v1,change_pin,85.0,auto_accept,,false,pin_blocked,false,799,0.001883
+test_00527,"How do I reset my PIN, I can't seem to use my card?",anthropic/claude-haiku-4.5,v2,v1,change_pin,92.0,auto_accept,,false,pin_blocked,false,730,0.001867
+test_00528,"When I put the wrong pin too much, I got blocked, so can you help me unblock my pin",anthropic/claude-haiku-4.5,v2,v1,pin_blocked,95.0,auto_accept,,false,pin_blocked,true,805,0.001898
+test_00532,I have exceeded the number of times I can try my PIN,anthropic/claude-haiku-4.5,v2,v1,pin_blocked,95.0,auto_accept,,false,pin_blocked,true,1207,0.001888
+test_00533,How can I unblock a blocked pin number for my account?,anthropic/claude-haiku-4.5,v2,v1,pin_blocked,95.0,auto_accept,,false,pin_blocked,true,7817,0.001889
+test_00535,Can you unlock my pin? I think I entered the wrong pin too many times.,anthropic/claude-haiku-4.5,v2,v1,pin_blocked,95.0,auto_accept,,false,pin_blocked,true,812,0.001893
+test_00538,Can I unblock my card using the app?,anthropic/claude-haiku-4.5,v2,v1,pin_blocked,45.0,auto_accept,,false,pin_blocked,true,885,0.001886
+test_00542,"My account is blocked, how do I log in now",anthropic/claude-haiku-4.5,v2,v1,unable_to_verify_identity,35.0,review,keyword_miss,true,pin_blocked,false,854,0.001907
+test_00543,Why did I get blocked?,anthropic/claude-haiku-4.5,v2,v1,beneficiary_not_allowed,35.0,review,keyword_miss,true,pin_blocked,false,871,0.001897
+test_00544,Are you able to unblock my pin?,anthropic/claude-haiku-4.5,v2,v1,pin_blocked,95.0,auto_accept,,false,pin_blocked,true,792,0.001885
+test_00547,"My pins seems to be blocked, can you unblock it please",anthropic/claude-haiku-4.5,v2,v1,pin_blocked,95.0,auto_accept,,false,pin_blocked,true,817,0.001889
+test_00549,What can you do to unblock my pin?,anthropic/claude-haiku-4.5,v2,v1,pin_blocked,95.0,auto_accept,,false,pin_blocked,true,807,0.001886
+test_00553,Can I unblock my pin?,anthropic/claude-haiku-4.5,v2,v1,pin_blocked,95.0,auto_accept,,false,pin_blocked,true,1106,0.001883
+test_00554,How do I unblock my PIN?,anthropic/claude-haiku-4.5,v2,v1,pin_blocked,95.0,auto_accept,,false,pin_blocked,true,841,0.001859
+test_00555,"My card's frozen, what can I do?",anthropic/claude-haiku-4.5,v2,v1,compromised_card,75.0,auto_accept,,false,pin_blocked,false,847,0.001891
+test_00557,"Since my pin is blocked, would you help me unblock it?",anthropic/claude-haiku-4.5,v2,v1,pin_blocked,95.0,auto_accept,,false,pin_blocked,true,1098,0.00189
+test_00561,My contanctless has stopped working,anthropic/claude-haiku-4.5,v2,v1,contactless_not_working,95.0,auto_accept,,false,contactless_not_working,true,913,0.001899
+test_00564,How do I get the contactless feature to work for my card?,anthropic/claude-haiku-4.5,v2,v1,contactless_not_working,95.0,auto_accept,,false,contactless_not_working,true,1953,0.001905
+test_00565,I tried to pay contactless at the bus today and it didn't work. Any ideas why?,anthropic/claude-haiku-4.5,v2,v1,contactless_not_working,95.0,auto_accept,,false,contactless_not_working,true,876,0.001911
+test_00567,Do you know why my contactless won't work?,anthropic/claude-haiku-4.5,v2,v1,contactless_not_working,95.0,auto_accept,,false,contactless_not_working,true,2187,0.001902
+test_00568,My contactless payments have not been completed successfully.,anthropic/claude-haiku-4.5,v2,v1,contactless_not_working,95.0,auto_accept,,false,contactless_not_working,true,1329,0.001901
+test_00572,Contactless isn't working for me,anthropic/claude-haiku-4.5,v2,v1,contactless_not_working,99.0,auto_accept,,false,contactless_not_working,true,781,0.001929
+test_00573,Why wouldn't the contactless payment work when I tried to pay at the bus today?,anthropic/claude-haiku-4.5,v2,v1,contactless_not_working,95.0,auto_accept,,false,contactless_not_working,true,816,0.001909
+test_00581,I'm unable to use contactless payments for purchases.,anthropic/claude-haiku-4.5,v2,v1,contactless_not_working,95.0,auto_accept,,false,contactless_not_working,true,818,0.001902
+test_00582,"When I tried to pay for my bus ride, the contactless payment wouldn't work. How can I prevent this in the future?",anthropic/claude-haiku-4.5,v2,v1,contactless_not_working,95.0,auto_accept,,false,contactless_not_working,true,756,0.001918
+test_00594,How can I fix a problem where contactless isn't working?,anthropic/claude-haiku-4.5,v2,v1,contactless_not_working,95.0,auto_accept,,false,contactless_not_working,true,1550,0.001904
+test_00596,How do I enable contactless pay?,anthropic/claude-haiku-4.5,v2,v1,contactless_not_working,45.0,auto_accept,,false,contactless_not_working,true,852,0.001899
+test_00597,Do I need to make a regular payment before a contactless one?,anthropic/claude-haiku-4.5,v2,v1,contactless_not_working,42.0,auto_accept,,false,contactless_not_working,true,827,0.001905
+test_00598,How can I find out where my contactless works?,anthropic/claude-haiku-4.5,v2,v1,card_acceptance,75.0,auto_accept,,false,contactless_not_working,false,801,0.001887
+test_00599,Should i reinstall the payment app?,anthropic/claude-haiku-4.5,v2,v1,card_not_working,35.0,review,keyword_miss,true,contactless_not_working,false,941,0.001894
+test_00601,I would like to make a transfer. How much does it cost?,anthropic/claude-haiku-4.5,v2,v1,transfer_fee_charged,75.0,auto_accept,,false,top_up_by_bank_transfer_charge,false,830,0.0019
+test_00602,"I need to make a transfer, what will the fee be?",anthropic/claude-haiku-4.5,v2,v1,transfer_fee_charged,75.0,auto_accept,,false,top_up_by_bank_transfer_charge,false,810,0.001899
+test_00605,Are SWIFT transfers accepted?,anthropic/claude-haiku-4.5,v2,v1,supported_cards_and_currencies,45.0,auto_accept,,false,top_up_by_bank_transfer_charge,false,1071,0.001902
+test_00610,Do I have to pay any fees in order to receive money?,anthropic/claude-haiku-4.5,v2,v1,receiving_money,92.0,auto_accept,,false,top_up_by_bank_transfer_charge,false,908,0.001889
+test_00612,Will you deal with SWIFT transfers?,anthropic/claude-haiku-4.5,v2,v1,supported_cards_and_currencies,45.0,review,keyword_miss,true,top_up_by_bank_transfer_charge,false,881,0.001904
+test_00613,Will there be any charges for money received?,anthropic/claude-haiku-4.5,v2,v1,receiving_money,92.0,auto_accept,,false,top_up_by_bank_transfer_charge,false,803,0.001885
+test_00617,Will I be charged if someone needs to send me money?,anthropic/claude-haiku-4.5,v2,v1,receiving_money,95.0,auto_accept,,false,top_up_by_bank_transfer_charge,false,1242,0.001888
+test_00620,What are the charges for receiving money?,anthropic/claude-haiku-4.5,v2,v1,receiving_money,92.0,auto_accept,,false,top_up_by_bank_transfer_charge,false,845,0.001884
+test_00621,What is the fee to receive money?,anthropic/claude-haiku-4.5,v2,v1,receiving_money,85.0,auto_accept,,false,top_up_by_bank_transfer_charge,false,825,0.001884
+test_00626,Do you do SWIFT transfers?,anthropic/claude-haiku-4.5,v2,v1,transfer_into_account,45.0,review,keyword_miss,true,top_up_by_bank_transfer_charge,false,1117,0.001893
+test_00632,Can you tell me what the transfer policy is?,anthropic/claude-haiku-4.5,v2,v1,transfer_timing,35.0,auto_accept,,false,top_up_by_bank_transfer_charge,false,748,0.001886
+test_00637,Do I get charged if i am getting money?,anthropic/claude-haiku-4.5,v2,v1,receiving_money,85.0,auto_accept,,false,top_up_by_bank_transfer_charge,false,813,0.001916
+test_00642,What would lead to my top up still pending?,anthropic/claude-haiku-4.5,v2,v1,pending_top_up,95.0,auto_accept,,false,pending_top_up,true,833,0.001896
+test_00644,Is there a reason my top up hasn't gone through,anthropic/claude-haiku-4.5,v2,v1,top_up_failed,95.0,auto_accept,,false,pending_top_up,false,764,0.001897
+test_00647,"I've already topped up, but I cannot see the funds being available. What happened?",anthropic/claude-haiku-4.5,v2,v1,pending_top_up,85.0,auto_accept,,false,pending_top_up,true,1182,0.001904
+test_00649,I  do not see a top-up processed.,anthropic/claude-haiku-4.5,v2,v1,pending_top_up,85.0,auto_accept,,false,pending_top_up,true,979,0.001897
+test_00650,I topped up but it didn't complete,anthropic/claude-haiku-4.5,v2,v1,top_up_failed,95.0,auto_accept,,false,pending_top_up,false,852,0.001894
+test_00651,"So, I am a new customer and attempted to top up for the very first time today. It's already been pending for half an hour and doesn't seem to be working. I need to please get this fixed.",anthropic/claude-haiku-4.5,v2,v1,pending_top_up,85.0,auto_accept,,false,pending_top_up,true,1234,0.00196
+test_00654,Can you please make my top up go through as soon as possible. I really need the money and it has been pending for an hour already.,anthropic/claude-haiku-4.5,v2,v1,pending_top_up,95.0,auto_accept,,false,pending_top_up,true,768,0.001915
+test_00655,"What's going on with the top-up? All it says is pending, pending, pending! I use your service several times a week and have never had a problem before! What's going on here?",anthropic/claude-haiku-4.5,v2,v1,pending_top_up,95.0,auto_accept,,false,pending_top_up,true,855,0.001928
+test_00657,top-up is slow to process,anthropic/claude-haiku-4.5,v2,v1,pending_top_up,85.0,auto_accept,,false,pending_top_up,true,835,0.001893
+test_00662,So I just put my top-up into the card and it hasn't changed.,anthropic/claude-haiku-4.5,v2,v1,pending_top_up,85.0,auto_accept,,false,pending_top_up,true,772,0.001903
+test_00670,"My top up hasn't worked, it's been stuck in pending for the last couple hours",anthropic/claude-haiku-4.5,v2,v1,pending_top_up,95.0,auto_accept,,false,pending_top_up,true,811,0.001904
+test_00676,Topping up my card is not working because I believe the top up is pending,anthropic/claude-haiku-4.5,v2,v1,pending_top_up,85.0,auto_accept,,false,pending_top_up,true,790,0.001933
+test_00677,When will my top-up process?,anthropic/claude-haiku-4.5,v2,v1,pending_top_up,85.0,auto_accept,,false,pending_top_up,true,804,0.001894
+test_00678,"The top-up has a definite problem! I regularly use your service and haven't had a problem before, but now the top-up just shows pending. Please tell my why it continues to show pending.",anthropic/claude-haiku-4.5,v2,v1,pending_top_up,95.0,auto_accept,,false,pending_top_up,true,829,0.001929
+test_00679,"I tried topping up but my funds seem to be pending. I want to buy something right now, what do I do?",anthropic/claude-haiku-4.5,v2,v1,pending_top_up,95.0,auto_accept,,false,pending_top_up,true,806,0.001912
+test_00680,I made a transaction this morning and would like to revert it.,anthropic/claude-haiku-4.5,v2,v1,reverted_card_payment?,75.0,review,keyword_miss,true,cancel_transfer,false,829,0.00191
+test_00682,Can I cancel my transaction?,anthropic/claude-haiku-4.5,v2,v1,cancel_transfer,85.0,auto_accept,,false,cancel_transfer,true,784,0.001882
+test_00685,I need you to cancel a transfer that I made.  It is the wrong account number and the app won't let me stop the transaction.  Please stop it!,anthropic/claude-haiku-4.5,v2,v1,cancel_transfer,95.0,auto_accept,,false,cancel_transfer,true,834,0.00191
+test_00691,I accidentally made a transaction to the wrong account.,anthropic/claude-haiku-4.5,v2,v1,cancel_transfer,85.0,auto_accept,,false,cancel_transfer,true,840,0.001886
+test_00693,Help me cancel my transaction,anthropic/claude-haiku-4.5,v2,v1,cancel_transfer,85.0,auto_accept,,false,cancel_transfer,true,2483,0.001881
+test_00695,Can I cancel a transfer,anthropic/claude-haiku-4.5,v2,v1,cancel_transfer,95.0,auto_accept,,false,cancel_transfer,true,872,0.001911
+test_00700,I transferred the wrong amount and would like to cancel the transaction.,anthropic/claude-haiku-4.5,v2,v1,cancel_transfer,95.0,auto_accept,,false,cancel_transfer,true,885,0.001889
+test_00705,I submitted a transaction to the incorrect account.,anthropic/claude-haiku-4.5,v2,v1,cancel_transfer,85.0,auto_accept,,false,cancel_transfer,true,851,0.001885
+test_00707,I want to go back on what I did this morning,anthropic/claude-haiku-4.5,v2,v1,cancel_transfer,45.0,auto_accept,,false,cancel_transfer,true,858,0.001887
+test_00718,Can I change the amount I made on a payment that I made to the payment is correct.,anthropic/claude-haiku-4.5,v2,v1,card_payment_not_recognised,35.0,auto_accept,,false,cancel_transfer,false,921,0.001915
+test_00727,what is the top up limit,anthropic/claude-haiku-4.5,v2,v1,top_up_limits,95.0,auto_accept,,false,top_up_limits,true,870,0.001892
+test_00729,Do you have a limit to top ups?,anthropic/claude-haiku-4.5,v2,v1,top_up_limits,95.0,auto_accept,,false,top_up_limits,true,779,0.001895
+test_00736,Tell me if there are any top-up limits?,anthropic/claude-haiku-4.5,v2,v1,top_up_limits,95.0,auto_accept,,false,top_up_limits,true,1341,0.001897
+test_00741,When I top up what are the amoutn limits.,anthropic/claude-haiku-4.5,v2,v1,top_up_limits,95.0,auto_accept,,false,top_up_limits,true,826,0.001898
+test_00742,Is there a limit on top-ups?,anthropic/claude-haiku-4.5,v2,v1,top_up_limits,95.0,auto_accept,,false,top_up_limits,true,788,0.001895
+test_00744,Are there limits to top-ups?,anthropic/claude-haiku-4.5,v2,v1,top_up_limits,95.0,auto_accept,,false,top_up_limits,true,1096,0.001894
+test_00746,Do you have a top-up limit?,anthropic/claude-haiku-4.5,v2,v1,top_up_limits,95.0,auto_accept,,false,top_up_limits,true,796,0.001895
+test_00748,What is the limit to top-up?,anthropic/claude-haiku-4.5,v2,v1,top_up_limits,95.0,auto_accept,,false,top_up_limits,true,793,0.001895
+test_00755,Is there a maximum i can top up?,anthropic/claude-haiku-4.5,v2,v1,top_up_limits,95.0,auto_accept,,false,top_up_limits,true,830,0.001895
+test_00756,How can I tell if there is a top-up limit?,anthropic/claude-haiku-4.5,v2,v1,top_up_limits,95.0,auto_accept,,false,top_up_limits,true,822,0.001899
+test_00759,What are the top-up limits?,anthropic/claude-haiku-4.5,v2,v1,top_up_limits,95.0,auto_accept,,false,top_up_limits,true,827,0.001894
+test_00761,I didn't get all the cash I requested for at the ATM,anthropic/claude-haiku-4.5,v2,v1,wrong_amount_of_cash_received,85.0,auto_accept,,false,wrong_amount_of_cash_received,true,796,0.00195
+test_00764,I got less cash than the one I specified in the ATM,anthropic/claude-haiku-4.5,v2,v1,wrong_amount_of_cash_received,95.0,auto_accept,,false,wrong_amount_of_cash_received,true,820,0.001919
+test_00765,The amount of cash I received was incorrect,anthropic/claude-haiku-4.5,v2,v1,wrong_amount_of_cash_received,95.0,auto_accept,,false,wrong_amount_of_cash_received,true,806,0.001914
+test_00767,The ATM gave me the wrong amount of cash today when I went to withdraw. The app says it was more.,anthropic/claude-haiku-4.5,v2,v1,wrong_amount_of_cash_received,95.0,auto_accept,,false,wrong_amount_of_cash_received,true,841,0.00193
+test_00772,"How can I request cash back? The ATM just gave me the wrong amount, the app shows the amount that I've been actually charged though...",anthropic/claude-haiku-4.5,v2,v1,wrong_amount_of_cash_received,92.0,auto_accept,,false,wrong_amount_of_cash_received,true,901,0.001936
+test_00776,Why did I only get $20 when I tried to get $100,anthropic/claude-haiku-4.5,v2,v1,declined_cash_withdrawal,42.0,auto_accept,,false,wrong_amount_of_cash_received,false,811,0.001901
+test_00781,I asked for $100 cash but only got $20?,anthropic/claude-haiku-4.5,v2,v1,wrong_amount_of_cash_received,95.0,auto_accept,,false,wrong_amount_of_cash_received,true,985,0.001919
+test_00783,I withdrew money but the full amount wasn't dispensed.,anthropic/claude-haiku-4.5,v2,v1,wrong_amount_of_cash_received,95.0,auto_accept,,false,wrong_amount_of_cash_received,true,1292,0.001918
+test_00785,I have got out the wrong amount from an ATM. Please tell me the process to get the cash back as in app its showing the amount i have been actually received.,anthropic/claude-haiku-4.5,v2,v1,wrong_amount_of_cash_received,95.0,auto_accept,,false,wrong_amount_of_cash_received,true,854,0.001941
+test_00787,I didn't receive the right amount of cash back,anthropic/claude-haiku-4.5,v2,v1,wrong_amount_of_cash_received,95.0,auto_accept,,false,wrong_amount_of_cash_received,true,950,0.001916
+test_00789,"I didn't get as much cash as I asked for from the ATM, why?",anthropic/claude-haiku-4.5,v2,v1,wrong_amount_of_cash_received,95.0,auto_accept,,false,wrong_amount_of_cash_received,true,869,0.001924
+test_00790,What do I do if the ATM didn't give me the correct amount I withdrew? I pulled out 30 pounds and the ATM gave me 10 pounds.,anthropic/claude-haiku-4.5,v2,v1,wrong_amount_of_cash_received,95.0,auto_accept,,false,wrong_amount_of_cash_received,true,839,0.001942
+test_00794,The right amount of cash was not sent to me.,anthropic/claude-haiku-4.5,v2,v1,wrong_amount_of_cash_received,95.0,auto_accept,,false,wrong_amount_of_cash_received,true,823,0.001917
+test_00798,did not receive correct cash upon withdrawal,anthropic/claude-haiku-4.5,v2,v1,wrong_amount_of_cash_received,95.0,auto_accept,,false,wrong_amount_of_cash_received,true,783,0.001913
+test_00801,I was charged a fee after using my card and I shouldn't have been.,anthropic/claude-haiku-4.5,v2,v1,card_payment_fee_charged,92.0,auto_accept,,false,card_payment_fee_charged,true,1003,0.001912
+test_00802,Is there a reason I was charged a fee for using my card as payment? I've never had an extra fee before.,anthropic/claude-haiku-4.5,v2,v1,card_payment_fee_charged,95.0,auto_accept,,false,card_payment_fee_charged,true,929,0.001921
+test_00803,"I show another charge on my card from when I used it, why?",anthropic/claude-haiku-4.5,v2,v1,extra_charge_on_statement,85.0,auto_accept,,false,card_payment_fee_charged,false,906,0.001911
+test_00805,I used my card for a purchase and was charged a fee,anthropic/claude-haiku-4.5,v2,v1,card_payment_fee_charged,95.0,auto_accept,,false,card_payment_fee_charged,true,981,0.001908
+test_00807,There is an unauthorized fee.,anthropic/claude-haiku-4.5,v2,v1,extra_charge_on_statement,85.0,auto_accept,,false,card_payment_fee_charged,false,866,0.001902
+test_00809,Why was I charged an extra fee when paying with my card?,anthropic/claude-haiku-4.5,v2,v1,card_payment_fee_charged,95.0,auto_accept,,false,card_payment_fee_charged,true,897,0.001909
+test_00810,Why did I have to pay extra because I paid with card?,anthropic/claude-haiku-4.5,v2,v1,card_payment_fee_charged,92.0,auto_accept,,false,card_payment_fee_charged,true,980,0.001909
+test_00811,Why are there fees for card usage?,anthropic/claude-haiku-4.5,v2,v1,card_payment_fee_charged,45.0,auto_accept,,false,card_payment_fee_charged,true,876,0.001879
+test_00812,im not sure what this charge is for,anthropic/claude-haiku-4.5,v2,v1,extra_charge_on_statement,75.0,auto_accept,,false,card_payment_fee_charged,false,1155,0.001904
+test_00817,I have been charged a fee for paying with card,anthropic/claude-haiku-4.5,v2,v1,card_payment_fee_charged,95.0,auto_accept,,false,card_payment_fee_charged,true,981,0.001906
+test_00819,Why would I be charged a fee for card payment?,anthropic/claude-haiku-4.5,v2,v1,card_payment_fee_charged,92.0,auto_accept,,false,card_payment_fee_charged,true,898,0.001907
+test_00829,Someone needs to make me aware when there are extra charges for payments. I happened to be looking at the app earlier and noticed a charge associated to a payment that was extra that no one made me aware of before at all.,anthropic/claude-haiku-4.5,v2,v1,extra_charge_on_statement,85.0,auto_accept,,false,card_payment_fee_charged,false,857,0.001941
+test_00831,Why was I charged an extra fee when using a card?,anthropic/claude-haiku-4.5,v2,v1,card_payment_fee_charged,85.0,auto_accept,,false,card_payment_fee_charged,true,794,0.001908
+test_00834,Why was I charged a fee when I paid with card?,anthropic/claude-haiku-4.5,v2,v1,card_payment_fee_charged,95.0,auto_accept,,false,card_payment_fee_charged,true,874,0.001908
+test_00838,Why was a charged a fee for using the card?,anthropic/claude-haiku-4.5,v2,v1,card_payment_fee_charged,85.0,auto_accept,,false,card_payment_fee_charged,true,898,0.001907
+test_00839,They charged me for paying with my card.,anthropic/claude-haiku-4.5,v2,v1,card_payment_fee_charged,92.0,auto_accept,,false,card_payment_fee_charged,true,948,0.001905
+test_00840,"I completed an in country transfer a few days ago and was sure to check the account information several times since the transaction was completed, but the funds are still not available. What is the problem?",anthropic/claude-haiku-4.5,v2,v1,transfer_not_received_by_recipient,45.0,auto_accept,,false,transfer_not_received_by_recipient,true,1124,0.001945
+test_00842,I am still waiting for a transaction to be completed,anthropic/claude-haiku-4.5,v2,v1,pending_transfer,85.0,auto_accept,,false,transfer_not_received_by_recipient,false,1922,0.001886
+test_00844,I tried to send someone money but they haven't received it.,anthropic/claude-haiku-4.5,v2,v1,transfer_not_received_by_recipient,95.0,auto_accept,,false,transfer_not_received_by_recipient,true,864,0.001919
+test_00845,How long does it take for a transfer to get to a recipient?,anthropic/claude-haiku-4.5,v2,v1,transfer_timing,95.0,auto_accept,,false,transfer_not_received_by_recipient,false,799,0.00189
+test_00847,I transferred money but the recipient says it has not arrived. Why would this be?,anthropic/claude-haiku-4.5,v2,v1,transfer_not_received_by_recipient,95.0,auto_accept,,false,transfer_not_received_by_recipient,true,846,0.001923
+test_00857,I need to find out why my transfer didn't get there.,anthropic/claude-haiku-4.5,v2,v1,transfer_not_received_by_recipient,92.0,auto_accept,,false,transfer_not_received_by_recipient,true,865,0.001919
+test_00859,I sent money.  They haven't received it.,anthropic/claude-haiku-4.5,v2,v1,transfer_not_received_by_recipient,95.0,auto_accept,,false,transfer_not_received_by_recipient,true,1025,0.001917
+test_00862,"I'm having a problem with a money transfer.  I sent some money to a friend a couple of hours ago, and they haven't received it yet.  Why hasn't it gotten to them? How long do transfers need to go through?",anthropic/claude-haiku-4.5,v2,v1,transfer_not_received_by_recipient,85.0,auto_accept,,false,transfer_not_received_by_recipient,true,817,0.001956
+test_00864,Where is the transaction I made to a friend?,anthropic/claude-haiku-4.5,v2,v1,pending_transfer,85.0,review,keyword_miss,true,transfer_not_received_by_recipient,false,846,0.001886
+test_00867,I made a transaction and it is taking a very long time to go through.,anthropic/claude-haiku-4.5,v2,v1,pending_transfer,85.0,auto_accept,,false,transfer_not_received_by_recipient,false,906,0.001892
+test_00869,How long will it take for my transaction to be completed?,anthropic/claude-haiku-4.5,v2,v1,transfer_timing,85.0,auto_accept,,false,transfer_not_received_by_recipient,false,855,0.001888
+test_00871,I sent my friend some money a few hours ago but she has not received it yet. She really needs it. How long does this take?,anthropic/claude-haiku-4.5,v2,v1,transfer_timing,92.0,auto_accept,,false,transfer_not_received_by_recipient,false,806,0.001905
+test_00874,"How long does it take for transfers to finish?  I sent funds to my pal, and she says that she has not gotten anything.",anthropic/claude-haiku-4.5,v2,v1,transfer_not_received_by_recipient,92.0,auto_accept,,false,transfer_not_received_by_recipient,true,851,0.001935
+test_00879,I transferred some money but the recipient is having trouble withdrawing.,anthropic/claude-haiku-4.5,v2,v1,transfer_not_received_by_recipient,85.0,auto_accept,,false,transfer_not_received_by_recipient,true,803,0.001919
+test_00881,"I need support options, I want to top my card",anthropic/claude-haiku-4.5,v2,v1,topping_up_by_card,85.0,auto_accept,,false,supported_cards_and_currencies,false,920,0.001912
+test_00887,"If I only have 1 other US card, can you take it?",anthropic/claude-haiku-4.5,v2,v1,card_linking,78.0,auto_accept,,false,supported_cards_and_currencies,false,790,0.001892
+test_00889,can you tell me what cards and currencies you take?,anthropic/claude-haiku-4.5,v2,v1,supported_cards_and_currencies,95.0,auto_accept,,false,supported_cards_and_currencies,true,1065,0.001907
+test_00897,What cards and currencies do you support?,anthropic/claude-haiku-4.5,v2,v1,supported_cards_and_currencies,95.0,auto_accept,,false,supported_cards_and_currencies,true,824,0.001904
+test_00900,"When adding money, what are the currencies you take?",anthropic/claude-haiku-4.5,v2,v1,fiat_currency_support,85.0,auto_accept,,false,supported_cards_and_currencies,false,881,0.001902
+test_00903,"I want to add money but don't know what currencies you accept, can you tell me?",anthropic/claude-haiku-4.5,v2,v1,supported_cards_and_currencies,85.0,auto_accept,,false,supported_cards_and_currencies,true,803,0.001915
+test_00907,Which credit or debit cards can I use to top up?,anthropic/claude-haiku-4.5,v2,v1,supported_cards_and_currencies,85.0,auto_accept,,false,supported_cards_and_currencies,true,763,0.001939
+test_00911,What cards to do you support to top up.,anthropic/claude-haiku-4.5,v2,v1,supported_cards_and_currencies,85.0,auto_accept,,false,supported_cards_and_currencies,true,794,0.001906
+test_00912,Do you accept other currencies besides US Dollars?,anthropic/claude-haiku-4.5,v2,v1,fiat_currency_support,85.0,auto_accept,,false,supported_cards_and_currencies,false,870,0.001901
+test_00926,Can you tell me how to order a virtual card?,anthropic/claude-haiku-4.5,v2,v1,get_disposable_virtual_card,85.0,auto_accept,,false,getting_virtual_card,false,867,0.001912
+test_00927,Where is the virtual card?,anthropic/claude-haiku-4.5,v2,v1,card_arrival,85.0,auto_accept,,false,getting_virtual_card,false,811,0.001882
+test_00929,how do i get a virtual card?,anthropic/claude-haiku-4.5,v2,v1,getting_virtual_card,95.0,auto_accept,,false,getting_virtual_card,true,1027,0.001894
+test_00930,Where do I order a virtual card from?,anthropic/claude-haiku-4.5,v2,v1,getting_virtual_card,95.0,auto_accept,,false,getting_virtual_card,true,1098,0.001895
+test_00932,How can I order virtual cards?,anthropic/claude-haiku-4.5,v2,v1,getting_virtual_card,95.0,auto_accept,,false,getting_virtual_card,true,857,0.001893
+test_00937,help me obtain a virtual card,anthropic/claude-haiku-4.5,v2,v1,getting_virtual_card,95.0,auto_accept,,false,getting_virtual_card,true,850,0.001892
+test_00940,Where do I obtain my virtual card?,anthropic/claude-haiku-4.5,v2,v1,getting_virtual_card,95.0,auto_accept,,false,getting_virtual_card,true,813,0.001894
+test_00942,I want one of those virtual cards!,anthropic/claude-haiku-4.5,v2,v1,getting_virtual_card,95.0,auto_accept,,false,getting_virtual_card,true,2531,0.001894
+test_00944,Can you help me sign up for a virtual card?,anthropic/claude-haiku-4.5,v2,v1,getting_virtual_card,95.0,auto_accept,,false,getting_virtual_card,true,851,0.001897
+test_00945,Can I get a copy of the card by email?,anthropic/claude-haiku-4.5,v2,v1,getting_spare_card,75.0,auto_accept,,false,getting_virtual_card,false,837,0.001897
+test_00949,"I thought I was going to get a virtual card but I haven't received it yet, how can we resolve this?",anthropic/claude-haiku-4.5,v2,v1,getting_virtual_card,92.0,auto_accept,,false,getting_virtual_card,true,824,0.00191
+test_00952,Where can I go to get a virtual card?,anthropic/claude-haiku-4.5,v2,v1,getting_virtual_card,95.0,auto_accept,,false,getting_virtual_card,true,894,0.001896
+test_00962,Can I use my card for payment all over the world?,anthropic/claude-haiku-4.5,v2,v1,country_support,75.0,review,keyword_miss,true,card_acceptance,false,869,0.001863
+test_00964,Where can the card be used?,anthropic/claude-haiku-4.5,v2,v1,card_acceptance,85.0,auto_accept,,false,card_acceptance,true,787,0.001883
+test_00965,Can my card be used everywhere?,anthropic/claude-haiku-4.5,v2,v1,card_acceptance,92.0,auto_accept,,false,card_acceptance,true,847,0.001913
+test_00978,Which outlets accept my card?,anthropic/claude-haiku-4.5,v2,v1,card_acceptance,92.0,auto_accept,,false,card_acceptance,true,855,0.001882
+test_00979,"I am traveling to Germany, Will I be able to use my card there?",anthropic/claude-haiku-4.5,v2,v1,country_support,85.0,review,keyword_miss,true,card_acceptance,false,896,0.001892
+test_00990,places i can use the card,anthropic/claude-haiku-4.5,v2,v1,card_acceptance,85.0,auto_accept,,false,card_acceptance,true,867,0.001882
+test_00998,What can I use my card to pay for?,anthropic/claude-haiku-4.5,v2,v1,card_acceptance,85.0,auto_accept,,false,card_acceptance,true,835,0.001886
+test_00999,Who accepts my card?,anthropic/claude-haiku-4.5,v2,v1,card_acceptance,95.0,auto_accept,,false,card_acceptance,true,2047,0.001856
+test_01001,How do I fix a reverted top up?,anthropic/claude-haiku-4.5,v2,v1,top_up_reverted,92.0,auto_accept,,false,top_up_reverted,true,819,0.001901
+test_01003,"My top-up showed as complete, but it's no longer there! What's going on here?",anthropic/claude-haiku-4.5,v2,v1,top_up_reverted,92.0,auto_accept,,false,top_up_reverted,true,830,0.001912
+test_01005,It seems my top up is reverted?,anthropic/claude-haiku-4.5,v2,v1,top_up_reverted,95.0,auto_accept,,false,top_up_reverted,true,820,0.0019
+test_01010,I put money into my account for the minimum balance but the application didn't accept.,anthropic/claude-haiku-4.5,v2,v1,top_up_failed,85.0,review,keyword_miss,true,top_up_reverted,false,892,0.001903
+test_01011,Can you tell me if my top-up has been cancelled?,anthropic/claude-haiku-4.5,v2,v1,pending_top_up,75.0,auto_accept,,false,top_up_reverted,false,823,0.001899
+test_01017,I believed crypto top up with something you offered. This does not seem to be working. The money has been removed from my account though so what's going on?,anthropic/claude-haiku-4.5,v2,v1,top_up_failed,85.0,auto_accept,,false,top_up_reverted,false,837,0.001919
+test_01018,I topped up but the app reverted it,anthropic/claude-haiku-4.5,v2,v1,top_up_reverted,95.0,auto_accept,,false,top_up_reverted,true,771,0.0019
+test_01023,"When I topped up, the app reverted my funds.",anthropic/claude-haiku-4.5,v2,v1,top_up_reverted,95.0,auto_accept,,false,top_up_reverted,true,846,0.001903
+test_01025,I tryed to make a top-up with cryptocurrency but the payment was referted.,anthropic/claude-haiku-4.5,v2,v1,top_up_reverted,92.0,auto_accept,,false,top_up_reverted,true,836,0.001909
+test_01027,The app reverted my action when I topped up.,anthropic/claude-haiku-4.5,v2,v1,top_up_reverted,95.0,auto_accept,,false,top_up_reverted,true,826,0.001902
+test_01029,"I see my top-up was canceled, but why?",anthropic/claude-haiku-4.5,v2,v1,top_up_reverted,85.0,auto_accept,,false,top_up_reverted,true,765,0.001903
+test_01032,My top-up was revoked.,anthropic/claude-haiku-4.5,v2,v1,top_up_reverted,95.0,auto_accept,,false,top_up_reverted,true,828,0.001899
+test_01034,The app reverted what I topped up.,anthropic/claude-haiku-4.5,v2,v1,top_up_reverted,95.0,auto_accept,,false,top_up_reverted,true,807,0.0019
+test_01036,Im very upset as my top-up was canceled and I have no idea why.,anthropic/claude-haiku-4.5,v2,v1,top_up_failed,92.0,auto_accept,,false,top_up_reverted,false,829,0.001903
+test_01037,My top-up has been cancelled.,anthropic/claude-haiku-4.5,v2,v1,top_up_reverted,92.0,auto_accept,,false,top_up_reverted,true,900,0.001899
+test_01041,How come I don't see my deposit in my account yet?,anthropic/claude-haiku-4.5,v2,v1,balance_not_updated_after_bank_transfer,85.0,review,keyword_miss,true,balance_not_updated_after_cheque_or_cash_deposit,false,2246,0.001929
+test_01044,I made a cash deposit almost a week ago but it's still not there!! please sort this out asap I need the money,anthropic/claude-haiku-4.5,v2,v1,balance_not_updated_after_cheque_or_cash_deposit,95.0,auto_accept,,false,balance_not_updated_after_cheque_or_cash_deposit,true,963,0.001967
+test_01047,When will I see the cash I deposited this morning as available?,anthropic/claude-haiku-4.5,v2,v1,balance_not_updated_after_cheque_or_cash_deposit,92.0,auto_accept,,false,balance_not_updated_after_cheque_or_cash_deposit,true,998,0.001955
+test_01048,cash from this morning has not deposited,anthropic/claude-haiku-4.5,v2,v1,balance_not_updated_after_cheque_or_cash_deposit,85.0,auto_accept,,false,balance_not_updated_after_cheque_or_cash_deposit,true,945,0.001949
+test_01052,I made a deposit this morning but it is still pending?,anthropic/claude-haiku-4.5,v2,v1,pending_top_up,85.0,auto_accept,,false,balance_not_updated_after_cheque_or_cash_deposit,false,786,0.001898
+test_01053,cash deposit to my account has shown a red flag.,anthropic/claude-haiku-4.5,v2,v1,balance_not_updated_after_cheque_or_cash_deposit,75.0,auto_accept,,false,balance_not_updated_after_cheque_or_cash_deposit,true,1007,0.001952
+test_01055,The balance on my account wasn't updated after I made a depost.,anthropic/claude-haiku-4.5,v2,v1,balance_not_updated_after_cheque_or_cash_deposit,85.0,auto_accept,,false,balance_not_updated_after_cheque_or_cash_deposit,true,962,0.001956
+test_01057,I deposited a check but my balance is still the same.,anthropic/claude-haiku-4.5,v2,v1,balance_not_updated_after_cheque_or_cash_deposit,95.0,auto_accept,,false,balance_not_updated_after_cheque_or_cash_deposit,true,1092,0.001954
+test_01061,My bank statement doesn't show the cash deposit I made recently.,anthropic/claude-haiku-4.5,v2,v1,balance_not_updated_after_cheque_or_cash_deposit,95.0,auto_accept,,false,balance_not_updated_after_cheque_or_cash_deposit,true,943,0.001954
+test_01064,Why is the cash deposit not showing up in my account?,anthropic/claude-haiku-4.5,v2,v1,balance_not_updated_after_cheque_or_cash_deposit,95.0,auto_accept,,false,balance_not_updated_after_cheque_or_cash_deposit,true,964,0.001953
+test_01068,What happened to the cash that I tried to deposit into my account? It's gone!,anthropic/claude-haiku-4.5,v2,v1,balance_not_updated_after_cheque_or_cash_deposit,85.0,auto_accept,,false,balance_not_updated_after_cheque_or_cash_deposit,true,970,0.001959
+test_01071,I submitted a cash deposit to my account but it hasn't posted yet.,anthropic/claude-haiku-4.5,v2,v1,balance_not_updated_after_cheque_or_cash_deposit,92.0,auto_accept,,false,balance_not_updated_after_cheque_or_cash_deposit,true,1104,0.001956
+test_01072,I sent a cheque  a few days ago and nothing has happened to my account yet. Can you please check on this for me?,anthropic/claude-haiku-4.5,v2,v1,balance_not_updated_after_cheque_or_cash_deposit,92.0,auto_accept,,false,balance_not_updated_after_cheque_or_cash_deposit,true,986,0.001969
+test_01073,Has the check I deposited cleared to I can get the cash?,anthropic/claude-haiku-4.5,v2,v1,balance_not_updated_after_cheque_or_cash_deposit,85.0,auto_accept,,false,balance_not_updated_after_cheque_or_cash_deposit,true,1003,0.001955
+test_01075,How come my cash deposit is not showing up. This can't be right. There must be some mistake. Where did my cash go. You better not have lost it as I need this money asap.,anthropic/claude-haiku-4.5,v2,v1,balance_not_updated_after_cheque_or_cash_deposit,95.0,auto_accept,,false,balance_not_updated_after_cheque_or_cash_deposit,true,1018,0.001983
+test_01078,I tired to deposit some cash into my account but it's not there,anthropic/claude-haiku-4.5,v2,v1,balance_not_updated_after_cheque_or_cash_deposit,92.0,auto_accept,,false,balance_not_updated_after_cheque_or_cash_deposit,true,1370,0.001955
+test_01080,I have a strange payment in my statement,anthropic/claude-haiku-4.5,v2,v1,card_payment_not_recognised,75.0,auto_accept,,false,card_payment_not_recognised,true,938,0.001904
+test_01084,An unauthorized payment is in my app,anthropic/claude-haiku-4.5,v2,v1,card_payment_not_recognised,92.0,auto_accept,,false,card_payment_not_recognised,true,951,0.001903
+test_01089,I don't recall making that payment?,anthropic/claude-haiku-4.5,v2,v1,card_payment_not_recognised,85.0,auto_accept,,false,card_payment_not_recognised,true,937,0.001904
+test_01090,There are some payments with my card that I don't know where they are coming from. Just checked today and it's been since a couple days as well! What to I do? Can I revert this retrospectively? My card needs to be frozen immediately as well!,anthropic/claude-haiku-4.5,v2,v1,card_payment_not_recognised,92.0,auto_accept,,false,card_payment_not_recognised,true,853,0.001951
+test_01091,Has someone accessed my card there are payments I did not make that are showing up on the app.,anthropic/claude-haiku-4.5,v2,v1,compromised_card,85.0,auto_accept,,false,card_payment_not_recognised,false,827,0.001931
+test_01093,Why would there be a payment on my account I don't recognize?,anthropic/claude-haiku-4.5,v2,v1,card_payment_not_recognised,72.0,auto_accept,,false,card_payment_not_recognised,true,823,0.00191
+test_01094,I have a payment I didn't do,anthropic/claude-haiku-4.5,v2,v1,card_payment_not_recognised,85.0,auto_accept,,false,card_payment_not_recognised,true,845,0.001904
+test_01097,There is a card payment I do not recognise.,anthropic/claude-haiku-4.5,v2,v1,card_payment_not_recognised,95.0,auto_accept,,false,card_payment_not_recognised,true,806,0.001907
+test_01100,"Please put a freeze on my card,  I am worried there has been some payments on it and I don't know what for.",anthropic/claude-haiku-4.5,v2,v1,compromised_card,85.0,auto_accept,,false,card_payment_not_recognised,false,823,0.001908
+test_01102,"I'm concerned about a payment that has recently been made on my card.  I do not recognize the name that the transaction went to, can you help me?",anthropic/claude-haiku-4.5,v2,v1,card_payment_not_recognised,95.0,auto_accept,,false,card_payment_not_recognised,true,857,0.001929
+test_01103,What should I do to get transactions off of my account if I didn't make them?  My card must have been compromised and I need to freeze it asap!,anthropic/claude-haiku-4.5,v2,v1,compromised_card,95.0,auto_accept,,false,card_payment_not_recognised,false,820,0.001916
+test_01105,What can I do about some payments on my card I didn't make.  Please put a freeze on my card till we can figure this out.,anthropic/claude-haiku-4.5,v2,v1,compromised_card,92.0,auto_accept,,false,card_payment_not_recognised,false,2089,0.001911
+test_01106,I'm not familiar with a card payment.,anthropic/claude-haiku-4.5,v2,v1,card_payment_not_recognised,85.0,auto_accept,,false,card_payment_not_recognised,true,954,0.001905
+test_01110,I see a charge on my account that I don't recall making. I feel like my account may have been compromised.,anthropic/claude-haiku-4.5,v2,v1,compromised_card,85.0,auto_accept,,false,card_payment_not_recognised,false,860,0.001906
+test_01113,There's a recent charge on my card that I know I didn't make because I've never seen the name before. Can we investigate this?,anthropic/claude-haiku-4.5,v2,v1,card_payment_not_recognised,95.0,auto_accept,,false,card_payment_not_recognised,true,905,0.001925
+test_01114,Some of my card payments look different than where I purchased products from. Why is that?,anthropic/claude-haiku-4.5,v2,v1,card_payment_not_recognised,85.0,auto_accept,,false,card_payment_not_recognised,true,854,0.001914
+test_01116,I think there has been a purchase made that wasn't by me.,anthropic/claude-haiku-4.5,v2,v1,card_payment_not_recognised,92.0,review,keyword_miss,true,card_payment_not_recognised,true,919,0.00191
+test_01117,There is a fraudulent charge on my statement.,anthropic/claude-haiku-4.5,v2,v1,card_payment_not_recognised,85.0,review,keyword_miss,true,card_payment_not_recognised,true,964,0.001906
+test_01123,My address needs to be revised.,anthropic/claude-haiku-4.5,v2,v1,edit_personal_details,95.0,auto_accept,,false,edit_personal_details,true,903,0.001893
+test_01124,"got married, need to change account name",anthropic/claude-haiku-4.5,v2,v1,edit_personal_details,95.0,auto_accept,,false,edit_personal_details,true,884,0.001894
+test_01125,My address has changed.,anthropic/claude-haiku-4.5,v2,v1,edit_personal_details,95.0,auto_accept,,false,edit_personal_details,true,826,0.001891
+test_01127,I want to change my personal details.,anthropic/claude-haiku-4.5,v2,v1,edit_personal_details,95.0,auto_accept,,false,edit_personal_details,true,894,0.001894
+test_01128,I moved.  I need to update my details.,anthropic/claude-haiku-4.5,v2,v1,edit_personal_details,95.0,auto_accept,,false,edit_personal_details,true,927,0.001897
+test_01133,I need to change my account details,anthropic/claude-haiku-4.5,v2,v1,edit_personal_details,95.0,auto_accept,,false,edit_personal_details,true,872,0.001893
+test_01134,I moved.  Where do I update my details?,anthropic/claude-haiku-4.5,v2,v1,edit_personal_details,95.0,auto_accept,,false,edit_personal_details,true,974,0.001897
+test_01135,I relocated and need to change my personal details.,anthropic/claude-haiku-4.5,v2,v1,edit_personal_details,95.0,auto_accept,,false,edit_personal_details,true,777,0.001896
+test_01149,I want to change my address.,anthropic/claude-haiku-4.5,v2,v1,edit_personal_details,95.0,auto_accept,,false,edit_personal_details,true,883,0.001893
+test_01151,Can I change my information?,anthropic/claude-haiku-4.5,v2,v1,edit_personal_details,85.0,auto_accept,,false,edit_personal_details,true,984,0.001892
+test_01157,How can I edit my personal details?,anthropic/claude-haiku-4.5,v2,v1,edit_personal_details,100.0,auto_accept,,false,edit_personal_details,true,807,0.001894
+test_01159,What do I need to do to change the address on my account?,anthropic/claude-haiku-4.5,v2,v1,edit_personal_details,92.0,auto_accept,,false,edit_personal_details,true,851,0.0019
+test_01173,Why do you need so much information to verify my identity?,anthropic/claude-haiku-4.5,v2,v1,why_verify_identity,95.0,auto_accept,,false,why_verify_identity,true,895,0.001873
+test_01177,How come you need to know my identity?,anthropic/claude-haiku-4.5,v2,v1,why_verify_identity,95.0,auto_accept,,false,why_verify_identity,true,953,0.001895
+test_01178,"May I use my account now, even though the identity verification has not gone through yet?",anthropic/claude-haiku-4.5,v2,v1,unable_to_verify_identity,85.0,auto_accept,,false,why_verify_identity,false,939,0.001914
+test_01179,Do I need to verify my identity to use my account?,anthropic/claude-haiku-4.5,v2,v1,why_verify_identity,95.0,auto_accept,,false,why_verify_identity,true,900,0.001898
+test_01187,I won't verify my identity.,anthropic/claude-haiku-4.5,v2,v1,why_verify_identity,75.0,auto_accept,,false,why_verify_identity,true,802,0.001893
+test_01188,I want to skip verification of my identity.,anthropic/claude-haiku-4.5,v2,v1,why_verify_identity,75.0,auto_accept,,false,why_verify_identity,true,835,0.001895
+test_01190,Why do I have to verify my identity?,anthropic/claude-haiku-4.5,v2,v1,why_verify_identity,95.0,auto_accept,,false,why_verify_identity,true,878,0.001895
+test_01192,What other methods are there to verify my identity?,anthropic/claude-haiku-4.5,v2,v1,verify_my_identity,92.0,auto_accept,,false,why_verify_identity,false,849,0.001896
+test_01195,Can I use my account if the identity verification is not complete?,anthropic/claude-haiku-4.5,v2,v1,why_verify_identity,85.0,auto_accept,,false,why_verify_identity,true,844,0.001899
+test_01196,Why is it asking me to verify my identity,anthropic/claude-haiku-4.5,v2,v1,why_verify_identity,95.0,auto_accept,,false,why_verify_identity,true,829,0.001895
+test_01200,I cannot verify my identity,anthropic/claude-haiku-4.5,v2,v1,unable_to_verify_identity,95.0,auto_accept,,false,unable_to_verify_identity,true,948,0.001901
+test_01204,what do i do if my verification failed,anthropic/claude-haiku-4.5,v2,v1,verify_my_identity,85.0,auto_accept,,false,unable_to_verify_identity,false,806,0.001894
+test_01207,I'm having trouble verifying my ID.,anthropic/claude-haiku-4.5,v2,v1,verify_my_identity,85.0,auto_accept,,false,unable_to_verify_identity,false,879,0.001895
+test_01208,app does not recognize me,anthropic/claude-haiku-4.5,v2,v1,unable_to_verify_identity,75.0,review,keyword_miss,true,unable_to_verify_identity,true,785,0.001901
+test_01210,The app failed to verify my identity.,anthropic/claude-haiku-4.5,v2,v1,unable_to_verify_identity,95.0,auto_accept,,false,unable_to_verify_identity,true,801,0.001904
+test_01211,I can't verify my ID.,anthropic/claude-haiku-4.5,v2,v1,unable_to_verify_identity,95.0,auto_accept,,false,unable_to_verify_identity,true,913,0.001903
+test_01213,I am not being recognized by the app.,anthropic/claude-haiku-4.5,v2,v1,unable_to_verify_identity,45.0,review,keyword_miss,true,unable_to_verify_identity,true,797,0.001905
+test_01216,I am having trouble proving my identity.,anthropic/claude-haiku-4.5,v2,v1,unable_to_verify_identity,95.0,auto_accept,,false,unable_to_verify_identity,true,870,0.001904
+test_01222,I am having difficulties to verify my identity.,anthropic/claude-haiku-4.5,v2,v1,verify_my_identity,85.0,auto_accept,,false,unable_to_verify_identity,false,870,0.001895
+test_01226,"I tried verifying my ID, but it won't let me.",anthropic/claude-haiku-4.5,v2,v1,unable_to_verify_identity,85.0,auto_accept,,false,unable_to_verify_identity,true,890,0.00191
+test_01228,I am experiencing difficulty providing my identity.,anthropic/claude-haiku-4.5,v2,v1,unable_to_verify_identity,85.0,auto_accept,,false,unable_to_verify_identity,true,820,0.001904
+test_01229,I a having trouble proving my identity,anthropic/claude-haiku-4.5,v2,v1,unable_to_verify_identity,85.0,auto_accept,,false,unable_to_verify_identity,true,849,0.001903
+test_01231,Why am I not able to verify my id?,anthropic/claude-haiku-4.5,v2,v1,verify_my_identity,85.0,auto_accept,,false,unable_to_verify_identity,false,852,0.001896
+test_01233,app doesnt think its me,anthropic/claude-haiku-4.5,v2,v1,unable_to_verify_identity,85.0,review,keyword_miss,true,unable_to_verify_identity,true,840,0.001902
+test_01235,I am having issues with identity verification,anthropic/claude-haiku-4.5,v2,v1,verify_my_identity,85.0,auto_accept,,false,unable_to_verify_identity,false,829,0.001893
+test_01236,The app won't let me log in as myself.,anthropic/claude-haiku-4.5,v2,v1,passcode_forgotten,42.0,review,keyword_miss,true,unable_to_verify_identity,false,825,0.001892
+test_01237,Why can't I verify my identity?,anthropic/claude-haiku-4.5,v2,v1,why_verify_identity,95.0,auto_accept,,false,unable_to_verify_identity,false,880,0.001894
+test_01239,for some reason I am having a problem with verifying my identity.,anthropic/claude-haiku-4.5,v2,v1,unable_to_verify_identity,95.0,auto_accept,,false,unable_to_verify_identity,true,768,0.00191
+test_01241,Is the PIN delivered separately?,anthropic/claude-haiku-4.5,v2,v1,get_physical_card,85.0,auto_accept,,false,get_physical_card,true,820,0.001892
+test_01242,I do not have my pin,anthropic/claude-haiku-4.5,v2,v1,get_physical_card,95.0,auto_accept,,false,get_physical_card,true,773,0.001892
+test_01244,I cannot seem to find my PIN. Where is it?,anthropic/claude-haiku-4.5,v2,v1,get_physical_card,85.0,auto_accept,,false,get_physical_card,true,856,0.001898
+test_01251,I just got my new card but am not sure how to check its PIN.,anthropic/claude-haiku-4.5,v2,v1,get_physical_card,85.0,auto_accept,,false,get_physical_card,true,783,0.001902
+test_01253,"If I need a PIN for my card, where is it located?",anthropic/claude-haiku-4.5,v2,v1,get_physical_card,85.0,auto_accept,,false,get_physical_card,true,864,0.0019
+test_01255,And what about the Card's PIN?,anthropic/claude-haiku-4.5,v2,v1,get_physical_card,42.0,auto_accept,,false,get_physical_card,true,890,0.001894
+test_01260,Does my PIN come with my card?,anthropic/claude-haiku-4.5,v2,v1,get_physical_card,92.0,auto_accept,,false,get_physical_card,true,854,0.001894
+test_01261,Where can I find the card PIN?,anthropic/claude-haiku-4.5,v2,v1,get_physical_card,95.0,auto_accept,,false,get_physical_card,true,911,0.001894
+test_01264,"Please help in finding my card PIN, thank you!",anthropic/claude-haiku-4.5,v2,v1,get_physical_card,85.0,auto_accept,,false,get_physical_card,true,921,0.001897
+test_01268,I cannot locate the card PIN.,anthropic/claude-haiku-4.5,v2,v1,get_physical_card,92.0,auto_accept,,false,get_physical_card,true,804,0.001893
+test_01270,Where can I find my PIN?,anthropic/claude-haiku-4.5,v2,v1,get_physical_card,95.0,auto_accept,,false,get_physical_card,true,840,0.001893
+test_01272,Help me find my card pin!,anthropic/claude-haiku-4.5,v2,v1,get_physical_card,85.0,auto_accept,,false,get_physical_card,true,810,0.001893
+test_01273,Is PIN delivered separately?,anthropic/claude-haiku-4.5,v2,v1,get_physical_card,85.0,auto_accept,,false,get_physical_card,true,826,0.001891
+test_01278,What is my card's PIN?,anthropic/claude-haiku-4.5,v2,v1,get_physical_card,75.0,auto_accept,,false,get_physical_card,true,841,0.001923
+test_01283,Do you guys accept Visa or Mastercard?,anthropic/claude-haiku-4.5,v2,v1,visa_or_mastercard,95.0,auto_accept,,false,visa_or_mastercard,true,760,0.001902
+test_01286,Are both Visa and Mastercard offered?,anthropic/claude-haiku-4.5,v2,v1,visa_or_mastercard,95.0,auto_accept,,false,visa_or_mastercard,true,1743,0.001931
+test_01289,Can I get a mastercard?,anthropic/claude-haiku-4.5,v2,v1,visa_or_mastercard,85.0,auto_accept,,false,visa_or_mastercard,true,937,0.001898
+test_01292,Do I get a choice between Visa and Mastercard?,anthropic/claude-haiku-4.5,v2,v1,visa_or_mastercard,95.0,auto_accept,,false,visa_or_mastercard,true,2170,0.001904
+test_01295,May I choose between Visa and Mastercard?,anthropic/claude-haiku-4.5,v2,v1,visa_or_mastercard,95.0,auto_accept,,false,visa_or_mastercard,true,840,0.001902
+test_01299,Am I able to choose my card?,anthropic/claude-haiku-4.5,v2,v1,order_physical_card,42.0,auto_accept,,false,visa_or_mastercard,false,854,0.001894
+test_01302,How do I select a Mastercard instead of a Visa?,anthropic/claude-haiku-4.5,v2,v1,visa_or_mastercard,95.0,auto_accept,,false,visa_or_mastercard,true,844,0.001905
+test_01309,Is it possible to have both a Visa and a Mastercard from you?,anthropic/claude-haiku-4.5,v2,v1,visa_or_mastercard,95.0,auto_accept,,false,visa_or_mastercard,true,916,0.001908
+test_01313,Please give me both a visa and a master card.,anthropic/claude-haiku-4.5,v2,v1,getting_spare_card,45.0,auto_accept,,false,visa_or_mastercard,false,901,0.001897
+test_01317,Can you let me know if Visa is among the card scheme assignments?,anthropic/claude-haiku-4.5,v2,v1,visa_or_mastercard,95.0,auto_accept,,false,visa_or_mastercard,true,855,0.001906
+test_01321,WHERE IS MY MONEY I WAS USING MY CARD AND IT DISAPPEARED,anthropic/claude-haiku-4.5,v2,v1,pending_card_payment,75.0,auto_accept,,false,topping_up_by_card,false,829,0.001903
+test_01322,How can I top up by card?,anthropic/claude-haiku-4.5,v2,v1,topping_up_by_card,95.0,auto_accept,,false,topping_up_by_card,true,846,0.001909
+test_01323,What is the process for using my credit card to transfer money?,anthropic/claude-haiku-4.5,v2,v1,topping_up_by_card,45.0,auto_accept,,false,topping_up_by_card,true,753,0.001914
+test_01326,Can I top up using my car?,anthropic/claude-haiku-4.5,v2,v1,topping_up_by_card,42.0,auto_accept,,false,topping_up_by_card,true,861,0.001909
+test_01336,Can I give my friends access to my account so they can top it up for me?,anthropic/claude-haiku-4.5,v2,v1,automatic_top_up,45.0,auto_accept,,false,topping_up_by_card,false,1674,0.001904
+test_01337,"I did a top-up, but I'm not seeing it in my wallet yet.",anthropic/claude-haiku-4.5,v2,v1,pending_top_up,95.0,auto_accept,,false,topping_up_by_card,false,823,0.001904
+test_01340,Is there a way to transfer funds directly from my card?,anthropic/claude-haiku-4.5,v2,v1,card_linking,75.0,auto_accept,,false,topping_up_by_card,false,852,0.001888
+test_01344,I tried to use my card to top up but all of the money has disappeared.,anthropic/claude-haiku-4.5,v2,v1,top_up_failed,85.0,auto_accept,,false,topping_up_by_card,false,789,0.001903
+test_01345,Is it possible to use my credit card to transfer money?,anthropic/claude-haiku-4.5,v2,v1,card_linking,75.0,auto_accept,,false,topping_up_by_card,false,881,0.001888
+test_01350,Who else can top up my account,anthropic/claude-haiku-4.5,v2,v1,top_up_limits,45.0,auto_accept,,false,topping_up_by_card,false,841,0.001893
+test_01351,Why is my money gone right when I attempted to top up,anthropic/claude-haiku-4.5,v2,v1,pending_top_up,75.0,auto_accept,,false,topping_up_by_card,false,994,0.001898
+test_01352,How do i transfer money using my credit card?,anthropic/claude-haiku-4.5,v2,v1,card_linking,45.0,auto_accept,,false,topping_up_by_card,false,838,0.001886
+test_01356,I topped up my card but the money disappeared.,anthropic/claude-haiku-4.5,v2,v1,top_up_reverted,85.0,auto_accept,,false,topping_up_by_card,false,833,0.001901
+test_01357,Why don't I see my top up in my wallet?,anthropic/claude-haiku-4.5,v2,v1,pending_top_up,92.0,auto_accept,,false,topping_up_by_card,false,832,0.001898
+test_01359,Are my friends able to top up my account?,anthropic/claude-haiku-4.5,v2,v1,receiving_money,75.0,review,keyword_miss,true,topping_up_by_card,false,928,0.001886
+test_01361,Can I make many disposable cards per day?,anthropic/claude-haiku-4.5,v2,v1,disposable_card_limits,92.0,auto_accept,,false,disposable_card_limits,true,989,0.001901
+test_01362,"I need to use my disposable card multiple times a day, is there a cutoff limit?",anthropic/claude-haiku-4.5,v2,v1,disposable_card_limits,95.0,auto_accept,,false,disposable_card_limits,true,770,0.001941
+test_01370,How many disposable cards per day am I allowed to have?,anthropic/claude-haiku-4.5,v2,v1,disposable_card_limits,95.0,auto_accept,,false,disposable_card_limits,true,1835,0.001904
+test_01373,"If I have more than one disposable card, can I make five payments on each of them?",anthropic/claude-haiku-4.5,v2,v1,disposable_card_limits,92.0,auto_accept,,false,disposable_card_limits,true,870,0.001911
+test_01374,Are you able to explain the restrictions of the disposable cards?,anthropic/claude-haiku-4.5,v2,v1,disposable_card_limits,85.0,auto_accept,,false,disposable_card_limits,true,824,0.001934
+test_01375,What is the maximum number of transactions I can make with one card?,anthropic/claude-haiku-4.5,v2,v1,disposable_card_limits,45.0,auto_accept,,false,disposable_card_limits,true,776,0.00188
+test_01376,What is the limit to number of transactions I can do with a disposable card?,anthropic/claude-haiku-4.5,v2,v1,disposable_card_limits,95.0,auto_accept,,false,disposable_card_limits,true,1058,0.001908
+test_01377,How many disposable cards is the limit?,anthropic/claude-haiku-4.5,v2,v1,disposable_card_limits,95.0,auto_accept,,false,disposable_card_limits,true,789,0.0019
+test_01381,How can I create many temporary cards daily?,anthropic/claude-haiku-4.5,v2,v1,get_disposable_virtual_card,75.0,auto_accept,,false,disposable_card_limits,false,970,0.00191
+test_01385,Are there any limits to how many disposable cards I can use?,anthropic/claude-haiku-4.5,v2,v1,disposable_card_limits,95.0,auto_accept,,false,disposable_card_limits,true,980,0.001905
+test_01392,What is the limit to disposable cards you can have?,anthropic/claude-haiku-4.5,v2,v1,disposable_card_limits,95.0,auto_accept,,false,disposable_card_limits,true,961,0.001903
+test_01393,How many times can I use a disposable card?,anthropic/claude-haiku-4.5,v2,v1,disposable_card_limits,95.0,auto_accept,,false,disposable_card_limits,true,866,0.001902
+test_01398,How many transactions can I do with one disposable card?,anthropic/claude-haiku-4.5,v2,v1,disposable_card_limits,95.0,auto_accept,,false,disposable_card_limits,true,798,0.001903
+test_01399,How many times can I use the disposable virtual card I have?,anthropic/claude-haiku-4.5,v2,v1,disposable_card_limits,95.0,auto_accept,,false,disposable_card_limits,true,800,0.001905
+test_01402,Someone I don't know has used my card without permission.,anthropic/claude-haiku-4.5,v2,v1,compromised_card,95.0,auto_accept,,false,compromised_card,true,845,0.001893
+test_01406,"There are transactions I didn't make, someone else must have used my card.",anthropic/claude-haiku-4.5,v2,v1,compromised_card,95.0,auto_accept,,false,compromised_card,true,884,0.001897
+test_01407,Can you freeze my card because someone used it while I was out of town. I did not make these purchases.,anthropic/claude-haiku-4.5,v2,v1,compromised_card,95.0,auto_accept,,false,compromised_card,true,791,0.001904
+test_01410,What do I do to stop unauthorized transactions on my card? I was never in the place from which the transactions on my bill were made and I never made them. Please help!,anthropic/claude-haiku-4.5,v2,v1,compromised_card,95.0,auto_accept,,false,compromised_card,true,953,0.001917
+test_01413,"I think my identity has been stolen, can you check on unauthorized charges?",anthropic/claude-haiku-4.5,v2,v1,compromised_card,85.0,auto_accept,,false,compromised_card,true,821,0.001896
+test_01422,My card has been compromised,anthropic/claude-haiku-4.5,v2,v1,compromised_card,95.0,auto_accept,,false,compromised_card,true,795,0.001887
+test_01425,How do I freeze my account?,anthropic/claude-haiku-4.5,v2,v1,terminate_account,45.0,auto_accept,,false,compromised_card,false,823,0.001883
+test_01429,Someone else used my card!,anthropic/claude-haiku-4.5,v2,v1,compromised_card,95.0,auto_accept,,false,compromised_card,true,844,0.001887
+test_01431,"If I feel someone has my card information, can I get a new card?",anthropic/claude-haiku-4.5,v2,v1,compromised_card,95.0,auto_accept,,false,compromised_card,true,795,0.001897
+test_01432,"There are a few transaction that I don't recognize, I think someone managed to get my card details and use it.",anthropic/claude-haiku-4.5,v2,v1,compromised_card,95.0,auto_accept,,false,compromised_card,true,790,0.001905
+test_01437,What should I do if I think someone is using my card.,anthropic/claude-haiku-4.5,v2,v1,compromised_card,95.0,auto_accept,,false,compromised_card,true,857,0.001894
+test_01444,Are there any specific ATMs that this card can be used at?,anthropic/claude-haiku-4.5,v2,v1,atm_support,92.0,auto_accept,,false,atm_support,true,829,0.001895
+test_01446,Which ATM's accept my card?,anthropic/claude-haiku-4.5,v2,v1,atm_support,95.0,auto_accept,,false,atm_support,true,867,0.001889
+test_01448,Where are the locations of ATMs that accept this card?,anthropic/claude-haiku-4.5,v2,v1,atm_support,92.0,auto_accept,,false,atm_support,true,822,0.001893
+test_01450,Help me locate the nearest ATM.,anthropic/claude-haiku-4.5,v2,v1,atm_support,95.0,auto_accept,,false,atm_support,true,1685,0.001889
+test_01454,How can I withdraw money?,anthropic/claude-haiku-4.5,v2,v1,atm_support,45.0,auto_accept,,false,atm_support,true,957,0.001887
+test_01455,How many miles away is the ATM?,anthropic/claude-haiku-4.5,v2,v1,atm_support,45.0,auto_accept,,false,atm_support,true,881,0.00189
+test_01456,From where can I withdraw?,anthropic/claude-haiku-4.5,v2,v1,atm_support,75.0,auto_accept,,false,atm_support,true,784,0.001887
+test_01457,Which ATM's will accept my card?,anthropic/claude-haiku-4.5,v2,v1,atm_support,95.0,auto_accept,,false,atm_support,true,807,0.00189
+test_01462,Can someone please assist me with finding my nearest ATM?,anthropic/claude-haiku-4.5,v2,v1,atm_support,95.0,auto_accept,,false,atm_support,true,774,0.001893
+test_01465,What type of ATMs accept this card?,anthropic/claude-haiku-4.5,v2,v1,atm_support,92.0,auto_accept,,false,atm_support,true,810,0.00189
+test_01468,What ATMs can I withdraw money from?,anthropic/claude-haiku-4.5,v2,v1,atm_support,95.0,auto_accept,,false,atm_support,true,787,0.00189
+test_01474,At which ATMs can I use this card?,anthropic/claude-haiku-4.5,v2,v1,atm_support,95.0,auto_accept,,false,atm_support,true,858,0.001891

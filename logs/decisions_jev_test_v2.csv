@@ -1,0 +1,1001 @@
+message_id,message_text,model,categories_version,keywords_version,predicted,confidence,gate_result,gate_reason,keyword_miss,correct,is_correct,ms,cost_usd
+test_00000,How do I locate my card?,typesafe/jev-1.13-20260917,v2,v1,lost_or_stolen_card,57.0,auto_accept,,false,card_arrival,false,487,9.9834e-05
+test_00007,i have not received my card,typesafe/jev-1.13-20260917,v2,v1,card_arrival,100,auto_accept,,false,card_arrival,true,238,9.9792e-05
+test_00012,I still don't have my card after 2 weeks.  What should I do?,typesafe/jev-1.13-20260917,v2,v1,card_arrival,100,auto_accept,,false,card_arrival,true,187,0.000100296
+test_00014,I am still waiting for my card after 1 week.  Is this ok?,typesafe/jev-1.13-20260917,v2,v1,card_arrival,95.0,auto_accept,,false,card_arrival,true,192,0.000100254
+test_00022,How long should my new card take to arrive?,typesafe/jev-1.13-20260917,v2,v1,card_delivery_estimate,83.0,auto_accept,,false,card_arrival,false,234,9.996e-05
+test_00025,What is the tracking number for my card that was mailed?,typesafe/jev-1.13-20260917,v2,v1,card_arrival,100,auto_accept,,false,card_arrival,true,241,0.000100044
+test_00029,i want to track the card you sent,typesafe/jev-1.13-20260917,v2,v1,card_arrival,100,auto_accept,,false,card_arrival,true,239,9.9876e-05
+test_00030,My card hasn't arrived yet.,typesafe/jev-1.13-20260917,v2,v1,card_arrival,100,auto_accept,,false,card_arrival,true,199,9.9834e-05
+test_00032,How do I know when my card will arrive?,typesafe/jev-1.13-20260917,v2,v1,card_delivery_estimate,51.0,auto_accept,,false,card_arrival,false,224,9.996e-05
+test_00043,"I have received my card, can you help me put it in the app?",typesafe/jev-1.13-20260917,v2,v1,card_linking,96.0,auto_accept,,false,card_linking,true,189,0.000100212
+test_00044,How do I link a card that I already have?,typesafe/jev-1.13-20260917,v2,v1,card_linking,100,auto_accept,,false,card_linking,true,196,0.000100002
+test_00045,"I received my new card, but I don't see it in the app anywhere.  What do I do?",typesafe/jev-1.13-20260917,v2,v1,card_linking,60.0,auto_accept,,false,card_linking,true,215,0.000100506
+test_00048,Can I put my old card back into the system? I just found it/,typesafe/jev-1.13-20260917,v2,v1,activate_my_card,65.0,auto_accept,,false,card_linking,false,342,0.000100212
+test_00051,Can I link an existing card?,typesafe/jev-1.13-20260917,v2,v1,card_linking,100,auto_accept,,false,card_linking,true,258,9.9834e-05
+test_00052,How do I link one your card if I have one already?,typesafe/jev-1.13-20260917,v2,v1,card_linking,100,auto_accept,,false,card_linking,true,268,0.000100086
+test_00056,Can you tell me how to link one of your cards that I already have?,typesafe/jev-1.13-20260917,v2,v1,card_linking,100,auto_accept,,false,card_linking,true,243,0.000100212
+test_00057,How do I view the card I received in the app?,typesafe/jev-1.13-20260917,v2,v1,getting_virtual_card,81.0,auto_accept,,false,card_linking,false,236,0.000100044
+test_00063,How do I link this new card?,typesafe/jev-1.13-20260917,v2,v1,card_linking,100,auto_accept,,false,card_linking,true,187,9.9876e-05
+test_00067,how do I link a card I already have?,typesafe/jev-1.13-20260917,v2,v1,card_linking,100,auto_accept,,false,card_linking,true,189,9.996e-05
+test_00069,Can you please show me where I can find the location to link my card?,typesafe/jev-1.13-20260917,v2,v1,card_linking,100,auto_accept,,false,card_linking,true,232,0.000100212
+test_00070,Where do I go if I want to link my new card?,typesafe/jev-1.13-20260917,v2,v1,card_linking,100,auto_accept,,false,card_linking,true,205,0.000100086
+test_00073,How do I link my card,typesafe/jev-1.13-20260917,v2,v1,card_linking,100,auto_accept,,false,card_linking,true,244,9.9792e-05
+test_00076,"Could you help me reactivate my card? It was previously lost, but I found it this morning in my jacket.",typesafe/jev-1.13-20260917,v2,v1,activate_my_card,85.0,auto_accept,,false,card_linking,false,199,0.00010059
+test_00080,I need to know your exchange rates.,typesafe/jev-1.13-20260917,v2,v1,exchange_rate,100,auto_accept,,false,exchange_rate,true,208,9.9876e-05
+test_00087,Please advise what is the exchange rate,typesafe/jev-1.13-20260917,v2,v1,exchange_rate,100,auto_accept,,false,exchange_rate,true,261,9.9834e-05
+test_00088,How are exchange rates calculated?,typesafe/jev-1.13-20260917,v2,v1,exchange_rate,100,auto_accept,,false,exchange_rate,true,196,9.9792e-05
+test_00093,Is it a good time to exchange?,typesafe/jev-1.13-20260917,v2,v1,exchange_rate,98.0,auto_accept,,false,exchange_rate,true,253,9.9876e-05
+test_00096,Can you tell me where you get your exchange rates?,typesafe/jev-1.13-20260917,v2,v1,exchange_rate,100,auto_accept,,false,exchange_rate,true,209,0.000100002
+test_00100,What is the base of the exchange rates?,typesafe/jev-1.13-20260917,v2,v1,exchange_rate,100,auto_accept,,false,exchange_rate,true,207,9.9918e-05
+test_00102,The exchange rates are?,typesafe/jev-1.13-20260917,v2,v1,exchange_rate,100,auto_accept,,false,exchange_rate,true,227,9.975e-05
+test_00104,What foreign exchange rate will you use?,typesafe/jev-1.13-20260917,v2,v1,exchange_rate,100,auto_accept,,false,exchange_rate,true,280,9.9876e-05
+test_00108,How do your exchange rates work?,typesafe/jev-1.13-20260917,v2,v1,exchange_rate,100,auto_accept,,false,exchange_rate,true,227,9.9834e-05
+test_00109,what is the exchange rate?,typesafe/jev-1.13-20260917,v2,v1,exchange_rate,100,auto_accept,,false,exchange_rate,true,250,9.9792e-05
+test_00111,How are you determining your exchange rates?,typesafe/jev-1.13-20260917,v2,v1,exchange_rate,100,auto_accept,,false,exchange_rate,true,217,9.9876e-05
+test_00120,I purchased something in a foreign currency but the rate applied is wrong,typesafe/jev-1.13-20260917,v2,v1,card_payment_wrong_exchange_rate,100,auto_accept,,false,card_payment_wrong_exchange_rate,true,249,0.000100086
+test_00123,The exchange rate was wrong when I bought something outside the country.,typesafe/jev-1.13-20260917,v2,v1,card_payment_wrong_exchange_rate,100,auto_accept,,false,card_payment_wrong_exchange_rate,true,233,0.000100086
+test_00124,The exchange rate on my purchase is wrong.,typesafe/jev-1.13-20260917,v2,v1,card_payment_wrong_exchange_rate,100,auto_accept,,false,card_payment_wrong_exchange_rate,true,282,9.9918e-05
+test_00134,I bought an item and noticed the exchange rate was not correct.,typesafe/jev-1.13-20260917,v2,v1,card_payment_wrong_exchange_rate,100,auto_accept,,false,card_payment_wrong_exchange_rate,true,241,0.000100086
+test_00135,I bought something overseas and the wrong exchange rate is on my statement.,typesafe/jev-1.13-20260917,v2,v1,card_payment_wrong_exchange_rate,100,auto_accept,,false,card_payment_wrong_exchange_rate,true,264,0.000100128
+test_00139,I purchased an item and the exchange rate I was given was incorrect.,typesafe/jev-1.13-20260917,v2,v1,card_payment_wrong_exchange_rate,100,auto_accept,,false,card_payment_wrong_exchange_rate,true,271,0.000100128
+test_00141,"When I made a purchase last Saturday, I was charged extra. Did I receive the right exchange rate?",typesafe/jev-1.13-20260917,v2,v1,card_payment_wrong_exchange_rate,98.0,auto_accept,,false,card_payment_wrong_exchange_rate,true,249,0.000100422
+test_00144,"Hi, I have been overcharged for my payment last Saturday. I guess exchange rate was wrong.",typesafe/jev-1.13-20260917,v2,v1,card_payment_wrong_exchange_rate,99.0,auto_accept,,false,card_payment_wrong_exchange_rate,true,234,0.000100422
+test_00149,I wasn't applied the correct exchange rate for an item I bought,typesafe/jev-1.13-20260917,v2,v1,card_payment_wrong_exchange_rate,100,auto_accept,,false,card_payment_wrong_exchange_rate,true,235,0.000100086
+test_00152,I paid for something in foreign currency but noticed the exchange rate is incorrect.,typesafe/jev-1.13-20260917,v2,v1,card_payment_wrong_exchange_rate,100,auto_accept,,false,card_payment_wrong_exchange_rate,true,267,0.00010017
+test_00157,Your exchange rate is totally wrong for my card payment,typesafe/jev-1.13-20260917,v2,v1,card_payment_wrong_exchange_rate,100,auto_accept,,false,card_payment_wrong_exchange_rate,true,296,9.996e-05
+test_00162,I'm not okay with this fee on my statement.,typesafe/jev-1.13-20260917,v2,v1,extra_charge_on_statement,96.0,auto_accept,,false,extra_charge_on_statement,true,222,0.000100002
+test_00163,Why is there an extra dollar charged to my account?,typesafe/jev-1.13-20260917,v2,v1,extra_charge_on_statement,99.0,auto_accept,,false,extra_charge_on_statement,true,242,0.000100002
+test_00168,Why does my statement have these extra charges?,typesafe/jev-1.13-20260917,v2,v1,extra_charge_on_statement,100,auto_accept,,false,extra_charge_on_statement,true,238,9.9918e-05
+test_00170,I can see an extra 1£ charge on my app. Why did you charge me extra?,typesafe/jev-1.13-20260917,v2,v1,extra_charge_on_statement,98.0,auto_accept,,false,extra_charge_on_statement,true,253,0.00010038
+test_00173,Where did this fee come from?,typesafe/jev-1.13-20260917,v2,v1,extra_charge_on_statement,94.0,auto_accept,,false,extra_charge_on_statement,true,209,9.9834e-05
+test_00174,"I noticed an extra $1 charge on my statement, can you tell me why that is?",typesafe/jev-1.13-20260917,v2,v1,extra_charge_on_statement,100,auto_accept,,false,extra_charge_on_statement,true,250,0.000100338
+test_00175,There is an extra $1 charge,typesafe/jev-1.13-20260917,v2,v1,extra_charge_on_statement,99.0,auto_accept,,false,extra_charge_on_statement,true,237,9.9834e-05
+test_00176,I need information about an extra €1 fee in my statement.,typesafe/jev-1.13-20260917,v2,v1,extra_charge_on_statement,100,auto_accept,,false,extra_charge_on_statement,true,291,0.000100086
+test_00177,Why is there an extra 1 pound charge on my card?,typesafe/jev-1.13-20260917,v2,v1,extra_charge_on_statement,90.0,auto_accept,,false,extra_charge_on_statement,true,237,0.000100086
+test_00178,Why are there so many fees on my statement?,typesafe/jev-1.13-20260917,v2,v1,extra_charge_on_statement,100,auto_accept,,false,extra_charge_on_statement,true,245,9.996e-05
+test_00179,What would be the reason there's an extra fee on my statement?,typesafe/jev-1.13-20260917,v2,v1,extra_charge_on_statement,100,auto_accept,,false,extra_charge_on_statement,true,208,0.000100128
+test_00183,Why was I overcharged a pound!?,typesafe/jev-1.13-20260917,v2,v1,extra_charge_on_statement,90.0,auto_accept,,false,extra_charge_on_statement,true,227,9.9918e-05
+test_00184,"Something went wrong, I was charged an extra pound?",typesafe/jev-1.13-20260917,v2,v1,extra_charge_on_statement,96.0,auto_accept,,false,extra_charge_on_statement,true,238,0.000100002
+test_00188,What is this €1 fee in my statement?,typesafe/jev-1.13-20260917,v2,v1,extra_charge_on_statement,96.0,auto_accept,,false,extra_charge_on_statement,true,264,9.996e-05
+test_00192,"Can you help me with a weird charge?  It's a pound charge that never goes away from the statement view on the app I'm using.  It's not described as anything but ""Pending"", and that status has never changed during the last two days.",typesafe/jev-1.13-20260917,v2,v1,pending_card_payment,83.0,auto_accept,,false,extra_charge_on_statement,false,222,0.000101766
+test_00194,"$1 extra has been charged on my statement, why is that?",typesafe/jev-1.13-20260917,v2,v1,extra_charge_on_statement,100,auto_accept,,false,extra_charge_on_statement,true,218,0.000100128
+test_00195,What is the extra  €1 fee in my statement,typesafe/jev-1.13-20260917,v2,v1,extra_charge_on_statement,100,auto_accept,,false,extra_charge_on_statement,true,300,0.000100002
+test_00196,"It's been two weeks, why has the transaction for $1.00 not been reversed?",typesafe/jev-1.13-20260917,v2,v1,reverted_card_payment?,62.0,auto_accept,,false,extra_charge_on_statement,false,244,0.00010038
+test_00199,Can you please check why I am having this extra fee on my statement.,typesafe/jev-1.13-20260917,v2,v1,extra_charge_on_statement,100,auto_accept,,false,extra_charge_on_statement,true,238,0.00010017
+test_00203,"Hey I tried to get some money out earlier but the machine didn't work. Now just saw the transaction still seems in progress! Can you please check what's going there, seems something is broken, I don't want to be charged for money that I haven't actually received!",typesafe/jev-1.13-20260917,v2,v1,pending_cash_withdrawal,98.0,auto_accept,,false,pending_cash_withdrawal,true,260,0.000101892
+test_00208,Why is my withdrawal still pending?,typesafe/jev-1.13-20260917,v2,v1,pending_cash_withdrawal,98.0,auto_accept,,false,pending_cash_withdrawal,true,196,9.9834e-05
+test_00210,"Hi! I was wondering if you can help me. I used the city centre ATM to get some cash, but the machine declined my card. My account shows that transaction is still pending. I didn't receive the money, so please cancel that transaction.",typesafe/jev-1.13-20260917,v2,v1,pending_cash_withdrawal,75.0,auto_accept,,false,pending_cash_withdrawal,true,214,0.000101682
+test_00211,Why is a transaction showing as pending when I recieved cash from an ATM?,typesafe/jev-1.13-20260917,v2,v1,pending_cash_withdrawal,100,auto_accept,,false,pending_cash_withdrawal,true,203,0.00010017
+test_00212,My cash in the ATM is still pending,typesafe/jev-1.13-20260917,v2,v1,pending_cash_withdrawal,100,auto_accept,,false,pending_cash_withdrawal,true,193,9.9876e-05
+test_00218,"Hi,I tried to get some money out but the machine was not working .The transaction still seems in progress! Can you please check what's going on.I don't want to be charged for money that I did not received.",typesafe/jev-1.13-20260917,v2,v1,pending_cash_withdrawal,97.0,auto_accept,,false,pending_cash_withdrawal,true,202,0.00010143
+test_00219,"Hey, my card was declined at an ATM in the city centre theatre. My account says the transaction is pending, though. I didn't get the money, though, so what does that mean?",typesafe/jev-1.13-20260917,v2,v1,pending_cash_withdrawal,65.0,auto_accept,,false,pending_cash_withdrawal,true,221,0.00010122
+test_00220,Why do I have a pending cash withdrawal?,typesafe/jev-1.13-20260917,v2,v1,pending_cash_withdrawal,100,auto_accept,,false,pending_cash_withdrawal,true,208,9.9918e-05
+test_00221,I have a pending cash withdrawal,typesafe/jev-1.13-20260917,v2,v1,pending_cash_withdrawal,100,auto_accept,,false,pending_cash_withdrawal,true,211,9.9792e-05
+test_00226,My cash withdrawal is still showing as pending.,typesafe/jev-1.13-20260917,v2,v1,pending_cash_withdrawal,100,auto_accept,,false,pending_cash_withdrawal,true,239,9.9918e-05
+test_00227,Why am I unable to take money from my card but the statement says the transaction is still pending?,typesafe/jev-1.13-20260917,v2,v1,pending_card_payment,89.0,auto_accept,,false,pending_cash_withdrawal,false,273,0.00010038
+test_00229,I have a pending transaction in my app. How is it still pending if I pulled the cash out from the ATM earlier?,typesafe/jev-1.13-20260917,v2,v1,pending_cash_withdrawal,100,auto_accept,,false,pending_cash_withdrawal,true,435,0.00010059
+test_00231,"I received cash from the ATM earlier, but this shows up as pending in the app.  I've got the cash already.  How can this be still pending?",typesafe/jev-1.13-20260917,v2,v1,pending_cash_withdrawal,100,auto_accept,,false,pending_cash_withdrawal,true,233,0.000100968
+test_00233,Why does it say pending cash withdrawal on my statement?,typesafe/jev-1.13-20260917,v2,v1,pending_cash_withdrawal,100,auto_accept,,false,pending_cash_withdrawal,true,216,0.000100002
+test_00237,how long does it take to post atm with drawl,typesafe/jev-1.13-20260917,v2,v1,pending_cash_withdrawal,99.0,review,keyword_miss,true,pending_cash_withdrawal,true,207,0.000100002
+test_00238,Why is my cash withdrawal from the ATM still not yet showing as confirmed in my account?,typesafe/jev-1.13-20260917,v2,v1,pending_cash_withdrawal,100,auto_accept,,false,pending_cash_withdrawal,true,251,0.000100296
+test_00239,"What's a pending transaction? My card was declined at an ATM, but my account says it's still pending. Can I cancel the payment?",typesafe/jev-1.13-20260917,v2,v1,pending_cash_withdrawal,86.0,auto_accept,,false,pending_cash_withdrawal,true,189,0.000100758
+test_00240,"If I request that my funds be held, what currencies do you use?",typesafe/jev-1.13-20260917,v2,v1,supported_cards_and_currencies,57.0,auto_accept,,false,fiat_currency_support,false,194,0.00010017
+test_00243,Does your system support multiple currency.,typesafe/jev-1.13-20260917,v2,v1,supported_cards_and_currencies,64.0,auto_accept,,false,fiat_currency_support,false,224,9.9834e-05
+test_00246,"There is an incoming payment into my account, but it is deactivated. Will they still be processed?",typesafe/jev-1.13-20260917,v2,v1,receiving_money,64.0,review,keyword_miss,true,fiat_currency_support,false,199,0.000100506
+test_00247,What currencies do you do exchanges for?,typesafe/jev-1.13-20260917,v2,v1,supported_cards_and_currencies,62.0,auto_accept,,false,fiat_currency_support,false,236,9.9876e-05
+test_00251,Is it permissible to hold money in multiple currencies?,typesafe/jev-1.13-20260917,v2,v1,supported_cards_and_currencies,52.0,auto_accept,,false,fiat_currency_support,false,222,9.996e-05
+test_00252,Can I exchange to EUR?,typesafe/jev-1.13-20260917,v2,v1,fiat_currency_support,37.0,auto_accept,,false,fiat_currency_support,true,196,9.9792e-05
+test_00254,Do you offer additional currency options?,typesafe/jev-1.13-20260917,v2,v1,fiat_currency_support,57.0,auto_accept,,false,fiat_currency_support,true,199,9.9834e-05
+test_00256,What fiat currencies are supported for holding and exchange?,typesafe/jev-1.13-20260917,v2,v1,fiat_currency_support,99.0,auto_accept,,false,fiat_currency_support,true,193,9.996e-05
+test_00257,"When considering currency holdings and exchanges, what fiat currencies are supported?",typesafe/jev-1.13-20260917,v2,v1,fiat_currency_support,98.0,auto_accept,,false,fiat_currency_support,true,221,0.000100086
+test_00259,Can I hold money in other currencies?,typesafe/jev-1.13-20260917,v2,v1,fiat_currency_support,70.0,auto_accept,,false,fiat_currency_support,true,265,9.9876e-05
+test_00261,Do you happen to do exchanges of EUR?,typesafe/jev-1.13-20260917,v2,v1,fiat_currency_support,39.0,auto_accept,,false,fiat_currency_support,true,258,9.9918e-05
+test_00263,Can you tell me what currency I can have?,typesafe/jev-1.13-20260917,v2,v1,fiat_currency_support,50.0,auto_accept,,false,fiat_currency_support,true,207,9.996e-05
+test_00266,Which fiat currencies do you support?,typesafe/jev-1.13-20260917,v2,v1,fiat_currency_support,99.0,auto_accept,,false,fiat_currency_support,true,258,9.9834e-05
+test_00270,What kind of currency can I hold money in?,typesafe/jev-1.13-20260917,v2,v1,fiat_currency_support,55.0,auto_accept,,false,fiat_currency_support,true,267,9.996e-05
+test_00272,Do you work with all fiat currencies?,typesafe/jev-1.13-20260917,v2,v1,fiat_currency_support,99.0,auto_accept,,false,fiat_currency_support,true,257,9.9876e-05
+test_00276,How do I accept exchanges to EU?,typesafe/jev-1.13-20260917,v2,v1,country_support,31.0,auto_accept,,false,fiat_currency_support,false,228,9.9876e-05
+test_00278,Do you support the exchange of EUR from my currency.,typesafe/jev-1.13-20260917,v2,v1,fiat_currency_support,40.0,auto_accept,,false,fiat_currency_support,true,219,0.000100002
+test_00279,What countries can I travel to and have access to their currencies?,typesafe/jev-1.13-20260917,v2,v1,country_support,88.0,auto_accept,,false,fiat_currency_support,false,244,0.000100086
+test_00282,i need my card quick,typesafe/jev-1.13-20260917,v2,v1,card_arrival,70.0,auto_accept,,false,card_delivery_estimate,false,236,9.975e-05
+test_00283,How long will it take to get to me?,typesafe/jev-1.13-20260917,v2,v1,card_delivery_estimate,35.0,auto_accept,,false,card_delivery_estimate,true,213,9.996e-05
+test_00288,When can I expect my card to be delivered to the US?,typesafe/jev-1.13-20260917,v2,v1,card_delivery_estimate,91.0,auto_accept,,false,card_delivery_estimate,true,222,0.000100086
+test_00289,I need my card quickly,typesafe/jev-1.13-20260917,v2,v1,card_arrival,67.0,auto_accept,,false,card_delivery_estimate,false,225,9.975e-05
+test_00291,How long will it take to arrive?,typesafe/jev-1.13-20260917,v2,v1,card_delivery_estimate,44.0,auto_accept,,false,card_delivery_estimate,true,227,9.9876e-05
+test_00296,I need it delivered on a certain date.,typesafe/jev-1.13-20260917,v2,v1,card_arrival,59.0,auto_accept,,false,card_delivery_estimate,false,201,9.9918e-05
+test_00298,How long does it take to get my card? Can I choose when to receive it?,typesafe/jev-1.13-20260917,v2,v1,card_delivery_estimate,98.0,auto_accept,,false,card_delivery_estimate,true,249,0.000100296
+test_00299,How long will it take for the card to arrive?,typesafe/jev-1.13-20260917,v2,v1,card_delivery_estimate,87.0,auto_accept,,false,card_delivery_estimate,true,244,0.000100002
+test_00309,How long until my card is delivered?,typesafe/jev-1.13-20260917,v2,v1,card_delivery_estimate,78.0,auto_accept,,false,card_delivery_estimate,true,198,9.9876e-05
+test_00313,I need my card as soon as possible.,typesafe/jev-1.13-20260917,v2,v1,card_arrival,78.0,auto_accept,,false,card_delivery_estimate,false,210,9.9918e-05
+test_00314,I need it delivered by Saturday.,typesafe/jev-1.13-20260917,v2,v1,card_arrival,46.0,auto_accept,,false,card_delivery_estimate,false,216,9.9834e-05
+test_00315,What's the U.S. Delivery time?,typesafe/jev-1.13-20260917,v2,v1,card_delivery_estimate,99.0,auto_accept,,false,card_delivery_estimate,true,260,9.9918e-05
+test_00318,Can I make sure my card is delivered on a specific day?,typesafe/jev-1.13-20260917,v2,v1,card_arrival,56.0,auto_accept,,false,card_delivery_estimate,false,244,0.000100086
+test_00321,Is there a limit when using auto top-up?,typesafe/jev-1.13-20260917,v2,v1,automatic_top_up,80.0,auto_accept,,false,automatic_top_up,true,191,9.996e-05
+test_00322,Will it automatically top-up or do I need to do that manually if there isn't much cash left?,typesafe/jev-1.13-20260917,v2,v1,automatic_top_up,100,auto_accept,,false,automatic_top_up,true,196,0.000100422
+test_00324,How do I use auto top up?,typesafe/jev-1.13-20260917,v2,v1,automatic_top_up,100,auto_accept,,false,automatic_top_up,true,214,9.9876e-05
+test_00325,Can it automatically top-up money if there isn't much left?,typesafe/jev-1.13-20260917,v2,v1,automatic_top_up,100,auto_accept,,false,automatic_top_up,true,310,0.000100086
+test_00331,"I just activated auto top-up, but it is not letting me enable it. Why not?",typesafe/jev-1.13-20260917,v2,v1,automatic_top_up,100,auto_accept,,false,automatic_top_up,true,333,0.000100338
+test_00332,Is there an auto top-up option?,typesafe/jev-1.13-20260917,v2,v1,automatic_top_up,100,auto_accept,,false,automatic_top_up,true,232,9.9876e-05
+test_00340,What's the limit on automatic top-up?,typesafe/jev-1.13-20260917,v2,v1,automatic_top_up,84.0,auto_accept,,false,automatic_top_up,true,201,9.9918e-05
+test_00343,Can I have a auto top-up when my account is short?,typesafe/jev-1.13-20260917,v2,v1,automatic_top_up,100,auto_accept,,false,automatic_top_up,true,234,0.000100086
+test_00346,Will it automatically top-up money if there isn't a lot left?,typesafe/jev-1.13-20260917,v2,v1,automatic_top_up,100,auto_accept,,false,automatic_top_up,true,287,0.000100128
+test_00347,Can I have it add money automatically in certain intervals?,typesafe/jev-1.13-20260917,v2,v1,automatic_top_up,100,auto_accept,,false,automatic_top_up,true,246,0.000100002
+test_00350,how do I top up my money automatically,typesafe/jev-1.13-20260917,v2,v1,automatic_top_up,100,auto_accept,,false,automatic_top_up,true,250,9.9876e-05
+test_00351,Can I be topped up once I hit a certain balance?,typesafe/jev-1.13-20260917,v2,v1,automatic_top_up,88.0,auto_accept,,false,automatic_top_up,true,260,0.000100044
+test_00353,Is there any way to Auto top-up?,typesafe/jev-1.13-20260917,v2,v1,automatic_top_up,100,auto_accept,,false,automatic_top_up,true,213,9.9918e-05
+test_00354,Can you explain where I can find the auto-top option?,typesafe/jev-1.13-20260917,v2,v1,automatic_top_up,100,auto_accept,,false,automatic_top_up,true,227,0.000100044
+test_00358,What is the highest limit for Auto Top?,typesafe/jev-1.13-20260917,v2,v1,automatic_top_up,71.0,auto_accept,,false,automatic_top_up,true,263,9.9918e-05
+test_00361,I can't get my card to work.,typesafe/jev-1.13-20260917,v2,v1,card_not_working,99.0,auto_accept,,false,card_not_working,true,217,9.9918e-05
+test_00365,My card won't work.,typesafe/jev-1.13-20260917,v2,v1,card_not_working,100,auto_accept,,false,card_not_working,true,272,9.9792e-05
+test_00366,Why is my card not working?,typesafe/jev-1.13-20260917,v2,v1,card_not_working,99.0,auto_accept,,false,card_not_working,true,222,9.9834e-05
+test_00367,Can you please identify the problem with my bank card?,typesafe/jev-1.13-20260917,v2,v1,card_not_working,100,auto_accept,,false,card_not_working,true,254,0.000100002
+test_00368,How do I unblock my card using the app?,typesafe/jev-1.13-20260917,v2,v1,pin_blocked,50.0,auto_accept,,false,card_not_working,false,187,0.000100002
+test_00370,How can I get my physical card to work?,typesafe/jev-1.13-20260917,v2,v1,activate_my_card,74.0,auto_accept,,false,card_not_working,false,268,9.996e-05
+test_00381,Is my card broken?,typesafe/jev-1.13-20260917,v2,v1,card_not_working,100,auto_accept,,false,card_not_working,true,215,9.975e-05
+test_00387,I can't use my card.,typesafe/jev-1.13-20260917,v2,v1,card_not_working,94.0,auto_accept,,false,card_not_working,true,209,9.9834e-05
+test_00393,I have tried to use my card several times and it does not work.,typesafe/jev-1.13-20260917,v2,v1,card_not_working,95.0,auto_accept,,false,card_not_working,true,191,0.00010017
+test_00402,Can I change from one currency to another?,typesafe/jev-1.13-20260917,v2,v1,exchange_via_app,50.0,auto_accept,,false,exchange_via_app,true,232,9.9918e-05
+test_00407,Can I exchange currencies with this app?,typesafe/jev-1.13-20260917,v2,v1,exchange_via_app,100,auto_accept,,false,exchange_via_app,true,283,9.9876e-05
+test_00408,How do I make an exchange from one currency to another?,typesafe/jev-1.13-20260917,v2,v1,exchange_via_app,66.0,auto_accept,,false,exchange_via_app,true,261,0.000100044
+test_00410,What all currencies can be exchanged?,typesafe/jev-1.13-20260917,v2,v1,supported_cards_and_currencies,62.0,auto_accept,,false,exchange_via_app,false,215,9.9834e-05
+test_00411,What is the best way to exchange currency between USD and GBP using your app?,typesafe/jev-1.13-20260917,v2,v1,exchange_via_app,100,auto_accept,,false,exchange_via_app,true,246,0.000100212
+test_00414,Is it possible to change to another currency?,typesafe/jev-1.13-20260917,v2,v1,fiat_currency_support,66.0,auto_accept,,false,exchange_via_app,false,216,9.9918e-05
+test_00415,How do I exchange my GBP to AUD?,typesafe/jev-1.13-20260917,v2,v1,exchange_via_app,61.0,auto_accept,,false,exchange_via_app,true,189,9.9918e-05
+test_00416,How would I use my money in a different country?,typesafe/jev-1.13-20260917,v2,v1,country_support,93.0,auto_accept,,false,exchange_via_app,false,198,0.000100002
+test_00420,What is the best way to exchange currency?,typesafe/jev-1.13-20260917,v2,v1,exchange_rate,90.0,auto_accept,,false,exchange_via_app,false,188,9.9918e-05
+test_00422,I was wondering whether exchanging currencies can be done on this app.,typesafe/jev-1.13-20260917,v2,v1,exchange_via_app,100,auto_accept,,false,exchange_via_app,true,218,0.000100086
+test_00423,"I might need AUD instead of GBP, how to change?",typesafe/jev-1.13-20260917,v2,v1,fiat_currency_support,44.0,review,keyword_miss,true,exchange_via_app,false,238,0.000100044
+test_00424,How do I go through the process of currency exchange?,typesafe/jev-1.13-20260917,v2,v1,exchange_rate,61.0,auto_accept,,false,exchange_via_app,false,190,0.000100002
+test_00430,Can this app help me exchange currencies?,typesafe/jev-1.13-20260917,v2,v1,exchange_via_app,100,auto_accept,,false,exchange_via_app,true,256,9.9876e-05
+test_00432,Can I exchange between GBP and USD on the app?,typesafe/jev-1.13-20260917,v2,v1,exchange_via_app,100,auto_accept,,false,exchange_via_app,true,249,0.000100002
+test_00433,Is there currency exchange on this app?,typesafe/jev-1.13-20260917,v2,v1,exchange_via_app,99.0,auto_accept,,false,exchange_via_app,true,207,9.9876e-05
+test_00435,"I think I want AUD and not GBP, can you help?",typesafe/jev-1.13-20260917,v2,v1,fiat_currency_support,52.0,review,keyword_miss,true,exchange_via_app,false,226,0.000100086
+test_00436,How do I exchange currency?,typesafe/jev-1.13-20260917,v2,v1,exchange_rate,56.0,auto_accept,,false,exchange_via_app,false,223,9.9792e-05
+test_00439,I would like to exchange currencies,typesafe/jev-1.13-20260917,v2,v1,exchange_via_app,56.0,auto_accept,,false,exchange_via_app,true,232,9.9792e-05
+test_00440,"My entire gym bag, including my wallet, was stolen out of my locker today. Everything in my wallet is gone - how do I block the card to make it can't be used?",typesafe/jev-1.13-20260917,v2,v1,lost_or_stolen_card,100,auto_accept,,false,lost_or_stolen_card,true,224,0.000101136
+test_00443,"I cant find my card, it's gone.",typesafe/jev-1.13-20260917,v2,v1,lost_or_stolen_card,100,auto_accept,,false,lost_or_stolen_card,true,230,9.996e-05
+test_00445,I lost my card,typesafe/jev-1.13-20260917,v2,v1,lost_or_stolen_card,100,auto_accept,,false,lost_or_stolen_card,true,266,9.9708e-05
+test_00449,Help.  I have a stolen card!,typesafe/jev-1.13-20260917,v2,v1,lost_or_stolen_card,99.0,auto_accept,,false,lost_or_stolen_card,true,209,9.9918e-05
+test_00450,"card is lost, please help",typesafe/jev-1.13-20260917,v2,v1,lost_or_stolen_card,100,auto_accept,,false,lost_or_stolen_card,true,210,9.9792e-05
+test_00456,Can you freeze my card it was stolen,typesafe/jev-1.13-20260917,v2,v1,lost_or_stolen_card,97.0,auto_accept,,false,lost_or_stolen_card,true,198,9.9876e-05
+test_00457,Help!  I can't find my card.,typesafe/jev-1.13-20260917,v2,v1,lost_or_stolen_card,100,auto_accept,,false,lost_or_stolen_card,true,250,9.996e-05
+test_00460,I think my card was stolen.,typesafe/jev-1.13-20260917,v2,v1,lost_or_stolen_card,99.0,auto_accept,,false,lost_or_stolen_card,true,216,9.9834e-05
+test_00461,"Someone stole my wallet earlier today, not sure exactly when, probably on Piccadilly circus. Can you check if there were any attempts to use the card and obviously block it?",typesafe/jev-1.13-20260917,v2,v1,lost_or_stolen_card,99.0,auto_accept,,false,lost_or_stolen_card,true,244,0.000101052
+test_00462,I think I lost my card . I dont know how long it has been missing. Can you see if maybe someone else has been using it?,typesafe/jev-1.13-20260917,v2,v1,lost_or_stolen_card,97.0,auto_accept,,false,lost_or_stolen_card,true,229,0.000100758
+test_00463,How can I freeze a stolen card?,typesafe/jev-1.13-20260917,v2,v1,lost_or_stolen_card,99.0,auto_accept,,false,lost_or_stolen_card,true,201,9.9876e-05
+test_00464,What should I do if my card is missing?,typesafe/jev-1.13-20260917,v2,v1,lost_or_stolen_card,100,auto_accept,,false,lost_or_stolen_card,true,206,9.996e-05
+test_00471,My card is lost! What do I do now?,typesafe/jev-1.13-20260917,v2,v1,lost_or_stolen_card,100,auto_accept,,false,lost_or_stolen_card,true,250,0.000100002
+test_00472,I'm in Spain and my stuff has been stolen. My card was with it and I need a new one shipped and the old one frozen.,typesafe/jev-1.13-20260917,v2,v1,lost_or_stolen_card,100,auto_accept,,false,lost_or_stolen_card,true,249,0.000100758
+test_00478,My card got stolen!,typesafe/jev-1.13-20260917,v2,v1,lost_or_stolen_card,100,auto_accept,,false,lost_or_stolen_card,true,222,9.975e-05
+test_00479,Help me please!  My card was stolen!,typesafe/jev-1.13-20260917,v2,v1,lost_or_stolen_card,100,auto_accept,,false,lost_or_stolen_card,true,204,9.996e-05
+test_00480,how old do i need to be to get an account for myself,typesafe/jev-1.13-20260917,v2,v1,age_limit,100,auto_accept,,false,age_limit,true,195,0.000100086
+test_00485,How do I go about setting up an account for my daughter?,typesafe/jev-1.13-20260917,v2,v1,age_limit,79.0,auto_accept,,false,age_limit,true,268,0.000100086
+test_00486,Is there an age minimum?,typesafe/jev-1.13-20260917,v2,v1,age_limit,100,auto_accept,,false,age_limit,true,240,9.9792e-05
+test_00495,How do I open up an account for my child?,typesafe/jev-1.13-20260917,v2,v1,age_limit,87.0,auto_accept,,false,age_limit,true,361,0.000100002
+test_00498,Do you offer services for children to have money saving experience?,typesafe/jev-1.13-20260917,v2,v1,age_limit,96.0,auto_accept,,false,age_limit,true,220,0.000100044
+test_00506,Do my kids have to be a certain age to use this service?,typesafe/jev-1.13-20260917,v2,v1,age_limit,100,auto_accept,,false,age_limit,true,262,0.000100128
+test_00507,How old do you have to be to be able to open an account?,typesafe/jev-1.13-20260917,v2,v1,age_limit,100,auto_accept,,false,age_limit,true,249,0.00010017
+test_00508,Is there an age limit?,typesafe/jev-1.13-20260917,v2,v1,age_limit,100,auto_accept,,false,age_limit,true,201,9.9792e-05
+test_00509,What are the age requirements for opening an account?,typesafe/jev-1.13-20260917,v2,v1,age_limit,100,auto_accept,,false,age_limit,true,249,9.996e-05
+test_00511,How old do I need to be to open an account?,typesafe/jev-1.13-20260917,v2,v1,age_limit,100,auto_accept,,false,age_limit,true,195,0.000100044
+test_00518,What is the youngest someone can be to open an account?,typesafe/jev-1.13-20260917,v2,v1,age_limit,100,auto_accept,,false,age_limit,true,240,0.000100044
+test_00521,Where can I view my PIN?,typesafe/jev-1.13-20260917,v2,v1,get_physical_card,98.0,auto_accept,,false,pin_blocked,false,242,9.9834e-05
+test_00522,Will you reinstate my PIN?,typesafe/jev-1.13-20260917,v2,v1,pin_blocked,55.0,auto_accept,,false,pin_blocked,true,183,9.9834e-05
+test_00527,"How do I reset my PIN, I can't seem to use my card?",typesafe/jev-1.13-20260917,v2,v1,change_pin,92.0,auto_accept,,false,pin_blocked,false,187,0.000100212
+test_00528,"When I put the wrong pin too much, I got blocked, so can you help me unblock my pin",typesafe/jev-1.13-20260917,v2,v1,pin_blocked,100,auto_accept,,false,pin_blocked,true,218,0.000100464
+test_00532,I have exceeded the number of times I can try my PIN,typesafe/jev-1.13-20260917,v2,v1,pin_blocked,100,auto_accept,,false,pin_blocked,true,200,0.000100044
+test_00533,How can I unblock a blocked pin number for my account?,typesafe/jev-1.13-20260917,v2,v1,pin_blocked,100,auto_accept,,false,pin_blocked,true,290,0.000100086
+test_00535,Can you unlock my pin? I think I entered the wrong pin too many times.,typesafe/jev-1.13-20260917,v2,v1,pin_blocked,100,auto_accept,,false,pin_blocked,true,227,0.000100254
+test_00538,Can I unblock my card using the app?,typesafe/jev-1.13-20260917,v2,v1,pin_blocked,52.0,auto_accept,,false,pin_blocked,true,234,9.996e-05
+test_00542,"My account is blocked, how do I log in now",typesafe/jev-1.13-20260917,v2,v1,pin_blocked,63.0,auto_accept,,false,pin_blocked,true,194,0.000100002
+test_00543,Why did I get blocked?,typesafe/jev-1.13-20260917,v2,v1,pin_blocked,31.0,auto_accept,,false,pin_blocked,true,233,9.9792e-05
+test_00544,Are you able to unblock my pin?,typesafe/jev-1.13-20260917,v2,v1,pin_blocked,100,auto_accept,,false,pin_blocked,true,198,9.9918e-05
+test_00547,"My pins seems to be blocked, can you unblock it please",typesafe/jev-1.13-20260917,v2,v1,pin_blocked,100,auto_accept,,false,pin_blocked,true,231,0.000100086
+test_00549,What can you do to unblock my pin?,typesafe/jev-1.13-20260917,v2,v1,pin_blocked,100,auto_accept,,false,pin_blocked,true,345,9.996e-05
+test_00553,Can I unblock my pin?,typesafe/jev-1.13-20260917,v2,v1,pin_blocked,100,auto_accept,,false,pin_blocked,true,215,9.9834e-05
+test_00554,How do I unblock my PIN?,typesafe/jev-1.13-20260917,v2,v1,pin_blocked,100,auto_accept,,false,pin_blocked,true,211,9.9876e-05
+test_00555,"My card's frozen, what can I do?",typesafe/jev-1.13-20260917,v2,v1,card_not_working,80.0,auto_accept,,false,pin_blocked,false,179,9.996e-05
+test_00557,"Since my pin is blocked, would you help me unblock it?",typesafe/jev-1.13-20260917,v2,v1,pin_blocked,100,auto_accept,,false,pin_blocked,true,239,0.000100128
+test_00561,My contanctless has stopped working,typesafe/jev-1.13-20260917,v2,v1,contactless_not_working,100,auto_accept,,false,contactless_not_working,true,201,9.9876e-05
+test_00564,How do I get the contactless feature to work for my card?,typesafe/jev-1.13-20260917,v2,v1,contactless_not_working,100,auto_accept,,false,contactless_not_working,true,198,0.00010017
+test_00565,I tried to pay contactless at the bus today and it didn't work. Any ideas why?,typesafe/jev-1.13-20260917,v2,v1,contactless_not_working,99.0,auto_accept,,false,contactless_not_working,true,199,0.000100422
+test_00567,Do you know why my contactless won't work?,typesafe/jev-1.13-20260917,v2,v1,contactless_not_working,100,auto_accept,,false,contactless_not_working,true,188,0.000100044
+test_00568,My contactless payments have not been completed successfully.,typesafe/jev-1.13-20260917,v2,v1,contactless_not_working,100,auto_accept,,false,contactless_not_working,true,269,0.000100002
+test_00572,Contactless isn't working for me,typesafe/jev-1.13-20260917,v2,v1,contactless_not_working,100,auto_accept,,false,contactless_not_working,true,243,9.9876e-05
+test_00573,Why wouldn't the contactless payment work when I tried to pay at the bus today?,typesafe/jev-1.13-20260917,v2,v1,contactless_not_working,100,auto_accept,,false,contactless_not_working,true,232,0.000100338
+test_00581,I'm unable to use contactless payments for purchases.,typesafe/jev-1.13-20260917,v2,v1,contactless_not_working,100,auto_accept,,false,contactless_not_working,true,315,0.000100044
+test_00582,"When I tried to pay for my bus ride, the contactless payment wouldn't work. How can I prevent this in the future?",typesafe/jev-1.13-20260917,v2,v1,contactless_not_working,100,auto_accept,,false,contactless_not_working,true,229,0.000100716
+test_00594,How can I fix a problem where contactless isn't working?,typesafe/jev-1.13-20260917,v2,v1,contactless_not_working,100,auto_accept,,false,contactless_not_working,true,210,0.000100128
+test_00596,How do I enable contactless pay?,typesafe/jev-1.13-20260917,v2,v1,contactless_not_working,66.0,auto_accept,,false,contactless_not_working,true,240,9.9918e-05
+test_00597,Do I need to make a regular payment before a contactless one?,typesafe/jev-1.13-20260917,v2,v1,contactless_not_working,95.0,auto_accept,,false,contactless_not_working,true,273,0.00010017
+test_00598,How can I find out where my contactless works?,typesafe/jev-1.13-20260917,v2,v1,contactless_not_working,79.0,auto_accept,,false,contactless_not_working,true,221,0.000100044
+test_00599,Should i reinstall the payment app?,typesafe/jev-1.13-20260917,v2,v1,declined_transfer,19.0,review,keyword_miss,true,contactless_not_working,false,200,9.9834e-05
+test_00601,I would like to make a transfer. How much does it cost?,typesafe/jev-1.13-20260917,v2,v1,transfer_fee_charged,90.0,auto_accept,,false,top_up_by_bank_transfer_charge,false,199,0.000100128
+test_00602,"I need to make a transfer, what will the fee be?",typesafe/jev-1.13-20260917,v2,v1,transfer_fee_charged,92.0,auto_accept,,false,top_up_by_bank_transfer_charge,false,235,0.000100086
+test_00605,Are SWIFT transfers accepted?,typesafe/jev-1.13-20260917,v2,v1,transfer_into_account,84.0,review,keyword_miss,true,top_up_by_bank_transfer_charge,false,259,9.9792e-05
+test_00610,Do I have to pay any fees in order to receive money?,typesafe/jev-1.13-20260917,v2,v1,receiving_money,97.0,auto_accept,,false,top_up_by_bank_transfer_charge,false,244,0.000100086
+test_00612,Will you deal with SWIFT transfers?,typesafe/jev-1.13-20260917,v2,v1,transfer_into_account,81.0,review,keyword_miss,true,top_up_by_bank_transfer_charge,false,197,9.9876e-05
+test_00613,Will there be any charges for money received?,typesafe/jev-1.13-20260917,v2,v1,receiving_money,97.0,auto_accept,,false,top_up_by_bank_transfer_charge,false,201,9.9918e-05
+test_00617,Will I be charged if someone needs to send me money?,typesafe/jev-1.13-20260917,v2,v1,receiving_money,92.0,auto_accept,,false,top_up_by_bank_transfer_charge,false,203,0.000100044
+test_00620,What are the charges for receiving money?,typesafe/jev-1.13-20260917,v2,v1,receiving_money,97.0,auto_accept,,false,top_up_by_bank_transfer_charge,false,225,9.9876e-05
+test_00621,What is the fee to receive money?,typesafe/jev-1.13-20260917,v2,v1,receiving_money,93.0,auto_accept,,false,top_up_by_bank_transfer_charge,false,230,9.9876e-05
+test_00626,Do you do SWIFT transfers?,typesafe/jev-1.13-20260917,v2,v1,transfer_into_account,80.0,review,keyword_miss,true,top_up_by_bank_transfer_charge,false,248,9.9834e-05
+test_00632,Can you tell me what the transfer policy is?,typesafe/jev-1.13-20260917,v2,v1,transfer_into_account,46.0,auto_accept,,false,top_up_by_bank_transfer_charge,false,215,9.996e-05
+test_00637,Do I get charged if i am getting money?,typesafe/jev-1.13-20260917,v2,v1,receiving_money,97.0,auto_accept,,false,top_up_by_bank_transfer_charge,false,199,9.996e-05
+test_00642,What would lead to my top up still pending?,typesafe/jev-1.13-20260917,v2,v1,pending_top_up,100,auto_accept,,false,pending_top_up,true,224,9.996e-05
+test_00644,Is there a reason my top up hasn't gone through,typesafe/jev-1.13-20260917,v2,v1,top_up_failed,94.0,auto_accept,,false,pending_top_up,false,188,0.000100002
+test_00647,"I've already topped up, but I cannot see the funds being available. What happened?",typesafe/jev-1.13-20260917,v2,v1,pending_top_up,90.0,auto_accept,,false,pending_top_up,true,195,0.000100296
+test_00649,I  do not see a top-up processed.,typesafe/jev-1.13-20260917,v2,v1,top_up_failed,65.0,auto_accept,,false,pending_top_up,false,194,9.996e-05
+test_00650,I topped up but it didn't complete,typesafe/jev-1.13-20260917,v2,v1,top_up_failed,97.0,auto_accept,,false,pending_top_up,false,252,9.9876e-05
+test_00651,"So, I am a new customer and attempted to top up for the very first time today. It's already been pending for half an hour and doesn't seem to be working. I need to please get this fixed.",typesafe/jev-1.13-20260917,v2,v1,pending_top_up,97.0,auto_accept,,false,pending_top_up,true,240,0.000101388
+test_00654,Can you please make my top up go through as soon as possible. I really need the money and it has been pending for an hour already.,typesafe/jev-1.13-20260917,v2,v1,pending_top_up,100,auto_accept,,false,pending_top_up,true,225,0.000100758
+test_00655,"What's going on with the top-up? All it says is pending, pending, pending! I use your service several times a week and have never had a problem before! What's going on here?",typesafe/jev-1.13-20260917,v2,v1,pending_top_up,100,auto_accept,,false,pending_top_up,true,231,0.000101262
+test_00657,top-up is slow to process,typesafe/jev-1.13-20260917,v2,v1,pending_top_up,98.0,auto_accept,,false,pending_top_up,true,194,9.9792e-05
+test_00662,So I just put my top-up into the card and it hasn't changed.,typesafe/jev-1.13-20260917,v2,v1,pending_top_up,38.0,auto_accept,,false,pending_top_up,true,198,0.000100212
+test_00670,"My top up hasn't worked, it's been stuck in pending for the last couple hours",typesafe/jev-1.13-20260917,v2,v1,pending_top_up,98.0,auto_accept,,false,pending_top_up,true,214,0.000100296
+test_00676,Topping up my card is not working because I believe the top up is pending,typesafe/jev-1.13-20260917,v2,v1,pending_top_up,96.0,auto_accept,,false,pending_top_up,true,210,0.000100254
+test_00677,When will my top-up process?,typesafe/jev-1.13-20260917,v2,v1,pending_top_up,98.0,auto_accept,,false,pending_top_up,true,245,9.9834e-05
+test_00678,"The top-up has a definite problem! I regularly use your service and haven't had a problem before, but now the top-up just shows pending. Please tell my why it continues to show pending.",typesafe/jev-1.13-20260917,v2,v1,pending_top_up,100,auto_accept,,false,pending_top_up,true,194,0.00010122
+test_00679,"I tried topping up but my funds seem to be pending. I want to buy something right now, what do I do?",typesafe/jev-1.13-20260917,v2,v1,pending_top_up,100,auto_accept,,false,pending_top_up,true,262,0.00010059
+test_00680,I made a transaction this morning and would like to revert it.,typesafe/jev-1.13-20260917,v2,v1,reverted_card_payment?,66.0,review,keyword_miss,true,cancel_transfer,false,219,0.000100086
+test_00682,Can I cancel my transaction?,typesafe/jev-1.13-20260917,v2,v1,cancel_transfer,99.0,auto_accept,,false,cancel_transfer,true,197,9.9792e-05
+test_00685,I need you to cancel a transfer that I made.  It is the wrong account number and the app won't let me stop the transaction.  Please stop it!,typesafe/jev-1.13-20260917,v2,v1,cancel_transfer,99.0,auto_accept,,false,cancel_transfer,true,254,0.000100968
+test_00691,I accidentally made a transaction to the wrong account.,typesafe/jev-1.13-20260917,v2,v1,cancel_transfer,54.0,auto_accept,,false,cancel_transfer,true,190,9.996e-05
+test_00693,Help me cancel my transaction,typesafe/jev-1.13-20260917,v2,v1,cancel_transfer,99.0,auto_accept,,false,cancel_transfer,true,202,9.975e-05
+test_00695,Can I cancel a transfer,typesafe/jev-1.13-20260917,v2,v1,cancel_transfer,100,auto_accept,,false,cancel_transfer,true,237,9.975e-05
+test_00700,I transferred the wrong amount and would like to cancel the transaction.,typesafe/jev-1.13-20260917,v2,v1,cancel_transfer,100,auto_accept,,false,cancel_transfer,true,238,0.000100086
+test_00705,I submitted a transaction to the incorrect account.,typesafe/jev-1.13-20260917,v2,v1,cancel_transfer,46.0,auto_accept,,false,cancel_transfer,true,228,9.9918e-05
+test_00707,I want to go back on what I did this morning,typesafe/jev-1.13-20260917,v2,v1,cancel_transfer,66.0,auto_accept,,false,cancel_transfer,true,201,0.000100002
+test_00718,Can I change the amount I made on a payment that I made to the payment is correct.,typesafe/jev-1.13-20260917,v2,v1,cancel_transfer,26.0,auto_accept,,false,cancel_transfer,true,236,0.000100338
+test_00727,what is the top up limit,typesafe/jev-1.13-20260917,v2,v1,top_up_limits,100,auto_accept,,false,top_up_limits,true,215,9.9792e-05
+test_00729,Do you have a limit to top ups?,typesafe/jev-1.13-20260917,v2,v1,top_up_limits,100,auto_accept,,false,top_up_limits,true,272,9.9918e-05
+test_00736,Tell me if there are any top-up limits?,typesafe/jev-1.13-20260917,v2,v1,top_up_limits,100,auto_accept,,false,top_up_limits,true,201,9.996e-05
+test_00741,When I top up what are the amoutn limits.,typesafe/jev-1.13-20260917,v2,v1,top_up_limits,100,auto_accept,,false,top_up_limits,true,208,0.000100044
+test_00742,Is there a limit on top-ups?,typesafe/jev-1.13-20260917,v2,v1,top_up_limits,100,auto_accept,,false,top_up_limits,true,288,9.9876e-05
+test_00744,Are there limits to top-ups?,typesafe/jev-1.13-20260917,v2,v1,top_up_limits,100,auto_accept,,false,top_up_limits,true,217,9.9834e-05
+test_00746,Do you have a top-up limit?,typesafe/jev-1.13-20260917,v2,v1,top_up_limits,100,auto_accept,,false,top_up_limits,true,204,9.9876e-05
+test_00748,What is the limit to top-up?,typesafe/jev-1.13-20260917,v2,v1,top_up_limits,100,auto_accept,,false,top_up_limits,true,216,9.9876e-05
+test_00755,Is there a maximum i can top up?,typesafe/jev-1.13-20260917,v2,v1,top_up_limits,100,auto_accept,,false,top_up_limits,true,231,9.9918e-05
+test_00756,How can I tell if there is a top-up limit?,typesafe/jev-1.13-20260917,v2,v1,top_up_limits,100,auto_accept,,false,top_up_limits,true,205,0.000100044
+test_00759,What are the top-up limits?,typesafe/jev-1.13-20260917,v2,v1,top_up_limits,100,auto_accept,,false,top_up_limits,true,231,9.9834e-05
+test_00761,I didn't get all the cash I requested for at the ATM,typesafe/jev-1.13-20260917,v2,v1,wrong_amount_of_cash_received,99.0,auto_accept,,false,wrong_amount_of_cash_received,true,200,0.000100086
+test_00764,I got less cash than the one I specified in the ATM,typesafe/jev-1.13-20260917,v2,v1,wrong_amount_of_cash_received,100,auto_accept,,false,wrong_amount_of_cash_received,true,451,0.000100044
+test_00765,The amount of cash I received was incorrect,typesafe/jev-1.13-20260917,v2,v1,wrong_amount_of_cash_received,100,auto_accept,,false,wrong_amount_of_cash_received,true,291,9.9876e-05
+test_00767,The ATM gave me the wrong amount of cash today when I went to withdraw. The app says it was more.,typesafe/jev-1.13-20260917,v2,v1,wrong_amount_of_cash_received,100,auto_accept,,false,wrong_amount_of_cash_received,true,200,0.000100506
+test_00772,"How can I request cash back? The ATM just gave me the wrong amount, the app shows the amount that I've been actually charged though...",typesafe/jev-1.13-20260917,v2,v1,wrong_amount_of_cash_received,100,auto_accept,,false,wrong_amount_of_cash_received,true,218,0.000100758
+test_00776,Why did I only get $20 when I tried to get $100,typesafe/jev-1.13-20260917,v2,v1,wrong_amount_of_cash_received,100,auto_accept,,false,wrong_amount_of_cash_received,true,288,0.000100254
+test_00781,I asked for $100 cash but only got $20?,typesafe/jev-1.13-20260917,v2,v1,wrong_amount_of_cash_received,100,auto_accept,,false,wrong_amount_of_cash_received,true,194,0.00010017
+test_00783,I withdrew money but the full amount wasn't dispensed.,typesafe/jev-1.13-20260917,v2,v1,wrong_amount_of_cash_received,100,auto_accept,,false,wrong_amount_of_cash_received,true,192,0.000100086
+test_00785,I have got out the wrong amount from an ATM. Please tell me the process to get the cash back as in app its showing the amount i have been actually received.,typesafe/jev-1.13-20260917,v2,v1,wrong_amount_of_cash_received,100,auto_accept,,false,wrong_amount_of_cash_received,true,204,0.000100968
+test_00787,I didn't receive the right amount of cash back,typesafe/jev-1.13-20260917,v2,v1,wrong_amount_of_cash_received,100,auto_accept,,false,wrong_amount_of_cash_received,true,212,9.996e-05
+test_00789,"I didn't get as much cash as I asked for from the ATM, why?",typesafe/jev-1.13-20260917,v2,v1,wrong_amount_of_cash_received,100,auto_accept,,false,wrong_amount_of_cash_received,true,215,0.000100254
+test_00790,What do I do if the ATM didn't give me the correct amount I withdrew? I pulled out 30 pounds and the ATM gave me 10 pounds.,typesafe/jev-1.13-20260917,v2,v1,wrong_amount_of_cash_received,100,auto_accept,,false,wrong_amount_of_cash_received,true,266,0.000100968
+test_00794,The right amount of cash was not sent to me.,typesafe/jev-1.13-20260917,v2,v1,wrong_amount_of_cash_received,98.0,auto_accept,,false,wrong_amount_of_cash_received,true,199,0.000100002
+test_00798,did not receive correct cash upon withdrawal,typesafe/jev-1.13-20260917,v2,v1,wrong_amount_of_cash_received,100,auto_accept,,false,wrong_amount_of_cash_received,true,209,9.9834e-05
+test_00801,I was charged a fee after using my card and I shouldn't have been.,typesafe/jev-1.13-20260917,v2,v1,card_payment_fee_charged,99.0,auto_accept,,false,card_payment_fee_charged,true,239,0.000100212
+test_00802,Is there a reason I was charged a fee for using my card as payment? I've never had an extra fee before.,typesafe/jev-1.13-20260917,v2,v1,card_payment_fee_charged,100,auto_accept,,false,card_payment_fee_charged,true,207,0.00010059
+test_00803,"I show another charge on my card from when I used it, why?",typesafe/jev-1.13-20260917,v2,v1,extra_charge_on_statement,46.0,auto_accept,,false,card_payment_fee_charged,false,201,0.00010017
+test_00805,I used my card for a purchase and was charged a fee,typesafe/jev-1.13-20260917,v2,v1,card_payment_fee_charged,100,auto_accept,,false,card_payment_fee_charged,true,180,0.000100044
+test_00807,There is an unauthorized fee.,typesafe/jev-1.13-20260917,v2,v1,extra_charge_on_statement,88.0,auto_accept,,false,card_payment_fee_charged,false,189,9.9792e-05
+test_00809,Why was I charged an extra fee when paying with my card?,typesafe/jev-1.13-20260917,v2,v1,card_payment_fee_charged,98.0,auto_accept,,false,card_payment_fee_charged,true,202,0.000100086
+test_00810,Why did I have to pay extra because I paid with card?,typesafe/jev-1.13-20260917,v2,v1,card_payment_fee_charged,91.0,auto_accept,,false,card_payment_fee_charged,true,236,0.000100086
+test_00811,Why are there fees for card usage?,typesafe/jev-1.13-20260917,v2,v1,card_payment_fee_charged,98.0,auto_accept,,false,card_payment_fee_charged,true,230,9.9876e-05
+test_00812,im not sure what this charge is for,typesafe/jev-1.13-20260917,v2,v1,card_payment_not_recognised,54.0,review,keyword_miss,true,card_payment_fee_charged,false,217,9.9876e-05
+test_00817,I have been charged a fee for paying with card,typesafe/jev-1.13-20260917,v2,v1,card_payment_fee_charged,100,auto_accept,,false,card_payment_fee_charged,true,238,9.996e-05
+test_00819,Why would I be charged a fee for card payment?,typesafe/jev-1.13-20260917,v2,v1,card_payment_fee_charged,100,auto_accept,,false,card_payment_fee_charged,true,221,0.000100002
+test_00829,Someone needs to make me aware when there are extra charges for payments. I happened to be looking at the app earlier and noticed a charge associated to a payment that was extra that no one made me aware of before at all.,typesafe/jev-1.13-20260917,v2,v1,extra_charge_on_statement,90.0,auto_accept,,false,card_payment_fee_charged,false,208,0.00010143
+test_00831,Why was I charged an extra fee when using a card?,typesafe/jev-1.13-20260917,v2,v1,card_payment_fee_charged,98.0,auto_accept,,false,card_payment_fee_charged,true,250,0.000100044
+test_00834,Why was I charged a fee when I paid with card?,typesafe/jev-1.13-20260917,v2,v1,card_payment_fee_charged,100,auto_accept,,false,card_payment_fee_charged,true,244,0.000100044
+test_00838,Why was a charged a fee for using the card?,typesafe/jev-1.13-20260917,v2,v1,card_payment_fee_charged,98.0,auto_accept,,false,card_payment_fee_charged,true,212,0.000100002
+test_00839,They charged me for paying with my card.,typesafe/jev-1.13-20260917,v2,v1,card_payment_fee_charged,97.0,auto_accept,,false,card_payment_fee_charged,true,200,9.9918e-05
+test_00840,"I completed an in country transfer a few days ago and was sure to check the account information several times since the transaction was completed, but the funds are still not available. What is the problem?",typesafe/jev-1.13-20260917,v2,v1,balance_not_updated_after_bank_transfer,41.0,auto_accept,,false,transfer_not_received_by_recipient,false,262,0.000101178
+test_00842,I am still waiting for a transaction to be completed,typesafe/jev-1.13-20260917,v2,v1,pending_transfer,92.0,auto_accept,,false,transfer_not_received_by_recipient,false,200,9.996e-05
+test_00844,I tried to send someone money but they haven't received it.,typesafe/jev-1.13-20260917,v2,v1,transfer_not_received_by_recipient,100,auto_accept,,false,transfer_not_received_by_recipient,true,197,0.000100086
+test_00845,How long does it take for a transfer to get to a recipient?,typesafe/jev-1.13-20260917,v2,v1,transfer_timing,100,auto_accept,,false,transfer_not_received_by_recipient,false,188,0.000100128
+test_00847,I transferred money but the recipient says it has not arrived. Why would this be?,typesafe/jev-1.13-20260917,v2,v1,transfer_not_received_by_recipient,100,auto_accept,,false,transfer_not_received_by_recipient,true,211,0.000100254
+test_00857,I need to find out why my transfer didn't get there.,typesafe/jev-1.13-20260917,v2,v1,transfer_not_received_by_recipient,98.0,auto_accept,,false,transfer_not_received_by_recipient,true,241,0.000100086
+test_00859,I sent money.  They haven't received it.,typesafe/jev-1.13-20260917,v2,v1,transfer_not_received_by_recipient,100,auto_accept,,false,transfer_not_received_by_recipient,true,202,0.000100002
+test_00862,"I'm having a problem with a money transfer.  I sent some money to a friend a couple of hours ago, and they haven't received it yet.  Why hasn't it gotten to them? How long do transfers need to go through?",typesafe/jev-1.13-20260917,v2,v1,transfer_not_received_by_recipient,95.0,auto_accept,,false,transfer_not_received_by_recipient,true,201,0.00010164
+test_00864,Where is the transaction I made to a friend?,typesafe/jev-1.13-20260917,v2,v1,pending_transfer,59.0,review,keyword_miss,true,transfer_not_received_by_recipient,false,288,9.996e-05
+test_00867,I made a transaction and it is taking a very long time to go through.,typesafe/jev-1.13-20260917,v2,v1,transfer_timing,46.0,auto_accept,,false,transfer_not_received_by_recipient,false,239,0.000100212
+test_00869,How long will it take for my transaction to be completed?,typesafe/jev-1.13-20260917,v2,v1,transfer_timing,85.0,auto_accept,,false,transfer_not_received_by_recipient,false,204,0.000100044
+test_00871,I sent my friend some money a few hours ago but she has not received it yet. She really needs it. How long does this take?,typesafe/jev-1.13-20260917,v2,v1,transfer_not_received_by_recipient,77.0,auto_accept,,false,transfer_not_received_by_recipient,true,216,0.000100758
+test_00874,"How long does it take for transfers to finish?  I sent funds to my pal, and she says that she has not gotten anything.",typesafe/jev-1.13-20260917,v2,v1,transfer_not_received_by_recipient,79.0,auto_accept,,false,transfer_not_received_by_recipient,true,217,0.000100716
+test_00879,I transferred some money but the recipient is having trouble withdrawing.,typesafe/jev-1.13-20260917,v2,v1,receiving_money,51.0,auto_accept,,false,transfer_not_received_by_recipient,false,225,0.000100044
+test_00881,"I need support options, I want to top my card",typesafe/jev-1.13-20260917,v2,v1,topping_up_by_card,97.0,auto_accept,,false,supported_cards_and_currencies,false,222,0.000100002
+test_00887,"If I only have 1 other US card, can you take it?",typesafe/jev-1.13-20260917,v2,v1,supported_cards_and_currencies,33.0,review,keyword_miss,true,supported_cards_and_currencies,true,232,0.00010017
+test_00889,can you tell me what cards and currencies you take?,typesafe/jev-1.13-20260917,v2,v1,supported_cards_and_currencies,100,auto_accept,,false,supported_cards_and_currencies,true,211,0.000100002
+test_00897,What cards and currencies do you support?,typesafe/jev-1.13-20260917,v2,v1,supported_cards_and_currencies,100,auto_accept,,false,supported_cards_and_currencies,true,239,9.9876e-05
+test_00900,"When adding money, what are the currencies you take?",typesafe/jev-1.13-20260917,v2,v1,supported_cards_and_currencies,78.0,auto_accept,,false,supported_cards_and_currencies,true,212,0.000100002
+test_00903,"I want to add money but don't know what currencies you accept, can you tell me?",typesafe/jev-1.13-20260917,v2,v1,supported_cards_and_currencies,62.0,auto_accept,,false,supported_cards_and_currencies,true,328,0.000100338
+test_00907,Which credit or debit cards can I use to top up?,typesafe/jev-1.13-20260917,v2,v1,topping_up_by_card,51.0,auto_accept,,false,supported_cards_and_currencies,false,240,0.000100044
+test_00911,What cards to do you support to top up.,typesafe/jev-1.13-20260917,v2,v1,supported_cards_and_currencies,50.0,auto_accept,,false,supported_cards_and_currencies,true,345,9.996e-05
+test_00912,Do you accept other currencies besides US Dollars?,typesafe/jev-1.13-20260917,v2,v1,fiat_currency_support,66.0,auto_accept,,false,supported_cards_and_currencies,false,254,9.9918e-05
+test_00926,Can you tell me how to order a virtual card?,typesafe/jev-1.13-20260917,v2,v1,getting_virtual_card,98.0,auto_accept,,false,getting_virtual_card,true,193,0.000100002
+test_00927,Where is the virtual card?,typesafe/jev-1.13-20260917,v2,v1,getting_virtual_card,79.0,auto_accept,,false,getting_virtual_card,true,195,9.9792e-05
+test_00929,how do i get a virtual card?,typesafe/jev-1.13-20260917,v2,v1,getting_virtual_card,99.0,auto_accept,,false,getting_virtual_card,true,234,9.9876e-05
+test_00930,Where do I order a virtual card from?,typesafe/jev-1.13-20260917,v2,v1,getting_virtual_card,96.0,auto_accept,,false,getting_virtual_card,true,228,9.9918e-05
+test_00932,How can I order virtual cards?,typesafe/jev-1.13-20260917,v2,v1,getting_virtual_card,98.0,auto_accept,,false,getting_virtual_card,true,213,9.9834e-05
+test_00937,help me obtain a virtual card,typesafe/jev-1.13-20260917,v2,v1,getting_virtual_card,99.0,auto_accept,,false,getting_virtual_card,true,209,9.9792e-05
+test_00940,Where do I obtain my virtual card?,typesafe/jev-1.13-20260917,v2,v1,getting_virtual_card,99.0,auto_accept,,false,getting_virtual_card,true,214,9.9876e-05
+test_00942,I want one of those virtual cards!,typesafe/jev-1.13-20260917,v2,v1,getting_virtual_card,95.0,auto_accept,,false,getting_virtual_card,true,194,9.9876e-05
+test_00944,Can you help me sign up for a virtual card?,typesafe/jev-1.13-20260917,v2,v1,getting_virtual_card,96.0,auto_accept,,false,getting_virtual_card,true,211,0.000100002
+test_00945,Can I get a copy of the card by email?,typesafe/jev-1.13-20260917,v2,v1,getting_virtual_card,79.0,auto_accept,,false,getting_virtual_card,true,221,0.000100002
+test_00949,"I thought I was going to get a virtual card but I haven't received it yet, how can we resolve this?",typesafe/jev-1.13-20260917,v2,v1,getting_virtual_card,96.0,auto_accept,,false,getting_virtual_card,true,201,0.000100548
+test_00952,Where can I go to get a virtual card?,typesafe/jev-1.13-20260917,v2,v1,getting_virtual_card,99.0,auto_accept,,false,getting_virtual_card,true,263,9.996e-05
+test_00962,Can I use my card for payment all over the world?,typesafe/jev-1.13-20260917,v2,v1,card_acceptance,49.0,auto_accept,,false,card_acceptance,true,270,0.000100044
+test_00964,Where can the card be used?,typesafe/jev-1.13-20260917,v2,v1,card_acceptance,89.0,auto_accept,,false,card_acceptance,true,286,9.9834e-05
+test_00965,Can my card be used everywhere?,typesafe/jev-1.13-20260917,v2,v1,card_acceptance,98.0,auto_accept,,false,card_acceptance,true,220,9.9834e-05
+test_00978,Which outlets accept my card?,typesafe/jev-1.13-20260917,v2,v1,card_acceptance,100,auto_accept,,false,card_acceptance,true,228,9.9792e-05
+test_00979,"I am traveling to Germany, Will I be able to use my card there?",typesafe/jev-1.13-20260917,v2,v1,country_support,90.0,review,keyword_miss,true,card_acceptance,false,231,0.000100212
+test_00990,places i can use the card,typesafe/jev-1.13-20260917,v2,v1,card_acceptance,99.0,auto_accept,,false,card_acceptance,true,211,9.9792e-05
+test_00998,What can I use my card to pay for?,typesafe/jev-1.13-20260917,v2,v1,card_acceptance,95.0,auto_accept,,false,card_acceptance,true,233,9.996e-05
+test_00999,Who accepts my card?,typesafe/jev-1.13-20260917,v2,v1,card_acceptance,99.0,auto_accept,,false,card_acceptance,true,465,9.975e-05
+test_01001,How do I fix a reverted top up?,typesafe/jev-1.13-20260917,v2,v1,top_up_reverted,100,auto_accept,,false,top_up_reverted,true,211,9.9918e-05
+test_01003,"My top-up showed as complete, but it's no longer there! What's going on here?",typesafe/jev-1.13-20260917,v2,v1,top_up_reverted,97.0,auto_accept,,false,top_up_reverted,true,207,0.00010038
+test_01005,It seems my top up is reverted?,typesafe/jev-1.13-20260917,v2,v1,top_up_reverted,100,auto_accept,,false,top_up_reverted,true,207,9.9876e-05
+test_01010,I put money into my account for the minimum balance but the application didn't accept.,typesafe/jev-1.13-20260917,v2,v1,top_up_failed,85.0,review,keyword_miss,true,top_up_reverted,false,198,0.000100254
+test_01011,Can you tell me if my top-up has been cancelled?,typesafe/jev-1.13-20260917,v2,v1,top_up_reverted,44.0,auto_accept,,false,top_up_reverted,true,213,0.000100044
+test_01017,I believed crypto top up with something you offered. This does not seem to be working. The money has been removed from my account though so what's going on?,typesafe/jev-1.13-20260917,v2,v1,top_up_failed,94.0,auto_accept,,false,top_up_reverted,false,224,0.000100926
+test_01018,I topped up but the app reverted it,typesafe/jev-1.13-20260917,v2,v1,top_up_reverted,100,auto_accept,,false,top_up_reverted,true,189,9.9876e-05
+test_01023,"When I topped up, the app reverted my funds.",typesafe/jev-1.13-20260917,v2,v1,top_up_reverted,100,auto_accept,,false,top_up_reverted,true,190,0.000100002
+test_01025,I tryed to make a top-up with cryptocurrency but the payment was referted.,typesafe/jev-1.13-20260917,v2,v1,top_up_reverted,99.0,auto_accept,,false,top_up_reverted,true,534,0.000100296
+test_01027,The app reverted my action when I topped up.,typesafe/jev-1.13-20260917,v2,v1,top_up_reverted,100,auto_accept,,false,top_up_reverted,true,204,9.996e-05
+test_01029,"I see my top-up was canceled, but why?",typesafe/jev-1.13-20260917,v2,v1,top_up_failed,56.0,auto_accept,,false,top_up_reverted,false,245,0.000100002
+test_01032,My top-up was revoked.,typesafe/jev-1.13-20260917,v2,v1,top_up_reverted,100,auto_accept,,false,top_up_reverted,true,197,9.9792e-05
+test_01034,The app reverted what I topped up.,typesafe/jev-1.13-20260917,v2,v1,top_up_reverted,100,auto_accept,,false,top_up_reverted,true,209,9.9876e-05
+test_01036,Im very upset as my top-up was canceled and I have no idea why.,typesafe/jev-1.13-20260917,v2,v1,top_up_failed,69.0,auto_accept,,false,top_up_reverted,false,242,0.000100212
+test_01037,My top-up has been cancelled.,typesafe/jev-1.13-20260917,v2,v1,top_up_failed,55.0,auto_accept,,false,top_up_reverted,false,196,9.9834e-05
+test_01041,How come I don't see my deposit in my account yet?,typesafe/jev-1.13-20260917,v2,v1,balance_not_updated_after_cheque_or_cash_deposit,44.0,auto_accept,,false,balance_not_updated_after_cheque_or_cash_deposit,true,209,0.000100086
+test_01044,I made a cash deposit almost a week ago but it's still not there!! please sort this out asap I need the money,typesafe/jev-1.13-20260917,v2,v1,balance_not_updated_after_cheque_or_cash_deposit,93.0,auto_accept,,false,balance_not_updated_after_cheque_or_cash_deposit,true,232,0.00010059
+test_01047,When will I see the cash I deposited this morning as available?,typesafe/jev-1.13-20260917,v2,v1,balance_not_updated_after_cheque_or_cash_deposit,85.0,auto_accept,,false,balance_not_updated_after_cheque_or_cash_deposit,true,223,0.000100086
+test_01048,cash from this morning has not deposited,typesafe/jev-1.13-20260917,v2,v1,balance_not_updated_after_cheque_or_cash_deposit,98.0,auto_accept,,false,balance_not_updated_after_cheque_or_cash_deposit,true,224,9.9834e-05
+test_01052,I made a deposit this morning but it is still pending?,typesafe/jev-1.13-20260917,v2,v1,balance_not_updated_after_cheque_or_cash_deposit,78.0,auto_accept,,false,balance_not_updated_after_cheque_or_cash_deposit,true,255,0.000100044
+test_01053,cash deposit to my account has shown a red flag.,typesafe/jev-1.13-20260917,v2,v1,verify_source_of_funds,65.0,review,keyword_miss,true,balance_not_updated_after_cheque_or_cash_deposit,false,197,0.000100002
+test_01055,The balance on my account wasn't updated after I made a depost.,typesafe/jev-1.13-20260917,v2,v1,balance_not_updated_after_cheque_or_cash_deposit,94.0,auto_accept,,false,balance_not_updated_after_cheque_or_cash_deposit,true,238,0.00010017
+test_01057,I deposited a check but my balance is still the same.,typesafe/jev-1.13-20260917,v2,v1,balance_not_updated_after_cheque_or_cash_deposit,100,auto_accept,,false,balance_not_updated_after_cheque_or_cash_deposit,true,210,0.000100044
+test_01061,My bank statement doesn't show the cash deposit I made recently.,typesafe/jev-1.13-20260917,v2,v1,balance_not_updated_after_cheque_or_cash_deposit,99.0,auto_accept,,false,balance_not_updated_after_cheque_or_cash_deposit,true,220,0.000100086
+test_01064,Why is the cash deposit not showing up in my account?,typesafe/jev-1.13-20260917,v2,v1,balance_not_updated_after_cheque_or_cash_deposit,99.0,auto_accept,,false,balance_not_updated_after_cheque_or_cash_deposit,true,253,0.000100044
+test_01068,What happened to the cash that I tried to deposit into my account? It's gone!,typesafe/jev-1.13-20260917,v2,v1,balance_not_updated_after_cheque_or_cash_deposit,80.0,auto_accept,,false,balance_not_updated_after_cheque_or_cash_deposit,true,205,0.000100296
+test_01071,I submitted a cash deposit to my account but it hasn't posted yet.,typesafe/jev-1.13-20260917,v2,v1,balance_not_updated_after_cheque_or_cash_deposit,97.0,auto_accept,,false,balance_not_updated_after_cheque_or_cash_deposit,true,201,0.00010017
+test_01072,I sent a cheque  a few days ago and nothing has happened to my account yet. Can you please check on this for me?,typesafe/jev-1.13-20260917,v2,v1,balance_not_updated_after_cheque_or_cash_deposit,66.0,auto_accept,,false,balance_not_updated_after_cheque_or_cash_deposit,true,183,0.000100674
+test_01073,Has the check I deposited cleared to I can get the cash?,typesafe/jev-1.13-20260917,v2,v1,balance_not_updated_after_cheque_or_cash_deposit,86.0,auto_accept,,false,balance_not_updated_after_cheque_or_cash_deposit,true,221,0.000100086
+test_01075,How come my cash deposit is not showing up. This can't be right. There must be some mistake. Where did my cash go. You better not have lost it as I need this money asap.,typesafe/jev-1.13-20260917,v2,v1,balance_not_updated_after_cheque_or_cash_deposit,97.0,auto_accept,,false,balance_not_updated_after_cheque_or_cash_deposit,true,189,0.000101262
+test_01078,I tired to deposit some cash into my account but it's not there,typesafe/jev-1.13-20260917,v2,v1,balance_not_updated_after_cheque_or_cash_deposit,95.0,auto_accept,,false,balance_not_updated_after_cheque_or_cash_deposit,true,277,0.000100128
+test_01080,I have a strange payment in my statement,typesafe/jev-1.13-20260917,v2,v1,extra_charge_on_statement,62.0,auto_accept,,false,card_payment_not_recognised,false,201,9.9876e-05
+test_01084,An unauthorized payment is in my app,typesafe/jev-1.13-20260917,v2,v1,card_payment_not_recognised,70.0,auto_accept,,false,card_payment_not_recognised,true,226,9.9834e-05
+test_01089,I don't recall making that payment?,typesafe/jev-1.13-20260917,v2,v1,card_payment_not_recognised,58.0,auto_accept,,false,card_payment_not_recognised,true,230,9.9876e-05
+test_01090,There are some payments with my card that I don't know where they are coming from. Just checked today and it's been since a couple days as well! What to I do? Can I revert this retrospectively? My card needs to be frozen immediately as well!,typesafe/jev-1.13-20260917,v2,v1,card_payment_not_recognised,70.0,auto_accept,,false,card_payment_not_recognised,true,200,0.000101892
+test_01091,Has someone accessed my card there are payments I did not make that are showing up on the app.,typesafe/jev-1.13-20260917,v2,v1,compromised_card,55.0,auto_accept,,false,card_payment_not_recognised,false,194,0.00010038
+test_01093,Why would there be a payment on my account I don't recognize?,typesafe/jev-1.13-20260917,v2,v1,card_payment_not_recognised,45.0,auto_accept,,false,card_payment_not_recognised,true,198,0.000100128
+test_01094,I have a payment I didn't do,typesafe/jev-1.13-20260917,v2,v1,declined_card_payment,70.0,auto_accept,,false,card_payment_not_recognised,false,211,9.9876e-05
+test_01097,There is a card payment I do not recognise.,typesafe/jev-1.13-20260917,v2,v1,card_payment_not_recognised,100,auto_accept,,false,card_payment_not_recognised,true,192,9.996e-05
+test_01100,"Please put a freeze on my card,  I am worried there has been some payments on it and I don't know what for.",typesafe/jev-1.13-20260917,v2,v1,compromised_card,49.0,auto_accept,,false,card_payment_not_recognised,false,194,0.000100674
+test_01102,"I'm concerned about a payment that has recently been made on my card.  I do not recognize the name that the transaction went to, can you help me?",typesafe/jev-1.13-20260917,v2,v1,card_payment_not_recognised,100,auto_accept,,false,card_payment_not_recognised,true,221,0.000100926
+test_01103,What should I do to get transactions off of my account if I didn't make them?  My card must have been compromised and I need to freeze it asap!,typesafe/jev-1.13-20260917,v2,v1,compromised_card,100,auto_accept,,false,card_payment_not_recognised,false,253,0.000100926
+test_01105,What can I do about some payments on my card I didn't make.  Please put a freeze on my card till we can figure this out.,typesafe/jev-1.13-20260917,v2,v1,card_payment_not_recognised,70.0,auto_accept,,false,card_payment_not_recognised,true,221,0.0001008
+test_01106,I'm not familiar with a card payment.,typesafe/jev-1.13-20260917,v2,v1,card_payment_not_recognised,56.0,auto_accept,,false,card_payment_not_recognised,true,231,9.9918e-05
+test_01110,I see a charge on my account that I don't recall making. I feel like my account may have been compromised.,typesafe/jev-1.13-20260917,v2,v1,compromised_card,74.0,auto_accept,,false,card_payment_not_recognised,false,186,0.000100548
+test_01113,There's a recent charge on my card that I know I didn't make because I've never seen the name before. Can we investigate this?,typesafe/jev-1.13-20260917,v2,v1,card_payment_not_recognised,99.0,auto_accept,,false,card_payment_not_recognised,true,198,0.000100758
+test_01114,Some of my card payments look different than where I purchased products from. Why is that?,typesafe/jev-1.13-20260917,v2,v1,card_payment_not_recognised,97.0,auto_accept,,false,card_payment_not_recognised,true,276,0.000100296
+test_01116,I think there has been a purchase made that wasn't by me.,typesafe/jev-1.13-20260917,v2,v1,card_payment_not_recognised,99.0,review,keyword_miss,true,card_payment_not_recognised,true,248,0.000100128
+test_01117,There is a fraudulent charge on my statement.,typesafe/jev-1.13-20260917,v2,v1,card_payment_not_recognised,58.0,review,keyword_miss,true,card_payment_not_recognised,true,188,9.9918e-05
+test_01123,My address needs to be revised.,typesafe/jev-1.13-20260917,v2,v1,edit_personal_details,100,auto_accept,,false,edit_personal_details,true,233,9.9834e-05
+test_01124,"got married, need to change account name",typesafe/jev-1.13-20260917,v2,v1,edit_personal_details,100,auto_accept,,false,edit_personal_details,true,187,9.9876e-05
+test_01125,My address has changed.,typesafe/jev-1.13-20260917,v2,v1,edit_personal_details,100,auto_accept,,false,edit_personal_details,true,235,9.975e-05
+test_01127,I want to change my personal details.,typesafe/jev-1.13-20260917,v2,v1,edit_personal_details,100,auto_accept,,false,edit_personal_details,true,195,9.9876e-05
+test_01128,I moved.  I need to update my details.,typesafe/jev-1.13-20260917,v2,v1,edit_personal_details,100,auto_accept,,false,edit_personal_details,true,250,0.000100002
+test_01133,I need to change my account details,typesafe/jev-1.13-20260917,v2,v1,edit_personal_details,100,auto_accept,,false,edit_personal_details,true,200,9.9834e-05
+test_01134,I moved.  Where do I update my details?,typesafe/jev-1.13-20260917,v2,v1,edit_personal_details,100,auto_accept,,false,edit_personal_details,true,197,0.000100002
+test_01135,I relocated and need to change my personal details.,typesafe/jev-1.13-20260917,v2,v1,edit_personal_details,100,auto_accept,,false,edit_personal_details,true,213,9.996e-05
+test_01149,I want to change my address.,typesafe/jev-1.13-20260917,v2,v1,edit_personal_details,100,auto_accept,,false,edit_personal_details,true,198,9.9834e-05
+test_01151,Can I change my information?,typesafe/jev-1.13-20260917,v2,v1,edit_personal_details,100,auto_accept,,false,edit_personal_details,true,204,9.9792e-05
+test_01157,How can I edit my personal details?,typesafe/jev-1.13-20260917,v2,v1,edit_personal_details,100,auto_accept,,false,edit_personal_details,true,216,9.9876e-05
+test_01159,What do I need to do to change the address on my account?,typesafe/jev-1.13-20260917,v2,v1,edit_personal_details,100,auto_accept,,false,edit_personal_details,true,195,0.000100128
+test_01173,Why do you need so much information to verify my identity?,typesafe/jev-1.13-20260917,v2,v1,why_verify_identity,99.0,auto_accept,,false,why_verify_identity,true,202,0.000100044
+test_01177,How come you need to know my identity?,typesafe/jev-1.13-20260917,v2,v1,why_verify_identity,100,auto_accept,,false,why_verify_identity,true,319,9.9918e-05
+test_01178,"May I use my account now, even though the identity verification has not gone through yet?",typesafe/jev-1.13-20260917,v2,v1,unable_to_verify_identity,91.0,auto_accept,,false,why_verify_identity,false,225,0.000100296
+test_01179,Do I need to verify my identity to use my account?,typesafe/jev-1.13-20260917,v2,v1,why_verify_identity,72.0,auto_accept,,false,why_verify_identity,true,235,0.000100044
+test_01187,I won't verify my identity.,typesafe/jev-1.13-20260917,v2,v1,unable_to_verify_identity,95.0,auto_accept,,false,why_verify_identity,false,197,9.9834e-05
+test_01188,I want to skip verification of my identity.,typesafe/jev-1.13-20260917,v2,v1,unable_to_verify_identity,68.0,auto_accept,,false,why_verify_identity,false,205,9.9918e-05
+test_01190,Why do I have to verify my identity?,typesafe/jev-1.13-20260917,v2,v1,why_verify_identity,100,auto_accept,,false,why_verify_identity,true,205,9.9918e-05
+test_01192,What other methods are there to verify my identity?,typesafe/jev-1.13-20260917,v2,v1,verify_my_identity,98.0,auto_accept,,false,why_verify_identity,false,203,9.996e-05
+test_01195,Can I use my account if the identity verification is not complete?,typesafe/jev-1.13-20260917,v2,v1,unable_to_verify_identity,89.0,auto_accept,,false,why_verify_identity,false,209,0.000100086
+test_01196,Why is it asking me to verify my identity,typesafe/jev-1.13-20260917,v2,v1,why_verify_identity,100,auto_accept,,false,why_verify_identity,true,202,9.9918e-05
+test_01200,I cannot verify my identity,typesafe/jev-1.13-20260917,v2,v1,unable_to_verify_identity,99.0,auto_accept,,false,unable_to_verify_identity,true,281,9.975e-05
+test_01204,what do i do if my verification failed,typesafe/jev-1.13-20260917,v2,v1,unable_to_verify_identity,94.0,review,keyword_miss,true,unable_to_verify_identity,true,187,9.9876e-05
+test_01207,I'm having trouble verifying my ID.,typesafe/jev-1.13-20260917,v2,v1,unable_to_verify_identity,94.0,auto_accept,,false,unable_to_verify_identity,true,199,9.9876e-05
+test_01208,app does not recognize me,typesafe/jev-1.13-20260917,v2,v1,unable_to_verify_identity,89.0,review,keyword_miss,true,unable_to_verify_identity,true,202,9.975e-05
+test_01210,The app failed to verify my identity.,typesafe/jev-1.13-20260917,v2,v1,unable_to_verify_identity,100,auto_accept,,false,unable_to_verify_identity,true,194,9.9876e-05
+test_01211,I can't verify my ID.,typesafe/jev-1.13-20260917,v2,v1,unable_to_verify_identity,99.0,auto_accept,,false,unable_to_verify_identity,true,371,9.9834e-05
+test_01213,I am not being recognized by the app.,typesafe/jev-1.13-20260917,v2,v1,unable_to_verify_identity,64.0,review,keyword_miss,true,unable_to_verify_identity,true,190,9.9918e-05
+test_01216,I am having trouble proving my identity.,typesafe/jev-1.13-20260917,v2,v1,unable_to_verify_identity,94.0,auto_accept,,false,unable_to_verify_identity,true,252,9.9876e-05
+test_01222,I am having difficulties to verify my identity.,typesafe/jev-1.13-20260917,v2,v1,unable_to_verify_identity,96.0,auto_accept,,false,unable_to_verify_identity,true,196,9.9918e-05
+test_01226,"I tried verifying my ID, but it won't let me.",typesafe/jev-1.13-20260917,v2,v1,unable_to_verify_identity,99.0,auto_accept,,false,unable_to_verify_identity,true,194,0.000100086
+test_01228,I am experiencing difficulty providing my identity.,typesafe/jev-1.13-20260917,v2,v1,unable_to_verify_identity,97.0,auto_accept,,false,unable_to_verify_identity,true,210,9.9876e-05
+test_01229,I a having trouble proving my identity,typesafe/jev-1.13-20260917,v2,v1,unable_to_verify_identity,95.0,auto_accept,,false,unable_to_verify_identity,true,201,9.9834e-05
+test_01231,Why am I not able to verify my id?,typesafe/jev-1.13-20260917,v2,v1,unable_to_verify_identity,99.0,auto_accept,,false,unable_to_verify_identity,true,216,9.996e-05
+test_01233,app doesnt think its me,typesafe/jev-1.13-20260917,v2,v1,unable_to_verify_identity,94.0,review,keyword_miss,true,unable_to_verify_identity,true,208,9.975e-05
+test_01235,I am having issues with identity verification,typesafe/jev-1.13-20260917,v2,v1,unable_to_verify_identity,95.0,auto_accept,,false,unable_to_verify_identity,true,224,9.9834e-05
+test_01236,The app won't let me log in as myself.,typesafe/jev-1.13-20260917,v2,v1,passcode_forgotten,72.0,review,keyword_miss,true,unable_to_verify_identity,false,196,0.000100002
+test_01237,Why can't I verify my identity?,typesafe/jev-1.13-20260917,v2,v1,unable_to_verify_identity,96.0,auto_accept,,false,unable_to_verify_identity,true,190,9.9876e-05
+test_01239,for some reason I am having a problem with verifying my identity.,typesafe/jev-1.13-20260917,v2,v1,unable_to_verify_identity,97.0,auto_accept,,false,unable_to_verify_identity,true,236,0.000100086
+test_01241,Is the PIN delivered separately?,typesafe/jev-1.13-20260917,v2,v1,get_physical_card,98.0,auto_accept,,false,get_physical_card,true,210,9.9792e-05
+test_01242,I do not have my pin,typesafe/jev-1.13-20260917,v2,v1,get_physical_card,98.0,auto_accept,,false,get_physical_card,true,280,9.9792e-05
+test_01244,I cannot seem to find my PIN. Where is it?,typesafe/jev-1.13-20260917,v2,v1,get_physical_card,99.0,auto_accept,,false,get_physical_card,true,183,0.000100044
+test_01251,I just got my new card but am not sure how to check its PIN.,typesafe/jev-1.13-20260917,v2,v1,get_physical_card,99.0,auto_accept,,false,get_physical_card,true,249,0.000100212
+test_01253,"If I need a PIN for my card, where is it located?",typesafe/jev-1.13-20260917,v2,v1,get_physical_card,100,auto_accept,,false,get_physical_card,true,211,0.000100128
+test_01255,And what about the Card's PIN?,typesafe/jev-1.13-20260917,v2,v1,get_physical_card,97.0,auto_accept,,false,get_physical_card,true,224,9.9876e-05
+test_01260,Does my PIN come with my card?,typesafe/jev-1.13-20260917,v2,v1,get_physical_card,99.0,auto_accept,,false,get_physical_card,true,288,9.9876e-05
+test_01261,Where can I find the card PIN?,typesafe/jev-1.13-20260917,v2,v1,get_physical_card,100,auto_accept,,false,get_physical_card,true,205,9.9876e-05
+test_01264,"Please help in finding my card PIN, thank you!",typesafe/jev-1.13-20260917,v2,v1,get_physical_card,97.0,auto_accept,,false,get_physical_card,true,232,0.000100002
+test_01268,I cannot locate the card PIN.,typesafe/jev-1.13-20260917,v2,v1,get_physical_card,100,auto_accept,,false,get_physical_card,true,202,9.9834e-05
+test_01270,Where can I find my PIN?,typesafe/jev-1.13-20260917,v2,v1,get_physical_card,99.0,auto_accept,,false,get_physical_card,true,190,9.9834e-05
+test_01272,Help me find my card pin!,typesafe/jev-1.13-20260917,v2,v1,get_physical_card,99.0,auto_accept,,false,get_physical_card,true,220,9.9834e-05
+test_01273,Is PIN delivered separately?,typesafe/jev-1.13-20260917,v2,v1,get_physical_card,97.0,auto_accept,,false,get_physical_card,true,203,9.975e-05
+test_01278,What is my card's PIN?,typesafe/jev-1.13-20260917,v2,v1,get_physical_card,93.0,auto_accept,,false,get_physical_card,true,210,9.9834e-05
+test_01283,Do you guys accept Visa or Mastercard?,typesafe/jev-1.13-20260917,v2,v1,visa_or_mastercard,88.0,auto_accept,,false,visa_or_mastercard,true,230,9.9876e-05
+test_01286,Are both Visa and Mastercard offered?,typesafe/jev-1.13-20260917,v2,v1,visa_or_mastercard,98.0,auto_accept,,false,visa_or_mastercard,true,207,9.9834e-05
+test_01289,Can I get a mastercard?,typesafe/jev-1.13-20260917,v2,v1,visa_or_mastercard,73.0,auto_accept,,false,visa_or_mastercard,true,206,9.9876e-05
+test_01292,Do I get a choice between Visa and Mastercard?,typesafe/jev-1.13-20260917,v2,v1,visa_or_mastercard,100,auto_accept,,false,visa_or_mastercard,true,205,9.996e-05
+test_01295,May I choose between Visa and Mastercard?,typesafe/jev-1.13-20260917,v2,v1,visa_or_mastercard,100,auto_accept,,false,visa_or_mastercard,true,182,9.9876e-05
+test_01299,Am I able to choose my card?,typesafe/jev-1.13-20260917,v2,v1,visa_or_mastercard,67.0,auto_accept,,false,visa_or_mastercard,true,208,9.9876e-05
+test_01302,How do I select a Mastercard instead of a Visa?,typesafe/jev-1.13-20260917,v2,v1,visa_or_mastercard,100,auto_accept,,false,visa_or_mastercard,true,193,0.000100002
+test_01309,Is it possible to have both a Visa and a Mastercard from you?,typesafe/jev-1.13-20260917,v2,v1,visa_or_mastercard,99.0,auto_accept,,false,visa_or_mastercard,true,200,0.000100128
+test_01313,Please give me both a visa and a master card.,typesafe/jev-1.13-20260917,v2,v1,visa_or_mastercard,96.0,auto_accept,,false,visa_or_mastercard,true,183,0.000100002
+test_01317,Can you let me know if Visa is among the card scheme assignments?,typesafe/jev-1.13-20260917,v2,v1,visa_or_mastercard,89.0,auto_accept,,false,visa_or_mastercard,true,224,0.000100128
+test_01321,WHERE IS MY MONEY I WAS USING MY CARD AND IT DISAPPEARED,typesafe/jev-1.13-20260917,v2,v1,card_payment_not_recognised,46.0,auto_accept,,false,topping_up_by_card,false,253,0.00010017
+test_01322,How can I top up by card?,typesafe/jev-1.13-20260917,v2,v1,topping_up_by_card,100,auto_accept,,false,topping_up_by_card,true,235,9.9876e-05
+test_01323,What is the process for using my credit card to transfer money?,typesafe/jev-1.13-20260917,v2,v1,topping_up_by_card,69.0,auto_accept,,false,topping_up_by_card,true,222,0.000100086
+test_01326,Can I top up using my car?,typesafe/jev-1.13-20260917,v2,v1,topping_up_by_card,90.0,auto_accept,,false,topping_up_by_card,true,229,9.9876e-05
+test_01336,Can I give my friends access to my account so they can top it up for me?,typesafe/jev-1.13-20260917,v2,v1,receiving_money,32.0,review,keyword_miss,true,topping_up_by_card,false,205,0.000100296
+test_01337,"I did a top-up, but I'm not seeing it in my wallet yet.",typesafe/jev-1.13-20260917,v2,v1,pending_top_up,98.0,auto_accept,,false,topping_up_by_card,false,257,0.000100254
+test_01340,Is there a way to transfer funds directly from my card?,typesafe/jev-1.13-20260917,v2,v1,topping_up_by_card,66.0,auto_accept,,false,topping_up_by_card,true,203,0.000100044
+test_01344,I tried to use my card to top up but all of the money has disappeared.,typesafe/jev-1.13-20260917,v2,v1,top_up_failed,53.0,auto_accept,,false,topping_up_by_card,false,213,0.000100254
+test_01345,Is it possible to use my credit card to transfer money?,typesafe/jev-1.13-20260917,v2,v1,topping_up_by_card,45.0,auto_accept,,false,topping_up_by_card,true,280,0.000100044
+test_01350,Who else can top up my account,typesafe/jev-1.13-20260917,v2,v1,topping_up_by_card,33.0,auto_accept,,false,topping_up_by_card,true,212,9.9834e-05
+test_01351,Why is my money gone right when I attempted to top up,typesafe/jev-1.13-20260917,v2,v1,top_up_failed,46.0,auto_accept,,false,topping_up_by_card,false,208,0.000100044
+test_01352,How do i transfer money using my credit card?,typesafe/jev-1.13-20260917,v2,v1,topping_up_by_card,67.0,auto_accept,,false,topping_up_by_card,true,263,9.996e-05
+test_01356,I topped up my card but the money disappeared.,typesafe/jev-1.13-20260917,v2,v1,top_up_failed,55.0,auto_accept,,false,topping_up_by_card,false,228,9.996e-05
+test_01357,Why don't I see my top up in my wallet?,typesafe/jev-1.13-20260917,v2,v1,pending_top_up,67.0,auto_accept,,false,topping_up_by_card,false,194,0.000100044
+test_01359,Are my friends able to top up my account?,typesafe/jev-1.13-20260917,v2,v1,receiving_money,56.0,review,keyword_miss,true,topping_up_by_card,false,211,9.996e-05
+test_01361,Can I make many disposable cards per day?,typesafe/jev-1.13-20260917,v2,v1,disposable_card_limits,99.0,auto_accept,,false,disposable_card_limits,true,191,9.9918e-05
+test_01362,"I need to use my disposable card multiple times a day, is there a cutoff limit?",typesafe/jev-1.13-20260917,v2,v1,disposable_card_limits,100,auto_accept,,false,disposable_card_limits,true,193,0.000100296
+test_01370,How many disposable cards per day am I allowed to have?,typesafe/jev-1.13-20260917,v2,v1,disposable_card_limits,100,auto_accept,,false,disposable_card_limits,true,247,0.000100044
+test_01373,"If I have more than one disposable card, can I make five payments on each of them?",typesafe/jev-1.13-20260917,v2,v1,disposable_card_limits,100,auto_accept,,false,disposable_card_limits,true,217,0.000100338
+test_01374,Are you able to explain the restrictions of the disposable cards?,typesafe/jev-1.13-20260917,v2,v1,disposable_card_limits,100,auto_accept,,false,disposable_card_limits,true,193,0.000100044
+test_01375,What is the maximum number of transactions I can make with one card?,typesafe/jev-1.13-20260917,v2,v1,disposable_card_limits,68.0,auto_accept,,false,disposable_card_limits,true,252,0.000100128
+test_01376,What is the limit to number of transactions I can do with a disposable card?,typesafe/jev-1.13-20260917,v2,v1,disposable_card_limits,100,auto_accept,,false,disposable_card_limits,true,304,0.000100212
+test_01377,How many disposable cards is the limit?,typesafe/jev-1.13-20260917,v2,v1,disposable_card_limits,100,auto_accept,,false,disposable_card_limits,true,202,9.9876e-05
+test_01381,How can I create many temporary cards daily?,typesafe/jev-1.13-20260917,v2,v1,get_disposable_virtual_card,82.0,auto_accept,,false,disposable_card_limits,false,205,9.9918e-05
+test_01385,Are there any limits to how many disposable cards I can use?,typesafe/jev-1.13-20260917,v2,v1,disposable_card_limits,100,auto_accept,,false,disposable_card_limits,true,301,0.000100086
+test_01392,What is the limit to disposable cards you can have?,typesafe/jev-1.13-20260917,v2,v1,disposable_card_limits,100,auto_accept,,false,disposable_card_limits,true,192,0.000100002
+test_01393,How many times can I use a disposable card?,typesafe/jev-1.13-20260917,v2,v1,disposable_card_limits,100,auto_accept,,false,disposable_card_limits,true,216,9.996e-05
+test_01398,How many transactions can I do with one disposable card?,typesafe/jev-1.13-20260917,v2,v1,disposable_card_limits,100,auto_accept,,false,disposable_card_limits,true,217,0.000100002
+test_01399,How many times can I use the disposable virtual card I have?,typesafe/jev-1.13-20260917,v2,v1,disposable_card_limits,100,auto_accept,,false,disposable_card_limits,true,240,0.000100086
+test_01402,Someone I don't know has used my card without permission.,typesafe/jev-1.13-20260917,v2,v1,compromised_card,94.0,auto_accept,,false,compromised_card,true,244,0.000100044
+test_01406,"There are transactions I didn't make, someone else must have used my card.",typesafe/jev-1.13-20260917,v2,v1,compromised_card,68.0,auto_accept,,false,compromised_card,true,207,0.000100212
+test_01407,Can you freeze my card because someone used it while I was out of town. I did not make these purchases.,typesafe/jev-1.13-20260917,v2,v1,compromised_card,70.0,auto_accept,,false,compromised_card,true,226,0.000100506
+test_01410,What do I do to stop unauthorized transactions on my card? I was never in the place from which the transactions on my bill were made and I never made them. Please help!,typesafe/jev-1.13-20260917,v2,v1,compromised_card,54.0,auto_accept,,false,compromised_card,true,196,0.000101052
+test_01413,"I think my identity has been stolen, can you check on unauthorized charges?",typesafe/jev-1.13-20260917,v2,v1,card_payment_not_recognised,45.0,review,keyword_miss,true,compromised_card,false,252,0.00010017
+test_01422,My card has been compromised,typesafe/jev-1.13-20260917,v2,v1,compromised_card,100,auto_accept,,false,compromised_card,true,280,9.975e-05
+test_01425,How do I freeze my account?,typesafe/jev-1.13-20260917,v2,v1,compromised_card,37.0,review,keyword_miss,true,compromised_card,true,206,9.9834e-05
+test_01429,Someone else used my card!,typesafe/jev-1.13-20260917,v2,v1,compromised_card,86.0,auto_accept,,false,compromised_card,true,231,9.9792e-05
+test_01431,"If I feel someone has my card information, can I get a new card?",typesafe/jev-1.13-20260917,v2,v1,compromised_card,100,auto_accept,,false,compromised_card,true,247,0.000100212
+test_01432,"There are a few transaction that I don't recognize, I think someone managed to get my card details and use it.",typesafe/jev-1.13-20260917,v2,v1,compromised_card,80.0,auto_accept,,false,compromised_card,true,233,0.000100548
+test_01437,What should I do if I think someone is using my card.,typesafe/jev-1.13-20260917,v2,v1,compromised_card,99.0,auto_accept,,false,compromised_card,true,224,0.000100086
+test_01444,Are there any specific ATMs that this card can be used at?,typesafe/jev-1.13-20260917,v2,v1,atm_support,94.0,auto_accept,,false,atm_support,true,262,0.000100128
+test_01446,Which ATM's accept my card?,typesafe/jev-1.13-20260917,v2,v1,atm_support,63.0,auto_accept,,false,atm_support,true,255,9.9834e-05
+test_01448,Where are the locations of ATMs that accept this card?,typesafe/jev-1.13-20260917,v2,v1,atm_support,91.0,auto_accept,,false,atm_support,true,201,0.000100044
+test_01450,Help me locate the nearest ATM.,typesafe/jev-1.13-20260917,v2,v1,atm_support,100,auto_accept,,false,atm_support,true,249,9.9834e-05
+test_01454,How can I withdraw money?,typesafe/jev-1.13-20260917,v2,v1,atm_support,81.0,auto_accept,,false,atm_support,true,234,9.9792e-05
+test_01455,How many miles away is the ATM?,typesafe/jev-1.13-20260917,v2,v1,atm_support,100,auto_accept,,false,atm_support,true,244,9.9876e-05
+test_01456,From where can I withdraw?,typesafe/jev-1.13-20260917,v2,v1,atm_support,98.0,auto_accept,,false,atm_support,true,264,9.9792e-05
+test_01457,Which ATM's will accept my card?,typesafe/jev-1.13-20260917,v2,v1,atm_support,60.0,auto_accept,,false,atm_support,true,243,9.9876e-05
+test_01462,Can someone please assist me with finding my nearest ATM?,typesafe/jev-1.13-20260917,v2,v1,atm_support,100,auto_accept,,false,atm_support,true,207,0.000100002
+test_01465,What type of ATMs accept this card?,typesafe/jev-1.13-20260917,v2,v1,atm_support,75.0,auto_accept,,false,atm_support,true,210,9.9918e-05
+test_01468,What ATMs can I withdraw money from?,typesafe/jev-1.13-20260917,v2,v1,atm_support,100,auto_accept,,false,atm_support,true,218,9.9918e-05
+test_01474,At which ATMs can I use this card?,typesafe/jev-1.13-20260917,v2,v1,atm_support,87.0,auto_accept,,false,atm_support,true,216,9.996e-05
+test_01475,Are there certain ATMs that I can use this card at?,typesafe/jev-1.13-20260917,v2,v1,atm_support,93.0,auto_accept,,false,atm_support,true,195,0.000100086
+test_01476,Do you know the closest ATM?,typesafe/jev-1.13-20260917,v2,v1,atm_support,100,auto_accept,,false,atm_support,true,194,9.9834e-05
+test_01480,Help me.  There is a Direct Debit that I didn't make.,typesafe/jev-1.13-20260917,v2,v1,direct_debit_payment_not_recognised,100,auto_accept,,false,direct_debit_payment_not_recognised,true,201,0.000100212
+test_01488,There's a debit on my account that I didn't do.,typesafe/jev-1.13-20260917,v2,v1,direct_debit_payment_not_recognised,53.0,auto_accept,,false,direct_debit_payment_not_recognised,true,229,0.000100086
+test_01494,What is this direct debit I am seeing?,typesafe/jev-1.13-20260917,v2,v1,direct_debit_payment_not_recognised,100,auto_accept,,false,direct_debit_payment_not_recognised,true,189,9.9918e-05
+test_01497,There is a suspicious direct debit payment.,typesafe/jev-1.13-20260917,v2,v1,direct_debit_payment_not_recognised,100,auto_accept,,false,direct_debit_payment_not_recognised,true,216,9.9876e-05
+test_01498,There is a transaction from my account that I don't recognize can you trace back the information so I can make sure it's something I did or not?,typesafe/jev-1.13-20260917,v2,v1,card_payment_not_recognised,89.0,auto_accept,,false,direct_debit_payment_not_recognised,false,230,0.000100842
+test_01502,This Direct Debit payment may not be right.,typesafe/jev-1.13-20260917,v2,v1,direct_debit_payment_not_recognised,100,auto_accept,,false,direct_debit_payment_not_recognised,true,258,9.996e-05
+test_01503,why does the app show a direct debit payment that I did not authorize,typesafe/jev-1.13-20260917,v2,v1,direct_debit_payment_not_recognised,100,auto_accept,,false,direct_debit_payment_not_recognised,true,251,0.000100128
+test_01505,It seems there is an incorrect listing of a direct debit payment on my app that I did not make,typesafe/jev-1.13-20260917,v2,v1,direct_debit_payment_not_recognised,100,auto_accept,,false,direct_debit_payment_not_recognised,true,216,0.00010038
+test_01509,There's a direct debit on my account that I didn't authorize,typesafe/jev-1.13-20260917,v2,v1,direct_debit_payment_not_recognised,100,auto_accept,,false,direct_debit_payment_not_recognised,true,212,0.000100086
+test_01510,I understand that this is extremely late. After going over my transactions for the last couple of months I noticed a large charge that I'm sure I did not make. Is there anyway I can still dispute this?,typesafe/jev-1.13-20260917,v2,v1,card_payment_not_recognised,89.0,auto_accept,,false,direct_debit_payment_not_recognised,false,238,0.000101304
+test_01512,I am concerned about the security in my account and would like to make a dispute.,typesafe/jev-1.13-20260917,v2,v1,compromised_card,78.0,review,keyword_miss,true,direct_debit_payment_not_recognised,false,198,0.000100254
+test_01518,There's a direct debit I wish to dispute,typesafe/jev-1.13-20260917,v2,v1,direct_debit_payment_not_recognised,99.0,auto_accept,,false,direct_debit_payment_not_recognised,true,210,9.9918e-05
+test_01525,My password isn't being accepted and I need to reset it.,typesafe/jev-1.13-20260917,v2,v1,passcode_forgotten,93.0,auto_accept,,false,passcode_forgotten,true,246,0.000100086
+test_01537,Show me please how to reset my passcode.,typesafe/jev-1.13-20260917,v2,v1,passcode_forgotten,94.0,auto_accept,,false,passcode_forgotten,true,496,9.996e-05
+test_01538,Help me reset the passcode.,typesafe/jev-1.13-20260917,v2,v1,passcode_forgotten,89.0,auto_accept,,false,passcode_forgotten,true,197,9.9834e-05
+test_01547,I have forgotten my password.,typesafe/jev-1.13-20260917,v2,v1,passcode_forgotten,99.0,auto_accept,,false,passcode_forgotten,true,221,9.9792e-05
+test_01551,Can I reset my password?  I don't know what it is.,typesafe/jev-1.13-20260917,v2,v1,passcode_forgotten,98.0,auto_accept,,false,passcode_forgotten,true,235,0.00010017
+test_01553,What should I do if I forgot my passcode?,typesafe/jev-1.13-20260917,v2,v1,passcode_forgotten,100,auto_accept,,false,passcode_forgotten,true,256,0.000100002
+test_01554,My passcode doesn't work,typesafe/jev-1.13-20260917,v2,v1,passcode_forgotten,99.0,auto_accept,,false,passcode_forgotten,true,218,9.9792e-05
+test_01558,Can you tell me what to do to reset my passcode?,typesafe/jev-1.13-20260917,v2,v1,passcode_forgotten,94.0,auto_accept,,false,passcode_forgotten,true,253,0.000100086
+test_01563,The ATM did not allow me to withdraw,typesafe/jev-1.13-20260917,v2,v1,declined_cash_withdrawal,96.0,auto_accept,,false,declined_cash_withdrawal,true,297,9.9876e-05
+test_01565,The ATM keeps declining my card. I tried at a couple different ATMs. Can you tell me if there's a problem with my account?,typesafe/jev-1.13-20260917,v2,v1,declined_cash_withdrawal,99.0,auto_accept,,false,declined_cash_withdrawal,true,239,0.000100758
+test_01566,I was at the ATM trying to made a withdraw and I was declined.,typesafe/jev-1.13-20260917,v2,v1,declined_cash_withdrawal,100,auto_accept,,false,declined_cash_withdrawal,true,212,0.00010017
+test_01572,I tried to make a cash withdrawal and it was declined. Why did this happen?,typesafe/jev-1.13-20260917,v2,v1,declined_cash_withdrawal,100,auto_accept,,false,declined_cash_withdrawal,true,200,0.000100254
+test_01575,The withdrawal was declined I am unsure as to why this happened?,typesafe/jev-1.13-20260917,v2,v1,declined_cash_withdrawal,100,auto_accept,,false,declined_cash_withdrawal,true,191,0.000100086
+test_01578,What are some reasons that would cause ATM machines to decline my card? It has happened to me multiple times!,typesafe/jev-1.13-20260917,v2,v1,declined_cash_withdrawal,99.0,auto_accept,,false,declined_cash_withdrawal,true,226,0.000100464
+test_01582,I tried to withdraw money but I was declined!,typesafe/jev-1.13-20260917,v2,v1,declined_cash_withdrawal,100,auto_accept,,false,declined_cash_withdrawal,true,209,9.996e-05
+test_01583,How come I can't take money out of the ATM?,typesafe/jev-1.13-20260917,v2,v1,declined_cash_withdrawal,81.0,auto_accept,,false,declined_cash_withdrawal,true,213,0.000100044
+test_01584,The ATM keeps declining my card. I tried at two different ATMs. Can you tell me if there's an issue with my account?,typesafe/jev-1.13-20260917,v2,v1,declined_cash_withdrawal,99.0,auto_accept,,false,declined_cash_withdrawal,true,216,0.000100716
+test_01590,i tried to withdraw money from an atm and i was declined on front of my friends. Why did this happen?,typesafe/jev-1.13-20260917,v2,v1,declined_cash_withdrawal,100,auto_accept,,false,declined_cash_withdrawal,true,208,0.000100506
+test_01591,The ATM isn't giving out any money.,typesafe/jev-1.13-20260917,v2,v1,atm_support,76.0,auto_accept,,false,declined_cash_withdrawal,false,209,9.9918e-05
+test_01593,I couldn't get cash at the atm,typesafe/jev-1.13-20260917,v2,v1,declined_cash_withdrawal,82.0,auto_accept,,false,declined_cash_withdrawal,true,190,9.9876e-05
+test_01596,My cash withdrawl was declined why?,typesafe/jev-1.13-20260917,v2,v1,declined_cash_withdrawal,100,auto_accept,,false,declined_cash_withdrawal,true,256,9.9918e-05
+test_01600,"My card payment is still on hold, why is it so?",typesafe/jev-1.13-20260917,v2,v1,pending_card_payment,99.0,auto_accept,,false,pending_card_payment,true,186,0.000100086
+test_01609,When will my card payment be done pending?,typesafe/jev-1.13-20260917,v2,v1,pending_card_payment,100,auto_accept,,false,pending_card_payment,true,234,9.9918e-05
+test_01610,I made this payment days ago so why hasn't it gone through yet?,typesafe/jev-1.13-20260917,v2,v1,pending_transfer,53.0,review,keyword_miss,true,pending_card_payment,false,209,0.00010017
+test_01611,I am seeing pending from the card payment I made.,typesafe/jev-1.13-20260917,v2,v1,pending_card_payment,100,auto_accept,,false,pending_card_payment,true,184,0.000100002
+test_01612,My card payment is showing pending.,typesafe/jev-1.13-20260917,v2,v1,pending_card_payment,100,auto_accept,,false,pending_card_payment,true,211,9.9834e-05
+test_01613,I bought some stuff this morning but the payment shows as pending,typesafe/jev-1.13-20260917,v2,v1,pending_card_payment,100,auto_accept,,false,pending_card_payment,true,198,0.000100044
+test_01616,What is a pending payment?,typesafe/jev-1.13-20260917,v2,v1,pending_card_payment,99.0,auto_accept,,false,pending_card_payment,true,223,9.9792e-05
+test_01618,Why is there a pending transaction on my card?,typesafe/jev-1.13-20260917,v2,v1,pending_card_payment,100,auto_accept,,false,pending_card_payment,true,238,9.996e-05
+test_01620,Why is a payment showing up on my card as pending?,typesafe/jev-1.13-20260917,v2,v1,pending_card_payment,100,auto_accept,,false,pending_card_payment,true,225,0.000100044
+test_01621,I made a purchase and it says it's pending. What does that mean?,typesafe/jev-1.13-20260917,v2,v1,pending_card_payment,100,auto_accept,,false,pending_card_payment,true,186,0.000100212
+test_01623,what does pending mean?,typesafe/jev-1.13-20260917,v2,v1,pending_card_payment,78.0,auto_accept,,false,pending_card_payment,true,197,9.975e-05
+test_01624,How long will this card payment stay pending?,typesafe/jev-1.13-20260917,v2,v1,pending_card_payment,100,auto_accept,,false,pending_card_payment,true,198,9.9918e-05
+test_01626,"I was double charged, and the second charge is showing as ""pending"". How long will it be before I get my money back once the second charge has been refunded?",typesafe/jev-1.13-20260917,v2,v1,transaction_charged_twice,95.0,auto_accept,,false,pending_card_payment,false,217,0.000100968
+test_01628,Why would I have a pending payment?,typesafe/jev-1.13-20260917,v2,v1,pending_card_payment,98.0,auto_accept,,false,pending_card_payment,true,258,9.9876e-05
+test_01640,My phone was stolen,typesafe/jev-1.13-20260917,v2,v1,lost_or_stolen_phone,100,auto_accept,,false,lost_or_stolen_phone,true,215,9.9708e-05
+test_01641,My phone was stolen yesterday.  What should I do?,typesafe/jev-1.13-20260917,v2,v1,lost_or_stolen_phone,100,auto_accept,,false,lost_or_stolen_phone,true,200,0.000100044
+test_01644,"If I was mugged and lost everything, how do I access my account and app?",typesafe/jev-1.13-20260917,v2,v1,lost_or_stolen_phone,51.0,auto_accept,,false,lost_or_stolen_phone,true,210,0.000100296
+test_01650,"lost my phone, dont want others to use it.",typesafe/jev-1.13-20260917,v2,v1,lost_or_stolen_phone,100,auto_accept,,false,lost_or_stolen_phone,true,184,0.000100002
+test_01651,I lost my phone and need help securing it.,typesafe/jev-1.13-20260917,v2,v1,lost_or_stolen_phone,100,auto_accept,,false,lost_or_stolen_phone,true,224,9.996e-05
+test_01655,my phone is gone,typesafe/jev-1.13-20260917,v2,v1,lost_or_stolen_phone,100,auto_accept,,false,lost_or_stolen_phone,true,216,9.9708e-05
+test_01657,my phone was taken! can you place cancel my account so no one uses it,typesafe/jev-1.13-20260917,v2,v1,lost_or_stolen_phone,68.0,auto_accept,,false,lost_or_stolen_phone,true,211,0.000100212
+test_01659,"lost phone, can i still access account?",typesafe/jev-1.13-20260917,v2,v1,lost_or_stolen_phone,100,auto_accept,,false,lost_or_stolen_phone,true,234,9.9918e-05
+test_01660,The hotel called and said I left my phone in the room.,typesafe/jev-1.13-20260917,v2,v1,lost_or_stolen_phone,99.0,auto_accept,,false,lost_or_stolen_phone,true,202,0.000100086
+test_01665,"Someone attacked me yesterday and took my things, so I am unable to use the app.  I am in need of some help.",typesafe/jev-1.13-20260917,v2,v1,lost_or_stolen_card,65.0,auto_accept,,false,lost_or_stolen_phone,false,238,0.000100674
+test_01671,Someone stole my phone.,typesafe/jev-1.13-20260917,v2,v1,lost_or_stolen_phone,100,auto_accept,,false,lost_or_stolen_phone,true,260,9.975e-05
+test_01675,I lost my phone!,typesafe/jev-1.13-20260917,v2,v1,lost_or_stolen_phone,100,auto_accept,,false,lost_or_stolen_phone,true,216,9.975e-05
+test_01677,How do I use the app if I don't have my phone with me?,typesafe/jev-1.13-20260917,v2,v1,lost_or_stolen_phone,98.0,auto_accept,,false,lost_or_stolen_phone,true,206,0.000100212
+test_01688,Can I have a refund?,typesafe/jev-1.13-20260917,v2,v1,request_refund,100,auto_accept,,false,request_refund,true,248,9.9792e-05
+test_01694,Can I have an item refunded?,typesafe/jev-1.13-20260917,v2,v1,request_refund,100,auto_accept,,false,request_refund,true,200,9.9834e-05
+test_01702,How do I cancel a previous purchase,typesafe/jev-1.13-20260917,v2,v1,request_refund,48.0,auto_accept,,false,request_refund,true,244,9.9834e-05
+test_01703,I would appreciate it if I could get an item refunded,typesafe/jev-1.13-20260917,v2,v1,request_refund,100,auto_accept,,false,request_refund,true,241,0.000100002
+test_01709,I want this amount reversed out of my account.,typesafe/jev-1.13-20260917,v2,v1,request_refund,52.0,review,keyword_miss,true,request_refund,true,241,9.996e-05
+test_01710,Hello! I recently made a purchase and I'm needing to cancel my order and process a refund as soon as possible.,typesafe/jev-1.13-20260917,v2,v1,request_refund,100,auto_accept,,false,request_refund,true,251,0.000100548
+test_01712,I am chatting about an order from a long while back.  I never got it to this day and am deeply upset by this!  I want all of my money back!  I just can not accept paying for something I never got.,typesafe/jev-1.13-20260917,v2,v1,request_refund,97.0,review,keyword_miss,true,request_refund,true,206,0.000101598
+test_01713,I bought this item and was charged the wrong amount can I get a refund?,typesafe/jev-1.13-20260917,v2,v1,request_refund,100,auto_accept,,false,request_refund,true,220,0.000100212
+test_01714,I would like to cancel a payment. I purchased something several days ago and i still have not received it.,typesafe/jev-1.13-20260917,v2,v1,request_refund,45.0,auto_accept,,false,request_refund,true,205,0.000100464
+test_01716,I want a refund for my purchase,typesafe/jev-1.13-20260917,v2,v1,request_refund,100,auto_accept,,false,request_refund,true,231,9.9834e-05
+test_01717,How can I process a refund for something I purchased?,typesafe/jev-1.13-20260917,v2,v1,request_refund,100,auto_accept,,false,request_refund,true,187,0.000100002
+test_01720,I tried to make a transfer and it was declined. Why?,typesafe/jev-1.13-20260917,v2,v1,declined_transfer,94.0,auto_accept,,false,declined_transfer,true,192,0.000100086
+test_01723,why was my transfer declined,typesafe/jev-1.13-20260917,v2,v1,declined_transfer,98.0,auto_accept,,false,declined_transfer,true,230,9.975e-05
+test_01727,Why did a transfer get declined?,typesafe/jev-1.13-20260917,v2,v1,declined_transfer,97.0,auto_accept,,false,declined_transfer,true,249,9.9834e-05
+test_01730,The card got declined twice when I tried to use it to buy something online yesterday.,typesafe/jev-1.13-20260917,v2,v1,declined_card_payment,100,auto_accept,,false,declined_transfer,false,201,0.000100254
+test_01735,"You keep declining my transfers? It's always been working really well so far, but when I tried to buy something just now the card got declined. I tried couple times already but same thing.",typesafe/jev-1.13-20260917,v2,v1,declined_card_payment,77.0,auto_accept,,false,declined_transfer,false,190,0.000101178
+test_01736,Why was I unable to do a transfer?,typesafe/jev-1.13-20260917,v2,v1,declined_transfer,59.0,auto_accept,,false,declined_transfer,true,186,9.9918e-05
+test_01737,Trouble transferring transaction contact for help,typesafe/jev-1.13-20260917,v2,v1,failed_transfer,29.0,review,keyword_miss,true,declined_transfer,false,190,9.9834e-05
+test_01741,"When I submit a transfer, it is being declined.  The information I put in has been reviewed.",typesafe/jev-1.13-20260917,v2,v1,declined_transfer,95.0,auto_accept,,false,declined_transfer,true,446,0.000100422
+test_01743,What is the reason my transfer was declined?,typesafe/jev-1.13-20260917,v2,v1,declined_transfer,98.0,auto_accept,,false,declined_transfer,true,243,9.9918e-05
+test_01744,My transfer got declined.,typesafe/jev-1.13-20260917,v2,v1,declined_transfer,97.0,auto_accept,,false,declined_transfer,true,236,9.975e-05
+test_01747,I would like to know why my transfer was declined.,typesafe/jev-1.13-20260917,v2,v1,declined_transfer,98.0,auto_accept,,false,declined_transfer,true,189,0.000100002
+test_01748,"I tried to make a transfer, but it was declined. Can you tell me why?",typesafe/jev-1.13-20260917,v2,v1,declined_transfer,95.0,auto_accept,,false,declined_transfer,true,214,0.000100296
+test_01760,The refund isn't showing up on my account.,typesafe/jev-1.13-20260917,v2,v1,Refund_not_showing_up,100,auto_accept,,false,Refund_not_showing_up,true,247,9.996e-05
+test_01764,There's a refund missing from my statement,typesafe/jev-1.13-20260917,v2,v1,Refund_not_showing_up,100,auto_accept,,false,Refund_not_showing_up,true,187,9.9876e-05
+test_01765,"I need help. I asked for a refund from a merchant a while ago, but I have not gotten my money back. I keep checking my account, but nothing is showing up. What should I do now?",typesafe/jev-1.13-20260917,v2,v1,Refund_not_showing_up,100,auto_accept,,false,Refund_not_showing_up,true,241,0.000101346
+test_01766,I am awaiting my refund,typesafe/jev-1.13-20260917,v2,v1,Refund_not_showing_up,93.0,auto_accept,,false,Refund_not_showing_up,true,209,9.975e-05
+test_01770,"I asked for a refund last week but nothing has happened yet, can you help me please?",typesafe/jev-1.13-20260917,v2,v1,Refund_not_showing_up,84.0,auto_accept,,false,Refund_not_showing_up,true,237,0.000100338
+test_01778,Where can I see the refund in my account,typesafe/jev-1.13-20260917,v2,v1,Refund_not_showing_up,100,auto_accept,,false,Refund_not_showing_up,true,227,9.9918e-05
+test_01779,"i was supposed to get a refund but my balance hasn't changed, why not?",typesafe/jev-1.13-20260917,v2,v1,Refund_not_showing_up,100,auto_accept,,false,Refund_not_showing_up,true,219,0.000100254
+test_01783,My statement doesn't show that a refund has processed,typesafe/jev-1.13-20260917,v2,v1,Refund_not_showing_up,100,auto_accept,,false,Refund_not_showing_up,true,203,9.996e-05
+test_01784,I requested a refund from a store but it hasn't arrived.,typesafe/jev-1.13-20260917,v2,v1,Refund_not_showing_up,99.0,auto_accept,,false,Refund_not_showing_up,true,231,0.000100086
+test_01786,I am missing a refund.,typesafe/jev-1.13-20260917,v2,v1,Refund_not_showing_up,100,auto_accept,,false,Refund_not_showing_up,true,224,9.9792e-05
+test_01788,I am not seeing a refund in my statement.,typesafe/jev-1.13-20260917,v2,v1,Refund_not_showing_up,100,auto_accept,,false,Refund_not_showing_up,true,229,9.996e-05
+test_01789,Why can't I see a recent refund in my statement?,typesafe/jev-1.13-20260917,v2,v1,Refund_not_showing_up,100,auto_accept,,false,Refund_not_showing_up,true,206,0.000100044
+test_01791,Where is my refund? I have been checking my account all day.,typesafe/jev-1.13-20260917,v2,v1,Refund_not_showing_up,100,auto_accept,,false,Refund_not_showing_up,true,231,0.000100128
+test_01793,My refund is missing,typesafe/jev-1.13-20260917,v2,v1,Refund_not_showing_up,100,auto_accept,,false,Refund_not_showing_up,true,214,9.9708e-05
+test_01795,I keep checking my bank statements but I don't see a refund that I've requested from a seller. Can you ensure that I receive the refund from the seller?,typesafe/jev-1.13-20260917,v2,v1,Refund_not_showing_up,94.0,auto_accept,,false,Refund_not_showing_up,true,236,0.000100926
+test_01801,The new card that was just sent to me was declined multiple times yesterday when I tried to use it at a restaurant to pay for my dinner.  I am really disappointed  and embarrassed that my card was denied when I tried to use it to pay for my friend's birthday dinner.,typesafe/jev-1.13-20260917,v2,v1,declined_card_payment,100,auto_accept,,false,declined_card_payment,true,186,0.000101934
+test_01803,I was trying to purchase something at the store today and my card has been declined.  Why has this happened?,typesafe/jev-1.13-20260917,v2,v1,declined_card_payment,100,auto_accept,,false,declined_card_payment,true,247,0.000100506
+test_01807,My card declined,typesafe/jev-1.13-20260917,v2,v1,declined_card_payment,100,auto_accept,,false,declined_card_payment,true,206,9.9666e-05
+test_01808,Can you look at my account ans see why my card was declined,typesafe/jev-1.13-20260917,v2,v1,declined_card_payment,99.0,auto_accept,,false,declined_card_payment,true,232,0.000100086
+test_01809,"I was out today looking forward to pay with my new card, turns out the payment just kept getting declined. This is really sad, what's going on?",typesafe/jev-1.13-20260917,v2,v1,declined_card_payment,100,auto_accept,,false,declined_card_payment,true,203,0.000100884
+test_01811,My new card keeps getting declined. I was very excited to use it for the first time today. Why is this doing this?,typesafe/jev-1.13-20260917,v2,v1,declined_card_payment,94.0,auto_accept,,false,declined_card_payment,true,192,0.000100632
+test_01812,"My latest payment was declined, I was told everything was back to working order. What happened?",typesafe/jev-1.13-20260917,v2,v1,declined_card_payment,93.0,auto_accept,,false,declined_card_payment,true,239,0.000100338
+test_01813,I know I have enough funds in my account but my card payment hasn't worked for some reason. What do I do?,typesafe/jev-1.13-20260917,v2,v1,declined_card_payment,97.0,auto_accept,,false,declined_card_payment,true,227,0.00010059
+test_01825,"My card payment didn't work, can you help?",typesafe/jev-1.13-20260917,v2,v1,declined_card_payment,99.0,auto_accept,,false,declined_card_payment,true,198,0.000100002
+test_01831,They declined my card payment.,typesafe/jev-1.13-20260917,v2,v1,declined_card_payment,100,auto_accept,,false,declined_card_payment,true,236,9.9792e-05
+test_01832,Why has my card payment been declined?,typesafe/jev-1.13-20260917,v2,v1,declined_card_payment,100,auto_accept,,false,declined_card_payment,true,251,9.9876e-05
+test_01833,"I finally got my new card and was very excited to use it today. However, my payment kept declining. What is happening?",typesafe/jev-1.13-20260917,v2,v1,declined_card_payment,98.0,auto_accept,,false,declined_card_payment,true,205,0.000100632
+test_01839,Why do you keep declining my payment? I tried several times already with this card and it's just not working,typesafe/jev-1.13-20260917,v2,v1,declined_card_payment,92.0,auto_accept,,false,declined_card_payment,true,227,0.000100464
+test_01842,Why is my transfer not done yet?,typesafe/jev-1.13-20260917,v2,v1,pending_transfer,94.0,auto_accept,,false,pending_transfer,true,254,9.9876e-05
+test_01845,i transfered however its still pending,typesafe/jev-1.13-20260917,v2,v1,pending_transfer,100,auto_accept,,false,pending_transfer,true,186,9.9876e-05
+test_01847,So the transfer finally worked but now it's been pending for quite a long time. How long do you expect me to wait for it? It's quite urgent,typesafe/jev-1.13-20260917,v2,v1,pending_transfer,97.0,auto_accept,,false,pending_transfer,true,252,0.000100884
+test_01849,I submitted my transfer but it has been pending for quite a while and I was wondering what takes so long? why hasn't it completed,typesafe/jev-1.13-20260917,v2,v1,pending_transfer,95.0,auto_accept,,false,pending_transfer,true,238,0.000100674
+test_01850,How can I speed up a transfer?  Mine is pending.,typesafe/jev-1.13-20260917,v2,v1,pending_transfer,96.0,auto_accept,,false,pending_transfer,true,231,0.000100086
+test_01859,When will the transfer go through?,typesafe/jev-1.13-20260917,v2,v1,transfer_timing,84.0,auto_accept,,false,pending_transfer,false,208,9.9834e-05
+test_01861,"I double checked that I have the correct account details , they're right for sure. Transfer is still pending since forever. What should be done now?",typesafe/jev-1.13-20260917,v2,v1,pending_transfer,98.0,auto_accept,,false,pending_transfer,true,257,0.0001008
+test_01862,When will my transfer go through?,typesafe/jev-1.13-20260917,v2,v1,transfer_timing,86.0,auto_accept,,false,pending_transfer,false,243,9.9834e-05
+test_01864,When will the transfer be completed?,typesafe/jev-1.13-20260917,v2,v1,transfer_timing,94.0,auto_accept,,false,pending_transfer,false,247,9.9834e-05
+test_01866,"I would like to know why my payment is still pending, can you help?",typesafe/jev-1.13-20260917,v2,v1,pending_card_payment,92.0,auto_accept,,false,pending_transfer,false,192,0.000100212
+test_01868,How long does a transfer take to be confirmed?,typesafe/jev-1.13-20260917,v2,v1,transfer_timing,93.0,auto_accept,,false,pending_transfer,false,215,9.996e-05
+test_01871,How long can I expect a transfer to pend for?,typesafe/jev-1.13-20260917,v2,v1,pending_transfer,81.0,auto_accept,,false,pending_transfer,true,556,0.000100002
+test_01872,For how long will my transfer be pending?,typesafe/jev-1.13-20260917,v2,v1,pending_transfer,95.0,auto_accept,,false,pending_transfer,true,310,9.9918e-05
+test_01874,Why is a money transfer not showing?,typesafe/jev-1.13-20260917,v2,v1,pending_transfer,65.0,auto_accept,,false,pending_transfer,true,226,9.9876e-05
+test_01878,I am confused as to why my transfer could still be pending.,typesafe/jev-1.13-20260917,v2,v1,pending_transfer,100,auto_accept,,false,pending_transfer,true,250,0.000100086
+test_01880,Can you remove my account please?,typesafe/jev-1.13-20260917,v2,v1,terminate_account,100,auto_accept,,false,terminate_account,true,194,9.9834e-05
+test_01882,My account needs to be deleted.,typesafe/jev-1.13-20260917,v2,v1,terminate_account,100,auto_accept,,false,terminate_account,true,206,9.9834e-05
+test_01885,I'm tired of all the problems I've had. I want to quit this account!,typesafe/jev-1.13-20260917,v2,v1,terminate_account,100,auto_accept,,false,terminate_account,true,238,0.000100296
+test_01891,I don't like your company. Delete my account.,typesafe/jev-1.13-20260917,v2,v1,terminate_account,100,auto_accept,,false,terminate_account,true,219,0.000100002
+test_01902,I am not satisfied with your company and would like to delete my accounts!,typesafe/jev-1.13-20260917,v2,v1,terminate_account,100,auto_accept,,false,terminate_account,true,209,0.00010017
+test_01905,I am sick of this damn company and want to close out my account.,typesafe/jev-1.13-20260917,v2,v1,terminate_account,100,auto_accept,,false,terminate_account,true,201,0.00010017
+test_01907,Please delete my account.,typesafe/jev-1.13-20260917,v2,v1,terminate_account,100,auto_accept,,false,terminate_account,true,234,9.975e-05
+test_01910,I am extremely unhappy with this app and want to get rid of my account?,typesafe/jev-1.13-20260917,v2,v1,terminate_account,100,auto_accept,,false,terminate_account,true,221,0.000100212
+test_01916,"Please delete my account, this company is not working for me!",typesafe/jev-1.13-20260917,v2,v1,terminate_account,100,auto_accept,,false,terminate_account,true,194,0.000100086
+test_01921,How do I retrieve my card from the machine?,typesafe/jev-1.13-20260917,v2,v1,atm_support,50.0,review,keyword_miss,true,card_swallowed,false,248,9.996e-05
+test_01922,I was retrieving money and my card wouldn't remove.,typesafe/jev-1.13-20260917,v2,v1,card_swallowed,87.0,auto_accept,,false,card_swallowed,true,227,0.000100002
+test_01924,HOw do I get my card back after the ATM has pulled it in?,typesafe/jev-1.13-20260917,v2,v1,card_swallowed,100,auto_accept,,false,card_swallowed,true,205,0.000100212
+test_01925,Atm took my card,typesafe/jev-1.13-20260917,v2,v1,card_swallowed,100,auto_accept,,false,card_swallowed,true,201,9.975e-05
+test_01926,Is there a way I can get my ATM card back from the machine?,typesafe/jev-1.13-20260917,v2,v1,card_swallowed,98.0,auto_accept,,false,card_swallowed,true,263,0.00010017
+test_01929,How can I get my card out of the damn ATM?,typesafe/jev-1.13-20260917,v2,v1,card_swallowed,84.0,auto_accept,,false,card_swallowed,true,230,0.000100044
+test_01939,ATM still has my card,typesafe/jev-1.13-20260917,v2,v1,card_swallowed,100,auto_accept,,false,card_swallowed,true,259,9.975e-05
+test_01940,What do I do if an ATM ate my card?,typesafe/jev-1.13-20260917,v2,v1,card_swallowed,100,auto_accept,,false,card_swallowed,true,200,0.000100002
+test_01941,What happens if the ATM doesn't give me back my card?,typesafe/jev-1.13-20260917,v2,v1,card_swallowed,99.0,auto_accept,,false,card_swallowed,true,221,0.000100086
+test_01948,How do I retrieve a trapped card from a ATM?,typesafe/jev-1.13-20260917,v2,v1,card_swallowed,98.0,auto_accept,,false,card_swallowed,true,203,0.000100002
+test_01949,"My card is stuck in the ATM, what can I do?",typesafe/jev-1.13-20260917,v2,v1,card_swallowed,98.0,auto_accept,,false,card_swallowed,true,228,0.000100086
+test_01950,I was getting cash and can't get my card back.,typesafe/jev-1.13-20260917,v2,v1,card_swallowed,92.0,auto_accept,,false,card_swallowed,true,202,0.000100044
+test_01951,"If my card is trapped in the ATM, what do I do?",typesafe/jev-1.13-20260917,v2,v1,card_swallowed,99.0,auto_accept,,false,card_swallowed,true,203,0.000100128
+test_01952,My card has been swallowed by an ATM,typesafe/jev-1.13-20260917,v2,v1,card_swallowed,100,auto_accept,,false,card_swallowed,true,249,9.9876e-05
+test_01957,I was at an ATM and it swallowed my card.,typesafe/jev-1.13-20260917,v2,v1,card_swallowed,100,auto_accept,,false,card_swallowed,true,228,0.000100002
+test_01963,I would like to know why I was charged twice for my purchase.,typesafe/jev-1.13-20260917,v2,v1,transaction_charged_twice,100,auto_accept,,false,transaction_charged_twice,true,247,0.000100128
+test_01965,Why was I chaged twice for the same thing?,typesafe/jev-1.13-20260917,v2,v1,transaction_charged_twice,100,auto_accept,,false,transaction_charged_twice,true,331,0.000100002
+test_01967,I have a duplicate payment showing up on the app. How do I stop myself being charged for the thing twice?,typesafe/jev-1.13-20260917,v2,v1,transaction_charged_twice,100,auto_accept,,false,transaction_charged_twice,true,210,0.000100506
+test_01971,I have been charged twice,typesafe/jev-1.13-20260917,v2,v1,transaction_charged_twice,100,auto_accept,,false,transaction_charged_twice,true,265,9.975e-05
+test_01978,Why was I charged multiple times for the same thing?,typesafe/jev-1.13-20260917,v2,v1,transaction_charged_twice,100,auto_accept,,false,transaction_charged_twice,true,279,0.000100002
+test_01979,I had a duplicate card and got charged twice. How do I resolve this?,typesafe/jev-1.13-20260917,v2,v1,transaction_charged_twice,100,auto_accept,,false,transaction_charged_twice,true,233,0.000100212
+test_01985,A transaction is repeated several times on my account.,typesafe/jev-1.13-20260917,v2,v1,transaction_charged_twice,89.0,auto_accept,,false,transaction_charged_twice,true,210,9.996e-05
+test_01992,I have multiple charges on the same transaction.,typesafe/jev-1.13-20260917,v2,v1,transaction_charged_twice,81.0,auto_accept,,false,transaction_charged_twice,true,191,9.9918e-05
+test_01993,"Looks like my card payment was duplicated. I went to pay at the store earlier, got declined once,second time it works. App still stays pending for one of the payments. Can you please remove one of them as it's wrong and clearly was declined?",typesafe/jev-1.13-20260917,v2,v1,transaction_charged_twice,89.0,auto_accept,,false,transaction_charged_twice,true,225,0.000101724
+test_02003,I would like to verify the source of my money,typesafe/jev-1.13-20260917,v2,v1,verify_source_of_funds,100,auto_accept,,false,verify_source_of_funds,true,247,9.996e-05
+test_02004,where to funds come from,typesafe/jev-1.13-20260917,v2,v1,verify_source_of_funds,89.0,auto_accept,,false,verify_source_of_funds,true,207,9.975e-05
+test_02011,What is the source of my available funds?,typesafe/jev-1.13-20260917,v2,v1,verify_source_of_funds,98.0,auto_accept,,false,verify_source_of_funds,true,253,9.9918e-05
+test_02014,What information do you need to verify my Source of Funds?,typesafe/jev-1.13-20260917,v2,v1,verify_source_of_funds,100,auto_accept,,false,verify_source_of_funds,true,234,0.000100044
+test_02016,I need my funds verified.,typesafe/jev-1.13-20260917,v2,v1,verify_source_of_funds,88.0,auto_accept,,false,verify_source_of_funds,true,213,9.9792e-05
+test_02018,I want to know where the funds come from.,typesafe/jev-1.13-20260917,v2,v1,verify_source_of_funds,94.0,auto_accept,,false,verify_source_of_funds,true,238,9.996e-05
+test_02019,What is the source of my money?,typesafe/jev-1.13-20260917,v2,v1,verify_source_of_funds,98.0,auto_accept,,false,verify_source_of_funds,true,201,9.9876e-05
+test_02020,Where can I find the source of my available money?,typesafe/jev-1.13-20260917,v2,v1,verify_source_of_funds,93.0,auto_accept,,false,verify_source_of_funds,true,198,0.000100002
+test_02022,Can I see that history on my funds and where they came from?,typesafe/jev-1.13-20260917,v2,v1,verify_source_of_funds,85.0,auto_accept,,false,verify_source_of_funds,true,282,0.000100128
+test_02024,How can I view the source of my available funds?,typesafe/jev-1.13-20260917,v2,v1,verify_source_of_funds,98.0,auto_accept,,false,verify_source_of_funds,true,216,0.000100002
+test_02028,Where has my available money come from?,typesafe/jev-1.13-20260917,v2,v1,verify_source_of_funds,79.0,auto_accept,,false,verify_source_of_funds,true,280,9.9876e-05
+test_02030,How can I see where my money comes from?,typesafe/jev-1.13-20260917,v2,v1,verify_source_of_funds,55.0,auto_accept,,false,verify_source_of_funds,true,200,9.996e-05
+test_02032,Where can I see the source of my money?,typesafe/jev-1.13-20260917,v2,v1,verify_source_of_funds,88.0,auto_accept,,false,verify_source_of_funds,true,207,9.996e-05
+test_02033,"what is source of my funds, need to verify",typesafe/jev-1.13-20260917,v2,v1,verify_source_of_funds,100,auto_accept,,false,verify_source_of_funds,true,227,9.996e-05
+test_02034,Where do my funds come from?,typesafe/jev-1.13-20260917,v2,v1,verify_source_of_funds,90.0,auto_accept,,false,verify_source_of_funds,true,189,9.9834e-05
+test_02037,How do I become aware of where my funds come from?,typesafe/jev-1.13-20260917,v2,v1,verify_source_of_funds,96.0,auto_accept,,false,verify_source_of_funds,true,201,0.000100044
+test_02042,I need a fast transfer from China?  How fast will it be?,typesafe/jev-1.13-20260917,v2,v1,transfer_timing,100,auto_accept,,false,transfer_timing,true,199,0.00010017
+test_02043,how soon will I see the transfer in my account?,typesafe/jev-1.13-20260917,v2,v1,transfer_timing,93.0,auto_accept,,false,transfer_timing,true,231,0.000100002
+test_02044,How many days does it take until funds are in my account?,typesafe/jev-1.13-20260917,v2,v1,transfer_timing,84.0,auto_accept,,false,transfer_timing,true,216,0.000100086
+test_02051,When will a transfer reach my account?,typesafe/jev-1.13-20260917,v2,v1,transfer_timing,94.0,auto_accept,,false,transfer_timing,true,212,9.9876e-05
+test_02054,"If I need to do a quick transfer from China, how long should I expect the transfer to take?",typesafe/jev-1.13-20260917,v2,v1,transfer_timing,100,auto_accept,,false,transfer_timing,true,223,0.000100422
+test_02064,What is the time frame for a transfer from the US?,typesafe/jev-1.13-20260917,v2,v1,transfer_timing,99.0,auto_accept,,false,transfer_timing,true,215,0.000100044
+test_02067,"I initiated a Bank transfer form Europe, how long will this take?",typesafe/jev-1.13-20260917,v2,v1,transfer_timing,98.0,auto_accept,,false,transfer_timing,true,206,0.000100128
+test_02071,I have to transfer something to China as fast as I can. How long will it take to arrive in China?,typesafe/jev-1.13-20260917,v2,v1,transfer_timing,100,auto_accept,,false,transfer_timing,true,216,0.000100506
+test_02073,How long is it going to take for my funds to show in my account?,typesafe/jev-1.13-20260917,v2,v1,transfer_timing,73.0,auto_accept,,false,transfer_timing,true,198,0.000100212
+test_02083,My card payment was cancelled.,typesafe/jev-1.13-20260917,v2,v1,declined_card_payment,75.0,auto_accept,,false,reverted_card_payment?,false,243,9.9792e-05
+test_02091,I'm not sure why my account has been refunded a payment for an item I've already received about 2 weeks ago. Can you please tell me what is going on?,typesafe/jev-1.13-20260917,v2,v1,reverted_card_payment?,92.0,auto_accept,,false,reverted_card_payment?,true,251,0.00010101
+test_02092,My card is being declined for a purchase. I bought items before and the card worked. Do you know what the problem is?,typesafe/jev-1.13-20260917,v2,v1,declined_card_payment,100,auto_accept,,false,reverted_card_payment?,false,243,0.000100632
+test_02093,Can you tell my why my card payment has been reverted.,typesafe/jev-1.13-20260917,v2,v1,reverted_card_payment?,100,auto_accept,,false,reverted_card_payment?,true,203,0.000100044
+test_02103,Why was my card payment cancelled?,typesafe/jev-1.13-20260917,v2,v1,declined_card_payment,89.0,auto_accept,,false,reverted_card_payment?,false,218,9.9834e-05
+test_02104,Why has my card payment been reverted?,typesafe/jev-1.13-20260917,v2,v1,reverted_card_payment?,100,auto_accept,,false,reverted_card_payment?,true,185,9.9876e-05
+test_02107,My account shows the card payment cancelled.,typesafe/jev-1.13-20260917,v2,v1,reverted_card_payment?,67.0,auto_accept,,false,reverted_card_payment?,true,206,9.9876e-05
+test_02108,"I'm not sure why my card payment was cancelled, can you find out why?",typesafe/jev-1.13-20260917,v2,v1,declined_card_payment,94.0,auto_accept,,false,reverted_card_payment?,false,252,0.000100254
+test_02110,"Hi, I would like to file a claim for an inquiry. I am a frequent customer of the company in question and have never had any issue with my purchases, payments, or otherwise. However, the price deducted for an item I purchased a couple of weeks ago has been returned to my checking account. Was there an issue with my payment? The item has already been delivered to me.",typesafe/jev-1.13-20260917,v2,v1,reverted_card_payment?,99.0,auto_accept,,false,reverted_card_payment?,true,228,0.000102816
+test_02111,Why was my card payment reverted?,typesafe/jev-1.13-20260917,v2,v1,reverted_card_payment?,100,auto_accept,,false,reverted_card_payment?,true,213,9.9834e-05
+test_02115,There was a canceled payment for my card.,typesafe/jev-1.13-20260917,v2,v1,declined_card_payment,78.0,auto_accept,,false,reverted_card_payment?,false,212,9.9918e-05
+test_02117,Someone stopped my payment,typesafe/jev-1.13-20260917,v2,v1,declined_card_payment,71.0,auto_accept,,false,reverted_card_payment?,false,231,9.9708e-05
+test_02123,"If I am overseas, how do I change my pin?",typesafe/jev-1.13-20260917,v2,v1,change_pin,100,auto_accept,,false,change_pin,true,228,0.000100044
+test_02124,Can i change my PIN at the ATM?,typesafe/jev-1.13-20260917,v2,v1,change_pin,100,auto_accept,,false,change_pin,true,206,9.9918e-05
+test_02127,I would like to change my card PIN.,typesafe/jev-1.13-20260917,v2,v1,change_pin,100,auto_accept,,false,change_pin,true,213,9.9918e-05
+test_02132,In what ATM can I change my pin?,typesafe/jev-1.13-20260917,v2,v1,change_pin,99.0,auto_accept,,false,change_pin,true,215,9.9918e-05
+test_02134,How do I set a new pin?,typesafe/jev-1.13-20260917,v2,v1,change_pin,87.0,auto_accept,,false,change_pin,true,218,9.9876e-05
+test_02138,I want to choose a different PIN.,typesafe/jev-1.13-20260917,v2,v1,change_pin,100,auto_accept,,false,change_pin,true,246,9.9876e-05
+test_02140,Am I able to change my PIN at any cash machines?,typesafe/jev-1.13-20260917,v2,v1,change_pin,99.0,auto_accept,,false,change_pin,true,213,0.000100044
+test_02147,What do I need to do to change my PIN?,typesafe/jev-1.13-20260917,v2,v1,change_pin,100,auto_accept,,false,change_pin,true,229,0.000100002
+test_02151,Where can I find instructions to change my PIN?,typesafe/jev-1.13-20260917,v2,v1,change_pin,100,auto_accept,,false,change_pin,true,243,9.996e-05
+test_02153,How do I update the PIN on my account?,typesafe/jev-1.13-20260917,v2,v1,change_pin,100,auto_accept,,false,change_pin,true,236,9.996e-05
+test_02154,I need a new PIN.,typesafe/jev-1.13-20260917,v2,v1,change_pin,78.0,auto_accept,,false,change_pin,true,228,9.9792e-05
+test_02155,Show me how to change my pin?,typesafe/jev-1.13-20260917,v2,v1,change_pin,100,auto_accept,,false,change_pin,true,208,9.9876e-05
+test_02159,How can I change the PIN?  Do I have to go to a real bank?,typesafe/jev-1.13-20260917,v2,v1,change_pin,100,auto_accept,,false,change_pin,true,210,0.000100296
+test_02163,I was unable to make a transfer to another account.,typesafe/jev-1.13-20260917,v2,v1,failed_transfer,66.0,auto_accept,,false,beneficiary_not_allowed,false,224,0.000100002
+test_02166,How do I do a successful transfer to an account?,typesafe/jev-1.13-20260917,v2,v1,transfer_into_account,100,auto_accept,,false,beneficiary_not_allowed,false,214,0.000100002
+test_02171,I am having problems transferring to a beneficiary.,typesafe/jev-1.13-20260917,v2,v1,beneficiary_not_allowed,58.0,auto_accept,,false,beneficiary_not_allowed,true,212,9.9918e-05
+test_02172,What's the deal with no cryptocurrency on your app?,typesafe/jev-1.13-20260917,v2,v1,supported_cards_and_currencies,92.0,review,keyword_miss,true,beneficiary_not_allowed,false,236,0.000100002
+test_02174,What are the rules for transferring to a beneficiary?,typesafe/jev-1.13-20260917,v2,v1,transfer_into_account,56.0,auto_accept,,false,beneficiary_not_allowed,false,263,9.996e-05
+test_02175,Can I transfer money to a beneficiery?,typesafe/jev-1.13-20260917,v2,v1,transfer_into_account,51.0,auto_accept,,false,beneficiary_not_allowed,false,255,9.996e-05
+test_02176,I have tried transferring money numerous times.  All I keep getting is an error message.  Can you tell me what is going on and how this van be fixed?,typesafe/jev-1.13-20260917,v2,v1,failed_transfer,61.0,auto_accept,,false,beneficiary_not_allowed,false,194,0.000100968
+test_02179,The money would not transfer to a beneficiary.,typesafe/jev-1.13-20260917,v2,v1,failed_transfer,48.0,auto_accept,,false,beneficiary_not_allowed,false,216,9.9918e-05
+test_02183,Why did I receive an error message saying that my transfer was not possible?,typesafe/jev-1.13-20260917,v2,v1,declined_transfer,67.0,auto_accept,,false,beneficiary_not_allowed,false,207,0.00010017
+test_02189,I am trying to exchange crypto and it's not working. Tell me how to fix this.,typesafe/jev-1.13-20260917,v2,v1,exchange_via_app,75.0,auto_accept,,false,beneficiary_not_allowed,false,206,0.000100338
+test_02194,I want to transfer money to a beneficiery. Why can't I?,typesafe/jev-1.13-20260917,v2,v1,beneficiary_not_allowed,62.0,auto_accept,,false,beneficiary_not_allowed,true,233,0.000100212
+test_02195,Can you help with a transfer to an account,typesafe/jev-1.13-20260917,v2,v1,transfer_into_account,99.0,auto_accept,,false,beneficiary_not_allowed,false,222,9.9918e-05
+test_02196,why isnt my account allowing transfers,typesafe/jev-1.13-20260917,v2,v1,declined_transfer,94.0,auto_accept,,false,beneficiary_not_allowed,false,204,9.9792e-05
+test_02204,I had to pay in order to do a transfer,typesafe/jev-1.13-20260917,v2,v1,transfer_fee_charged,100,auto_accept,,false,transfer_fee_charged,true,199,9.996e-05
+test_02208,I am being charged a transfer fee aren't they free?,typesafe/jev-1.13-20260917,v2,v1,transfer_fee_charged,100,auto_accept,,false,transfer_fee_charged,true,201,0.000100044
+test_02210,I got 2 transfer fees and I thought transfers were free.,typesafe/jev-1.13-20260917,v2,v1,transfer_fee_charged,100,auto_accept,,false,transfer_fee_charged,true,203,0.000100086
+test_02211,Why am I being charged a fee for transferring money?,typesafe/jev-1.13-20260917,v2,v1,transfer_fee_charged,100,auto_accept,,false,transfer_fee_charged,true,186,0.000100002
+test_02215,"Why did I get charged for something I bought online? Even though it was international, I thought it would be covered.",typesafe/jev-1.13-20260917,v2,v1,exchange_charge,22.0,review,keyword_miss,true,transfer_fee_charged,false,250,0.000100548
+test_02223,"I sent out money, but was charged extra for transferring. Why?",typesafe/jev-1.13-20260917,v2,v1,transfer_fee_charged,100,auto_accept,,false,transfer_fee_charged,true,210,0.000100128
+test_02226,I need someone to alert me as to what's going on. I had transferred an amount but the receiver is saying that the amount is somewhat less than what I sent over. I now have to make another transfer to make up the difference.,typesafe/jev-1.13-20260917,v2,v1,transfer_not_received_by_recipient,60.0,auto_accept,,false,transfer_fee_charged,false,241,0.000101556
+test_02227,"I was charge a fee for my transfer, why?",typesafe/jev-1.13-20260917,v2,v1,transfer_fee_charged,100,auto_accept,,false,transfer_fee_charged,true,270,0.000100002
+test_02229,Why was my transfer charged fees?,typesafe/jev-1.13-20260917,v2,v1,transfer_fee_charged,100,auto_accept,,false,transfer_fee_charged,true,205,9.9834e-05
+test_02233,What extra charges are there?,typesafe/jev-1.13-20260917,v2,v1,extra_charge_on_statement,98.0,auto_accept,,false,transfer_fee_charged,false,228,9.9792e-05
+test_02246,Do I need to choose GBP to get my salary deposited properly?,typesafe/jev-1.13-20260917,v2,v1,receiving_money,64.0,auto_accept,,false,receiving_money,true,244,0.000100086
+test_02248,Is it possible for me to get money out in a different currency?,typesafe/jev-1.13-20260917,v2,v1,supported_cards_and_currencies,35.0,review,keyword_miss,true,receiving_money,false,225,0.000100128
+test_02251,How do people send me money?,typesafe/jev-1.13-20260917,v2,v1,receiving_money,98.0,auto_accept,,false,receiving_money,true,205,9.9834e-05
+test_02252,Is GBP a supported currency?,typesafe/jev-1.13-20260917,v2,v1,fiat_currency_support,70.0,auto_accept,,false,receiving_money,false,188,9.9792e-05
+test_02258,What do I need to do to transfer my paycheck to my account?,typesafe/jev-1.13-20260917,v2,v1,transfer_into_account,64.0,auto_accept,,false,receiving_money,false,218,0.000100128
+test_02266,How do I deposit my paycheck to this account?,typesafe/jev-1.13-20260917,v2,v1,top_up_by_cash_or_cheque,72.0,auto_accept,,false,receiving_money,false,215,9.996e-05
+test_02268,Can i deposit my salary to this account?,typesafe/jev-1.13-20260917,v2,v1,receiving_money,59.0,auto_accept,,false,receiving_money,true,248,9.9918e-05
+test_02269,How do I get my salary through this account?,typesafe/jev-1.13-20260917,v2,v1,receiving_money,95.0,auto_accept,,false,receiving_money,true,400,9.996e-05
+test_02270,What if I need my salary in a different currency?,typesafe/jev-1.13-20260917,v2,v1,fiat_currency_support,41.0,auto_accept,,false,receiving_money,false,262,0.000100002
+test_02279,Can I get my paycheck through here?,typesafe/jev-1.13-20260917,v2,v1,receiving_money,94.0,review,keyword_miss,true,receiving_money,true,210,9.9876e-05
+test_02284,Tell me why my transfer failed!,typesafe/jev-1.13-20260917,v2,v1,failed_transfer,81.0,auto_accept,,false,failed_transfer,true,205,9.9834e-05
+test_02285,My transfer did not go through.,typesafe/jev-1.13-20260917,v2,v1,failed_transfer,71.0,auto_accept,,false,failed_transfer,true,279,9.9834e-05
+test_02288,Why did my transfer not go through?,typesafe/jev-1.13-20260917,v2,v1,failed_transfer,62.0,auto_accept,,false,failed_transfer,true,204,9.9876e-05
+test_02290,I could not get my transfer to happen correctly and was wondering why?,typesafe/jev-1.13-20260917,v2,v1,failed_transfer,58.0,auto_accept,,false,failed_transfer,true,199,0.000100128
+test_02291,how come my transfer didn't work,typesafe/jev-1.13-20260917,v2,v1,failed_transfer,67.0,auto_accept,,false,failed_transfer,true,210,9.9834e-05
+test_02293,Why has my transfer failed?,typesafe/jev-1.13-20260917,v2,v1,failed_transfer,79.0,auto_accept,,false,failed_transfer,true,229,9.9792e-05
+test_02295,Why hasn't my transfer been made?,typesafe/jev-1.13-20260917,v2,v1,pending_transfer,81.0,auto_accept,,false,failed_transfer,false,262,9.9876e-05
+test_02297,My transfer keeps failing and I just want to transfer the money can you please make it work?,typesafe/jev-1.13-20260917,v2,v1,failed_transfer,72.0,auto_accept,,false,failed_transfer,true,222,0.000100338
+test_02302,I tried to make a transfer but it failed,typesafe/jev-1.13-20260917,v2,v1,failed_transfer,86.0,auto_accept,,false,failed_transfer,true,212,9.9918e-05
+test_02303,Why couldn't I complete a transfer?,typesafe/jev-1.13-20260917,v2,v1,failed_transfer,56.0,auto_accept,,false,failed_transfer,true,227,9.9876e-05
+test_02304,My transfer appeared not to work.,typesafe/jev-1.13-20260917,v2,v1,failed_transfer,73.0,auto_accept,,false,failed_transfer,true,256,9.9834e-05
+test_02306,"Hi, I'm buying a flat and I'm trying to get my mortgage to go though. Every time I check I simply get an error message. Is there any way you can help me get this money transferred over. Thanks!",typesafe/jev-1.13-20260917,v2,v1,declined_transfer,62.0,auto_accept,,false,failed_transfer,false,191,0.000101472
+test_02313,help me with my transfer,typesafe/jev-1.13-20260917,v2,v1,transfer_into_account,53.0,auto_accept,,false,failed_transfer,false,204,9.975e-05
+test_02318,Can you provide a reason as to why my transfer did not work?,typesafe/jev-1.13-20260917,v2,v1,failed_transfer,64.0,auto_accept,,false,failed_transfer,true,310,0.000100128
+test_02320,Can I do a bank transfer to put additional money in my account because I am out of money?,typesafe/jev-1.13-20260917,v2,v1,transfer_into_account,97.0,auto_accept,,false,transfer_into_account,true,240,0.00010038
+test_02321,"I'm out of money, can I add money with my bank?",typesafe/jev-1.13-20260917,v2,v1,transfer_into_account,74.0,auto_accept,,false,transfer_into_account,true,192,0.000100128
+test_02332,"When I want to transfer money to my account, how can I do that?",typesafe/jev-1.13-20260917,v2,v1,transfer_into_account,94.0,auto_accept,,false,transfer_into_account,true,226,0.000100212
+test_02339,How can I transfer money from an outside bank?,typesafe/jev-1.13-20260917,v2,v1,transfer_into_account,99.0,auto_accept,,false,transfer_into_account,true,237,9.996e-05
+test_02341,What methods can I use to add money to my account?,typesafe/jev-1.13-20260917,v2,v1,topping_up_by_card,59.0,review,keyword_miss,true,transfer_into_account,false,231,0.000100044
+test_02342,"I would like to use the bank transfer feature, but I can't find it. Can you please give me the details?",typesafe/jev-1.13-20260917,v2,v1,transfer_into_account,88.0,auto_accept,,false,transfer_into_account,true,188,0.00010059
+test_02344,CAN YOU EXPLAIN HOW TO TRANSFER MONEY INTO MY  ACCOUNT FOR ME?,typesafe/jev-1.13-20260917,v2,v1,transfer_into_account,97.0,auto_accept,,false,transfer_into_account,true,222,0.000100296
+test_02346,How do I transfer money to my account?,typesafe/jev-1.13-20260917,v2,v1,transfer_into_account,99.0,auto_accept,,false,transfer_into_account,true,218,9.9918e-05
+test_02348,How do I do an international transfer?,typesafe/jev-1.13-20260917,v2,v1,transfer_into_account,86.0,auto_accept,,false,transfer_into_account,true,203,9.9876e-05
+test_02350,I want to transfer from accounts in order to Top up. What are the steps necessary.,typesafe/jev-1.13-20260917,v2,v1,transfer_into_account,81.0,auto_accept,,false,transfer_into_account,true,211,0.000100296
+test_02351,How does a transfer work?,typesafe/jev-1.13-20260917,v2,v1,transfer_into_account,76.0,auto_accept,,false,transfer_into_account,true,244,9.9792e-05
+test_02353,I want to use bank transfer for topping up my account. How is it handled?,typesafe/jev-1.13-20260917,v2,v1,transfer_into_account,70.0,auto_accept,,false,transfer_into_account,true,213,0.000100254
+test_02354,I checked my account today and it said I was out of money. How do I transfer money into my account?,typesafe/jev-1.13-20260917,v2,v1,transfer_into_account,100,auto_accept,,false,transfer_into_account,true,219,0.000100506
+test_02355,How can I transfer money to my account?,typesafe/jev-1.13-20260917,v2,v1,transfer_into_account,98.0,auto_accept,,false,transfer_into_account,true,205,9.9918e-05
+test_02358,I would like to transfer money from my other bank account into this one.,typesafe/jev-1.13-20260917,v2,v1,transfer_into_account,100,auto_accept,,false,transfer_into_account,true,188,0.00010017
+test_02369,Why do you need code verification for my top up?,typesafe/jev-1.13-20260917,v2,v1,verify_top_up,84.0,auto_accept,,false,verify_top_up,true,212,0.000100002
+test_02370,Where can I find the verification code on a top-up card?,typesafe/jev-1.13-20260917,v2,v1,topping_up_by_card,51.0,auto_accept,,false,verify_top_up,false,200,0.000100086
+test_02371,How do I get my top-up verification code?,typesafe/jev-1.13-20260917,v2,v1,verify_top_up,98.0,auto_accept,,false,verify_top_up,true,205,9.996e-05
+test_02372,Is it possible to verify a top up?,typesafe/jev-1.13-20260917,v2,v1,verify_top_up,100,auto_accept,,false,verify_top_up,true,211,9.9918e-05
+test_02374,Why does the top-up need verification?,typesafe/jev-1.13-20260917,v2,v1,verify_top_up,81.0,auto_accept,,false,verify_top_up,true,236,9.9876e-05
+test_02379,How do I find the verification code for my top-up card?,typesafe/jev-1.13-20260917,v2,v1,verify_top_up,65.0,auto_accept,,false,verify_top_up,true,233,0.000100086
+test_02380,Why is it important to verify a top-up card?,typesafe/jev-1.13-20260917,v2,v1,verify_top_up,91.0,auto_accept,,false,verify_top_up,true,363,0.000100002
+test_02381,Why do I have to verify the top-up?,typesafe/jev-1.13-20260917,v2,v1,verify_top_up,97.0,auto_accept,,false,verify_top_up,true,216,9.996e-05
+test_02383,I can't find the top-up verification code.,typesafe/jev-1.13-20260917,v2,v1,verify_top_up,96.0,auto_accept,,false,verify_top_up,true,196,9.996e-05
+test_02389,help me find the top-up card's verification code?,typesafe/jev-1.13-20260917,v2,v1,verify_top_up,70.0,auto_accept,,false,verify_top_up,true,206,0.000100002
+test_02394,How do I verify a top-up?,typesafe/jev-1.13-20260917,v2,v1,verify_top_up,100,auto_accept,,false,verify_top_up,true,218,9.9876e-05
+test_02396,How can I find the top-up verification code?,typesafe/jev-1.13-20260917,v2,v1,verify_top_up,98.0,auto_accept,,false,verify_top_up,true,242,9.996e-05
+test_02397,I need help finding the verification code for my top-up card.,typesafe/jev-1.13-20260917,v2,v1,verify_top_up,85.0,auto_accept,,false,verify_top_up,true,224,0.000100086
+test_02398,Is there a verification code for top-ups?,typesafe/jev-1.13-20260917,v2,v1,verify_top_up,99.0,auto_accept,,false,verify_top_up,true,215,9.9918e-05
+test_02402,I want to order another crad,typesafe/jev-1.13-20260917,v2,v1,getting_spare_card,72.0,auto_accept,,false,getting_spare_card,true,186,9.9834e-05
+test_02406,I would like to receive a few more physical cards.,typesafe/jev-1.13-20260917,v2,v1,getting_spare_card,92.0,auto_accept,,false,getting_spare_card,true,255,0.000100002
+test_02408,How would I go about getting a second card?,typesafe/jev-1.13-20260917,v2,v1,getting_spare_card,98.0,auto_accept,,false,getting_spare_card,true,216,9.996e-05
+test_02411,Do you offer multiple cards for the same account?,typesafe/jev-1.13-20260917,v2,v1,getting_spare_card,94.0,auto_accept,,false,getting_spare_card,true,224,9.996e-05
+test_02414,"Would I be able to get another card for my account, so I could give one to my daughter?",typesafe/jev-1.13-20260917,v2,v1,getting_spare_card,99.0,auto_accept,,false,getting_spare_card,true,264,0.000100422
+test_02417,"My daughter would like a card as well, how can we make this happen?",typesafe/jev-1.13-20260917,v2,v1,order_physical_card,58.0,auto_accept,,false,getting_spare_card,false,221,0.000100212
+test_02419,May I have another card?,typesafe/jev-1.13-20260917,v2,v1,getting_spare_card,96.0,auto_accept,,false,getting_spare_card,true,214,9.9792e-05
+test_02420,Is there a fee for sending out more than one card?,typesafe/jev-1.13-20260917,v2,v1,getting_spare_card,77.0,auto_accept,,false,getting_spare_card,true,191,0.000100044
+test_02422,Where can I get a second card?,typesafe/jev-1.13-20260917,v2,v1,getting_spare_card,98.0,auto_accept,,false,getting_spare_card,true,225,9.9876e-05
+test_02424,I need a few more physical cards.,typesafe/jev-1.13-20260917,v2,v1,getting_spare_card,89.0,auto_accept,,false,getting_spare_card,true,235,9.9876e-05
+test_02428,May I have a second card?,typesafe/jev-1.13-20260917,v2,v1,getting_spare_card,98.0,auto_accept,,false,getting_spare_card,true,228,9.9834e-05
+test_02431,How can I get a second card for my daughter?,typesafe/jev-1.13-20260917,v2,v1,getting_spare_card,96.0,auto_accept,,false,getting_spare_card,true,224,0.000100002
+test_02437,My daughter needs a card. Can I give her one of mine that's linked to my account?,typesafe/jev-1.13-20260917,v2,v1,getting_spare_card,64.0,auto_accept,,false,getting_spare_card,true,344,0.00010038
+test_02440,Can I top up by cheque?,typesafe/jev-1.13-20260917,v2,v1,top_up_by_cash_or_cheque,100,auto_accept,,false,top_up_by_cash_or_cheque,true,242,9.9834e-05
+test_02441,How do I top-up using cash?,typesafe/jev-1.13-20260917,v2,v1,top_up_by_cash_or_cheque,100,auto_accept,,false,top_up_by_cash_or_cheque,true,214,9.9876e-05
+test_02447,I'm looking for the cash deposit top up option but can't find it. Can you help me?,typesafe/jev-1.13-20260917,v2,v1,top_up_by_cash_or_cheque,100,auto_accept,,false,top_up_by_cash_or_cheque,true,203,0.000100422
+test_02452,Can I add to my account balance with a cheque?,typesafe/jev-1.13-20260917,v2,v1,top_up_by_cash_or_cheque,100,auto_accept,,false,top_up_by_cash_or_cheque,true,238,0.000100002
+test_02456,"I need to top up cash, How do I do it?",typesafe/jev-1.13-20260917,v2,v1,top_up_by_cash_or_cheque,99.0,auto_accept,,false,top_up_by_cash_or_cheque,true,255,0.000100086
+test_02457,I'm looking for the option to top up by cheque.,typesafe/jev-1.13-20260917,v2,v1,top_up_by_cash_or_cheque,100,auto_accept,,false,top_up_by_cash_or_cheque,true,279,0.000100044
+test_02458,What locations can I top up with cash?,typesafe/jev-1.13-20260917,v2,v1,top_up_by_cash_or_cheque,100,auto_accept,,false,top_up_by_cash_or_cheque,true,252,9.9918e-05
+test_02464,Will you accept a cheque to top up my account?,typesafe/jev-1.13-20260917,v2,v1,top_up_by_cash_or_cheque,100,auto_accept,,false,top_up_by_cash_or_cheque,true,314,0.000100002
+test_02468,how come i can't find anywhere to load using cash,typesafe/jev-1.13-20260917,v2,v1,top_up_by_cash_or_cheque,100,auto_accept,,false,top_up_by_cash_or_cheque,true,247,0.000100002
+test_02470,How do I deposit cash into my account?,typesafe/jev-1.13-20260917,v2,v1,top_up_by_cash_or_cheque,100,auto_accept,,false,top_up_by_cash_or_cheque,true,207,9.9918e-05
+test_02471,Why can't I top up with a cheque?,typesafe/jev-1.13-20260917,v2,v1,top_up_by_cash_or_cheque,100,auto_accept,,false,top_up_by_cash_or_cheque,true,243,9.996e-05
+test_02472,Can I send a cheque to do my top ups?,typesafe/jev-1.13-20260917,v2,v1,top_up_by_cash_or_cheque,100,auto_accept,,false,top_up_by_cash_or_cheque,true,218,0.000100002
+test_02474,I want to do a cash top-up,typesafe/jev-1.13-20260917,v2,v1,top_up_by_cash_or_cheque,100,auto_accept,,false,top_up_by_cash_or_cheque,true,214,9.9876e-05
+test_02475,"I have a cheque here, can I use it to top off my account?",typesafe/jev-1.13-20260917,v2,v1,top_up_by_cash_or_cheque,100,auto_accept,,false,top_up_by_cash_or_cheque,true,219,0.000100212
+test_02477,How can I top-up my card?,typesafe/jev-1.13-20260917,v2,v1,topping_up_by_card,91.0,auto_accept,,false,top_up_by_cash_or_cheque,false,204,9.9876e-05
+test_02480,How do I receive my physical card,typesafe/jev-1.13-20260917,v2,v1,card_arrival,70.0,auto_accept,,false,order_physical_card,false,195,9.9834e-05
+test_02482,What do you charge for physical cards?,typesafe/jev-1.13-20260917,v2,v1,order_physical_card,71.0,auto_accept,,false,order_physical_card,true,246,9.9876e-05
+test_02483,Where can I get my card at?,typesafe/jev-1.13-20260917,v2,v1,card_arrival,84.0,auto_accept,,false,order_physical_card,false,280,9.9876e-05
+test_02484,price of physical card,typesafe/jev-1.13-20260917,v2,v1,order_physical_card,75.0,auto_accept,,false,order_physical_card,true,235,9.9708e-05
+test_02486,Send me a physical card,typesafe/jev-1.13-20260917,v2,v1,order_physical_card,94.0,auto_accept,,false,order_physical_card,true,203,9.975e-05
+test_02488,Can I request a physical card?,typesafe/jev-1.13-20260917,v2,v1,order_physical_card,100,auto_accept,,false,order_physical_card,true,237,9.9834e-05
+test_02490,Do you charge for physical cards,typesafe/jev-1.13-20260917,v2,v1,order_physical_card,78.0,auto_accept,,false,order_physical_card,true,207,9.9792e-05
+test_02496,Where are cards delivered to?,typesafe/jev-1.13-20260917,v2,v1,card_arrival,82.0,auto_accept,,false,order_physical_card,false,261,9.9792e-05
+test_02500,How much does it cost in fees to use your card?,typesafe/jev-1.13-20260917,v2,v1,card_payment_fee_charged,93.0,auto_accept,,false,order_physical_card,false,1126,0.000100044
+test_02501,How can I get a physical card,typesafe/jev-1.13-20260917,v2,v1,order_physical_card,89.0,auto_accept,,false,order_physical_card,true,238,9.9834e-05
+test_02503,can I have a non virtual card?,typesafe/jev-1.13-20260917,v2,v1,order_physical_card,98.0,auto_accept,,false,order_physical_card,true,196,9.9876e-05
+test_02507,What will I be charged for a physical card?,typesafe/jev-1.13-20260917,v2,v1,order_physical_card,68.0,auto_accept,,false,order_physical_card,true,204,9.996e-05
+test_02510,Where can I receive my card?,typesafe/jev-1.13-20260917,v2,v1,card_arrival,95.0,auto_accept,,false,order_physical_card,false,233,9.9834e-05
+test_02512,How can I get a real-life card of my own?,typesafe/jev-1.13-20260917,v2,v1,order_physical_card,94.0,auto_accept,,false,order_physical_card,true,200,0.000100044
+test_02514,"If I want a physical card, do I have to pay anything?",typesafe/jev-1.13-20260917,v2,v1,order_physical_card,96.0,auto_accept,,false,order_physical_card,true,201,0.000100128
+test_02515,Where can cards be delivered?,typesafe/jev-1.13-20260917,v2,v1,card_arrival,48.0,auto_accept,,false,order_physical_card,false,223,9.9792e-05
+test_02517,What are the fees for a physical card?,typesafe/jev-1.13-20260917,v2,v1,order_physical_card,67.0,auto_accept,,false,order_physical_card,true,229,9.9918e-05
+test_02519,Can I get a real card?,typesafe/jev-1.13-20260917,v2,v1,order_physical_card,98.0,auto_accept,,false,order_physical_card,true,234,9.9834e-05
+test_02533,Why doesn't my disposable virtual card work?,typesafe/jev-1.13-20260917,v2,v1,virtual_card_not_working,100,auto_accept,,false,virtual_card_not_working,true,212,9.9918e-05
+test_02534,Why can't I use my virtual card for subscription services?,typesafe/jev-1.13-20260917,v2,v1,virtual_card_not_working,88.0,auto_accept,,false,virtual_card_not_working,true,209,0.000100044
+test_02536,I cannot make transactions with my virtual card.,typesafe/jev-1.13-20260917,v2,v1,virtual_card_not_working,100,auto_accept,,false,virtual_card_not_working,true,218,9.9918e-05
+test_02539,How can I fix a problem where my virtual card is rejected?,typesafe/jev-1.13-20260917,v2,v1,virtual_card_not_working,90.0,auto_accept,,false,virtual_card_not_working,true,212,0.000100086
+test_02540,My virtual card isn't working. What do I do?,typesafe/jev-1.13-20260917,v2,v1,virtual_card_not_working,100,auto_accept,,false,virtual_card_not_working,true,194,0.000100044
+test_02545,My disposable card seems not to be working am I doing something wrong?,typesafe/jev-1.13-20260917,v2,v1,virtual_card_not_working,75.0,auto_accept,,false,virtual_card_not_working,true,228,0.000100128
+test_02550,How do I get my disposable virtual card to work?,typesafe/jev-1.13-20260917,v2,v1,virtual_card_not_working,98.0,auto_accept,,false,virtual_card_not_working,true,214,0.000100002
+test_02566,Why was the exchange rate wrong when I got cash,typesafe/jev-1.13-20260917,v2,v1,wrong_exchange_rate_for_cash_withdrawal,99.0,auto_accept,,false,wrong_exchange_rate_for_cash_withdrawal,true,197,9.996e-05
+test_02570,The exchange rate you gave me for my cash withdrawal is wrong,typesafe/jev-1.13-20260917,v2,v1,wrong_exchange_rate_for_cash_withdrawal,100,auto_accept,,false,wrong_exchange_rate_for_cash_withdrawal,true,208,0.000100044
+test_02574,"When I got cash, my exchange rate was wrong.",typesafe/jev-1.13-20260917,v2,v1,wrong_exchange_rate_for_cash_withdrawal,100,auto_accept,,false,wrong_exchange_rate_for_cash_withdrawal,true,277,0.000100002
+test_02578,"In receiving cash, the wrong exchange rate was used for my transaction.",typesafe/jev-1.13-20260917,v2,v1,wrong_exchange_rate_for_cash_withdrawal,98.0,auto_accept,,false,wrong_exchange_rate_for_cash_withdrawal,true,252,0.000100128
+test_02580,I took out a foreign currency and the exchange rate is wrong.,typesafe/jev-1.13-20260917,v2,v1,wrong_exchange_rate_for_cash_withdrawal,100,auto_accept,,false,wrong_exchange_rate_for_cash_withdrawal,true,201,0.000100086
+test_02587,I withdrew some cash out of the ATM over the holiday. It seems that I was charged some outrageous fees. I would not have done that had I been aware of these outrageous charges!,typesafe/jev-1.13-20260917,v2,v1,cash_withdrawal_charge,99.0,auto_accept,,false,wrong_exchange_rate_for_cash_withdrawal,false,198,0.000101094
+test_02597,I used the ATM machine to get money out for Holiday shopping and saw the outrageous charges. Why is that? I would not have used the ATM if I had known!,typesafe/jev-1.13-20260917,v2,v1,cash_withdrawal_charge,97.0,review,keyword_miss,true,wrong_exchange_rate_for_cash_withdrawal,false,203,0.000100968
+test_02599,"Is there a local ATM that will provide British pounds, I have no money for my homeward journey and do not feel comfortable waiting until  I arrive in Britain. Will a withdrawal involve extra charges?",typesafe/jev-1.13-20260917,v2,v1,cash_withdrawal_charge,65.0,auto_accept,,false,wrong_exchange_rate_for_cash_withdrawal,false,190,0.00010122
+test_02605,What is a disposable virtual card?,typesafe/jev-1.13-20260917,v2,v1,get_disposable_virtual_card,95.0,auto_accept,,false,get_disposable_virtual_card,true,242,9.9834e-05
+test_02619,Can i get a single use virtual card,typesafe/jev-1.13-20260917,v2,v1,get_disposable_virtual_card,99.0,auto_accept,,false,get_disposable_virtual_card,true,249,9.9876e-05
+test_02620,I would like to create a disposable virtual card. How do I go about doing that?,typesafe/jev-1.13-20260917,v2,v1,get_disposable_virtual_card,100,auto_accept,,false,get_disposable_virtual_card,true,304,0.000100296
+test_02622,how does a virtual card work,typesafe/jev-1.13-20260917,v2,v1,getting_virtual_card,87.0,auto_accept,,false,get_disposable_virtual_card,false,241,9.9792e-05
+test_02623,What is the process of obtaining a disposable virtual card,typesafe/jev-1.13-20260917,v2,v1,get_disposable_virtual_card,100,auto_accept,,false,get_disposable_virtual_card,true,250,9.996e-05
+test_02626,Is it possible to also get a disposable virtual card?,typesafe/jev-1.13-20260917,v2,v1,get_disposable_virtual_card,100,auto_accept,,false,get_disposable_virtual_card,true,257,0.000100002
+test_02630,How do disposable cards work?,typesafe/jev-1.13-20260917,v2,v1,get_disposable_virtual_card,91.0,auto_accept,,false,get_disposable_virtual_card,true,215,9.9792e-05
+test_02631,Is there a disposable virtual card I can order?,typesafe/jev-1.13-20260917,v2,v1,get_disposable_virtual_card,100,auto_accept,,false,get_disposable_virtual_card,true,212,9.996e-05
+test_02633,Will I be able to get a disposable virtual card as well?,typesafe/jev-1.13-20260917,v2,v1,get_disposable_virtual_card,100,auto_accept,,false,get_disposable_virtual_card,true,226,0.000100086
+test_02637,how many transactions can i make with a disposable card,typesafe/jev-1.13-20260917,v2,v1,disposable_card_limits,100,auto_accept,,false,get_disposable_virtual_card,false,219,9.996e-05
+test_02638,What are disposable cards?,typesafe/jev-1.13-20260917,v2,v1,get_disposable_virtual_card,94.0,auto_accept,,false,get_disposable_virtual_card,true,211,9.975e-05
+test_02642,I have a top up that didn't go through.  Why?,typesafe/jev-1.13-20260917,v2,v1,top_up_failed,100,auto_accept,,false,top_up_failed,true,188,0.000100128
+test_02647,I attempted to top up but the app denied it.,typesafe/jev-1.13-20260917,v2,v1,top_up_failed,100,auto_accept,,false,top_up_failed,true,198,0.000100002
+test_02650,How can I check to see if my top-up worked?,typesafe/jev-1.13-20260917,v2,v1,verify_top_up,90.0,auto_accept,,false,top_up_failed,false,233,0.000100044
+test_02652,My top up failed.,typesafe/jev-1.13-20260917,v2,v1,top_up_failed,100,auto_accept,,false,top_up_failed,true,190,9.975e-05
+test_02653,Why would my topup not go through?,typesafe/jev-1.13-20260917,v2,v1,top_up_failed,100,review,keyword_miss,true,top_up_failed,true,196,9.9918e-05
+test_02658,I need to know why my credit card was declined for top up? What is the deal here and why did it not go through?,typesafe/jev-1.13-20260917,v2,v1,top_up_failed,82.0,auto_accept,,false,top_up_failed,true,203,0.000100674
+test_02659,I topped up but the app did not accept it.,typesafe/jev-1.13-20260917,v2,v1,top_up_failed,100,auto_accept,,false,top_up_failed,true,215,0.000100002
+test_02661,I think my top up did not work,typesafe/jev-1.13-20260917,v2,v1,top_up_failed,100,auto_accept,,false,top_up_failed,true,192,9.9876e-05
+test_02662,My top up was denied in the app.,typesafe/jev-1.13-20260917,v2,v1,top_up_failed,100,auto_accept,,false,top_up_failed,true,196,9.9918e-05
+test_02663,Can you tell me if my pop-up went through?,typesafe/jev-1.13-20260917,v2,v1,declined_card_payment,33.0,review,keyword_miss,true,top_up_failed,false,195,0.000100002
+test_02664,can you check why I wasn't able to top up?,typesafe/jev-1.13-20260917,v2,v1,top_up_failed,100,auto_accept,,false,top_up_failed,true,206,0.000100044
+test_02665,How did my top-up fail?,typesafe/jev-1.13-20260917,v2,v1,top_up_failed,100,auto_accept,,false,top_up_failed,true,221,9.9834e-05
+test_02667,I tried to top up. Why was it denied?,typesafe/jev-1.13-20260917,v2,v1,top_up_failed,100,auto_accept,,false,top_up_failed,true,236,0.000100002
+test_02672,Why can't I top up?,typesafe/jev-1.13-20260917,v2,v1,top_up_failed,96.0,auto_accept,,false,top_up_failed,true,190,9.9834e-05
+test_02673,My top-up has failed.,typesafe/jev-1.13-20260917,v2,v1,top_up_failed,100,auto_accept,,false,top_up_failed,true,223,9.9792e-05
+test_02682,How long will it take for my transferred money to show up?,typesafe/jev-1.13-20260917,v2,v1,transfer_timing,92.0,auto_accept,,false,balance_not_updated_after_bank_transfer,false,213,0.000100086
+test_02683,Why didn't my balance change after I transferred some money?,typesafe/jev-1.13-20260917,v2,v1,balance_not_updated_after_bank_transfer,100,auto_accept,,false,balance_not_updated_after_bank_transfer,true,199,0.000100044
+test_02685,How long does it take for an international transfer into my account?,typesafe/jev-1.13-20260917,v2,v1,transfer_timing,95.0,auto_accept,,false,balance_not_updated_after_bank_transfer,false,253,0.000100086
+test_02689,I just completed a bank transfer and the balance didn't update,typesafe/jev-1.13-20260917,v2,v1,balance_not_updated_after_bank_transfer,100,auto_accept,,false,balance_not_updated_after_bank_transfer,true,237,0.000100044
+test_02691,How long does a UK transfer take?,typesafe/jev-1.13-20260917,v2,v1,transfer_timing,100,auto_accept,,false,balance_not_updated_after_bank_transfer,false,197,9.9876e-05
+test_02692,Hello I made a bank transfer couple hours ago from my UK account but it doesn't show up yet. Can you please check if everything is alright with it?,typesafe/jev-1.13-20260917,v2,v1,pending_transfer,66.0,auto_accept,,false,balance_not_updated_after_bank_transfer,false,195,0.000100884
+test_02697,I had cash transferred but the balance did not change.,typesafe/jev-1.13-20260917,v2,v1,balance_not_updated_after_bank_transfer,63.0,auto_accept,,false,balance_not_updated_after_bank_transfer,true,232,0.000100002
+test_02698,I can't see my latest bank transfer,typesafe/jev-1.13-20260917,v2,v1,pending_transfer,66.0,auto_accept,,false,balance_not_updated_after_bank_transfer,false,241,9.9876e-05
+test_02700,I made a transfer and it doesnt' show up in my account.,typesafe/jev-1.13-20260917,v2,v1,balance_not_updated_after_bank_transfer,62.0,auto_accept,,false,balance_not_updated_after_bank_transfer,true,195,0.000100128
+test_02704,Why isn't the transfer on my account showing up?,typesafe/jev-1.13-20260917,v2,v1,transfer_into_account,30.0,auto_accept,,false,balance_not_updated_after_bank_transfer,false,243,0.000100002
+test_02709,Why doesn't it show that I did a balance transfer?,typesafe/jev-1.13-20260917,v2,v1,balance_not_updated_after_bank_transfer,69.0,auto_accept,,false,balance_not_updated_after_bank_transfer,true,237,0.000100044
+test_02710,"I made a bank transfer a couple of hours ago from my UK account.  It hasn't appeared, can you check to make sure it went through?",typesafe/jev-1.13-20260917,v2,v1,pending_transfer,79.0,auto_accept,,false,balance_not_updated_after_bank_transfer,false,263,0.000100842
+test_02712,"Hey, I try to make a bank transfer from my UK account a few hours ago, but it haven't show up yet. Please check my account to make sure everything alright with it?",typesafe/jev-1.13-20260917,v2,v1,pending_transfer,81.0,auto_accept,,false,balance_not_updated_after_bank_transfer,false,253,0.000101136
+test_02713,Where is my transfer from [country]?,typesafe/jev-1.13-20260917,v2,v1,pending_transfer,58.0,auto_accept,,false,balance_not_updated_after_bank_transfer,false,192,9.9876e-05
+test_02716,I need to know the time frame that is typical for a transfer from a UK account. I just made a transfer and it doesn't appear. I want to make sure everything is okay.,typesafe/jev-1.13-20260917,v2,v1,transfer_timing,70.0,auto_accept,,false,balance_not_updated_after_bank_transfer,false,220,0.000101136
+test_02717,Why doesn't my balance reflect my transfer,typesafe/jev-1.13-20260917,v2,v1,balance_not_updated_after_bank_transfer,99.0,auto_accept,,false,balance_not_updated_after_bank_transfer,true,183,9.9876e-05
+test_02718,My account balance has not gone up even though I just transferred money into it,typesafe/jev-1.13-20260917,v2,v1,balance_not_updated_after_bank_transfer,99.0,auto_accept,,false,balance_not_updated_after_bank_transfer,true,191,0.00010017
+test_02719,When will I see my new balance after making my bank transfer?,typesafe/jev-1.13-20260917,v2,v1,balance_not_updated_after_bank_transfer,66.0,auto_accept,,false,balance_not_updated_after_bank_transfer,true,206,0.000100086
+test_02722,I just lost my wallet and I see that they are already withdrawing money from my account. How can I stop this?,typesafe/jev-1.13-20260917,v2,v1,lost_or_stolen_card,88.0,auto_accept,,false,cash_withdrawal_not_recognised,false,252,0.000100548
+test_02732,I checked the app and saw an extra cash withdrawal that I didn't authorize,typesafe/jev-1.13-20260917,v2,v1,cash_withdrawal_not_recognised,100,auto_accept,,false,cash_withdrawal_not_recognised,true,210,0.00010017
+test_02736,I am seeing in the App a some cash withdrawal that its not mine,typesafe/jev-1.13-20260917,v2,v1,cash_withdrawal_not_recognised,100,auto_accept,,false,cash_withdrawal_not_recognised,true,202,0.000100128
+test_02737,My account has a weird withdrawal.,typesafe/jev-1.13-20260917,v2,v1,cash_withdrawal_not_recognised,98.0,auto_accept,,false,cash_withdrawal_not_recognised,true,206,9.9834e-05
+test_02740,I think I see a withdraw I did not make.,typesafe/jev-1.13-20260917,v2,v1,cash_withdrawal_not_recognised,100,auto_accept,,false,cash_withdrawal_not_recognised,true,231,0.000100002
+test_02743,The app is showing an ATM withdrawl that I didn't make.,typesafe/jev-1.13-20260917,v2,v1,cash_withdrawal_not_recognised,100,auto_accept,,false,cash_withdrawal_not_recognised,true,214,0.00010017
+test_02750,I don't recognise a cash withdrawal,typesafe/jev-1.13-20260917,v2,v1,cash_withdrawal_not_recognised,100,auto_accept,,false,cash_withdrawal_not_recognised,true,201,9.9834e-05
+test_02751,Help!  My wallet was stolen and someone is taking money out.  I need this money!  What can I do?,typesafe/jev-1.13-20260917,v2,v1,lost_or_stolen_card,95.0,auto_accept,,false,cash_withdrawal_not_recognised,false,206,0.000100632
+test_02754,"Someone has stolen my card. Even though I have my card with me, someone just made a 500£ cash withdrawal. Please help as soon as possible.",typesafe/jev-1.13-20260917,v2,v1,lost_or_stolen_card,38.0,auto_accept,,false,cash_withdrawal_not_recognised,false,185,0.000100968
+test_02759,The app made a mistake and said I made a cash withdrawal.,typesafe/jev-1.13-20260917,v2,v1,cash_withdrawal_not_recognised,99.0,auto_accept,,false,cash_withdrawal_not_recognised,true,193,0.000100086
+test_02761,whats your exchange rate,typesafe/jev-1.13-20260917,v2,v1,exchange_rate,100,auto_accept,,false,exchange_charge,false,193,9.975e-05
+test_02762,What are your currency exchange fees?,typesafe/jev-1.13-20260917,v2,v1,exchange_charge,99.0,auto_accept,,false,exchange_charge,true,186,9.9834e-05
+test_02764,What is the base amount for cross-currency exchanges?,typesafe/jev-1.13-20260917,v2,v1,exchange_rate,87.0,auto_accept,,false,exchange_charge,false,194,0.000100044
+test_02771,Is there a fee to exchange foreign money?,typesafe/jev-1.13-20260917,v2,v1,exchange_charge,100,auto_accept,,false,exchange_charge,true,237,9.9918e-05
+test_02774,Is there a fee for exchanging foreign currencies?,typesafe/jev-1.13-20260917,v2,v1,exchange_charge,100,auto_accept,,false,exchange_charge,true,199,9.9918e-05
+test_02779,"If I want to exchange currency, will there be extras?",typesafe/jev-1.13-20260917,v2,v1,exchange_charge,98.0,auto_accept,,false,exchange_charge,true,187,0.000100044
+test_02780,If I need to exchange currency is there an extra fee?,typesafe/jev-1.13-20260917,v2,v1,exchange_charge,100,auto_accept,,false,exchange_charge,true,219,0.000100044
+test_02782,Would I be charged for exchanging currencies?,typesafe/jev-1.13-20260917,v2,v1,exchange_charge,100,auto_accept,,false,exchange_charge,true,238,9.9876e-05
+test_02783,What is the exchange fee?,typesafe/jev-1.13-20260917,v2,v1,exchange_charge,100,auto_accept,,false,exchange_charge,true,234,9.9792e-05
+test_02786,Are there any extra hidden fees for exchanging currencies?,typesafe/jev-1.13-20260917,v2,v1,exchange_charge,99.0,auto_accept,,false,exchange_charge,true,268,9.996e-05
+test_02789,Does it cost money for currency exchange services?,typesafe/jev-1.13-20260917,v2,v1,exchange_charge,100,auto_accept,,false,exchange_charge,true,241,9.9918e-05
+test_02791,"I will need to exchange currencies frequently, will I be able to get a discount?",typesafe/jev-1.13-20260917,v2,v1,exchange_charge,94.0,auto_accept,,false,exchange_charge,true,241,0.000100254
+test_02793,Is there a discount for frequently exchanging currencies?,typesafe/jev-1.13-20260917,v2,v1,exchange_charge,96.0,auto_accept,,false,exchange_charge,true,194,9.9918e-05
+test_02794,What is the cost for an exchange fee?,typesafe/jev-1.13-20260917,v2,v1,exchange_charge,100,auto_accept,,false,exchange_charge,true,242,9.9918e-05
+test_02798,Can I exchange money from abroad without additional costs?,typesafe/jev-1.13-20260917,v2,v1,exchange_charge,99.0,auto_accept,,false,exchange_charge,true,440,9.996e-05
+test_02801,Are there any fees for adding money with an international card?,typesafe/jev-1.13-20260917,v2,v1,top_up_by_card_charge,99.0,auto_accept,,false,top_up_by_card_charge,true,214,0.000100044
+test_02804,Will I get charged for topping off my card?,typesafe/jev-1.13-20260917,v2,v1,top_up_by_card_charge,85.0,auto_accept,,false,top_up_by_card_charge,true,223,9.996e-05
+test_02808,Is there an additional charge for topping up using a European card?,typesafe/jev-1.13-20260917,v2,v1,top_up_by_card_charge,99.0,auto_accept,,false,top_up_by_card_charge,true,242,0.000100086
+test_02817,"If I use a European bank card for top up, Do I get charged?",typesafe/jev-1.13-20260917,v2,v1,top_up_by_card_charge,100,auto_accept,,false,top_up_by_card_charge,true,184,0.000100212
+test_02818,Will there be any extra fees for European bank card for top up?,typesafe/jev-1.13-20260917,v2,v1,top_up_by_card_charge,99.0,auto_accept,,false,top_up_by_card_charge,true,200,0.000100128
+test_02819,Will I be charged if I use European bank card for top up?,typesafe/jev-1.13-20260917,v2,v1,top_up_by_card_charge,100,auto_accept,,false,top_up_by_card_charge,true,211,0.000100128
+test_02820,I want to use a European bank card for a top up. Must I pay?,typesafe/jev-1.13-20260917,v2,v1,top_up_by_card_charge,97.0,auto_accept,,false,top_up_by_card_charge,true,187,0.000100254
+test_02821,Will I be charged for topping up by card?,typesafe/jev-1.13-20260917,v2,v1,top_up_by_card_charge,100,auto_accept,,false,top_up_by_card_charge,true,246,9.996e-05
+test_02826,Are there fees for adding money using an international card,typesafe/jev-1.13-20260917,v2,v1,top_up_by_card_charge,99.0,auto_accept,,false,top_up_by_card_charge,true,290,9.996e-05
+test_02828,"I need to use a European card for a top up, what will the charge be?",typesafe/jev-1.13-20260917,v2,v1,top_up_by_card_charge,100,auto_accept,,false,top_up_by_card_charge,true,222,0.000100296
+test_02832,What are the fees of using an international card to add money?,typesafe/jev-1.13-20260917,v2,v1,top_up_by_card_charge,100,auto_accept,,false,top_up_by_card_charge,true,242,0.000100086
+test_02833,Is there a charge or discount if I use a European bank in a top up?,typesafe/jev-1.13-20260917,v2,v1,top_up_by_bank_transfer_charge,99.0,auto_accept,,false,top_up_by_card_charge,false,206,0.000100254
+test_02835,Can I top up using an international card,typesafe/jev-1.13-20260917,v2,v1,topping_up_by_card,71.0,auto_accept,,false,top_up_by_card_charge,false,197,9.9876e-05
+test_02836,What will happen if I want to add money using an international card? Will I run into any fees?,typesafe/jev-1.13-20260917,v2,v1,top_up_by_card_charge,95.0,auto_accept,,false,top_up_by_card_charge,true,217,0.000100422
+test_02841,I need to activate my card can you do that now?,typesafe/jev-1.13-20260917,v2,v1,activate_my_card,100,auto_accept,,false,activate_my_card,true,284,0.000100044
+test_02843,Tell me how to go about activating my new card?,typesafe/jev-1.13-20260917,v2,v1,activate_my_card,100,auto_accept,,false,activate_my_card,true,241,0.000100002
+test_02846,What's the right way to activate my card?,typesafe/jev-1.13-20260917,v2,v1,activate_my_card,100,auto_accept,,false,activate_my_card,true,255,9.996e-05
+test_02848,Is there a way my new card can be renewed?,typesafe/jev-1.13-20260917,v2,v1,card_about_to_expire,98.0,auto_accept,,false,activate_my_card,false,239,0.000100002
+test_02849,How do I activate a card I received?,typesafe/jev-1.13-20260917,v2,v1,activate_my_card,100,auto_accept,,false,activate_my_card,true,210,9.9918e-05
+test_02852,WHAT CAN I DO AFTER THE CARD MISSING,typesafe/jev-1.13-20260917,v2,v1,lost_or_stolen_card,95.0,auto_accept,,false,activate_my_card,false,220,9.996e-05
+test_02855,I need help activating my new card.,typesafe/jev-1.13-20260917,v2,v1,activate_my_card,100,auto_accept,,false,activate_my_card,true,219,9.9876e-05
+test_02857,"Please, activate my card",typesafe/jev-1.13-20260917,v2,v1,activate_my_card,100,auto_accept,,false,activate_my_card,true,230,9.975e-05
+test_02862,I need help with activating my card,typesafe/jev-1.13-20260917,v2,v1,activate_my_card,100,auto_accept,,false,activate_my_card,true,238,9.9834e-05
+test_02863,How can I start using my card?,typesafe/jev-1.13-20260917,v2,v1,activate_my_card,100,auto_accept,,false,activate_my_card,true,197,9.9876e-05
+test_02869,What is the activation process on my new card?,typesafe/jev-1.13-20260917,v2,v1,activate_my_card,100,auto_accept,,false,activate_my_card,true,252,9.996e-05
+test_02871,What is the process for activating my card?,typesafe/jev-1.13-20260917,v2,v1,activate_my_card,100,auto_accept,,false,activate_my_card,true,184,9.9918e-05
+test_02872,How do I use my new card?,typesafe/jev-1.13-20260917,v2,v1,activate_my_card,97.0,auto_accept,,false,activate_my_card,true,286,9.9876e-05
+test_02883,What is this charge on my account for a cash withdrawl?,typesafe/jev-1.13-20260917,v2,v1,cash_withdrawal_charge,99.0,auto_accept,,false,cash_withdrawal_charge,true,201,0.000100128
+test_02887,"Do ATM cash withdrawals carry a charge now? They've been free in the past, but all of a sudden I have to pay to make ATM withdrawals?",typesafe/jev-1.13-20260917,v2,v1,cash_withdrawal_charge,100,auto_accept,,false,cash_withdrawal_charge,true,192,0.000100842
+test_02890,Why did I get a fee?,typesafe/jev-1.13-20260917,v2,v1,extra_charge_on_statement,87.0,auto_accept,,false,cash_withdrawal_charge,false,184,9.9834e-05
+test_02891,Why did my cash get charged a fee that should not be there.,typesafe/jev-1.13-20260917,v2,v1,cash_withdrawal_charge,91.0,auto_accept,,false,cash_withdrawal_charge,true,248,0.000100128
+test_02892,Why did I have to pay a fee when I got cash?,typesafe/jev-1.13-20260917,v2,v1,cash_withdrawal_charge,100,auto_accept,,false,cash_withdrawal_charge,true,235,0.000100086
+test_02899,"I've notice I was charged for withdrawing cash, can you explain why?",typesafe/jev-1.13-20260917,v2,v1,cash_withdrawal_charge,100,auto_accept,,false,cash_withdrawal_charge,true,236,0.00010017
+test_02900,Why was my account charged for using an ATM?,typesafe/jev-1.13-20260917,v2,v1,cash_withdrawal_charge,99.0,auto_accept,,false,cash_withdrawal_charge,true,207,9.996e-05
+test_02907,I was charged extra for a withdrawal,typesafe/jev-1.13-20260917,v2,v1,cash_withdrawal_charge,99.0,auto_accept,,false,cash_withdrawal_charge,true,237,9.9834e-05
+test_02909,"I thought cash withdrawals were free? Why have I been charged a fee? Also, how much is this fee?",typesafe/jev-1.13-20260917,v2,v1,cash_withdrawal_charge,100,auto_accept,,false,cash_withdrawal_charge,true,231,0.000100506
+test_02911,I have never been charged a fee for cash withdrawal before. When did that change?,typesafe/jev-1.13-20260917,v2,v1,cash_withdrawal_charge,100,auto_accept,,false,cash_withdrawal_charge,true,247,0.000100254
+test_02914,I took cash and got charged a fee,typesafe/jev-1.13-20260917,v2,v1,cash_withdrawal_charge,100,auto_accept,,false,cash_withdrawal_charge,true,205,9.9876e-05
+test_02921,Will you be able to send the new card to China?,typesafe/jev-1.13-20260917,v2,v1,country_support,47.0,review,keyword_miss,true,card_about_to_expire,false,265,0.000100044
+test_02922,When my card expires what happens to my account?,typesafe/jev-1.13-20260917,v2,v1,card_about_to_expire,100,auto_accept,,false,card_about_to_expire,true,233,9.996e-05
+test_02923,What do I do when my card expires?,typesafe/jev-1.13-20260917,v2,v1,card_about_to_expire,100,auto_accept,,false,card_about_to_expire,true,232,9.9918e-05
+test_02929,How much does it cost to get a new card?  Mine is almost expired.  How fast does it come?,typesafe/jev-1.13-20260917,v2,v1,card_about_to_expire,95.0,auto_accept,,false,card_about_to_expire,true,203,0.000100548
+test_02931,My card is about to expire and I need to know how much it costs and how long it takes to get a new one.,typesafe/jev-1.13-20260917,v2,v1,card_about_to_expire,100,auto_accept,,false,card_about_to_expire,true,236,0.000100632
+test_02933,What is the next step if my card is about to expire.,typesafe/jev-1.13-20260917,v2,v1,card_about_to_expire,100,auto_accept,,false,card_about_to_expire,true,357,0.000100086
+test_02934,"Once my card expires, what should I do?",typesafe/jev-1.13-20260917,v2,v1,card_about_to_expire,100,auto_accept,,false,card_about_to_expire,true,276,9.996e-05
+test_02937,My card is about to expire. How much does it cost to order a new one and how fast will I get it?,typesafe/jev-1.13-20260917,v2,v1,card_about_to_expire,99.0,auto_accept,,false,card_about_to_expire,true,207,0.00010059
+test_02938,What do I do when my card is about to expire?,typesafe/jev-1.13-20260917,v2,v1,card_about_to_expire,100,auto_accept,,false,card_about_to_expire,true,189,0.000100044
+test_02939,"I will need to get a new card soon, how do I order?",typesafe/jev-1.13-20260917,v2,v1,card_about_to_expire,49.0,auto_accept,,false,card_about_to_expire,true,226,0.00010017
+test_02947,How do I order a new card before It expires?,typesafe/jev-1.13-20260917,v2,v1,card_about_to_expire,98.0,auto_accept,,false,card_about_to_expire,true,222,0.000100002
+test_02949,"Next month my card will expire, do I need to order a new one?",typesafe/jev-1.13-20260917,v2,v1,card_about_to_expire,100,auto_accept,,false,card_about_to_expire,true,179,0.000100212
+test_02956,"in china, need new card",typesafe/jev-1.13-20260917,v2,v1,order_physical_card,56.0,auto_accept,,false,card_about_to_expire,false,195,9.9792e-05
+test_02959,I need to know the cost and when I will receive a new card to replace an old one.,typesafe/jev-1.13-20260917,v2,v1,card_delivery_estimate,43.0,auto_accept,,false,card_about_to_expire,false,207,0.00010038
+test_02962,My top-up for Google Pay isn't working,typesafe/jev-1.13-20260917,v2,v1,top_up_failed,75.0,auto_accept,,false,apple_pay_or_google_pay,false,197,9.9918e-05
+test_02963,Can I add money with Apple Pay?,typesafe/jev-1.13-20260917,v2,v1,apple_pay_or_google_pay,75.0,auto_accept,,false,apple_pay_or_google_pay,true,194,9.9876e-05
+test_02966,Top up on my Google Pay isn't working.,typesafe/jev-1.13-20260917,v2,v1,top_up_failed,70.0,auto_accept,,false,apple_pay_or_google_pay,false,244,9.996e-05
+test_02969,Can I use Apple Pay to top up?,typesafe/jev-1.13-20260917,v2,v1,apple_pay_or_google_pay,91.0,auto_accept,,false,apple_pay_or_google_pay,true,189,9.9918e-05
+test_02970,How can I top up my Google Pay?,typesafe/jev-1.13-20260917,v2,v1,apple_pay_or_google_pay,80.0,auto_accept,,false,apple_pay_or_google_pay,true,228,9.9918e-05
+test_02971,Does Google Play have an app to Top up?,typesafe/jev-1.13-20260917,v2,v1,apple_pay_or_google_pay,54.0,auto_accept,,false,apple_pay_or_google_pay,true,196,9.996e-05
+test_02973,is apple pay eligible for top up,typesafe/jev-1.13-20260917,v2,v1,apple_pay_or_google_pay,65.0,auto_accept,,false,apple_pay_or_google_pay,true,220,9.9834e-05
+test_02977,can i top up with apple pay,typesafe/jev-1.13-20260917,v2,v1,apple_pay_or_google_pay,82.0,auto_accept,,false,apple_pay_or_google_pay,true,199,9.9834e-05
+test_02980,Is Apple Pay a possible top up option?,typesafe/jev-1.13-20260917,v2,v1,apple_pay_or_google_pay,77.0,auto_accept,,false,apple_pay_or_google_pay,true,199,9.9918e-05
+test_02982,Can I top up from my Apple Watch?,typesafe/jev-1.13-20260917,v2,v1,apple_pay_or_google_pay,70.0,auto_accept,,false,apple_pay_or_google_pay,true,216,9.9918e-05
+test_02984,is apple pay costly?,typesafe/jev-1.13-20260917,v2,v1,apple_pay_or_google_pay,91.0,auto_accept,,false,apple_pay_or_google_pay,true,217,9.975e-05
+test_02985,How can I top up with Google Pay?,typesafe/jev-1.13-20260917,v2,v1,apple_pay_or_google_pay,86.0,auto_accept,,false,apple_pay_or_google_pay,true,199,9.9918e-05
+test_02995,How do I troubleshoot Google pay top up?,typesafe/jev-1.13-20260917,v2,v1,apple_pay_or_google_pay,61.0,auto_accept,,false,apple_pay_or_google_pay,true,235,0.000100044
+test_02999,"Google pay and top up, I want it, can I get it?",typesafe/jev-1.13-20260917,v2,v1,apple_pay_or_google_pay,99.0,auto_accept,,false,apple_pay_or_google_pay,true,228,0.00010017
+test_03006,How do you verify an identity?,typesafe/jev-1.13-20260917,v2,v1,verify_my_identity,89.0,auto_accept,,false,verify_my_identity,true,183,9.9834e-05
+test_03010,What are the steps I need to take to verify my identity?,typesafe/jev-1.13-20260917,v2,v1,verify_my_identity,100,auto_accept,,false,verify_my_identity,true,264,0.000100086
+test_03011,What do I need to verify my identity,typesafe/jev-1.13-20260917,v2,v1,verify_my_identity,100,auto_accept,,false,verify_my_identity,true,244,9.9876e-05
+test_03013,I need some help with identity verification.,typesafe/jev-1.13-20260917,v2,v1,verify_my_identity,89.0,auto_accept,,false,verify_my_identity,true,211,9.9876e-05
+test_03017,Let me know the steps for the identity checks,typesafe/jev-1.13-20260917,v2,v1,verify_my_identity,99.0,auto_accept,,false,verify_my_identity,true,202,9.9918e-05
+test_03018,What should I do to verify my identity?,typesafe/jev-1.13-20260917,v2,v1,verify_my_identity,100,auto_accept,,false,verify_my_identity,true,253,9.9918e-05
+test_03024,do the details of my profile have to match my documents,typesafe/jev-1.13-20260917,v2,v1,edit_personal_details,38.0,auto_accept,,false,verify_my_identity,false,198,0.000100002
+test_03025,Where do I verify my identity?,typesafe/jev-1.13-20260917,v2,v1,verify_my_identity,99.0,auto_accept,,false,verify_my_identity,true,254,9.9834e-05
+test_03035,Is there any way to verify who I am?,typesafe/jev-1.13-20260917,v2,v1,verify_my_identity,86.0,auto_accept,,false,verify_my_identity,true,226,9.996e-05
+test_03045,Can I get a card outside the UK?,typesafe/jev-1.13-20260917,v2,v1,country_support,64.0,auto_accept,,false,country_support,true,224,9.9918e-05
+test_03048,Now that I live in the US how can I get a card?,typesafe/jev-1.13-20260917,v2,v1,order_physical_card,75.0,auto_accept,,false,country_support,false,202,0.000100128
+test_03062,What countries do you support?,typesafe/jev-1.13-20260917,v2,v1,country_support,100,auto_accept,,false,country_support,true,255,9.9792e-05
+test_03065,Can you tell me what countries you operate in?,typesafe/jev-1.13-20260917,v2,v1,country_support,100,auto_accept,,false,country_support,true,275,9.996e-05
+test_03066,"I need a card, but I'm in the US at the moment.",typesafe/jev-1.13-20260917,v2,v1,order_physical_card,50.0,auto_accept,,false,country_support,false,200,0.00010017
+test_03068,Do you have a list of countries you operate in?,typesafe/jev-1.13-20260917,v2,v1,country_support,100,auto_accept,,false,country_support,true,218,0.000100002
+test_03070,I don't live in the UK.  Can I still get a card?,typesafe/jev-1.13-20260917,v2,v1,country_support,88.0,auto_accept,,false,country_support,true,252,0.000100212
+test_03071,Where do you support?,typesafe/jev-1.13-20260917,v2,v1,country_support,74.0,auto_accept,,false,country_support,true,199,9.975e-05
+test_03076,How many countries do you support?,typesafe/jev-1.13-20260917,v2,v1,country_support,100,auto_accept,,false,country_support,true,209,9.9834e-05
+test_03079,Can the card be mailed and used in Europe?,typesafe/jev-1.13-20260917,v2,v1,country_support,95.0,auto_accept,,false,country_support,true,202,9.996e-05
