@@ -34,7 +34,8 @@ PROMPT = """You are improving category descriptions for a bank customer-message 
 
 The classifier is a decision model. It picks one category for each customer message by
 reading the category descriptions. It reads them literally and knows nothing beyond what
-is written in them. Right now each description is just the category name with spaces.
+is written in them. Some descriptions are still just the category name with spaces; others
+were already rewritten in an earlier round. Improve on whatever is there now.
 
 Below are the category pairs it confuses most often on a tuning set, with real messages it
 got wrong. Write a new description for EVERY category listed under "Categories to rewrite".
@@ -62,19 +63,28 @@ def paths(from_version):
     return next_version, Path(f"drafts/{next_version}_sonnet.json"), Path(f"drafts/{next_version}_approved.json")
 
 
-def top_pairs(from_version):
+def top_pairs(from_version, also=()):
+    """The top confused pairs, plus any extra pairs asked for with --also."""
     log = load_log(f"logs/decisions_jev_tuning_{from_version}.csv")
     groups = confused_pairs(log)
-    counts = groups.size().sort_values(ascending=False, kind="stable").head(TOP_PAIRS)
-    return {pair: groups.get_group(pair).head(EXAMPLES_PER_PAIR) for pair in counts.index}, counts
+    all_counts = groups.size().sort_values(ascending=False, kind="stable")
+    chosen = list(all_counts.index[:TOP_PAIRS])
+    for pair in also:
+        pair = " <> ".join(sorted(name.strip() for name in pair.split("<>")))
+        if pair not in all_counts.index:
+            raise SystemExit(f"--also {pair!r}: no mistakes between these two in the {from_version} tuning log.")
+        if pair not in chosen:
+            chosen.append(pair)
+    counts = all_counts[chosen]
+    return {pair: groups.get_group(pair).head(EXAMPLES_PER_PAIR) for pair in chosen}, counts
 
 
-def draft(from_version):
+def draft(from_version, also=()):
     next_version, sonnet_path, approved_path = paths(from_version)
     if sonnet_path.exists():
         raise SystemExit(f"{sonnet_path} already exists. Delete it to draft again (costs another call).")
     current = json.loads(Path(f"categories/{from_version}.json").read_text())
-    pairs, counts = top_pairs(from_version)
+    pairs, counts = top_pairs(from_version, also)
     affected = sorted({name for pair in pairs for name in pair.split(" <> ")})
 
     pair_text = []
@@ -92,21 +102,37 @@ def draft(from_version):
     response = client.chat.completions.create(
         model=CLAUDE_MODELS["sonnet"],
         messages=[{"role": "user", "content": prompt}],
-        max_tokens=4000,
+        # Sonnet 5 reasons before answering; round 2 used all of a 4,000-token budget on
+        # reasoning and returned nothing. Low effort plus a bigger budget leaves room for the reply.
+        max_tokens=16000,
         response_format={"type": "json_object"},
+        extra_body={"reasoning": {"effort": "low"}},
     )
-    drafts = json.loads(response.choices[0].message.content)
+    choice = response.choices[0]
+    cost = response.model_dump()["usage"].get("cost")
+    # Every call is recorded, including failed ones, so spend totals stay honest.
+    calls_path = Path(f"drafts/{next_version}_calls.jsonl")
+    calls_path.parent.mkdir(exist_ok=True)
+    with calls_path.open("a") as f:
+        f.write(json.dumps({"model": response.model, "cost_usd": cost, "finish_reason": choice.finish_reason,
+                            "reply": choice.message.content}) + "\n")
+    if not choice.message.content:
+        raise SystemExit(f"Empty reply from Sonnet (finish_reason={choice.finish_reason!r}). Logged in {calls_path}.")
+    drafts = json.loads(choice.message.content)
     missing = set(affected) - set(drafts)
-    extra = set(drafts) - set(affected)
-    if missing or extra:
-        raise SystemExit(f"Sonnet's reply didn't match the categories. Missing: {missing}. Unexpected: {extra}.")
+    if missing:
+        raise SystemExit(f"Sonnet's reply is missing {missing}. Logged in {calls_path}.")
+    extra = sorted(set(drafts) - set(affected))
+    if extra:
+        print(f"WARNING: ignored unexpected entries in Sonnet's reply: {extra}\n")
 
     record = {
         "from_version": from_version,
         "model": response.model,
-        "cost_usd": response.model_dump()["usage"].get("cost"),
+        "cost_usd": cost,
         "pairs": {pair: int(counts[pair]) for pair in pairs},
         "prompt": prompt,
+        "ignored_extra_entries": {name: drafts[name] for name in extra},
         "drafts": {name: drafts[name] for name in affected},
     }
     sonnet_path.parent.mkdir(exist_ok=True)
@@ -140,7 +166,7 @@ def apply(from_version):
     summary = (f"{len(accepted)} accepted as-is; {len(edited)} edited ({', '.join(edited) or 'none'}); "
                f"{len(rejected)} rejected ({', '.join(rejected) or 'none'})")
     row = (f"| {next_version} | {date.today()} | Sonnet 5 drafted new descriptions for the {len(approved)} categories "
-           f"in the top {len(record['pairs'])} confused pairs on Jev {from_version} tuning "
+           f"in {len(record['pairs'])} confused pairs on Jev {from_version} tuning "
            f"({'; '.join(record['pairs'])}). Keywords unchanged. Drafts: `{sonnet_path}`, approved: `{approved_path}`. "
            f"| Separate the most-confused pairs. | {summary} |")
     changelog = Path("CHANGELOG.md")
@@ -155,8 +181,10 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--from", dest="from_version", required=True, help="description version to improve, e.g. v1")
     parser.add_argument("--apply", action="store_true", help="build the next version from the approved drafts")
+    parser.add_argument("--also", action="append", default=[], metavar="PAIR",
+                        help='extra pair to include, e.g. --also "declined_transfer <> failed_transfer"')
     args = parser.parse_args()
-    apply(args.from_version) if args.apply else draft(args.from_version)
+    apply(args.from_version) if args.apply else draft(args.from_version, args.also)
 
 
 if __name__ == "__main__":

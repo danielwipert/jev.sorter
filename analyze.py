@@ -135,9 +135,16 @@ def report(path):
 
 def spend_summary(paths):
     logs = pd.concat([pd.read_csv(p, usecols=["model", "cost_usd"]) for p in paths])
-    # Description-drafting calls (Learn stage) count too.
-    drafts = [json.loads(p.read_text()) for p in sorted(Path("drafts").glob("*_sonnet.json"))]
-    logs = pd.concat([logs, pd.DataFrame([{"model": d["model"] + " (drafting)", "cost_usd": d["cost_usd"]} for d in drafts])])
+    # Description-drafting calls (Learn stage) count too, failed ones included.
+    # Each version's calls are in drafts/vN_calls.jsonl; v2 predates that file, so use its record.
+    drafting = []
+    for record_path in sorted(Path("drafts").glob("*_sonnet.json")):
+        if not record_path.with_name(record_path.name.replace("_sonnet.json", "_calls.jsonl")).exists():
+            drafting.append(json.loads(record_path.read_text()))
+    for calls_path in sorted(Path("drafts").glob("*_calls.jsonl")):
+        drafting += [json.loads(line) for line in calls_path.read_text().splitlines()]
+    drafting = pd.DataFrame([{"model": d["model"] + " (drafting)", "cost_usd": d["cost_usd"]} for d in drafting])
+    logs = pd.concat([logs, drafting])
     print("Running spend per model (all logs):")
     for model, cost in logs.groupby("model")["cost_usd"].sum().items():
         print(f"  {model}: ${cost:.4f}")
