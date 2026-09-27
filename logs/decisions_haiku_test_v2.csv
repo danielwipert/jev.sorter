@@ -1,0 +1,63 @@
+message_id,message_text,model,categories_version,keywords_version,predicted,confidence,gate_result,gate_reason,keyword_miss,correct,is_correct,ms,cost_usd
+test_00000,How do I locate my card?,anthropic/claude-haiku-4.5,v2,v1,card_arrival,92.0,auto_accept,,false,card_arrival,true,1520,0.001883
+test_00007,i have not received my card,anthropic/claude-haiku-4.5,v2,v1,card_arrival,95.0,auto_accept,,false,card_arrival,true,983,0.001882
+test_00012,I still don't have my card after 2 weeks.  What should I do?,anthropic/claude-haiku-4.5,v2,v1,card_arrival,95.0,auto_accept,,false,card_arrival,true,790,0.001895
+test_00014,I am still waiting for my card after 1 week.  Is this ok?,anthropic/claude-haiku-4.5,v2,v1,card_arrival,95.0,auto_accept,,false,card_arrival,true,872,0.001894
+test_00022,How long should my new card take to arrive?,anthropic/claude-haiku-4.5,v2,v1,card_delivery_estimate,95.0,auto_accept,,false,card_arrival,false,822,0.001896
+test_00025,What is the tracking number for my card that was mailed?,anthropic/claude-haiku-4.5,v2,v1,card_arrival,95.0,auto_accept,,false,card_arrival,true,876,0.001864
+test_00029,i want to track the card you sent,anthropic/claude-haiku-4.5,v2,v1,card_arrival,95.0,auto_accept,,false,card_arrival,true,813,0.001884
+test_00030,My card hasn't arrived yet.,anthropic/claude-haiku-4.5,v2,v1,card_arrival,95.0,auto_accept,,false,card_arrival,true,802,0.001883
+test_00032,How do I know when my card will arrive?,anthropic/claude-haiku-4.5,v2,v1,card_arrival,95.0,auto_accept,,false,card_arrival,true,869,0.001886
+test_00043,"I have received my card, can you help me put it in the app?",anthropic/claude-haiku-4.5,v2,v1,card_linking,95.0,auto_accept,,false,card_linking,true,836,0.001892
+test_00044,How do I link a card that I already have?,anthropic/claude-haiku-4.5,v2,v1,card_linking,95.0,auto_accept,,false,card_linking,true,972,0.001887
+test_00045,"I received my new card, but I don't see it in the app anywhere.  What do I do?",anthropic/claude-haiku-4.5,v2,v1,card_linking,85.0,auto_accept,,false,card_linking,true,875,0.001899
+test_00048,Can I put my old card back into the system? I just found it/,anthropic/claude-haiku-4.5,v2,v1,card_linking,75.0,auto_accept,,false,card_linking,true,857,0.001892
+test_00051,Can I link an existing card?,anthropic/claude-haiku-4.5,v2,v1,card_linking,95.0,auto_accept,,false,card_linking,true,855,0.001883
+test_00052,How do I link one your card if I have one already?,anthropic/claude-haiku-4.5,v2,v1,card_linking,95.0,auto_accept,,false,card_linking,true,727,0.001889
+test_00056,Can you tell me how to link one of your cards that I already have?,anthropic/claude-haiku-4.5,v2,v1,card_linking,95.0,auto_accept,,false,card_linking,true,808,0.001892
+test_00057,How do I view the card I received in the app?,anthropic/claude-haiku-4.5,v2,v1,card_arrival,85.0,auto_accept,,false,card_linking,false,872,0.001888
+test_00063,How do I link this new card?,anthropic/claude-haiku-4.5,v2,v1,card_linking,95.0,auto_accept,,false,card_linking,true,849,0.001884
+test_00067,how do I link a card I already have?,anthropic/claude-haiku-4.5,v2,v1,card_linking,95.0,auto_accept,,false,card_linking,true,954,0.001886
+test_00069,Can you please show me where I can find the location to link my card?,anthropic/claude-haiku-4.5,v2,v1,card_linking,95.0,auto_accept,,false,card_linking,true,924,0.001892
+test_00070,Where do I go if I want to link my new card?,anthropic/claude-haiku-4.5,v2,v1,card_linking,95.0,auto_accept,,false,card_linking,true,753,0.001889
+test_00073,How do I link my card,anthropic/claude-haiku-4.5,v2,v1,card_linking,95.0,auto_accept,,false,card_linking,true,899,0.001882
+test_00076,"Could you help me reactivate my card? It was previously lost, but I found it this morning in my jacket.",anthropic/claude-haiku-4.5,v2,v1,activate_my_card,85.0,auto_accept,,false,card_linking,false,785,0.001911
+test_00080,I need to know your exchange rates.,anthropic/claude-haiku-4.5,v2,v1,exchange_rate,95.0,auto_accept,,false,exchange_rate,true,1024,0.001884
+test_00087,Please advise what is the exchange rate,anthropic/claude-haiku-4.5,v2,v1,exchange_rate,95.0,auto_accept,,false,exchange_rate,true,793,0.001884
+test_00088,How are exchange rates calculated?,anthropic/claude-haiku-4.5,v2,v1,exchange_rate,95.0,auto_accept,,false,exchange_rate,true,810,0.001882
+test_00093,Is it a good time to exchange?,anthropic/claude-haiku-4.5,v2,v1,exchange_rate,85.0,auto_accept,,false,exchange_rate,true,838,0.001884
+test_00096,Can you tell me where you get your exchange rates?,anthropic/claude-haiku-4.5,v2,v1,exchange_rate,95.0,auto_accept,,false,exchange_rate,true,851,0.001887
+test_00100,What is the base of the exchange rates?,anthropic/claude-haiku-4.5,v2,v1,exchange_rate,95.0,auto_accept,,false,exchange_rate,true,851,0.001885
+test_00102,The exchange rates are?,anthropic/claude-haiku-4.5,v2,v1,exchange_rate,95.0,auto_accept,,false,exchange_rate,true,1124,0.001881
+test_00104,What foreign exchange rate will you use?,anthropic/claude-haiku-4.5,v2,v1,exchange_rate,95.0,auto_accept,,false,exchange_rate,true,986,0.001914
+test_00108,How do your exchange rates work?,anthropic/claude-haiku-4.5,v2,v1,exchange_rate,95.0,auto_accept,,false,exchange_rate,true,899,0.001883
+test_00109,what is the exchange rate?,anthropic/claude-haiku-4.5,v2,v1,exchange_rate,95.0,auto_accept,,false,exchange_rate,true,781,0.001882
+test_00111,How are you determining your exchange rates?,anthropic/claude-haiku-4.5,v2,v1,exchange_rate,95.0,auto_accept,,false,exchange_rate,true,810,0.001884
+test_00120,I purchased something in a foreign currency but the rate applied is wrong,anthropic/claude-haiku-4.5,v2,v1,card_payment_wrong_exchange_rate,95.0,auto_accept,,false,card_payment_wrong_exchange_rate,true,929,0.001919
+test_00123,The exchange rate was wrong when I bought something outside the country.,anthropic/claude-haiku-4.5,v2,v1,card_payment_wrong_exchange_rate,95.0,auto_accept,,false,card_payment_wrong_exchange_rate,true,910,0.001919
+test_00124,The exchange rate on my purchase is wrong.,anthropic/claude-haiku-4.5,v2,v1,card_payment_wrong_exchange_rate,92.0,auto_accept,,false,card_payment_wrong_exchange_rate,true,887,0.001915
+test_00134,I bought an item and noticed the exchange rate was not correct.,anthropic/claude-haiku-4.5,v2,v1,card_payment_wrong_exchange_rate,85.0,auto_accept,,false,card_payment_wrong_exchange_rate,true,870,0.001919
+test_00135,I bought something overseas and the wrong exchange rate is on my statement.,anthropic/claude-haiku-4.5,v2,v1,card_payment_wrong_exchange_rate,95.0,auto_accept,,false,card_payment_wrong_exchange_rate,true,812,0.00192
+test_00139,I purchased an item and the exchange rate I was given was incorrect.,anthropic/claude-haiku-4.5,v2,v1,card_payment_wrong_exchange_rate,92.0,auto_accept,,false,card_payment_wrong_exchange_rate,true,839,0.00192
+test_00141,"When I made a purchase last Saturday, I was charged extra. Did I receive the right exchange rate?",anthropic/claude-haiku-4.5,v2,v1,card_payment_wrong_exchange_rate,85.0,auto_accept,,false,card_payment_wrong_exchange_rate,true,918,0.001957
+test_00144,"Hi, I have been overcharged for my payment last Saturday. I guess exchange rate was wrong.",anthropic/claude-haiku-4.5,v2,v1,card_payment_wrong_exchange_rate,92.0,auto_accept,,false,card_payment_wrong_exchange_rate,true,864,0.001927
+test_00149,I wasn't applied the correct exchange rate for an item I bought,anthropic/claude-haiku-4.5,v2,v1,card_payment_wrong_exchange_rate,92.0,auto_accept,,false,card_payment_wrong_exchange_rate,true,910,0.001949
+test_00152,I paid for something in foreign currency but noticed the exchange rate is incorrect.,anthropic/claude-haiku-4.5,v2,v1,card_payment_wrong_exchange_rate,92.0,auto_accept,,false,card_payment_wrong_exchange_rate,true,839,0.001921
+test_00157,Your exchange rate is totally wrong for my card payment,anthropic/claude-haiku-4.5,v2,v1,card_payment_wrong_exchange_rate,95.0,auto_accept,,false,card_payment_wrong_exchange_rate,true,811,0.001916
+test_00162,I'm not okay with this fee on my statement.,anthropic/claude-haiku-4.5,v2,v1,extra_charge_on_statement,85.0,auto_accept,,false,extra_charge_on_statement,true,867,0.001907
+test_00163,Why is there an extra dollar charged to my account?,anthropic/claude-haiku-4.5,v2,v1,extra_charge_on_statement,85.0,auto_accept,,false,extra_charge_on_statement,true,970,0.001907
+test_00168,Why does my statement have these extra charges?,anthropic/claude-haiku-4.5,v2,v1,extra_charge_on_statement,95.0,auto_accept,,false,extra_charge_on_statement,true,870,0.001905
+test_00170,I can see an extra 1£ charge on my app. Why did you charge me extra?,anthropic/claude-haiku-4.5,v2,v1,extra_charge_on_statement,95.0,auto_accept,,false,extra_charge_on_statement,true,822,0.001917
+test_00173,Where did this fee come from?,anthropic/claude-haiku-4.5,v2,v1,extra_charge_on_statement,72.0,auto_accept,,false,extra_charge_on_statement,true,906,0.001903
+test_00174,"I noticed an extra $1 charge on my statement, can you tell me why that is?",anthropic/claude-haiku-4.5,v2,v1,extra_charge_on_statement,95.0,auto_accept,,false,extra_charge_on_statement,true,872,0.001916
+test_00175,There is an extra $1 charge,anthropic/claude-haiku-4.5,v2,v1,extra_charge_on_statement,85.0,auto_accept,,false,extra_charge_on_statement,true,948,0.001904
+test_00176,I need information about an extra €1 fee in my statement.,anthropic/claude-haiku-4.5,v2,v1,extra_charge_on_statement,95.0,auto_accept,,false,extra_charge_on_statement,true,892,0.00191
+test_00177,Why is there an extra 1 pound charge on my card?,anthropic/claude-haiku-4.5,v2,v1,extra_charge_on_statement,85.0,auto_accept,,false,extra_charge_on_statement,true,873,0.00191
+test_00178,Why are there so many fees on my statement?,anthropic/claude-haiku-4.5,v2,v1,extra_charge_on_statement,85.0,auto_accept,,false,extra_charge_on_statement,true,811,0.001906
+test_00179,What would be the reason there's an extra fee on my statement?,anthropic/claude-haiku-4.5,v2,v1,extra_charge_on_statement,95.0,auto_accept,,false,extra_charge_on_statement,true,917,0.00191
+test_00183,Why was I overcharged a pound!?,anthropic/claude-haiku-4.5,v2,v1,extra_charge_on_statement,75.0,auto_accept,,false,extra_charge_on_statement,true,878,0.001906
+test_00184,"Something went wrong, I was charged an extra pound?",anthropic/claude-haiku-4.5,v2,v1,extra_charge_on_statement,85.0,auto_accept,,false,extra_charge_on_statement,true,866,0.001907
+test_00188,What is this €1 fee in my statement?,anthropic/claude-haiku-4.5,v2,v1,extra_charge_on_statement,85.0,auto_accept,,false,extra_charge_on_statement,true,919,0.001907
+test_00192,"Can you help me with a weird charge?  It's a pound charge that never goes away from the statement view on the app I'm using.  It's not described as anything but ""Pending"", and that status has never changed during the last two days.",anthropic/claude-haiku-4.5,v2,v1,pending_card_payment,85.0,auto_accept,,false,extra_charge_on_statement,false,835,0.00194
+test_00194,"$1 extra has been charged on my statement, why is that?",anthropic/claude-haiku-4.5,v2,v1,extra_charge_on_statement,95.0,auto_accept,,false,extra_charge_on_statement,true,967,0.001941
+test_00195,What is the extra  €1 fee in my statement,anthropic/claude-haiku-4.5,v2,v1,extra_charge_on_statement,95.0,auto_accept,,false,extra_charge_on_statement,true,860,0.001908

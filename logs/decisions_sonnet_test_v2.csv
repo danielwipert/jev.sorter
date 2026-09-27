@@ -1,0 +1,30 @@
+message_id,message_text,model,categories_version,keywords_version,predicted,confidence,gate_result,gate_reason,keyword_miss,correct,is_correct,ms,cost_usd
+test_00000,How do I locate my card?,anthropic/claude-sonnet-5,v2,v1,card_arrival,65.0,auto_accept,,false,card_arrival,true,2450,0.005202
+test_00007,i have not received my card,anthropic/claude-sonnet-5,v2,v1,card_arrival,85.0,auto_accept,,false,card_arrival,true,1707,0.005198
+test_00012,I still don't have my card after 2 weeks.  What should I do?,anthropic/claude-sonnet-5,v2,v1,card_arrival,90.0,auto_accept,,false,card_arrival,true,1819,0.005228
+test_00014,I am still waiting for my card after 1 week.  Is this ok?,anthropic/claude-sonnet-5,v2,v1,card_arrival,90.0,auto_accept,,false,card_arrival,true,1831,0.00523
+test_00022,How long should my new card take to arrive?,anthropic/claude-sonnet-5,v2,v1,card_delivery_estimate,95.0,auto_accept,,false,card_arrival,false,1720,0.00525
+test_00025,What is the tracking number for my card that was mailed?,anthropic/claude-sonnet-5,v2,v1,card_arrival,90.0,auto_accept,,false,card_arrival,true,2023,0.005218
+test_00029,i want to track the card you sent,anthropic/claude-sonnet-5,v2,v1,card_arrival,95.0,auto_accept,,false,card_arrival,true,1767,0.005204
+test_00030,My card hasn't arrived yet.,anthropic/claude-sonnet-5,v2,v1,card_arrival,95.0,auto_accept,,false,card_arrival,true,1838,0.00521
+test_00032,How do I know when my card will arrive?,anthropic/claude-sonnet-5,v2,v1,card_arrival,90.0,auto_accept,,false,card_arrival,true,1976,0.00521
+test_00043,"I have received my card, can you help me put it in the app?",anthropic/claude-sonnet-5,v2,v1,card_linking,85.0,auto_accept,,false,card_linking,true,1748,0.005208
+test_00044,How do I link a card that I already have?,anthropic/claude-sonnet-5,v2,v1,card_linking,95.0,auto_accept,,false,card_linking,true,1984,0.005198
+test_00045,"I received my new card, but I don't see it in the app anywhere.  What do I do?",anthropic/claude-sonnet-5,v2,v1,card_linking,70.0,auto_accept,,false,card_linking,true,1885,0.005228
+test_00048,Can I put my old card back into the system? I just found it/,anthropic/claude-sonnet-5,v2,v1,card_linking,60.0,auto_accept,,false,card_linking,true,1911,0.00521
+test_00051,Can I link an existing card?,anthropic/claude-sonnet-5,v2,v1,card_linking,90.0,auto_accept,,false,card_linking,true,1948,0.005194
+test_00052,How do I link one your card if I have one already?,anthropic/claude-sonnet-5,v2,v1,card_linking,90.0,auto_accept,,false,card_linking,true,1775,0.005202
+test_00056,Can you tell me how to link one of your cards that I already have?,anthropic/claude-sonnet-5,v2,v1,card_linking,90.0,auto_accept,,false,card_linking,true,1757,0.005214
+test_00057,How do I view the card I received in the app?,anthropic/claude-sonnet-5,v2,v1,card_linking,55.0,auto_accept,,false,card_linking,true,1713,0.0052
+test_00063,How do I link this new card?,anthropic/claude-sonnet-5,v2,v1,card_linking,95.0,auto_accept,,false,card_linking,true,1876,0.005192
+test_00067,how do I link a card I already have?,anthropic/claude-sonnet-5,v2,v1,card_linking,95.0,auto_accept,,false,card_linking,true,2079,0.005196
+test_00069,Can you please show me where I can find the location to link my card?,anthropic/claude-sonnet-5,v2,v1,card_linking,90.0,auto_accept,,false,card_linking,true,1650,0.00521
+test_00070,Where do I go if I want to link my new card?,anthropic/claude-sonnet-5,v2,v1,card_linking,95.0,auto_accept,,false,card_linking,true,1834,0.005204
+test_00073,How do I link my card,anthropic/claude-sonnet-5,v2,v1,card_linking,95.0,auto_accept,,false,card_linking,true,1831,0.005188
+test_00076,"Could you help me reactivate my card? It was previously lost, but I found it this morning in my jacket.",anthropic/claude-sonnet-5,v2,v1,activate_my_card,75.0,auto_accept,,false,card_linking,false,1859,0.00526
+test_00080,I need to know your exchange rates.,anthropic/claude-sonnet-5,v2,v1,exchange_rate,95.0,auto_accept,,false,exchange_rate,true,1682,0.005218
+test_00087,Please advise what is the exchange rate,anthropic/claude-sonnet-5,v2,v1,exchange_rate,95.0,auto_accept,,false,exchange_rate,true,1684,0.00522
+test_00088,How are exchange rates calculated?,anthropic/claude-sonnet-5,v2,v1,exchange_rate,97.0,auto_accept,,false,exchange_rate,true,1939,0.005218
+test_00093,Is it a good time to exchange?,anthropic/claude-sonnet-5,v2,v1,exchange_rate,75.0,auto_accept,,false,exchange_rate,true,1731,0.005218
+test_00096,Can you tell me where you get your exchange rates?,anthropic/claude-sonnet-5,v2,v1,exchange_rate,95.0,auto_accept,,false,exchange_rate,true,1644,0.005228
+test_00100,What is the base of the exchange rates?,anthropic/claude-sonnet-5,v2,v1,exchange_rate,90.0,auto_accept,,false,exchange_rate,true,1968,0.00522

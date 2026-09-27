@@ -58,15 +58,19 @@ def thresholds_from(tuning):
     return result
 
 
+def auto_accepted(log, threshold):
+    """True/False per row: does the full gate (checks 1-4) auto-accept this answer?"""
+    return pd.Series([
+        gate(r.message_text, r.predicted, r.confidence, log.attrs["categories"], log.attrs["keywords"], threshold)[0]
+        == "auto_accept"
+        for r in log.itertuples()
+    ], index=log.index)
+
+
 def curve(log, thresholds):
     rows = []
     for target, threshold in thresholds.items():
-        accepted = [
-            gate(r.message_text, r.predicted, r.confidence, log.attrs["categories"], log.attrs["keywords"], threshold)[0]
-            == "auto_accept"
-            for r in log.itertuples()
-        ]
-        accepted = log[accepted]
+        accepted = log[auto_accepted(log, threshold)]
         accuracy = accepted["is_correct"].mean() if len(accepted) else float("nan")
         rows.append({
             "target_auto_accept": f"{target}%",
@@ -151,11 +155,104 @@ def spend_summary(paths):
     print(f"  TOTAL: ${logs['cost_usd'].sum():.4f}")
 
 
+# The contenders on the final test set (spec Section 7). E is computed from B and C.
+CONTENDERS = {
+    "A": ("Jev, descriptions v1", "logs/decisions_jev_test_v1.csv"),
+    "B": ("Jev, final descriptions (v2)", "logs/decisions_jev_test_v2.csv"),
+    "C": ("Sonnet 5, final descriptions (v2)", "logs/decisions_sonnet_test_v2.csv"),
+    "D": ("Haiku 4.5, final descriptions (v2)", "logs/decisions_haiku_test_v2.csv"),
+}
+VERDICT_ROW = 70  # Section 10: the 70% auto-accept row decides the headline
+VERDICT_MAX_GAP = 3.0  # Jev within 3 accuracy points of Sonnet...
+VERDICT_MIN_COST_RATIO = 10.0  # ...and at least 10x cheaper per 1,000 gated decisions
+
+
+def final_results():
+    """Results table, cascade (E), calibration and the pre-registered verdict. Saved to results/."""
+    logs = {key: load_log(path) for key, (_, path) in CONTENDERS.items() if Path(path).exists()}
+    if not logs:
+        return
+    Path("results").mkdir(exist_ok=True)
+
+    rows, numbers = [], {}
+    for key, log in logs.items():
+        thresholds = thresholds_from(load_log(tuning_log_for(CONTENDERS[key][1])))
+        cost_per_1000 = log["cost_usd"].mean() * 1000
+        for target, threshold in thresholds.items():
+            accepted = auto_accepted(log, threshold)
+            accuracy = log.loc[accepted, "is_correct"].mean()
+            numbers[key, target] = (accuracy * 100, cost_per_1000)
+            rows.append({
+                "contender": key, "model": CONTENDERS[key][0], "target_auto_accept": f"{target}%",
+                "threshold": threshold, "realized_auto_accept": f"{accepted.mean():.1%}",
+                "accuracy_on_auto_accepted": f"{accuracy:.1%}", "soft_hallucination_rate": f"{1 - accuracy:.1%}",
+                "hard_hallucination_rate": f"{(log['reason'] == 'invalid_category').mean():.1%}",
+                "accuracy_all_answers": f"{log['is_correct'].mean():.1%}", "cost_per_1000": f"${cost_per_1000:.2f}",
+            })
+    table = pd.DataFrame(rows)
+    table.to_csv("results/results_table.csv", index=False)
+    print("=" * 80 + "\nFINAL TEST SET RESULTS (thresholds from each model's tuning log)\n" + "=" * 80)
+    print(table.drop(columns="model").to_string(index=False))
+
+    calibration_rows = [{"contender": key, **row} for key, log in logs.items() for row in calibration(log).to_dict("records")]
+    pd.DataFrame(calibration_rows).to_csv("results/calibration.csv", index=False)
+
+    if "B" in logs and "C" in logs:
+        cascade(logs["B"], logs["C"])
+        verdict(numbers)
+
+
+def cascade(jev, sonnet):
+    """Contender E: Jev's answer if Jev auto-accepts it, otherwise Sonnet's. No new API calls."""
+    # Line up Sonnet's answers with Jev's, message by message.
+    sonnet = sonnet.set_index("message_id").loc[jev["message_id"]].reset_index()
+    attrs = dict(jev.attrs)  # categories/keywords the gate needs
+    jev = jev.reset_index(drop=True)
+    jev.attrs = attrs
+    thresholds = thresholds_from(load_log(tuning_log_for(CONTENDERS["B"][1])))
+    rows = []
+    for target, threshold in thresholds.items():
+        jev_keeps = auto_accepted(jev, threshold)
+        correct = jev["is_correct"].where(jev_keeps, sonnet["is_correct"])
+        cost = jev["cost_usd"].sum() + sonnet.loc[~jev_keeps, "cost_usd"].sum()
+        rows.append({
+            "jev_target": f"{target}%", "jev_threshold": threshold, "jev_handles": f"{jev_keeps.mean():.1%}",
+            "accuracy_jev_slice": f"{jev.loc[jev_keeps, 'is_correct'].mean():.1%}",
+            "accuracy_sonnet_slice": f"{sonnet.loc[~jev_keeps, 'is_correct'].mean():.1%}",
+            "accuracy_overall": f"{correct.mean():.1%}",
+            "cost_per_1000": f"${cost / len(jev) * 1000:.2f}",
+        })
+    table = pd.DataFrame(rows)
+    table.to_csv("results/cascade.csv", index=False)
+    print(f"\nCASCADE (E): Jev if auto-accepted, else Sonnet. Every message gets an answer.")
+    print(f"For comparison, Sonnet alone on every message: accuracy {sonnet['is_correct'].mean():.1%}, "
+          f"${sonnet['cost_usd'].mean() * 1000:.2f} per 1,000.")
+    print(table.to_string(index=False))
+
+
+def verdict(numbers):
+    """Section 10, applied mechanically to the 70% row."""
+    jev_accuracy, jev_cost = numbers["B", VERDICT_ROW]
+    sonnet_accuracy, sonnet_cost = numbers["C", VERDICT_ROW]
+    gap = sonnet_accuracy - jev_accuracy
+    ratio = sonnet_cost / jev_cost
+    close_enough = gap <= VERDICT_MAX_GAP
+    cheap_enough = ratio >= VERDICT_MIN_COST_RATIO
+    print(f"\nPRE-REGISTERED VERDICT (Section 10, {VERDICT_ROW}% row, Jev B vs Sonnet C):")
+    print(f"  Accuracy: Jev {jev_accuracy:.1f}%, Sonnet {sonnet_accuracy:.1f}%. Sonnet minus Jev = {gap:+.1f} points "
+          f"(Jev passes if <= {VERDICT_MAX_GAP:g}): {'PASS' if close_enough else 'FAIL'}")
+    print(f"  Cost per 1,000: Jev ${jev_cost:.2f}, Sonnet ${sonnet_cost:.2f}. Sonnet costs {ratio:.0f}x more "
+          f"(Jev passes if >= {VERDICT_MIN_COST_RATIO:g}x): {'PASS' if cheap_enough else 'FAIL'}")
+    print(f"  => {'JEV WINS' if close_enough and cheap_enough else 'NOT YET'}")
+
+
 def main():
     paths = sys.argv[1:] or sorted(str(p) for p in Path("logs").glob("decisions_*.csv"))
     for path in paths:
         report(path)
     spend_summary(paths)
+    if not sys.argv[1:]:
+        final_results()
 
 
 if __name__ == "__main__":
