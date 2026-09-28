@@ -16,8 +16,8 @@ _Rewritten at the end of every session. Keep it short._
 - **Step 2.7 done (contender F, Sonnet 5 + v1 descriptions):** pre-committed in `CHANGELOG.md` before running. Result: v2 helped Sonnet about as much as Jev (+0.9 pts each at the 70% row), so no measurable tilt toward Jev. Page updated.
 
 ## Next session
-1. Iterate on the site design with Dan's feedback (then the LinkedIn post).
-2. Draft the LinkedIn post once Dan is happy with the site.
+1. LinkedIn rollout: post (draft in chat) + carousel `promo/jev-vs-the-frontier.pdf` (rebuild: `python promo/build_carousel.py`). Then a "Closing the Loop" newsletter edition 3-5 days later.
+2. Optional: real headshot to replace the "DW" initials on the site.
 
 ## Notes
 - Pin `typesafe/jev-1.13`; never `jev-latest` or `jev-router`.
