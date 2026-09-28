@@ -954,3 +954,48 @@ test_02911,I have never been charged a fee for cash withdrawal before. When did 
 test_02914,I took cash and got charged a fee,anthropic/claude-sonnet-5,v1,v1,cash_withdrawal_charge,95.0,auto_accept,,false,cash_withdrawal_charge,true,1975,0.003246
 test_02921,Will you be able to send the new card to China?,anthropic/claude-sonnet-5,v1,v1,country_support,75.0,review,keyword_miss,true,card_about_to_expire,false,2068,0.00317
 test_02922,When my card expires what happens to my account?,anthropic/claude-sonnet-5,v1,v1,card_about_to_expire,85.0,auto_accept,,false,card_about_to_expire,true,2226,0.003218
+test_02923,What do I do when my card expires?,anthropic/claude-sonnet-5,v1,v1,card_about_to_expire,90.0,auto_accept,,false,card_about_to_expire,true,1895,0.003214
+test_02929,How much does it cost to get a new card?  Mine is almost expired.  How fast does it come?,anthropic/claude-sonnet-5,v1,v1,card_about_to_expire,75.0,auto_accept,,false,card_about_to_expire,true,2098,0.003254
+test_02931,My card is about to expire and I need to know how much it costs and how long it takes to get a new one.,anthropic/claude-sonnet-5,v1,v1,card_about_to_expire,85.0,auto_accept,,false,card_about_to_expire,true,1859,0.003252
+test_02933,What is the next step if my card is about to expire.,anthropic/claude-sonnet-5,v1,v1,card_about_to_expire,95.0,auto_accept,,false,card_about_to_expire,true,2173,0.003222
+test_02934,"Once my card expires, what should I do?",anthropic/claude-sonnet-5,v1,v1,card_about_to_expire,90.0,auto_accept,,false,card_about_to_expire,true,2500,0.003218
+test_02937,My card is about to expire. How much does it cost to order a new one and how fast will I get it?,anthropic/claude-sonnet-5,v1,v1,card_about_to_expire,85.0,auto_accept,,false,card_about_to_expire,true,2487,0.00325
+test_02938,What do I do when my card is about to expire?,anthropic/claude-sonnet-5,v1,v1,card_about_to_expire,98.0,auto_accept,,false,card_about_to_expire,true,2445,0.00322
+test_02939,"I will need to get a new card soon, how do I order?",anthropic/claude-sonnet-5,v1,v1,order_physical_card,85.0,auto_accept,,false,card_about_to_expire,false,2497,0.003206
+test_02947,How do I order a new card before It expires?,anthropic/claude-sonnet-5,v1,v1,card_about_to_expire,85.0,auto_accept,,false,card_about_to_expire,true,2707,0.003218
+test_02949,"Next month my card will expire, do I need to order a new one?",anthropic/claude-sonnet-5,v1,v1,card_about_to_expire,95.0,auto_accept,,false,card_about_to_expire,true,2258,0.00323
+test_02956,"in china, need new card",anthropic/claude-sonnet-5,v1,v1,card_delivery_estimate,55.0,auto_accept,,false,card_about_to_expire,false,3697,0.003216
+test_02959,I need to know the cost and when I will receive a new card to replace an old one.,anthropic/claude-sonnet-5,v1,v1,card_delivery_estimate,65.0,auto_accept,,false,card_about_to_expire,false,2280,0.00325
+test_02962,My top-up for Google Pay isn't working,anthropic/claude-sonnet-5,v1,v1,top_up_failed,70.0,auto_accept,,false,apple_pay_or_google_pay,false,2415,0.003202
+test_02963,Can I add money with Apple Pay?,anthropic/claude-sonnet-5,v1,v1,apple_pay_or_google_pay,85.0,auto_accept,,false,apple_pay_or_google_pay,true,1849,0.00326
+test_02966,Top up on my Google Pay isn't working.,anthropic/claude-sonnet-5,v1,v1,top_up_failed,70.0,auto_accept,,false,apple_pay_or_google_pay,false,1919,0.003204
+test_02969,Can I use Apple Pay to top up?,anthropic/claude-sonnet-5,v1,v1,apple_pay_or_google_pay,85.0,auto_accept,,false,apple_pay_or_google_pay,true,1764,0.003262
+test_02970,How can I top up my Google Pay?,anthropic/claude-sonnet-5,v1,v1,apple_pay_or_google_pay,70.0,auto_accept,,false,apple_pay_or_google_pay,true,5843,0.003258
+test_02971,Does Google Play have an app to Top up?,anthropic/claude-sonnet-5,v1,v1,topping_up_by_card,45.0,auto_accept,,false,apple_pay_or_google_pay,false,2211,0.003222
+test_02973,is apple pay eligible for top up,anthropic/claude-sonnet-5,v1,v1,apple_pay_or_google_pay,85.0,auto_accept,,false,apple_pay_or_google_pay,true,2243,0.003256
+test_02977,can i top up with apple pay,anthropic/claude-sonnet-5,v1,v1,apple_pay_or_google_pay,85.0,auto_accept,,false,apple_pay_or_google_pay,true,3306,0.003252
+test_02980,Is Apple Pay a possible top up option?,anthropic/claude-sonnet-5,v1,v1,apple_pay_or_google_pay,75.0,auto_accept,,false,apple_pay_or_google_pay,true,1780,0.003264
+test_02982,Can I top up from my Apple Watch?,anthropic/claude-sonnet-5,v1,v1,apple_pay_or_google_pay,65.0,auto_accept,,false,apple_pay_or_google_pay,true,2559,0.003262
+test_02984,is apple pay costly?,anthropic/claude-sonnet-5,v1,v1,apple_pay_or_google_pay,85.0,auto_accept,,false,apple_pay_or_google_pay,true,2238,0.00325
+test_02985,How can I top up with Google Pay?,anthropic/claude-sonnet-5,v1,v1,apple_pay_or_google_pay,85.0,auto_accept,,false,apple_pay_or_google_pay,true,2568,0.003258
+test_02995,How do I troubleshoot Google pay top up?,anthropic/claude-sonnet-5,v1,v1,apple_pay_or_google_pay,70.0,auto_accept,,false,apple_pay_or_google_pay,true,2796,0.003266
+test_02999,"Google pay and top up, I want it, can I get it?",anthropic/claude-sonnet-5,v1,v1,apple_pay_or_google_pay,80.0,auto_accept,,false,apple_pay_or_google_pay,true,2219,0.003268
+test_03006,How do you verify an identity?,anthropic/claude-sonnet-5,v1,v1,verify_my_identity,85.0,auto_accept,,false,verify_my_identity,true,2386,0.003202
+test_03010,What are the steps I need to take to verify my identity?,anthropic/claude-sonnet-5,v1,v1,verify_my_identity,95.0,auto_accept,,false,verify_my_identity,true,2362,0.003216
+test_03011,What do I need to verify my identity,anthropic/claude-sonnet-5,v1,v1,verify_my_identity,90.0,auto_accept,,false,verify_my_identity,true,2953,0.003204
+test_03013,I need some help with identity verification.,anthropic/claude-sonnet-5,v1,v1,verify_my_identity,80.0,auto_accept,,false,verify_my_identity,true,2231,0.003204
+test_03017,Let me know the steps for the identity checks,anthropic/claude-sonnet-5,v1,v1,verify_my_identity,85.0,auto_accept,,false,verify_my_identity,true,1881,0.00321
+test_03018,What should I do to verify my identity?,anthropic/claude-sonnet-5,v1,v1,verify_my_identity,95.0,auto_accept,,false,verify_my_identity,true,2343,0.003206
+test_03024,do the details of my profile have to match my documents,anthropic/claude-sonnet-5,v1,v1,verify_my_identity,75.0,auto_accept,,false,verify_my_identity,true,2017,0.00321
+test_03025,Where do I verify my identity?,anthropic/claude-sonnet-5,v1,v1,verify_my_identity,95.0,auto_accept,,false,verify_my_identity,true,2560,0.003204
+test_03035,Is there any way to verify who I am?,anthropic/claude-sonnet-5,v1,v1,verify_my_identity,90.0,auto_accept,,false,verify_my_identity,true,2270,0.003208
+test_03045,Can I get a card outside the UK?,anthropic/claude-sonnet-5,v1,v1,country_support,70.0,auto_accept,,false,country_support,true,2342,0.003168
+test_03048,Now that I live in the US how can I get a card?,anthropic/claude-sonnet-5,v1,v1,country_support,65.0,auto_accept,,false,country_support,true,1881,0.003174
+test_03062,What countries do you support?,anthropic/claude-sonnet-5,v1,v1,country_support,97.0,auto_accept,,false,country_support,true,2688,0.003158
+test_03065,Can you tell me what countries you operate in?,anthropic/claude-sonnet-5,v1,v1,country_support,95.0,auto_accept,,false,country_support,true,2451,0.003172
+test_03066,"I need a card, but I'm in the US at the moment.",anthropic/claude-sonnet-5,v1,v1,country_support,65.0,auto_accept,,false,country_support,true,2394,0.003178
+test_03068,Do you have a list of countries you operate in?,anthropic/claude-sonnet-5,v1,v1,country_support,95.0,auto_accept,,false,country_support,true,2234,0.003172
+test_03070,I don't live in the UK.  Can I still get a card?,anthropic/claude-sonnet-5,v1,v1,country_support,85.0,auto_accept,,false,country_support,true,2253,0.00318
+test_03071,Where do you support?,anthropic/claude-sonnet-5,v1,v1,country_support,90.0,auto_accept,,false,country_support,true,1671,0.003156
+test_03076,How many countries do you support?,anthropic/claude-sonnet-5,v1,v1,country_support,95.0,auto_accept,,false,country_support,true,2485,0.00316
+test_03079,Can the card be mailed and used in Europe?,anthropic/claude-sonnet-5,v1,v1,card_acceptance,55.0,auto_accept,,false,country_support,false,2568,0.003204
