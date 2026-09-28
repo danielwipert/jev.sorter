@@ -1,0 +1,14 @@
+message_id,message_text,model,categories_version,keywords_version,predicted,confidence,gate_result,gate_reason,keyword_miss,correct,is_correct,ms,cost_usd
+test_00000,How do I locate my card?,anthropic/claude-sonnet-5,v1,v1,card_delivery_estimate,55.0,auto_accept,,false,card_arrival,false,3409,0.00322
+test_00007,i have not received my card,anthropic/claude-sonnet-5,v1,v1,card_arrival,85.0,auto_accept,,false,card_arrival,true,1946,0.003176
+test_00012,I still don't have my card after 2 weeks.  What should I do?,anthropic/claude-sonnet-5,v1,v1,card_delivery_estimate,85.0,auto_accept,,false,card_arrival,false,2694,0.003246
+test_00014,I am still waiting for my card after 1 week.  Is this ok?,anthropic/claude-sonnet-5,v1,v1,card_delivery_estimate,85.0,auto_accept,,false,card_arrival,false,2042,0.003248
+test_00022,How long should my new card take to arrive?,anthropic/claude-sonnet-5,v1,v1,card_delivery_estimate,95.0,auto_accept,,false,card_arrival,false,2774,0.003228
+test_00025,What is the tracking number for my card that was mailed?,anthropic/claude-sonnet-5,v1,v1,card_delivery_estimate,70.0,auto_accept,,false,card_arrival,false,2740,0.003236
+test_00029,i want to track the card you sent,anthropic/claude-sonnet-5,v1,v1,card_delivery_estimate,85.0,auto_accept,,false,card_arrival,false,1953,0.003222
+test_00030,My card hasn't arrived yet.,anthropic/claude-sonnet-5,v1,v1,card_arrival,90.0,auto_accept,,false,card_arrival,true,2575,0.003188
+test_00032,How do I know when my card will arrive?,anthropic/claude-sonnet-5,v1,v1,card_delivery_estimate,95.0,auto_accept,,false,card_arrival,false,2393,0.003228
+test_00043,"I have received my card, can you help me put it in the app?",anthropic/claude-sonnet-5,v1,v1,card_linking,85.0,auto_accept,,false,card_linking,true,2178,0.003186
+test_00044,How do I link a card that I already have?,anthropic/claude-sonnet-5,v1,v1,card_linking,95.0,auto_accept,,false,card_linking,true,2218,0.003176
+test_00045,"I received my new card, but I don't see it in the app anywhere.  What do I do?",anthropic/claude-sonnet-5,v1,v1,activate_my_card,68.0,auto_accept,,false,card_linking,false,2123,0.003226
+test_00048,Can I put my old card back into the system? I just found it/,anthropic/claude-sonnet-5,v1,v1,card_linking,55.0,auto_accept,,false,card_linking,true,2689,0.003188

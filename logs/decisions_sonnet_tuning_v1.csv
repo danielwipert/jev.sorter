@@ -1,0 +1,16 @@
+message_id,message_text,model,categories_version,keywords_version,predicted,confidence,gate_result,gate_reason,keyword_miss,correct,is_correct,ms,cost_usd
+train_00003,Can I track my card while it is in the process of delivery?,anthropic/claude-sonnet-5,v1,v1,card_delivery_estimate,85.0,auto_accept,,false,card_arrival,false,2636,0.003238
+train_00014,It's been a week since I ordered my card and it's not here. Please help?,anthropic/claude-sonnet-5,v1,v1,card_delivery_estimate,85.0,auto_accept,,false,card_arrival,false,1990,0.003248
+train_00029,What is the expected delivery date for my card?,anthropic/claude-sonnet-5,v1,v1,card_delivery_estimate,95.0,auto_accept,,false,card_arrival,false,2109,0.00323
+train_00031,I would like to track the card you sent to me.,anthropic/claude-sonnet-5,v1,v1,card_delivery_estimate,75.0,auto_accept,,false,card_arrival,false,2199,0.00323
+train_00033,My new card hasn't came in.,anthropic/claude-sonnet-5,v1,v1,card_arrival,90.0,auto_accept,,false,card_arrival,true,2276,0.003184
+train_00035,Can I get an update on my replacement card?,anthropic/claude-sonnet-5,v1,v1,card_delivery_estimate,80.0,auto_accept,,false,card_arrival,false,2328,0.00323
+train_00039,My card still hasn't been delivered,anthropic/claude-sonnet-5,v1,v1,card_arrival,85.0,auto_accept,,false,card_arrival,true,2265,0.003186
+train_00076,My card hasn't shown up yet.,anthropic/claude-sonnet-5,v1,v1,card_arrival,90.0,auto_accept,,false,card_arrival,true,2077,0.003188
+train_00080,Is there a reason my new card hasn't arrived yet?,anthropic/claude-sonnet-5,v1,v1,card_arrival,90.0,auto_accept,,false,card_arrival,true,2591,0.003202
+train_00088,Can you tell me why I haven't received my new card yet?,anthropic/claude-sonnet-5,v1,v1,card_arrival,85.0,auto_accept,,false,card_arrival,true,1907,0.0032
+train_00092,What do I need to do to get my new card which I have requested 2 weeks ago?,anthropic/claude-sonnet-5,v1,v1,card_delivery_estimate,75.0,auto_accept,,false,card_arrival,false,1916,0.003254
+train_00096,Shouldn't my new card be here by now?,anthropic/claude-sonnet-5,v1,v1,card_arrival,90.0,auto_accept,,false,card_arrival,true,2384,0.003192
+train_00101,"I have not received my card and it's been a week, what do I do?",anthropic/claude-sonnet-5,v1,v1,card_delivery_estimate,85.0,auto_accept,,false,card_arrival,false,2179,0.00324
+train_00106,My card hasn't came in the mail yet?,anthropic/claude-sonnet-5,v1,v1,card_arrival,90.0,auto_accept,,false,card_arrival,true,2358,0.003192
+train_00107,I haven't received my card.,anthropic/claude-sonnet-5,v1,v1,card_arrival,85.0,auto_accept,,false,card_arrival,true,2070,0.00318
