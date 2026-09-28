@@ -49,4 +49,4 @@ A light Python harness (decide, gate, check, learn) with TypeSafe's **Jev** in t
 ## Notes
 
 - Jev is called as `typesafe/jev-1.13` through OpenRouter, using the official `typesafe-sdk` package (import name `typesafe_sdk`).
-- Total spend for the whole project: $11.20.
+- Total spend for the whole project: $16.05.

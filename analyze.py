@@ -161,6 +161,8 @@ CONTENDERS = {
     "B": ("Jev, final descriptions (v2)", "logs/decisions_jev_test_v2.csv"),
     "C": ("Sonnet 5, final descriptions (v2)", "logs/decisions_sonnet_test_v2.csv"),
     "D": ("Haiku 4.5, final descriptions (v2)", "logs/decisions_haiku_test_v2.csv"),
+    # Secondary check on description tilt (v2 was tuned on Jev's mistakes). Does not affect the verdict.
+    "F": ("Sonnet 5, descriptions v1", "logs/decisions_sonnet_test_v1.csv"),
 }
 VERDICT_ROW = 70  # Section 10: the 70% auto-accept row decides the headline
 VERDICT_MAX_GAP = 3.0  # Jev within 3 accuracy points of Sonnet...
@@ -200,6 +202,16 @@ def final_results():
     if "B" in logs and "C" in logs:
         cascade(logs["B"], logs["C"])
         verdict(numbers)
+    if "C" in logs and "F" in logs:
+        tilt(numbers)
+
+
+def tilt(numbers):
+    """Contender F vs C: did the Jev-tuned v2 descriptions help or hurt Sonnet? (pre-committed in CHANGELOG)"""
+    print("\nDESCRIPTION TILT CHECK (Sonnet 5: v2 descriptions (C) minus v1 descriptions (F), accuracy on auto-accepted):")
+    for target in TARGETS:
+        c, f = numbers["C", target][0], numbers["F", target][0]
+        print(f"  {target}% row: C {c:.1f}%, F {f:.1f}%, C - F = {c - f:+.1f} points")
 
 
 def cascade(jev, sonnet):

@@ -55,6 +55,7 @@ The first three checks involve no model, so a model can be 100% confident in a b
 | C | Claude Sonnet 5, final descriptions (v2) |
 | D | Claude Haiku 4.5, final descriptions (v2) |
 | E | Cascade: Jev's answer if Jev auto-accepts it, otherwise Sonnet's. Computed from the B and C logs, with no new calls. |
+| F | Claude Sonnet 5, descriptions v1. A secondary check on description tilt, added after the main results; how it would be reported was [committed in advance](https://github.com/danielwipert/jev.sorter/blob/main/CHANGELOG.md). It does not affect the verdict. |
 
 **Versions.** `typesafe/jev-1.13` (reported as `typesafe/jev-1.13-20260917`), `anthropic/claude-sonnet-5`, `anthropic/claude-haiku-4.5`. Claude got one fixed, simple prompt: the 77 names and descriptions, the message, and a request for `{"category", "confidence"}` in JSON. It made one call per message, with extended thinking off. Jev's confidence is its native score (0–1, multiplied by 100).
 
@@ -88,10 +89,13 @@ The first three checks involve no model, so a model can be 100% confident in a b
 | D: Haiku 4.5 | 50% | 92 | 58.7% | 89.4% | 10.6% | 0.2% | $1.90 |
 | D: Haiku 4.5 | 70% | 85 | 81.4% | 84.6% | 15.4% | 0.2% | $1.90 |
 | D: Haiku 4.5 | 85% | 75 | 89.1% | 81.6% | 18.4% | 0.2% | $1.90 |
+| F: Sonnet 5, v1 | 50% | 85 | 68.7% | 91.4% | 8.6% | 0.0% | $3.23 |
+| F: Sonnet 5, v1 | 70% | 80 | 73.5% | 90.1% | 9.9% | 0.0% | $3.23 |
+| F: Sonnet 5, v1 | 85% | 70 | 85.2% | 86.6% | 13.4% | 0.0% | $3.23 |
 
 *Soft hallucination rate* = 1 − accuracy on auto-accepted (confident and wrong). *Hard hallucination rate* = share of all answers that failed check 1.
 
-**Accuracy on all 1,000 answers, before any gating:** Jev v1 79.3%, Jev v2 81.6%, **Sonnet 5 82.3%**, Haiku 4.5 76.9%.
+**Accuracy on all 1,000 answers, before any gating:** Jev v1 79.3%, Jev v2 81.6%, **Sonnet 5 82.3%**, Haiku 4.5 76.9%, Sonnet 5 with v1 descriptions 80.4%.
 
 **Cascade (E):** Jev answers what it auto-accepts, and Sonnet answers the rest. Every message gets an answer.
 
@@ -132,20 +136,21 @@ Sonnet 5 is the best calibrated: when it says 90 or more, it is right 96% of the
 **Secondary results, reported regardless of the verdict:**
 
 - **What the loop added (B vs A):** +0.9 points at the 70% row, +1.0 at 50%, +1.7 at 85%, and +2.3 points on all answers. On the tuning set, the loop looked worth about 3 points. Part of that was fitting to the tuning messages, which is what the locked test set is for.
+- **Description tilt check (F vs C):** the v2 descriptions were written to fix Jev's mistakes, so we also ran Sonnet 5 on the original v1 descriptions. The v2 descriptions helped Sonnet too: +2.4 points at the 50% row, **+0.9 at 70%**, +0.8 at 85%, and +1.9 on all answers. That is about the same gain Jev got (+0.9 at 70%, +2.3 on all answers). The tuning made the descriptions better for both models rather than tilting the comparison toward Jev.
 - **A second tuning round was tried and gave no net gain.** On tuning it fixed 16 answers and broke 18, so v2 was kept as final and v3 stays in the repo, unused.
 - **Hard hallucinations:** Jev 0 and Sonnet 0 out of 1,000. Haiku 2 out of 1,000: both were a valid JSON answer followed by extra commentary ("Wait, let me reconsider…"), which made the reply unreadable. They count under the rules, but neither would have been auto-accepted.
 
 ## 6. Caveats
 
 - **Banking77 is not email.** These are short chat messages, with no subject lines, signatures or threads. The results are a proxy for email triage, not proof of it.
-- **The descriptions were tuned on Jev's mistakes, then handed to Claude.** This tilts the comparison slightly toward Jev. The optional check on this tilt (contender F, Sonnet with v1 descriptions) was not run.
+- **The descriptions were tuned on Jev's mistakes, then handed to Claude.** We measured the tilt this could cause (contender F): the tuned descriptions improved Sonnet by about as much as Jev (+0.9 points each at the 70% row). There is no sign they favored Jev. Descriptions tuned on *Sonnet's* mistakes were not tried, so Sonnet at its own best could still be somewhat higher.
 - **"70%" did not mean the same volume for every model.** Claude's self-reported confidences cluster on round numbers (85, 90, 95), so a threshold can't stop at exactly 70%. At the 70% row Sonnet auto-accepted 75.3% of messages and Jev 73.1%. As a supporting check outside the pre-registered rule, comparing each model's 730 most confident valid answers gives Jev 91.4% and Sonnet 91.8%. The verdict holds either way.
 - **The accuracy difference is within noise.** With about 730 auto-accepted answers per model, one standard error on each accuracy figure is roughly ±1 point. Treat 91.4% vs 91.0% as equal.
 - **Each model was run once.** Run-to-run variation was not measured.
 - **Jev is a beta product** (launched mid-September 2026), with vendor-run benchmarks. Pricing, limits and versions may change. Pinning `jev-1.13` protects this comparison, not future ones.
 - **Claude's confidence is self-reported** from one call, with no sampling. That's the honest form of "swap the model, keep the harness". Its calibration is part of the finding, not a bug we engineered around.
 - **Disclosure:** the rewritten category descriptions were drafted by Claude Sonnet 5 and approved or edited by a human. Every draft, every edit and every call's cost is in the repo.
-- **Total spend for the whole project: $11.20** (Sonnet $7.88, Haiku $2.86, Jev $0.32, drafting $0.14).
+- **Total spend for the whole project: $16.05** (Sonnet $12.73, Haiku $2.86, Jev $0.32, drafting $0.14).
 
 ## 7. Phase 2
 
