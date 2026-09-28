@@ -2,7 +2,7 @@
 
 A light Python harness (decide, gate, check, learn) with TypeSafe's **Jev** in the "decide" seat, then the same harness with **Claude Sonnet 5** and **Claude Haiku 4.5** swapped in. The test data is Banking77 (77 bank customer-message intents).
 
-**Results page:** https://danielwipert.github.io/jev.sorter/ (source: [`docs/index.md`](docs/index.md))
+**Results page:** https://danielwipert.github.io/jev.sorter/ (source: [`docs/`](docs/): `index.html`, `methods.html`, `app.js`, `styles.css`)
 
 **Headline (pre-registered rule, test set):** at the 70% auto-accept row, Jev scored 91.4% accuracy on auto-accepted messages against Sonnet 5's 91.0%, at $0.10 vs $5.25 per 1,000 messages. **Jev wins.**
 
@@ -16,7 +16,7 @@ A light Python harness (decide, gate, check, learn) with TypeSafe's **Jev** in t
 | `run.py` | Runs one model over a message set, gates every answer and logs one row per message to `logs/` |
 | `analyze.py` | Accuracy, confused pairs, threshold curve, calibration, spend, the final results table, the cascade and the verdict |
 | `draft_rewrites.py` | The Learn stage: Sonnet 5 drafts better descriptions and a human approves them |
-| `make_chart.py` | Draws `docs/calibration.svg` from `results/calibration.csv` |
+| `build_site_data.py` | Builds `docs/data.json` (every number the results site shows) from the decision logs |
 | `test_gate.py` | Tests for the gate |
 | `CHANGELOG.md` | Every description version and gate decision, and why |
 | `planning/` | The project spec |

@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jev vs Claude: Gated Triage</title>
+<meta name="description" content="A small decision model matched Claude Sonnet 5 on the decisions it auto-accepted, at one-fiftieth of the cost. A pre-registered benchmark on 1,000 held-out Banking77 messages.">
+<meta property="og:title" content="Same accuracy on automated decisions. One-fiftieth of the cost.">
+<meta property="og:description" content="Jev vs Claude Sonnet 5 and Haiku 4.5 in the same gated triage pipeline. Pre-registered, 1,000 held-out messages, every log public.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%232a78d6'/><path d='M9 17l5 5 9-12' stroke='white' stroke-width='3.2' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a class="brand" href="./"><span class="brand-mark"></span><span>Gated Triage<span class="brand-long"> Benchmark</span></span></a>
+    <div class="nav-links">
+      <a href="#approach">Approach</a>
+      <a href="#findings">Findings</a>
+      <a href="#why">Why it matters</a>
+      <a href="methods.html">Technical report</a>
+    </div>
+    <a class="nav-cta" href="https://github.com/danielwipert/jev.sorter">GitHub ↗</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow reveal">Research note · September 2026</div>
+    <h1 class="reveal">Same accuracy on automated decisions. <em>One&#8209;fiftieth of the cost.</em></h1>
+    <div class="hero-grid">
+    <p class="lede reveal">
+      We put a small, specialized decision model, <strong>Jev</strong>, and two general-purpose models, <strong>Claude Sonnet 5</strong> and <strong>Claude Haiku 4.5</strong>,
+      into the same automated triage pipeline. On the customer messages each model was confident enough to handle on its own,
+      <strong>Jev was as accurate as Sonnet 5, at about 2% of the cost.</strong>
+    </p>
+    <figure class="hero-fig reveal" aria-label="Accuracy versus cost for each model">
+      <div class="chart" id="hero"></div>
+      <figcaption>Accuracy on auto-accepted messages (70% setting) vs cost per 1,000 decisions. Test set.</figcaption>
+    </figure>
+    </div>
+    <div class="stats reveal">
+      <div class="stat">
+        <div class="stat-value num">91.4<small>vs</small>91.0<small>%</small></div>
+        <div class="stat-label">Accuracy on the messages each model auto-accepted: Jev vs Claude Sonnet 5</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value num">52×</div>
+        <div class="stat-label">Lower cost per decision: $0.10 vs $5.25 per 1,000 messages</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value num">82.8<small>%</small></div>
+        <div class="stat-label">Accuracy of a cheap-first cascade, above Sonnet alone (82.3%) at 71% lower cost</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="approach">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">01 · What we did</div>
+      <div>
+        <h2>One pipeline. Three models. Rules fixed in advance.</h2>
+        <p>Most business AI isn't writing essays. It's sorting: which team should get this message, is this refund request valid, what kind of ticket is this. We tested that kind of work.</p>
+      </div>
+    </div>
+
+    <div class="steps">
+      <div class="step reveal">
+        <div class="step-n">01</div>
+        <h3>Same job for every model</h3>
+        <p>Each model read a real bank customer message and picked one of 77 categories, such as "card hasn't arrived" or "lost or stolen card", along with how confident it was.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-n">02</div>
+        <h3>Automate the sure ones</h3>
+        <p>Simple checks ran first. Then only confident answers were accepted automatically, and the rest went to a person. We measured how often each model was right on what it accepted.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-n">03</div>
+        <h3>No moving goalposts</h3>
+        <p>The 1,000 test messages were locked away until the end, and the rule for "who wins" was written down before the first run.</p>
+      </div>
+    </div>
+
+    <div class="figure pipeline reveal">
+      <div class="figure-head">
+        <div>
+          <div class="figure-title">The pipeline every model ran through</div>
+          <div class="figure-sub">Only the model changes. The checks run in order, and the first failure sends the message to a person.</div>
+        </div>
+      </div>
+      <div class="flow" style="margin-top:18px">
+        <div class="node"><b>Customer message</b><small>"My card still hasn't arrived"</small></div>
+        <div class="arrow"></div>
+        <div class="node model"><b>Model</b><small>Jev · Sonnet 5 · Haiku 4.5</small></div>
+        <div class="arrow"></div>
+        <div class="checks">
+          <div class="check"><i>1</i>Real category?</div>
+          <div class="check"><i>2</i>Message not empty?</div>
+          <div class="check"><i>3</i>Keyword match?</div>
+          <div class="check conf"><i>4</i>Confident enough?</div>
+        </div>
+        <div class="arrow"></div>
+        <div class="outcomes">
+          <div class="outcome accept">Auto-accept</div>
+          <div class="outcome review">Send to a person</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="findings">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">02 · What we found</div>
+      <div>
+        <h2>Six findings, from the headline down.</h2>
+        <p>Each finding has the short version first. Open "Show the numbers" for the evidence, or read the <a href="methods.html">technical report</a> for the full method.</p>
+      </div>
+    </div>
+
+    <!-- Finding 1 -->
+    <div class="finding reveal">
+      <div>
+        <div class="finding-n">FINDING 1</div>
+        <h3>Where automation happens, the small model tied the frontier model.</h3>
+        <div class="body">
+          <p>Set to auto-accept about 70% of messages, <strong>Jev was right 91.4% of the time and Sonnet 5 91.0%</strong>. That difference is within noise: call it a tie. Haiku 4.5 trailed at 84.6%.</p>
+          <p>The chart shows every setting a team could choose, from "automate a little, very safely" on the left to "automate almost everything" on the right.</p>
+        </div>
+      </div>
+      <div>
+        <div class="figure">
+          <div class="figure-head">
+            <div>
+              <div class="figure-title">Accuracy vs how much gets automated</div>
+              <div class="figure-sub">Test set, 1,000 messages. Each line shows every achievable confidence setting. Hover to compare.</div>
+            </div>
+            <div class="legend">
+              <span><i class="key k1"></i>Jev</span><span><i class="key k2"></i>Sonnet 5</span><span><i class="key k3"></i>Haiku 4.5</span>
+              <span><i class="ring"></i>Pre-registered 70% setting</span>
+            </div>
+          </div>
+          <div class="chart" id="tradeoff"></div>
+        </div>
+        <details class="more">
+          <summary>Show the numbers</summary>
+          <div class="more-body">
+            <p>Accuracy on auto-accepted messages at each pre-registered setting. Each model's cutoff was chosen on a separate 500-message tuning set, then applied unchanged to the test set.</p>
+            <div class="table-wrap"><table id="t-headline"></table></div>
+            <p><b>Why "tie" and not "win":</b> with about 730 accepted answers per model, each accuracy figure is uncertain by roughly ±1 point. We also compared each model's 730 most confident answers directly: Jev <span data-k="mv-B"></span>%, Sonnet <span data-k="mv-C"></span>%. Still a tie.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+
+    <!-- Finding 2 -->
+    <div class="finding reveal">
+      <div>
+        <div class="finding-n">FINDING 2</div>
+        <h3>It did it at one-fiftieth of the cost.</h3>
+        <div class="body">
+          <p>Jev cost <strong>$0.10 per 1,000 decisions</strong>. Sonnet 5 cost <strong>$5.25</strong>, 52 times more. Even the smaller Claude model, Haiku, cost 19 times more than Jev, while being less accurate.</p>
+          <div class="big num">$100 vs $5,253</div>
+          <div class="big-label">for one million messages a month</div>
+        </div>
+      </div>
+      <div>
+        <div class="figure">
+          <div class="figure-head">
+            <div>
+              <div class="figure-title">Cost to classify one million messages</div>
+              <div class="figure-sub">Actual billed cost from every call, scaled up. Test set, final descriptions.</div>
+            </div>
+          </div>
+          <div class="bars pre" id="costbars"></div>
+        </div>
+        <details class="more">
+          <summary>Show the numbers</summary>
+          <div class="more-body">
+            <div class="table-wrap"><table id="t-cost"></table></div>
+            <p>Costs are what OpenRouter billed for each call, logged per message. Jev charges only for input. Claude calls were one request per message with extended thinking off.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+
+    <!-- Finding 3 -->
+    <div class="finding reveal">
+      <div>
+        <div class="finding-n">FINDING 3</div>
+        <h3>Cheap first, expensive only when needed, beat the expensive model alone.</h3>
+        <div class="body">
+          <p>Let Jev handle the messages it's sure about and pass the rest to Sonnet 5. That cascade answered <strong>every message</strong> with <strong>82.8% accuracy for $1.51 per 1,000</strong>. Sonnet on its own: 82.3% for $5.25.</p>
+          <p>The best system wasn't a single model. It was a routing design.</p>
+        </div>
+      </div>
+      <div>
+        <div class="figure">
+          <div class="figure-head">
+            <div>
+              <div class="figure-title">Who handled what in the cascade</div>
+              <div class="figure-sub">Test set, 1,000 messages, Jev at its pre-registered 70% setting.</div>
+            </div>
+          </div>
+          <div id="cascade"></div>
+        </div>
+        <details class="more">
+          <summary>Show the numbers</summary>
+          <div class="more-body">
+            <p>The cascade at each of Jev's settings. It needed no extra calls: it was computed from the Jev and Sonnet logs.</p>
+            <div class="table-wrap"><table id="t-cascade"></table></div>
+            <p>Sonnet's share looks weak (about 60% right) because it gets only the hardest messages, the ones Jev wasn't sure about.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+
+    <!-- Finding 4 -->
+    <div class="finding reveal">
+      <div>
+        <div class="finding-n">FINDING 4</div>
+        <h3>Jev's confidence can be dialed in. Claude's comes in round numbers.</h3>
+        <div class="body">
+          <p>Asked how sure they are, the Claude models mostly answer 85, 90 or 95. So many answers share the same score that a team <strong>can't set the automation level precisely</strong>. Jev's native scores are finer-grained.</p>
+          <p>At the "70%" setting, Jev actually auto-accepted <strong>73%</strong> of messages, Sonnet <strong>75%</strong>, and Haiku <strong>81%</strong>.</p>
+        </div>
+      </div>
+      <div>
+        <div class="figure">
+          <div class="figure-head">
+            <div>
+              <div class="figure-title">Every automation level each model can be set to</div>
+              <div class="figure-sub">Each dot is one achievable setting on the test set. More dots means finer control.</div>
+            </div>
+          </div>
+          <div class="chart" id="strip"></div>
+        </div>
+        <details class="more">
+          <summary>Show the numbers: calibration</summary>
+          <div class="more-body">
+            <p>Calibration asks: when a model says "90% sure", is it right 90% of the time? The gray line is perfect calibration. Sonnet 5 is the most trustworthy when it's confident. It just gives fewer, coarser scores.</p>
+            <div class="chart" id="calib"></div>
+            <div class="table-wrap"><table id="t-calib"></table></div>
+          </div>
+        </details>
+      </div>
+    </div>
+
+    <!-- Finding 5 -->
+    <div class="finding reveal">
+      <div>
+        <div class="finding-n">FINDING 5</div>
+        <h3>Plain rule-based checks caught mistakes for free.</h3>
+        <div class="body">
+          <p>Before trusting any confidence score, the pipeline runs simple Python checks. A keyword check ("does the message mention anything related to the chosen category?") stopped <strong>about 1 in 7 wrong answers</strong> while blocking under 2% of right ones.</p>
+          <p>And no invented category was ever auto-accepted. Jev can't produce one by design. Haiku produced two malformed replies, and the gate stopped both.</p>
+        </div>
+      </div>
+      <div>
+        <div class="figure">
+          <div class="figure-head">
+            <div>
+              <div class="figure-title">What the keyword check catches (Jev, test set)</div>
+              <div class="figure-sub">Share of answers the check sends to a person, split by whether the answer was right.</div>
+            </div>
+          </div>
+          <div class="duo" style="margin-top:14px">
+            <div><div class="v num" data-k="kw-wrong"></div><div class="l">of <b>wrong</b> answers stopped</div></div>
+            <div><div class="v num" data-k="kw-right"></div><div class="l">of <b>right</b> answers stopped (false alarms)</div></div>
+          </div>
+          <div class="table-wrap" style="margin-top:18px"><table id="t-invalid"></table></div>
+        </div>
+        <details class="more">
+          <summary>Show the numbers</summary>
+          <div class="more-body">
+            <p>The keyword lists were generated automatically from training messages (not the tuning or test messages). The check started as a logged flag only and was switched to blocking after the first tuning run showed a 1.5% false-alarm rate. That decision is <a href="https://github.com/danielwipert/jev.sorter/blob/main/CHANGELOG.md">logged in the changelog</a>.</p>
+            <div class="table-wrap"><table id="t-keyword"></table></div>
+          </div>
+        </details>
+      </div>
+    </div>
+
+    <!-- Finding 6 -->
+    <div class="finding reveal">
+      <div>
+        <div class="finding-n">FINDING 6</div>
+        <h3>Better instructions helped every model a little, and equally.</h3>
+        <div class="body">
+          <p>We rewrote the descriptions of the most-confused categories. That added about <strong>1 point</strong> for Jev, and <strong>the same for Sonnet</strong>, so the rewrites didn't favor Jev.</p>
+          <p>A second round of rewrites gained nothing. And a 3.6-point lead Jev showed during tuning <strong>vanished on the locked test set</strong>, which is exactly why we held it back.</p>
+        </div>
+      </div>
+      <div>
+        <div class="figure">
+          <div class="figure-head">
+            <div>
+              <div class="figure-title">Accuracy before and after rewriting the descriptions</div>
+              <div class="figure-sub">Accuracy on auto-accepted messages at the 70% setting, test set.</div>
+            </div>
+            <div class="legend"><span><i class="key k1"></i>Jev</span><span><i class="key k2"></i>Sonnet 5</span></div>
+          </div>
+          <div class="chart" id="tuning"></div>
+        </div>
+        <details class="more">
+          <summary>Show the numbers</summary>
+          <div class="more-body">
+            <p>"Before" uses descriptions that are just the category names. "After" uses descriptions rewritten to fix Jev's most common confusions: drafted by Claude Sonnet 5, approved or edited by a person. The Sonnet "before" run was added specifically to test whether this favored Jev. How it would be reported was <a href="https://github.com/danielwipert/jev.sorter/blob/main/CHANGELOG.md">committed in advance</a>.</p>
+            <div class="table-wrap"><table id="t-tuning"></table></div>
+          </div>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="why">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">03 · Why it matters</div>
+      <div>
+        <h2>What this means for teams building with AI.</h2>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card reveal"><h3>Pick models by cost per trusted decision.</h3><p>Leaderboards rank overall accuracy. In production you only automate the confident part, and there a small specialized model can match a frontier one. Sonnet was slightly better on <em>all</em> answers (82.3% vs 81.6%), which would have picked the wrong model.</p></div>
+      <div class="card reveal"><h3>Confidence is a product feature.</h3><p>Your automation rate and your error rate both come from the confidence score. A model whose confidence can't be tuned finely is a model whose error rate you can't control precisely.</p></div>
+      <div class="card reveal"><h3>System design matters as much as the model.</h3><p>Rule-based checks, a confidence bar, and a cascade to a stronger model did as much as the model choice. Because the pipeline stayed fixed, swapping models was a one-line change.</p></div>
+      <div class="card reveal"><h3>Discipline is what makes a result believable.</h3><p>Locking the test set, writing the rule before the data, testing our own weak spot, and publishing every log. The tuning-set lead that disappeared shows why: the undisciplined version would have been wrong.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="limits">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">04 · Limits</div>
+      <div>
+        <h2>The honest fine print.</h2>
+      </div>
+    </div>
+    <ul class="limits reveal">
+      <li><b>One kind of task.</b> Picking one of 77 fixed labels for short bank chat messages. Not email, open-ended writing, or reasoning.</li>
+      <li><b>One run per model.</b> 1,000 test messages each. Differences under 1–2 points are noise.</li>
+      <li><b>Jev is a beta product.</b> It launched in September 2026, and its pricing and versions may change. We pinned the version.</li>
+      <li><b>Claude's confidence was self-reported</b> from a single call. Other ways of measuring its confidence might narrow Finding 4.</li>
+      <li><b>Descriptions weren't tuned on Claude's own mistakes.</b> Sonnet at its very best could be somewhat higher.</li>
+      <li><b>Real emails come next.</b> Subjects, signatures and threads make the job harder. That's phase 2.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="deeper">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">05 · Go deeper</div>
+      <div>
+        <h2>Check our work.</h2>
+        <p>Every number on this page is computed from the public decision logs. You can re-run the analysis without making a single API call.</p>
+      </div>
+    </div>
+    <div class="deeper">
+      <a href="methods.html" class="reveal"><div class="eyebrow">Layer 3</div><div class="t">Technical report</div><div class="d">Data splits, prompts word for word, gate logic, threshold procedure, the pre-registered rule, all six contenders and robustness checks.</div><div class="go">Read the report →</div></a>
+      <a href="https://github.com/danielwipert/jev.sorter" class="reveal"><div class="eyebrow">Code &amp; data</div><div class="t">Repository</div><div class="d">The harness, every decision log (one row per message per run), every description version, and the results tables.</div><div class="go">Open on GitHub ↗</div></a>
+      <a href="https://github.com/danielwipert/jev.sorter/blob/main/CHANGELOG.md" class="reveal"><div class="eyebrow">Audit trail</div><div class="t">Changelog &amp; pre-commitments</div><div class="d">Every description version, every gate decision, and each pre-commitment, time-stamped in git before the data existed.</div><div class="go">View the changelog ↗</div></a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>Gated Triage Benchmark · Jev (<code>typesafe/jev-1.13</code>), Claude Sonnet 5, Claude Haiku 4.5 · Banking77</span>
+    <span>Total project cost: $16.05 · <a href="methods.html">Technical report</a> · <a href="https://github.com/danielwipert/jev.sorter">GitHub</a></span>
+  </div>
+</footer>
+
+<div class="tip" id="tip"></div>
+<script src="app.js"></script>
+</body>
+</html>
