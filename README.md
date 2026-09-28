@@ -1,4 +1,6 @@
-# jev.sorter: Jev as the decision model in a closed-loop gate
+# Jev vs. the Frontier
+
+*By [Daniel Wipert](https://www.linkedin.com/in/daniel-wipert/).* Repository: `jev.sorter`.
 
 A light Python harness (decide, gate, check, learn) with TypeSafe's **Jev** in the "decide" seat, then the same harness with **Claude Sonnet 5** and **Claude Haiku 4.5** swapped in. The test data is Banking77 (77 bank customer-message intents).
 
