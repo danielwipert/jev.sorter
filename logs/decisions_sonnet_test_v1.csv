@@ -492,3 +492,8 @@ test_01450,Help me locate the nearest ATM.,anthropic/claude-sonnet-5,v1,v1,atm_s
 test_01454,How can I withdraw money?,anthropic/claude-sonnet-5,v1,v1,atm_support,55.0,auto_accept,,false,atm_support,true,2198,0.003172
 test_01455,How many miles away is the ATM?,anthropic/claude-sonnet-5,v1,v1,atm_support,80.0,auto_accept,,false,atm_support,true,2738,0.003176
 test_01456,From where can I withdraw?,anthropic/claude-sonnet-5,v1,v1,atm_support,70.0,auto_accept,,false,atm_support,true,2260,0.003172
+test_01457,Which ATM's will accept my card?,anthropic/claude-sonnet-5,v1,v1,atm_support,90.0,auto_accept,,false,atm_support,true,2393,0.003178
+test_01462,Can someone please assist me with finding my nearest ATM?,anthropic/claude-sonnet-5,v1,v1,atm_support,90.0,auto_accept,,false,atm_support,true,2266,0.003192
+test_01465,What type of ATMs accept this card?,anthropic/claude-sonnet-5,v1,v1,atm_support,85.0,auto_accept,,false,atm_support,true,1833,0.003178
+test_01468,What ATMs can I withdraw money from?,anthropic/claude-sonnet-5,v1,v1,atm_support,90.0,auto_accept,,false,atm_support,true,2149,0.003182
+test_01474,At which ATMs can I use this card?,anthropic/claude-sonnet-5,v1,v1,atm_support,90.0,auto_accept,,false,atm_support,true,2515,0.003178
