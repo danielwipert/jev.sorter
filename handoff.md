@@ -50,10 +50,12 @@ _Rewritten at the end of every session. Keep it short._
   - Hard hallucinations: Jev 0, Sonnet 0, Haiku 2 (0.2%): both were valid JSON followed by extra commentary ("Wait, let me reconsider…"), unreadable → counted per spec. Neither would have been auto-accepted.
   - Calibration 90–100 band: Jev B 92.5%, Sonnet 96.0%, Haiku 89.3%.
   - **Total spend: $11.20** (Sonnet $7.88, Haiku $2.86, Jev $0.32, drafting $0.14).
+- **2.6** Results page `docs/index.md` (Section 15's 8 parts; pre-registered bar verbatim; links to logs/versions on GitHub), `docs/calibration.svg` from `make_chart.py` (plain SVG, hover tooltips, hollow = < 20 msgs), `docs/_config.yml` (default Primer theme), `README.md`. Page numbers cross-checked against `results/*.csv`.
+  - This branch (`claude/practical-noether-o2xtat`) is the repo's default branch, so page links point to it.
 
 ## Next session: do these, in order
-1. Step 2.6: write `docs/index.md` (Section 15: question, harness + gate, what was tested + pre-registered bar verbatim, results table + calibration chart, verdict, caveats, phase 2, links to logs/versions) and finish `README.md`. Enable GitHub Pages on `/docs` (Dan does this in GitHub settings; needs the branch merged to the default branch or Pages pointed at this branch).
-2. Step 2.7: buffer. Contender F (Sonnet with v1) is optional (~$5).
+1. Dan: turn on GitHub Pages (repo Settings → Pages → Source "Deploy from a branch", branch `claude/practical-noether-o2xtat`, folder `/docs`). Page URL: https://danielwipert.github.io/jev.sorter/. Check that the chart and tables render.
+2. Step 2.7 (optional): contender F = Sonnet with v1 descriptions on test (~$5.25) to check the description tilt. If run, add it to the page's caveats and table.
 
 ## Notes
 - Always pin `typesafe/jev-1.13`. Never `jev-latest` or `jev-router`.
