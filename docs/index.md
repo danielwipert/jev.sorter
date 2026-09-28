@@ -31,7 +31,7 @@ A decision model at the front of a pipeline has to do two things: pick an answer
 | 3. Check | The answer is compared with the Banking77 label. |
 | 4. Learn | The most-confused category pairs are found, Claude Sonnet 5 drafts clearer descriptions, a human approves or edits them, and a new version is saved. |
 
-**The gate ([`gate.py`](https://github.com/danielwipert/jev.sorter/blob/claude/practical-noether-o2xtat/gate.py))** runs four checks in order. The first failure sends the message to review:
+**The gate ([`gate.py`](https://github.com/danielwipert/jev.sorter/blob/main/gate.py))** runs four checks in order. The first failure sends the message to review:
 
 | # | Check | Fail reason |
 |---|---|---|
@@ -40,7 +40,7 @@ A decision model at the front of a pipeline has to do two things: pick an answer
 | 3 | Does the message contain at least one keyword of the chosen category? | `keyword_miss` |
 | 4 | Is confidence at or above this model's threshold? | `low_confidence` |
 
-The first three checks involve no model, so a model can be 100% confident in a broken answer and it still won't be auto-accepted. Check 3 started as a logged flag and was promoted to blocking after the first Jev run: it flagged only 1.5% of correct answers but 14.3% of wrong ones. That decision is recorded in the [changelog](https://github.com/danielwipert/jev.sorter/blob/claude/practical-noether-o2xtat/CHANGELOG.md).
+The first three checks involve no model, so a model can be 100% confident in a broken answer and it still won't be auto-accepted. Check 3 started as a logged flag and was promoted to blocking after the first Jev run: it flagged only 1.5% of correct answers but 14.3% of wrong ones. That decision is recorded in the [changelog](https://github.com/danielwipert/jev.sorter/blob/main/CHANGELOG.md).
 
 ## 3. What was tested
 
@@ -158,9 +158,9 @@ Sonnet 5 is the best calibrated: when it says 90 or more, it is right 96% of the
 
 Every number above can be recomputed with `python analyze.py`.
 
-- Decision logs, one row per message per run: [`logs/`](https://github.com/danielwipert/jev.sorter/tree/claude/practical-noether-o2xtat/logs)
-- Result tables: [`results/`](https://github.com/danielwipert/jev.sorter/tree/claude/practical-noether-o2xtat/results)
-- Category descriptions [v1](https://github.com/danielwipert/jev.sorter/blob/claude/practical-noether-o2xtat/categories/v1.json), [v2 (final)](https://github.com/danielwipert/jev.sorter/blob/claude/practical-noether-o2xtat/categories/v2.json), [v3 (unused)](https://github.com/danielwipert/jev.sorter/blob/claude/practical-noether-o2xtat/categories/v3.json), and [keywords v1](https://github.com/danielwipert/jev.sorter/blob/claude/practical-noether-o2xtat/keywords/v1.json)
-- Sonnet's original drafts, the approved versions and every drafting call: [`drafts/`](https://github.com/danielwipert/jev.sorter/tree/claude/practical-noether-o2xtat/drafts)
-- What changed in each version and why: [`CHANGELOG.md`](https://github.com/danielwipert/jev.sorter/blob/claude/practical-noether-o2xtat/CHANGELOG.md)
-- The spec this was built from: [`planning/`](https://github.com/danielwipert/jev.sorter/tree/claude/practical-noether-o2xtat/planning)
+- Decision logs, one row per message per run: [`logs/`](https://github.com/danielwipert/jev.sorter/tree/main/logs)
+- Result tables: [`results/`](https://github.com/danielwipert/jev.sorter/tree/main/results)
+- Category descriptions [v1](https://github.com/danielwipert/jev.sorter/blob/main/categories/v1.json), [v2 (final)](https://github.com/danielwipert/jev.sorter/blob/main/categories/v2.json), [v3 (unused)](https://github.com/danielwipert/jev.sorter/blob/main/categories/v3.json), and [keywords v1](https://github.com/danielwipert/jev.sorter/blob/main/keywords/v1.json)
+- Sonnet's original drafts, the approved versions and every drafting call: [`drafts/`](https://github.com/danielwipert/jev.sorter/tree/main/drafts)
+- What changed in each version and why: [`CHANGELOG.md`](https://github.com/danielwipert/jev.sorter/blob/main/CHANGELOG.md)
+- The spec this was built from: [`planning/`](https://github.com/danielwipert/jev.sorter/tree/main/planning)
