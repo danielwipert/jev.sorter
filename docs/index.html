@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Jev vs Claude: Gated Triage</title>
+<title>Jev vs. the Frontier</title>
 <meta name="description" content="A small decision model matched Claude Sonnet 5 on the decisions it auto-accepted, at one-fiftieth of the cost. A pre-registered benchmark on 1,000 held-out Banking77 messages.">
-<meta property="og:title" content="Same accuracy on automated decisions. One-fiftieth of the cost.">
+<meta property="og:title" content="Jev vs. the Frontier: same accuracy on automated decisions, one-fiftieth of the cost">
 <meta property="og:description" content="Jev vs Claude Sonnet 5 and Haiku 4.5 in the same gated triage pipeline. Pre-registered, 1,000 held-out messages, every log public.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%232a78d6'/><path d='M9 17l5 5 9-12' stroke='white' stroke-width='3.2' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +17,7 @@
 
 <nav class="nav">
   <div class="wrap">
-    <a class="brand" href="./"><span class="brand-mark"></span><span>Gated Triage<span class="brand-long"> Benchmark</span></span></a>
+    <a class="brand" href="./"><span class="brand-mark"></span><span>Jev <span class="brand-vs">vs.</span> the Frontier</span></a>
     <div class="nav-links">
       <a href="#approach">Approach</a>
       <a href="#findings">Findings</a>
@@ -30,8 +30,9 @@
 
 <header class="hero">
   <div class="wrap">
-    <div class="eyebrow reveal">Research note · September 2026</div>
-    <h1 class="reveal">Same accuracy on automated decisions. <em>One&#8209;fiftieth of the cost.</em></h1>
+    <div class="eyebrow eyebrow-accent reveal">Research note · September 2026</div>
+    <h1 class="reveal title">Jev <span class="vs">vs.</span> <span class="grad">the Frontier</span></h1>
+    <p class="deck reveal">Same accuracy on automated decisions. <em>One&#8209;fiftieth of the cost.</em></p>
     <div class="hero-grid">
     <p class="lede reveal">
       We put a small, specialized decision model, <strong>Jev</strong>, and two general-purpose models, <strong>Claude Sonnet 5</strong> and <strong>Claude Haiku 4.5</strong>,
@@ -45,15 +46,15 @@
     </div>
     <div class="stats reveal">
       <div class="stat">
-        <div class="stat-value num">91.4<small>vs</small>91.0<small>%</small></div>
+        <div class="stat-value num"><span class="c1">91.4</span><small>vs</small><span class="c2">91.0</span><small>%</small></div>
         <div class="stat-label">Accuracy on the messages each model auto-accepted: Jev vs Claude Sonnet 5</div>
       </div>
       <div class="stat">
-        <div class="stat-value num">52×</div>
+        <div class="stat-value num grad">52×</div>
         <div class="stat-label">Lower cost per decision: $0.10 vs $5.25 per 1,000 messages</div>
       </div>
       <div class="stat">
-        <div class="stat-value num">82.8<small>%</small></div>
+        <div class="stat-value num"><span class="c4">82.8</span><small>%</small></div>
         <div class="stat-label">Accuracy of a cheap-first cascade, above Sonnet alone (82.3%) at 71% lower cost</div>
       </div>
     </div>
@@ -376,7 +377,7 @@
 
 <footer>
   <div class="wrap">
-    <span>Gated Triage Benchmark · Jev (<code>typesafe/jev-1.13</code>), Claude Sonnet 5, Claude Haiku 4.5 · Banking77</span>
+    <span>Jev vs. the Frontier · Jev (<code>typesafe/jev-1.13</code>), Claude Sonnet 5, Claude Haiku 4.5 · Banking77</span>
     <span>Total project cost: $16.05 · <a href="methods.html">Technical report</a> · <a href="https://github.com/danielwipert/jev.sorter">GitHub</a></span>
   </div>
 </footer>
