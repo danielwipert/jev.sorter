@@ -10,13 +10,13 @@ _Rewritten at the end of every session. Keep it short._
 - **Results page is live:** https://danielwipert.github.io/jev.sorter/ (GitHub Pages from `main` `/docs`). All links checked.
 - Repo cleanup: `main` is the default branch; PR [danielwipert/jev.sorter#1](https://github.com/danielwipert/jev.sorter/pull/1) merged. `CLAUDE.md` holds the working rules (session branch → PR → merge to `main` every session).
 - Full detail lives in `CHANGELOG.md`, `results/`, and the site's technical report (`docs/methods.html`).
-- **Site redesign (v2):** title "Jev vs. the Frontier", more accent color (blue→violet→pink gradient; chart colors unchanged). Byline + bio + LinkedIn waiting on Dan.
+- **Site redesign (v2):** title "Jev vs. the Frontier", more accent color (chart colors unchanged), byline + "About the author" (bio from Dan's LinkedIn, LinkedIn + textbook links).
 - **Site redesign (v1):** custom 3-layer site in `docs/`: `index.html` (story + expandable evidence), `methods.html` (technical report), `app.js` (charts/tables), `styles.css`, `data.json` (built from logs by `build_site_data.py`). Light/dark, mobile-checked. Dan wants to iterate on the look.
 - **Step 2.7 done (contender F, Sonnet 5 + v1 descriptions):** pre-committed in `CHANGELOG.md` before running. Result: v2 helped Sonnet about as much as Jev (+0.9 pts each at the 70% row), so no measurable tilt toward Jev. Page updated.
 
 ## Next session
 1. Iterate on the site design with Dan's feedback (then the LinkedIn post).
-2. Optional: add an author byline to the site if Dan wants one.
+2. Draft the LinkedIn post once Dan is happy with the site.
 
 ## Notes
 - Pin `typesafe/jev-1.13`; never `jev-latest` or `jev-router`.
