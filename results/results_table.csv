@@ -1,0 +1,13 @@
+contender,model,target_auto_accept,threshold,realized_auto_accept,accuracy_on_auto_accepted,soft_hallucination_rate,hard_hallucination_rate,accuracy_all_answers,cost_per_1000
+A,"Jev, descriptions v1",50%,97.0,54.7%,96.0%,4.0%,0.0%,79.3%,$0.07
+A,"Jev, descriptions v1",70%,84.0,72.5%,90.5%,9.5%,0.0%,79.3%,$0.07
+A,"Jev, descriptions v1",85%,61.0,86.0%,85.7%,14.3%,0.0%,79.3%,$0.07
+B,"Jev, final descriptions (v2)",50%,98.0,54.2%,97.0%,3.0%,0.0%,81.6%,$0.10
+B,"Jev, final descriptions (v2)",70%,85.0,73.1%,91.4%,8.6%,0.0%,81.6%,$0.10
+B,"Jev, final descriptions (v2)",85%,64.0,86.2%,87.4%,12.6%,0.0%,81.6%,$0.10
+C,"Sonnet 5, final descriptions (v2)",50%,85.0,64.5%,93.8%,6.2%,0.0%,82.3%,$5.25
+C,"Sonnet 5, final descriptions (v2)",70%,75.0,75.3%,91.0%,9.0%,0.0%,82.3%,$5.25
+C,"Sonnet 5, final descriptions (v2)",85%,65.0,87.4%,87.4%,12.6%,0.0%,82.3%,$5.25
+D,"Haiku 4.5, final descriptions (v2)",50%,92.0,58.7%,89.4%,10.6%,0.2%,76.9%,$1.90
+D,"Haiku 4.5, final descriptions (v2)",70%,85.0,81.4%,84.6%,15.4%,0.2%,76.9%,$1.90
+D,"Haiku 4.5, final descriptions (v2)",85%,75.0,89.1%,81.6%,18.4%,0.2%,76.9%,$1.90
