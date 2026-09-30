@@ -1,0 +1,123 @@
+message_id,message_text,model,categories_version,keywords_version,predicted,confidence,gate_result,gate_reason,keyword_miss,correct,is_correct,ms,cost_usd
+train_00003,Can I track my card while it is in the process of delivery?,convaiinnovations/laya@55cf4c4,v2,v1,card_delivery_estimate,98.44,auto_accept,,false,card_arrival,false,1140,0.0
+train_00014,It's been a week since I ordered my card and it's not here. Please help?,convaiinnovations/laya@55cf4c4,v2,v1,card_arrival,99.57,auto_accept,,false,card_arrival,true,1247,0.0
+train_00029,What is the expected delivery date for my card?,convaiinnovations/laya@55cf4c4,v2,v1,card_arrival,80.41,auto_accept,,false,card_arrival,true,1176,0.0
+train_00031,I would like to track the card you sent to me.,convaiinnovations/laya@55cf4c4,v2,v1,lost_or_stolen_card,76.88,auto_accept,,false,card_arrival,false,1692,0.0
+train_00033,My new card hasn't came in.,convaiinnovations/laya@55cf4c4,v2,v1,card_arrival,50.29,auto_accept,,false,card_arrival,true,1483,0.0
+train_00035,Can I get an update on my replacement card?,convaiinnovations/laya@55cf4c4,v2,v1,order_physical_card,96.45,auto_accept,,false,card_arrival,false,1007,0.0
+train_00039,My card still hasn't been delivered,convaiinnovations/laya@55cf4c4,v2,v1,lost_or_stolen_phone,72.86,review,keyword_miss,true,card_arrival,false,972,0.0
+train_00076,My card hasn't shown up yet.,convaiinnovations/laya@55cf4c4,v2,v1,card_arrival,94.62,auto_accept,,false,card_arrival,true,1094,0.0
+train_00080,Is there a reason my new card hasn't arrived yet?,convaiinnovations/laya@55cf4c4,v2,v1,card_arrival,99.98,auto_accept,,false,card_arrival,true,1266,0.0
+train_00088,Can you tell me why I haven't received my new card yet?,convaiinnovations/laya@55cf4c4,v2,v1,card_arrival,99.46,auto_accept,,false,card_arrival,true,1028,0.0
+train_00092,What do I need to do to get my new card which I have requested 2 weeks ago?,convaiinnovations/laya@55cf4c4,v2,v1,order_physical_card,99.75,auto_accept,,false,card_arrival,false,1035,0.0
+train_00096,Shouldn't my new card be here by now?,convaiinnovations/laya@55cf4c4,v2,v1,card_arrival,81.84,auto_accept,,false,card_arrival,true,1074,0.0
+train_00101,"I have not received my card and it's been a week, what do I do?",convaiinnovations/laya@55cf4c4,v2,v1,card_arrival,95.18,auto_accept,,false,card_arrival,true,1026,0.0
+train_00106,My card hasn't came in the mail yet?,convaiinnovations/laya@55cf4c4,v2,v1,card_arrival,99.89,auto_accept,,false,card_arrival,true,1113,0.0
+train_00107,I haven't received my card.,convaiinnovations/laya@55cf4c4,v2,v1,lost_or_stolen_phone,50.76,review,keyword_miss,true,card_arrival,false,1082,0.0
+train_00108,Is it possible for me to track the card is was mailed to me?,convaiinnovations/laya@55cf4c4,v2,v1,lost_or_stolen_card,82.14,auto_accept,,false,card_arrival,false,956,0.0
+train_00119,How long does it take to recieve my new card?,convaiinnovations/laya@55cf4c4,v2,v1,card_arrival,87.47,auto_accept,,false,card_arrival,true,1070,0.0
+train_00251,What do I do to link my new card?,convaiinnovations/laya@55cf4c4,v2,v1,card_linking,57.71,auto_accept,,false,card_linking,true,1121,0.0
+train_00259,I found my card again. Can I put it back into the app?,convaiinnovations/laya@55cf4c4,v2,v1,lost_or_stolen_card,90.66,auto_accept,,false,card_linking,false,1001,0.0
+train_00263,How do I get my card into the app?,convaiinnovations/laya@55cf4c4,v2,v1,apple_pay_or_google_pay,56.16,review,keyword_miss,true,card_linking,false,1105,0.0
+train_00290,"My new card isn't in my app, how do I get it in there?",convaiinnovations/laya@55cf4c4,v2,v1,getting_virtual_card,99.61,auto_accept,,false,card_linking,false,1070,0.0
+train_00303,What are you exchange rates?,convaiinnovations/laya@55cf4c4,v2,v1,declined_card_payment,12.0,review,keyword_miss,true,exchange_rate,false,1034,0.0
+train_00304,Do you have the best exchange rate?,convaiinnovations/laya@55cf4c4,v2,v1,wrong_exchange_rate_for_cash_withdrawal,62.19,auto_accept,,false,exchange_rate,false,1061,0.0
+train_00311,What do you use to figure out the exchange rate for the card?,convaiinnovations/laya@55cf4c4,v2,v1,exchange_rate,95.7,auto_accept,,false,exchange_rate,true,1001,0.0
+train_00321,How is the exchange rate calculated?,convaiinnovations/laya@55cf4c4,v2,v1,exchange_rate,99.78,auto_accept,,false,exchange_rate,true,1016,0.0
+train_00333,How do you find the exchange rate?,convaiinnovations/laya@55cf4c4,v2,v1,exchange_rate,98.18,auto_accept,,false,exchange_rate,true,1281,0.0
+train_00346,How can I find your exchange rates?,convaiinnovations/laya@55cf4c4,v2,v1,exchange_rate,80.04,auto_accept,,false,exchange_rate,true,1064,0.0
+train_00360,What factors effect the exchange rate?,convaiinnovations/laya@55cf4c4,v2,v1,exchange_rate,99.99,auto_accept,,false,exchange_rate,true,929,0.0
+train_00367,Is the exchange rate the same on weekends as the weekdays?,convaiinnovations/laya@55cf4c4,v2,v1,exchange_rate,99.06,auto_accept,,false,exchange_rate,true,1084,0.0
+train_00388,what are your exchange rates at?,convaiinnovations/laya@55cf4c4,v2,v1,wrong_exchange_rate_for_cash_withdrawal,83.5,auto_accept,,false,exchange_rate,false,1070,0.0
+train_00416,An incorrect exchange rate was applied to an item I bought.,convaiinnovations/laya@55cf4c4,v2,v1,wrong_exchange_rate_for_cash_withdrawal,100.0,auto_accept,,false,card_payment_wrong_exchange_rate,false,1170,0.0
+train_00439,What if there is an error on the exchange rate?,convaiinnovations/laya@55cf4c4,v2,v1,wrong_exchange_rate_for_cash_withdrawal,99.96,auto_accept,,false,card_payment_wrong_exchange_rate,false,1145,0.0
+train_00483,It seems that the rate I got is incorrect.,convaiinnovations/laya@55cf4c4,v2,v1,wrong_exchange_rate_for_cash_withdrawal,99.83,auto_accept,,false,card_payment_wrong_exchange_rate,false,1091,0.0
+train_00487,My client was converting their Russian ruble into UK pound currency when they noticed their bill was much too high for the exchange. What happened?,convaiinnovations/laya@55cf4c4,v2,v1,wrong_exchange_rate_for_cash_withdrawal,58.78,auto_accept,,false,card_payment_wrong_exchange_rate,false,1004,0.0
+train_00500,Why is the exchange rate different from what I expected?,convaiinnovations/laya@55cf4c4,v2,v1,wrong_exchange_rate_for_cash_withdrawal,99.4,auto_accept,,false,card_payment_wrong_exchange_rate,false,1114,0.0
+train_00510,I want to change the wrong exchange rate.,convaiinnovations/laya@55cf4c4,v2,v1,wrong_exchange_rate_for_cash_withdrawal,100.0,auto_accept,,false,card_payment_wrong_exchange_rate,false,1024,0.0
+train_00518,I believe you charged me too much to exchange my money,convaiinnovations/laya@55cf4c4,v2,v1,exchange_charge,63.73,auto_accept,,false,card_payment_wrong_exchange_rate,false,1092,0.0
+train_00568,"I  have been charged more than I should for the presents I bought  when abroad, the problem seems to be the exchange rate.",convaiinnovations/laya@55cf4c4,v2,v1,transaction_charged_twice,89.99,auto_accept,,false,card_payment_wrong_exchange_rate,false,1020,0.0
+train_00576,What is the $1 transaction on my account?,convaiinnovations/laya@55cf4c4,v2,v1,transaction_charged_twice,99.99,auto_accept,,false,extra_charge_on_statement,false,1175,0.0
+train_00582,"I have a strange transaction for £1 on my statement, what is that?",convaiinnovations/laya@55cf4c4,v2,v1,wrong_amount_of_cash_received,40.26,review,keyword_miss,true,extra_charge_on_statement,false,1305,0.0
+train_00621,"There must have been a mistake, why was I charged an extra pound?",convaiinnovations/laya@55cf4c4,v2,v1,extra_charge_on_statement,97.91,auto_accept,,false,extra_charge_on_statement,true,1105,0.0
+train_00623,There is an extra small charge on my card! What do I do?,convaiinnovations/laya@55cf4c4,v2,v1,extra_charge_on_statement,66.34,auto_accept,,false,extra_charge_on_statement,true,1006,0.0
+train_00624,"I looked at my statement, and there is a charge for 1£ that I don't recognize.  Why is it on there?",convaiinnovations/laya@55cf4c4,v2,v1,extra_charge_on_statement,53.23,auto_accept,,false,extra_charge_on_statement,true,1257,0.0
+train_00668,"There seems to be an additional charge of £1 on my statement, what is the reason for this?",convaiinnovations/laya@55cf4c4,v2,v1,extra_charge_on_statement,100.0,auto_accept,,false,extra_charge_on_statement,true,1282,0.0
+train_00673,There is a pending payment on my account that is very strange. I don't remember making this and it won't go away. Can you help me figure this out?,convaiinnovations/laya@55cf4c4,v2,v1,pending_card_payment,99.84,auto_accept,,false,extra_charge_on_statement,false,1218,0.0
+train_00713,Why is there a fee added to my statement?,convaiinnovations/laya@55cf4c4,v2,v1,extra_charge_on_statement,100.0,auto_accept,,false,extra_charge_on_statement,true,1215,0.0
+train_00733,I've been charged an extra £1 and I don't know why,convaiinnovations/laya@55cf4c4,v2,v1,transaction_charged_twice,99.98,auto_accept,,false,extra_charge_on_statement,false,1170,0.0
+train_00735,Why is there a €1 charge on my statement?,convaiinnovations/laya@55cf4c4,v2,v1,transaction_charged_twice,98.78,review,keyword_miss,true,extra_charge_on_statement,false,1331,0.0
+train_00765,I made a cash withdrawal earlier and it's showing as pending.  What does that mean?,convaiinnovations/laya@55cf4c4,v2,v1,pending_transfer,95.88,auto_accept,,false,pending_cash_withdrawal,false,1184,0.0
+train_00794,"My account says there are pending funds right now from withdrawing from an ATM, but my card was declined and I never took out any money. When will that money be deposited back into my account?",convaiinnovations/laya@55cf4c4,v2,v1,declined_card_payment,43.84,auto_accept,,false,pending_cash_withdrawal,false,1325,0.0
+train_00795,How long before I can see that my cash withdrawal has taken place?,convaiinnovations/laya@55cf4c4,v2,v1,cash_withdrawal_charge,99.86,auto_accept,,false,pending_cash_withdrawal,false,1181,0.0
+train_00799,I didn't receive my money earlier and it says the transaction is still in progress. Can you fix it?,convaiinnovations/laya@55cf4c4,v2,v1,receiving_money,99.14,auto_accept,,false,pending_cash_withdrawal,false,1147,0.0
+train_00850,In my account I noticed my ATM withdrawal is still pending,convaiinnovations/laya@55cf4c4,v2,v1,pending_transfer,53.54,auto_accept,,false,pending_cash_withdrawal,false,1078,0.0
+train_00932,Will you be able to exchange to EUR?,convaiinnovations/laya@55cf4c4,v2,v1,exchange_via_app,99.6,auto_accept,,false,fiat_currency_support,false,1028,0.0
+train_00960,"I'm interested in holding and exchange for flat currencies, what do you support?",convaiinnovations/laya@55cf4c4,v2,v1,supported_cards_and_currencies,93.02,auto_accept,,false,fiat_currency_support,false,1014,0.0
+train_00965,How can I exchange to EUR?,convaiinnovations/laya@55cf4c4,v2,v1,exchange_rate,33.51,auto_accept,,false,fiat_currency_support,false,1032,0.0
+train_00970,"Do you hold money and if so, what currencies do you accept?",convaiinnovations/laya@55cf4c4,v2,v1,supported_cards_and_currencies,99.92,auto_accept,,false,fiat_currency_support,false,1031,0.0
+train_01056,I need my card as quick as possible,convaiinnovations/laya@55cf4c4,v2,v1,declined_card_payment,19.98,auto_accept,,false,card_delivery_estimate,false,1087,0.0
+train_01076,how soon will my card arrive?,convaiinnovations/laya@55cf4c4,v2,v1,card_arrival,100.0,auto_accept,,false,card_delivery_estimate,false,988,0.0
+train_01107,When can I expect my new card to get here?,convaiinnovations/laya@55cf4c4,v2,v1,card_arrival,99.95,auto_accept,,false,card_delivery_estimate,false,942,0.0
+train_01111,How long does it take for something to be delivered to the U.S?,convaiinnovations/laya@55cf4c4,v2,v1,card_arrival,79.71,auto_accept,,false,card_delivery_estimate,false,982,0.0
+train_01112,How long does it take for my physical card to be delivered.,convaiinnovations/laya@55cf4c4,v2,v1,order_physical_card,96.61,auto_accept,,false,card_delivery_estimate,false,1046,0.0
+train_01121,I can't find the auto-top up option.,convaiinnovations/laya@55cf4c4,v2,v1,automatic_top_up,100.0,auto_accept,,false,automatic_top_up,true,1107,0.0
+train_01123,When do i activate auto top-up?,convaiinnovations/laya@55cf4c4,v2,v1,automatic_top_up,100.0,auto_accept,,false,automatic_top_up,true,1114,0.0
+train_01145,Is it possible to do auto top up?,convaiinnovations/laya@55cf4c4,v2,v1,automatic_top_up,100.0,auto_accept,,false,automatic_top_up,true,1316,0.0
+train_01147,I would like to top up my account automatically. How do I do that?,convaiinnovations/laya@55cf4c4,v2,v1,automatic_top_up,73.33,auto_accept,,false,automatic_top_up,true,1152,0.0
+train_01149,If I don't have much money in the account can I auto top-up?,convaiinnovations/laya@55cf4c4,v2,v1,automatic_top_up,88.12,auto_accept,,false,automatic_top_up,true,1058,0.0
+train_01155,"If there isn't a lot of money left, will it automatically top-up money?",convaiinnovations/laya@55cf4c4,v2,v1,automatic_top_up,48.42,auto_accept,,false,automatic_top_up,true,1075,0.0
+train_01156,In what increments can I top-up my card?,convaiinnovations/laya@55cf4c4,v2,v1,topping_up_by_card,99.99,auto_accept,,false,automatic_top_up,false,1002,0.0
+train_01190,When I'm traveling is it possible to add money automatically at certain time points?,convaiinnovations/laya@55cf4c4,v2,v1,automatic_top_up,92.38,auto_accept,,false,automatic_top_up,true,1049,0.0
+train_01199,Can I set it up to add money every few days automatically while I am traveling?,convaiinnovations/laya@55cf4c4,v2,v1,automatic_top_up,100.0,auto_accept,,false,automatic_top_up,true,1071,0.0
+train_01224,how can i get it to add money automatically while travelling,convaiinnovations/laya@55cf4c4,v2,v1,automatic_top_up,100.0,auto_accept,,false,automatic_top_up,true,1003,0.0
+train_01277,What are ways to test why my card might not be working?,convaiinnovations/laya@55cf4c4,v2,v1,card_not_working,99.68,auto_accept,,false,card_not_working,true,1048,0.0
+train_01330,My card stopped working after multiple transactions. Why?,convaiinnovations/laya@55cf4c4,v2,v1,transaction_charged_twice,99.95,auto_accept,,false,card_not_working,false,1223,0.0
+train_01355,What should I do if my physical card isn't working?,convaiinnovations/laya@55cf4c4,v2,v1,virtual_card_not_working,94.48,auto_accept,,false,card_not_working,false,1177,0.0
+train_01369,Can I possibly change my currency to another?,convaiinnovations/laya@55cf4c4,v2,v1,exchange_via_app,86.95,auto_accept,,false,exchange_via_app,true,1197,0.0
+train_01373,Can turn my money into another currency?,convaiinnovations/laya@55cf4c4,v2,v1,exchange_via_app,45.22,auto_accept,,false,exchange_via_app,true,1211,0.0
+train_01393,Can I use your app to exchange between USD and GBP,convaiinnovations/laya@55cf4c4,v2,v1,exchange_via_app,100.0,auto_accept,,false,exchange_via_app,true,1023,0.0
+train_01413,Can I use this app to exchange currencies?,convaiinnovations/laya@55cf4c4,v2,v1,exchange_via_app,100.0,auto_accept,,false,exchange_via_app,true,1021,0.0
+train_01432,How can I exchange currencies with this app?,convaiinnovations/laya@55cf4c4,v2,v1,exchange_via_app,100.0,auto_accept,,false,exchange_via_app,true,1094,0.0
+train_01470,Can this app exchange American and English currency?,convaiinnovations/laya@55cf4c4,v2,v1,exchange_via_app,100.0,auto_accept,,false,exchange_via_app,true,1044,0.0
+train_01479,How do I replace a stolen card?,convaiinnovations/laya@55cf4c4,v2,v1,lost_or_stolen_card,73.55,auto_accept,,false,lost_or_stolen_card,true,1211,0.0
+train_01496,Can you send me a new card and block my current one. I'm in Spain and my wallet was stolen.,convaiinnovations/laya@55cf4c4,v2,v1,order_physical_card,93.3,auto_accept,,false,lost_or_stolen_card,false,1055,0.0
+train_01516,I have lost my card! What is my next step?,convaiinnovations/laya@55cf4c4,v2,v1,lost_or_stolen_phone,97.62,auto_accept,,false,lost_or_stolen_card,false,991,0.0
+train_01543,Need help with a stolen card.,convaiinnovations/laya@55cf4c4,v2,v1,lost_or_stolen_phone,95.91,auto_accept,,false,lost_or_stolen_card,false,1048,0.0
+train_01576,Would it be possible to open up an account for children?,convaiinnovations/laya@55cf4c4,v2,v1,transfer_into_account,17.35,auto_accept,,false,age_limit,false,1100,0.0
+train_01599,What are the age requirements for service?,convaiinnovations/laya@55cf4c4,v2,v1,age_limit,100.0,auto_accept,,false,age_limit,true,1045,0.0
+train_01616,What is the youngest age for an account?,convaiinnovations/laya@55cf4c4,v2,v1,age_limit,100.0,auto_accept,,false,age_limit,true,1007,0.0
+train_01617,I have kids and I'm curious at what age could they start to use your service.,convaiinnovations/laya@55cf4c4,v2,v1,age_limit,100.0,auto_accept,,false,age_limit,true,1001,0.0
+train_01623,Do you have a children account available?,convaiinnovations/laya@55cf4c4,v2,v1,declined_card_payment,13.14,review,keyword_miss,true,age_limit,false,935,0.0
+train_01672,My PIN tries have run out. Now what?,convaiinnovations/laya@55cf4c4,v2,v1,pin_blocked,99.87,auto_accept,,false,pin_blocked,true,987,0.0
+train_01684,How can I unblock my PIN?,convaiinnovations/laya@55cf4c4,v2,v1,pin_blocked,99.74,auto_accept,,false,pin_blocked,true,1029,0.0
+train_01688,How do I make my PIN work again?,convaiinnovations/laya@55cf4c4,v2,v1,pin_blocked,98.77,auto_accept,,false,pin_blocked,true,1196,0.0
+train_01780,I punched in the wrong pin too many times and I'm locked out.,convaiinnovations/laya@55cf4c4,v2,v1,pin_blocked,99.86,auto_accept,,false,pin_blocked,true,1040,0.0
+train_01783,How come when I tried to pay contactless at the bus it didnt work?,convaiinnovations/laya@55cf4c4,v2,v1,contactless_not_working,98.07,auto_accept,,false,contactless_not_working,true,1070,0.0
+train_01835,Am I charged for receiving money?,convaiinnovations/laya@55cf4c4,v2,v1,receiving_money,100.0,auto_accept,,false,top_up_by_bank_transfer_charge,false,1030,0.0
+train_01864,is there a fee for swift transfer,convaiinnovations/laya@55cf4c4,v2,v1,transfer_fee_charged,100.0,auto_accept,,false,top_up_by_bank_transfer_charge,false,984,0.0
+train_01886,"I want to top up my account by a bank transfer, but will I be charged?",convaiinnovations/laya@55cf4c4,v2,v1,automatic_top_up,34.28,auto_accept,,false,top_up_by_bank_transfer_charge,false,1221,0.0
+train_01891,Can I transfer using SWIFT?,convaiinnovations/laya@55cf4c4,v2,v1,pending_transfer,23.12,auto_accept,,false,top_up_by_bank_transfer_charge,false,1054,0.0
+train_01915,How much would I be charged for a transfer?,convaiinnovations/laya@55cf4c4,v2,v1,transfer_fee_charged,100.0,auto_accept,,false,top_up_by_bank_transfer_charge,false,1167,0.0
+train_01965,"My top up hasn't gone through yet, why?",convaiinnovations/laya@55cf4c4,v2,v1,automatic_top_up,50.09,auto_accept,,false,pending_top_up,false,1096,0.0
+train_01981,What do I do if my top-up has not gone through?,convaiinnovations/laya@55cf4c4,v2,v1,topping_up_by_card,81.03,auto_accept,,false,pending_top_up,false,1166,0.0
+train_02069,Please sort your top up! My top up has been pending for an hour already. Can you please make it go through as soon as possible. I really need the money.,convaiinnovations/laya@55cf4c4,v2,v1,pending_top_up,99.99,auto_accept,,false,pending_top_up,true,1258,0.0
+train_02124,Please cancel my last transaction.,convaiinnovations/laya@55cf4c4,v2,v1,cancel_transfer,99.97,auto_accept,,false,cancel_transfer,true,1180,0.0
+train_02149,I just realised I made the wrong payment yesterday. Can you please change it to the right account? It's my rent payment and really really needs to be in the right account by tomorrow,convaiinnovations/laya@55cf4c4,v2,v1,transfer_into_account,97.78,auto_accept,,false,cancel_transfer,false,1158,0.0
+train_02167,I need to cancel my recent transfer as soon as possible. I made an error there. Please help before it goes through.,convaiinnovations/laya@55cf4c4,v2,v1,cancel_transfer,100.0,auto_accept,,false,cancel_transfer,true,1180,0.0
+train_02178,Is it possible for a transaction to be cancelled?,convaiinnovations/laya@55cf4c4,v2,v1,cancel_transfer,100.0,auto_accept,,false,cancel_transfer,true,931,0.0
+train_02191,How do I go about cancelling a transaction?,convaiinnovations/laya@55cf4c4,v2,v1,cancel_transfer,100.0,auto_accept,,false,cancel_transfer,true,906,0.0
+train_02199,I made the incorrect payment for my rent yesterday and this needs to be fixed by no later than tomorrow. How can you help?,convaiinnovations/laya@55cf4c4,v2,v1,transaction_charged_twice,96.09,review,keyword_miss,true,cancel_transfer,false,1111,0.0
+train_02227,A transfer has been made in my account that I need to cancel.  This was a mistake on my part and I hope we can get this resolved quickly.,convaiinnovations/laya@55cf4c4,v2,v1,cancel_transfer,100.0,auto_accept,,false,cancel_transfer,true,968,0.0
+train_02233,please cancel the transaction,convaiinnovations/laya@55cf4c4,v2,v1,cancel_transfer,99.82,auto_accept,,false,cancel_transfer,true,1115,0.0
+train_02249,Tell me if there is a limit to top-up.,convaiinnovations/laya@55cf4c4,v2,v1,top_up_limits,99.97,auto_accept,,false,top_up_limits,true,991,0.0
+train_02310,Can I use as many top-ups as I want?,convaiinnovations/laya@55cf4c4,v2,v1,automatic_top_up,70.39,auto_accept,,false,top_up_limits,false,1135,0.0
+train_02316,Is there a limit for top ups?,convaiinnovations/laya@55cf4c4,v2,v1,top_up_limits,99.99,auto_accept,,false,top_up_limits,true,988,0.0
+train_02328,limits on top ups,convaiinnovations/laya@55cf4c4,v2,v1,declined_card_payment,16.42,review,keyword_miss,true,top_up_limits,false,997,0.0
+train_02340,"Hi, I used an ATM today to take money out of my account, but the amount it gave me is not the amount I requested. What should I do?",convaiinnovations/laya@55cf4c4,v2,v1,wrong_amount_of_cash_received,98.21,auto_accept,,false,wrong_amount_of_cash_received,true,963,0.0
+train_02344,I didn't get all the cash I asked for,convaiinnovations/laya@55cf4c4,v2,v1,wrong_amount_of_cash_received,82.22,auto_accept,,false,wrong_amount_of_cash_received,true,942,0.0
+train_02348,I wanted to withdraw $100 from the ATM but I only got $20,convaiinnovations/laya@55cf4c4,v2,v1,wrong_amount_of_cash_received,87.66,auto_accept,,false,wrong_amount_of_cash_received,true,959,0.0
+train_02362,I'm at the ATM right now and it only allowed me to withdraw 10 pounds instead of my requested 30. What's going on? How can I fix this?,convaiinnovations/laya@55cf4c4,v2,v1,wrong_amount_of_cash_received,86.57,auto_accept,,false,wrong_amount_of_cash_received,true,1140,0.0
+train_02375,Why didn't I receive the right amount of cash at the ATM?,convaiinnovations/laya@55cf4c4,v2,v1,wrong_amount_of_cash_received,80.88,auto_accept,,false,wrong_amount_of_cash_received,true,1047,0.0
+train_02407,I was not able to receive the correct amount of cash.,convaiinnovations/laya@55cf4c4,v2,v1,receiving_money,97.75,auto_accept,,false,wrong_amount_of_cash_received,false,1115,0.0
+train_02447,i asked for 100 only got 80,convaiinnovations/laya@55cf4c4,v2,v1,wrong_amount_of_cash_received,98.52,auto_accept,,false,wrong_amount_of_cash_received,true,1062,0.0
