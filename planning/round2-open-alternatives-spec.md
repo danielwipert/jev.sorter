@@ -35,7 +35,7 @@ The question is the same as round 1: *which model, at the front of the same Pyth
 - Defaults fail on 77 options: 0/20 correct. Its own docs say so, because option descriptions get cut off.
 - Settings tried on the first 50 tuning messages: `head_max_len=512` got 22/50 at about 1.1 s per message. `head_max_len=1024` got 11/50, and `predict_shortlist k=20` got 17/50 at about 9 s per message. **Locked: `head_max_len=512, max_len=1024`.**
 - v1 descriptions (label names only) with the same settings: 24/50, about the same.
-- **Partial tuning run (v2, 372/500):** 45.6% correct on all answers, vs. Jev's 83.9% on the same messages. Median about 1.06 s per message on 4 CPU cores.
+- **Partial tuning run (v2, 372/500; paused at 427/500):** 45.6% correct on all answers, vs. Jev's 83.9% on the same messages. Median about 1.06 s per message on 4 CPU cores.
 - Full runs (tuning and test × v2 and v1) were started in the background. `run.py` resumes where it stopped, so re-running the same command finishes the job:
   ```
   python run.py --model laya --set tuning --categories v2

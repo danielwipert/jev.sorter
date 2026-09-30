@@ -407,3 +407,22 @@ train_08031,How do I add cash to my account?,convaiinnovations/laya@55cf4c4,v2,v
 train_08048,Where can the cards be delivered?,convaiinnovations/laya@55cf4c4,v2,v1,card_arrival,58.75,auto_accept,,false,order_physical_card,false,997,0.0
 train_08072,Is a physical card also available,convaiinnovations/laya@55cf4c4,v2,v1,get_physical_card,80.68,auto_accept,,false,order_physical_card,false,1008,0.0
 train_08080,Where are the cards delivered to,convaiinnovations/laya@55cf4c4,v2,v1,lost_or_stolen_phone,55.72,review,keyword_miss,true,order_physical_card,false,1098,0.0
+train_08117,Can I get an actual card,convaiinnovations/laya@55cf4c4,v2,v1,order_physical_card,82.81,auto_accept,,false,order_physical_card,true,1203,0.0
+train_08126,I would really like a physical card.,convaiinnovations/laya@55cf4c4,v2,v1,order_physical_card,99.83,auto_accept,,false,order_physical_card,true,1431,0.0
+train_08153,How much is a physical card?,convaiinnovations/laya@55cf4c4,v2,v1,get_physical_card,59.48,auto_accept,,false,order_physical_card,false,1196,0.0
+train_08163,Where are the cards transported to?,convaiinnovations/laya@55cf4c4,v2,v1,verify_source_of_funds,89.97,auto_accept,,false,order_physical_card,false,1035,0.0
+train_08178,Is there a reason why my virtual card won't work?,convaiinnovations/laya@55cf4c4,v2,v1,virtual_card_not_working,100.0,auto_accept,,false,virtual_card_not_working,true,1181,0.0
+train_08184,How do I get this damn virtual card to work?,convaiinnovations/laya@55cf4c4,v2,v1,virtual_card_not_working,100.0,auto_accept,,false,virtual_card_not_working,true,1076,0.0
+train_08201,I tried to use my disposable virtual card to pay a subscription to the gym and it got rejected. Any ideas why?,convaiinnovations/laya@55cf4c4,v2,v1,virtual_card_not_working,97.07,auto_accept,,false,virtual_card_not_working,true,1004,0.0
+train_08206,I have a disposable card but it does not work?,convaiinnovations/laya@55cf4c4,v2,v1,card_not_working,91.32,auto_accept,,false,virtual_card_not_working,false,948,0.0
+train_08237,"After I got my cash, I found out my exchange rate was wrong.",convaiinnovations/laya@55cf4c4,v2,v1,wrong_exchange_rate_for_cash_withdrawal,100.0,auto_accept,,false,wrong_exchange_rate_for_cash_withdrawal,true,1110,0.0
+train_08243,Someone may have made an error in figuring out the rate of exchange.  I should have received more cash than I did on my most recent withdrawal.,convaiinnovations/laya@55cf4c4,v2,v1,wrong_exchange_rate_for_cash_withdrawal,93.05,auto_accept,,false,wrong_exchange_rate_for_cash_withdrawal,true,1196,0.0
+train_08262,I don't think the exchange rate was right.,convaiinnovations/laya@55cf4c4,v2,v1,wrong_exchange_rate_for_cash_withdrawal,99.98,auto_accept,,false,wrong_exchange_rate_for_cash_withdrawal,true,1231,0.0
+train_08264,what is the exchange rate when i get cash,convaiinnovations/laya@55cf4c4,v2,v1,receiving_money,90.17,review,keyword_miss,true,wrong_exchange_rate_for_cash_withdrawal,false,1036,0.0
+train_08266,Why is the exchange rate so high? This should have been a much higher amount of cash for that to apply.,convaiinnovations/laya@55cf4c4,v2,v1,exchange_rate,60.7,auto_accept,,false,wrong_exchange_rate_for_cash_withdrawal,false,1194,0.0
+train_08345,I withdrew cash and I think the exchange rate is wrong.,convaiinnovations/laya@55cf4c4,v2,v1,wrong_exchange_rate_for_cash_withdrawal,100.0,auto_accept,,false,wrong_exchange_rate_for_cash_withdrawal,true,1071,0.0
+train_08360,The exchange rate was wrong in the foreign country I got cash in.,convaiinnovations/laya@55cf4c4,v2,v1,wrong_exchange_rate_for_cash_withdrawal,100.0,auto_accept,,false,wrong_exchange_rate_for_cash_withdrawal,true,979,0.0
+train_08421,What is the procedure for depositing a virtual card,convaiinnovations/laya@55cf4c4,v2,v1,transfer_into_account,99.37,review,keyword_miss,true,get_disposable_virtual_card,false,959,0.0
+train_08425,Please tell me about disposable cards.,convaiinnovations/laya@55cf4c4,v2,v1,supported_cards_and_currencies,98.38,auto_accept,,false,get_disposable_virtual_card,false,960,0.0
+train_08448,What do the disposable cards do?,convaiinnovations/laya@55cf4c4,v2,v1,disposable_card_limits,99.76,auto_accept,,false,get_disposable_virtual_card,false,961,0.0
+train_08449,How do I receive a disposable virtual card?,convaiinnovations/laya@55cf4c4,v2,v1,virtual_card_not_working,90.99,auto_accept,,false,get_disposable_virtual_card,false,1071,0.0
