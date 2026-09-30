@@ -2,24 +2,27 @@
 
 _Rewritten at the end of every session. Keep it short._
 
-**Last session:** 2026-09-27 → 28
+**Last session:** 2026-09-30
 
-## What we did
-- Built the whole spec (weeks 1–2, steps 1.1–2.7): sampling, categories/keywords, `gate.py`, `run.py` (Jev + Claude via OpenRouter), `analyze.py`, `draft_rewrites.py`, two tuning rounds, final test runs, results page.
-- **Verdict (pre-registered, 70% row): Jev wins.** Jev 91.4% vs Sonnet 5 91.0% accuracy on auto-accepted, $0.10 vs $5.25 per 1,000 (52×). Final descriptions = v2 (round 2/v3 was a wash). Total spend $16.05.
-- **Results page is live:** https://danielwipert.github.io/jev.sorter/ (GitHub Pages from `main` `/docs`). All links checked.
-- Repo cleanup: `main` is the default branch; PR [danielwipert/jev.sorter#1](https://github.com/danielwipert/jev.sorter/pull/1) merged. `CLAUDE.md` holds the working rules (session branch → PR → merge to `main` every session).
-- Full detail lives in `CHANGELOG.md`, `results/`, and the site's technical report (`docs/methods.html`).
-- **Final QA pass:** all links and page numbers verified; LinkedIn/social preview image `docs/og.png` + og/twitter meta tags; README retitled.
-- **Site redesign (v2):** title "Jev vs. the Frontier", more accent color (chart colors unchanged), byline + "About the author" (bio from Dan's LinkedIn, LinkedIn + textbook links).
-- **Site redesign (v1):** custom 3-layer site in `docs/`: `index.html` (story + expandable evidence), `methods.html` (technical report), `app.js` (charts/tables), `styles.css`, `data.json` (built from logs by `build_site_data.py`). Light/dark, mobile-checked. Dan wants to iterate on the look.
-- **Step 2.7 done (contender F, Sonnet 5 + v1 descriptions):** pre-committed in `CHANGELOG.md` before running. Result: v2 helped Sonnet about as much as Jev (+0.9 pts each at the 70% row), so no measurable tilt toward Jev. Page updated.
+## Where things stand
+- **Round 1 is done and live:** Jev beat Sonnet 5 at the 70% row (91.4% vs 91.0%, 52× cheaper). Site: https://danielwipert.github.io/jev.sorter/
+- **Round 2 started: Jev vs. open alternatives (Laya, SemIf, Bespoke Nimble).** The full plan, rules and findings so far are in **`planning/round2-open-alternatives-spec.md`**. It's pre-registered in `CHANGELOG.md` (2026-09-30).
+
+## What we did this session
+- Checked where each model can run. None are on OpenRouter.
+- **Laya** added to `run.py` (`--model laya`). It runs on this container's CPU, and its settings are locked (`head_max_len=512`).
+- Laya full runs started. Partial tuning result: **45.6% correct vs. Jev's 83.9%** on the same 372 messages. The log is committed as WIP.
+- Found that **SemIf supports only 16 options** (Banking77 needs 77), and that **Nimble's public demo is closed**. Both need a GPU, so the plan is Modal.
 
 ## Next session
-1. LinkedIn rollout: post (draft in chat) + carousel `promo/jev-vs-the-frontier.pdf` (rebuild: `python promo/build_carousel.py`). Then a "Closing the Loop" newsletter edition 3-5 days later.
-2. Optional: real headshot to replace the "DW" initials on the site.
+1. **Dan:** create Modal and Hugging Face accounts, add `MODAL_TOKEN_ID`, `MODAL_TOKEN_SECRET` and `HF_TOKEN` to the cloud environment, and start a new session. Steps are in the spec, "What Dan needs to do".
+2. **Dan:** decide SemIf **A** (widen to 77 labels; recommended) or **B** (report "can't do 77 as shipped").
+3. Finish the Laya runs if the container was reclaimed. The same commands resume where they stopped (listed in the spec).
+4. Deploy Nimble and SemIf on Modal, run them, analyze, and update the site.
+5. On hold: the round 1 LinkedIn rollout (post + carousel `promo/jev-vs-the-frontier.pdf`), and an optional headshot for the site.
 
 ## Notes
 - Pin `typesafe/jev-1.13`; never `jev-latest` or `jev-router`.
 - Key is in the `OPENROUTER_API_KEY` env var (cloud env) or `.env` locally.
 - After any new log: `python analyze.py && python build_site_data.py` to refresh results and the site.
+- Install with `python -m pip` (plain `pip` points at a different Python here). Laya needs `pip install laya`, which isn't in `requirements.txt` yet.
