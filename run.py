@@ -4,6 +4,7 @@ Examples:
   python run.py --model jev --set tuning --categories v1 --limit 20
   python run.py --model jev --set tuning --categories v1
   python run.py --model sonnet --set tuning --categories v2 --limit 5
+  python run.py --model laya --set tuning --categories v2
 
 Rows are written as they come in. Re-running the same command skips messages already in
 the log, so an interrupted run picks up where it stopped (and paid calls aren't repeated).
@@ -32,6 +33,10 @@ JEV_INPUT_PRICE = 0.042 / 1_000_000  # $ per input token; used only if OpenRoute
 # Copied from OpenRouter's model list (2026-09-27), not typed from memory.
 CLAUDE_MODELS = {"sonnet": "anthropic/claude-sonnet-5", "haiku": "anthropic/claude-haiku-4.5"}
 OPENROUTER_CHAT_URL = "https://openrouter.ai/api/v1"
+# Open alternatives (round 2). Run on our own machine, so API cost is $0.
+LAYA_MODEL = "convaiinnovations/laya"
+LAYA_REVISION = "55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851"  # pinned, from laya.PINNED_REVISIONS
+LAYA_SETTINGS = {"head_max_len": 512, "max_len": 1024}  # pre-registered in CHANGELOG.md (2026-09-30)
 INSTRUCTIONS = "Which category best describes this bank customer's message?"
 
 LOG_COLUMNS = [
@@ -67,6 +72,24 @@ def ask_jev(message, categories):
     if cost is None:
         cost = usage.get("input_tokens", 0) * JEV_INPUT_PRICE
     return answer["choice"], answer["confidence"] * 100, ms, cost, raw["model"]
+
+
+_laya_agent = None
+
+
+def ask_laya(message, categories):
+    """Return (category, confidence 0-100, milliseconds, cost_usd, model_version). Runs locally."""
+    global _laya_agent
+    if _laya_agent is None:
+        import laya  # only needed for this model; it pulls in PyTorch
+        _laya_agent = laya.load(LAYA_MODEL, revision=LAYA_REVISION)
+    question = {"category": {"type": "choice", "instructions": INSTRUCTIONS, "criteria": categories}}
+    start = time.perf_counter()
+    result = _laya_agent.predict(message, question, **LAYA_SETTINGS)
+    ms = round((time.perf_counter() - start) * 1000)
+    answer = result["answers"]["category"]
+    # answer_confidence = Laya's probability for the chosen option (after its own calibration).
+    return answer["choice"], answer["answer_confidence"] * 100, ms, 0.0, f"{LAYA_MODEL}@{LAYA_REVISION[:7]}"
 
 
 CLAUDE_PROMPT = """Classify this bank customer's message into exactly one of the categories below.
@@ -123,7 +146,7 @@ def fmt_bool(value):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("--model", required=True, choices=["jev", "sonnet", "haiku"])
+    parser.add_argument("--model", required=True, choices=["jev", "sonnet", "haiku", "laya"])
     parser.add_argument("--set", required=True, choices=["tuning", "test"], dest="message_set")
     parser.add_argument("--categories", required=True, help="description version, e.g. v1")
     parser.add_argument("--keywords", default="v1", help="keyword version (default v1)")
@@ -162,6 +185,8 @@ def main():
         for n, row in enumerate(todo.itertuples(), start=1):
             if args.model == "jev":
                 predicted, confidence, ms, cost, model_name = ask_jev(row.text, categories)
+            elif args.model == "laya":
+                predicted, confidence, ms, cost, model_name = ask_laya(row.text, categories)
             else:
                 predicted, confidence, ms, cost, model_name = ask_claude(row.text, categories, args.model)
             # No threshold here: checks 1-3 only. analyze.py applies each model's thresholds.
