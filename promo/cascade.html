@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Cascade and the road to 99%</title>
+<!-- Build with: python promo/build_post_images.py (renders promo/cascade-1.png and promo/cascade-2.png). -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #fbfaf7; --surface: #fff; --ink: #121211; --ink-2: #52514e; --muted: #898781; --hair: #e6e4dd; --grid: #ecebe5;
+    --s1: #2a78d6; --s2: #eb6834; --a2: #6d4ae8;
+    --serif: "Newsreader", Georgia, serif; --sans: "Inter", system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; }
+  body { background: var(--bg); color: var(--ink); font-family: var(--sans); }
+  .slide { width: 1080px; height: 1350px; position: relative; overflow: hidden; padding: 80px 88px 0; }
+  .slide::before { content: ""; position: absolute; inset: 0; z-index: 0;
+    background: radial-gradient(45% 35% at 8% 6%, rgba(42,120,214,.18), transparent 70%),
+                radial-gradient(40% 30% at 60% 0%, rgba(109,74,232,.13), transparent 70%),
+                radial-gradient(40% 35% at 100% 12%, rgba(235,104,52,.12), transparent 70%); }
+  .slide::after { content: ""; position: absolute; inset: 0; z-index: 0; opacity: .55;
+    background-image: radial-gradient(#e2e0d8 1.4px, transparent 1.4px); background-size: 28px 28px;
+    -webkit-mask-image: linear-gradient(#000, transparent 45%); }
+  .slide > * { position: relative; z-index: 1; }
+  .top { font: 600 20px/1 var(--sans); letter-spacing: .12em; text-transform: uppercase; color: var(--a2); }
+  h2 { font: 500 74px/1.02 var(--serif); letter-spacing: -.03em; margin: 30px 0 18px; }
+  .sub { font-size: 27px; line-height: 1.4; color: var(--ink-2); max-width: 44ch; }
+  .sub b { color: var(--ink); font-weight: 600; }
+  .card { background: var(--surface); border: 1.5px solid var(--hair); border-radius: 28px;
+    box-shadow: 0 2px 4px rgba(17,17,16,.04), 0 16px 40px rgba(17,17,16,.07); padding: 30px 40px; margin-top: 34px; }
+  .foot { position: absolute; left: 88px; right: 88px; bottom: 50px; display: flex; justify-content: space-between; font-size: 20px; color: var(--ink-2); }
+  .foot b { color: var(--ink); }
+  svg text { font-family: var(--sans); }
+
+  /* slide 1: the flow */
+  .step { display: flex; align-items: center; gap: 18px; font-size: 22px; color: var(--ink-2); }
+  .step b { color: var(--ink); font-weight: 600; }
+  .pill { font: 600 22px/1 var(--sans); padding: 14px 20px; border-radius: 999px; background: #f4f3ef; border: 1.5px solid var(--hair); color: var(--ink); white-space: nowrap; }
+  .pill.jev { background: rgba(42,120,214,.10); border-color: rgba(42,120,214,.35); }
+  .arrow { color: var(--muted); font-size: 26px; }
+  .bar { display: flex; height: 76px; margin: 30px 0 18px; border-radius: 14px; overflow: hidden; gap: 3px; }
+  .bar > div { display: flex; align-items: center; padding: 0 20px; color: #fff; font: 600 22px/1 var(--sans); }
+  .lanes { display: grid; grid-template-columns: 73.1fr 26.9fr; gap: 3px; }
+  .lane { font-size: 20px; line-height: 1.4; color: var(--ink-2); padding-right: 12px; }
+  .lane .h { font: 600 22px/1.3 var(--sans); color: var(--ink); margin-bottom: 4px; display: flex; align-items: center; gap: 10px; }
+  .lane .h i { width: 14px; height: 14px; border-radius: 50%; display: inline-block; flex: none; }
+  .lane .v { font: 500 56px/1.05 var(--serif); color: var(--ink); margin-top: 6px; }
+  .res { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 30px; }
+  .opt { border-radius: 24px; padding: 26px 28px; border: 1.5px solid var(--hair); background: #f4f3ef; }
+  .opt.win { background: var(--surface); border: 3px solid var(--a2); box-shadow: 0 0 0 8px rgba(109,74,232,.08); }
+  .opt .who { font: 600 22px/1.2 var(--sans); }
+  .opt .nums { display: flex; gap: 34px; margin-top: 14px; }
+  .opt .v { font: 500 60px/1 var(--serif); letter-spacing: -.02em; }
+  .opt .l { font-size: 18px; color: var(--ink-2); margin-top: 6px; }
+  .note { font-size: 19px; color: var(--muted); margin-top: 18px; line-height: 1.4; }
+
+  /* slide 2: the road */
+  .steps { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 18px; margin-top: 30px; }
+  .rs { background: var(--surface); border: 1.5px solid var(--hair); border-radius: 20px; padding: 22px 22px; display: grid; grid-template-columns: 44px 1fr; gap: 4px 12px; }
+  .rs .n { grid-row: span 2; width: 40px; height: 40px; border-radius: 50%; background: var(--a2); color: #fff; display: grid; place-items: center; font: 600 19px/1 var(--sans); }
+  .rs .t { font: 600 21px/1.25 var(--sans); }
+  .rs .d { font-size: 17px; line-height: 1.38; color: var(--ink-2); }
+</style>
+</head>
+<body>
+
+<!-- 1 · The cascade -->
+<section class="slide">
+  <div class="top">Jev vs. the Frontier · Cascade</div>
+  <h2>Cheap model first. Expensive model only when needed.</h2>
+  <p class="sub">The best result didn't come from one model. <b>It came from a route.</b></p>
+
+  <div class="card" style="margin-top:44px;padding:36px 40px">
+    <div class="step">
+      <span class="pill">1,000 messages</span><span class="arrow">→</span>
+      <span class="pill jev">Jev reads each one</span><span class="arrow">→</span>
+      <span style="white-space:nowrap">Is Jev <b>sure</b>?</span>
+    </div>
+    <div class="bar">
+      <div style="flex:73.1;background:var(--s1)">Yes: 731 messages</div>
+      <div style="flex:26.9;background:var(--s2)">No: 269</div>
+    </div>
+    <div class="lanes">
+      <div class="lane">
+        <div class="h"><i style="background:var(--s1)"></i>Jev's answer stands</div>
+        <div class="v">91.4%</div>
+        <div>right, on 73% of messages</div>
+      </div>
+      <div class="lane">
+        <div class="h"><i style="background:var(--s2)"></i>Sent to Sonnet 5</div>
+        <div class="v">59.5%</div>
+        <div>right, hardest 27%</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="res" style="margin-top:44px">
+    <div class="opt win">
+      <div class="who">Jev first, Sonnet second</div>
+      <div class="nums">
+        <div><div class="v">82.8%</div><div class="l">correct overall</div></div>
+        <div><div class="v">$1.51</div><div class="l">per 1,000 messages</div></div>
+      </div>
+    </div>
+    <div class="opt">
+      <div class="who">Sonnet 5 alone</div>
+      <div class="nums">
+        <div><div class="v">82.3%</div><div class="l">correct overall</div></div>
+        <div><div class="v">$5.25</div><div class="l">per 1,000 messages</div></div>
+      </div>
+    </div>
+  </div>
+  <p class="note">Same accuracy, 71% cheaper. Every message still gets an AI answer.</p>
+
+  <div class="foot"><span>Test set: 1,000 bank customer messages</span><b>danielwipert.github.io/jev.sorter</b></div>
+</section>
+
+<!-- 2 · The road to 99% -->
+<section class="slide">
+  <div class="top">Jev vs. the Frontier · The road to 99%</div>
+  <h2>82.8% isn't good enough. Here's the road to 99%.</h2>
+  <p class="sub">Automate less, and accuracy climbs. <b>The last step to 99% is system design.</b></p>
+
+  <div class="card" style="padding: 26px 40px 14px">
+    <svg id="road" width="824" height="262" role="img" aria-label="Accuracy at three automation levels against a 99% target"></svg>
+  </div>
+
+  <div class="steps">
+    <div class="rs"><div class="n">1</div><div class="t">Stop automating everything</div><div class="d">Pick the accuracy you need. Automate only what clears it.</div></div>
+    <div class="rs"><div class="n">2</div><div class="t">Check the answer key</div><div class="d">Jev's 8 top-score "errors" look like labeling mistakes. Fix fuzzy categories.</div></div>
+    <div class="rs"><div class="n">3</div><div class="t">Set the bar per category</div><div class="d">A wrong "lost card" answer costs more than a wrong "exchange rate" one.</div></div>
+    <div class="rs"><div class="n">4</div><div class="t">Add cheap rule checks</div><div class="d">Plain Python checks already stopped 1 in 7 wrong answers.</div></div>
+    <div class="rs"><div class="n">5</div><div class="t">Learn from people</div><div class="d">Every message a person handles teaches the next version.</div></div>
+    <div class="rs"><div class="n">6</div><div class="t">Prove it, then keep checking</div><div class="d">Showing 99.9% takes ~3,000 checked decisions with zero mistakes.</div></div>
+  </div>
+
+  <div class="foot"><span>Test set: 1,000 bank customer messages</span><b>danielwipert.github.io/jev.sorter</b></div>
+</section>
+
+<script>
+// Measured on the test set (logs/decisions_{jev,sonnet}_test_v2.csv, results/cascade.csv)
+const ROWS = [
+  { name: 'Automate every message', sub: 'Jev first, then Sonnet', acc: 82.8 },
+  { name: 'Automate 73%', sub: "Jev's confident answers", acc: 91.4 },
+  { name: 'Automate 40%', sub: "Jev's surest answers", acc: 98.0 },
+];
+const W = 824, L = 270, R = 30, X0 = 80, X1 = 100;
+const x = v => L + (v - X0) / (X1 - X0) * (W - L - R);
+const css = getComputedStyle(document.documentElement), c = n => css.getPropertyValue(n).trim();
+const ns = 'http://www.w3.org/2000/svg', svg = document.getElementById('road');
+const el = (tag, a, text) => { const e = document.createElementNS(ns, tag); for (const k in a) e.setAttribute(k, a[k]); if (text) e.textContent = text; svg.appendChild(e); return e; };
+
+// target line
+el('line', { x1: x(99), x2: x(99), y1: 30, y2: 214, stroke: c('--ink-2'), 'stroke-width': 2, 'stroke-dasharray': '6 6' });
+el('text', { x: x(99), y: 18, 'text-anchor': 'middle', 'font-size': 18, 'font-weight': 600, fill: c('--ink') }, 'Target: 99%');
+ROWS.forEach((r, k) => {
+  const y = 62 + k * 66;
+  el('text', { x: 0, y: y - 2, 'font-size': 20, 'font-weight': 600, fill: c('--ink') }, r.name);
+  el('text', { x: 0, y: y + 22, 'font-size': 17, fill: c('--ink-2') }, r.sub);
+  el('line', { x1: x(X0), x2: x(X1), y1: y + 6, y2: y + 6, stroke: c('--grid'), 'stroke-width': 2 });
+  el('line', { x1: x(X0), x2: x(r.acc), y1: y + 6, y2: y + 6, stroke: c('--s1'), 'stroke-width': 3, 'stroke-linecap': 'round', opacity: .35 });
+  el('circle', { cx: x(r.acc), cy: y + 6, r: 11, fill: c('--s1'), stroke: c('--surface'), 'stroke-width': 2.5 });
+  el('text', { x: x(r.acc), y: y - 14, 'text-anchor': 'middle', 'font-size': 19, 'font-weight': 600, fill: c('--ink'), stroke: c('--surface'), 'stroke-width': 8, 'paint-order': 'stroke' }, r.acc.toFixed(1) + '%');
+});
+for (let t = 80; t <= 100; t += 5) {
+  el('line', { x1: x(t), x2: x(t), y1: 222, y2: 230, stroke: c('--muted'), 'stroke-width': 1.5 });
+  el('text', { x: x(t), y: 252, 'text-anchor': 'middle', 'font-size': 17, fill: c('--muted') }, t + '%');
+}
+el('text', { x: 0, y: 18, 'font-size': 17, fill: c('--muted') }, 'Correct, on what was automated');
+</script>
+</body>
+</html>
