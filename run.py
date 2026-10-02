@@ -175,17 +175,25 @@ def ask_deepseek(message, categories):
         categories="\n".join(f"- {name}: {description}" for name, description in categories.items()),
         message=message,
     )
-    start = time.perf_counter()
-    response = _deepseek_client.chat.completions.create(
-        model=DEEPSEEK_MODEL,
-        messages=[{"role": "user", "content": prompt}],
-        max_tokens=200,
-        response_format={"type": "json_object"},
-        logprobs=True,
-        extra_body={"reasoning": {"enabled": False},
-                    "provider": {"order": [DEEPSEEK_PROVIDER], "allow_fallbacks": False}},
-    )
-    ms = round((time.perf_counter() - start) * 1000)
+    # The provider now and then returns a reply with no choices (an error passed through).
+    # Ask again, up to 5 times; the same pinned provider and settings each time.
+    for attempt in range(5):
+        start = time.perf_counter()
+        response = _deepseek_client.chat.completions.create(
+            model=DEEPSEEK_MODEL,
+            messages=[{"role": "user", "content": prompt}],
+            max_tokens=200,
+            response_format={"type": "json_object"},
+            logprobs=True,
+            extra_body={"reasoning": {"enabled": False},
+                        "provider": {"order": [DEEPSEEK_PROVIDER], "allow_fallbacks": False}},
+        )
+        ms = round((time.perf_counter() - start) * 1000)
+        if response.choices:
+            break
+        time.sleep(2 ** attempt)
+    else:
+        raise RuntimeError(f"No reply from {DEEPSEEK_PROVIDER} after 5 tries: {response.model_dump()}")
     reply = response.choices[0].message.content or ""
     cost = response.model_dump()["usage"]["cost"]
     logprobs = response.choices[0].logprobs.content if response.choices[0].logprobs else None
