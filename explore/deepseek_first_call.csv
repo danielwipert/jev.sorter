@@ -1,0 +1,21 @@
+message_id,text,correct,predicted,is_correct,valid_category,self_confidence,logprob_confidence,prompt_tokens,completion_tokens,cost_usd,ms,provider,model
+train_00003,Can I track my card while it is in the process of delivery?,card_arrival,card_arrival,True,True,100.0,99.33,1654,15,4.7152e-05,3468,StreamLake,deepseek/deepseek-v4-flash
+train_00014,It's been a week since I ordered my card and it's not here. Please help?,card_arrival,card_arrival,True,True,95.0,99.75,1659,15,1.28856e-05,1261,StreamLake,deepseek/deepseek-v4-flash
+train_00029,What is the expected delivery date for my card?,card_arrival,card_delivery_estimate,False,True,95.0,98.9,1650,18,1.28016e-05,1190,StreamLake,deepseek/deepseek-v4-flash
+train_00031,I would like to track the card you sent to me.,card_arrival,card_arrival,True,True,95.0,100.0,1652,15,1.26896e-05,7033,StreamLake,deepseek/deepseek-v4-flash
+train_00033,My new card hasn't came in.,card_arrival,card_arrival,True,True,95.0,99.99,1648,15,1.25776e-05,1282,StreamLake,deepseek/deepseek-v4-flash
+train_00035,Can I get an update on my replacement card?,card_arrival,card_arrival,True,True,90.0,99.99,1650,15,1.26336e-05,1089,StreamLake,deepseek/deepseek-v4-flash
+train_00039,My card still hasn't been delivered,card_arrival,card_arrival,True,True,95.0,99.91,1648,15,1.25776e-05,1382,StreamLake,deepseek/deepseek-v4-flash
+train_00076,My card hasn't shown up yet.,card_arrival,card_arrival,True,True,90.0,99.94,1648,15,1.25776e-05,1283,StreamLake,deepseek/deepseek-v4-flash
+train_00080,Is there a reason my new card hasn't arrived yet?,card_arrival,card_arrival,True,True,95.0,99.94,1652,15,1.26896e-05,1406,StreamLake,deepseek/deepseek-v4-flash
+train_00088,Can you tell me why I haven't received my new card yet?,card_arrival,card_arrival,True,True,95.0,99.99,1654,15,1.27456e-05,918,StreamLake,deepseek/deepseek-v4-flash
+train_00092,What do I need to do to get my new card which I have requested 2 weeks ago?,card_arrival,card_arrival,True,True,95.0,99.81,1660,15,1.29136e-05,1341,StreamLake,deepseek/deepseek-v4-flash
+train_00096,Shouldn't my new card be here by now?,card_arrival,card_arrival,True,True,95.0,99.94,1651,15,1.26616e-05,1969,StreamLake,deepseek/deepseek-v4-flash
+train_00101,"I have not received my card and it's been a week, what do I do?",card_arrival,card_arrival,True,True,95.0,99.68,1658,15,1.28576e-05,988,StreamLake,deepseek/deepseek-v4-flash
+train_00106,My card hasn't came in the mail yet?,card_arrival,card_arrival,True,True,100.0,99.98,1650,15,1.26336e-05,1291,StreamLake,deepseek/deepseek-v4-flash
+train_00107,I haven't received my card.,card_arrival,card_arrival,True,True,95.0,99.92,1647,15,1.25496e-05,1366,StreamLake,deepseek/deepseek-v4-flash
+train_00108,Is it possible for me to track the card is was mailed to me?,card_arrival,card_arrival,True,True,95.0,99.96,1655,15,1.27736e-05,1707,StreamLake,deepseek/deepseek-v4-flash
+train_00119,How long does it take to recieve my new card?,card_arrival,card_delivery_estimate,False,True,95.0,98.59,1652,18,1.28576e-05,1555,StreamLake,deepseek/deepseek-v4-flash
+train_00251,What do I do to link my new card?,card_linking,card_linking,True,True,100.0,100.0,1650,15,1.26336e-05,1273,StreamLake,deepseek/deepseek-v4-flash
+train_00259,I found my card again. Can I put it back into the app?,card_linking,card_linking,True,True,95.0,95.45,1655,15,1.27736e-05,1291,StreamLake,deepseek/deepseek-v4-flash
+train_00263,How do I get my card into the app?,card_linking,card_linking,True,True,95.0,99.92,1650,15,1.26336e-05,1878,StreamLake,deepseek/deepseek-v4-flash
