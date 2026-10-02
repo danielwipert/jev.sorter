@@ -55,11 +55,12 @@
   .note { font-size: 19px; color: var(--muted); margin-top: 18px; line-height: 1.4; }
 
   /* slide 2: the road */
-  .steps { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 18px; margin-top: 30px; }
-  .rs { background: var(--surface); border: 1.5px solid var(--hair); border-radius: 20px; padding: 22px 22px; display: grid; grid-template-columns: 44px 1fr; gap: 4px 12px; }
-  .rs .n { grid-row: span 2; width: 40px; height: 40px; border-radius: 50%; background: var(--a2); color: #fff; display: grid; place-items: center; font: 600 19px/1 var(--sans); }
-  .rs .t { font: 600 21px/1.25 var(--sans); }
-  .rs .d { font-size: 17px; line-height: 1.38; color: var(--ink-2); }
+  .steps { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 16px; margin-top: 24px; }
+  .rs { background: var(--surface); border: 1.5px solid var(--hair); border-radius: 18px; padding: 14px 18px; display: grid; align-content: start; grid-template-columns: 40px 1fr; gap: 4px 12px; }
+  .rs .n { grid-row: span 2; width: 36px; height: 36px; border-radius: 50%; background: var(--a2); color: #fff; display: grid; place-items: center; font: 600 19px/1 var(--sans); }
+  .rs .t { font: 600 19px/1.25 var(--sans); }
+  .rs.metric { border: 2.5px solid var(--a2); background: #f6f3fe; }
+  .rs .d { font-size: 16px; line-height: 1.35; color: var(--ink-2); }
 </style>
 </head>
 <body>
@@ -115,23 +116,27 @@
   <div class="foot"><span>Test set: 1,000 bank customer messages</span><b>danielwipert.github.io/jev.sorter</b></div>
 </section>
 
-<!-- 2 · The road to 99% -->
+<!-- 2 · The build plan to 99% -->
 <section class="slide">
-  <div class="top">Jev vs. the Frontier · The road to 99%</div>
-  <h2>82.8% isn't good enough. Here's the road to 99%.</h2>
-  <p class="sub">Automate less, and accuracy climbs. <b>The last step to 99% is system design.</b></p>
+  <div class="top">Jev vs. the Frontier · The build plan to 99%</div>
+  <h2 style="font-size:66px">82.8% isn't good enough. Here's the build plan to 99%.</h2>
+  <p class="sub">Don't chase a better model. <b>Automate only what you can prove is 99% right, then grow that share.</b></p>
 
-  <div class="card" style="padding: 26px 40px 14px">
-    <svg id="road" width="824" height="262" role="img" aria-label="Accuracy at three automation levels against a 99% target"></svg>
+  <div class="card" style="padding: 20px 40px 8px; margin-top: 24px">
+    <svg id="road" width="824" height="232" role="img" aria-label="Accuracy at three automation levels against a 99% target"></svg>
   </div>
 
   <div class="steps">
-    <div class="rs"><div class="n">1</div><div class="t">Stop automating everything</div><div class="d">Pick the accuracy you need. Automate only what clears it.</div></div>
-    <div class="rs"><div class="n">2</div><div class="t">Check the answer key</div><div class="d">Jev's 8 top-score "errors" look like labeling mistakes. Fix fuzzy categories.</div></div>
-    <div class="rs"><div class="n">3</div><div class="t">Set the bar per category</div><div class="d">A wrong "lost card" answer costs more than a wrong "exchange rate" one.</div></div>
-    <div class="rs"><div class="n">4</div><div class="t">Add cheap rule checks</div><div class="d">Plain Python checks already stopped 1 in 7 wrong answers.</div></div>
-    <div class="rs"><div class="n">5</div><div class="t">Learn from people</div><div class="d">Every message a person handles teaches the next version.</div></div>
-    <div class="rs"><div class="n">6</div><div class="t">Prove it, then keep checking</div><div class="d">Showing 99.9% takes ~3,000 checked decisions with zero mistakes.</div></div>
+    <div class="rs"><div class="n">1</div><div class="t">Define the target</div><div class="d">99% of what the machine decides alone, checked by people.</div></div>
+    <div class="rs"><div class="n">2</div><div class="t">Measure your human ceiling</div><div class="d">Two people label the same messages. Disagreement = fuzzy categories.</div></div>
+    <div class="rs"><div class="n">3</div><div class="t">Fix the categories</div><div class="d">Merge the ones people confuse. Write tiebreak rules.</div></div>
+    <div class="rs"><div class="n">4</div><div class="t">Run in shadow mode</div><div class="d">The AI suggests, people decide. Free labeled data, zero risk.</div></div>
+    <div class="rs"><div class="n">5</div><div class="t">Set a bar per category</div><div class="d">Automate a category only where it's 99%+ right. Risky ones stay human.</div></div>
+    <div class="rs"><div class="n">6</div><div class="t">Add checks that don't trust the AI</div><div class="d">Keyword rules caught 1 in 7 errors. Check real records too.</div></div>
+    <div class="rs"><div class="n">7</div><div class="t">Turn it on one category at a time</div><div class="d">Start with the safest, highest-volume categories.</div></div>
+    <div class="rs"><div class="n">8</div><div class="t">Audit forever, with a brake</div><div class="d">Weekly random samples. A slipping category goes back to people.</div></div>
+    <div class="rs"><div class="n">9</div><div class="t">Close the loop</div><div class="d">Corrections improve the rules. Re-test before every change.</div></div>
+    <div class="rs metric"><div class="n">→</div><div class="t">The number to watch</div><div class="d">How much work is automated while staying at 99%.</div></div>
   </div>
 
   <div class="foot"><span>Test set: 1,000 bank customer messages</span><b>danielwipert.github.io/jev.sorter</b></div>
@@ -151,10 +156,10 @@ const ns = 'http://www.w3.org/2000/svg', svg = document.getElementById('road');
 const el = (tag, a, text) => { const e = document.createElementNS(ns, tag); for (const k in a) e.setAttribute(k, a[k]); if (text) e.textContent = text; svg.appendChild(e); return e; };
 
 // target line
-el('line', { x1: x(99), x2: x(99), y1: 30, y2: 214, stroke: c('--ink-2'), 'stroke-width': 2, 'stroke-dasharray': '6 6' });
+el('line', { x1: x(99), x2: x(99), y1: 28, y2: 186, stroke: c('--ink-2'), 'stroke-width': 2, 'stroke-dasharray': '6 6' });
 el('text', { x: x(99), y: 18, 'text-anchor': 'middle', 'font-size': 18, 'font-weight': 600, fill: c('--ink') }, 'Target: 99%');
 ROWS.forEach((r, k) => {
-  const y = 62 + k * 66;
+  const y = 56 + k * 56;
   el('text', { x: 0, y: y - 2, 'font-size': 20, 'font-weight': 600, fill: c('--ink') }, r.name);
   el('text', { x: 0, y: y + 22, 'font-size': 17, fill: c('--ink-2') }, r.sub);
   el('line', { x1: x(X0), x2: x(X1), y1: y + 6, y2: y + 6, stroke: c('--grid'), 'stroke-width': 2 });
@@ -163,8 +168,8 @@ ROWS.forEach((r, k) => {
   el('text', { x: x(r.acc), y: y - 14, 'text-anchor': 'middle', 'font-size': 19, 'font-weight': 600, fill: c('--ink'), stroke: c('--surface'), 'stroke-width': 8, 'paint-order': 'stroke' }, r.acc.toFixed(1) + '%');
 });
 for (let t = 80; t <= 100; t += 5) {
-  el('line', { x1: x(t), x2: x(t), y1: 222, y2: 230, stroke: c('--muted'), 'stroke-width': 1.5 });
-  el('text', { x: x(t), y: 252, 'text-anchor': 'middle', 'font-size': 17, fill: c('--muted') }, t + '%');
+  el('line', { x1: x(t), x2: x(t), y1: 192, y2: 200, stroke: c('--muted'), 'stroke-width': 1.5 });
+  el('text', { x: x(t), y: 222, 'text-anchor': 'middle', 'font-size': 17, fill: c('--muted') }, t + '%');
 }
 el('text', { x: 0, y: 18, 'font-size': 17, fill: c('--muted') }, 'Correct, on what was automated');
 </script>

@@ -1,28 +1,32 @@
-# LinkedIn post 4: the road to 99%
+# LinkedIn post 4: the build plan to 99%
 
 _Draft. Image: `promo/cascade-2.png`. Follows post 3 (cheap model first)._
 
 ---
 
-82.8% accuracy isn't good enough for a real business. Here's how I'd get to 99%.
+82.8% accuracy isn't good enough for a real business. Here's the build plan I'd follow to get to 99%.
 
-In my last post, a cheap-model-first design matched Claude Sonnet 5 at 71% less cost, with 82.8% correct. But if I ran a bank's support queue, I'd want 99%+ on anything a machine decides alone.
+First, a mindset shift: you don't get to 99% by finding a better model. You get there by automating only the work you can prove is 99% right, then growing that share.
 
-My roadmap:
+1. Define the target. "99%" means at most 1 wrong in 100 decisions the machine makes alone, checked by people on a random sample. Not 99% of everything.
 
-1. Automate less. Jev's surest answers cover 40% of messages at 98% correct. People handle the rest.
+2. Measure your human ceiling. Have two people label the same 1,000 messages. Where they disagree, your categories are fuzzy, and no AI will beat that. In my test, all 8 of Jev's "mistakes" at its top score looked like labeling errors to me.
 
-2. Check the answer key. Jev's 8 "errors" at its top score all look like labeling mistakes to me, and Sonnet gave the same answer every time. Fuzzy categories cap your accuracy.
+3. Fix the categories. Merge the ones people confuse. Write tie-break rules, like "asks how long transfers take" vs. "says a transfer never arrived."
 
-3. Set the bar per category. A wrong "lost card" answer costs more than a wrong "exchange rate" one.
+4. Run in shadow mode. The AI suggests, people still decide. A few weeks gives you thousands of labeled examples, with zero risk.
 
-4. Add cheap rule checks. Plain Python checks already stopped 1 in 7 wrong answers.
+5. Set a bar per category. Use the shadow data to find the confidence level where each category is 99%+ right. Categories that never get there stay with people. High-risk ones (stolen cards, fraud) stay with people regardless.
 
-5. Learn from people. Every message a person handles teaches the next version.
+6. Add checks that don't trust the AI. Simple rules: my keyword check caught 1 in 7 wrong answers. And checks against real records: if the AI says "transfer not received," is there actually a pending transfer?
 
-6. Prove it. Showing 99.9% takes about 3,000 checked decisions with zero mistakes. Then keep spot-checking.
+7. Turn it on one category at a time. Start with the safest, highest-volume ones.
 
-The model gets you to ~98% on the easy part. The rest is system design.
+8. Audit forever, with a brake. People review a random sample of automated decisions every week. 300 clean checks in a row supports 99%. If a category slips, it goes back to people automatically.
+
+9. Close the loop. Human corrections feed better descriptions and rules. Re-test on a fixed test set before every change, and pin your model version.
+
+The number to watch isn't accuracy. It's how much work you can automate while staying at 99%. Today, Jev alone handles 40% of messages at 98%. Every step above moves that number up without letting accuracy slip.
 
 Full results and every log: https://danielwipert.github.io/jev.sorter/
 
@@ -49,7 +53,7 @@ This is an after-the-fact reading, not a pre-registered re-scoring, so the post 
 
 **Where the other numbers come from:**
 - 73% sure = Jev's 70% setting (score 85 or higher): 73.1% of messages.
-- 40% at 98% = Jev score 100 that passed the rule checks: 39.6% of messages, 97.98% correct.
+- 40% at 98% = Jev score 100 that passed the rule checks (39.6%, 97.98%), scored against the official labels.
 - 71% cheaper = 1 − $1.51 / $5.25.
-- 3,000 = the "rule of three": with zero errors in n checks, you can be 95% sure the true error rate is below 3/n. 3/3,000 = 0.1%.
-- 1 in 7 = Finding 5 on the site (keyword check).
+- 300 = the "rule of three": with zero errors in n checks, you can be 95% sure the true error rate is below 3/n. 3/300 = 1%, so 300 clean checks supports 99%. (99.9% would take 3,000.)
+- 1 in 7 = Finding 5 on the site (keyword check): 28 of Jev's 184 wrong answers on the test set, while blocking 13 of 816 right ones.
