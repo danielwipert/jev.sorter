@@ -1,0 +1,74 @@
+message_id,message_text,model,categories_version,keywords_version,predicted,confidence,gate_result,gate_reason,keyword_miss,correct,is_correct,ms,cost_usd
+train_00003,Can I track my card while it is in the process of delivery?,deepseek/deepseek-v4-flash,v2,v1,card_arrival,99.33,auto_accept,,false,card_arrival,true,1651,4.7152e-05
+train_00014,It's been a week since I ordered my card and it's not here. Please help?,deepseek/deepseek-v4-flash,v2,v1,card_arrival,99.14,auto_accept,,false,card_arrival,true,2804,1.28856e-05
+train_00029,What is the expected delivery date for my card?,deepseek/deepseek-v4-flash,v2,v1,card_delivery_estimate,99.14,auto_accept,,false,card_arrival,false,1386,1.28016e-05
+train_00031,I would like to track the card you sent to me.,deepseek/deepseek-v4-flash,v2,v1,card_arrival,100.0,auto_accept,,false,card_arrival,true,2206,1.26896e-05
+train_00033,My new card hasn't came in.,deepseek/deepseek-v4-flash,v2,v1,card_arrival,99.97,auto_accept,,false,card_arrival,true,1138,1.25776e-05
+train_00035,Can I get an update on my replacement card?,deepseek/deepseek-v4-flash,v2,v1,card_arrival,99.98,auto_accept,,false,card_arrival,true,1097,1.26336e-05
+train_00039,My card still hasn't been delivered,deepseek/deepseek-v4-flash,v2,v1,card_arrival,99.75,auto_accept,,false,card_arrival,true,1099,1.25776e-05
+train_00076,My card hasn't shown up yet.,deepseek/deepseek-v4-flash,v2,v1,card_arrival,99.93,auto_accept,,false,card_arrival,true,1076,1.25776e-05
+train_00080,Is there a reason my new card hasn't arrived yet?,deepseek/deepseek-v4-flash,v2,v1,card_arrival,99.75,auto_accept,,false,card_arrival,true,1134,1.26896e-05
+train_00088,Can you tell me why I haven't received my new card yet?,deepseek/deepseek-v4-flash,v2,v1,card_arrival,99.93,auto_accept,,false,card_arrival,true,1152,1.27456e-05
+train_00092,What do I need to do to get my new card which I have requested 2 weeks ago?,deepseek/deepseek-v4-flash,v2,v1,card_arrival,99.77,auto_accept,,false,card_arrival,true,1225,1.29136e-05
+train_00096,Shouldn't my new card be here by now?,deepseek/deepseek-v4-flash,v2,v1,card_arrival,99.14,auto_accept,,false,card_arrival,true,1298,1.26616e-05
+train_00101,"I have not received my card and it's been a week, what do I do?",deepseek/deepseek-v4-flash,v2,v1,card_arrival,99.67,auto_accept,,false,card_arrival,true,1494,1.28576e-05
+train_00106,My card hasn't came in the mail yet?,deepseek/deepseek-v4-flash,v2,v1,card_arrival,99.85,auto_accept,,false,card_arrival,true,1107,1.26336e-05
+train_00107,I haven't received my card.,deepseek/deepseek-v4-flash,v2,v1,card_arrival,99.9,auto_accept,,false,card_arrival,true,1175,1.25496e-05
+train_00108,Is it possible for me to track the card is was mailed to me?,deepseek/deepseek-v4-flash,v2,v1,card_arrival,99.94,auto_accept,,false,card_arrival,true,1214,1.27736e-05
+train_00119,How long does it take to recieve my new card?,deepseek/deepseek-v4-flash,v2,v1,card_delivery_estimate,96.27,auto_accept,,false,card_arrival,false,1359,1.28576e-05
+train_00251,What do I do to link my new card?,deepseek/deepseek-v4-flash,v2,v1,card_linking,100.0,auto_accept,,false,card_linking,true,1363,1.26336e-05
+train_00259,I found my card again. Can I put it back into the app?,deepseek/deepseek-v4-flash,v2,v1,card_linking,82.65,auto_accept,,false,card_linking,true,1149,1.27736e-05
+train_00263,How do I get my card into the app?,deepseek/deepseek-v4-flash,v2,v1,card_linking,99.91,auto_accept,,false,card_linking,true,1126,1.26336e-05
+train_00290,"My new card isn't in my app, how do I get it in there?",deepseek/deepseek-v4-flash,v2,v1,order_physical_card,0.82,auto_accept,,false,card_linking,false,2902,1.28856e-05
+train_00303,What are you exchange rates?,deepseek/deepseek-v4-flash,v2,v1,exchange_rate,100.0,auto_accept,,false,exchange_rate,true,1631,1.24656e-05
+train_00304,Do you have the best exchange rate?,deepseek/deepseek-v4-flash,v2,v1,exchange_rate,100.0,auto_accept,,false,exchange_rate,true,1175,1.25216e-05
+train_00311,What do you use to figure out the exchange rate for the card?,deepseek/deepseek-v4-flash,v2,v1,exchange_rate,99.94,auto_accept,,false,exchange_rate,true,1610,1.26896e-05
+train_00321,How is the exchange rate calculated?,deepseek/deepseek-v4-flash,v2,v1,exchange_rate,100.0,auto_accept,,false,exchange_rate,true,1145,1.24936e-05
+train_00333,How do you find the exchange rate?,deepseek/deepseek-v4-flash,v2,v1,exchange_rate,100.0,auto_accept,,false,exchange_rate,true,1259,1.25216e-05
+train_00346,How can I find your exchange rates?,deepseek/deepseek-v4-flash,v2,v1,exchange_rate,100.0,auto_accept,,false,exchange_rate,true,1151,1.25216e-05
+train_00360,What factors effect the exchange rate?,deepseek/deepseek-v4-flash,v2,v1,exchange_rate,100.0,auto_accept,,false,exchange_rate,true,1745,1.24936e-05
+train_00367,Is the exchange rate the same on weekends as the weekdays?,deepseek/deepseek-v4-flash,v2,v1,exchange_rate,100.0,auto_accept,,false,exchange_rate,true,1231,1.26616e-05
+train_00388,what are your exchange rates at?,deepseek/deepseek-v4-flash,v2,v1,exchange_rate,100.0,auto_accept,,false,exchange_rate,true,3862,1.24936e-05
+train_00416,An incorrect exchange rate was applied to an item I bought.,deepseek/deepseek-v4-flash,v2,v1,card_payment_wrong_exchange_rate,100.0,auto_accept,,false,card_payment_wrong_exchange_rate,true,6674,1.29696e-05
+train_00439,What if there is an error on the exchange rate?,deepseek/deepseek-v4-flash,v2,v1,exchange_rate,98.47,auto_accept,,false,card_payment_wrong_exchange_rate,false,1522,1.26056e-05
+train_00483,It seems that the rate I got is incorrect.,deepseek/deepseek-v4-flash,v2,v1,card_payment_wrong_exchange_rate,82.46,auto_accept,,false,card_payment_wrong_exchange_rate,true,1183,1.29136e-05
+train_00487,My client was converting their Russian ruble into UK pound currency when they noticed their bill was much too high for the exchange. What happened?,deepseek/deepseek-v4-flash,v2,v1,exchange_charge,6.48,auto_accept,,false,card_payment_wrong_exchange_rate,false,1181,1.31376e-05
+train_00500,Why is the exchange rate different from what I expected?,deepseek/deepseek-v4-flash,v2,v1,exchange_rate,99.84,auto_accept,,false,card_payment_wrong_exchange_rate,false,1002,1.26056e-05
+train_00510,I want to change the wrong exchange rate.,deepseek/deepseek-v4-flash,v2,v1,card_payment_wrong_exchange_rate,85.05,auto_accept,,false,card_payment_wrong_exchange_rate,true,2349,1.28856e-05
+train_00518,I believe you charged me too much to exchange my money,deepseek/deepseek-v4-flash,v2,v1,exchange_charge,96.41,auto_accept,,false,card_payment_wrong_exchange_rate,false,1742,1.26896e-05
+train_00568,"I  have been charged more than I should for the presents I bought  when abroad, the problem seems to be the exchange rate.",deepseek/deepseek-v4-flash,v2,v1,card_payment_wrong_exchange_rate,100.0,auto_accept,,false,card_payment_wrong_exchange_rate,true,1406,1.33896e-05
+train_00576,What is the $1 transaction on my account?,deepseek/deepseek-v4-flash,v2,v1,card_payment_not_recognised,99.68,review,keyword_miss,true,extra_charge_on_statement,false,1265,1.28576e-05
+train_00582,"I have a strange transaction for £1 on my statement, what is that?",deepseek/deepseek-v4-flash,v2,v1,card_payment_not_recognised,97.57,review,keyword_miss,true,extra_charge_on_statement,false,1263,1.30256e-05
+train_00621,"There must have been a mistake, why was I charged an extra pound?",deepseek/deepseek-v4-flash,v2,v1,extra_charge_on_statement,98.46,auto_accept,,false,extra_charge_on_statement,true,1270,1.29416e-05
+train_00623,There is an extra small charge on my card! What do I do?,deepseek/deepseek-v4-flash,v2,v1,extra_charge_on_statement,93.97,auto_accept,,false,extra_charge_on_statement,true,1177,1.31656e-05
+train_00624,"I looked at my statement, and there is a charge for 1£ that I don't recognize.  Why is it on there?",deepseek/deepseek-v4-flash,v2,v1,card_payment_not_recognised,99.41,auto_accept,,false,extra_charge_on_statement,false,1438,1.33616e-05
+train_00668,"There seems to be an additional charge of £1 on my statement, what is the reason for this?",deepseek/deepseek-v4-flash,v2,v1,extra_charge_on_statement,99.99,auto_accept,,false,extra_charge_on_statement,true,1590,1.31096e-05
+train_00673,There is a pending payment on my account that is very strange. I don't remember making this and it won't go away. Can you help me figure this out?,deepseek/deepseek-v4-flash,v2,v1,pending_card_payment,43.3,auto_accept,,false,extra_charge_on_statement,false,2971,1.33616e-05
+train_00713,Why is there a fee added to my statement?,deepseek/deepseek-v4-flash,v2,v1,extra_charge_on_statement,99.74,auto_accept,,false,extra_charge_on_statement,true,1205,1.28016e-05
+train_00733,I've been charged an extra £1 and I don't know why,deepseek/deepseek-v4-flash,v2,v1,extra_charge_on_statement,99.66,auto_accept,,false,extra_charge_on_statement,true,4303,1.29416e-05
+train_00735,Why is there a €1 charge on my statement?,deepseek/deepseek-v4-flash,v2,v1,extra_charge_on_statement,98.17,auto_accept,,false,extra_charge_on_statement,true,7340,1.30536e-05
+train_00765,I made a cash withdrawal earlier and it's showing as pending.  What does that mean?,deepseek/deepseek-v4-flash,v2,v1,pending_cash_withdrawal,100.0,auto_accept,,false,pending_cash_withdrawal,true,1261,1.29976e-05
+train_00794,"My account says there are pending funds right now from withdrawing from an ATM, but my card was declined and I never took out any money. When will that money be deposited back into my account?",deepseek/deepseek-v4-flash,v2,v1,pending_cash_withdrawal,94.99,auto_accept,,false,pending_cash_withdrawal,true,2223,1.35576e-05
+train_00795,How long before I can see that my cash withdrawal has taken place?,deepseek/deepseek-v4-flash,v2,v1,pending_cash_withdrawal,67.23,auto_accept,,false,pending_cash_withdrawal,true,1579,1.28576e-05
+train_00799,I didn't receive my money earlier and it says the transaction is still in progress. Can you fix it?,deepseek/deepseek-v4-flash,v2,v1,pending_transfer,98.47,auto_accept,,false,pending_cash_withdrawal,false,2952,1.29696e-05
+train_00850,In my account I noticed my ATM withdrawal is still pending,deepseek/deepseek-v4-flash,v2,v1,pending_cash_withdrawal,100.0,auto_accept,,false,pending_cash_withdrawal,true,6061,1.28016e-05
+train_00932,Will you be able to exchange to EUR?,deepseek/deepseek-v4-flash,v2,v1,exchange_via_app,43.75,auto_accept,,false,fiat_currency_support,false,1261,1.26616e-05
+train_00960,"I'm interested in holding and exchange for flat currencies, what do you support?",deepseek/deepseek-v4-flash,v2,v1,fiat_currency_support,99.68,auto_accept,,false,fiat_currency_support,true,1096,1.29696e-05
+train_00965,How can I exchange to EUR?,deepseek/deepseek-v4-flash,v2,v1,exchange_via_app,95.2,auto_accept,,false,fiat_currency_support,false,1419,1.26056e-05
+train_00970,"Do you hold money and if so, what currencies do you accept?",deepseek/deepseek-v4-flash,v2,v1,fiat_currency_support,77.71,auto_accept,,false,fiat_currency_support,true,1338,1.29136e-05
+train_01056,I need my card as quick as possible,deepseek/deepseek-v4-flash,v2,v1,card_delivery_estimate,72.92,auto_accept,,false,card_delivery_estimate,true,1450,1.27736e-05
+train_01076,how soon will my card arrive?,deepseek/deepseek-v4-flash,v2,v1,card_delivery_estimate,43.78,auto_accept,,false,card_delivery_estimate,true,1536,1.27176e-05
+train_01107,When can I expect my new card to get here?,deepseek/deepseek-v4-flash,v2,v1,card_arrival,22.27,auto_accept,,false,card_delivery_estimate,false,1566,1.26616e-05
+train_01111,How long does it take for something to be delivered to the U.S?,deepseek/deepseek-v4-flash,v2,v1,card_delivery_estimate,99.79,auto_accept,,false,card_delivery_estimate,true,1637,1.29416e-05
+train_01112,How long does it take for my physical card to be delivered.,deepseek/deepseek-v4-flash,v2,v1,card_delivery_estimate,99.99,auto_accept,,false,card_delivery_estimate,true,1428,1.28856e-05
+train_01121,I can't find the auto-top up option.,deepseek/deepseek-v4-flash,v2,v1,automatic_top_up,100.0,auto_accept,,false,automatic_top_up,true,1520,1.26896e-05
+train_01123,When do i activate auto top-up?,deepseek/deepseek-v4-flash,v2,v1,automatic_top_up,100.0,auto_accept,,false,automatic_top_up,true,1534,1.26336e-05
+train_01145,Is it possible to do auto top up?,deepseek/deepseek-v4-flash,v2,v1,automatic_top_up,100.0,auto_accept,,false,automatic_top_up,true,1572,1.26616e-05
+train_01147,I would like to top up my account automatically. How do I do that?,deepseek/deepseek-v4-flash,v2,v1,automatic_top_up,100.0,auto_accept,,false,automatic_top_up,true,1025,1.28576e-05
+train_01149,If I don't have much money in the account can I auto top-up?,deepseek/deepseek-v4-flash,v2,v1,automatic_top_up,100.0,auto_accept,,false,automatic_top_up,true,1112,1.28576e-05
+train_01155,"If there isn't a lot of money left, will it automatically top-up money?",deepseek/deepseek-v4-flash,v2,v1,automatic_top_up,100.0,auto_accept,,false,automatic_top_up,true,1216,1.28856e-05
+train_01156,In what increments can I top-up my card?,deepseek/deepseek-v4-flash,v2,v1,top_up_limits,99.93,auto_accept,,false,automatic_top_up,false,965,1.26896e-05
+train_01190,When I'm traveling is it possible to add money automatically at certain time points?,deepseek/deepseek-v4-flash,v2,v1,automatic_top_up,100.0,auto_accept,,false,automatic_top_up,true,1238,1.28576e-05
+train_01199,Can I set it up to add money every few days automatically while I am traveling?,deepseek/deepseek-v4-flash,v2,v1,automatic_top_up,100.0,auto_accept,,false,automatic_top_up,true,1095,1.28856e-05
+train_01224,how can i get it to add money automatically while travelling,deepseek/deepseek-v4-flash,v2,v1,automatic_top_up,100.0,auto_accept,,false,automatic_top_up,true,1283,1.27456e-05
+train_01277,What are ways to test why my card might not be working?,deepseek/deepseek-v4-flash,v2,v1,card_not_working,99.98,auto_accept,,false,card_not_working,true,1277,1.27736e-05

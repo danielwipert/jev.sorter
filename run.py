@@ -5,6 +5,7 @@ Examples:
   python run.py --model jev --set tuning --categories v1
   python run.py --model sonnet --set tuning --categories v2 --limit 5
   python run.py --model laya --set tuning --categories v2
+  python run.py --model deepseek --set tuning --categories v2
 
 Rows are written as they come in. Re-running the same command skips messages already in
 the log, so an interrupted run picks up where it stopped (and paid calls aren't repeated).
@@ -14,6 +15,7 @@ Use --fresh to start the log over.
 import argparse
 import csv
 import json
+import math
 import os
 import re
 import time
@@ -37,6 +39,9 @@ OPENROUTER_CHAT_URL = "https://openrouter.ai/api/v1"
 LAYA_MODEL = "convaiinnovations/laya"
 LAYA_REVISION = "55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851"  # pinned, from laya.PINNED_REVISIONS
 LAYA_SETTINGS = {"head_max_len": 512, "max_len": 1024}  # pre-registered in CHANGELOG.md (2026-09-30)
+# Contender J, pre-registered in CHANGELOG.md (2026-10-02). Copied from OpenRouter (2026-10-02).
+DEEPSEEK_MODEL = "deepseek/deepseek-v4-flash"
+DEEPSEEK_PROVIDER = "streamlake/fp8"  # pinned, no fallbacks: cheapest listed provider that returns logprobs
 INSTRUCTIONS = "Which category best describes this bank customer's message?"
 
 LOG_COLUMNS = [
@@ -140,13 +145,66 @@ def ask_claude(message, categories, model):
         return reply, 0.0, ms, cost, response.model
 
 
+_deepseek_client = None
+
+
+def logprob_confidence(token_logprobs, reply):
+    """Probability (0-100) of the category text in the reply, from the logprobs of its tokens."""
+    match = re.search(r'"category"\s*:\s*"([^"]*)"', reply)
+    if not match or not token_logprobs:
+        return 0.0
+    start, end = match.span(1)
+    pos, total = 0, 0.0
+    for t in token_logprobs:
+        if pos + len(t.token) > start and pos < end:  # token overlaps the category text
+            total += t.logprob
+        pos += len(t.token)
+    return math.exp(total) * 100
+
+
+def ask_deepseek(message, categories):
+    """Return (category, logprob confidence 0-100, milliseconds, cost_usd, model_version, self-reported confidence).
+
+    Same prompt as Claude. Headline confidence = logprob (pre-registered); the number the model
+    writes is returned too and logged on the side. An unreadable reply works like ask_claude.
+    """
+    global _deepseek_client
+    if _deepseek_client is None:
+        _deepseek_client = openai.OpenAI(api_key=os.environ["OPENROUTER_API_KEY"], base_url=OPENROUTER_CHAT_URL)
+    prompt = CLAUDE_PROMPT.format(
+        categories="\n".join(f"- {name}: {description}" for name, description in categories.items()),
+        message=message,
+    )
+    start = time.perf_counter()
+    response = _deepseek_client.chat.completions.create(
+        model=DEEPSEEK_MODEL,
+        messages=[{"role": "user", "content": prompt}],
+        max_tokens=200,
+        response_format={"type": "json_object"},
+        logprobs=True,
+        extra_body={"reasoning": {"enabled": False},
+                    "provider": {"order": [DEEPSEEK_PROVIDER], "allow_fallbacks": False}},
+    )
+    ms = round((time.perf_counter() - start) * 1000)
+    reply = response.choices[0].message.content or ""
+    cost = response.model_dump()["usage"]["cost"]
+    logprobs = response.choices[0].logprobs.content if response.choices[0].logprobs else None
+    text = re.sub(r"^```(?:json)?\s*|\s*```$", "", reply.strip())
+    try:
+        answer = json.loads(text)
+        category, self_confidence = str(answer["category"]), float(answer["confidence"])
+    except (ValueError, KeyError, TypeError):
+        return reply, 0.0, ms, cost, response.model, None
+    return category, logprob_confidence(logprobs, reply), ms, cost, response.model, self_confidence
+
+
 def fmt_bool(value):
     return "" if value is None else str(value).lower()
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("--model", required=True, choices=["jev", "sonnet", "haiku", "laya"])
+    parser.add_argument("--model", required=True, choices=["jev", "sonnet", "haiku", "laya", "deepseek"])
     parser.add_argument("--set", required=True, choices=["tuning", "test"], dest="message_set")
     parser.add_argument("--categories", required=True, help="description version, e.g. v1")
     parser.add_argument("--keywords", default="v1", help="keyword version (default v1)")
@@ -177,6 +235,11 @@ def main():
     todo = messages[~messages["message_id"].isin(done)]
     print(f"{log_path}: {len(done)} already logged, {len(todo)} to run")
 
+    # DeepSeek's self-reported confidence (secondary) goes in a side file, keyed by message_id.
+    side_path = log_path.with_name(log_path.name.replace("decisions_", "selfconf_"))
+    if args.model == "deepseek" and (args.fresh or not side_path.exists()):
+        side_path.write_text("message_id,self_confidence\n")
+
     new_file = not log_path.exists()
     with log_path.open("a", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=LOG_COLUMNS)
@@ -187,6 +250,10 @@ def main():
                 predicted, confidence, ms, cost, model_name = ask_jev(row.text, categories)
             elif args.model == "laya":
                 predicted, confidence, ms, cost, model_name = ask_laya(row.text, categories)
+            elif args.model == "deepseek":
+                predicted, confidence, ms, cost, model_name, self_confidence = ask_deepseek(row.text, categories)
+                with side_path.open("a") as side:
+                    side.write(f"{row.message_id},{'' if self_confidence is None else self_confidence}\n")
             else:
                 predicted, confidence, ms, cost, model_name = ask_claude(row.text, categories, args.model)
             # No threshold here: checks 1-3 only. analyze.py applies each model's thresholds.

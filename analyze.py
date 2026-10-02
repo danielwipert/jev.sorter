@@ -163,7 +163,11 @@ CONTENDERS = {
     "D": ("Haiku 4.5, final descriptions (v2)", "logs/decisions_haiku_test_v2.csv"),
     # Secondary check on description tilt (v2 was tuned on Jev's mistakes). Does not affect the verdict.
     "F": ("Sonnet 5, descriptions v1", "logs/decisions_sonnet_test_v1.csv"),
+    # Round 2, pre-registered in CHANGELOG.md (2026-10-02). Logprob confidence. K is secondary, like F.
+    "J": ("DeepSeek V4 Flash, final descriptions (v2)", "logs/decisions_deepseek_test_v2.csv"),
+    "K": ("DeepSeek V4 Flash, descriptions v1", "logs/decisions_deepseek_test_v1.csv"),
 }
+ROUND2 = {"J": "B", "K": "A"}  # open alternative -> the Jev run with the same descriptions
 VERDICT_ROW = 70  # Section 10: the 70% auto-accept row decides the headline
 VERDICT_MAX_GAP = 3.0  # Jev within 3 accuracy points of Sonnet...
 VERDICT_MIN_COST_RATIO = 10.0  # ...and at least 10x cheaper per 1,000 gated decisions
@@ -204,6 +208,19 @@ def final_results():
         verdict(numbers)
     if "C" in logs and "F" in logs:
         tilt(numbers)
+    for key, jev_key in ROUND2.items():
+        if key in logs and jev_key in logs:
+            versus_jev(numbers, key, jev_key)
+
+
+def versus_jev(numbers, key, jev_key):
+    """Round 2: an open alternative vs. Jev with the same descriptions, at every row (70% decides)."""
+    print(f"\nROUND 2: {CONTENDERS[key][0]} ({key}) vs {CONTENDERS[jev_key][0]} ({jev_key}), accuracy on auto-accepted:")
+    for target in TARGETS:
+        (a, a_cost), (j, j_cost) = numbers[key, target], numbers[jev_key, target]
+        flag = "  <= decides" if target == VERDICT_ROW and key == "J" else ""
+        print(f"  {target}% row: {key} {a:.1f}%, Jev {j:.1f}%, {key} minus Jev = {a - j:+.1f} points{flag}")
+    print(f"  Cost per 1,000: {key} ${a_cost:.3f}, Jev ${j_cost:.3f}")
 
 
 def tilt(numbers):
