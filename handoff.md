@@ -22,7 +22,7 @@ _From 2026-09-30:_
 2. **Dan:** decide SemIf **A** (widen to 77 labels; recommended) or **B** (report "can't do 77 as shipped").
 3. Finish the Laya runs if the container was reclaimed. The same commands resume where they stopped (listed in the spec).
 4. Deploy Nimble and SemIf on Modal, run them, analyze, and update the site.
-5. LinkedIn: post 1 (cost) is up. Post 2 (confidence) is drafted. Optional: a carousel slide for the 60%-automation example. Headshot for the site is still optional.
+5. LinkedIn: post 1 (cost) is up. Post 2 (confidence) is drafted. Its image is `promo/confidence-60.png` (rebuild: `python promo/build_confidence_image.py`). Headshot for the site is still optional.
 
 ## Notes
 - Pin `typesafe/jev-1.13`; never `jev-latest` or `jev-router`.
