@@ -2,13 +2,16 @@
 
 _Rewritten at the end of every session. Keep it short._
 
-**Last session:** 2026-09-30
+**Last session:** 2026-10-02
 
 ## Where things stand
 - **Round 1 is done and live:** Jev beat Sonnet 5 at the 70% row (91.4% vs 91.0%, 52× cheaper). Site: https://danielwipert.github.io/jev.sorter/
 - **Round 2 started: Jev vs. open alternatives (Laya, SemIf, Bespoke Nimble).** The full plan, rules and findings so far are in **`planning/round2-open-alternatives-spec.md`**. It's pre-registered in `CHANGELOG.md` (2026-09-30).
 
 ## What we did this session
+- **2026-10-02:** Dug into the confidence scores and drafted LinkedIn post 2: `promo/linkedin-post-2-confidence.md`. Settings between 50% and 90% automation: Jev 38, Sonnet 8, Haiku 3. Sonnet jumps from 45% to 65% automation (196 messages share the score 85). Honest caveat in the post: Sonnet's 90+ scores are more trustworthy (96% vs. 92.5%).
+
+_From 2026-09-30:_
 - Checked where each model can run. None are on OpenRouter.
 - **Laya** added to `run.py` (`--model laya`). It runs on this container's CPU, and its settings are locked (`head_max_len=512`).
 - Laya full runs started. Partial tuning result: **45.6% correct vs. Jev's 83.9%** on the same 372 messages. The log is committed as WIP.
@@ -19,7 +22,7 @@ _Rewritten at the end of every session. Keep it short._
 2. **Dan:** decide SemIf **A** (widen to 77 labels; recommended) or **B** (report "can't do 77 as shipped").
 3. Finish the Laya runs if the container was reclaimed. The same commands resume where they stopped (listed in the spec).
 4. Deploy Nimble and SemIf on Modal, run them, analyze, and update the site.
-5. On hold: the round 1 LinkedIn rollout (post + carousel `promo/jev-vs-the-frontier.pdf`), and an optional headshot for the site.
+5. LinkedIn: post 1 (cost) is up. Post 2 (confidence) is drafted. Optional: a carousel slide for the 60%-automation example. Headshot for the site is still optional.
 
 ## Notes
 - Pin `typesafe/jev-1.13`; never `jev-latest` or `jev-router`.
