@@ -18,6 +18,7 @@ _From 2026-09-30:_
 - Found that **SemIf supports only 16 options** (Banking77 needs 77), and that **Nimble's public demo is closed**. Both need a GPU, so the plan is Modal.
 
 ## Next session
+0. **DeepSeek V4 Flash** (open weights, via OpenRouter, provider pinned to StreamLake): 20-message test done (`explore/deepseek_first_call.py`). 18/20 right (Jev: 18/20 on the same messages), about $0.013 per 1,000 messages after prompt caching. Next: Dan picks the headline confidence (self-reported vs. logprob), pre-register it in `CHANGELOG.md`, add `--model deepseek` to `run.py`, then run the full set (projected under $0.15).
 1. **Dan:** create Modal and Hugging Face accounts, add `MODAL_TOKEN_ID`, `MODAL_TOKEN_SECRET` and `HF_TOKEN` to the cloud environment, and start a new session. Steps are in the spec, "What Dan needs to do".
 2. **Dan:** decide SemIf **A** (widen to 77 labels; recommended) or **B** (report "can't do 77 as shipped").
 3. Finish the Laya runs if the container was reclaimed. The same commands resume where they stopped (listed in the spec).
