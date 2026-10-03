@@ -1,0 +1,1001 @@
+message_id,message_text,model,categories_version,keywords_version,predicted,confidence,gate_result,gate_reason,keyword_miss,correct,is_correct,ms,cost_usd
+test_00000,How do I locate my card?,deepseek/deepseek-v4-flash,v2,v1,card_arrival,99.83,auto_accept,,false,card_arrival,true,1431,1.25496e-05
+test_00007,i have not received my card,deepseek/deepseek-v4-flash,v2,v1,card_arrival,99.85,auto_accept,,false,card_arrival,true,1096,1.25496e-05
+test_00012,I still don't have my card after 2 weeks.  What should I do?,deepseek/deepseek-v4-flash,v2,v1,card_arrival,93.98,auto_accept,,false,card_arrival,true,1655,1.30816e-05
+test_00014,I am still waiting for my card after 1 week.  Is this ok?,deepseek/deepseek-v4-flash,v2,v1,card_arrival,92.41,auto_accept,,false,card_arrival,true,1363,1.28296e-05
+test_00022,How long should my new card take to arrive?,deepseek/deepseek-v4-flash,v2,v1,card_delivery_estimate,99.85,auto_accept,,false,card_arrival,false,1287,1.28016e-05
+test_00025,What is the tracking number for my card that was mailed?,deepseek/deepseek-v4-flash,v2,v1,card_arrival,99.99,auto_accept,,false,card_arrival,true,1943,1.26896e-05
+test_00029,i want to track the card you sent,deepseek/deepseek-v4-flash,v2,v1,card_arrival,100.0,auto_accept,,false,card_arrival,true,2130,4.7012e-05
+test_00030,My card hasn't arrived yet.,deepseek/deepseek-v4-flash,v2,v1,card_arrival,99.98,auto_accept,,false,card_arrival,true,3954,1.25496e-05
+test_00032,How do I know when my card will arrive?,deepseek/deepseek-v4-flash,v2,v1,card_delivery_estimate,97.07,auto_accept,,false,card_arrival,false,1365,1.28016e-05
+test_00043,"I have received my card, can you help me put it in the app?",deepseek/deepseek-v4-flash,v2,v1,card_linking,98.7,auto_accept,,false,card_linking,true,1784,1.28016e-05
+test_00044,How do I link a card that I already have?,deepseek/deepseek-v4-flash,v2,v1,card_linking,100.0,auto_accept,,false,card_linking,true,2971,1.26616e-05
+test_00045,"I received my new card, but I don't see it in the app anywhere.  What do I do?",deepseek/deepseek-v4-flash,v2,v1,card_linking,55.89,auto_accept,,false,card_linking,true,2025,1.29976e-05
+test_00048,Can I put my old card back into the system? I just found it/,deepseek/deepseek-v4-flash,v2,v1,card_linking,93.77,auto_accept,,false,card_linking,true,1554,1.28016e-05
+test_00051,Can I link an existing card?,deepseek/deepseek-v4-flash,v2,v1,card_linking,100.0,auto_accept,,false,card_linking,true,1864,1.25496e-05
+test_00052,How do I link one your card if I have one already?,deepseek/deepseek-v4-flash,v2,v1,card_linking,100.0,auto_accept,,false,card_linking,true,2584,1.27176e-05
+test_00056,Can you tell me how to link one of your cards that I already have?,deepseek/deepseek-v4-flash,v2,v1,card_linking,100.0,auto_accept,,false,card_linking,true,1313,1.28016e-05
+test_00057,How do I view the card I received in the app?,deepseek/deepseek-v4-flash,v2,v1,card_linking,0.51,auto_accept,,false,card_linking,true,9176,1.26896e-05
+test_00063,How do I link this new card?,deepseek/deepseek-v4-flash,v2,v1,card_linking,100.0,auto_accept,,false,card_linking,true,1827,1.25776e-05
+test_00067,how do I link a card I already have?,deepseek/deepseek-v4-flash,v2,v1,card_linking,100.0,auto_accept,,false,card_linking,true,1120,1.26336e-05
+test_00069,Can you please show me where I can find the location to link my card?,deepseek/deepseek-v4-flash,v2,v1,card_linking,100.0,auto_accept,,false,card_linking,true,1553,1.28016e-05
+test_00070,Where do I go if I want to link my new card?,deepseek/deepseek-v4-flash,v2,v1,card_linking,100.0,auto_accept,,false,card_linking,true,1462,1.27176e-05
+test_00073,How do I link my card,deepseek/deepseek-v4-flash,v2,v1,card_linking,100.0,auto_accept,,false,card_linking,true,1437,1.25496e-05
+test_00076,"Could you help me reactivate my card? It was previously lost, but I found it this morning in my jacket.",deepseek/deepseek-v4-flash,v2,v1,lost_or_stolen_card,25.87,auto_accept,,false,card_linking,false,1087,1.31376e-05
+test_00080,I need to know your exchange rates.,deepseek/deepseek-v4-flash,v2,v1,exchange_rate,100.0,auto_accept,,false,exchange_rate,true,1931,1.25216e-05
+test_00087,Please advise what is the exchange rate,deepseek/deepseek-v4-flash,v2,v1,exchange_rate,100.0,auto_accept,,false,exchange_rate,true,9012,1.25216e-05
+test_00088,How are exchange rates calculated?,deepseek/deepseek-v4-flash,v2,v1,exchange_rate,100.0,auto_accept,,false,exchange_rate,true,1977,1.24656e-05
+test_00093,Is it a good time to exchange?,deepseek/deepseek-v4-flash,v2,v1,exchange_rate,98.2,auto_accept,,false,exchange_rate,true,1668,1.25216e-05
+test_00096,Can you tell me where you get your exchange rates?,deepseek/deepseek-v4-flash,v2,v1,exchange_rate,100.0,auto_accept,,false,exchange_rate,true,6443,1.26056e-05
+test_00100,What is the base of the exchange rates?,deepseek/deepseek-v4-flash,v2,v1,exchange_rate,100.0,auto_accept,,false,exchange_rate,true,1892,1.25496e-05
+test_00102,The exchange rates are?,deepseek/deepseek-v4-flash,v2,v1,exchange_rate,100.0,auto_accept,,false,exchange_rate,true,1220,1.24376e-05
+test_00104,What foreign exchange rate will you use?,deepseek/deepseek-v4-flash,v2,v1,exchange_rate,100.0,auto_accept,,false,exchange_rate,true,1682,1.25216e-05
+test_00108,How do your exchange rates work?,deepseek/deepseek-v4-flash,v2,v1,exchange_rate,100.0,auto_accept,,false,exchange_rate,true,1473,1.24936e-05
+test_00109,what is the exchange rate?,deepseek/deepseek-v4-flash,v2,v1,exchange_rate,100.0,auto_accept,,false,exchange_rate,true,1406,1.24656e-05
+test_00111,How are you determining your exchange rates?,deepseek/deepseek-v4-flash,v2,v1,exchange_rate,100.0,auto_accept,,false,exchange_rate,true,1254,1.25216e-05
+test_00120,I purchased something in a foreign currency but the rate applied is wrong,deepseek/deepseek-v4-flash,v2,v1,card_payment_wrong_exchange_rate,99.99,auto_accept,,false,card_payment_wrong_exchange_rate,true,1503,1.30256e-05
+test_00123,The exchange rate was wrong when I bought something outside the country.,deepseek/deepseek-v4-flash,v2,v1,card_payment_wrong_exchange_rate,100.0,auto_accept,,false,card_payment_wrong_exchange_rate,true,1455,1.29976e-05
+test_00124,The exchange rate on my purchase is wrong.,deepseek/deepseek-v4-flash,v2,v1,card_payment_wrong_exchange_rate,99.99,auto_accept,,false,card_payment_wrong_exchange_rate,true,1346,1.28856e-05
+test_00134,I bought an item and noticed the exchange rate was not correct.,deepseek/deepseek-v4-flash,v2,v1,card_payment_wrong_exchange_rate,99.99,auto_accept,,false,card_payment_wrong_exchange_rate,true,2579,1.29976e-05
+test_00135,I bought something overseas and the wrong exchange rate is on my statement.,deepseek/deepseek-v4-flash,v2,v1,card_payment_wrong_exchange_rate,99.98,auto_accept,,false,card_payment_wrong_exchange_rate,true,1422,1.30256e-05
+test_00139,I purchased an item and the exchange rate I was given was incorrect.,deepseek/deepseek-v4-flash,v2,v1,card_payment_wrong_exchange_rate,100.0,auto_accept,,false,card_payment_wrong_exchange_rate,true,1235,1.30256e-05
+test_00141,"When I made a purchase last Saturday, I was charged extra. Did I receive the right exchange rate?",deepseek/deepseek-v4-flash,v2,v1,card_payment_wrong_exchange_rate,99.92,auto_accept,,false,card_payment_wrong_exchange_rate,true,1440,1.32216e-05
+test_00144,"Hi, I have been overcharged for my payment last Saturday. I guess exchange rate was wrong.",deepseek/deepseek-v4-flash,v2,v1,card_payment_wrong_exchange_rate,99.99,auto_accept,,false,card_payment_wrong_exchange_rate,true,1401,1.31936e-05
+test_00149,I wasn't applied the correct exchange rate for an item I bought,deepseek/deepseek-v4-flash,v2,v1,card_payment_wrong_exchange_rate,99.99,auto_accept,,false,card_payment_wrong_exchange_rate,true,1419,1.32496e-05
+test_00152,I paid for something in foreign currency but noticed the exchange rate is incorrect.,deepseek/deepseek-v4-flash,v2,v1,card_payment_wrong_exchange_rate,99.99,auto_accept,,false,card_payment_wrong_exchange_rate,true,1368,1.30536e-05
+test_00157,Your exchange rate is totally wrong for my card payment,deepseek/deepseek-v4-flash,v2,v1,card_payment_wrong_exchange_rate,100.0,auto_accept,,false,card_payment_wrong_exchange_rate,true,1478,1.29416e-05
+test_00162,I'm not okay with this fee on my statement.,deepseek/deepseek-v4-flash,v2,v1,extra_charge_on_statement,99.67,auto_accept,,false,extra_charge_on_statement,true,1206,1.28296e-05
+test_00163,Why is there an extra dollar charged to my account?,deepseek/deepseek-v4-flash,v2,v1,extra_charge_on_statement,99.9,auto_accept,,false,extra_charge_on_statement,true,2003,1.28296e-05
+test_00168,Why does my statement have these extra charges?,deepseek/deepseek-v4-flash,v2,v1,extra_charge_on_statement,100.0,auto_accept,,false,extra_charge_on_statement,true,2143,1.27736e-05
+test_00170,I can see an extra 1£ charge on my app. Why did you charge me extra?,deepseek/deepseek-v4-flash,v2,v1,extra_charge_on_statement,99.97,auto_accept,,false,extra_charge_on_statement,true,2566,1.30816e-05
+test_00173,Where did this fee come from?,deepseek/deepseek-v4-flash,v2,v1,extra_charge_on_statement,92.1,auto_accept,,false,extra_charge_on_statement,true,3790,1.27176e-05
+test_00174,"I noticed an extra $1 charge on my statement, can you tell me why that is?",deepseek/deepseek-v4-flash,v2,v1,extra_charge_on_statement,100.0,auto_accept,,false,extra_charge_on_statement,true,1424,1.30536e-05
+test_00175,There is an extra $1 charge,deepseek/deepseek-v4-flash,v2,v1,extra_charge_on_statement,99.81,auto_accept,,false,extra_charge_on_statement,true,1122,1.27456e-05
+test_00176,I need information about an extra €1 fee in my statement.,deepseek/deepseek-v4-flash,v2,v1,extra_charge_on_statement,99.99,auto_accept,,false,extra_charge_on_statement,true,3630,1.28856e-05
+test_00177,Why is there an extra 1 pound charge on my card?,deepseek/deepseek-v4-flash,v2,v1,card_payment_fee_charged,26.88,auto_accept,,false,extra_charge_on_statement,false,1150,1.29416e-05
+test_00178,Why are there so many fees on my statement?,deepseek/deepseek-v4-flash,v2,v1,extra_charge_on_statement,99.96,auto_accept,,false,extra_charge_on_statement,true,2666,1.28016e-05
+test_00179,What would be the reason there's an extra fee on my statement?,deepseek/deepseek-v4-flash,v2,v1,extra_charge_on_statement,99.99,auto_accept,,false,extra_charge_on_statement,true,2482,1.29136e-05
+test_00183,Why was I overcharged a pound!?,deepseek/deepseek-v4-flash,v2,v1,card_payment_fee_charged,26.56,review,keyword_miss,true,extra_charge_on_statement,false,1288,1.30536e-05
+test_00184,"Something went wrong, I was charged an extra pound?",deepseek/deepseek-v4-flash,v2,v1,extra_charge_on_statement,94.89,auto_accept,,false,extra_charge_on_statement,true,1353,1.28296e-05
+test_00188,What is this €1 fee in my statement?,deepseek/deepseek-v4-flash,v2,v1,extra_charge_on_statement,98.88,auto_accept,,false,extra_charge_on_statement,true,1463,1.28016e-05
+test_00192,"Can you help me with a weird charge?  It's a pound charge that never goes away from the statement view on the app I'm using.  It's not described as anything but ""Pending"", and that status has never changed during the last two days.",deepseek/deepseek-v4-flash,v2,v1,pending_card_payment,99.85,auto_accept,,false,extra_charge_on_statement,false,1866,1.38936e-05
+test_00194,"$1 extra has been charged on my statement, why is that?",deepseek/deepseek-v4-flash,v2,v1,extra_charge_on_statement,99.96,auto_accept,,false,extra_charge_on_statement,true,1113,1.29136e-05
+test_00195,What is the extra  €1 fee in my statement,deepseek/deepseek-v4-flash,v2,v1,extra_charge_on_statement,99.95,auto_accept,,false,extra_charge_on_statement,true,1526,1.28576e-05
+test_00196,"It's been two weeks, why has the transaction for $1.00 not been reversed?",deepseek/deepseek-v4-flash,v2,v1,reverted_card_payment?,98.68,auto_accept,,false,extra_charge_on_statement,false,1381,1.29976e-05
+test_00199,Can you please check why I am having this extra fee on my statement.,deepseek/deepseek-v4-flash,v2,v1,extra_charge_on_statement,100.0,auto_accept,,false,extra_charge_on_statement,true,1278,1.29416e-05
+test_00203,"Hey I tried to get some money out earlier but the machine didn't work. Now just saw the transaction still seems in progress! Can you please check what's going there, seems something is broken, I don't want to be charged for money that I haven't actually received!",deepseek/deepseek-v4-flash,v2,v1,pending_cash_withdrawal,98.9,auto_accept,,false,pending_cash_withdrawal,true,1970,1.40336e-05
+test_00208,Why is my withdrawal still pending?,deepseek/deepseek-v4-flash,v2,v1,pending_cash_withdrawal,99.97,auto_accept,,false,pending_cash_withdrawal,true,1063,1.26616e-05
+test_00210,"Hi! I was wondering if you can help me. I used the city centre ATM to get some cash, but the machine declined my card. My account shows that transaction is still pending. I didn't receive the money, so please cancel that transaction.",deepseek/deepseek-v4-flash,v2,v1,declined_cash_withdrawal,84.29,auto_accept,,false,pending_cash_withdrawal,false,1375,1.39496e-05
+test_00211,Why is a transaction showing as pending when I recieved cash from an ATM?,deepseek/deepseek-v4-flash,v2,v1,pending_cash_withdrawal,99.45,auto_accept,,false,pending_cash_withdrawal,true,1383,1.31656e-05
+test_00212,My cash in the ATM is still pending,deepseek/deepseek-v4-flash,v2,v1,pending_cash_withdrawal,99.99,auto_accept,,false,pending_cash_withdrawal,true,1611,1.27176e-05
+test_00218,"Hi,I tried to get some money out but the machine was not working .The transaction still seems in progress! Can you please check what's going on.I don't want to be charged for money that I did not received.",deepseek/deepseek-v4-flash,v2,v1,pending_cash_withdrawal,85.15,auto_accept,,false,pending_cash_withdrawal,true,1350,1.37256e-05
+test_00219,"Hey, my card was declined at an ATM in the city centre theatre. My account says the transaction is pending, though. I didn't get the money, though, so what does that mean?",deepseek/deepseek-v4-flash,v2,v1,declined_cash_withdrawal,97.03,auto_accept,,false,pending_cash_withdrawal,false,1270,1.38656e-05
+test_00220,Why do I have a pending cash withdrawal?,deepseek/deepseek-v4-flash,v2,v1,pending_cash_withdrawal,99.98,auto_accept,,false,pending_cash_withdrawal,true,1377,1.27176e-05
+test_00221,I have a pending cash withdrawal,deepseek/deepseek-v4-flash,v2,v1,pending_cash_withdrawal,100.0,auto_accept,,false,pending_cash_withdrawal,true,1039,1.26616e-05
+test_00226,My cash withdrawal is still showing as pending.,deepseek/deepseek-v4-flash,v2,v1,pending_cash_withdrawal,100.0,auto_accept,,false,pending_cash_withdrawal,true,3397,1.27176e-05
+test_00227,Why am I unable to take money from my card but the statement says the transaction is still pending?,deepseek/deepseek-v4-flash,v2,v1,pending_card_payment,83.89,auto_accept,,false,pending_cash_withdrawal,false,3274,1.29696e-05
+test_00229,I have a pending transaction in my app. How is it still pending if I pulled the cash out from the ATM earlier?,deepseek/deepseek-v4-flash,v2,v1,pending_cash_withdrawal,99.1,auto_accept,,false,pending_cash_withdrawal,true,1354,1.31656e-05
+test_00231,"I received cash from the ATM earlier, but this shows up as pending in the app.  I've got the cash already.  How can this be still pending?",deepseek/deepseek-v4-flash,v2,v1,pending_cash_withdrawal,99.99,auto_accept,,false,pending_cash_withdrawal,true,1541,1.34176e-05
+test_00233,Why does it say pending cash withdrawal on my statement?,deepseek/deepseek-v4-flash,v2,v1,pending_cash_withdrawal,100.0,auto_accept,,false,pending_cash_withdrawal,true,2386,1.27736e-05
+test_00237,how long does it take to post atm with drawl,deepseek/deepseek-v4-flash,v2,v1,cash_withdrawal_not_recognised,46.21,review,keyword_miss,true,pending_cash_withdrawal,false,2424,1.29136e-05
+test_00238,Why is my cash withdrawal from the ATM still not yet showing as confirmed in my account?,deepseek/deepseek-v4-flash,v2,v1,pending_cash_withdrawal,98.92,auto_accept,,false,pending_cash_withdrawal,true,1731,1.29696e-05
+test_00239,"What's a pending transaction? My card was declined at an ATM, but my account says it's still pending. Can I cancel the payment?",deepseek/deepseek-v4-flash,v2,v1,declined_cash_withdrawal,81.6,auto_accept,,false,pending_cash_withdrawal,false,1537,1.33336e-05
+test_00240,"If I request that my funds be held, what currencies do you use?",deepseek/deepseek-v4-flash,v2,v1,fiat_currency_support,97.53,auto_accept,,false,fiat_currency_support,true,5221,1.31656e-05
+test_00243,Does your system support multiple currency.,deepseek/deepseek-v4-flash,v2,v1,fiat_currency_support,93.27,auto_accept,,false,fiat_currency_support,true,1337,1.27176e-05
+test_00246,"There is an incoming payment into my account, but it is deactivated. Will they still be processed?",deepseek/deepseek-v4-flash,v2,v1,receiving_money,86.56,review,keyword_miss,true,fiat_currency_support,false,1328,1.29976e-05
+test_00247,What currencies do you do exchanges for?,deepseek/deepseek-v4-flash,v2,v1,exchange_rate,30.69,auto_accept,,false,fiat_currency_support,false,1116,1.25216e-05
+test_00251,Is it permissible to hold money in multiple currencies?,deepseek/deepseek-v4-flash,v2,v1,fiat_currency_support,89.68,auto_accept,,false,fiat_currency_support,true,1437,1.28016e-05
+test_00252,Can I exchange to EUR?,deepseek/deepseek-v4-flash,v2,v1,exchange_via_app,94.99,auto_accept,,false,fiat_currency_support,false,1033,1.25776e-05
+test_00254,Do you offer additional currency options?,deepseek/deepseek-v4-flash,v2,v1,fiat_currency_support,92.58,auto_accept,,false,fiat_currency_support,true,4588,1.27176e-05
+test_00256,What fiat currencies are supported for holding and exchange?,deepseek/deepseek-v4-flash,v2,v1,fiat_currency_support,100.0,auto_accept,,false,fiat_currency_support,true,2920,1.28296e-05
+test_00257,"When considering currency holdings and exchanges, what fiat currencies are supported?",deepseek/deepseek-v4-flash,v2,v1,fiat_currency_support,99.99,auto_accept,,false,fiat_currency_support,true,1055,1.29136e-05
+test_00259,Can I hold money in other currencies?,deepseek/deepseek-v4-flash,v2,v1,fiat_currency_support,95.1,auto_accept,,false,fiat_currency_support,true,3283,1.27456e-05
+test_00261,Do you happen to do exchanges of EUR?,deepseek/deepseek-v4-flash,v2,v1,exchange_rate,86.97,review,keyword_miss,true,fiat_currency_support,false,2057,1.25496e-05
+test_00263,Can you tell me what currency I can have?,deepseek/deepseek-v4-flash,v2,v1,fiat_currency_support,99.52,auto_accept,,false,fiat_currency_support,true,1743,1.28016e-05
+test_00266,Which fiat currencies do you support?,deepseek/deepseek-v4-flash,v2,v1,fiat_currency_support,100.0,auto_accept,,false,fiat_currency_support,true,1621,1.27456e-05
+test_00270,What kind of currency can I hold money in?,deepseek/deepseek-v4-flash,v2,v1,fiat_currency_support,99.97,auto_accept,,false,fiat_currency_support,true,2042,1.28016e-05
+test_00272,Do you work with all fiat currencies?,deepseek/deepseek-v4-flash,v2,v1,fiat_currency_support,100.0,auto_accept,,false,fiat_currency_support,true,1572,1.27736e-05
+test_00276,How do I accept exchanges to EU?,deepseek/deepseek-v4-flash,v2,v1,country_support,93.16,auto_accept,,false,fiat_currency_support,false,1392,1.25776e-05
+test_00278,Do you support the exchange of EUR from my currency.,deepseek/deepseek-v4-flash,v2,v1,exchange_rate,52.71,auto_accept,,false,fiat_currency_support,false,1497,1.26056e-05
+test_00279,What countries can I travel to and have access to their currencies?,deepseek/deepseek-v4-flash,v2,v1,country_support,99.79,auto_accept,,false,fiat_currency_support,false,1740,1.27176e-05
+test_00282,i need my card quick,deepseek/deepseek-v4-flash,v2,v1,card_delivery_estimate,67.79,auto_accept,,false,card_delivery_estimate,true,1371,1.26896e-05
+test_00283,How long will it take to get to me?,deepseek/deepseek-v4-flash,v2,v1,card_delivery_estimate,81.76,auto_accept,,false,card_delivery_estimate,true,1747,1.28016e-05
+test_00288,When can I expect my card to be delivered to the US?,deepseek/deepseek-v4-flash,v2,v1,card_delivery_estimate,100.0,auto_accept,,false,card_delivery_estimate,true,1457,1.28856e-05
+test_00289,I need my card quickly,deepseek/deepseek-v4-flash,v2,v1,card_arrival,18.22,auto_accept,,false,card_delivery_estimate,false,1084,1.25216e-05
+test_00291,How long will it take to arrive?,deepseek/deepseek-v4-flash,v2,v1,card_delivery_estimate,96.27,auto_accept,,false,card_delivery_estimate,true,1857,1.27456e-05
+test_00296,I need it delivered on a certain date.,deepseek/deepseek-v4-flash,v2,v1,card_delivery_estimate,85.17,auto_accept,,false,card_delivery_estimate,true,8241,1.27736e-05
+test_00298,How long does it take to get my card? Can I choose when to receive it?,deepseek/deepseek-v4-flash,v2,v1,card_delivery_estimate,97.7,auto_accept,,false,card_delivery_estimate,true,1293,1.32496e-05
+test_00299,How long will it take for the card to arrive?,deepseek/deepseek-v4-flash,v2,v1,card_delivery_estimate,98.2,auto_accept,,false,card_delivery_estimate,true,1302,1.28296e-05
+test_00309,How long until my card is delivered?,deepseek/deepseek-v4-flash,v2,v1,card_delivery_estimate,99.59,auto_accept,,false,card_delivery_estimate,true,1341,1.27456e-05
+test_00313,I need my card as soon as possible.,deepseek/deepseek-v4-flash,v2,v1,card_arrival,67.67,auto_accept,,false,card_delivery_estimate,false,1019,1.26056e-05
+test_00314,I need it delivered by Saturday.,deepseek/deepseek-v4-flash,v2,v1,card_delivery_estimate,92.41,auto_accept,,false,card_delivery_estimate,true,1858,1.27176e-05
+test_00315,What's the U.S. Delivery time?,deepseek/deepseek-v4-flash,v2,v1,card_delivery_estimate,100.0,auto_accept,,false,card_delivery_estimate,true,3695,1.27736e-05
+test_00318,Can I make sure my card is delivered on a specific day?,deepseek/deepseek-v4-flash,v2,v1,card_delivery_estimate,99.48,auto_accept,,false,card_delivery_estimate,true,1166,1.28856e-05
+test_00321,Is there a limit when using auto top-up?,deepseek/deepseek-v4-flash,v2,v1,automatic_top_up,99.98,auto_accept,,false,automatic_top_up,true,1113,1.26896e-05
+test_00322,Will it automatically top-up or do I need to do that manually if there isn't much cash left?,deepseek/deepseek-v4-flash,v2,v1,automatic_top_up,100.0,auto_accept,,false,automatic_top_up,true,1378,1.29976e-05
+test_00324,How do I use auto top up?,deepseek/deepseek-v4-flash,v2,v1,automatic_top_up,100.0,auto_accept,,false,automatic_top_up,true,2697,1.26336e-05
+test_00325,Can it automatically top-up money if there isn't much left?,deepseek/deepseek-v4-flash,v2,v1,automatic_top_up,100.0,auto_accept,,false,automatic_top_up,true,1755,1.27736e-05
+test_00331,"I just activated auto top-up, but it is not letting me enable it. Why not?",deepseek/deepseek-v4-flash,v2,v1,automatic_top_up,100.0,auto_accept,,false,automatic_top_up,true,1305,1.29416e-05
+test_00332,Is there an auto top-up option?,deepseek/deepseek-v4-flash,v2,v1,automatic_top_up,100.0,auto_accept,,false,automatic_top_up,true,1454,1.26336e-05
+test_00340,What's the limit on automatic top-up?,deepseek/deepseek-v4-flash,v2,v1,automatic_top_up,99.95,auto_accept,,false,automatic_top_up,true,1797,1.26616e-05
+test_00343,Can I have a auto top-up when my account is short?,deepseek/deepseek-v4-flash,v2,v1,automatic_top_up,100.0,auto_accept,,false,automatic_top_up,true,1336,1.27736e-05
+test_00346,Will it automatically top-up money if there isn't a lot left?,deepseek/deepseek-v4-flash,v2,v1,automatic_top_up,100.0,auto_accept,,false,automatic_top_up,true,1140,1.28016e-05
+test_00347,Can I have it add money automatically in certain intervals?,deepseek/deepseek-v4-flash,v2,v1,automatic_top_up,100.0,auto_accept,,false,automatic_top_up,true,1861,1.27176e-05
+test_00350,how do I top up my money automatically,deepseek/deepseek-v4-flash,v2,v1,automatic_top_up,100.0,auto_accept,,false,automatic_top_up,true,1297,1.26616e-05
+test_00351,Can I be topped up once I hit a certain balance?,deepseek/deepseek-v4-flash,v2,v1,automatic_top_up,99.96,auto_accept,,false,automatic_top_up,true,1400,1.27456e-05
+test_00353,Is there any way to Auto top-up?,deepseek/deepseek-v4-flash,v2,v1,automatic_top_up,100.0,auto_accept,,false,automatic_top_up,true,1807,1.26616e-05
+test_00354,Can you explain where I can find the auto-top option?,deepseek/deepseek-v4-flash,v2,v1,automatic_top_up,100.0,auto_accept,,false,automatic_top_up,true,1662,1.27456e-05
+test_00358,What is the highest limit for Auto Top?,deepseek/deepseek-v4-flash,v2,v1,automatic_top_up,99.64,auto_accept,,false,automatic_top_up,true,1407,1.26616e-05
+test_00361,I can't get my card to work.,deepseek/deepseek-v4-flash,v2,v1,card_not_working,99.99,auto_accept,,false,card_not_working,true,1353,1.26616e-05
+test_00365,My card won't work.,deepseek/deepseek-v4-flash,v2,v1,card_not_working,99.99,auto_accept,,false,card_not_working,true,1777,1.25776e-05
+test_00366,Why is my card not working?,deepseek/deepseek-v4-flash,v2,v1,card_not_working,100.0,auto_accept,,false,card_not_working,true,1323,1.26056e-05
+test_00367,Can you please identify the problem with my bank card?,deepseek/deepseek-v4-flash,v2,v1,card_not_working,100.0,auto_accept,,false,card_not_working,true,1586,1.27176e-05
+test_00368,How do I unblock my card using the app?,deepseek/deepseek-v4-flash,v2,v1,contactless_not_working,2.81,review,keyword_miss,true,card_not_working,false,2650,1.29976e-05
+test_00370,How can I get my physical card to work?,deepseek/deepseek-v4-flash,v2,v1,card_not_working,91.88,auto_accept,,false,card_not_working,true,4519,1.26896e-05
+test_00381,Is my card broken?,deepseek/deepseek-v4-flash,v2,v1,card_not_working,100.0,auto_accept,,false,card_not_working,true,2288,1.25496e-05
+test_00387,I can't use my card.,deepseek/deepseek-v4-flash,v2,v1,card_not_working,99.93,auto_accept,,false,card_not_working,true,1510,1.26056e-05
+test_00393,I have tried to use my card several times and it does not work.,deepseek/deepseek-v4-flash,v2,v1,card_not_working,99.94,auto_accept,,false,card_not_working,true,1369,1.28296e-05
+test_00402,Can I change from one currency to another?,deepseek/deepseek-v4-flash,v2,v1,exchange_via_app,98.18,auto_accept,,false,exchange_via_app,true,1292,1.26616e-05
+test_00407,Can I exchange currencies with this app?,deepseek/deepseek-v4-flash,v2,v1,exchange_via_app,90.43,auto_accept,,false,exchange_via_app,true,1184,1.26336e-05
+test_00408,How do I make an exchange from one currency to another?,deepseek/deepseek-v4-flash,v2,v1,exchange_via_app,73.1,auto_accept,,false,exchange_via_app,true,1442,1.27456e-05
+test_00410,What all currencies can be exchanged?,deepseek/deepseek-v4-flash,v2,v1,fiat_currency_support,49.78,auto_accept,,false,exchange_via_app,false,1578,1.27176e-05
+test_00411,What is the best way to exchange currency between USD and GBP using your app?,deepseek/deepseek-v4-flash,v2,v1,exchange_via_app,90.46,auto_accept,,false,exchange_via_app,true,2459,1.28576e-05
+test_00414,Is it possible to change to another currency?,deepseek/deepseek-v4-flash,v2,v1,exchange_rate,79.66,review,keyword_miss,true,exchange_via_app,false,3643,1.27736e-05
+test_00415,How do I exchange my GBP to AUD?,deepseek/deepseek-v4-flash,v2,v1,exchange_via_app,88.04,auto_accept,,false,exchange_via_app,true,1484,1.28856e-05
+test_00416,How would I use my money in a different country?,deepseek/deepseek-v4-flash,v2,v1,country_support,99.96,auto_accept,,false,exchange_via_app,false,2731,1.26616e-05
+test_00420,What is the best way to exchange currency?,deepseek/deepseek-v4-flash,v2,v1,exchange_rate,98.2,auto_accept,,false,exchange_via_app,false,6116,1.25496e-05
+test_00422,I was wondering whether exchanging currencies can be done on this app.,deepseek/deepseek-v4-flash,v2,v1,exchange_via_app,98.9,auto_accept,,false,exchange_via_app,true,3740,1.27736e-05
+test_00423,"I might need AUD instead of GBP, how to change?",deepseek/deepseek-v4-flash,v2,v1,exchange_via_app,91.15,auto_accept,,false,exchange_via_app,true,1965,1.27456e-05
+test_00424,How do I go through the process of currency exchange?,deepseek/deepseek-v4-flash,v2,v1,exchange_rate,67.91,auto_accept,,false,exchange_via_app,false,3251,1.26056e-05
+test_00430,Can this app help me exchange currencies?,deepseek/deepseek-v4-flash,v2,v1,exchange_rate,43.78,auto_accept,,false,exchange_via_app,false,1203,1.25216e-05
+test_00432,Can I exchange between GBP and USD on the app?,deepseek/deepseek-v4-flash,v2,v1,exchange_via_app,99.9,auto_accept,,false,exchange_via_app,true,2162,1.27176e-05
+test_00433,Is there currency exchange on this app?,deepseek/deepseek-v4-flash,v2,v1,exchange_rate,97.05,auto_accept,,false,exchange_via_app,false,1146,1.25216e-05
+test_00435,"I think I want AUD and not GBP, can you help?",deepseek/deepseek-v4-flash,v2,v1,exchange_rate,49.31,review,keyword_miss,true,exchange_via_app,false,1183,1.26616e-05
+test_00436,How do I exchange currency?,deepseek/deepseek-v4-flash,v2,v1,exchange_rate,85.19,auto_accept,,false,exchange_via_app,false,1288,1.24656e-05
+test_00439,I would like to exchange currencies,deepseek/deepseek-v4-flash,v2,v1,exchange_via_app,95.25,auto_accept,,false,exchange_via_app,true,1563,1.26056e-05
+test_00440,"My entire gym bag, including my wallet, was stolen out of my locker today. Everything in my wallet is gone - how do I block the card to make it can't be used?",deepseek/deepseek-v4-flash,v2,v1,lost_or_stolen_card,97.7,auto_accept,,false,lost_or_stolen_card,true,1227,1.35296e-05
+test_00443,"I cant find my card, it's gone.",deepseek/deepseek-v4-flash,v2,v1,lost_or_stolen_card,100.0,auto_accept,,false,lost_or_stolen_card,true,1302,1.27456e-05
+test_00445,I lost my card,deepseek/deepseek-v4-flash,v2,v1,lost_or_stolen_card,100.0,auto_accept,,false,lost_or_stolen_card,true,1802,1.26056e-05
+test_00449,Help.  I have a stolen card!,deepseek/deepseek-v4-flash,v2,v1,lost_or_stolen_card,100.0,auto_accept,,false,lost_or_stolen_card,true,1601,1.27176e-05
+test_00450,"card is lost, please help",deepseek/deepseek-v4-flash,v2,v1,lost_or_stolen_card,100.0,auto_accept,,false,lost_or_stolen_card,true,1848,1.26616e-05
+test_00456,Can you freeze my card it was stolen,deepseek/deepseek-v4-flash,v2,v1,lost_or_stolen_card,99.97,auto_accept,,false,lost_or_stolen_card,true,1342,1.27176e-05
+test_00457,Help!  I can't find my card.,deepseek/deepseek-v4-flash,v2,v1,lost_or_stolen_card,98.87,auto_accept,,false,lost_or_stolen_card,true,1845,1.27456e-05
+test_00460,I think my card was stolen.,deepseek/deepseek-v4-flash,v2,v1,lost_or_stolen_card,99.99,auto_accept,,false,lost_or_stolen_card,true,1182,1.26616e-05
+test_00461,"Someone stole my wallet earlier today, not sure exactly when, probably on Piccadilly circus. Can you check if there were any attempts to use the card and obviously block it?",deepseek/deepseek-v4-flash,v2,v1,lost_or_stolen_card,96.27,auto_accept,,false,lost_or_stolen_card,true,1667,1.34736e-05
+test_00462,I think I lost my card . I dont know how long it has been missing. Can you see if maybe someone else has been using it?,deepseek/deepseek-v4-flash,v2,v1,lost_or_stolen_card,99.94,auto_accept,,false,lost_or_stolen_card,true,1600,1.32776e-05
+test_00463,How can I freeze a stolen card?,deepseek/deepseek-v4-flash,v2,v1,lost_or_stolen_card,99.33,auto_accept,,false,lost_or_stolen_card,true,2524,1.26896e-05
+test_00464,What should I do if my card is missing?,deepseek/deepseek-v4-flash,v2,v1,lost_or_stolen_card,99.99,auto_accept,,false,lost_or_stolen_card,true,1368,1.27456e-05
+test_00471,My card is lost! What do I do now?,deepseek/deepseek-v4-flash,v2,v1,lost_or_stolen_card,100.0,auto_accept,,false,lost_or_stolen_card,true,1344,1.27736e-05
+test_00472,I'm in Spain and my stuff has been stolen. My card was with it and I need a new one shipped and the old one frozen.,deepseek/deepseek-v4-flash,v2,v1,lost_or_stolen_card,99.99,auto_accept,,false,lost_or_stolen_card,true,1818,1.32776e-05
+test_00478,My card got stolen!,deepseek/deepseek-v4-flash,v2,v1,lost_or_stolen_card,100.0,auto_accept,,false,lost_or_stolen_card,true,2305,1.26056e-05
+test_00479,Help me please!  My card was stolen!,deepseek/deepseek-v4-flash,v2,v1,lost_or_stolen_card,100.0,auto_accept,,false,lost_or_stolen_card,true,1614,1.27456e-05
+test_00480,how old do i need to be to get an account for myself,deepseek/deepseek-v4-flash,v2,v1,age_limit,100.0,auto_accept,,false,age_limit,true,1875,1.26896e-05
+test_00485,How do I go about setting up an account for my daughter?,deepseek/deepseek-v4-flash,v2,v1,age_limit,86.62,auto_accept,,false,age_limit,true,1465,1.26616e-05
+test_00486,Is there an age minimum?,deepseek/deepseek-v4-flash,v2,v1,age_limit,100.0,auto_accept,,false,age_limit,true,1532,1.24656e-05
+test_00495,How do I open up an account for my child?,deepseek/deepseek-v4-flash,v2,v1,age_limit,99.96,auto_accept,,false,age_limit,true,1449,1.26056e-05
+test_00498,Do you offer services for children to have money saving experience?,deepseek/deepseek-v4-flash,v2,v1,age_limit,99.31,auto_accept,,false,age_limit,true,1038,1.26336e-05
+test_00506,Do my kids have to be a certain age to use this service?,deepseek/deepseek-v4-flash,v2,v1,age_limit,100.0,auto_accept,,false,age_limit,true,1374,1.26896e-05
+test_00507,How old do you have to be to be able to open an account?,deepseek/deepseek-v4-flash,v2,v1,age_limit,100.0,auto_accept,,false,age_limit,true,1326,1.27176e-05
+test_00508,Is there an age limit?,deepseek/deepseek-v4-flash,v2,v1,age_limit,100.0,auto_accept,,false,age_limit,true,1572,1.24656e-05
+test_00509,What are the age requirements for opening an account?,deepseek/deepseek-v4-flash,v2,v1,age_limit,100.0,auto_accept,,false,age_limit,true,1324,1.25776e-05
+test_00511,How old do I need to be to open an account?,deepseek/deepseek-v4-flash,v2,v1,age_limit,100.0,auto_accept,,false,age_limit,true,1103,1.26336e-05
+test_00518,What is the youngest someone can be to open an account?,deepseek/deepseek-v4-flash,v2,v1,age_limit,100.0,auto_accept,,false,age_limit,true,1214,1.26336e-05
+test_00521,Where can I view my PIN?,deepseek/deepseek-v4-flash,v2,v1,get_physical_card,99.72,auto_accept,,false,pin_blocked,false,1283,1.26056e-05
+test_00522,Will you reinstate my PIN?,deepseek/deepseek-v4-flash,v2,v1,change_pin,99.8,auto_accept,,false,pin_blocked,false,1251,1.25496e-05
+test_00527,"How do I reset my PIN, I can't seem to use my card?",deepseek/deepseek-v4-flash,v2,v1,change_pin,99.99,auto_accept,,false,pin_blocked,false,1530,1.28016e-05
+test_00528,"When I put the wrong pin too much, I got blocked, so can you help me unblock my pin",deepseek/deepseek-v4-flash,v2,v1,pin_blocked,99.99,auto_accept,,false,pin_blocked,true,1666,1.29976e-05
+test_00532,I have exceeded the number of times I can try my PIN,deepseek/deepseek-v4-flash,v2,v1,pin_blocked,99.65,auto_accept,,false,pin_blocked,true,1398,1.27176e-05
+test_00533,How can I unblock a blocked pin number for my account?,deepseek/deepseek-v4-flash,v2,v1,pin_blocked,99.97,auto_accept,,false,pin_blocked,true,1301,1.27176e-05
+test_00535,Can you unlock my pin? I think I entered the wrong pin too many times.,deepseek/deepseek-v4-flash,v2,v1,pin_blocked,99.88,auto_accept,,false,pin_blocked,true,3504,1.28296e-05
+test_00538,Can I unblock my card using the app?,deepseek/deepseek-v4-flash,v2,v1,pin_blocked,60.07,auto_accept,,false,pin_blocked,true,1480,1.26336e-05
+test_00542,"My account is blocked, how do I log in now",deepseek/deepseek-v4-flash,v2,v1,unable_to_verify_identity,47.21,review,keyword_miss,true,pin_blocked,false,1060,1.29136e-05
+test_00543,Why did I get blocked?,deepseek/deepseek-v4-flash,v2,v1,beneficiary_not_allowed,90.44,review,keyword_miss,true,pin_blocked,false,4072,1.26896e-05
+test_00544,Are you able to unblock my pin?,deepseek/deepseek-v4-flash,v2,v1,pin_blocked,99.99,auto_accept,,false,pin_blocked,true,1086,1.26056e-05
+test_00547,"My pins seems to be blocked, can you unblock it please",deepseek/deepseek-v4-flash,v2,v1,pin_blocked,100.0,auto_accept,,false,pin_blocked,true,1170,1.27456e-05
+test_00549,What can you do to unblock my pin?,deepseek/deepseek-v4-flash,v2,v1,pin_blocked,99.98,auto_accept,,false,pin_blocked,true,1146,1.26336e-05
+test_00553,Can I unblock my pin?,deepseek/deepseek-v4-flash,v2,v1,pin_blocked,99.91,auto_accept,,false,pin_blocked,true,1384,1.25496e-05
+test_00554,How do I unblock my PIN?,deepseek/deepseek-v4-flash,v2,v1,pin_blocked,97.06,auto_accept,,false,pin_blocked,true,1194,1.25776e-05
+test_00555,"My card's frozen, what can I do?",deepseek/deepseek-v4-flash,v2,v1,card_not_working,87.85,auto_accept,,false,pin_blocked,false,1126,1.26896e-05
+test_00557,"Since my pin is blocked, would you help me unblock it?",deepseek/deepseek-v4-flash,v2,v1,pin_blocked,99.99,auto_accept,,false,pin_blocked,true,1152,1.27456e-05
+test_00561,My contanctless has stopped working,deepseek/deepseek-v4-flash,v2,v1,contactless_not_working,100.0,auto_accept,,false,contactless_not_working,true,1225,1.27176e-05
+test_00564,How do I get the contactless feature to work for my card?,deepseek/deepseek-v4-flash,v2,v1,contactless_not_working,100.0,auto_accept,,false,contactless_not_working,true,1564,1.28576e-05
+test_00565,I tried to pay contactless at the bus today and it didn't work. Any ideas why?,deepseek/deepseek-v4-flash,v2,v1,contactless_not_working,97.04,auto_accept,,false,contactless_not_working,true,1463,1.30256e-05
+test_00567,Do you know why my contactless won't work?,deepseek/deepseek-v4-flash,v2,v1,contactless_not_working,100.0,auto_accept,,false,contactless_not_working,true,1158,1.27736e-05
+test_00568,My contactless payments have not been completed successfully.,deepseek/deepseek-v4-flash,v2,v1,contactless_not_working,99.99,auto_accept,,false,contactless_not_working,true,1146,1.29696e-05
+test_00572,Contactless isn't working for me,deepseek/deepseek-v4-flash,v2,v1,contactless_not_working,100.0,auto_accept,,false,contactless_not_working,true,1171,1.26896e-05
+test_00573,Why wouldn't the contactless payment work when I tried to pay at the bus today?,deepseek/deepseek-v4-flash,v2,v1,contactless_not_working,99.47,auto_accept,,false,contactless_not_working,true,993,1.29696e-05
+test_00581,I'm unable to use contactless payments for purchases.,deepseek/deepseek-v4-flash,v2,v1,contactless_not_working,100.0,auto_accept,,false,contactless_not_working,true,945,1.27736e-05
+test_00582,"When I tried to pay for my bus ride, the contactless payment wouldn't work. How can I prevent this in the future?",deepseek/deepseek-v4-flash,v2,v1,contactless_not_working,99.85,auto_accept,,false,contactless_not_working,true,1556,1.32216e-05
+test_00594,How can I fix a problem where contactless isn't working?,deepseek/deepseek-v4-flash,v2,v1,contactless_not_working,100.0,auto_accept,,false,contactless_not_working,true,2167,1.28296e-05
+test_00596,How do I enable contactless pay?,deepseek/deepseek-v4-flash,v2,v1,contactless_not_working,100.0,auto_accept,,false,contactless_not_working,true,1400,1.26896e-05
+test_00597,Do I need to make a regular payment before a contactless one?,deepseek/deepseek-v4-flash,v2,v1,contactless_not_working,99.95,auto_accept,,false,contactless_not_working,true,1204,1.28576e-05
+test_00598,How can I find out where my contactless works?,deepseek/deepseek-v4-flash,v2,v1,contactless_not_working,99.99,auto_accept,,false,contactless_not_working,true,1255,1.27736e-05
+test_00599,Should i reinstall the payment app?,deepseek/deepseek-v4-flash,v2,v1,contactless_not_working,6.73,review,keyword_miss,true,contactless_not_working,true,1155,1.26896e-05
+test_00601,I would like to make a transfer. How much does it cost?,deepseek/deepseek-v4-flash,v2,v1,transfer_fee_charged,99.96,auto_accept,,false,top_up_by_bank_transfer_charge,false,1601,1.28576e-05
+test_00602,"I need to make a transfer, what will the fee be?",deepseek/deepseek-v4-flash,v2,v1,transfer_fee_charged,99.95,auto_accept,,false,top_up_by_bank_transfer_charge,false,1678,1.28296e-05
+test_00605,Are SWIFT transfers accepted?,deepseek/deepseek-v4-flash,v2,v1,country_support,64.69,review,keyword_miss,true,top_up_by_bank_transfer_charge,false,1317,1.25216e-05
+test_00610,Do I have to pay any fees in order to receive money?,deepseek/deepseek-v4-flash,v2,v1,receiving_money,99.98,auto_accept,,false,top_up_by_bank_transfer_charge,false,1342,1.27736e-05
+test_00612,Will you deal with SWIFT transfers?,deepseek/deepseek-v4-flash,v2,v1,fiat_currency_support,23.6,review,keyword_miss,true,top_up_by_bank_transfer_charge,false,1310,1.27456e-05
+test_00613,Will there be any charges for money received?,deepseek/deepseek-v4-flash,v2,v1,receiving_money,99.93,auto_accept,,false,top_up_by_bank_transfer_charge,false,1278,1.26616e-05
+test_00617,Will I be charged if someone needs to send me money?,deepseek/deepseek-v4-flash,v2,v1,receiving_money,99.86,auto_accept,,false,top_up_by_bank_transfer_charge,false,1452,1.27456e-05
+test_00620,What are the charges for receiving money?,deepseek/deepseek-v4-flash,v2,v1,receiving_money,99.94,auto_accept,,false,top_up_by_bank_transfer_charge,false,118989,1.26336e-05
+test_00621,What is the fee to receive money?,deepseek/deepseek-v4-flash,v2,v1,receiving_money,99.84,auto_accept,,false,top_up_by_bank_transfer_charge,false,2142,1.26336e-05
+test_00626,Do you do SWIFT transfers?,deepseek/deepseek-v4-flash,v2,v1,country_support,53.93,review,keyword_miss,true,top_up_by_bank_transfer_charge,false,1943,1.25496e-05
+test_00632,Can you tell me what the transfer policy is?,deepseek/deepseek-v4-flash,v2,v1,transfer_timing,94.84,auto_accept,,false,top_up_by_bank_transfer_charge,false,1193,1.26336e-05
+test_00637,Do I get charged if i am getting money?,deepseek/deepseek-v4-flash,v2,v1,receiving_money,99.64,auto_accept,,false,top_up_by_bank_transfer_charge,false,1221,1.26896e-05
+test_00642,What would lead to my top up still pending?,deepseek/deepseek-v4-flash,v2,v1,pending_top_up,99.98,auto_accept,,false,pending_top_up,true,1542,1.26336e-05
+test_00644,Is there a reason my top up hasn't gone through,deepseek/deepseek-v4-flash,v2,v1,top_up_failed,99.81,auto_accept,,false,pending_top_up,false,1433,1.27456e-05
+test_00647,"I've already topped up, but I cannot see the funds being available. What happened?",deepseek/deepseek-v4-flash,v2,v1,balance_not_updated_after_bank_transfer,52.2,review,keyword_miss,true,pending_top_up,false,1806,1.32496e-05
+test_00649,I  do not see a top-up processed.,deepseek/deepseek-v4-flash,v2,v1,pending_top_up,77.31,auto_accept,,false,pending_top_up,true,1895,1.26336e-05
+test_00650,I topped up but it didn't complete,deepseek/deepseek-v4-flash,v2,v1,top_up_failed,99.99,auto_accept,,false,pending_top_up,false,1286,1.26616e-05
+test_00651,"So, I am a new customer and attempted to top up for the very first time today. It's already been pending for half an hour and doesn't seem to be working. I need to please get this fixed.",deepseek/deepseek-v4-flash,v2,v1,pending_top_up,97.7,auto_accept,,false,pending_top_up,true,3469,1.35856e-05
+test_00654,Can you please make my top up go through as soon as possible. I really need the money and it has been pending for an hour already.,deepseek/deepseek-v4-flash,v2,v1,pending_top_up,99.94,auto_accept,,false,pending_top_up,true,1460,1.31656e-05
+test_00655,"What's going on with the top-up? All it says is pending, pending, pending! I use your service several times a week and have never had a problem before! What's going on here?",deepseek/deepseek-v4-flash,v2,v1,pending_top_up,99.99,auto_accept,,false,pending_top_up,true,2022,1.35016e-05
+test_00657,top-up is slow to process,deepseek/deepseek-v4-flash,v2,v1,pending_top_up,99.32,auto_accept,,false,pending_top_up,true,1708,1.25496e-05
+test_00662,So I just put my top-up into the card and it hasn't changed.,deepseek/deepseek-v4-flash,v2,v1,balance_not_updated_after_bank_transfer,90.99,review,keyword_miss,true,pending_top_up,false,2095,1.31936e-05
+test_00670,"My top up hasn't worked, it's been stuck in pending for the last couple hours",deepseek/deepseek-v4-flash,v2,v1,pending_top_up,88.08,auto_accept,,false,pending_top_up,true,1583,1.28856e-05
+test_00676,Topping up my card is not working because I believe the top up is pending,deepseek/deepseek-v4-flash,v2,v1,pending_top_up,85.19,auto_accept,,false,pending_top_up,true,6299,1.28296e-05
+test_00677,When will my top-up process?,deepseek/deepseek-v4-flash,v2,v1,pending_top_up,77.67,auto_accept,,false,pending_top_up,true,1735,1.25496e-05
+test_00678,"The top-up has a definite problem! I regularly use your service and haven't had a problem before, but now the top-up just shows pending. Please tell my why it continues to show pending.",deepseek/deepseek-v4-flash,v2,v1,pending_top_up,99.97,auto_accept,,false,pending_top_up,true,1240,1.34736e-05
+test_00679,"I tried topping up but my funds seem to be pending. I want to buy something right now, what do I do?",deepseek/deepseek-v4-flash,v2,v1,pending_top_up,100.0,auto_accept,,false,pending_top_up,true,1868,1.30536e-05
+test_00680,I made a transaction this morning and would like to revert it.,deepseek/deepseek-v4-flash,v2,v1,reverted_card_payment?,91.81,review,keyword_miss,true,cancel_transfer,false,2155,1.28296e-05
+test_00682,Can I cancel my transaction?,deepseek/deepseek-v4-flash,v2,v1,cancel_transfer,100.0,auto_accept,,false,cancel_transfer,true,1152,1.25216e-05
+test_00685,I need you to cancel a transfer that I made.  It is the wrong account number and the app won't let me stop the transaction.  Please stop it!,deepseek/deepseek-v4-flash,v2,v1,cancel_transfer,99.99,auto_accept,,false,cancel_transfer,true,1401,1.33056e-05
+test_00691,I accidentally made a transaction to the wrong account.,deepseek/deepseek-v4-flash,v2,v1,cancel_transfer,79.14,auto_accept,,false,cancel_transfer,true,1332,1.26336e-05
+test_00693,Help me cancel my transaction,deepseek/deepseek-v4-flash,v2,v1,cancel_transfer,100.0,auto_accept,,false,cancel_transfer,true,1639,1.25216e-05
+test_00695,Can I cancel a transfer,deepseek/deepseek-v4-flash,v2,v1,cancel_transfer,100.0,auto_accept,,false,cancel_transfer,true,1267,1.25216e-05
+test_00700,I transferred the wrong amount and would like to cancel the transaction.,deepseek/deepseek-v4-flash,v2,v1,cancel_transfer,100.0,auto_accept,,false,cancel_transfer,true,1264,1.27176e-05
+test_00705,I submitted a transaction to the incorrect account.,deepseek/deepseek-v4-flash,v2,v1,beneficiary_not_allowed,19.61,review,keyword_miss,true,cancel_transfer,false,71658,1.27736e-05
+test_00707,I want to go back on what I did this morning,deepseek/deepseek-v4-flash,v2,v1,reverted_card_payment?,94.01,auto_accept,,false,cancel_transfer,false,9185,1.28016e-05
+test_00718,Can I change the amount I made on a payment that I made to the payment is correct.,deepseek/deepseek-v4-flash,v2,v1,cancel_transfer,66.14,auto_accept,,false,cancel_transfer,true,1220,1.28856e-05
+test_00727,what is the top up limit,deepseek/deepseek-v4-flash,v2,v1,top_up_limits,100.0,auto_accept,,false,top_up_limits,true,2057,1.26056e-05
+test_00729,Do you have a limit to top ups?,deepseek/deepseek-v4-flash,v2,v1,top_up_limits,100.0,auto_accept,,false,top_up_limits,true,1800,1.26616e-05
+test_00736,Tell me if there are any top-up limits?,deepseek/deepseek-v4-flash,v2,v1,top_up_limits,100.0,auto_accept,,false,top_up_limits,true,1377,1.26896e-05
+test_00741,When I top up what are the amoutn limits.,deepseek/deepseek-v4-flash,v2,v1,top_up_limits,100.0,auto_accept,,false,top_up_limits,true,1313,1.27456e-05
+test_00742,Is there a limit on top-ups?,deepseek/deepseek-v4-flash,v2,v1,top_up_limits,99.99,auto_accept,,false,top_up_limits,true,1569,1.26336e-05
+test_00744,Are there limits to top-ups?,deepseek/deepseek-v4-flash,v2,v1,top_up_limits,99.99,auto_accept,,false,top_up_limits,true,1438,1.26056e-05
+test_00746,Do you have a top-up limit?,deepseek/deepseek-v4-flash,v2,v1,top_up_limits,100.0,auto_accept,,false,top_up_limits,true,1414,1.26336e-05
+test_00748,What is the limit to top-up?,deepseek/deepseek-v4-flash,v2,v1,top_up_limits,99.99,auto_accept,,false,top_up_limits,true,1301,1.26336e-05
+test_00755,Is there a maximum i can top up?,deepseek/deepseek-v4-flash,v2,v1,top_up_limits,100.0,auto_accept,,false,top_up_limits,true,1657,1.26616e-05
+test_00756,How can I tell if there is a top-up limit?,deepseek/deepseek-v4-flash,v2,v1,top_up_limits,100.0,auto_accept,,false,top_up_limits,true,1638,1.27456e-05
+test_00759,What are the top-up limits?,deepseek/deepseek-v4-flash,v2,v1,top_up_limits,100.0,auto_accept,,false,top_up_limits,true,1553,1.26056e-05
+test_00761,I didn't get all the cash I requested for at the ATM,deepseek/deepseek-v4-flash,v2,v1,wrong_amount_of_cash_received,97.61,auto_accept,,false,wrong_amount_of_cash_received,true,1245,1.29696e-05
+test_00764,I got less cash than the one I specified in the ATM,deepseek/deepseek-v4-flash,v2,v1,wrong_amount_of_cash_received,99.11,auto_accept,,false,wrong_amount_of_cash_received,true,1508,1.29416e-05
+test_00765,The amount of cash I received was incorrect,deepseek/deepseek-v4-flash,v2,v1,wrong_amount_of_cash_received,100.0,auto_accept,,false,wrong_amount_of_cash_received,true,5499,1.28296e-05
+test_00767,The ATM gave me the wrong amount of cash today when I went to withdraw. The app says it was more.,deepseek/deepseek-v4-flash,v2,v1,wrong_amount_of_cash_received,99.99,auto_accept,,false,wrong_amount_of_cash_received,true,2080,1.32216e-05
+test_00772,"How can I request cash back? The ATM just gave me the wrong amount, the app shows the amount that I've been actually charged though...",deepseek/deepseek-v4-flash,v2,v1,wrong_amount_of_cash_received,99.86,auto_accept,,false,wrong_amount_of_cash_received,true,1689,1.33896e-05
+test_00776,Why did I only get $20 when I tried to get $100,deepseek/deepseek-v4-flash,v2,v1,wrong_amount_of_cash_received,67.19,auto_accept,,false,wrong_amount_of_cash_received,true,1362,1.29976e-05
+test_00781,I asked for $100 cash but only got $20?,deepseek/deepseek-v4-flash,v2,v1,wrong_amount_of_cash_received,99.99,auto_accept,,false,wrong_amount_of_cash_received,true,1862,1.29136e-05
+test_00783,I withdrew money but the full amount wasn't dispensed.,deepseek/deepseek-v4-flash,v2,v1,wrong_amount_of_cash_received,91.45,auto_accept,,false,wrong_amount_of_cash_received,true,1460,1.29136e-05
+test_00785,I have got out the wrong amount from an ATM. Please tell me the process to get the cash back as in app its showing the amount i have been actually received.,deepseek/deepseek-v4-flash,v2,v1,wrong_amount_of_cash_received,98.13,auto_accept,,false,wrong_amount_of_cash_received,true,1992,1.35296e-05
+test_00787,I didn't receive the right amount of cash back,deepseek/deepseek-v4-flash,v2,v1,wrong_amount_of_cash_received,100.0,auto_accept,,false,wrong_amount_of_cash_received,true,1515,1.28856e-05
+test_00789,"I didn't get as much cash as I asked for from the ATM, why?",deepseek/deepseek-v4-flash,v2,v1,wrong_amount_of_cash_received,99.79,auto_accept,,false,wrong_amount_of_cash_received,true,1764,1.30536e-05
+test_00790,What do I do if the ATM didn't give me the correct amount I withdrew? I pulled out 30 pounds and the ATM gave me 10 pounds.,deepseek/deepseek-v4-flash,v2,v1,wrong_amount_of_cash_received,99.68,auto_accept,,false,wrong_amount_of_cash_received,true,2051,1.34736e-05
+test_00794,The right amount of cash was not sent to me.,deepseek/deepseek-v4-flash,v2,v1,wrong_amount_of_cash_received,99.97,auto_accept,,false,wrong_amount_of_cash_received,true,1369,1.28856e-05
+test_00798,did not receive correct cash upon withdrawal,deepseek/deepseek-v4-flash,v2,v1,wrong_amount_of_cash_received,99.94,auto_accept,,false,wrong_amount_of_cash_received,true,1934,1.28016e-05
+test_00801,I was charged a fee after using my card and I shouldn't have been.,deepseek/deepseek-v4-flash,v2,v1,card_payment_fee_charged,99.96,auto_accept,,false,card_payment_fee_charged,true,1563,1.30256e-05
+test_00802,Is there a reason I was charged a fee for using my card as payment? I've never had an extra fee before.,deepseek/deepseek-v4-flash,v2,v1,card_payment_fee_charged,99.99,auto_accept,,false,card_payment_fee_charged,true,1706,1.32776e-05
+test_00803,"I show another charge on my card from when I used it, why?",deepseek/deepseek-v4-flash,v2,v1,card_payment_not_recognised,99.7,auto_accept,,false,card_payment_fee_charged,false,1682,1.29976e-05
+test_00805,I used my card for a purchase and was charged a fee,deepseek/deepseek-v4-flash,v2,v1,card_payment_fee_charged,100.0,auto_accept,,false,card_payment_fee_charged,true,1301,1.29416e-05
+test_00807,There is an unauthorized fee.,deepseek/deepseek-v4-flash,v2,v1,extra_charge_on_statement,87.54,auto_accept,,false,card_payment_fee_charged,false,1510,1.26896e-05
+test_00809,Why was I charged an extra fee when paying with my card?,deepseek/deepseek-v4-flash,v2,v1,card_payment_fee_charged,99.58,auto_accept,,false,card_payment_fee_charged,true,2498,1.29416e-05
+test_00810,Why did I have to pay extra because I paid with card?,deepseek/deepseek-v4-flash,v2,v1,card_payment_fee_charged,98.76,auto_accept,,false,card_payment_fee_charged,true,1594,1.29416e-05
+test_00811,Why are there fees for card usage?,deepseek/deepseek-v4-flash,v2,v1,card_payment_fee_charged,99.5,auto_accept,,false,card_payment_fee_charged,true,1391,1.28016e-05
+test_00812,im not sure what this charge is for,deepseek/deepseek-v4-flash,v2,v1,card_payment_not_recognised,99.02,review,keyword_miss,true,card_payment_fee_charged,false,1369,1.28296e-05
+test_00817,I have been charged a fee for paying with card,deepseek/deepseek-v4-flash,v2,v1,card_payment_fee_charged,100.0,auto_accept,,false,card_payment_fee_charged,true,2132,1.28856e-05
+test_00819,Why would I be charged a fee for card payment?,deepseek/deepseek-v4-flash,v2,v1,card_payment_fee_charged,99.98,auto_accept,,false,card_payment_fee_charged,true,1423,1.28856e-05
+test_00829,Someone needs to make me aware when there are extra charges for payments. I happened to be looking at the app earlier and noticed a charge associated to a payment that was extra that no one made me aware of before at all.,deepseek/deepseek-v4-flash,v2,v1,card_payment_fee_charged,14.8,auto_accept,,false,card_payment_fee_charged,true,1698,1.38376e-05
+test_00831,Why was I charged an extra fee when using a card?,deepseek/deepseek-v4-flash,v2,v1,card_payment_fee_charged,99.31,auto_accept,,false,card_payment_fee_charged,true,2083,1.29136e-05
+test_00834,Why was I charged a fee when I paid with card?,deepseek/deepseek-v4-flash,v2,v1,card_payment_fee_charged,99.97,auto_accept,,false,card_payment_fee_charged,true,10369,1.29136e-05
+test_00838,Why was a charged a fee for using the card?,deepseek/deepseek-v4-flash,v2,v1,card_payment_fee_charged,99.95,auto_accept,,false,card_payment_fee_charged,true,1094,1.28856e-05
+test_00839,They charged me for paying with my card.,deepseek/deepseek-v4-flash,v2,v1,card_payment_fee_charged,98.11,auto_accept,,false,card_payment_fee_charged,true,1789,1.28296e-05
+test_00840,"I completed an in country transfer a few days ago and was sure to check the account information several times since the transaction was completed, but the funds are still not available. What is the problem?",deepseek/deepseek-v4-flash,v2,v1,transfer_not_received_by_recipient,69.1,auto_accept,,false,transfer_not_received_by_recipient,true,1566,1.37256e-05
+test_00842,I am still waiting for a transaction to be completed,deepseek/deepseek-v4-flash,v2,v1,pending_transfer,99.31,auto_accept,,false,transfer_not_received_by_recipient,false,2256,1.26616e-05
+test_00844,I tried to send someone money but they haven't received it.,deepseek/deepseek-v4-flash,v2,v1,transfer_not_received_by_recipient,95.76,auto_accept,,false,transfer_not_received_by_recipient,true,1228,1.29976e-05
+test_00845,How long does it take for a transfer to get to a recipient?,deepseek/deepseek-v4-flash,v2,v1,transfer_timing,100.0,auto_accept,,false,transfer_not_received_by_recipient,false,1389,1.27456e-05
+test_00847,I transferred money but the recipient says it has not arrived. Why would this be?,deepseek/deepseek-v4-flash,v2,v1,transfer_not_received_by_recipient,99.98,auto_accept,,false,transfer_not_received_by_recipient,true,1202,1.31096e-05
+test_00857,I need to find out why my transfer didn't get there.,deepseek/deepseek-v4-flash,v2,v1,transfer_not_received_by_recipient,7.05,auto_accept,,false,transfer_not_received_by_recipient,true,1560,1.29976e-05
+test_00859,I sent money.  They haven't received it.,deepseek/deepseek-v4-flash,v2,v1,transfer_not_received_by_recipient,99.97,auto_accept,,false,transfer_not_received_by_recipient,true,2561,1.29416e-05
+test_00862,"I'm having a problem with a money transfer.  I sent some money to a friend a couple of hours ago, and they haven't received it yet.  Why hasn't it gotten to them? How long do transfers need to go through?",deepseek/deepseek-v4-flash,v2,v1,transfer_timing,98.2,auto_accept,,false,transfer_not_received_by_recipient,false,1306,1.37536e-05
+test_00864,Where is the transaction I made to a friend?,deepseek/deepseek-v4-flash,v2,v1,transfer_not_received_by_recipient,53.26,auto_accept,,false,transfer_not_received_by_recipient,true,1648,1.29136e-05
+test_00867,I made a transaction and it is taking a very long time to go through.,deepseek/deepseek-v4-flash,v2,v1,pending_transfer,99.29,auto_accept,,false,transfer_not_received_by_recipient,false,1144,1.28016e-05
+test_00869,How long will it take for my transaction to be completed?,deepseek/deepseek-v4-flash,v2,v1,transfer_timing,99.87,auto_accept,,false,transfer_not_received_by_recipient,false,1352,1.26896e-05
+test_00871,I sent my friend some money a few hours ago but she has not received it yet. She really needs it. How long does this take?,deepseek/deepseek-v4-flash,v2,v1,transfer_timing,99.67,auto_accept,,false,transfer_not_received_by_recipient,false,942,1.31656e-05
+test_00874,"How long does it take for transfers to finish?  I sent funds to my pal, and she says that she has not gotten anything.",deepseek/deepseek-v4-flash,v2,v1,transfer_timing,85.19,auto_accept,,false,transfer_not_received_by_recipient,false,2557,1.31376e-05
+test_00879,I transferred some money but the recipient is having trouble withdrawing.,deepseek/deepseek-v4-flash,v2,v1,transfer_not_received_by_recipient,98.89,auto_accept,,false,transfer_not_received_by_recipient,true,1915,1.29696e-05
+test_00881,"I need support options, I want to top my card",deepseek/deepseek-v4-flash,v2,v1,topping_up_by_card,98.55,auto_accept,,false,supported_cards_and_currencies,false,1461,1.28016e-05
+test_00887,"If I only have 1 other US card, can you take it?",deepseek/deepseek-v4-flash,v2,v1,card_linking,94.21,auto_accept,,false,supported_cards_and_currencies,false,1311,1.27736e-05
+test_00889,can you tell me what cards and currencies you take?,deepseek/deepseek-v4-flash,v2,v1,supported_cards_and_currencies,100.0,auto_accept,,false,supported_cards_and_currencies,true,1536,1.28856e-05
+test_00897,What cards and currencies do you support?,deepseek/deepseek-v4-flash,v2,v1,supported_cards_and_currencies,100.0,auto_accept,,false,supported_cards_and_currencies,true,1251,1.30256e-05
+test_00900,"When adding money, what are the currencies you take?",deepseek/deepseek-v4-flash,v2,v1,fiat_currency_support,96.15,auto_accept,,false,supported_cards_and_currencies,false,1685,1.28296e-05
+test_00903,"I want to add money but don't know what currencies you accept, can you tell me?",deepseek/deepseek-v4-flash,v2,v1,fiat_currency_support,72.82,auto_accept,,false,supported_cards_and_currencies,false,1452,1.30536e-05
+test_00907,Which credit or debit cards can I use to top up?,deepseek/deepseek-v4-flash,v2,v1,supported_cards_and_currencies,68.4,auto_accept,,false,supported_cards_and_currencies,true,1279,1.29136e-05
+test_00911,What cards to do you support to top up.,deepseek/deepseek-v4-flash,v2,v1,supported_cards_and_currencies,99.66,auto_accept,,false,supported_cards_and_currencies,true,963,1.28576e-05
+test_00912,Do you accept other currencies besides US Dollars?,deepseek/deepseek-v4-flash,v2,v1,fiat_currency_support,95.98,auto_accept,,false,supported_cards_and_currencies,false,1611,1.27736e-05
+test_00926,Can you tell me how to order a virtual card?,deepseek/deepseek-v4-flash,v2,v1,get_disposable_virtual_card,21.84,auto_accept,,false,getting_virtual_card,false,1550,1.28296e-05
+test_00927,Where is the virtual card?,deepseek/deepseek-v4-flash,v2,v1,getting_virtual_card,37.88,auto_accept,,false,getting_virtual_card,true,1295,1.25776e-05
+test_00929,how do i get a virtual card?,deepseek/deepseek-v4-flash,v2,v1,getting_virtual_card,85.16,auto_accept,,false,getting_virtual_card,true,1594,1.26336e-05
+test_00930,Where do I order a virtual card from?,deepseek/deepseek-v4-flash,v2,v1,getting_virtual_card,46.78,auto_accept,,false,getting_virtual_card,true,1014,1.26616e-05
+test_00932,How can I order virtual cards?,deepseek/deepseek-v4-flash,v2,v1,get_disposable_virtual_card,48.38,auto_accept,,false,getting_virtual_card,false,1077,1.27176e-05
+test_00937,help me obtain a virtual card,deepseek/deepseek-v4-flash,v2,v1,getting_virtual_card,56.18,auto_accept,,false,getting_virtual_card,true,1228,1.26056e-05
+test_00940,Where do I obtain my virtual card?,deepseek/deepseek-v4-flash,v2,v1,getting_virtual_card,56.16,auto_accept,,false,getting_virtual_card,true,3394,1.26336e-05
+test_00942,I want one of those virtual cards!,deepseek/deepseek-v4-flash,v2,v1,get_disposable_virtual_card,83.56,auto_accept,,false,getting_virtual_card,false,1348,1.29696e-05
+test_00944,Can you help me sign up for a virtual card?,deepseek/deepseek-v4-flash,v2,v1,getting_virtual_card,56.04,auto_accept,,false,getting_virtual_card,true,2042,1.27176e-05
+test_00945,Can I get a copy of the card by email?,deepseek/deepseek-v4-flash,v2,v1,get_physical_card,41.23,auto_accept,,false,getting_virtual_card,false,1487,1.27176e-05
+test_00949,"I thought I was going to get a virtual card but I haven't received it yet, how can we resolve this?",deepseek/deepseek-v4-flash,v2,v1,getting_virtual_card,87.62,auto_accept,,false,getting_virtual_card,true,1110,1.30816e-05
+test_00952,Where can I go to get a virtual card?,deepseek/deepseek-v4-flash,v2,v1,get_disposable_virtual_card,88.06,auto_accept,,false,getting_virtual_card,false,1542,1.28016e-05
+test_00962,Can I use my card for payment all over the world?,deepseek/deepseek-v4-flash,v2,v1,country_support,90.46,review,keyword_miss,true,card_acceptance,false,1477,1.26896e-05
+test_00964,Where can the card be used?,deepseek/deepseek-v4-flash,v2,v1,card_acceptance,99.59,auto_accept,,false,card_acceptance,true,1293,1.26056e-05
+test_00965,Can my card be used everywhere?,deepseek/deepseek-v4-flash,v2,v1,card_acceptance,99.98,auto_accept,,false,card_acceptance,true,2044,1.26056e-05
+test_00978,Which outlets accept my card?,deepseek/deepseek-v4-flash,v2,v1,card_acceptance,100.0,auto_accept,,false,card_acceptance,true,1764,1.25776e-05
+test_00979,"I am traveling to Germany, Will I be able to use my card there?",deepseek/deepseek-v4-flash,v2,v1,country_support,99.48,review,keyword_miss,true,card_acceptance,false,1753,1.28016e-05
+test_00990,places i can use the card,deepseek/deepseek-v4-flash,v2,v1,card_acceptance,99.88,auto_accept,,false,card_acceptance,true,3483,1.26056e-05
+test_00998,What can I use my card to pay for?,deepseek/deepseek-v4-flash,v2,v1,card_acceptance,99.99,auto_accept,,false,card_acceptance,true,1124,1.26896e-05
+test_00999,Who accepts my card?,deepseek/deepseek-v4-flash,v2,v1,card_acceptance,100.0,auto_accept,,false,card_acceptance,true,1150,1.25496e-05
+test_01001,How do I fix a reverted top up?,deepseek/deepseek-v4-flash,v2,v1,top_up_reverted,99.99,auto_accept,,false,top_up_reverted,true,1540,1.26896e-05
+test_01003,"My top-up showed as complete, but it's no longer there! What's going on here?",deepseek/deepseek-v4-flash,v2,v1,top_up_reverted,99.22,auto_accept,,false,top_up_reverted,true,976,1.29696e-05
+test_01005,It seems my top up is reverted?,deepseek/deepseek-v4-flash,v2,v1,top_up_reverted,100.0,auto_accept,,false,top_up_reverted,true,2141,1.26616e-05
+test_01010,I put money into my account for the minimum balance but the application didn't accept.,deepseek/deepseek-v4-flash,v2,v1,top_up_failed,98.19,review,keyword_miss,true,top_up_reverted,false,1483,1.28856e-05
+test_01011,Can you tell me if my top-up has been cancelled?,deepseek/deepseek-v4-flash,v2,v1,pending_top_up,7.24,auto_accept,,false,top_up_reverted,false,1115,1.26896e-05
+test_01017,I believed crypto top up with something you offered. This does not seem to be working. The money has been removed from my account though so what's going on?,deepseek/deepseek-v4-flash,v2,v1,top_up_failed,99.81,auto_accept,,false,top_up_reverted,false,1181,1.33336e-05
+test_01018,I topped up but the app reverted it,deepseek/deepseek-v4-flash,v2,v1,top_up_reverted,99.99,auto_accept,,false,top_up_reverted,true,1950,1.26896e-05
+test_01023,"When I topped up, the app reverted my funds.",deepseek/deepseek-v4-flash,v2,v1,top_up_reverted,99.99,auto_accept,,false,top_up_reverted,true,1451,1.27456e-05
+test_01025,I tryed to make a top-up with cryptocurrency but the payment was referted.,deepseek/deepseek-v4-flash,v2,v1,top_up_reverted,99.41,auto_accept,,false,top_up_reverted,true,1646,1.28856e-05
+test_01027,The app reverted my action when I topped up.,deepseek/deepseek-v4-flash,v2,v1,top_up_reverted,99.91,auto_accept,,false,top_up_reverted,true,1510,1.27176e-05
+test_01029,"I see my top-up was canceled, but why?",deepseek/deepseek-v4-flash,v2,v1,top_up_failed,37.67,auto_accept,,false,top_up_reverted,false,2471,1.27176e-05
+test_01032,My top-up was revoked.,deepseek/deepseek-v4-flash,v2,v1,top_up_reverted,100.0,auto_accept,,false,top_up_reverted,true,1239,1.25776e-05
+test_01034,The app reverted what I topped up.,deepseek/deepseek-v4-flash,v2,v1,top_up_reverted,99.99,auto_accept,,false,top_up_reverted,true,1493,1.26616e-05
+test_01036,Im very upset as my top-up was canceled and I have no idea why.,deepseek/deepseek-v4-flash,v2,v1,top_up_failed,99.95,auto_accept,,false,top_up_reverted,false,1313,1.28576e-05
+test_01037,My top-up has been cancelled.,deepseek/deepseek-v4-flash,v2,v1,top_up_reverted,37.32,auto_accept,,false,top_up_reverted,true,1408,1.26056e-05
+test_01041,How come I don't see my deposit in my account yet?,deepseek/deepseek-v4-flash,v2,v1,balance_not_updated_after_bank_transfer,99.36,review,keyword_miss,true,balance_not_updated_after_cheque_or_cash_deposit,false,1497,1.31096e-05
+test_01044,I made a cash deposit almost a week ago but it's still not there!! please sort this out asap I need the money,deepseek/deepseek-v4-flash,v2,v1,balance_not_updated_after_cheque_or_cash_deposit,99.92,auto_accept,,false,balance_not_updated_after_cheque_or_cash_deposit,true,1331,1.37816e-05
+test_01047,When will I see the cash I deposited this morning as available?,deepseek/deepseek-v4-flash,v2,v1,balance_not_updated_after_cheque_or_cash_deposit,96.02,auto_accept,,false,balance_not_updated_after_cheque_or_cash_deposit,true,1738,1.36136e-05
+test_01048,cash from this morning has not deposited,deepseek/deepseek-v4-flash,v2,v1,balance_not_updated_after_bank_transfer,74.14,review,keyword_miss,true,balance_not_updated_after_cheque_or_cash_deposit,false,1144,1.29696e-05
+test_01052,I made a deposit this morning but it is still pending?,deepseek/deepseek-v4-flash,v2,v1,pending_top_up,98.3,auto_accept,,false,balance_not_updated_after_cheque_or_cash_deposit,false,1407,1.26896e-05
+test_01053,cash deposit to my account has shown a red flag.,deepseek/deepseek-v4-flash,v2,v1,balance_not_updated_after_cheque_or_cash_deposit,98.48,auto_accept,,false,balance_not_updated_after_cheque_or_cash_deposit,true,1175,1.33336e-05
+test_01055,The balance on my account wasn't updated after I made a depost.,deepseek/deepseek-v4-flash,v2,v1,balance_not_updated_after_cheque_or_cash_deposit,56.21,auto_accept,,false,balance_not_updated_after_cheque_or_cash_deposit,true,2530,1.34456e-05
+test_01057,I deposited a check but my balance is still the same.,deepseek/deepseek-v4-flash,v2,v1,balance_not_updated_after_cheque_or_cash_deposit,99.97,auto_accept,,false,balance_not_updated_after_cheque_or_cash_deposit,true,2120,1.33616e-05
+test_01061,My bank statement doesn't show the cash deposit I made recently.,deepseek/deepseek-v4-flash,v2,v1,balance_not_updated_after_cheque_or_cash_deposit,99.94,auto_accept,,false,balance_not_updated_after_cheque_or_cash_deposit,true,1403,1.33896e-05
+test_01064,Why is the cash deposit not showing up in my account?,deepseek/deepseek-v4-flash,v2,v1,balance_not_updated_after_cheque_or_cash_deposit,99.8,auto_accept,,false,balance_not_updated_after_cheque_or_cash_deposit,true,2385,1.33616e-05
+test_01068,What happened to the cash that I tried to deposit into my account? It's gone!,deepseek/deepseek-v4-flash,v2,v1,balance_not_updated_after_cheque_or_cash_deposit,97.33,auto_accept,,false,balance_not_updated_after_cheque_or_cash_deposit,true,1493,1.35296e-05
+test_01071,I submitted a cash deposit to my account but it hasn't posted yet.,deepseek/deepseek-v4-flash,v2,v1,balance_not_updated_after_cheque_or_cash_deposit,99.9,auto_accept,,false,balance_not_updated_after_cheque_or_cash_deposit,true,1477,1.34456e-05
+test_01072,I sent a cheque  a few days ago and nothing has happened to my account yet. Can you please check on this for me?,deepseek/deepseek-v4-flash,v2,v1,balance_not_updated_after_cheque_or_cash_deposit,99.7,auto_accept,,false,balance_not_updated_after_cheque_or_cash_deposit,true,1531,1.37816e-05
+test_01073,Has the check I deposited cleared to I can get the cash?,deepseek/deepseek-v4-flash,v2,v1,balance_not_updated_after_cheque_or_cash_deposit,99.86,auto_accept,,false,balance_not_updated_after_cheque_or_cash_deposit,true,1300,1.33896e-05
+test_01075,How come my cash deposit is not showing up. This can't be right. There must be some mistake. Where did my cash go. You better not have lost it as I need this money asap.,deepseek/deepseek-v4-flash,v2,v1,balance_not_updated_after_cheque_or_cash_deposit,99.97,auto_accept,,false,balance_not_updated_after_cheque_or_cash_deposit,true,2391,1.42016e-05
+test_01078,I tired to deposit some cash into my account but it's not there,deepseek/deepseek-v4-flash,v2,v1,balance_not_updated_after_cheque_or_cash_deposit,94.46,auto_accept,,false,balance_not_updated_after_cheque_or_cash_deposit,true,2569,1.34456e-05
+test_01080,I have a strange payment in my statement,deepseek/deepseek-v4-flash,v2,v1,card_payment_not_recognised,99.83,auto_accept,,false,card_payment_not_recognised,true,1208,1.28296e-05
+test_01084,An unauthorized payment is in my app,deepseek/deepseek-v4-flash,v2,v1,card_payment_not_recognised,99.18,auto_accept,,false,card_payment_not_recognised,true,1077,1.28016e-05
+test_01089,I don't recall making that payment?,deepseek/deepseek-v4-flash,v2,v1,card_payment_not_recognised,99.9,auto_accept,,false,card_payment_not_recognised,true,1485,1.28016e-05
+test_01090,There are some payments with my card that I don't know where they are coming from. Just checked today and it's been since a couple days as well! What to I do? Can I revert this retrospectively? My card needs to be frozen immediately as well!,deepseek/deepseek-v4-flash,v2,v1,card_payment_not_recognised,81.38,auto_accept,,false,card_payment_not_recognised,true,1330,1.40616e-05
+test_01091,Has someone accessed my card there are payments I did not make that are showing up on the app.,deepseek/deepseek-v4-flash,v2,v1,card_payment_not_recognised,22.16,auto_accept,,false,card_payment_not_recognised,true,8302,1.31376e-05
+test_01093,Why would there be a payment on my account I don't recognize?,deepseek/deepseek-v4-flash,v2,v1,card_payment_not_recognised,97.7,auto_accept,,false,card_payment_not_recognised,true,11893,1.29696e-05
+test_01094,I have a payment I didn't do,deepseek/deepseek-v4-flash,v2,v1,card_payment_not_recognised,99.76,auto_accept,,false,card_payment_not_recognised,true,2249,1.28296e-05
+test_01097,There is a card payment I do not recognise.,deepseek/deepseek-v4-flash,v2,v1,card_payment_not_recognised,100.0,auto_accept,,false,card_payment_not_recognised,true,1902,1.28576e-05
+test_01100,"Please put a freeze on my card,  I am worried there has been some payments on it and I don't know what for.",deepseek/deepseek-v4-flash,v2,v1,compromised_card,99.42,auto_accept,,false,card_payment_not_recognised,false,1320,1.31656e-05
+test_01102,"I'm concerned about a payment that has recently been made on my card.  I do not recognize the name that the transaction went to, can you help me?",deepseek/deepseek-v4-flash,v2,v1,card_payment_not_recognised,100.0,auto_accept,,false,card_payment_not_recognised,true,1258,1.35016e-05
+test_01103,What should I do to get transactions off of my account if I didn't make them?  My card must have been compromised and I need to freeze it asap!,deepseek/deepseek-v4-flash,v2,v1,compromised_card,99.75,auto_accept,,false,card_payment_not_recognised,false,1271,1.33616e-05
+test_01105,What can I do about some payments on my card I didn't make.  Please put a freeze on my card till we can figure this out.,deepseek/deepseek-v4-flash,v2,v1,compromised_card,99.72,auto_accept,,false,card_payment_not_recognised,false,1372,1.32496e-05
+test_01106,I'm not familiar with a card payment.,deepseek/deepseek-v4-flash,v2,v1,card_payment_not_recognised,99.98,auto_accept,,false,card_payment_not_recognised,true,1541,1.28296e-05
+test_01110,I see a charge on my account that I don't recall making. I feel like my account may have been compromised.,deepseek/deepseek-v4-flash,v2,v1,compromised_card,77.46,auto_accept,,false,card_payment_not_recognised,false,2995,1.30816e-05
+test_01113,There's a recent charge on my card that I know I didn't make because I've never seen the name before. Can we investigate this?,deepseek/deepseek-v4-flash,v2,v1,card_payment_not_recognised,100.0,auto_accept,,false,card_payment_not_recognised,true,1647,1.33896e-05
+test_01114,Some of my card payments look different than where I purchased products from. Why is that?,deepseek/deepseek-v4-flash,v2,v1,card_payment_not_recognised,100.0,auto_accept,,false,card_payment_not_recognised,true,2419,1.30816e-05
+test_01116,I think there has been a purchase made that wasn't by me.,deepseek/deepseek-v4-flash,v2,v1,card_payment_not_recognised,99.98,review,keyword_miss,true,card_payment_not_recognised,true,3525,1.29696e-05
+test_01117,There is a fraudulent charge on my statement.,deepseek/deepseek-v4-flash,v2,v1,card_payment_not_recognised,93.85,review,keyword_miss,true,card_payment_not_recognised,true,1285,1.28296e-05
+test_01123,My address needs to be revised.,deepseek/deepseek-v4-flash,v2,v1,edit_personal_details,100.0,auto_accept,,false,edit_personal_details,true,1284,1.26056e-05
+test_01124,"got married, need to change account name",deepseek/deepseek-v4-flash,v2,v1,edit_personal_details,100.0,auto_accept,,false,edit_personal_details,true,1766,1.26616e-05
+test_01125,My address has changed.,deepseek/deepseek-v4-flash,v2,v1,edit_personal_details,100.0,auto_accept,,false,edit_personal_details,true,1118,1.25496e-05
+test_01127,I want to change my personal details.,deepseek/deepseek-v4-flash,v2,v1,edit_personal_details,100.0,auto_accept,,false,edit_personal_details,true,1291,1.26336e-05
+test_01128,I moved.  I need to update my details.,deepseek/deepseek-v4-flash,v2,v1,edit_personal_details,100.0,auto_accept,,false,edit_personal_details,true,1760,1.27176e-05
+test_01133,I need to change my account details,deepseek/deepseek-v4-flash,v2,v1,edit_personal_details,100.0,auto_accept,,false,edit_personal_details,true,1922,1.26336e-05
+test_01134,I moved.  Where do I update my details?,deepseek/deepseek-v4-flash,v2,v1,edit_personal_details,100.0,auto_accept,,false,edit_personal_details,true,1355,1.27176e-05
+test_01135,I relocated and need to change my personal details.,deepseek/deepseek-v4-flash,v2,v1,edit_personal_details,100.0,auto_accept,,false,edit_personal_details,true,1026,1.26896e-05
+test_01149,I want to change my address.,deepseek/deepseek-v4-flash,v2,v1,edit_personal_details,100.0,auto_accept,,false,edit_personal_details,true,2556,1.26056e-05
+test_01151,Can I change my information?,deepseek/deepseek-v4-flash,v2,v1,edit_personal_details,100.0,auto_accept,,false,edit_personal_details,true,1011,1.25776e-05
+test_01157,How can I edit my personal details?,deepseek/deepseek-v4-flash,v2,v1,edit_personal_details,100.0,auto_accept,,false,edit_personal_details,true,1515,1.26336e-05
+test_01159,What do I need to do to change the address on my account?,deepseek/deepseek-v4-flash,v2,v1,edit_personal_details,100.0,auto_accept,,false,edit_personal_details,true,1454,1.28016e-05
+test_01173,Why do you need so much information to verify my identity?,deepseek/deepseek-v4-flash,v2,v1,why_verify_identity,99.98,auto_accept,,false,why_verify_identity,true,1206,1.28016e-05
+test_01177,How come you need to know my identity?,deepseek/deepseek-v4-flash,v2,v1,why_verify_identity,99.98,auto_accept,,false,why_verify_identity,true,1394,1.27176e-05
+test_01178,"May I use my account now, even though the identity verification has not gone through yet?",deepseek/deepseek-v4-flash,v2,v1,unable_to_verify_identity,55.86,auto_accept,,false,why_verify_identity,false,1225,1.30816e-05
+test_01179,Do I need to verify my identity to use my account?,deepseek/deepseek-v4-flash,v2,v1,verify_my_identity,56.21,auto_accept,,false,why_verify_identity,false,1489,1.28016e-05
+test_01187,I won't verify my identity.,deepseek/deepseek-v4-flash,v2,v1,why_verify_identity,87.21,auto_accept,,false,why_verify_identity,true,1504,1.26616e-05
+test_01188,I want to skip verification of my identity.,deepseek/deepseek-v4-flash,v2,v1,why_verify_identity,29.92,auto_accept,,false,why_verify_identity,true,1522,1.27176e-05
+test_01190,Why do I have to verify my identity?,deepseek/deepseek-v4-flash,v2,v1,why_verify_identity,100.0,auto_accept,,false,why_verify_identity,true,1193,1.27176e-05
+test_01192,What other methods are there to verify my identity?,deepseek/deepseek-v4-flash,v2,v1,verify_my_identity,99.68,auto_accept,,false,why_verify_identity,false,1774,1.27456e-05
+test_01195,Can I use my account if the identity verification is not complete?,deepseek/deepseek-v4-flash,v2,v1,verify_my_identity,79.62,auto_accept,,false,why_verify_identity,false,1231,1.28296e-05
+test_01196,Why is it asking me to verify my identity,deepseek/deepseek-v4-flash,v2,v1,why_verify_identity,99.14,auto_accept,,false,why_verify_identity,true,1250,1.27456e-05
+test_01200,I cannot verify my identity,deepseek/deepseek-v4-flash,v2,v1,unable_to_verify_identity,67.91,auto_accept,,false,unable_to_verify_identity,true,2690,1.27456e-05
+test_01204,what do i do if my verification failed,deepseek/deepseek-v4-flash,v2,v1,unable_to_verify_identity,88.06,review,keyword_miss,true,unable_to_verify_identity,true,1864,1.28296e-05
+test_01207,I'm having trouble verifying my ID.,deepseek/deepseek-v4-flash,v2,v1,verify_my_identity,92.4,auto_accept,,false,unable_to_verify_identity,false,1198,1.26896e-05
+test_01208,app does not recognize me,deepseek/deepseek-v4-flash,v2,v1,unable_to_verify_identity,87.95,review,keyword_miss,true,unable_to_verify_identity,true,1597,1.27456e-05
+test_01210,The app failed to verify my identity.,deepseek/deepseek-v4-flash,v2,v1,verify_my_identity,56.21,auto_accept,,false,unable_to_verify_identity,false,1435,1.26896e-05
+test_01211,I can't verify my ID.,deepseek/deepseek-v4-flash,v2,v1,verify_my_identity,93.98,auto_accept,,false,unable_to_verify_identity,false,1564,1.26616e-05
+test_01213,I am not being recognized by the app.,deepseek/deepseek-v4-flash,v2,v1,unable_to_verify_identity,91.34,review,keyword_miss,true,unable_to_verify_identity,true,1829,1.28296e-05
+test_01216,I am having trouble proving my identity.,deepseek/deepseek-v4-flash,v2,v1,unable_to_verify_identity,81.75,auto_accept,,false,unable_to_verify_identity,true,2342,1.28016e-05
+test_01222,I am having difficulties to verify my identity.,deepseek/deepseek-v4-flash,v2,v1,verify_my_identity,90.44,auto_accept,,false,unable_to_verify_identity,false,1506,1.27176e-05
+test_01226,"I tried verifying my ID, but it won't let me.",deepseek/deepseek-v4-flash,v2,v1,verify_my_identity,98.9,auto_accept,,false,unable_to_verify_identity,false,1812,1.28296e-05
+test_01228,I am experiencing difficulty providing my identity.,deepseek/deepseek-v4-flash,v2,v1,unable_to_verify_identity,77.7,auto_accept,,false,unable_to_verify_identity,true,1392,1.28016e-05
+test_01229,I a having trouble proving my identity,deepseek/deepseek-v4-flash,v2,v1,unable_to_verify_identity,67.89,auto_accept,,false,unable_to_verify_identity,true,1309,1.28016e-05
+test_01231,Why am I not able to verify my id?,deepseek/deepseek-v4-flash,v2,v1,verify_my_identity,60.77,auto_accept,,false,unable_to_verify_identity,false,2502,1.27456e-05
+test_01233,app doesnt think its me,deepseek/deepseek-v4-flash,v2,v1,unable_to_verify_identity,56.18,review,keyword_miss,true,unable_to_verify_identity,true,1763,1.27456e-05
+test_01235,I am having issues with identity verification,deepseek/deepseek-v4-flash,v2,v1,verify_my_identity,85.08,auto_accept,,false,unable_to_verify_identity,false,2007,1.26896e-05
+test_01236,The app won't let me log in as myself.,deepseek/deepseek-v4-flash,v2,v1,verify_my_identity,26.51,review,keyword_miss,true,unable_to_verify_identity,false,1585,1.27736e-05
+test_01237,Why can't I verify my identity?,deepseek/deepseek-v4-flash,v2,v1,verify_my_identity,42.26,auto_accept,,false,unable_to_verify_identity,false,2063,1.26896e-05
+test_01239,for some reason I am having a problem with verifying my identity.,deepseek/deepseek-v4-flash,v2,v1,verify_my_identity,96.93,auto_accept,,false,unable_to_verify_identity,false,1029,1.28296e-05
+test_01241,Is the PIN delivered separately?,deepseek/deepseek-v4-flash,v2,v1,get_physical_card,99.85,auto_accept,,false,get_physical_card,true,1412,1.25776e-05
+test_01242,I do not have my pin,deepseek/deepseek-v4-flash,v2,v1,get_physical_card,99.41,auto_accept,,false,get_physical_card,true,1384,1.26056e-05
+test_01244,I cannot seem to find my PIN. Where is it?,deepseek/deepseek-v4-flash,v2,v1,get_physical_card,99.99,auto_accept,,false,get_physical_card,true,1128,1.27456e-05
+test_01251,I just got my new card but am not sure how to check its PIN.,deepseek/deepseek-v4-flash,v2,v1,get_physical_card,99.57,auto_accept,,false,get_physical_card,true,1333,1.28576e-05
+test_01253,"If I need a PIN for my card, where is it located?",deepseek/deepseek-v4-flash,v2,v1,get_physical_card,99.95,auto_accept,,false,get_physical_card,true,1204,1.28016e-05
+test_01255,And what about the Card's PIN?,deepseek/deepseek-v4-flash,v2,v1,get_physical_card,93.69,auto_accept,,false,get_physical_card,true,1514,1.26336e-05
+test_01260,Does my PIN come with my card?,deepseek/deepseek-v4-flash,v2,v1,get_physical_card,99.8,auto_accept,,false,get_physical_card,true,1650,1.26336e-05
+test_01261,Where can I find the card PIN?,deepseek/deepseek-v4-flash,v2,v1,get_physical_card,99.87,auto_accept,,false,get_physical_card,true,1190,1.26336e-05
+test_01264,"Please help in finding my card PIN, thank you!",deepseek/deepseek-v4-flash,v2,v1,get_physical_card,99.75,auto_accept,,false,get_physical_card,true,1502,1.27176e-05
+test_01268,I cannot locate the card PIN.,deepseek/deepseek-v4-flash,v2,v1,get_physical_card,99.98,auto_accept,,false,get_physical_card,true,2593,1.26056e-05
+test_01270,Where can I find my PIN?,deepseek/deepseek-v4-flash,v2,v1,get_physical_card,99.96,auto_accept,,false,get_physical_card,true,1151,1.26056e-05
+test_01272,Help me find my card pin!,deepseek/deepseek-v4-flash,v2,v1,get_physical_card,99.46,auto_accept,,false,get_physical_card,true,2155,1.26056e-05
+test_01273,Is PIN delivered separately?,deepseek/deepseek-v4-flash,v2,v1,get_physical_card,99.66,auto_accept,,false,get_physical_card,true,1512,1.25496e-05
+test_01278,What is my card's PIN?,deepseek/deepseek-v4-flash,v2,v1,get_physical_card,98.47,auto_accept,,false,get_physical_card,true,1503,1.26056e-05
+test_01283,Do you guys accept Visa or Mastercard?,deepseek/deepseek-v4-flash,v2,v1,visa_or_mastercard,100.0,auto_accept,,false,visa_or_mastercard,true,1707,1.27736e-05
+test_01286,Are both Visa and Mastercard offered?,deepseek/deepseek-v4-flash,v2,v1,visa_or_mastercard,100.0,auto_accept,,false,visa_or_mastercard,true,1492,1.27456e-05
+test_01289,Can I get a mastercard?,deepseek/deepseek-v4-flash,v2,v1,visa_or_mastercard,99.95,auto_accept,,false,visa_or_mastercard,true,1458,1.27176e-05
+test_01292,Do I get a choice between Visa and Mastercard?,deepseek/deepseek-v4-flash,v2,v1,visa_or_mastercard,100.0,auto_accept,,false,visa_or_mastercard,true,2501,1.28296e-05
+test_01295,May I choose between Visa and Mastercard?,deepseek/deepseek-v4-flash,v2,v1,visa_or_mastercard,100.0,auto_accept,,false,visa_or_mastercard,true,2109,1.27736e-05
+test_01299,Am I able to choose my card?,deepseek/deepseek-v4-flash,v2,v1,visa_or_mastercard,0.17,auto_accept,,false,visa_or_mastercard,true,1574,1.27456e-05
+test_01302,How do I select a Mastercard instead of a Visa?,deepseek/deepseek-v4-flash,v2,v1,visa_or_mastercard,100.0,auto_accept,,false,visa_or_mastercard,true,1537,1.28576e-05
+test_01309,Is it possible to have both a Visa and a Mastercard from you?,deepseek/deepseek-v4-flash,v2,v1,supported_cards_and_currencies,1.8,review,keyword_miss,true,visa_or_mastercard,false,3474,1.29976e-05
+test_01313,Please give me both a visa and a master card.,deepseek/deepseek-v4-flash,v2,v1,visa_or_mastercard,98.08,auto_accept,,false,visa_or_mastercard,true,1251,1.28296e-05
+test_01317,Can you let me know if Visa is among the card scheme assignments?,deepseek/deepseek-v4-flash,v2,v1,visa_or_mastercard,99.93,auto_accept,,false,visa_or_mastercard,true,1403,1.29136e-05
+test_01321,WHERE IS MY MONEY I WAS USING MY CARD AND IT DISAPPEARED,deepseek/deepseek-v4-flash,v2,v1,declined_card_payment,35.71,auto_accept,,false,topping_up_by_card,false,1154,1.30256e-05
+test_01322,How can I top up by card?,deepseek/deepseek-v4-flash,v2,v1,topping_up_by_card,99.96,auto_accept,,false,topping_up_by_card,true,1379,1.26896e-05
+test_01323,What is the process for using my credit card to transfer money?,deepseek/deepseek-v4-flash,v2,v1,transfer_into_account,95.59,auto_accept,,false,topping_up_by_card,false,1272,1.27736e-05
+test_01326,Can I top up using my car?,deepseek/deepseek-v4-flash,v2,v1,top_up_by_card_charge,44.44,auto_accept,,false,topping_up_by_card,false,1142,1.27456e-05
+test_01336,Can I give my friends access to my account so they can top it up for me?,deepseek/deepseek-v4-flash,v2,v1,top_up_by_cash_or_cheque,6.34,auto_accept,,false,topping_up_by_card,false,1691,1.31936e-05
+test_01337,"I did a top-up, but I'm not seeing it in my wallet yet.",deepseek/deepseek-v4-flash,v2,v1,pending_top_up,98.66,auto_accept,,false,topping_up_by_card,false,1328,1.28296e-05
+test_01340,Is there a way to transfer funds directly from my card?,deepseek/deepseek-v4-flash,v2,v1,topping_up_by_card,41.14,auto_accept,,false,topping_up_by_card,true,1127,1.28016e-05
+test_01344,I tried to use my card to top up but all of the money has disappeared.,deepseek/deepseek-v4-flash,v2,v1,top_up_failed,95.62,auto_accept,,false,topping_up_by_card,false,1392,1.28856e-05
+test_01345,Is it possible to use my credit card to transfer money?,deepseek/deepseek-v4-flash,v2,v1,transfer_into_account,72.01,auto_accept,,false,topping_up_by_card,false,1876,1.27456e-05
+test_01350,Who else can top up my account,deepseek/deepseek-v4-flash,v2,v1,top_up_by_bank_transfer_charge,34.95,auto_accept,,false,topping_up_by_card,false,1298,1.29136e-05
+test_01351,Why is my money gone right when I attempted to top up,deepseek/deepseek-v4-flash,v2,v1,top_up_failed,99.81,auto_accept,,false,topping_up_by_card,false,1132,1.27736e-05
+test_01352,How do i transfer money using my credit card?,deepseek/deepseek-v4-flash,v2,v1,transfer_into_account,71.19,auto_accept,,false,topping_up_by_card,false,1332,1.26896e-05
+test_01356,I topped up my card but the money disappeared.,deepseek/deepseek-v4-flash,v2,v1,top_up_failed,93.25,auto_accept,,false,topping_up_by_card,false,981,1.26896e-05
+test_01357,Why don't I see my top up in my wallet?,deepseek/deepseek-v4-flash,v2,v1,pending_top_up,76.38,auto_accept,,false,topping_up_by_card,false,1213,1.26896e-05
+test_01359,Are my friends able to top up my account?,deepseek/deepseek-v4-flash,v2,v1,top_up_by_bank_transfer_charge,22.51,auto_accept,,false,topping_up_by_card,false,1511,1.29696e-05
+test_01361,Can I make many disposable cards per day?,deepseek/deepseek-v4-flash,v2,v1,disposable_card_limits,99.31,auto_accept,,false,disposable_card_limits,true,2559,1.27176e-05
+test_01362,"I need to use my disposable card multiple times a day, is there a cutoff limit?",deepseek/deepseek-v4-flash,v2,v1,disposable_card_limits,100.0,auto_accept,,false,disposable_card_limits,true,1282,1.29696e-05
+test_01370,How many disposable cards per day am I allowed to have?,deepseek/deepseek-v4-flash,v2,v1,disposable_card_limits,100.0,auto_accept,,false,disposable_card_limits,true,1350,1.28016e-05
+test_01373,"If I have more than one disposable card, can I make five payments on each of them?",deepseek/deepseek-v4-flash,v2,v1,disposable_card_limits,99.93,auto_accept,,false,disposable_card_limits,true,1483,1.32216e-05
+test_01374,Are you able to explain the restrictions of the disposable cards?,deepseek/deepseek-v4-flash,v2,v1,disposable_card_limits,100.0,auto_accept,,false,disposable_card_limits,true,1913,1.30256e-05
+test_01375,What is the maximum number of transactions I can make with one card?,deepseek/deepseek-v4-flash,v2,v1,disposable_card_limits,88.74,auto_accept,,false,disposable_card_limits,true,1606,1.28576e-05
+test_01376,What is the limit to number of transactions I can do with a disposable card?,deepseek/deepseek-v4-flash,v2,v1,disposable_card_limits,100.0,auto_accept,,false,disposable_card_limits,true,992,1.29136e-05
+test_01377,How many disposable cards is the limit?,deepseek/deepseek-v4-flash,v2,v1,disposable_card_limits,100.0,auto_accept,,false,disposable_card_limits,true,2243,1.26896e-05
+test_01381,How can I create many temporary cards daily?,deepseek/deepseek-v4-flash,v2,v1,get_disposable_virtual_card,81.0,auto_accept,,false,disposable_card_limits,false,1421,1.27736e-05
+test_01385,Are there any limits to how many disposable cards I can use?,deepseek/deepseek-v4-flash,v2,v1,disposable_card_limits,100.0,auto_accept,,false,disposable_card_limits,true,1440,1.28296e-05
+test_01392,What is the limit to disposable cards you can have?,deepseek/deepseek-v4-flash,v2,v1,disposable_card_limits,100.0,auto_accept,,false,disposable_card_limits,true,3635,1.27736e-05
+test_01393,How many times can I use a disposable card?,deepseek/deepseek-v4-flash,v2,v1,disposable_card_limits,99.75,auto_accept,,false,disposable_card_limits,true,2691,1.27456e-05
+test_01398,How many transactions can I do with one disposable card?,deepseek/deepseek-v4-flash,v2,v1,disposable_card_limits,99.98,auto_accept,,false,disposable_card_limits,true,1489,1.27736e-05
+test_01399,How many times can I use the disposable virtual card I have?,deepseek/deepseek-v4-flash,v2,v1,disposable_card_limits,92.39,auto_accept,,false,disposable_card_limits,true,2664,1.28296e-05
+test_01402,Someone I don't know has used my card without permission.,deepseek/deepseek-v4-flash,v2,v1,compromised_card,98.59,auto_accept,,false,compromised_card,true,929,1.27456e-05
+test_01406,"There are transactions I didn't make, someone else must have used my card.",deepseek/deepseek-v4-flash,v2,v1,compromised_card,99.2,auto_accept,,false,compromised_card,true,1660,1.28576e-05
+test_01407,Can you freeze my card because someone used it while I was out of town. I did not make these purchases.,deepseek/deepseek-v4-flash,v2,v1,compromised_card,87.9,auto_accept,,false,compromised_card,true,2073,1.30536e-05
+test_01410,What do I do to stop unauthorized transactions on my card? I was never in the place from which the transactions on my bill were made and I never made them. Please help!,deepseek/deepseek-v4-flash,v2,v1,compromised_card,99.24,auto_accept,,false,compromised_card,true,1757,1.34176e-05
+test_01413,"I think my identity has been stolen, can you check on unauthorized charges?",deepseek/deepseek-v4-flash,v2,v1,compromised_card,99.79,auto_accept,,false,compromised_card,true,2306,1.28296e-05
+test_01422,My card has been compromised,deepseek/deepseek-v4-flash,v2,v1,compromised_card,100.0,auto_accept,,false,compromised_card,true,1402,1.25776e-05
+test_01425,How do I freeze my account?,deepseek/deepseek-v4-flash,v2,v1,lost_or_stolen_card,37.86,review,keyword_miss,true,compromised_card,false,1328,1.26616e-05
+test_01429,Someone else used my card!,deepseek/deepseek-v4-flash,v2,v1,compromised_card,98.56,auto_accept,,false,compromised_card,true,1459,1.25776e-05
+test_01431,"If I feel someone has my card information, can I get a new card?",deepseek/deepseek-v4-flash,v2,v1,compromised_card,98.19,auto_accept,,false,compromised_card,true,1381,1.28576e-05
+test_01432,"There are a few transaction that I don't recognize, I think someone managed to get my card details and use it.",deepseek/deepseek-v4-flash,v2,v1,compromised_card,90.24,auto_accept,,false,compromised_card,true,1100,1.30816e-05
+test_01437,What should I do if I think someone is using my card.,deepseek/deepseek-v4-flash,v2,v1,compromised_card,99.81,auto_accept,,false,compromised_card,true,1642,1.27736e-05
+test_01444,Are there any specific ATMs that this card can be used at?,deepseek/deepseek-v4-flash,v2,v1,atm_support,98.57,auto_accept,,false,atm_support,true,1694,1.27456e-05
+test_01446,Which ATM's accept my card?,deepseek/deepseek-v4-flash,v2,v1,atm_support,99.66,auto_accept,,false,atm_support,true,1586,1.25496e-05
+test_01448,Where are the locations of ATMs that accept this card?,deepseek/deepseek-v4-flash,v2,v1,atm_support,100.0,auto_accept,,false,atm_support,true,1591,1.26896e-05
+test_01450,Help me locate the nearest ATM.,deepseek/deepseek-v4-flash,v2,v1,atm_support,100.0,auto_accept,,false,atm_support,true,1839,1.25496e-05
+test_01454,How can I withdraw money?,deepseek/deepseek-v4-flash,v2,v1,atm_support,7.23,auto_accept,,false,atm_support,true,1386,1.25216e-05
+test_01455,How many miles away is the ATM?,deepseek/deepseek-v4-flash,v2,v1,atm_support,100.0,auto_accept,,false,atm_support,true,1150,1.25776e-05
+test_01456,From where can I withdraw?,deepseek/deepseek-v4-flash,v2,v1,atm_support,99.85,auto_accept,,false,atm_support,true,1732,1.25216e-05
+test_01457,Which ATM's will accept my card?,deepseek/deepseek-v4-flash,v2,v1,atm_support,97.68,auto_accept,,false,atm_support,true,2013,1.25776e-05
+test_01462,Can someone please assist me with finding my nearest ATM?,deepseek/deepseek-v4-flash,v2,v1,atm_support,100.0,auto_accept,,false,atm_support,true,1292,1.26616e-05
+test_01465,What type of ATMs accept this card?,deepseek/deepseek-v4-flash,v2,v1,atm_support,97.03,auto_accept,,false,atm_support,true,1532,1.26056e-05
+test_01468,What ATMs can I withdraw money from?,deepseek/deepseek-v4-flash,v2,v1,atm_support,100.0,auto_accept,,false,atm_support,true,3191,1.26056e-05
+test_01474,At which ATMs can I use this card?,deepseek/deepseek-v4-flash,v2,v1,atm_support,99.99,auto_accept,,false,atm_support,true,1837,1.26336e-05
+test_01475,Are there certain ATMs that I can use this card at?,deepseek/deepseek-v4-flash,v2,v1,atm_support,99.9,auto_accept,,false,atm_support,true,1259,1.27176e-05
+test_01476,Do you know the closest ATM?,deepseek/deepseek-v4-flash,v2,v1,atm_support,100.0,auto_accept,,false,atm_support,true,1624,1.25496e-05
+test_01480,Help me.  There is a Direct Debit that I didn't make.,deepseek/deepseek-v4-flash,v2,v1,direct_debit_payment_not_recognised,100.0,auto_accept,,false,direct_debit_payment_not_recognised,true,1514,1.31376e-05
+test_01488,There's a debit on my account that I didn't do.,deepseek/deepseek-v4-flash,v2,v1,card_payment_not_recognised,77.62,review,keyword_miss,true,direct_debit_payment_not_recognised,false,1270,1.31656e-05
+test_01494,What is this direct debit I am seeing?,deepseek/deepseek-v4-flash,v2,v1,direct_debit_payment_not_recognised,100.0,auto_accept,,false,direct_debit_payment_not_recognised,true,2233,1.29416e-05
+test_01497,There is a suspicious direct debit payment.,deepseek/deepseek-v4-flash,v2,v1,direct_debit_payment_not_recognised,100.0,auto_accept,,false,direct_debit_payment_not_recognised,true,1642,1.29136e-05
+test_01498,There is a transaction from my account that I don't recognize can you trace back the information so I can make sure it's something I did or not?,deepseek/deepseek-v4-flash,v2,v1,card_payment_not_recognised,93.95,auto_accept,,false,direct_debit_payment_not_recognised,false,2377,1.34456e-05
+test_01502,This Direct Debit payment may not be right.,deepseek/deepseek-v4-flash,v2,v1,direct_debit_payment_not_recognised,100.0,auto_accept,,false,direct_debit_payment_not_recognised,true,1360,1.29696e-05
+test_01503,why does the app show a direct debit payment that I did not authorize,deepseek/deepseek-v4-flash,v2,v1,direct_debit_payment_not_recognised,100.0,auto_accept,,false,direct_debit_payment_not_recognised,true,1118,1.31096e-05
+test_01505,It seems there is an incorrect listing of a direct debit payment on my app that I did not make,deepseek/deepseek-v4-flash,v2,v1,direct_debit_payment_not_recognised,100.0,auto_accept,,false,direct_debit_payment_not_recognised,true,990,1.32776e-05
+test_01509,There's a direct debit on my account that I didn't authorize,deepseek/deepseek-v4-flash,v2,v1,direct_debit_payment_not_recognised,100.0,auto_accept,,false,direct_debit_payment_not_recognised,true,1641,1.30816e-05
+test_01510,I understand that this is extremely late. After going over my transactions for the last couple of months I noticed a large charge that I'm sure I did not make. Is there anyway I can still dispute this?,deepseek/deepseek-v4-flash,v2,v1,card_payment_not_recognised,96.72,auto_accept,,false,direct_debit_payment_not_recognised,false,993,1.37536e-05
+test_01512,I am concerned about the security in my account and would like to make a dispute.,deepseek/deepseek-v4-flash,v2,v1,compromised_card,71.91,review,keyword_miss,true,direct_debit_payment_not_recognised,false,2710,1.28856e-05
+test_01518,There's a direct debit I wish to dispute,deepseek/deepseek-v4-flash,v2,v1,direct_debit_payment_not_recognised,100.0,auto_accept,,false,direct_debit_payment_not_recognised,true,1275,1.29696e-05
+test_01525,My password isn't being accepted and I need to reset it.,deepseek/deepseek-v4-flash,v2,v1,passcode_forgotten,99.83,auto_accept,,false,passcode_forgotten,true,1872,1.28296e-05
+test_01537,Show me please how to reset my passcode.,deepseek/deepseek-v4-flash,v2,v1,passcode_forgotten,99.81,auto_accept,,false,passcode_forgotten,true,1427,1.27456e-05
+test_01538,Help me reset the passcode.,deepseek/deepseek-v4-flash,v2,v1,passcode_forgotten,99.97,auto_accept,,false,passcode_forgotten,true,1031,1.26616e-05
+test_01547,I have forgotten my password.,deepseek/deepseek-v4-flash,v2,v1,passcode_forgotten,100.0,auto_accept,,false,passcode_forgotten,true,1459,1.26336e-05
+test_01551,Can I reset my password?  I don't know what it is.,deepseek/deepseek-v4-flash,v2,v1,passcode_forgotten,99.25,auto_accept,,false,passcode_forgotten,true,1781,1.28856e-05
+test_01553,What should I do if I forgot my passcode?,deepseek/deepseek-v4-flash,v2,v1,passcode_forgotten,100.0,auto_accept,,false,passcode_forgotten,true,2170,1.27736e-05
+test_01554,My passcode doesn't work,deepseek/deepseek-v4-flash,v2,v1,passcode_forgotten,99.97,auto_accept,,false,passcode_forgotten,true,3883,1.26616e-05
+test_01558,Can you tell me what to do to reset my passcode?,deepseek/deepseek-v4-flash,v2,v1,passcode_forgotten,99.91,auto_accept,,false,passcode_forgotten,true,1603,1.28296e-05
+test_01563,The ATM did not allow me to withdraw,deepseek/deepseek-v4-flash,v2,v1,declined_cash_withdrawal,98.48,auto_accept,,false,declined_cash_withdrawal,true,3792,1.27736e-05
+test_01565,The ATM keeps declining my card. I tried at a couple different ATMs. Can you tell me if there's a problem with my account?,deepseek/deepseek-v4-flash,v2,v1,declined_cash_withdrawal,92.4,auto_accept,,false,declined_cash_withdrawal,true,1691,1.33336e-05
+test_01566,I was at the ATM trying to made a withdraw and I was declined.,deepseek/deepseek-v4-flash,v2,v1,declined_cash_withdrawal,100.0,auto_accept,,false,declined_cash_withdrawal,true,1143,1.29416e-05
+test_01572,I tried to make a cash withdrawal and it was declined. Why did this happen?,deepseek/deepseek-v4-flash,v2,v1,declined_cash_withdrawal,100.0,auto_accept,,false,declined_cash_withdrawal,true,1632,1.29976e-05
+test_01575,The withdrawal was declined I am unsure as to why this happened?,deepseek/deepseek-v4-flash,v2,v1,declined_cash_withdrawal,100.0,auto_accept,,false,declined_cash_withdrawal,true,3958,1.28856e-05
+test_01578,What are some reasons that would cause ATM machines to decline my card? It has happened to me multiple times!,deepseek/deepseek-v4-flash,v2,v1,atm_support,89.29,auto_accept,,false,declined_cash_withdrawal,false,2102,1.29696e-05
+test_01582,I tried to withdraw money but I was declined!,deepseek/deepseek-v4-flash,v2,v1,declined_cash_withdrawal,100.0,auto_accept,,false,declined_cash_withdrawal,true,1794,1.28016e-05
+test_01583,How come I can't take money out of the ATM?,deepseek/deepseek-v4-flash,v2,v1,atm_support,95.97,auto_accept,,false,declined_cash_withdrawal,false,1261,1.26896e-05
+test_01584,The ATM keeps declining my card. I tried at two different ATMs. Can you tell me if there's an issue with my account?,deepseek/deepseek-v4-flash,v2,v1,declined_cash_withdrawal,97.87,auto_accept,,false,declined_cash_withdrawal,true,1427,1.33056e-05
+test_01590,i tried to withdraw money from an atm and i was declined on front of my friends. Why did this happen?,deepseek/deepseek-v4-flash,v2,v1,declined_cash_withdrawal,100.0,auto_accept,,false,declined_cash_withdrawal,true,1345,1.31656e-05
+test_01591,The ATM isn't giving out any money.,deepseek/deepseek-v4-flash,v2,v1,atm_support,100.0,auto_accept,,false,declined_cash_withdrawal,false,979,1.26056e-05
+test_01593,I couldn't get cash at the atm,deepseek/deepseek-v4-flash,v2,v1,atm_support,98.0,auto_accept,,false,declined_cash_withdrawal,false,1317,1.26056e-05
+test_01596,My cash withdrawl was declined why?,deepseek/deepseek-v4-flash,v2,v1,declined_cash_withdrawal,100.0,auto_accept,,false,declined_cash_withdrawal,true,1202,1.27456e-05
+test_01600,"My card payment is still on hold, why is it so?",deepseek/deepseek-v4-flash,v2,v1,pending_card_payment,99.59,auto_accept,,false,pending_card_payment,true,1338,1.27736e-05
+test_01609,When will my card payment be done pending?,deepseek/deepseek-v4-flash,v2,v1,pending_card_payment,100.0,auto_accept,,false,pending_card_payment,true,1461,1.26616e-05
+test_01610,I made this payment days ago so why hasn't it gone through yet?,deepseek/deepseek-v4-flash,v2,v1,pending_transfer,91.48,review,keyword_miss,true,pending_card_payment,false,3822,1.27736e-05
+test_01611,I am seeing pending from the card payment I made.,deepseek/deepseek-v4-flash,v2,v1,pending_card_payment,99.99,auto_accept,,false,pending_card_payment,true,1479,1.27176e-05
+test_01612,My card payment is showing pending.,deepseek/deepseek-v4-flash,v2,v1,pending_card_payment,100.0,auto_accept,,false,pending_card_payment,true,5264,1.26056e-05
+test_01613,I bought some stuff this morning but the payment shows as pending,deepseek/deepseek-v4-flash,v2,v1,pending_card_payment,98.9,auto_accept,,false,pending_card_payment,true,1429,1.27736e-05
+test_01616,What is a pending payment?,deepseek/deepseek-v4-flash,v2,v1,pending_card_payment,99.55,auto_accept,,false,pending_card_payment,true,1493,1.28016e-05
+test_01618,Why is there a pending transaction on my card?,deepseek/deepseek-v4-flash,v2,v1,pending_card_payment,99.67,auto_accept,,false,pending_card_payment,true,1157,1.26896e-05
+test_01620,Why is a payment showing up on my card as pending?,deepseek/deepseek-v4-flash,v2,v1,pending_card_payment,99.95,auto_accept,,false,pending_card_payment,true,1522,1.27456e-05
+test_01621,I made a purchase and it says it's pending. What does that mean?,deepseek/deepseek-v4-flash,v2,v1,pending_card_payment,100.0,auto_accept,,false,pending_card_payment,true,1820,1.28576e-05
+test_01623,what does pending mean?,deepseek/deepseek-v4-flash,v2,v1,pending_card_payment,33.46,auto_accept,,false,pending_card_payment,true,4236,1.25496e-05
+test_01624,How long will this card payment stay pending?,deepseek/deepseek-v4-flash,v2,v1,pending_card_payment,100.0,auto_accept,,false,pending_card_payment,true,1208,1.26616e-05
+test_01626,"I was double charged, and the second charge is showing as ""pending"". How long will it be before I get my money back once the second charge has been refunded?",deepseek/deepseek-v4-flash,v2,v1,transaction_charged_twice,93.62,auto_accept,,false,pending_card_payment,false,1399,1.35016e-05
+test_01628,Why would I have a pending payment?,deepseek/deepseek-v4-flash,v2,v1,pending_card_payment,99.66,auto_accept,,false,pending_card_payment,true,2488,1.26336e-05
+test_01640,My phone was stolen,deepseek/deepseek-v4-flash,v2,v1,lost_or_stolen_phone,100.0,auto_accept,,false,lost_or_stolen_phone,true,1657,1.26616e-05
+test_01641,My phone was stolen yesterday.  What should I do?,deepseek/deepseek-v4-flash,v2,v1,lost_or_stolen_phone,100.0,auto_accept,,false,lost_or_stolen_phone,true,1271,1.28576e-05
+test_01644,"If I was mugged and lost everything, how do I access my account and app?",deepseek/deepseek-v4-flash,v2,v1,lost_or_stolen_phone,67.46,auto_accept,,false,lost_or_stolen_phone,true,1323,1.30256e-05
+test_01650,"lost my phone, dont want others to use it.",deepseek/deepseek-v4-flash,v2,v1,lost_or_stolen_phone,99.98,auto_accept,,false,lost_or_stolen_phone,true,1431,1.28296e-05
+test_01651,I lost my phone and need help securing it.,deepseek/deepseek-v4-flash,v2,v1,lost_or_stolen_phone,99.99,auto_accept,,false,lost_or_stolen_phone,true,5515,1.28016e-05
+test_01655,my phone is gone,deepseek/deepseek-v4-flash,v2,v1,lost_or_stolen_phone,100.0,auto_accept,,false,lost_or_stolen_phone,true,1361,1.26616e-05
+test_01657,my phone was taken! can you place cancel my account so no one uses it,deepseek/deepseek-v4-flash,v2,v1,lost_or_stolen_phone,85.16,auto_accept,,false,lost_or_stolen_phone,true,1693,1.29976e-05
+test_01659,"lost phone, can i still access account?",deepseek/deepseek-v4-flash,v2,v1,lost_or_stolen_phone,100.0,auto_accept,,false,lost_or_stolen_phone,true,2856,1.27736e-05
+test_01660,The hotel called and said I left my phone in the room.,deepseek/deepseek-v4-flash,v2,v1,lost_or_stolen_phone,99.99,auto_accept,,false,lost_or_stolen_phone,true,1263,1.28856e-05
+test_01665,"Someone attacked me yesterday and took my things, so I am unable to use the app.  I am in need of some help.",deepseek/deepseek-v4-flash,v2,v1,lost_or_stolen_phone,99.76,auto_accept,,false,lost_or_stolen_phone,true,1803,1.32776e-05
+test_01671,Someone stole my phone.,deepseek/deepseek-v4-flash,v2,v1,lost_or_stolen_phone,100.0,auto_accept,,false,lost_or_stolen_phone,true,1150,1.26616e-05
+test_01675,I lost my phone!,deepseek/deepseek-v4-flash,v2,v1,lost_or_stolen_phone,100.0,auto_accept,,false,lost_or_stolen_phone,true,1158,1.26616e-05
+test_01677,How do I use the app if I don't have my phone with me?,deepseek/deepseek-v4-flash,v2,v1,lost_or_stolen_phone,99.84,auto_accept,,false,lost_or_stolen_phone,true,1419,1.29696e-05
+test_01688,Can I have a refund?,deepseek/deepseek-v4-flash,v2,v1,request_refund,99.95,auto_accept,,false,request_refund,true,1570,1.25216e-05
+test_01694,Can I have an item refunded?,deepseek/deepseek-v4-flash,v2,v1,request_refund,99.99,auto_accept,,false,request_refund,true,1756,1.25776e-05
+test_01702,How do I cancel a previous purchase,deepseek/deepseek-v4-flash,v2,v1,cancel_transfer,84.45,auto_accept,,false,request_refund,false,1446,1.25776e-05
+test_01703,I would appreciate it if I could get an item refunded,deepseek/deepseek-v4-flash,v2,v1,request_refund,100.0,auto_accept,,false,request_refund,true,1866,1.27176e-05
+test_01709,I want this amount reversed out of my account.,deepseek/deepseek-v4-flash,v2,v1,request_refund,26.75,review,keyword_miss,true,request_refund,true,3552,1.26336e-05
+test_01710,Hello! I recently made a purchase and I'm needing to cancel my order and process a refund as soon as possible.,deepseek/deepseek-v4-flash,v2,v1,request_refund,99.58,auto_accept,,false,request_refund,true,1218,1.30256e-05
+test_01712,I am chatting about an order from a long while back.  I never got it to this day and am deeply upset by this!  I want all of my money back!  I just can not accept paying for something I never got.,deepseek/deepseek-v4-flash,v2,v1,request_refund,99.88,review,keyword_miss,true,request_refund,true,1389,1.37256e-05
+test_01713,I bought this item and was charged the wrong amount can I get a refund?,deepseek/deepseek-v4-flash,v2,v1,request_refund,98.9,auto_accept,,false,request_refund,true,4108,1.28016e-05
+test_01714,I would like to cancel a payment. I purchased something several days ago and i still have not received it.,deepseek/deepseek-v4-flash,v2,v1,cancel_transfer,97.39,auto_accept,,false,request_refund,false,1028,1.29696e-05
+test_01716,I want a refund for my purchase,deepseek/deepseek-v4-flash,v2,v1,request_refund,99.99,auto_accept,,false,request_refund,true,1012,1.25776e-05
+test_01717,How can I process a refund for something I purchased?,deepseek/deepseek-v4-flash,v2,v1,request_refund,100.0,auto_accept,,false,request_refund,true,1491,1.26616e-05
+test_01720,I tried to make a transfer and it was declined. Why?,deepseek/deepseek-v4-flash,v2,v1,declined_transfer,100.0,auto_accept,,false,declined_transfer,true,1606,1.27736e-05
+test_01723,why was my transfer declined,deepseek/deepseek-v4-flash,v2,v1,declined_transfer,99.99,auto_accept,,false,declined_transfer,true,1252,1.25776e-05
+test_01727,Why did a transfer get declined?,deepseek/deepseek-v4-flash,v2,v1,declined_transfer,99.99,auto_accept,,false,declined_transfer,true,1579,1.26056e-05
+test_01730,The card got declined twice when I tried to use it to buy something online yesterday.,deepseek/deepseek-v4-flash,v2,v1,declined_card_payment,100.0,auto_accept,,false,declined_transfer,false,1365,1.29416e-05
+test_01735,"You keep declining my transfers? It's always been working really well so far, but when I tried to buy something just now the card got declined. I tried couple times already but same thing.",deepseek/deepseek-v4-flash,v2,v1,declined_card_payment,90.46,auto_accept,,false,declined_transfer,false,1445,1.35576e-05
+test_01736,Why was I unable to do a transfer?,deepseek/deepseek-v4-flash,v2,v1,declined_transfer,96.26,auto_accept,,false,declined_transfer,true,1085,1.26616e-05
+test_01737,Trouble transferring transaction contact for help,deepseek/deepseek-v4-flash,v2,v1,declined_transfer,31.43,review,keyword_miss,true,declined_transfer,true,1590,1.26616e-05
+test_01741,"When I submit a transfer, it is being declined.  The information I put in has been reviewed.",deepseek/deepseek-v4-flash,v2,v1,declined_transfer,99.96,auto_accept,,false,declined_transfer,true,1655,1.29976e-05
+test_01743,What is the reason my transfer was declined?,deepseek/deepseek-v4-flash,v2,v1,declined_transfer,99.99,auto_accept,,false,declined_transfer,true,1174,1.26616e-05
+test_01744,My transfer got declined.,deepseek/deepseek-v4-flash,v2,v1,declined_transfer,99.99,auto_accept,,false,declined_transfer,true,1131,1.25496e-05
+test_01747,I would like to know why my transfer was declined.,deepseek/deepseek-v4-flash,v2,v1,declined_transfer,100.0,auto_accept,,false,declined_transfer,true,1177,1.27176e-05
+test_01748,"I tried to make a transfer, but it was declined. Can you tell me why?",deepseek/deepseek-v4-flash,v2,v1,declined_transfer,100.0,auto_accept,,false,declined_transfer,true,1142,1.29136e-05
+test_01760,The refund isn't showing up on my account.,deepseek/deepseek-v4-flash,v2,v1,Refund_not_showing_up,99.88,auto_accept,,false,Refund_not_showing_up,true,1634,1.28016e-05
+test_01764,There's a refund missing from my statement,deepseek/deepseek-v4-flash,v2,v1,Refund_not_showing_up,98.99,auto_accept,,false,Refund_not_showing_up,true,1698,1.27736e-05
+test_01765,"I need help. I asked for a refund from a merchant a while ago, but I have not gotten my money back. I keep checking my account, but nothing is showing up. What should I do now?",deepseek/deepseek-v4-flash,v2,v1,Refund_not_showing_up,99.76,auto_accept,,false,Refund_not_showing_up,true,1859,1.37256e-05
+test_01766,I am awaiting my refund,deepseek/deepseek-v4-flash,v2,v1,Refund_not_showing_up,85.5,auto_accept,,false,Refund_not_showing_up,true,1361,1.26896e-05
+test_01770,"I asked for a refund last week but nothing has happened yet, can you help me please?",deepseek/deepseek-v4-flash,v2,v1,Refund_not_showing_up,99.57,auto_accept,,false,Refund_not_showing_up,true,1292,1.30536e-05
+test_01778,Where can I see the refund in my account,deepseek/deepseek-v4-flash,v2,v1,Refund_not_showing_up,98.81,auto_accept,,false,Refund_not_showing_up,true,1605,1.28016e-05
+test_01779,"i was supposed to get a refund but my balance hasn't changed, why not?",deepseek/deepseek-v4-flash,v2,v1,Refund_not_showing_up,99.66,auto_accept,,false,Refund_not_showing_up,true,2164,1.29976e-05
+test_01783,My statement doesn't show that a refund has processed,deepseek/deepseek-v4-flash,v2,v1,Refund_not_showing_up,99.67,auto_accept,,false,Refund_not_showing_up,true,1000,1.28296e-05
+test_01784,I requested a refund from a store but it hasn't arrived.,deepseek/deepseek-v4-flash,v2,v1,Refund_not_showing_up,99.02,auto_accept,,false,Refund_not_showing_up,true,1346,1.28856e-05
+test_01786,I am missing a refund.,deepseek/deepseek-v4-flash,v2,v1,Refund_not_showing_up,99.84,auto_accept,,false,Refund_not_showing_up,true,1542,1.26896e-05
+test_01788,I am not seeing a refund in my statement.,deepseek/deepseek-v4-flash,v2,v1,Refund_not_showing_up,99.83,auto_accept,,false,Refund_not_showing_up,true,2063,1.28016e-05
+test_01789,Why can't I see a recent refund in my statement?,deepseek/deepseek-v4-flash,v2,v1,Refund_not_showing_up,99.8,auto_accept,,false,Refund_not_showing_up,true,1303,1.28576e-05
+test_01791,Where is my refund? I have been checking my account all day.,deepseek/deepseek-v4-flash,v2,v1,Refund_not_showing_up,98.51,auto_accept,,false,Refund_not_showing_up,true,1844,1.29136e-05
+test_01793,My refund is missing,deepseek/deepseek-v4-flash,v2,v1,Refund_not_showing_up,99.64,auto_accept,,false,Refund_not_showing_up,true,1365,1.26616e-05
+test_01795,I keep checking my bank statements but I don't see a refund that I've requested from a seller. Can you ensure that I receive the refund from the seller?,deepseek/deepseek-v4-flash,v2,v1,Refund_not_showing_up,98.26,auto_accept,,false,Refund_not_showing_up,true,1604,1.34456e-05
+test_01801,The new card that was just sent to me was declined multiple times yesterday when I tried to use it at a restaurant to pay for my dinner.  I am really disappointed  and embarrassed that my card was denied when I tried to use it to pay for my friend's birthday dinner.,deepseek/deepseek-v4-flash,v2,v1,declined_card_payment,99.96,auto_accept,,false,declined_card_payment,true,2360,1.40616e-05
+test_01803,I was trying to purchase something at the store today and my card has been declined.  Why has this happened?,deepseek/deepseek-v4-flash,v2,v1,declined_card_payment,100.0,auto_accept,,false,declined_card_payment,true,1533,1.31096e-05
+test_01807,My card declined,deepseek/deepseek-v4-flash,v2,v1,declined_card_payment,99.88,auto_accept,,false,declined_card_payment,true,1738,1.25776e-05
+test_01808,Can you look at my account ans see why my card was declined,deepseek/deepseek-v4-flash,v2,v1,declined_card_payment,99.99,auto_accept,,false,declined_card_payment,true,1221,1.28576e-05
+test_01809,"I was out today looking forward to pay with my new card, turns out the payment just kept getting declined. This is really sad, what's going on?",deepseek/deepseek-v4-flash,v2,v1,declined_card_payment,100.0,auto_accept,,false,declined_card_payment,true,1501,1.33616e-05
+test_01811,My new card keeps getting declined. I was very excited to use it for the first time today. Why is this doing this?,deepseek/deepseek-v4-flash,v2,v1,declined_card_payment,96.26,auto_accept,,false,declined_card_payment,true,1501,1.31936e-05
+test_01812,"My latest payment was declined, I was told everything was back to working order. What happened?",deepseek/deepseek-v4-flash,v2,v1,declined_card_payment,99.95,auto_accept,,false,declined_card_payment,true,1520,1.29976e-05
+test_01813,I know I have enough funds in my account but my card payment hasn't worked for some reason. What do I do?,deepseek/deepseek-v4-flash,v2,v1,declined_card_payment,100.0,auto_accept,,false,declined_card_payment,true,1152,1.31656e-05
+test_01825,"My card payment didn't work, can you help?",deepseek/deepseek-v4-flash,v2,v1,declined_card_payment,99.98,auto_accept,,false,declined_card_payment,true,1449,1.27736e-05
+test_01831,They declined my card payment.,deepseek/deepseek-v4-flash,v2,v1,declined_card_payment,100.0,auto_accept,,false,declined_card_payment,true,1426,1.26336e-05
+test_01832,Why has my card payment been declined?,deepseek/deepseek-v4-flash,v2,v1,declined_card_payment,100.0,auto_accept,,false,declined_card_payment,true,1515,1.26896e-05
+test_01833,"I finally got my new card and was very excited to use it today. However, my payment kept declining. What is happening?",deepseek/deepseek-v4-flash,v2,v1,declined_card_payment,99.99,auto_accept,,false,declined_card_payment,true,1226,1.31936e-05
+test_01839,Why do you keep declining my payment? I tried several times already with this card and it's just not working,deepseek/deepseek-v4-flash,v2,v1,declined_card_payment,100.0,auto_accept,,false,declined_card_payment,true,1749,1.31096e-05
+test_01842,Why is my transfer not done yet?,deepseek/deepseek-v4-flash,v2,v1,transfer_timing,36.38,auto_accept,,false,pending_transfer,false,1403,1.25776e-05
+test_01845,i transfered however its still pending,deepseek/deepseek-v4-flash,v2,v1,pending_transfer,99.98,auto_accept,,false,pending_transfer,true,1348,1.25776e-05
+test_01847,So the transfer finally worked but now it's been pending for quite a long time. How long do you expect me to wait for it? It's quite urgent,deepseek/deepseek-v4-flash,v2,v1,pending_transfer,14.8,auto_accept,,false,pending_transfer,true,1591,1.32776e-05
+test_01849,I submitted my transfer but it has been pending for quite a while and I was wondering what takes so long? why hasn't it completed,deepseek/deepseek-v4-flash,v2,v1,pending_transfer,99.92,auto_accept,,false,pending_transfer,true,973,1.31376e-05
+test_01850,How can I speed up a transfer?  Mine is pending.,deepseek/deepseek-v4-flash,v2,v1,transfer_timing,26.87,auto_accept,,false,pending_transfer,false,1400,1.27176e-05
+test_01859,When will the transfer go through?,deepseek/deepseek-v4-flash,v2,v1,transfer_timing,99.59,auto_accept,,false,pending_transfer,false,1015,1.25496e-05
+test_01861,"I double checked that I have the correct account details , they're right for sure. Transfer is still pending since forever. What should be done now?",deepseek/deepseek-v4-flash,v2,v1,pending_transfer,99.97,auto_accept,,false,pending_transfer,true,1041,1.31936e-05
+test_01862,When will my transfer go through?,deepseek/deepseek-v4-flash,v2,v1,transfer_timing,99.14,auto_accept,,false,pending_transfer,false,2170,1.25496e-05
+test_01864,When will the transfer be completed?,deepseek/deepseek-v4-flash,v2,v1,transfer_timing,99.93,auto_accept,,false,pending_transfer,false,1681,1.25496e-05
+test_01866,"I would like to know why my payment is still pending, can you help?",deepseek/deepseek-v4-flash,v2,v1,pending_card_payment,99.53,auto_accept,,false,pending_transfer,false,1194,1.28576e-05
+test_01868,How long does a transfer take to be confirmed?,deepseek/deepseek-v4-flash,v2,v1,transfer_timing,100.0,auto_accept,,false,pending_transfer,false,1064,1.26336e-05
+test_01871,How long can I expect a transfer to pend for?,deepseek/deepseek-v4-flash,v2,v1,transfer_timing,92.41,auto_accept,,false,pending_transfer,false,1379,1.26616e-05
+test_01872,For how long will my transfer be pending?,deepseek/deepseek-v4-flash,v2,v1,pending_transfer,97.06,auto_accept,,false,pending_transfer,true,1911,1.26056e-05
+test_01874,Why is a money transfer not showing?,deepseek/deepseek-v4-flash,v2,v1,failed_transfer,23.84,auto_accept,,false,pending_transfer,false,1298,1.25776e-05
+test_01878,I am confused as to why my transfer could still be pending.,deepseek/deepseek-v4-flash,v2,v1,pending_transfer,99.98,auto_accept,,false,pending_transfer,true,2045,1.27176e-05
+test_01880,Can you remove my account please?,deepseek/deepseek-v4-flash,v2,v1,terminate_account,100.0,auto_accept,,false,terminate_account,true,2094,1.25496e-05
+test_01882,My account needs to be deleted.,deepseek/deepseek-v4-flash,v2,v1,terminate_account,100.0,auto_accept,,false,terminate_account,true,1247,1.25496e-05
+test_01885,I'm tired of all the problems I've had. I want to quit this account!,deepseek/deepseek-v4-flash,v2,v1,terminate_account,100.0,auto_accept,,false,terminate_account,true,1148,1.28576e-05
+test_01891,I don't like your company. Delete my account.,deepseek/deepseek-v4-flash,v2,v1,terminate_account,100.0,auto_accept,,false,terminate_account,true,1373,1.26616e-05
+test_01902,I am not satisfied with your company and would like to delete my accounts!,deepseek/deepseek-v4-flash,v2,v1,terminate_account,100.0,auto_accept,,false,terminate_account,true,1295,1.27736e-05
+test_01905,I am sick of this damn company and want to close out my account.,deepseek/deepseek-v4-flash,v2,v1,terminate_account,100.0,auto_accept,,false,terminate_account,true,1184,1.27736e-05
+test_01907,Please delete my account.,deepseek/deepseek-v4-flash,v2,v1,terminate_account,100.0,auto_accept,,false,terminate_account,true,1626,1.24936e-05
+test_01910,I am extremely unhappy with this app and want to get rid of my account?,deepseek/deepseek-v4-flash,v2,v1,terminate_account,100.0,auto_accept,,false,terminate_account,true,1531,1.28016e-05
+test_01916,"Please delete my account, this company is not working for me!",deepseek/deepseek-v4-flash,v2,v1,terminate_account,100.0,auto_accept,,false,terminate_account,true,1693,1.27176e-05
+test_01921,How do I retrieve my card from the machine?,deepseek/deepseek-v4-flash,v2,v1,card_swallowed,96.26,auto_accept,,false,card_swallowed,true,1701,1.26896e-05
+test_01922,I was retrieving money and my card wouldn't remove.,deepseek/deepseek-v4-flash,v2,v1,card_not_working,98.07,auto_accept,,false,card_swallowed,false,1254,1.27176e-05
+test_01924,HOw do I get my card back after the ATM has pulled it in?,deepseek/deepseek-v4-flash,v2,v1,card_swallowed,99.59,auto_accept,,false,card_swallowed,true,1421,1.28576e-05
+test_01925,Atm took my card,deepseek/deepseek-v4-flash,v2,v1,card_swallowed,99.91,auto_accept,,false,card_swallowed,true,1664,1.25776e-05
+test_01926,Is there a way I can get my ATM card back from the machine?,deepseek/deepseek-v4-flash,v2,v1,card_swallowed,99.59,auto_accept,,false,card_swallowed,true,1418,1.28296e-05
+test_01929,How can I get my card out of the damn ATM?,deepseek/deepseek-v4-flash,v2,v1,atm_support,67.91,auto_accept,,false,card_swallowed,false,1323,1.26896e-05
+test_01939,ATM still has my card,deepseek/deepseek-v4-flash,v2,v1,card_swallowed,99.97,auto_accept,,false,card_swallowed,true,1463,1.25776e-05
+test_01940,What do I do if an ATM ate my card?,deepseek/deepseek-v4-flash,v2,v1,card_swallowed,99.75,auto_accept,,false,card_swallowed,true,1096,1.27176e-05
+test_01941,What happens if the ATM doesn't give me back my card?,deepseek/deepseek-v4-flash,v2,v1,card_swallowed,98.9,auto_accept,,false,card_swallowed,true,1315,1.27736e-05
+test_01948,How do I retrieve a trapped card from a ATM?,deepseek/deepseek-v4-flash,v2,v1,atm_support,96.27,auto_accept,,false,card_swallowed,false,1505,1.26616e-05
+test_01949,"My card is stuck in the ATM, what can I do?",deepseek/deepseek-v4-flash,v2,v1,card_swallowed,90.46,auto_accept,,false,card_swallowed,true,1231,1.27736e-05
+test_01950,I was getting cash and can't get my card back.,deepseek/deepseek-v4-flash,v2,v1,card_swallowed,100.0,auto_accept,,false,card_swallowed,true,1745,1.27456e-05
+test_01951,"If my card is trapped in the ATM, what do I do?",deepseek/deepseek-v4-flash,v2,v1,card_swallowed,85.19,auto_accept,,false,card_swallowed,true,1665,1.28016e-05
+test_01952,My card has been swallowed by an ATM,deepseek/deepseek-v4-flash,v2,v1,card_swallowed,100.0,auto_accept,,false,card_swallowed,true,942,1.26616e-05
+test_01957,I was at an ATM and it swallowed my card.,deepseek/deepseek-v4-flash,v2,v1,card_swallowed,100.0,auto_accept,,false,card_swallowed,true,1647,1.27176e-05
+test_01963,I would like to know why I was charged twice for my purchase.,deepseek/deepseek-v4-flash,v2,v1,transaction_charged_twice,100.0,auto_accept,,false,transaction_charged_twice,true,1334,1.29136e-05
+test_01965,Why was I chaged twice for the same thing?,deepseek/deepseek-v4-flash,v2,v1,transaction_charged_twice,100.0,auto_accept,,false,transaction_charged_twice,true,1288,1.28296e-05
+test_01967,I have a duplicate payment showing up on the app. How do I stop myself being charged for the thing twice?,deepseek/deepseek-v4-flash,v2,v1,transaction_charged_twice,99.96,auto_accept,,false,transaction_charged_twice,true,2034,1.31656e-05
+test_01971,I have been charged twice,deepseek/deepseek-v4-flash,v2,v1,transaction_charged_twice,100.0,auto_accept,,false,transaction_charged_twice,true,1178,1.26896e-05
+test_01978,Why was I charged multiple times for the same thing?,deepseek/deepseek-v4-flash,v2,v1,transaction_charged_twice,99.98,auto_accept,,false,transaction_charged_twice,true,1263,1.28296e-05
+test_01979,I had a duplicate card and got charged twice. How do I resolve this?,deepseek/deepseek-v4-flash,v2,v1,transaction_charged_twice,99.97,auto_accept,,false,transaction_charged_twice,true,1205,1.29696e-05
+test_01985,A transaction is repeated several times on my account.,deepseek/deepseek-v4-flash,v2,v1,transaction_charged_twice,99.63,auto_accept,,false,transaction_charged_twice,true,1240,1.28016e-05
+test_01992,I have multiple charges on the same transaction.,deepseek/deepseek-v4-flash,v2,v1,transaction_charged_twice,99.98,auto_accept,,false,transaction_charged_twice,true,1383,1.27736e-05
+test_01993,"Looks like my card payment was duplicated. I went to pay at the store earlier, got declined once,second time it works. App still stays pending for one of the payments. Can you please remove one of them as it's wrong and clearly was declined?",deepseek/deepseek-v4-flash,v2,v1,transaction_charged_twice,57.63,auto_accept,,false,transaction_charged_twice,true,1532,1.39776e-05
+test_02003,I would like to verify the source of my money,deepseek/deepseek-v4-flash,v2,v1,verify_source_of_funds,100.0,auto_accept,,false,verify_source_of_funds,true,1497,1.27736e-05
+test_02004,where to funds come from,deepseek/deepseek-v4-flash,v2,v1,verify_source_of_funds,99.86,auto_accept,,false,verify_source_of_funds,true,1423,1.26336e-05
+test_02011,What is the source of my available funds?,deepseek/deepseek-v4-flash,v2,v1,verify_source_of_funds,97.97,auto_accept,,false,verify_source_of_funds,true,1191,1.27176e-05
+test_02014,What information do you need to verify my Source of Funds?,deepseek/deepseek-v4-flash,v2,v1,verify_source_of_funds,99.99,auto_accept,,false,verify_source_of_funds,true,1333,1.28016e-05
+test_02016,I need my funds verified.,deepseek/deepseek-v4-flash,v2,v1,verify_top_up,80.21,auto_accept,,false,verify_source_of_funds,false,8263,1.25216e-05
+test_02018,I want to know where the funds come from.,deepseek/deepseek-v4-flash,v2,v1,verify_source_of_funds,99.99,auto_accept,,false,verify_source_of_funds,true,3001,1.27456e-05
+test_02019,What is the source of my money?,deepseek/deepseek-v4-flash,v2,v1,verify_source_of_funds,99.98,auto_accept,,false,verify_source_of_funds,true,1408,1.26896e-05
+test_02020,Where can I find the source of my available money?,deepseek/deepseek-v4-flash,v2,v1,verify_source_of_funds,97.93,auto_accept,,false,verify_source_of_funds,true,1724,1.27736e-05
+test_02022,Can I see that history on my funds and where they came from?,deepseek/deepseek-v4-flash,v2,v1,receiving_money,70.86,review,keyword_miss,true,verify_source_of_funds,false,2337,1.28016e-05
+test_02024,How can I view the source of my available funds?,deepseek/deepseek-v4-flash,v2,v1,verify_source_of_funds,99.99,auto_accept,,false,verify_source_of_funds,true,1429,1.27736e-05
+test_02028,Where has my available money come from?,deepseek/deepseek-v4-flash,v2,v1,balance_not_updated_after_bank_transfer,98.91,review,keyword_miss,true,verify_source_of_funds,false,1557,1.31936e-05
+test_02030,How can I see where my money comes from?,deepseek/deepseek-v4-flash,v2,v1,verify_source_of_funds,85.06,auto_accept,,false,verify_source_of_funds,true,1344,1.27456e-05
+test_02032,Where can I see the source of my money?,deepseek/deepseek-v4-flash,v2,v1,verify_source_of_funds,99.99,auto_accept,,false,verify_source_of_funds,true,1775,1.27456e-05
+test_02033,"what is source of my funds, need to verify",deepseek/deepseek-v4-flash,v2,v1,verify_source_of_funds,100.0,auto_accept,,false,verify_source_of_funds,true,1648,1.27736e-05
+test_02034,Where do my funds come from?,deepseek/deepseek-v4-flash,v2,v1,verify_source_of_funds,99.83,auto_accept,,false,verify_source_of_funds,true,1384,1.26616e-05
+test_02037,How do I become aware of where my funds come from?,deepseek/deepseek-v4-flash,v2,v1,verify_source_of_funds,99.87,auto_accept,,false,verify_source_of_funds,true,1501,1.28016e-05
+test_02042,I need a fast transfer from China?  How fast will it be?,deepseek/deepseek-v4-flash,v2,v1,transfer_timing,99.95,auto_accept,,false,transfer_timing,true,1395,1.27736e-05
+test_02043,how soon will I see the transfer in my account?,deepseek/deepseek-v4-flash,v2,v1,transfer_timing,85.57,auto_accept,,false,transfer_timing,true,1164,1.26616e-05
+test_02044,How many days does it take until funds are in my account?,deepseek/deepseek-v4-flash,v2,v1,transfer_timing,99.03,auto_accept,,false,transfer_timing,true,1435,1.29416e-05
+test_02051,When will a transfer reach my account?,deepseek/deepseek-v4-flash,v2,v1,transfer_timing,99.97,auto_accept,,false,transfer_timing,true,1749,1.25776e-05
+test_02054,"If I need to do a quick transfer from China, how long should I expect the transfer to take?",deepseek/deepseek-v4-flash,v2,v1,transfer_timing,100.0,auto_accept,,false,transfer_timing,true,1549,1.29416e-05
+test_02064,What is the time frame for a transfer from the US?,deepseek/deepseek-v4-flash,v2,v1,transfer_timing,100.0,auto_accept,,false,transfer_timing,true,1682,1.26896e-05
+test_02067,"I initiated a Bank transfer form Europe, how long will this take?",deepseek/deepseek-v4-flash,v2,v1,transfer_timing,100.0,auto_accept,,false,transfer_timing,true,1589,1.27456e-05
+test_02071,I have to transfer something to China as fast as I can. How long will it take to arrive in China?,deepseek/deepseek-v4-flash,v2,v1,transfer_timing,100.0,auto_accept,,false,transfer_timing,true,1229,1.29976e-05
+test_02073,How long is it going to take for my funds to show in my account?,deepseek/deepseek-v4-flash,v2,v1,balance_not_updated_after_bank_transfer,98.83,review,keyword_miss,true,transfer_timing,false,1578,1.31936e-05
+test_02083,My card payment was cancelled.,deepseek/deepseek-v4-flash,v2,v1,declined_card_payment,99.97,auto_accept,,false,reverted_card_payment?,false,1282,1.26336e-05
+test_02091,I'm not sure why my account has been refunded a payment for an item I've already received about 2 weeks ago. Can you please tell me what is going on?,deepseek/deepseek-v4-flash,v2,v1,request_refund,97.18,auto_accept,,false,reverted_card_payment?,false,1708,1.33616e-05
+test_02092,My card is being declined for a purchase. I bought items before and the card worked. Do you know what the problem is?,deepseek/deepseek-v4-flash,v2,v1,declined_card_payment,100.0,auto_accept,,false,reverted_card_payment?,false,1339,1.31936e-05
+test_02093,Can you tell my why my card payment has been reverted.,deepseek/deepseek-v4-flash,v2,v1,reverted_card_payment?,100.0,auto_accept,,false,reverted_card_payment?,true,1285,1.28296e-05
+test_02103,Why was my card payment cancelled?,deepseek/deepseek-v4-flash,v2,v1,declined_card_payment,99.99,auto_accept,,false,reverted_card_payment?,false,2253,1.26616e-05
+test_02104,Why has my card payment been reverted?,deepseek/deepseek-v4-flash,v2,v1,reverted_card_payment?,100.0,auto_accept,,false,reverted_card_payment?,true,1172,1.27176e-05
+test_02107,My account shows the card payment cancelled.,deepseek/deepseek-v4-flash,v2,v1,declined_card_payment,33.08,auto_accept,,false,reverted_card_payment?,false,1218,1.26896e-05
+test_02108,"I'm not sure why my card payment was cancelled, can you find out why?",deepseek/deepseek-v4-flash,v2,v1,declined_card_payment,99.99,auto_accept,,false,reverted_card_payment?,false,1364,1.29416e-05
+test_02110,"Hi, I would like to file a claim for an inquiry. I am a frequent customer of the company in question and have never had any issue with my purchases, payments, or otherwise. However, the price deducted for an item I purchased a couple of weeks ago has been returned to my checking account. Was there an issue with my payment? The item has already been delivered to me.",deepseek/deepseek-v4-flash,v2,v1,request_refund,87.28,auto_accept,,false,reverted_card_payment?,false,1142,1.45376e-05
+test_02111,Why was my card payment reverted?,deepseek/deepseek-v4-flash,v2,v1,reverted_card_payment?,99.99,auto_accept,,false,reverted_card_payment?,true,1485,1.26896e-05
+test_02115,There was a canceled payment for my card.,deepseek/deepseek-v4-flash,v2,v1,cancel_transfer,4.14,review,keyword_miss,true,reverted_card_payment?,false,1642,1.26056e-05
+test_02117,Someone stopped my payment,deepseek/deepseek-v4-flash,v2,v1,declined_transfer,90.53,review,keyword_miss,true,reverted_card_payment?,false,1235,1.25496e-05
+test_02123,"If I am overseas, how do I change my pin?",deepseek/deepseek-v4-flash,v2,v1,change_pin,100.0,auto_accept,,false,change_pin,true,2256,1.26896e-05
+test_02124,Can i change my PIN at the ATM?,deepseek/deepseek-v4-flash,v2,v1,change_pin,99.96,auto_accept,,false,change_pin,true,1106,1.26056e-05
+test_02127,I would like to change my card PIN.,deepseek/deepseek-v4-flash,v2,v1,change_pin,100.0,auto_accept,,false,change_pin,true,1261,1.26056e-05
+test_02132,In what ATM can I change my pin?,deepseek/deepseek-v4-flash,v2,v1,change_pin,98.19,auto_accept,,false,change_pin,true,1925,1.28296e-05
+test_02134,How do I set a new pin?,deepseek/deepseek-v4-flash,v2,v1,change_pin,100.0,auto_accept,,false,change_pin,true,10681,1.25776e-05
+test_02138,I want to choose a different PIN.,deepseek/deepseek-v4-flash,v2,v1,change_pin,100.0,auto_accept,,false,change_pin,true,1186,1.25776e-05
+test_02140,Am I able to change my PIN at any cash machines?,deepseek/deepseek-v4-flash,v2,v1,change_pin,99.97,auto_accept,,false,change_pin,true,1468,1.26896e-05
+test_02147,What do I need to do to change my PIN?,deepseek/deepseek-v4-flash,v2,v1,change_pin,100.0,auto_accept,,false,change_pin,true,1150,1.26616e-05
+test_02151,Where can I find instructions to change my PIN?,deepseek/deepseek-v4-flash,v2,v1,change_pin,100.0,auto_accept,,false,change_pin,true,1624,1.26336e-05
+test_02153,How do I update the PIN on my account?,deepseek/deepseek-v4-flash,v2,v1,change_pin,100.0,auto_accept,,false,change_pin,true,1395,1.26336e-05
+test_02154,I need a new PIN.,deepseek/deepseek-v4-flash,v2,v1,change_pin,90.44,auto_accept,,false,change_pin,true,1034,1.25216e-05
+test_02155,Show me how to change my pin?,deepseek/deepseek-v4-flash,v2,v1,change_pin,100.0,auto_accept,,false,change_pin,true,1475,1.25776e-05
+test_02159,How can I change the PIN?  Do I have to go to a real bank?,deepseek/deepseek-v4-flash,v2,v1,change_pin,100.0,auto_accept,,false,change_pin,true,1349,1.28576e-05
+test_02163,I was unable to make a transfer to another account.,deepseek/deepseek-v4-flash,v2,v1,declined_transfer,97.7,auto_accept,,false,beneficiary_not_allowed,false,1361,1.27176e-05
+test_02166,How do I do a successful transfer to an account?,deepseek/deepseek-v4-flash,v2,v1,transfer_into_account,95.67,auto_accept,,false,beneficiary_not_allowed,false,2704,1.27176e-05
+test_02171,I am having problems transferring to a beneficiary.,deepseek/deepseek-v4-flash,v2,v1,beneficiary_not_allowed,99.91,auto_accept,,false,beneficiary_not_allowed,true,2126,1.27736e-05
+test_02172,What's the deal with no cryptocurrency on your app?,deepseek/deepseek-v4-flash,v2,v1,fiat_currency_support,66.81,review,keyword_miss,true,beneficiary_not_allowed,false,1846,1.28296e-05
+test_02174,What are the rules for transferring to a beneficiary?,deepseek/deepseek-v4-flash,v2,v1,beneficiary_not_allowed,99.76,auto_accept,,false,beneficiary_not_allowed,true,1433,1.30256e-05
+test_02175,Can I transfer money to a beneficiery?,deepseek/deepseek-v4-flash,v2,v1,beneficiary_not_allowed,99.94,auto_accept,,false,beneficiary_not_allowed,true,1541,1.27736e-05
+test_02176,I have tried transferring money numerous times.  All I keep getting is an error message.  Can you tell me what is going on and how this van be fixed?,deepseek/deepseek-v4-flash,v2,v1,declined_transfer,88.08,auto_accept,,false,beneficiary_not_allowed,false,1658,1.33616e-05
+test_02179,The money would not transfer to a beneficiary.,deepseek/deepseek-v4-flash,v2,v1,beneficiary_not_allowed,98.19,auto_accept,,false,beneficiary_not_allowed,true,1419,1.27736e-05
+test_02183,Why did I receive an error message saying that my transfer was not possible?,deepseek/deepseek-v4-flash,v2,v1,failed_transfer,4.74,auto_accept,,false,beneficiary_not_allowed,false,1434,1.27736e-05
+test_02189,I am trying to exchange crypto and it's not working. Tell me how to fix this.,deepseek/deepseek-v4-flash,v2,v1,exchange_via_app,98.59,auto_accept,,false,beneficiary_not_allowed,false,1310,1.29416e-05
+test_02194,I want to transfer money to a beneficiery. Why can't I?,deepseek/deepseek-v4-flash,v2,v1,beneficiary_not_allowed,99.97,auto_accept,,false,beneficiary_not_allowed,true,986,1.29416e-05
+test_02195,Can you help with a transfer to an account,deepseek/deepseek-v4-flash,v2,v1,transfer_into_account,96.43,auto_accept,,false,beneficiary_not_allowed,false,1282,1.26896e-05
+test_02196,why isnt my account allowing transfers,deepseek/deepseek-v4-flash,v2,v1,declined_transfer,97.87,auto_accept,,false,beneficiary_not_allowed,false,1146,1.26336e-05
+test_02204,I had to pay in order to do a transfer,deepseek/deepseek-v4-flash,v2,v1,declined_transfer,86.45,auto_accept,,false,transfer_fee_charged,false,1387,1.27176e-05
+test_02208,I am being charged a transfer fee aren't they free?,deepseek/deepseek-v4-flash,v2,v1,transfer_fee_charged,100.0,auto_accept,,false,transfer_fee_charged,true,1393,1.28016e-05
+test_02210,I got 2 transfer fees and I thought transfers were free.,deepseek/deepseek-v4-flash,v2,v1,transfer_fee_charged,100.0,auto_accept,,false,transfer_fee_charged,true,1431,1.28296e-05
+test_02211,Why am I being charged a fee for transferring money?,deepseek/deepseek-v4-flash,v2,v1,transfer_fee_charged,99.95,auto_accept,,false,transfer_fee_charged,true,1378,1.27736e-05
+test_02215,"Why did I get charged for something I bought online? Even though it was international, I thought it would be covered.",deepseek/deepseek-v4-flash,v2,v1,card_payment_fee_charged,64.72,auto_accept,,false,transfer_fee_charged,false,1373,1.32496e-05
+test_02223,"I sent out money, but was charged extra for transferring. Why?",deepseek/deepseek-v4-flash,v2,v1,transfer_fee_charged,99.71,auto_accept,,false,transfer_fee_charged,true,1298,1.28576e-05
+test_02226,I need someone to alert me as to what's going on. I had transferred an amount but the receiver is saying that the amount is somewhat less than what I sent over. I now have to make another transfer to make up the difference.,deepseek/deepseek-v4-flash,v2,v1,transfer_not_received_by_recipient,99.91,auto_accept,,false,transfer_fee_charged,false,1679,1.39776e-05
+test_02227,"I was charge a fee for my transfer, why?",deepseek/deepseek-v4-flash,v2,v1,transfer_fee_charged,99.99,auto_accept,,false,transfer_fee_charged,true,1143,1.27736e-05
+test_02229,Why was my transfer charged fees?,deepseek/deepseek-v4-flash,v2,v1,transfer_fee_charged,99.96,auto_accept,,false,transfer_fee_charged,true,1673,1.26616e-05
+test_02233,What extra charges are there?,deepseek/deepseek-v4-flash,v2,v1,extra_charge_on_statement,94.6,auto_accept,,false,transfer_fee_charged,false,1484,1.26896e-05
+test_02246,Do I need to choose GBP to get my salary deposited properly?,deepseek/deepseek-v4-flash,v2,v1,receiving_money,78.43,auto_accept,,false,receiving_money,true,1087,1.27736e-05
+test_02248,Is it possible for me to get money out in a different currency?,deepseek/deepseek-v4-flash,v2,v1,exchange_via_app,13.19,auto_accept,,false,receiving_money,false,1460,1.28016e-05
+test_02251,How do people send me money?,deepseek/deepseek-v4-flash,v2,v1,receiving_money,99.99,auto_accept,,false,receiving_money,true,2123,1.26056e-05
+test_02252,Is GBP a supported currency?,deepseek/deepseek-v4-flash,v2,v1,fiat_currency_support,99.79,auto_accept,,false,receiving_money,false,1567,1.26896e-05
+test_02258,What do I need to do to transfer my paycheck to my account?,deepseek/deepseek-v4-flash,v2,v1,transfer_into_account,77.59,auto_accept,,false,receiving_money,false,1603,1.28016e-05
+test_02266,How do I deposit my paycheck to this account?,deepseek/deepseek-v4-flash,v2,v1,top_up_by_bank_transfer_charge,64.75,review,keyword_miss,true,receiving_money,false,1796,1.31936e-05
+test_02268,Can i deposit my salary to this account?,deepseek/deepseek-v4-flash,v2,v1,receiving_money,69.68,auto_accept,,false,receiving_money,true,14310,1.26616e-05
+test_02269,How do I get my salary through this account?,deepseek/deepseek-v4-flash,v2,v1,receiving_money,97.68,auto_accept,,false,receiving_money,true,3887,1.26896e-05
+test_02270,What if I need my salary in a different currency?,deepseek/deepseek-v4-flash,v2,v1,fiat_currency_support,62.0,auto_accept,,false,receiving_money,false,1463,1.28296e-05
+test_02279,Can I get my paycheck through here?,deepseek/deepseek-v4-flash,v2,v1,receiving_money,99.83,review,keyword_miss,true,receiving_money,true,1809,1.26336e-05
+test_02284,Tell me why my transfer failed!,deepseek/deepseek-v4-flash,v2,v1,declined_transfer,92.41,auto_accept,,false,failed_transfer,false,1362,1.26056e-05
+test_02285,My transfer did not go through.,deepseek/deepseek-v4-flash,v2,v1,declined_transfer,95.25,auto_accept,,false,failed_transfer,false,1406,1.26056e-05
+test_02288,Why did my transfer not go through?,deepseek/deepseek-v4-flash,v2,v1,failed_transfer,6.01,auto_accept,,false,failed_transfer,true,1741,1.25776e-05
+test_02290,I could not get my transfer to happen correctly and was wondering why?,deepseek/deepseek-v4-flash,v2,v1,declined_transfer,26.89,auto_accept,,false,failed_transfer,false,2068,1.28016e-05
+test_02291,how come my transfer didn't work,deepseek/deepseek-v4-flash,v2,v1,declined_transfer,88.07,auto_accept,,false,failed_transfer,false,1203,1.26336e-05
+test_02293,Why has my transfer failed?,deepseek/deepseek-v4-flash,v2,v1,failed_transfer,50.0,auto_accept,,false,failed_transfer,true,1321,1.25216e-05
+test_02295,Why hasn't my transfer been made?,deepseek/deepseek-v4-flash,v2,v1,failed_transfer,64.44,auto_accept,,false,failed_transfer,true,1124,1.25776e-05
+test_02297,My transfer keeps failing and I just want to transfer the money can you please make it work?,deepseek/deepseek-v4-flash,v2,v1,declined_transfer,90.46,auto_accept,,false,failed_transfer,false,1073,1.29416e-05
+test_02302,I tried to make a transfer but it failed,deepseek/deepseek-v4-flash,v2,v1,declined_transfer,77.72,auto_accept,,false,failed_transfer,false,1307,1.26896e-05
+test_02303,Why couldn't I complete a transfer?,deepseek/deepseek-v4-flash,v2,v1,declined_transfer,93.98,auto_accept,,false,failed_transfer,false,1504,1.26336e-05
+test_02304,My transfer appeared not to work.,deepseek/deepseek-v4-flash,v2,v1,failed_transfer,81.72,auto_accept,,false,failed_transfer,true,1496,1.25496e-05
+test_02306,"Hi, I'm buying a flat and I'm trying to get my mortgage to go though. Every time I check I simply get an error message. Is there any way you can help me get this money transferred over. Thanks!",deepseek/deepseek-v4-flash,v2,v1,declined_transfer,90.29,auto_accept,,false,failed_transfer,false,1026,1.36976e-05
+test_02313,help me with my transfer,deepseek/deepseek-v4-flash,v2,v1,transfer_into_account,4.72,auto_accept,,false,failed_transfer,false,1991,1.25776e-05
+test_02318,Can you provide a reason as to why my transfer did not work?,deepseek/deepseek-v4-flash,v2,v1,declined_transfer,85.19,auto_accept,,false,failed_transfer,false,1205,1.28016e-05
+test_02320,Can I do a bank transfer to put additional money in my account because I am out of money?,deepseek/deepseek-v4-flash,v2,v1,top_up_by_bank_transfer_charge,94.17,auto_accept,,false,transfer_into_account,false,1928,1.32496e-05
+test_02321,"I'm out of money, can I add money with my bank?",deepseek/deepseek-v4-flash,v2,v1,top_up_by_bank_transfer_charge,96.62,auto_accept,,false,transfer_into_account,false,1346,1.30816e-05
+test_02332,"When I want to transfer money to my account, how can I do that?",deepseek/deepseek-v4-flash,v2,v1,transfer_into_account,99.83,auto_accept,,false,transfer_into_account,true,1891,1.28576e-05
+test_02339,How can I transfer money from an outside bank?,deepseek/deepseek-v4-flash,v2,v1,transfer_into_account,62.05,auto_accept,,false,transfer_into_account,true,2096,1.26896e-05
+test_02341,What methods can I use to add money to my account?,deepseek/deepseek-v4-flash,v2,v1,top_up_by_bank_transfer_charge,72.19,review,keyword_miss,true,transfer_into_account,false,1436,1.30256e-05
+test_02342,"I would like to use the bank transfer feature, but I can't find it. Can you please give me the details?",deepseek/deepseek-v4-flash,v2,v1,transfer_into_account,92.36,auto_accept,,false,transfer_into_account,true,1562,1.31096e-05
+test_02344,CAN YOU EXPLAIN HOW TO TRANSFER MONEY INTO MY  ACCOUNT FOR ME?,deepseek/deepseek-v4-flash,v2,v1,transfer_into_account,90.42,auto_accept,,false,transfer_into_account,true,1306,1.29416e-05
+test_02346,How do I transfer money to my account?,deepseek/deepseek-v4-flash,v2,v1,transfer_into_account,99.84,auto_accept,,false,transfer_into_account,true,1310,1.26616e-05
+test_02348,How do I do an international transfer?,deepseek/deepseek-v4-flash,v2,v1,transfer_into_account,71.5,auto_accept,,false,transfer_into_account,true,1430,1.26336e-05
+test_02350,I want to transfer from accounts in order to Top up. What are the steps necessary.,deepseek/deepseek-v4-flash,v2,v1,top_up_by_bank_transfer_charge,94.71,auto_accept,,false,transfer_into_account,false,1733,1.31936e-05
+test_02351,How does a transfer work?,deepseek/deepseek-v4-flash,v2,v1,transfer_timing,96.24,auto_accept,,false,transfer_into_account,false,1315,1.25216e-05
+test_02353,I want to use bank transfer for topping up my account. How is it handled?,deepseek/deepseek-v4-flash,v2,v1,top_up_by_bank_transfer_charge,99.95,auto_accept,,false,transfer_into_account,false,1695,1.31656e-05
+test_02354,I checked my account today and it said I was out of money. How do I transfer money into my account?,deepseek/deepseek-v4-flash,v2,v1,transfer_into_account,98.92,auto_accept,,false,transfer_into_account,true,1927,1.30536e-05
+test_02355,How can I transfer money to my account?,deepseek/deepseek-v4-flash,v2,v1,transfer_into_account,99.84,auto_accept,,false,transfer_into_account,true,1485,1.26616e-05
+test_02358,I would like to transfer money from my other bank account into this one.,deepseek/deepseek-v4-flash,v2,v1,transfer_into_account,92.57,auto_accept,,false,transfer_into_account,true,1327,1.28296e-05
+test_02369,Why do you need code verification for my top up?,deepseek/deepseek-v4-flash,v2,v1,verify_top_up,89.14,auto_accept,,false,verify_top_up,true,1228,1.26616e-05
+test_02370,Where can I find the verification code on a top-up card?,deepseek/deepseek-v4-flash,v2,v1,top_up_by_card_charge,15.33,auto_accept,,false,verify_top_up,false,1819,1.28856e-05
+test_02371,How do I get my top-up verification code?,deepseek/deepseek-v4-flash,v2,v1,verify_top_up,100.0,auto_accept,,false,verify_top_up,true,963,1.26336e-05
+test_02372,Is it possible to verify a top up?,deepseek/deepseek-v4-flash,v2,v1,verify_top_up,100.0,auto_accept,,false,verify_top_up,true,1229,1.26056e-05
+test_02374,Why does the top-up need verification?,deepseek/deepseek-v4-flash,v2,v1,verify_top_up,96.24,auto_accept,,false,verify_top_up,true,1085,1.25776e-05
+test_02379,How do I find the verification code for my top-up card?,deepseek/deepseek-v4-flash,v2,v1,verify_top_up,99.12,auto_accept,,false,verify_top_up,true,1101,1.29416e-05
+test_02380,Why is it important to verify a top-up card?,deepseek/deepseek-v4-flash,v2,v1,verify_top_up,93.69,auto_accept,,false,verify_top_up,true,1492,1.26616e-05
+test_02381,Why do I have to verify the top-up?,deepseek/deepseek-v4-flash,v2,v1,verify_top_up,88.02,auto_accept,,false,verify_top_up,true,1163,1.26336e-05
+test_02383,I can't find the top-up verification code.,deepseek/deepseek-v4-flash,v2,v1,verify_top_up,99.98,auto_accept,,false,verify_top_up,true,1441,1.26336e-05
+test_02389,help me find the top-up card's verification code?,deepseek/deepseek-v4-flash,v2,v1,verify_top_up,99.89,auto_accept,,false,verify_top_up,true,1324,1.26616e-05
+test_02394,How do I verify a top-up?,deepseek/deepseek-v4-flash,v2,v1,verify_top_up,100.0,auto_accept,,false,verify_top_up,true,1460,1.25776e-05
+test_02396,How can I find the top-up verification code?,deepseek/deepseek-v4-flash,v2,v1,verify_top_up,99.99,auto_accept,,false,verify_top_up,true,1845,1.26336e-05
+test_02397,I need help finding the verification code for my top-up card.,deepseek/deepseek-v4-flash,v2,v1,verify_top_up,99.62,auto_accept,,false,verify_top_up,true,1290,1.27176e-05
+test_02398,Is there a verification code for top-ups?,deepseek/deepseek-v4-flash,v2,v1,verify_top_up,99.98,auto_accept,,false,verify_top_up,true,1396,1.26056e-05
+test_02402,I want to order another crad,deepseek/deepseek-v4-flash,v2,v1,order_physical_card,99.5,auto_accept,,false,getting_spare_card,false,1258,1.26336e-05
+test_02406,I would like to receive a few more physical cards.,deepseek/deepseek-v4-flash,v2,v1,order_physical_card,90.91,auto_accept,,false,getting_spare_card,false,1039,1.27176e-05
+test_02408,How would I go about getting a second card?,deepseek/deepseek-v4-flash,v2,v1,getting_spare_card,96.68,auto_accept,,false,getting_spare_card,true,1618,1.26896e-05
+test_02411,Do you offer multiple cards for the same account?,deepseek/deepseek-v4-flash,v2,v1,card_linking,97.06,review,keyword_miss,true,getting_spare_card,false,1470,1.26336e-05
+test_02414,"Would I be able to get another card for my account, so I could give one to my daughter?",deepseek/deepseek-v4-flash,v2,v1,order_physical_card,46.42,auto_accept,,false,getting_spare_card,false,1202,1.29976e-05
+test_02417,"My daughter would like a card as well, how can we make this happen?",deepseek/deepseek-v4-flash,v2,v1,order_physical_card,54.29,auto_accept,,false,getting_spare_card,false,1211,1.28576e-05
+test_02419,May I have another card?,deepseek/deepseek-v4-flash,v2,v1,get_physical_card,16.45,auto_accept,,false,getting_spare_card,false,1486,1.25776e-05
+test_02420,Is there a fee for sending out more than one card?,deepseek/deepseek-v4-flash,v2,v1,card_delivery_estimate,37.31,auto_accept,,false,getting_spare_card,false,1731,1.28576e-05
+test_02422,Where can I get a second card?,deepseek/deepseek-v4-flash,v2,v1,getting_spare_card,99.02,auto_accept,,false,getting_spare_card,true,1363,1.26336e-05
+test_02424,I need a few more physical cards.,deepseek/deepseek-v4-flash,v2,v1,get_physical_card,4.54,auto_accept,,false,getting_spare_card,false,1088,1.26336e-05
+test_02428,May I have a second card?,deepseek/deepseek-v4-flash,v2,v1,getting_spare_card,93.64,auto_accept,,false,getting_spare_card,true,1865,1.26056e-05
+test_02431,How can I get a second card for my daughter?,deepseek/deepseek-v4-flash,v2,v1,getting_spare_card,97.8,auto_accept,,false,getting_spare_card,true,1410,1.27176e-05
+test_02437,My daughter needs a card. Can I give her one of mine that's linked to my account?,deepseek/deepseek-v4-flash,v2,v1,card_linking,97.97,auto_accept,,false,getting_spare_card,false,1262,1.29136e-05
+test_02440,Can I top up by cheque?,deepseek/deepseek-v4-flash,v2,v1,top_up_by_cash_or_cheque,99.99,auto_accept,,false,top_up_by_cash_or_cheque,true,1421,1.28856e-05
+test_02441,How do I top-up using cash?,deepseek/deepseek-v4-flash,v2,v1,top_up_by_cash_or_cheque,99.98,auto_accept,,false,top_up_by_cash_or_cheque,true,2164,1.29136e-05
+test_02447,I'm looking for the cash deposit top up option but can't find it. Can you help me?,deepseek/deepseek-v4-flash,v2,v1,top_up_by_cash_or_cheque,99.98,auto_accept,,false,top_up_by_cash_or_cheque,true,1248,1.32776e-05
+test_02452,Can I add to my account balance with a cheque?,deepseek/deepseek-v4-flash,v2,v1,top_up_by_cash_or_cheque,99.11,auto_accept,,false,top_up_by_cash_or_cheque,true,1207,1.29976e-05
+test_02456,"I need to top up cash, How do I do it?",deepseek/deepseek-v4-flash,v2,v1,top_up_by_cash_or_cheque,99.95,auto_accept,,false,top_up_by_cash_or_cheque,true,1659,1.30536e-05
+test_02457,I'm looking for the option to top up by cheque.,deepseek/deepseek-v4-flash,v2,v1,top_up_by_cash_or_cheque,99.84,auto_accept,,false,top_up_by_cash_or_cheque,true,1124,1.30256e-05
+test_02458,What locations can I top up with cash?,deepseek/deepseek-v4-flash,v2,v1,top_up_by_cash_or_cheque,99.91,auto_accept,,false,top_up_by_cash_or_cheque,true,1379,1.29416e-05
+test_02464,Will you accept a cheque to top up my account?,deepseek/deepseek-v4-flash,v2,v1,top_up_by_cash_or_cheque,99.73,auto_accept,,false,top_up_by_cash_or_cheque,true,1403,1.29976e-05
+test_02468,how come i can't find anywhere to load using cash,deepseek/deepseek-v4-flash,v2,v1,top_up_by_cash_or_cheque,99.91,auto_accept,,false,top_up_by_cash_or_cheque,true,1369,1.30256e-05
+test_02470,How do I deposit cash into my account?,deepseek/deepseek-v4-flash,v2,v1,top_up_by_cash_or_cheque,99.89,auto_accept,,false,top_up_by_cash_or_cheque,true,1218,1.29416e-05
+test_02471,Why can't I top up with a cheque?,deepseek/deepseek-v4-flash,v2,v1,top_up_by_cash_or_cheque,99.94,auto_accept,,false,top_up_by_cash_or_cheque,true,1395,1.29696e-05
+test_02472,Can I send a cheque to do my top ups?,deepseek/deepseek-v4-flash,v2,v1,top_up_by_cash_or_cheque,99.9,auto_accept,,false,top_up_by_cash_or_cheque,true,1116,1.29976e-05
+test_02474,I want to do a cash top-up,deepseek/deepseek-v4-flash,v2,v1,top_up_by_cash_or_cheque,100.0,auto_accept,,false,top_up_by_cash_or_cheque,true,1293,1.29416e-05
+test_02475,"I have a cheque here, can I use it to top off my account?",deepseek/deepseek-v4-flash,v2,v1,top_up_by_cash_or_cheque,99.97,auto_accept,,false,top_up_by_cash_or_cheque,true,1461,1.31376e-05
+test_02477,How can I top-up my card?,deepseek/deepseek-v4-flash,v2,v1,topping_up_by_card,98.19,auto_accept,,false,top_up_by_cash_or_cheque,false,1245,1.26896e-05
+test_02480,How do I receive my physical card,deepseek/deepseek-v4-flash,v2,v1,order_physical_card,61.53,auto_accept,,false,order_physical_card,true,1387,1.26336e-05
+test_02482,What do you charge for physical cards?,deepseek/deepseek-v4-flash,v2,v1,order_physical_card,89.54,auto_accept,,false,order_physical_card,true,1753,1.26336e-05
+test_02483,Where can I get my card at?,deepseek/deepseek-v4-flash,v2,v1,card_arrival,99.84,auto_accept,,false,order_physical_card,false,1489,1.25776e-05
+test_02484,price of physical card,deepseek/deepseek-v4-flash,v2,v1,order_physical_card,81.28,auto_accept,,false,order_physical_card,true,1140,1.25496e-05
+test_02486,Send me a physical card,deepseek/deepseek-v4-flash,v2,v1,order_physical_card,93.98,auto_accept,,false,order_physical_card,true,952,1.25776e-05
+test_02488,Can I request a physical card?,deepseek/deepseek-v4-flash,v2,v1,order_physical_card,99.81,auto_accept,,false,order_physical_card,true,1421,1.26056e-05
+test_02490,Do you charge for physical cards,deepseek/deepseek-v4-flash,v2,v1,order_physical_card,93.71,auto_accept,,false,order_physical_card,true,2433,1.26056e-05
+test_02496,Where are cards delivered to?,deepseek/deepseek-v4-flash,v2,v1,card_arrival,56.21,auto_accept,,false,order_physical_card,false,3053,1.25216e-05
+test_02500,How much does it cost in fees to use your card?,deepseek/deepseek-v4-flash,v2,v1,card_payment_fee_charged,99.16,auto_accept,,false,order_physical_card,false,1576,1.31376e-05
+test_02501,How can I get a physical card,deepseek/deepseek-v4-flash,v2,v1,order_physical_card,97.07,auto_accept,,false,order_physical_card,true,1460,1.26336e-05
+test_02503,can I have a non virtual card?,deepseek/deepseek-v4-flash,v2,v1,order_physical_card,90.45,auto_accept,,false,order_physical_card,true,1059,1.26336e-05
+test_02507,What will I be charged for a physical card?,deepseek/deepseek-v4-flash,v2,v1,order_physical_card,86.22,auto_accept,,false,order_physical_card,true,1182,1.26896e-05
+test_02510,Where can I receive my card?,deepseek/deepseek-v4-flash,v2,v1,card_arrival,99.1,auto_accept,,false,order_physical_card,false,1507,1.25496e-05
+test_02512,How can I get a real-life card of my own?,deepseek/deepseek-v4-flash,v2,v1,order_physical_card,90.45,auto_accept,,false,order_physical_card,true,1401,1.27456e-05
+test_02514,"If I want a physical card, do I have to pay anything?",deepseek/deepseek-v4-flash,v2,v1,order_physical_card,99.67,auto_accept,,false,order_physical_card,true,1049,1.28016e-05
+test_02515,Where can cards be delivered?,deepseek/deepseek-v4-flash,v2,v1,card_delivery_estimate,97.68,auto_accept,,false,order_physical_card,false,1112,1.26896e-05
+test_02517,What are the fees for a physical card?,deepseek/deepseek-v4-flash,v2,v1,order_physical_card,80.69,auto_accept,,false,order_physical_card,true,1515,1.26616e-05
+test_02519,Can I get a real card?,deepseek/deepseek-v4-flash,v2,v1,order_physical_card,95.25,auto_accept,,false,order_physical_card,true,1551,1.26056e-05
+test_02533,Why doesn't my disposable virtual card work?,deepseek/deepseek-v4-flash,v2,v1,virtual_card_not_working,89.76,auto_accept,,false,virtual_card_not_working,true,1629,1.27176e-05
+test_02534,Why can't I use my virtual card for subscription services?,deepseek/deepseek-v4-flash,v2,v1,virtual_card_not_working,99.46,auto_accept,,false,virtual_card_not_working,true,2460,1.28016e-05
+test_02536,I cannot make transactions with my virtual card.,deepseek/deepseek-v4-flash,v2,v1,virtual_card_not_working,100.0,auto_accept,,false,virtual_card_not_working,true,1855,1.27176e-05
+test_02539,How can I fix a problem where my virtual card is rejected?,deepseek/deepseek-v4-flash,v2,v1,virtual_card_not_working,99.13,auto_accept,,false,virtual_card_not_working,true,1045,1.28296e-05
+test_02540,My virtual card isn't working. What do I do?,deepseek/deepseek-v4-flash,v2,v1,virtual_card_not_working,100.0,auto_accept,,false,virtual_card_not_working,true,2540,1.28016e-05
+test_02545,My disposable card seems not to be working am I doing something wrong?,deepseek/deepseek-v4-flash,v2,v1,disposable_card_limits,77.14,auto_accept,,false,virtual_card_not_working,false,3039,1.30816e-05
+test_02550,How do I get my disposable virtual card to work?,deepseek/deepseek-v4-flash,v2,v1,virtual_card_not_working,21.95,auto_accept,,false,virtual_card_not_working,true,2639,1.27736e-05
+test_02566,Why was the exchange rate wrong when I got cash,deepseek/deepseek-v4-flash,v2,v1,wrong_exchange_rate_for_cash_withdrawal,99.98,auto_accept,,false,wrong_exchange_rate_for_cash_withdrawal,true,1197,1.29976e-05
+test_02570,The exchange rate you gave me for my cash withdrawal is wrong,deepseek/deepseek-v4-flash,v2,v1,wrong_exchange_rate_for_cash_withdrawal,99.98,auto_accept,,false,wrong_exchange_rate_for_cash_withdrawal,true,1320,1.30536e-05
+test_02574,"When I got cash, my exchange rate was wrong.",deepseek/deepseek-v4-flash,v2,v1,wrong_exchange_rate_for_cash_withdrawal,99.97,auto_accept,,false,wrong_exchange_rate_for_cash_withdrawal,true,1279,1.29976e-05
+test_02578,"In receiving cash, the wrong exchange rate was used for my transaction.",deepseek/deepseek-v4-flash,v2,v1,wrong_exchange_rate_for_cash_withdrawal,100.0,auto_accept,,false,wrong_exchange_rate_for_cash_withdrawal,true,1482,1.30816e-05
+test_02580,I took out a foreign currency and the exchange rate is wrong.,deepseek/deepseek-v4-flash,v2,v1,wrong_exchange_rate_for_cash_withdrawal,98.89,auto_accept,,false,wrong_exchange_rate_for_cash_withdrawal,true,2075,1.30536e-05
+test_02587,I withdrew some cash out of the ATM over the holiday. It seems that I was charged some outrageous fees. I would not have done that had I been aware of these outrageous charges!,deepseek/deepseek-v4-flash,v2,v1,cash_withdrawal_charge,99.99,auto_accept,,false,wrong_exchange_rate_for_cash_withdrawal,false,1976,1.35016e-05
+test_02597,I used the ATM machine to get money out for Holiday shopping and saw the outrageous charges. Why is that? I would not have used the ATM if I had known!,deepseek/deepseek-v4-flash,v2,v1,cash_withdrawal_charge,99.4,review,keyword_miss,true,wrong_exchange_rate_for_cash_withdrawal,false,1206,1.34176e-05
+test_02599,"Is there a local ATM that will provide British pounds, I have no money for my homeward journey and do not feel comfortable waiting until  I arrive in Britain. Will a withdrawal involve extra charges?",deepseek/deepseek-v4-flash,v2,v1,atm_support,99.39,auto_accept,,false,wrong_exchange_rate_for_cash_withdrawal,false,987,1.34736e-05
+test_02605,What is a disposable virtual card?,deepseek/deepseek-v4-flash,v2,v1,get_disposable_virtual_card,93.93,auto_accept,,false,get_disposable_virtual_card,true,1454,1.27176e-05
+test_02619,Can i get a single use virtual card,deepseek/deepseek-v4-flash,v2,v1,get_disposable_virtual_card,99.98,auto_accept,,false,get_disposable_virtual_card,true,1384,1.27736e-05
+test_02620,I would like to create a disposable virtual card. How do I go about doing that?,deepseek/deepseek-v4-flash,v2,v1,get_disposable_virtual_card,100.0,auto_accept,,false,get_disposable_virtual_card,true,1121,1.30256e-05
+test_02622,how does a virtual card work,deepseek/deepseek-v4-flash,v2,v1,getting_virtual_card,94.76,auto_accept,,false,get_disposable_virtual_card,false,2163,1.26056e-05
+test_02623,What is the process of obtaining a disposable virtual card,deepseek/deepseek-v4-flash,v2,v1,get_disposable_virtual_card,99.99,auto_accept,,false,get_disposable_virtual_card,true,1744,1.28296e-05
+test_02626,Is it possible to also get a disposable virtual card?,deepseek/deepseek-v4-flash,v2,v1,get_disposable_virtual_card,99.98,auto_accept,,false,get_disposable_virtual_card,true,1822,1.28296e-05
+test_02630,How do disposable cards work?,deepseek/deepseek-v4-flash,v2,v1,disposable_card_limits,99.98,auto_accept,,false,get_disposable_virtual_card,false,1094,1.26336e-05
+test_02631,Is there a disposable virtual card I can order?,deepseek/deepseek-v4-flash,v2,v1,get_disposable_virtual_card,99.97,auto_accept,,false,get_disposable_virtual_card,true,1980,1.28016e-05
+test_02633,Will I be able to get a disposable virtual card as well?,deepseek/deepseek-v4-flash,v2,v1,get_disposable_virtual_card,99.99,auto_accept,,false,get_disposable_virtual_card,true,1885,1.28856e-05
+test_02637,how many transactions can i make with a disposable card,deepseek/deepseek-v4-flash,v2,v1,disposable_card_limits,99.99,auto_accept,,false,get_disposable_virtual_card,false,1737,1.27736e-05
+test_02638,What are disposable cards?,deepseek/deepseek-v4-flash,v2,v1,disposable_card_limits,99.96,auto_accept,,false,get_disposable_virtual_card,false,1524,1.26056e-05
+test_02642,I have a top up that didn't go through.  Why?,deepseek/deepseek-v4-flash,v2,v1,top_up_failed,100.0,auto_accept,,false,top_up_failed,true,1293,1.28016e-05
+test_02647,I attempted to top up but the app denied it.,deepseek/deepseek-v4-flash,v2,v1,top_up_failed,100.0,auto_accept,,false,top_up_failed,true,1822,1.27176e-05
+test_02650,How can I check to see if my top-up worked?,deepseek/deepseek-v4-flash,v2,v1,pending_top_up,86.65,auto_accept,,false,top_up_failed,false,1254,1.26896e-05
+test_02652,My top up failed.,deepseek/deepseek-v4-flash,v2,v1,top_up_failed,100.0,auto_accept,,false,top_up_failed,true,1457,1.25496e-05
+test_02653,Why would my topup not go through?,deepseek/deepseek-v4-flash,v2,v1,top_up_failed,100.0,review,keyword_miss,true,top_up_failed,true,1026,1.26616e-05
+test_02658,I need to know why my credit card was declined for top up? What is the deal here and why did it not go through?,deepseek/deepseek-v4-flash,v2,v1,declined_card_payment,95.74,auto_accept,,false,top_up_failed,false,7209,1.32216e-05
+test_02659,I topped up but the app did not accept it.,deepseek/deepseek-v4-flash,v2,v1,top_up_failed,99.98,auto_accept,,false,top_up_failed,true,1508,1.27176e-05
+test_02661,I think my top up did not work,deepseek/deepseek-v4-flash,v2,v1,top_up_failed,99.99,auto_accept,,false,top_up_failed,true,2415,1.26616e-05
+test_02662,My top up was denied in the app.,deepseek/deepseek-v4-flash,v2,v1,top_up_failed,100.0,auto_accept,,false,top_up_failed,true,3574,1.26616e-05
+test_02663,Can you tell me if my pop-up went through?,deepseek/deepseek-v4-flash,v2,v1,pending_top_up,90.03,auto_accept,,false,top_up_failed,false,1362,1.26616e-05
+test_02664,can you check why I wasn't able to top up?,deepseek/deepseek-v4-flash,v2,v1,top_up_failed,99.96,auto_accept,,false,top_up_failed,true,1708,1.27456e-05
+test_02665,How did my top-up fail?,deepseek/deepseek-v4-flash,v2,v1,top_up_failed,100.0,auto_accept,,false,top_up_failed,true,1030,1.26056e-05
+test_02667,I tried to top up. Why was it denied?,deepseek/deepseek-v4-flash,v2,v1,top_up_failed,100.0,auto_accept,,false,top_up_failed,true,999,1.27176e-05
+test_02672,Why can't I top up?,deepseek/deepseek-v4-flash,v2,v1,top_up_failed,99.68,auto_accept,,false,top_up_failed,true,1357,1.26056e-05
+test_02673,My top-up has failed.,deepseek/deepseek-v4-flash,v2,v1,top_up_failed,100.0,auto_accept,,false,top_up_failed,true,1242,1.25776e-05
+test_02682,How long will it take for my transferred money to show up?,deepseek/deepseek-v4-flash,v2,v1,balance_not_updated_after_bank_transfer,11.89,auto_accept,,false,balance_not_updated_after_bank_transfer,true,1888,1.31096e-05
+test_02683,Why didn't my balance change after I transferred some money?,deepseek/deepseek-v4-flash,v2,v1,balance_not_updated_after_bank_transfer,99.99,auto_accept,,false,balance_not_updated_after_bank_transfer,true,1296,1.30816e-05
+test_02685,How long does it take for an international transfer into my account?,deepseek/deepseek-v4-flash,v2,v1,transfer_timing,99.79,auto_accept,,false,balance_not_updated_after_bank_transfer,false,1383,1.27176e-05
+test_02689,I just completed a bank transfer and the balance didn't update,deepseek/deepseek-v4-flash,v2,v1,balance_not_updated_after_bank_transfer,100.0,auto_accept,,false,balance_not_updated_after_bank_transfer,true,1631,1.31096e-05
+test_02691,How long does a UK transfer take?,deepseek/deepseek-v4-flash,v2,v1,transfer_timing,100.0,auto_accept,,false,balance_not_updated_after_bank_transfer,false,1237,1.25776e-05
+test_02692,Hello I made a bank transfer couple hours ago from my UK account but it doesn't show up yet. Can you please check if everything is alright with it?,deepseek/deepseek-v4-flash,v2,v1,transfer_timing,11.82,auto_accept,,false,balance_not_updated_after_bank_transfer,false,1520,1.32496e-05
+test_02697,I had cash transferred but the balance did not change.,deepseek/deepseek-v4-flash,v2,v1,balance_not_updated_after_bank_transfer,98.58,auto_accept,,false,balance_not_updated_after_bank_transfer,true,1255,1.30536e-05
+test_02698,I can't see my latest bank transfer,deepseek/deepseek-v4-flash,v2,v1,balance_not_updated_after_bank_transfer,99.95,auto_accept,,false,balance_not_updated_after_bank_transfer,true,1096,1.29976e-05
+test_02700,I made a transfer and it doesnt' show up in my account.,deepseek/deepseek-v4-flash,v2,v1,balance_not_updated_after_bank_transfer,95.58,auto_accept,,false,balance_not_updated_after_bank_transfer,true,1170,1.31376e-05
+test_02704,Why isn't the transfer on my account showing up?,deepseek/deepseek-v4-flash,v2,v1,balance_not_updated_after_bank_transfer,96.79,auto_accept,,false,balance_not_updated_after_bank_transfer,true,1074,1.30536e-05
+test_02709,Why doesn't it show that I did a balance transfer?,deepseek/deepseek-v4-flash,v2,v1,balance_not_updated_after_bank_transfer,99.68,auto_accept,,false,balance_not_updated_after_bank_transfer,true,1389,1.30816e-05
+test_02710,"I made a bank transfer a couple of hours ago from my UK account.  It hasn't appeared, can you check to make sure it went through?",deepseek/deepseek-v4-flash,v2,v1,balance_not_updated_after_bank_transfer,50.53,auto_accept,,false,balance_not_updated_after_bank_transfer,true,2525,1.36136e-05
+test_02712,"Hey, I try to make a bank transfer from my UK account a few hours ago, but it haven't show up yet. Please check my account to make sure everything alright with it?",deepseek/deepseek-v4-flash,v2,v1,pending_transfer,45.06,auto_accept,,false,balance_not_updated_after_bank_transfer,false,1334,1.34176e-05
+test_02713,Where is my transfer from [country]?,deepseek/deepseek-v4-flash,v2,v1,transfer_timing,86.15,auto_accept,,false,balance_not_updated_after_bank_transfer,false,1080,1.26056e-05
+test_02716,I need to know the time frame that is typical for a transfer from a UK account. I just made a transfer and it doesn't appear. I want to make sure everything is okay.,deepseek/deepseek-v4-flash,v2,v1,transfer_timing,100.0,auto_accept,,false,balance_not_updated_after_bank_transfer,false,1645,1.34176e-05
+test_02717,Why doesn't my balance reflect my transfer,deepseek/deepseek-v4-flash,v2,v1,balance_not_updated_after_bank_transfer,99.99,auto_accept,,false,balance_not_updated_after_bank_transfer,true,1019,1.29976e-05
+test_02718,My account balance has not gone up even though I just transferred money into it,deepseek/deepseek-v4-flash,v2,v1,balance_not_updated_after_bank_transfer,99.99,auto_accept,,false,balance_not_updated_after_bank_transfer,true,1483,1.31936e-05
+test_02719,When will I see my new balance after making my bank transfer?,deepseek/deepseek-v4-flash,v2,v1,balance_not_updated_after_bank_transfer,100.0,auto_accept,,false,balance_not_updated_after_bank_transfer,true,1261,1.31096e-05
+test_02722,I just lost my wallet and I see that they are already withdrawing money from my account. How can I stop this?,deepseek/deepseek-v4-flash,v2,v1,lost_or_stolen_card,67.89,auto_accept,,false,cash_withdrawal_not_recognised,false,1466,1.31376e-05
+test_02732,I checked the app and saw an extra cash withdrawal that I didn't authorize,deepseek/deepseek-v4-flash,v2,v1,cash_withdrawal_not_recognised,99.92,auto_accept,,false,cash_withdrawal_not_recognised,true,1383,1.30256e-05
+test_02736,I am seeing in the App a some cash withdrawal that its not mine,deepseek/deepseek-v4-flash,v2,v1,cash_withdrawal_not_recognised,99.99,auto_accept,,false,cash_withdrawal_not_recognised,true,1576,1.29976e-05
+test_02737,My account has a weird withdrawal.,deepseek/deepseek-v4-flash,v2,v1,cash_withdrawal_not_recognised,60.87,auto_accept,,false,cash_withdrawal_not_recognised,true,1849,1.27736e-05
+test_02740,I think I see a withdraw I did not make.,deepseek/deepseek-v4-flash,v2,v1,cash_withdrawal_not_recognised,99.42,auto_accept,,false,cash_withdrawal_not_recognised,true,1130,1.28856e-05
+test_02743,The app is showing an ATM withdrawl that I didn't make.,deepseek/deepseek-v4-flash,v2,v1,cash_withdrawal_not_recognised,99.58,auto_accept,,false,cash_withdrawal_not_recognised,true,1232,1.29696e-05
+test_02750,I don't recognise a cash withdrawal,deepseek/deepseek-v4-flash,v2,v1,cash_withdrawal_not_recognised,100.0,auto_accept,,false,cash_withdrawal_not_recognised,true,2968,1.28016e-05
+test_02751,Help!  My wallet was stolen and someone is taking money out.  I need this money!  What can I do?,deepseek/deepseek-v4-flash,v2,v1,lost_or_stolen_card,95.7,auto_accept,,false,cash_withdrawal_not_recognised,false,1203,1.31936e-05
+test_02754,"Someone has stolen my card. Even though I have my card with me, someone just made a 500£ cash withdrawal. Please help as soon as possible.",deepseek/deepseek-v4-flash,v2,v1,lost_or_stolen_card,26.89,auto_accept,,false,cash_withdrawal_not_recognised,false,1317,1.33616e-05
+test_02759,The app made a mistake and said I made a cash withdrawal.,deepseek/deepseek-v4-flash,v2,v1,cash_withdrawal_not_recognised,99.83,auto_accept,,false,cash_withdrawal_not_recognised,true,4518,1.29416e-05
+test_02761,whats your exchange rate,deepseek/deepseek-v4-flash,v2,v1,exchange_rate,100.0,auto_accept,,false,exchange_charge,false,1964,1.24656e-05
+test_02762,What are your currency exchange fees?,deepseek/deepseek-v4-flash,v2,v1,exchange_charge,88.08,auto_accept,,false,exchange_charge,true,1364,1.25496e-05
+test_02764,What is the base amount for cross-currency exchanges?,deepseek/deepseek-v4-flash,v2,v1,exchange_rate,99.92,auto_accept,,false,exchange_charge,false,1673,1.26056e-05
+test_02771,Is there a fee to exchange foreign money?,deepseek/deepseek-v4-flash,v2,v1,exchange_charge,67.92,auto_accept,,false,exchange_charge,true,1124,1.26056e-05
+test_02774,Is there a fee for exchanging foreign currencies?,deepseek/deepseek-v4-flash,v2,v1,exchange_rate,49.99,auto_accept,,false,exchange_charge,false,1301,1.25496e-05
+test_02779,"If I want to exchange currency, will there be extras?",deepseek/deepseek-v4-flash,v2,v1,exchange_charge,73.02,auto_accept,,false,exchange_charge,true,1090,1.26896e-05
+test_02780,If I need to exchange currency is there an extra fee?,deepseek/deepseek-v4-flash,v2,v1,exchange_charge,92.4,auto_accept,,false,exchange_charge,true,1585,1.26896e-05
+test_02782,Would I be charged for exchanging currencies?,deepseek/deepseek-v4-flash,v2,v1,exchange_charge,85.19,auto_accept,,false,exchange_charge,true,1475,1.25776e-05
+test_02783,What is the exchange fee?,deepseek/deepseek-v4-flash,v2,v1,exchange_charge,99.98,auto_accept,,false,exchange_charge,true,1974,1.25216e-05
+test_02786,Are there any extra hidden fees for exchanging currencies?,deepseek/deepseek-v4-flash,v2,v1,exchange_charge,73.1,auto_accept,,false,exchange_charge,true,1466,1.26336e-05
+test_02789,Does it cost money for currency exchange services?,deepseek/deepseek-v4-flash,v2,v1,exchange_rate,81.76,auto_accept,,false,exchange_charge,false,2324,1.25496e-05
+test_02791,"I will need to exchange currencies frequently, will I be able to get a discount?",deepseek/deepseek-v4-flash,v2,v1,exchange_rate,85.11,auto_accept,,false,exchange_charge,false,1983,1.29976e-05
+test_02793,Is there a discount for frequently exchanging currencies?,deepseek/deepseek-v4-flash,v2,v1,exchange_rate,98.99,review,keyword_miss,true,exchange_charge,false,1372,1.27736e-05
+test_02794,What is the cost for an exchange fee?,deepseek/deepseek-v4-flash,v2,v1,exchange_charge,99.84,auto_accept,,false,exchange_charge,true,1537,1.26056e-05
+test_02798,Can I exchange money from abroad without additional costs?,deepseek/deepseek-v4-flash,v2,v1,exchange_charge,15.13,auto_accept,,false,exchange_charge,true,1273,1.26336e-05
+test_02801,Are there any fees for adding money with an international card?,deepseek/deepseek-v4-flash,v2,v1,top_up_by_card_charge,99.64,auto_accept,,false,top_up_by_card_charge,true,947,1.28576e-05
+test_02804,Will I get charged for topping off my card?,deepseek/deepseek-v4-flash,v2,v1,top_up_by_card_charge,85.12,auto_accept,,false,top_up_by_card_charge,true,1702,1.28016e-05
+test_02808,Is there an additional charge for topping up using a European card?,deepseek/deepseek-v4-flash,v2,v1,top_up_by_card_charge,99.96,auto_accept,,false,top_up_by_card_charge,true,1078,1.28856e-05
+test_02817,"If I use a European bank card for top up, Do I get charged?",deepseek/deepseek-v4-flash,v2,v1,top_up_by_card_charge,99.9,auto_accept,,false,top_up_by_card_charge,true,1293,1.29696e-05
+test_02818,Will there be any extra fees for European bank card for top up?,deepseek/deepseek-v4-flash,v2,v1,top_up_by_card_charge,95.38,auto_accept,,false,top_up_by_card_charge,true,2313,1.29136e-05
+test_02819,Will I be charged if I use European bank card for top up?,deepseek/deepseek-v4-flash,v2,v1,top_up_by_card_charge,97.69,auto_accept,,false,top_up_by_card_charge,true,2279,1.29136e-05
+test_02820,I want to use a European bank card for a top up. Must I pay?,deepseek/deepseek-v4-flash,v2,v1,top_up_by_card_charge,97.17,auto_accept,,false,top_up_by_card_charge,true,1581,1.29976e-05
+test_02821,Will I be charged for topping up by card?,deepseek/deepseek-v4-flash,v2,v1,top_up_by_card_charge,62.24,auto_accept,,false,top_up_by_card_charge,true,1749,1.28016e-05
+test_02826,Are there fees for adding money using an international card,deepseek/deepseek-v4-flash,v2,v1,top_up_by_card_charge,99.0,auto_accept,,false,top_up_by_card_charge,true,4344,1.28296e-05
+test_02828,"I need to use a European card for a top up, what will the charge be?",deepseek/deepseek-v4-flash,v2,v1,top_up_by_card_charge,99.77,auto_accept,,false,top_up_by_card_charge,true,1315,1.30256e-05
+test_02832,What are the fees of using an international card to add money?,deepseek/deepseek-v4-flash,v2,v1,top_up_by_card_charge,99.42,auto_accept,,false,top_up_by_card_charge,true,3111,1.28856e-05
+test_02833,Is there a charge or discount if I use a European bank in a top up?,deepseek/deepseek-v4-flash,v2,v1,top_up_by_bank_transfer_charge,99.67,auto_accept,,false,top_up_by_card_charge,false,1413,1.31656e-05
+test_02835,Can I top up using an international card,deepseek/deepseek-v4-flash,v2,v1,topping_up_by_card,71.21,auto_accept,,false,top_up_by_card_charge,false,1582,1.27176e-05
+test_02836,What will happen if I want to add money using an international card? Will I run into any fees?,deepseek/deepseek-v4-flash,v2,v1,topping_up_by_card,18.23,auto_accept,,false,top_up_by_card_charge,false,1620,1.30536e-05
+test_02841,I need to activate my card can you do that now?,deepseek/deepseek-v4-flash,v2,v1,activate_my_card,100.0,auto_accept,,false,activate_my_card,true,18914,1.27456e-05
+test_02843,Tell me how to go about activating my new card?,deepseek/deepseek-v4-flash,v2,v1,activate_my_card,100.0,auto_accept,,false,activate_my_card,true,1328,1.27176e-05
+test_02846,What's the right way to activate my card?,deepseek/deepseek-v4-flash,v2,v1,activate_my_card,100.0,auto_accept,,false,activate_my_card,true,1470,1.26896e-05
+test_02848,Is there a way my new card can be renewed?,deepseek/deepseek-v4-flash,v2,v1,card_about_to_expire,92.07,auto_accept,,false,activate_my_card,false,2495,1.28296e-05
+test_02849,How do I activate a card I received?,deepseek/deepseek-v4-flash,v2,v1,activate_my_card,100.0,auto_accept,,false,activate_my_card,true,1144,1.26616e-05
+test_02852,WHAT CAN I DO AFTER THE CARD MISSING,deepseek/deepseek-v4-flash,v2,v1,lost_or_stolen_card,98.84,auto_accept,,false,activate_my_card,false,1635,1.27736e-05
+test_02855,I need help activating my new card.,deepseek/deepseek-v4-flash,v2,v1,activate_my_card,100.0,auto_accept,,false,activate_my_card,true,1325,1.26336e-05
+test_02857,"Please, activate my card",deepseek/deepseek-v4-flash,v2,v1,activate_my_card,100.0,auto_accept,,false,activate_my_card,true,1483,1.25776e-05
+test_02862,I need help with activating my card,deepseek/deepseek-v4-flash,v2,v1,activate_my_card,100.0,auto_accept,,false,activate_my_card,true,1318,1.26336e-05
+test_02863,How can I start using my card?,deepseek/deepseek-v4-flash,v2,v1,activate_my_card,99.62,auto_accept,,false,activate_my_card,true,1379,1.26336e-05
+test_02869,What is the activation process on my new card?,deepseek/deepseek-v4-flash,v2,v1,activate_my_card,99.99,auto_accept,,false,activate_my_card,true,1699,1.26896e-05
+test_02871,What is the process for activating my card?,deepseek/deepseek-v4-flash,v2,v1,activate_my_card,100.0,auto_accept,,false,activate_my_card,true,1299,1.26616e-05
+test_02872,How do I use my new card?,deepseek/deepseek-v4-flash,v2,v1,card_not_working,76.95,auto_accept,,false,activate_my_card,false,1767,1.28576e-05
+test_02883,What is this charge on my account for a cash withdrawl?,deepseek/deepseek-v4-flash,v2,v1,cash_withdrawal_not_recognised,92.32,auto_accept,,false,cash_withdrawal_charge,false,1420,1.29416e-05
+test_02887,"Do ATM cash withdrawals carry a charge now? They've been free in the past, but all of a sudden I have to pay to make ATM withdrawals?",deepseek/deepseek-v4-flash,v2,v1,cash_withdrawal_charge,99.75,auto_accept,,false,cash_withdrawal_charge,true,2036,1.33336e-05
+test_02890,Why did I get a fee?,deepseek/deepseek-v4-flash,v2,v1,cash_withdrawal_charge,29.01,auto_accept,,false,cash_withdrawal_charge,true,1393,1.26616e-05
+test_02891,Why did my cash get charged a fee that should not be there.,deepseek/deepseek-v4-flash,v2,v1,cash_withdrawal_charge,98.76,auto_accept,,false,cash_withdrawal_charge,true,956,1.28576e-05
+test_02892,Why did I have to pay a fee when I got cash?,deepseek/deepseek-v4-flash,v2,v1,cash_withdrawal_charge,99.99,auto_accept,,false,cash_withdrawal_charge,true,1361,1.28296e-05
+test_02899,"I've notice I was charged for withdrawing cash, can you explain why?",deepseek/deepseek-v4-flash,v2,v1,cash_withdrawal_charge,100.0,auto_accept,,false,cash_withdrawal_charge,true,1437,1.28856e-05
+test_02900,Why was my account charged for using an ATM?,deepseek/deepseek-v4-flash,v2,v1,atm_support,92.4,auto_accept,,false,cash_withdrawal_charge,false,1332,1.26336e-05
+test_02907,I was charged extra for a withdrawal,deepseek/deepseek-v4-flash,v2,v1,cash_withdrawal_charge,99.15,auto_accept,,false,cash_withdrawal_charge,true,997,1.26896e-05
+test_02909,"I thought cash withdrawals were free? Why have I been charged a fee? Also, how much is this fee?",deepseek/deepseek-v4-flash,v2,v1,cash_withdrawal_charge,100.0,auto_accept,,false,cash_withdrawal_charge,true,1155,1.31096e-05
+test_02911,I have never been charged a fee for cash withdrawal before. When did that change?,deepseek/deepseek-v4-flash,v2,v1,cash_withdrawal_charge,100.0,auto_accept,,false,cash_withdrawal_charge,true,1334,1.29416e-05
+test_02914,I took cash and got charged a fee,deepseek/deepseek-v4-flash,v2,v1,cash_withdrawal_charge,100.0,auto_accept,,false,cash_withdrawal_charge,true,1061,1.27176e-05
+test_02921,Will you be able to send the new card to China?,deepseek/deepseek-v4-flash,v2,v1,card_arrival,5.53,auto_accept,,false,card_about_to_expire,false,1395,1.26896e-05
+test_02922,When my card expires what happens to my account?,deepseek/deepseek-v4-flash,v2,v1,card_about_to_expire,100.0,auto_accept,,false,card_about_to_expire,true,1492,1.28016e-05
+test_02923,What do I do when my card expires?,deepseek/deepseek-v4-flash,v2,v1,card_about_to_expire,100.0,auto_accept,,false,card_about_to_expire,true,1434,1.27736e-05
+test_02929,How much does it cost to get a new card?  Mine is almost expired.  How fast does it come?,deepseek/deepseek-v4-flash,v2,v1,card_delivery_estimate,87.48,auto_accept,,false,card_about_to_expire,false,1633,1.31936e-05
+test_02931,My card is about to expire and I need to know how much it costs and how long it takes to get a new one.,deepseek/deepseek-v4-flash,v2,v1,card_about_to_expire,92.41,auto_accept,,false,card_about_to_expire,true,1255,1.34736e-05
+test_02933,What is the next step if my card is about to expire.,deepseek/deepseek-v4-flash,v2,v1,card_about_to_expire,100.0,auto_accept,,false,card_about_to_expire,true,1089,1.28856e-05
+test_02934,"Once my card expires, what should I do?",deepseek/deepseek-v4-flash,v2,v1,card_about_to_expire,100.0,auto_accept,,false,card_about_to_expire,true,1290,1.28016e-05
+test_02937,My card is about to expire. How much does it cost to order a new one and how fast will I get it?,deepseek/deepseek-v4-flash,v2,v1,card_about_to_expire,97.07,auto_accept,,false,card_about_to_expire,true,1265,1.32216e-05
+test_02938,What do I do when my card is about to expire?,deepseek/deepseek-v4-flash,v2,v1,card_about_to_expire,100.0,auto_accept,,false,card_about_to_expire,true,1176,1.28576e-05
+test_02939,"I will need to get a new card soon, how do I order?",deepseek/deepseek-v4-flash,v2,v1,order_physical_card,99.77,auto_accept,,false,card_about_to_expire,false,1400,1.28296e-05
+test_02947,How do I order a new card before It expires?,deepseek/deepseek-v4-flash,v2,v1,order_physical_card,49.99,auto_accept,,false,card_about_to_expire,false,1639,1.27176e-05
+test_02949,"Next month my card will expire, do I need to order a new one?",deepseek/deepseek-v4-flash,v2,v1,card_about_to_expire,99.97,auto_accept,,false,card_about_to_expire,true,2042,1.29696e-05
+test_02956,"in china, need new card",deepseek/deepseek-v4-flash,v2,v1,country_support,77.3,auto_accept,,false,card_about_to_expire,false,11641,1.25496e-05
+test_02959,I need to know the cost and when I will receive a new card to replace an old one.,deepseek/deepseek-v4-flash,v2,v1,card_delivery_estimate,81.68,auto_accept,,false,card_about_to_expire,false,1750,1.30816e-05
+test_02962,My top-up for Google Pay isn't working,deepseek/deepseek-v4-flash,v2,v1,apple_pay_or_google_pay,46.61,auto_accept,,false,apple_pay_or_google_pay,true,1572,1.29136e-05
+test_02963,Can I add money with Apple Pay?,deepseek/deepseek-v4-flash,v2,v1,apple_pay_or_google_pay,83.51,auto_accept,,false,apple_pay_or_google_pay,true,15132,1.28576e-05
+test_02966,Top up on my Google Pay isn't working.,deepseek/deepseek-v4-flash,v2,v1,apple_pay_or_google_pay,84.86,auto_accept,,false,apple_pay_or_google_pay,true,1761,1.29136e-05
+test_02969,Can I use Apple Pay to top up?,deepseek/deepseek-v4-flash,v2,v1,apple_pay_or_google_pay,94.97,auto_accept,,false,apple_pay_or_google_pay,true,1536,1.28856e-05
+test_02970,How can I top up my Google Pay?,deepseek/deepseek-v4-flash,v2,v1,apple_pay_or_google_pay,94.09,auto_accept,,false,apple_pay_or_google_pay,true,1835,1.28856e-05
+test_02971,Does Google Play have an app to Top up?,deepseek/deepseek-v4-flash,v2,v1,top_up_by_card_charge,62.32,auto_accept,,false,apple_pay_or_google_pay,false,1586,1.28016e-05
+test_02973,is apple pay eligible for top up,deepseek/deepseek-v4-flash,v2,v1,apple_pay_or_google_pay,99.83,auto_accept,,false,apple_pay_or_google_pay,true,2100,1.28576e-05
+test_02977,can i top up with apple pay,deepseek/deepseek-v4-flash,v2,v1,topping_up_by_card,85.51,auto_accept,,false,apple_pay_or_google_pay,false,1821,1.26896e-05
+test_02980,Is Apple Pay a possible top up option?,deepseek/deepseek-v4-flash,v2,v1,apple_pay_or_google_pay,99.59,auto_accept,,false,apple_pay_or_google_pay,true,1539,1.28856e-05
+test_02982,Can I top up from my Apple Watch?,deepseek/deepseek-v4-flash,v2,v1,topping_up_by_card,46.75,auto_accept,,false,apple_pay_or_google_pay,false,2683,1.27176e-05
+test_02984,is apple pay costly?,deepseek/deepseek-v4-flash,v2,v1,apple_pay_or_google_pay,100.0,auto_accept,,false,apple_pay_or_google_pay,true,2760,1.27736e-05
+test_02985,How can I top up with Google Pay?,deepseek/deepseek-v4-flash,v2,v1,topping_up_by_card,35.82,auto_accept,,false,apple_pay_or_google_pay,false,1359,1.27176e-05
+test_02995,How do I troubleshoot Google pay top up?,deepseek/deepseek-v4-flash,v2,v1,apple_pay_or_google_pay,98.65,auto_accept,,false,apple_pay_or_google_pay,true,1214,1.28856e-05
+test_02999,"Google pay and top up, I want it, can I get it?",deepseek/deepseek-v4-flash,v2,v1,apple_pay_or_google_pay,99.61,auto_accept,,false,apple_pay_or_google_pay,true,1364,1.30536e-05
+test_03006,How do you verify an identity?,deepseek/deepseek-v4-flash,v2,v1,verify_my_identity,22.27,auto_accept,,false,verify_my_identity,true,1354,1.26616e-05
+test_03010,What are the steps I need to take to verify my identity?,deepseek/deepseek-v4-flash,v2,v1,verify_my_identity,100.0,auto_accept,,false,verify_my_identity,true,2399,1.28296e-05
+test_03011,What do I need to verify my identity,deepseek/deepseek-v4-flash,v2,v1,verify_my_identity,99.91,auto_accept,,false,verify_my_identity,true,1351,1.27176e-05
+test_03013,I need some help with identity verification.,deepseek/deepseek-v4-flash,v2,v1,verify_my_identity,99.92,auto_accept,,false,verify_my_identity,true,1195,1.26896e-05
+test_03017,Let me know the steps for the identity checks,deepseek/deepseek-v4-flash,v2,v1,verify_my_identity,99.91,auto_accept,,false,verify_my_identity,true,1324,1.27456e-05
+test_03018,What should I do to verify my identity?,deepseek/deepseek-v4-flash,v2,v1,verify_my_identity,100.0,auto_accept,,false,verify_my_identity,true,1010,1.27176e-05
+test_03024,do the details of my profile have to match my documents,deepseek/deepseek-v4-flash,v2,v1,verify_my_identity,32.05,auto_accept,,false,verify_my_identity,true,1292,1.28016e-05
+test_03025,Where do I verify my identity?,deepseek/deepseek-v4-flash,v2,v1,verify_my_identity,100.0,auto_accept,,false,verify_my_identity,true,1642,1.26616e-05
+test_03035,Is there any way to verify who I am?,deepseek/deepseek-v4-flash,v2,v1,verify_my_identity,99.76,auto_accept,,false,verify_my_identity,true,1412,1.27456e-05
+test_03045,Can I get a card outside the UK?,deepseek/deepseek-v4-flash,v2,v1,country_support,95.21,auto_accept,,false,country_support,true,1606,1.26056e-05
+test_03048,Now that I live in the US how can I get a card?,deepseek/deepseek-v4-flash,v2,v1,order_physical_card,58.13,auto_accept,,false,country_support,false,1666,1.28016e-05
+test_03062,What countries do you support?,deepseek/deepseek-v4-flash,v2,v1,country_support,100.0,auto_accept,,false,country_support,true,1350,1.25216e-05
+test_03065,Can you tell me what countries you operate in?,deepseek/deepseek-v4-flash,v2,v1,country_support,100.0,auto_accept,,false,country_support,true,1375,1.26336e-05
+test_03066,"I need a card, but I'm in the US at the moment.",deepseek/deepseek-v4-flash,v2,v1,country_support,64.02,auto_accept,,false,country_support,true,1419,1.27736e-05
+test_03068,Do you have a list of countries you operate in?,deepseek/deepseek-v4-flash,v2,v1,country_support,100.0,auto_accept,,false,country_support,true,1516,1.26616e-05
+test_03070,I don't live in the UK.  Can I still get a card?,deepseek/deepseek-v4-flash,v2,v1,country_support,98.6,auto_accept,,false,country_support,true,1056,1.28016e-05
+test_03071,Where do you support?,deepseek/deepseek-v4-flash,v2,v1,country_support,100.0,auto_accept,,false,country_support,true,1884,1.24936e-05
+test_03076,How many countries do you support?,deepseek/deepseek-v4-flash,v2,v1,country_support,100.0,auto_accept,,false,country_support,true,1327,1.25496e-05
+test_03079,Can the card be mailed and used in Europe?,deepseek/deepseek-v4-flash,v2,v1,country_support,81.75,auto_accept,,false,country_support,true,1504,1.26336e-05

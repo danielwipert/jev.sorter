@@ -144,6 +144,64 @@
    "cost_per_1000": 3.23,
    "cost_per_million": 3231,
    "median_ms": 2306
+  },
+  "J": {
+   "name": "DeepSeek V4 Flash, final descriptions (v2)",
+   "model": "deepseek/deepseek-v4-flash",
+   "rows": [
+    {
+     "target": 50,
+     "threshold": 99.75,
+     "realized": 51.4,
+     "accuracy": 91.6
+    },
+    {
+     "target": 70,
+     "threshold": 96.95,
+     "realized": 67.6,
+     "accuracy": 88.0
+    },
+    {
+     "target": 85,
+     "threshold": 67.23,
+     "realized": 86.0,
+     "accuracy": 80.9
+    }
+   ],
+   "accuracy_all": 74.7,
+   "hard_hallucinations": 0,
+   "cost_per_1000": 0.01,
+   "cost_per_million": 13,
+   "median_ms": 1460
+  },
+  "K": {
+   "name": "DeepSeek V4 Flash, descriptions v1",
+   "model": "deepseek/deepseek-v4-flash",
+   "rows": [
+    {
+     "target": 50,
+     "threshold": 99.6,
+     "realized": 51.1,
+     "accuracy": 91.8
+    },
+    {
+     "target": 70,
+     "threshold": 92.35,
+     "realized": 72.7,
+     "accuracy": 86.8
+    },
+    {
+     "target": 85,
+     "threshold": 62.18,
+     "realized": 85.2,
+     "accuracy": 80.4
+    }
+   ],
+   "accuracy_all": 72.4,
+   "hard_hallucinations": 1,
+   "cost_per_1000": 0.01,
+   "cost_per_million": 11,
+   "median_ms": 1306
   }
  },
  "curves": {
@@ -944,6 +1002,70 @@
     "n": 516,
     "accuracy": 95.3
    }
+  ],
+  "J": [
+   {
+    "band": "0-49",
+    "n": 74,
+    "accuracy": 32.4
+   },
+   {
+    "band": "50-59",
+    "n": 19,
+    "accuracy": 52.6
+   },
+   {
+    "band": "60-69",
+    "n": 28,
+    "accuracy": 60.7
+   },
+   {
+    "band": "70-79",
+    "n": 27,
+    "accuracy": 33.3
+   },
+   {
+    "band": "80-89",
+    "n": 64,
+    "accuracy": 56.2
+   },
+   {
+    "band": "90-100",
+    "n": 788,
+    "accuracy": 82.6
+   }
+  ],
+  "K": [
+   {
+    "band": "0-49",
+    "n": 94,
+    "accuracy": 21.3
+   },
+   {
+    "band": "50-59",
+    "n": 21,
+    "accuracy": 47.6
+   },
+   {
+    "band": "60-69",
+    "n": 24,
+    "accuracy": 37.5
+   },
+   {
+    "band": "70-79",
+    "n": 36,
+    "accuracy": 44.4
+   },
+   {
+    "band": "80-89",
+    "n": 57,
+    "accuracy": 40.4
+   },
+   {
+    "band": "90-100",
+    "n": 768,
+    "accuracy": 84.1
+   }
   ]
  },
  "gate": {
@@ -966,6 +1088,14 @@
   "F": {
    "keyword_flags_correct": 1.5,
    "keyword_flags_wrong": 10.2
+  },
+  "J": {
+   "keyword_flags_correct": 1.6,
+   "keyword_flags_wrong": 15.4
+  },
+  "K": {
+   "keyword_flags_correct": 1.2,
+   "keyword_flags_wrong": 14.9
   }
  },
  "cascade": [
