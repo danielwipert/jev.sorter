@@ -11,6 +11,7 @@ import pandas as pd
 
 from analyze import (BANDS, CONTENDERS, TARGETS, auto_accepted, load_log, thresholds_from,
                      tuning_log_for)
+from cleaned_scores import accepted_labels
 
 SERIES = {"B": "Jev", "C": "Sonnet 5", "D": "Haiku 4.5"}  # the three models on the final descriptions
 
@@ -34,6 +35,54 @@ def sweep(log):
     return points
 
 
+def top_n_accuracy(log, n):
+    """Accuracy of a model's n most confident answers that pass gate checks 1-3."""
+    p = log[log["passes_checks"]].sort_values(["confidence", "message_id"], ascending=[False, True])
+    return pct(p.head(n)["is_correct"].mean())
+
+
+def deepseek(logs):
+    jev, ds = logs["B"], logs["J"]
+    at70 = {}
+    for key in ("B", "J"):
+        threshold = thresholds_from(load_log(tuning_log_for(CONTENDERS[key][1])))[70]
+        at70[key] = auto_accepted(logs[key], threshold)
+    n = int(at70["B"].sum())  # same-volume check: each model's n most confident answers
+    # Jev's confident mistakes at the 70% setting: how often did DeepSeek pick the same wrong category?
+    both = jev.set_index("message_id").join(ds.set_index("message_id")[["predicted"]], rsuffix="_ds")
+    wrong = both[at70["B"].values & ~both["is_correct"].values]
+    return {
+        "same_volume_n": n,
+        "same_volume": {"B": top_n_accuracy(jev, n), "J": top_n_accuracy(ds, n)},
+        "jev_confident_wrong": int(len(wrong)),
+        "deepseek_same_wrong": int((wrong["predicted"] == wrong["predicted_ds"]).sum()),
+    }
+
+
+def cleaned(logs):
+    """Original vs strict vs cleaned accuracy on auto-accepted, per contender and setting."""
+    labels, verdict, key, draft = accepted_labels()
+    strict = accepted_labels(strict=True)[0]
+    sides = {"key": 0, "alternative": 0, "both": 0, "unclear": 0}
+    for message_id, v in verdict.items():
+        k, alt = key.loc[message_id, "answer_key"], key.loc[message_id, "alternative"]
+        side = "unclear" if v == "unclear" else "both" if labels[message_id] == {k, alt} else \
+            "key" if labels[message_id] == {k} else "alternative"
+        sides[side] += 1
+    out = {"approved": not draft, "reviewed": len(labels), "sides": sides, "contenders": {}}
+    for key, log in logs.items():
+        clean = pd.Series([r.predicted in labels.get(r.message_id, {r.correct}) for r in log.itertuples()], index=log.index)
+        strict_ok = pd.Series([r.predicted in strict.get(r.message_id, {r.correct}) for r in log.itertuples()], index=log.index)
+        rows = []
+        for target, threshold in thresholds_from(load_log(tuning_log_for(CONTENDERS[key][1]))).items():
+            accepted = auto_accepted(log, threshold)
+            rows.append({"target": target, "official": pct(log.loc[accepted, "is_correct"].mean()),
+                         "strict": pct(strict_ok[accepted].mean()), "cleaned": pct(clean[accepted].mean())})
+        out["contenders"][key] = {"rows": rows, "all_official": pct(log["is_correct"].mean()),
+                                  "all_cleaned": pct(clean.mean())}
+    return out
+
+
 def main():
     logs = {key: load_log(path) for key, (_, path) in CONTENDERS.items()}
     data = {"contenders": {}, "curves": {}, "calibration": {}, "gate": {}}
@@ -50,7 +99,7 @@ def main():
             "name": CONTENDERS[key][0], "model": log["model"].iloc[0], "rows": rows,
             "accuracy_all": pct(log["is_correct"].mean()),
             "hard_hallucinations": int((log["reason"] == "invalid_category").sum()),
-            "cost_per_1000": round(float(log["cost_usd"].mean() * 1000), 2),
+            "cost_per_1000": round(float(log["cost_usd"].mean() * 1000), 4),
             "cost_per_million": int(round(float(log["cost_usd"].mean() * 1_000_000))),
             "median_ms": int(pd.to_numeric(log["ms"]).median()),
         }
@@ -90,6 +139,11 @@ def main():
     data["targets"] = TARGETS
     # Sonnet vs Jev cost per decision, from unrounded means (the verdict's ratio).
     data["cost_ratio_sonnet_jev"] = round(float(logs["C"]["cost_usd"].mean() / logs["B"]["cost_usd"].mean()), 1)
+
+    # Round 2: DeepSeek V4 Flash (J) vs Jev (B).
+    data["deepseek"] = deepseek(logs)
+    # Secondary: cleaned answer key (pre-registered 2026-10-13, see cleaned_scores.py).
+    data["cleaned"] = cleaned(logs)
 
     Path("docs/data.json").write_text(json.dumps(data, indent=1) + "\n")
     print("Wrote docs/data.json")

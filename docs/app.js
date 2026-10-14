@@ -319,14 +319,85 @@
     ]);
   }
 
+  // ---------- Finding 7: DeepSeek V4 Flash vs Jev ----------
+  function deepseek(data) {
+    const box = document.getElementById("deepseek");
+    if (!box || !data.deepseek) return;
+    const at = (k, target) => data.contenders[k].rows.find((q) => q.target === target);
+    const j = data.contenders.B, d = data.contenders.J, ds = data.deepseek;
+    // Extra wrong answers among each model's n most confident (out of 1,000 test messages).
+    const extra = Math.round((ds.same_volume.B - ds.same_volume.J) / 100 * ds.same_volume_n);
+    box.innerHTML = `
+      <div class="compare">
+        <div class="win"><div class="lbl">Jev</div><div class="v num">${fmt(at("B", 70).accuracy)}%</div><div class="c num">right on ${fmt(at("B", 70).realized)}% auto-accepted · $${fmt(j.cost_per_1000, 2)} per 1,000 · ${j.median_ms} ms</div></div>
+        <div><div class="lbl">DeepSeek V4 Flash</div><div class="v num">${fmt(at("J", 70).accuracy)}%</div><div class="c num">right on ${fmt(at("J", 70).realized)}% auto-accepted · $${fmt(d.cost_per_1000, 3)} per 1,000 · ${d.median_ms} ms</div></div>
+      </div>`;
+    const set = (k, v) => document.querySelectorAll(`[data-k="${k}"]`).forEach((n) => (n.textContent = v));
+    set("ds-extra", "~" + extra);
+    set("ds-n", ds.same_volume_n);
+    set("ds-vB", fmt(ds.same_volume.B));
+    set("ds-vJ", fmt(ds.same_volume.J));
+    set("ds-same", `${ds.deepseek_same_wrong} of Jev's ${ds.jev_confident_wrong} confident mistakes`);
+    const cell = (k, t) => `${fmt(at(k, t).accuracy)}% <small>(${fmt(at(k, t).realized)}% auto)</small>`;
+    table("t-deepseek", ["", "Jev", "DeepSeek"],
+      [50, 70, 85].map((t) => [t + "% setting: right", cell("B", t), cell("J", t)])
+        .concat([["All answers: right", fmt(j.accuracy_all) + "%", fmt(d.accuracy_all) + "%"],
+                 ["Cost per 1,000", "$" + fmt(j.cost_per_1000, 2), "$" + fmt(d.cost_per_1000, 3)],
+                 ["Median time per message", j.median_ms + " ms", d.median_ms + " ms"]]),
+      (r) => r[0].startsWith("70%"));
+  }
+
+  // ---------- Finding 8: official vs cleaned answer key ----------
+  const CLEAN_SERIES = SERIES.concat([{ key: "J", name: "DeepSeek", color: "var(--s4)" }]);
+  function cleanedChart(data) {
+    const box = document.getElementById("cleaned");
+    if (!box || !data.cleaned) return;
+    const W = Math.max(320, box.clientWidth), rowH = 52, m = { l: W < 480 ? 74 : 92, r: 84, t: 10, b: 36 };
+    const H = m.t + CLEAN_SERIES.length * rowH + m.b;
+    const svg = svgFor(box, W, H);
+    const x = scale(82, 100, m.l, W - m.r);
+    for (const t of W < 480 ? [82, 88, 94, 100] : [82, 85, 88, 91, 94, 97, 100]) {
+      el("line", { x1: x(t), x2: x(t), y1: m.t, y2: H - m.b, style: "stroke:var(--grid)" }, svg);
+      el("text", { x: x(t), y: H - m.b + 18, "text-anchor": "middle", "font-size": 11.5, style: "fill:var(--muted)", text: t + "%" }, svg);
+    }
+    CLEAN_SERIES.forEach((s, i) => {
+      const r = data.cleaned.contenders[s.key].rows.find((q) => q.target === 70);
+      const cy = m.t + rowH * (i + 0.5);
+      el("text", { x: 0, y: cy + 4, "font-size": 13, style: "fill:var(--ink);font-weight:600", text: s.name }, svg);
+      el("line", { x1: x(r.official), x2: x(r.strict), y1: cy, y2: cy, style: "stroke:var(--axis);stroke-width:1;stroke-dasharray:3 3" }, svg);
+      el("rect", { x: x(r.strict), y: cy - 5, width: Math.max(2, x(r.cleaned) - x(r.strict)), height: 10, rx: 5, style: `fill:${s.color}` }, svg);
+      el("circle", { cx: x(r.official), cy, r: 5.5, style: `fill:var(--surface);stroke:${s.color};stroke-width:2.5` }, svg);
+      el("text", { x: x(r.cleaned) + 8, y: cy + 4, "font-size": 11.5, style: "fill:var(--ink-2);font-variant-numeric:tabular-nums", text: `${fmt(r.strict)}–${fmt(r.cleaned)}%` }, svg);
+      el("text", { x: x(r.official), y: cy - 10, "text-anchor": "middle", "font-size": 11, style: "fill:var(--muted);font-variant-numeric:tabular-nums", text: fmt(r.official) + "%" }, svg);
+      const h = el("rect", { x: m.l, y: cy - rowH / 2, width: W - m.l - m.r, height: rowH, fill: "transparent" }, svg);
+      h.addEventListener("mouseenter", () => showTip(`<div class="tt">${s.name}, 70% setting</div>` + row("Official key", fmt(r.official) + "%") + row("Strict (clear relabels)", fmt(r.strict) + "%") + row("Cleaned (both-fit accepted)", fmt(r.cleaned) + "%"), box, (x(r.cleaned) / W) * box.clientWidth, cy * (box.clientWidth / W)));
+      h.addEventListener("mouseleave", hideTip);
+    });
+    const c = data.cleaned;
+    const set = (k, v) => document.querySelectorAll(`[data-k="${k}"]`).forEach((n) => (n.textContent = v));
+    set("cl-key", c.sides.key); set("cl-alt", c.sides.alternative); set("cl-both", c.sides.both); set("cl-unclear", c.sides.unclear);
+    table("t-cleaned", ["Model", "Setting", "Official", "Strict", "Cleaned"],
+      CLEAN_SERIES.flatMap((s) => c.contenders[s.key].rows.map((r) => [
+        `<i class="key" style="background:${s.color}"></i>${s.name}`, r.target + "%", fmt(r.official) + "%", fmt(r.strict) + "%", fmt(r.cleaned) + "%"]))
+        .concat(CLEAN_SERIES.map((s) => [`<i class="key" style="background:${s.color}"></i>${s.name}`, "All answers", fmt(c.contenders[s.key].all_official) + "%", "", fmt(c.contenders[s.key].all_cleaned) + "%"])),
+      (r) => r[1] === "70%");
+  }
+
   // ---------- Report page tables ----------
   function reportTables(data) {
-    const names = { A: "A · Jev, v1", B: "B · Jev, v2 (final)", C: "C · Sonnet 5, v2", D: "D · Haiku 4.5, v2", F: "F · Sonnet 5, v1" };
+    const names = { A: "A · Jev, v1", B: "B · Jev, v2 (final)", C: "C · Sonnet 5, v2", D: "D · Haiku 4.5, v2", F: "F · Sonnet 5, v1", J: "J · DeepSeek V4 Flash, v2", K: "K · DeepSeek V4 Flash, v1" };
     table("r-results", ["Contender", "Target", "Cutoff", "Realized", "Acc. on auto-accepted", "Soft halluc.", "Hard halluc.", "Acc. all", "$ / 1k"],
       Object.keys(names).flatMap((k) => data.contenders[k].rows.map((r) => [
         names[k], r.target + "%", fmt(r.threshold, 0), fmt(r.realized) + "%", fmt(r.accuracy) + "%", fmt(100 - r.accuracy) + "%",
         fmt(data.contenders[k].hard_hallucinations / 10) + "%", fmt(data.contenders[k].accuracy_all) + "%", "$" + fmt(data.contenders[k].cost_per_1000, 2),
-      ])), (r) => r[1] === "70%" && (r[0].startsWith("B") || r[0].startsWith("C")));
+      ])), (r) => r[1] === "70%" && (r[0].startsWith("B") || r[0].startsWith("C") || r[0].startsWith("J")));
+    if (data.cleaned) {
+      table("r-cleaned", ["Contender", "Target", "Official", "Strict", "Cleaned", "All: official → cleaned"],
+        Object.keys(names).flatMap((k) => data.cleaned.contenders[k].rows.map((r) => [
+          names[k], r.target + "%", fmt(r.official) + "%", fmt(r.strict) + "%", fmt(r.cleaned) + "%",
+          `${fmt(data.cleaned.contenders[k].all_official)}% → ${fmt(data.cleaned.contenders[k].all_cleaned)}%`,
+        ])), (r) => r[1] === "70%" && (r[0].startsWith("B") || r[0].startsWith("C") || r[0].startsWith("J")));
+    }
     table("r-cascade", ["Jev target", "Jev handles", "Jev share acc.", "Sonnet share acc.", "Overall", "$ / 1k"],
       data.cascade.map((q) => [q.target + "%", fmt(q.jev_share) + "%", fmt(q.jev_accuracy) + "%", fmt(q.sonnet_accuracy) + "%", fmt(q.overall) + "%", "$" + fmt(q.cost_per_1000, 2)]));
     const bands = data.calibration.B.map((b) => b.band);
@@ -338,7 +409,7 @@
 
   // ---------- boot ----------
   function renderAll(data) {
-    hero(data); tradeoff(data); costBars(data); cascade(data); strip(data); calibration(data); gate(data); tuning(data); reportTables(data);
+    hero(data); tradeoff(data); costBars(data); cascade(data); strip(data); calibration(data); gate(data); tuning(data); deepseek(data); cleanedChart(data); reportTables(data);
   }
   fetch("data.json").then((r) => r.json()).then((data) => {
     renderAll(data);
@@ -347,7 +418,7 @@
     window.addEventListener("resize", () => {
       if (window.innerWidth === lastW) return;
       lastW = window.innerWidth;
-      clearTimeout(t); t = setTimeout(() => { hero(data); tradeoff(data); strip(data); calibration(data); tuning(data); }, 150);
+      clearTimeout(t); t = setTimeout(() => { hero(data); tradeoff(data); strip(data); calibration(data); tuning(data); cleanedChart(data); }, 150);
     });
     document.querySelectorAll("details.more").forEach((d) => d.addEventListener("toggle", () => { if (d.open) { calibration(data); } }));
     const bars = document.getElementById("costbars");

@@ -40,7 +40,7 @@
 
 <header class="hero">
   <div class="wrap">
-    <div class="eyebrow eyebrow-accent reveal">Research note · September 2026</div>
+    <div class="eyebrow eyebrow-accent reveal">Research note · September 2026 · updated October 2026</div>
     <h1 class="reveal title">Jev <span class="vs">vs.</span> <span class="grad">the Frontier</span></h1>
     <p class="deck reveal">Same accuracy on automated decisions. <em>One&#8209;fiftieth of the cost.</em></p>
     <a class="byline reveal" href="https://www.linkedin.com/in/daniel-wipert/">
@@ -136,7 +136,7 @@
     <div class="section-head reveal">
       <div class="eyebrow">02 · What we found</div>
       <div>
-        <h2>Six findings, from the headline down.</h2>
+        <h2>Eight findings, from the headline down.</h2>
         <p>Each finding has the short version first. Open "Show the numbers" for the evidence, or read the <a href="methods.html">technical report</a> for the full method.</p>
       </div>
     </div>
@@ -333,6 +333,71 @@
         </details>
       </div>
     </div>
+
+    <!-- Finding 7 -->
+    <div class="finding reveal">
+      <div>
+        <div class="finding-n">FINDING 7 · ROUND 2</div>
+        <h3>An even cheaper model wasn't worth the savings.</h3>
+        <div class="body">
+          <p>We then tried <strong>DeepSeek V4 Flash</strong>, one of the cheapest capable models on OpenRouter, under the same pre-registered rules. It cost <strong>8× less than Jev</strong>, but at the 70% setting it was right <strong>88.0%</strong> of the time, against Jev's <strong>91.4%</strong>.</p>
+          <p>Compared at the same volume, that's about <strong><span data-k="ds-extra"></span> more wrong answers per 1,000</strong> going out with nobody checking them, to save 9 cents.</p>
+        </div>
+      </div>
+      <div>
+        <div class="figure">
+          <div class="figure-head">
+            <div>
+              <div class="figure-title">Jev vs DeepSeek V4 Flash at the 70% setting</div>
+              <div class="figure-sub">Test set, 1,000 messages, same pipeline and descriptions.</div>
+            </div>
+          </div>
+          <div id="deepseek"></div>
+        </div>
+        <details class="more">
+          <summary>Show the numbers</summary>
+          <div class="more-body">
+            <p>DeepSeek's confidence is the probability it gave the category it wrote (from log-probabilities), the same kind of score as Jev's. Its cutoffs came from its own tuning run, as for every model. The rules were <a href="https://github.com/danielwipert/jev.sorter/blob/main/CHANGELOG.md">written down before the full run</a>.</p>
+            <div class="table-wrap"><table id="t-deepseek"></table></div>
+            <p><b>Same volume check:</b> each model's <span data-k="ds-n"></span> most confident answers. Jev <span data-k="ds-vB"></span>%, DeepSeek <span data-k="ds-vJ"></span>%.</p>
+            <p><b>Overconfident scores:</b> DeepSeek put nearly half of all messages at 99.9% sure or higher, and only about 94% of those were right. Its high scores are less trustworthy than Jev's, which is what matters when the score decides what gets automated.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+
+    <!-- Finding 8 -->
+    <div class="finding reveal">
+      <div>
+        <div class="finding-n">FINDING 8 · SECONDARY</div>
+        <h3>Many of the "mistakes" are mistakes in the answer key.</h3>
+        <div class="body">
+          <p>When Jev was confidently wrong, DeepSeek usually picked <strong>the exact same wrong category</strong> (<span data-k="ds-same"></span>). Two very different models agreeing against the answer key suggests the key, not the model, is often the problem.</p>
+          <p>So we re-checked 206 doubtful labels, blind to which model said what. On a cleaned key, <strong>Jev is right on 95–99% of what it auto-accepts</strong>, not 91.4%. Every model goes up, and the order stays the same.</p>
+        </div>
+      </div>
+      <div>
+        <div class="figure">
+          <div class="figure-head">
+            <div>
+              <div class="figure-title">Accuracy on auto-accepted, official vs cleaned answer key</div>
+              <div class="figure-sub">70% setting, test set. Bar runs from the strict to the generous cleaned score.</div>
+            </div>
+            <div class="legend"><span><i class="ring"></i>Official</span><span><i class="key" style="background:var(--ink-2)"></i>Strict → cleaned</span></div>
+          </div>
+          <div class="chart" id="cleaned"></div>
+        </div>
+        <details class="more">
+          <summary>Show the numbers</summary>
+          <div class="more-body">
+            <p><b>Which labels were checked:</b> the 206 test messages where at least 2 of the 4 models (Jev, Sonnet 5, Haiku 4.5, DeepSeek) agreed on a different category than the answer key. Each was shown with the two labels in random order, without saying which was official.</p>
+            <p><b>Verdicts:</b> the official label kept <span data-k="cl-key"></span> times, the other label <span data-k="cl-alt"></span>, both fit <span data-k="cl-both"></span>, unclear <span data-k="cl-unclear"></span> (official kept). <b>Strict</b> counts only clear relabels. <b>Cleaned</b> also accepts either label where both fit.</p>
+            <div class="table-wrap"><table id="t-cleaned"></table></div>
+            <p><b>Read with care:</b> this is a secondary result, and the official numbers above don't change. The verdicts were drafted by Claude and approved by the author in bulk, not row by row. Only messages where models agreed against the key were reviewed, which favors "popular" answers. The rules were <a href="https://github.com/danielwipert/jev.sorter/blob/main/CHANGELOG.md">written down before any cleaned score was computed</a>; the strict column was added afterwards as a lower bound.</p>
+          </div>
+        </details>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -367,6 +432,7 @@
       <li><b>Jev is a beta product.</b> It launched in September 2026, and its pricing and versions may change. We pinned the version.</li>
       <li><b>Claude's confidence was self-reported</b> from a single call. Other ways of measuring its confidence might narrow Finding 4.</li>
       <li><b>Descriptions weren't tuned on Claude's own mistakes.</b> Sonnet at its very best could be somewhat higher.</li>
+      <li><b>The answer key has errors.</b> Banking77 has overlapping categories and some wrong labels. The official numbers use the key as published; Finding 8's cleaned score is secondary and rests on one reviewer's judgment.</li>
       <li><b>Real emails come next.</b> Subjects, signatures and threads make the job harder. That's phase 2.</li>
     </ul>
   </div>
@@ -409,8 +475,8 @@
 
 <footer>
   <div class="wrap">
-    <span>Jev vs. the Frontier · by <a href="https://www.linkedin.com/in/daniel-wipert/">Daniel Wipert</a> · Jev (<code>typesafe/jev-1.13</code>), Claude Sonnet 5, Claude Haiku 4.5 · Banking77</span>
-    <span>Total project cost: $16.05 · <a href="methods.html">Technical report</a> · <a href="https://github.com/danielwipert/jev.sorter">GitHub</a></span>
+    <span>Jev vs. the Frontier · by <a href="https://www.linkedin.com/in/daniel-wipert/">Daniel Wipert</a> · Jev (<code>typesafe/jev-1.13</code>), Claude Sonnet 5, Claude Haiku 4.5, DeepSeek V4 Flash · Banking77</span>
+    <span>Total project cost: $16.09 · <a href="methods.html">Technical report</a> · <a href="https://github.com/danielwipert/jev.sorter">GitHub</a></span>
   </div>
 </footer>
 
