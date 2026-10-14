@@ -1,6 +1,6 @@
 # LinkedIn post 5: Jev vs DeepSeek V4 Flash
 
-_Draft, 2026-10-14. Image: `promo/jev-vs-deepseek.png` (rebuild: `python promo/build_post_images.py`). Standalone; follows the round 1 posts._
+_Draft, 2026-10-14. Image: `promo/jev-vs-deepseek-hero.png` (main, mobile-first); `promo/jev-vs-deepseek.png` (detailed scorecard, optional second image) (rebuild: `python promo/build_post_images.py`). Standalone; follows the round 1 posts._
 
 ---
 
