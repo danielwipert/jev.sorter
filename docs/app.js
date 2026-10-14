@@ -351,7 +351,8 @@
   const CLEAN_SERIES = SERIES.concat([{ key: "J", name: "DeepSeek", color: "var(--s4)" }]);
   function cleanedChart(data) {
     const box = document.getElementById("cleaned");
-    if (!box || !data.cleaned) return;
+    if (!data.cleaned) return;
+    if (box) {
     const W = Math.max(320, box.clientWidth), rowH = 52, m = { l: W < 480 ? 74 : 92, r: 84, t: 10, b: 36 };
     const H = m.t + CLEAN_SERIES.length * rowH + m.b;
     const svg = svgFor(box, W, H);
@@ -373,6 +374,7 @@
       h.addEventListener("mouseenter", () => showTip(`<div class="tt">${s.name}, 70% setting</div>` + row("Official key", fmt(r.official) + "%") + row("Strict (clear relabels)", fmt(r.strict) + "%") + row("Cleaned (both-fit accepted)", fmt(r.cleaned) + "%"), box, (x(r.cleaned) / W) * box.clientWidth, cy * (box.clientWidth / W)));
       h.addEventListener("mouseleave", hideTip);
     });
+    }
     const c = data.cleaned;
     const set = (k, v) => document.querySelectorAll(`[data-k="${k}"]`).forEach((n) => (n.textContent = v));
     set("cl-key", c.sides.key); set("cl-alt", c.sides.alternative); set("cl-both", c.sides.both); set("cl-unclear", c.sides.unclear);
@@ -381,6 +383,103 @@
         `<i class="key" style="background:${s.color}"></i>${s.name}`, r.target + "%", fmt(r.official) + "%", fmt(r.strict) + "%", fmt(r.cleaned) + "%"]))
         .concat(CLEAN_SERIES.map((s) => [`<i class="key" style="background:${s.color}"></i>${s.name}`, "All answers", fmt(c.contenders[s.key].all_official) + "%", "", fmt(c.contenders[s.key].all_cleaned) + "%"])),
       (r) => r[1] === "70%");
+  }
+
+  // ---------- Finding 8: coverage/accuracy curve on each answer key ----------
+  const KEY_SERIES = [{ key: "B", name: "Jev", color: "var(--s1)" }, { key: "J", name: "DeepSeek", color: "var(--s4)" }];
+  const KEY_NAMES = { original: "Original key", strict: "Corrected: clear errors", cleaned: "Corrected: both-fit too" };
+  let currentKey = "original";
+  function keyCurve(data) {
+    const box = document.getElementById("keycurve");
+    if (!box || !data.curves_by_key) return;
+    const W = Math.max(320, box.clientWidth), H = W < 560 ? 300 : 340;
+    const m = { l: 46, r: W < 560 ? 16 : 70, t: 16, b: 44 };
+    const svg = svgFor(box, W, H);
+    const x = scale(30, 100, m.l, W - m.r), y = scale(75, 100, H - m.b, m.t);
+    yAxis(svg, y, [75, 80, 85, 90, 95, 100], m.l, W - m.r, "%");
+    for (const t of (W < 560 ? [30, 50, 70, 90] : [30, 40, 50, 60, 70, 80, 90, 100])) {
+      el("text", { x: x(t), y: H - m.b + 20, "text-anchor": "middle", "font-size": 11.5, style: "fill:var(--muted)", text: t + "%" }, svg);
+    }
+    el("line", { x1: m.l, x2: W - m.r, y1: H - m.b, y2: H - m.b, style: "stroke:var(--axis)" }, svg);
+    el("text", { x: (m.l + W - m.r) / 2, y: H - 6, "text-anchor": "middle", "font-size": 12, style: "fill:var(--ink-2)", text: "Share of messages auto-accepted →" }, svg);
+    const path = (pts) => pts.filter((p) => p.share >= 30)
+      .map((p, i) => `${i ? "L" : "M"}${x(p.share).toFixed(1)},${y(Math.max(75, p.accuracy)).toFixed(1)}`).join("");
+    const curves = data.curves_by_key[currentKey];
+    if (currentKey !== "original") {
+      for (const s of KEY_SERIES) el("path", { d: path(data.curves_by_key.original[s.key]), fill: "none", style: `stroke:${s.color};stroke-width:1.5;stroke-dasharray:4 4;opacity:.55` }, svg);
+    }
+    for (const s of KEY_SERIES) {
+      const pts = curves[s.key];
+      el("path", { d: path(pts), fill: "none", style: `stroke:${s.color};stroke-width:2.5;stroke-linejoin:round;stroke-linecap:round` }, svg);
+      if (W >= 560) {
+        const last = pts[pts.length - 1];
+        el("text", { x: x(last.share) + 8, y: y(Math.max(75, last.accuracy)) + 4, "font-size": 12.5, style: "fill:var(--ink);font-weight:600", text: s.name }, svg);
+      }
+    }
+    // Hover: each model's best achievable point at or below the hovered share.
+    const guide = el("line", { y1: m.t, y2: H - m.b, style: "stroke:var(--axis);stroke-width:1;opacity:0" }, svg);
+    const dots = KEY_SERIES.map((s) => el("circle", { r: 4.5, style: `fill:${s.color};stroke:var(--surface);stroke-width:2;opacity:0` }, svg));
+    const hit = el("rect", { x: m.l, y: m.t, width: W - m.l - m.r, height: H - m.t - m.b, fill: "transparent" }, svg);
+    function move(evt) {
+      const rect = svg.getBoundingClientRect();
+      const px = ((evt.touches ? evt.touches[0].clientX : evt.clientX) - rect.left) * (W / rect.width);
+      const share = Math.min(100, Math.max(30, 30 + ((px - m.l) / (W - m.l - m.r)) * 70));
+      guide.setAttribute("x1", x(share)); guide.setAttribute("x2", x(share)); guide.style.opacity = 1;
+      let html = `<div class="tt">${KEY_NAMES[currentKey]}, automating up to ${fmt(share, 0)}%</div>`;
+      KEY_SERIES.forEach((s, i) => {
+        const pts = curves[s.key].filter((p) => p.share <= share), p = pts[pts.length - 1];
+        if (!p || p.share < 30) { dots[i].style.opacity = 0; html += row(s.name, "–", s.color); return; }
+        dots[i].setAttribute("cx", x(p.share)); dots[i].setAttribute("cy", y(Math.max(75, p.accuracy))); dots[i].style.opacity = 1;
+        html += row(s.name, `${fmt(p.accuracy)}% right · ${fmt(p.share)}% auto`, s.color);
+      });
+      showTip(html, box, (x(share) / W) * rect.width, (m.t + 60) * (rect.height / H));
+    }
+    hit.addEventListener("mousemove", move);
+    hit.addEventListener("touchmove", move, { passive: true });
+    hit.addEventListener("mouseleave", () => { guide.style.opacity = 0; dots.forEach((d) => (d.style.opacity = 0)); hideTip(); });
+  }
+  function keySwitch(data) {
+    const seg = document.getElementById("keyseg");
+    if (!seg) return;
+    seg.querySelectorAll("button").forEach((b) => b.addEventListener("click", () => {
+      currentKey = b.dataset.key;
+      seg.querySelectorAll("button").forEach((o) => o.setAttribute("aria-pressed", String(o === b)));
+      keyCurve(data);
+    }));
+  }
+  function gapTable(data, id) {
+    if (!data.gap_decomposition) return;
+    const g = data.gap_decomposition, ns = [...new Set(g.map((r) => r.answers_per_model))];
+    const cell = (n, k) => { const r = g.find((q) => q.answers_per_model === n && q.key === k); return `${r.gap > 0 ? "+" : ""}${fmt(r.gap)} <small>(${fmt(r.gap_ci_low)} to ${fmt(r.gap_ci_high)})</small>`; };
+    table(id, ["Answers per model", "Original key", "Corrected: clear errors", "Corrected: both-fit too"],
+      ns.map((n) => [n === "all" ? "All 1,000" : `Top ${n}`, cell(n, "original"), cell(n, "strict"), cell(n, "cleaned")]),
+      (r) => r[0] === "Top 731");
+  }
+
+  // ---------- Labels page: every reviewed label ----------
+  function labelsPage(data) {
+    const t = document.getElementById("l-table");
+    if (!t || !data.label_changes) return;
+    const rows = data.label_changes;
+    const counts = rows.reduce((a, r) => ((a[r.outcome] = (a[r.outcome] || 0) + 1), a), {});
+    document.querySelectorAll("[data-count]").forEach((n) => (n.textContent = n.dataset.count === "all" ? rows.length : counts[n.dataset.count] || 0));
+    let filter = "all", q = "";
+    const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+    const mark = (said, r) => `<code${said === r.original_label ? "" : said === r.alternative_label ? ' class="alt"' : ' class="other"'}>${esc(said)}</code>`;
+    function render() {
+      const shown = rows.filter((r) => (filter === "all" || r.outcome === filter) && (!q || (r.message + r.original_label + r.alternative_label).toLowerCase().includes(q)));
+      document.getElementById("l-shown").textContent = shown.length;
+      table("l-table", ["Message", "Original label", "Alternative", "Verdict", "Jev", "DeepSeek", "Sonnet 5", "Haiku 4.5"],
+        shown.map((r) => [esc(r.message), `<code>${esc(r.original_label)}</code>`, `<code class="alt">${esc(r.alternative_label)}</code>`, esc(r.outcome),
+          mark(r.jev_said, r), mark(r.deepseek_said, r), mark(r.sonnet_said, r), mark(r.haiku_said, r)]));
+    }
+    document.querySelectorAll("#l-filter button").forEach((b) => b.addEventListener("click", () => {
+      filter = b.dataset.f;
+      document.querySelectorAll("#l-filter button").forEach((o) => o.setAttribute("aria-pressed", String(o === b)));
+      render();
+    }));
+    document.getElementById("l-search").addEventListener("input", (e) => { q = e.target.value.toLowerCase(); render(); });
+    render();
   }
 
   // ---------- Report page tables ----------
@@ -409,7 +508,7 @@
 
   // ---------- boot ----------
   function renderAll(data) {
-    hero(data); tradeoff(data); costBars(data); cascade(data); strip(data); calibration(data); gate(data); tuning(data); deepseek(data); cleanedChart(data); reportTables(data);
+    hero(data); tradeoff(data); costBars(data); cascade(data); strip(data); calibration(data); gate(data); tuning(data); deepseek(data); cleanedChart(data); keyCurve(data); keySwitch(data); gapTable(data, "t-gap"); gapTable(data, "r-gap"); labelsPage(data); reportTables(data);
   }
   fetch("data.json").then((r) => r.json()).then((data) => {
     renderAll(data);
@@ -418,7 +517,7 @@
     window.addEventListener("resize", () => {
       if (window.innerWidth === lastW) return;
       lastW = window.innerWidth;
-      clearTimeout(t); t = setTimeout(() => { hero(data); tradeoff(data); strip(data); calibration(data); tuning(data); cleanedChart(data); }, 150);
+      clearTimeout(t); t = setTimeout(() => { hero(data); tradeoff(data); strip(data); calibration(data); tuning(data); cleanedChart(data); keyCurve(data); }, 150);
     });
     document.querySelectorAll("details.more").forEach((d) => d.addEventListener("toggle", () => { if (d.open) { calibration(data); } }));
     const bars = document.getElementById("costbars");

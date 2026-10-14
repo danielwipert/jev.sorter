@@ -12,6 +12,7 @@ import pandas as pd
 from analyze import (BANDS, CONTENDERS, TARGETS, auto_accepted, load_log, thresholds_from,
                      tuning_log_for)
 from cleaned_scores import accepted_labels
+from label_audit import correctness, gap_decomposition, label_changes
 
 SERIES = {"B": "Jev", "C": "Sonnet 5", "D": "Haiku 4.5"}  # the three models on the final descriptions
 
@@ -20,12 +21,14 @@ def pct(x):
     return round(float(x) * 100, 1)
 
 
-def sweep(log):
+def sweep(log, correct=None):
     """Every operating point a threshold can reach on this log: (share auto-accepted, accuracy).
 
     Only answers that pass gate checks 1-3 can be accepted. A threshold can't split a tie, so
     each distinct confidence value is one achievable point.
     """
+    if correct is not None:
+        log = log.assign(is_correct=correct)
     passing = log[log["passes_checks"]]
     points = []
     for threshold in sorted(passing["confidence"].unique(), reverse=True):
@@ -144,6 +147,14 @@ def main():
     data["deepseek"] = deepseek(logs)
     # Secondary: cleaned answer key (pre-registered 2026-10-13, see cleaned_scores.py).
     data["cleaned"] = cleaned(logs)
+    # Reader suggestion (2026-10-14): the full coverage/accuracy curve on each key, the Jev-DeepSeek
+    # gap at matched coverage with bootstrap intervals, and the list of reviewed labels.
+    keyed = {"cleaned": accepted_labels()[0], "strict": accepted_labels(strict=True)[0]}
+    data["curves_by_key"] = {k: {m: sweep(logs[m], correctness(logs[m], k, keyed.get(k))) for m in ("B", "J")}
+                             for k in ("original", "strict", "cleaned")}
+    data["gap_decomposition"] = gap_decomposition({m: logs[m] for m in ("B", "J")}).to_dict("records")
+    data["label_changes"] = label_changes()[["message_id", "message", "original_label", "alternative_label",
+                                             "outcome", "jev_said", "sonnet_said", "haiku_said", "deepseek_said"]].to_dict("records")
 
     Path("docs/data.json").write_text(json.dumps(data, indent=1) + "\n")
     print("Wrote docs/data.json")

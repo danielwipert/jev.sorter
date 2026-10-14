@@ -10,6 +10,7 @@ _Rewritten at the end of every session. Keep it short._
 - **Round 2 started: Jev vs. open alternatives (Laya, SemIf, Bespoke Nimble).** The full plan, rules and findings so far are in **`planning/round2-open-alternatives-spec.md`**. It's pre-registered in `CHANGELOG.md` (2026-09-30).
 
 ## What we did this session
+- **2026-10-14 (reader suggestion):** made the label re-check auditable. `python label_audit.py` → `results/label_changes.csv` + `results/gap_decomposition.csv`. Site: new page `docs/labels.html` (every verdict), Finding 8 now has the full curve with a key switch and the Jev−DeepSeek gap with bootstrap intervals. Gap at top 731: +6.2 / +5.9 / +4.1 (original / clear errors / both-fit). DeepSeek's site colour is now magenta.
 - **2026-10-13:** Deep dive on DeepSeek, then a confused-pairs analysis (`python confusions.py`, output in `results/confusion_pairs.md`).
   - Jev's 85 tuning mistakes are spread over 62 different pairs. That's why v3 (rewriting the top pairs) was a wash.
   - On 38 of the 85, **all 4 models** made the same "wrong" pick. Most read as answer-key errors or messages that fit both categories.
@@ -19,6 +20,7 @@ _Rewritten at the end of every session. Keep it short._
 - _2026-10-03:_ DeepSeek V4 Flash (contender J) done: Jev wins at the 70% row (88.0% vs 91.4%). DeepSeek is 8x cheaper but ~45 more silent errors per 1,000. Details in `CHANGELOG.md`. Not on the site yet.
 
 ## Next session
+- **Dan:** reply to the LinkedIn commenter with `promo/linkedin-reply-label-audit.md`.
 0. **Dan:** LinkedIn post 4 now uses DeepSeek and the cleaned key (`promo/linkedin-post-4-road-to-99.md`, image `promo/cascade-2.png`). Before posting, read the 8 messages in its notes (or skim `review/relabel_test.csv`) so "re-checked" is fully yours.
 1. **Dan:** create Modal and Hugging Face accounts, add `MODAL_TOKEN_ID`, `MODAL_TOKEN_SECRET` and `HF_TOKEN` to the cloud environment, and start a new session. Steps are in the spec, "What Dan needs to do".
 2. **Dan:** decide SemIf **A** (widen to 77 labels; recommended) or **B** (report "can't do 77 as shipped").
