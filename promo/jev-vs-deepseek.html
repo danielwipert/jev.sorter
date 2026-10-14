@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Jev vs DeepSeek scorecard</title>
+<!-- Build with: python promo/build_post_images.py (renders promo/jev-vs-deepseek.png). -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #fbfaf7; --surface: #fff; --ink: #121211; --ink-2: #52514e; --muted: #898781; --hair: #e6e4dd;
+    --s1: #2a78d6; --s4: #8a5cd1; --a2: #6d4ae8;
+    --serif: "Newsreader", Georgia, serif; --sans: "Inter", system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; }
+  body { background: var(--bg); color: var(--ink); font-family: var(--sans); }
+  .slide { width: 1080px; height: 1350px; position: relative; overflow: hidden; padding: 80px 88px 0; }
+  .slide::before { content: ""; position: absolute; inset: 0; z-index: 0;
+    background: radial-gradient(45% 35% at 8% 6%, rgba(42,120,214,.18), transparent 70%),
+                radial-gradient(40% 35% at 100% 10%, rgba(138,92,209,.16), transparent 70%); }
+  .slide::after { content: ""; position: absolute; inset: 0; z-index: 0; opacity: .55;
+    background-image: radial-gradient(#e2e0d8 1.4px, transparent 1.4px); background-size: 28px 28px;
+    -webkit-mask-image: linear-gradient(#000, transparent 45%); }
+  .slide > * { position: relative; z-index: 1; }
+  .top { font: 600 20px/1 var(--sans); letter-spacing: .12em; text-transform: uppercase; color: var(--a2); }
+  h2 { font: 500 70px/1.04 var(--serif); letter-spacing: -.03em; margin: 28px 0 16px; }
+  .sub { font-size: 26px; line-height: 1.4; color: var(--ink-2); }
+  .sub b { color: var(--ink); font-weight: 600; }
+  .card { background: var(--surface); border: 1.5px solid var(--hair); border-radius: 28px;
+    box-shadow: 0 2px 4px rgba(17,17,16,.04), 0 16px 40px rgba(17,17,16,.07); padding: 14px 36px; margin-top: 30px; }
+  .row { display: grid; grid-template-columns: 1.55fr 1fr 1fr; align-items: center; padding: 15px 0; border-top: 1.5px solid var(--hair); }
+  .row:first-child { border-top: 0; }
+  .row.head { padding: 10px 0 12px; }
+  .row.head div { font: 600 22px/1.2 var(--sans); display: flex; align-items: center; gap: 10px; }
+  .row.head i { width: 14px; height: 14px; border-radius: 50%; display: inline-block; }
+  .k { font: 600 21px/1.25 var(--sans); }
+  .k small { display: block; font: 400 16px/1.3 var(--sans); color: var(--muted); margin-top: 2px; }
+  .v { font: 500 34px/1 var(--serif); letter-spacing: -.01em; color: var(--muted); }
+  .v.win { color: var(--ink); }
+  .v.win::after { content: "✓"; font: 700 20px/1 var(--sans); margin-left: 10px; vertical-align: 4px; }
+  .v.j.win::after { color: var(--s1); }
+  .v.d.win::after { color: var(--s4); }
+  .math { margin-top: 26px; border-radius: 24px; padding: 24px 32px; background: var(--surface); border: 3px solid var(--s1);
+    box-shadow: 0 0 0 8px rgba(42,120,214,.08); font-size: 25px; line-height: 1.4; color: var(--ink-2); }
+  .math b { color: var(--ink); }
+  .foot { position: absolute; left: 88px; right: 88px; bottom: 50px; display: flex; justify-content: space-between; font-size: 20px; color: var(--ink-2); }
+  .foot b { color: var(--ink); }
+</style>
+</head>
+<body>
+<section class="slide">
+  <div class="top">Jev vs. the Frontier · Round 2</div>
+  <h2>Jev vs DeepSeek V4 Flash: the scorecard</h2>
+  <p class="sub">Same pipeline, same 1,000 messages, rules written in advance. <b>DeepSeek is 8× cheaper. Jev is more often right when it matters.</b></p>
+
+  <!-- Numbers: test set, v2 descriptions (docs/data.json; promo/linkedin-post-5-jev-vs-deepseek.md notes). -->
+  <div class="card">
+    <div class="row head"><div></div><div><i style="background:var(--s1)"></i>Jev</div><div><i style="background:var(--s4)"></i>DeepSeek</div></div>
+    <div class="row"><div class="k">Right, on what gets automated<small>~70% of messages automated</small></div><div class="v j win">91.4%</div><div class="v d">88.0%</div></div>
+    <div class="row"><div class="k">Right when "99.9%+ sure"<small>is the confidence score honest?</small></div><div class="v j win">98.0%</div><div class="v d">93.8%</div></div>
+    <div class="row"><div class="k">Speed<small>median time per message</small></div><div class="v j win">0.22 s</div><div class="v d">1.46 s</div></div>
+    <div class="row"><div class="k">Cost<small>per 1 million messages</small></div><div class="v j">$100</div><div class="v d win">$13</div></div>
+    <div class="row"><div class="k">Automation settings<small>how finely you can set the dial</small></div><div class="v j">67</div><div class="v d win">349</div></div>
+    <div class="row"><div class="k">Open weights<small>run it on your own servers</small></div><div class="v j">No</div><div class="v d win">Yes</div></div>
+  </div>
+
+  <div class="math">Saving <b>9 cents</b> per 1,000 messages costs about <b>45 more wrong answers</b> that nobody checks. Worth it only if a mistake costs you less than <b>a fifth of a cent</b>.</div>
+
+  <div class="foot"><span>Test set: 1,000 bank customer messages</span><b>danielwipert.github.io/jev.sorter</b></div>
+</section>
+</body>
+</html>
