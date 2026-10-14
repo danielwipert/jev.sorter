@@ -2,7 +2,7 @@
 
 _Rewritten at the end of every session. Keep it short._
 
-**Last session:** 2026-10-13
+**Last session:** 2026-10-14
 
 ## Where things stand
 - **Round 1 is done and live:** Jev beat Sonnet 5 at the 70% row (91.4% vs 91.0%, 52× cheaper). Site: https://danielwipert.github.io/jev.sorter/
@@ -14,11 +14,11 @@ _Rewritten at the end of every session. Keep it short._
   - On 38 of the 85, **all 4 models** made the same "wrong" pick. Most read as answer-key errors or messages that fit both categories.
   - On the test set, DeepSeek makes the same wrong pick on 56 of Jev's 63 confident mistakes, so a second model as a fact-checker won't help.
 - **Cleaned-key secondary score (option A)**, pre-registered in `CHANGELOG.md`. Blind review sheet of 206 doubtful test labels (`python build_relabel_review.py`), Claude drafted every verdict, re-score with `python cleaned_scores.py`.
-  - DRAFT, 70% row: Jev 91.4% → 94.9% (strict) → 98.8% (cleaned). Sonnet 98.0%, DeepSeek 96.3%. Order unchanged. Official results untouched.
+  - **Approved 2026-10-14** (Dan approved all 206 drafts in bulk). 70% row: Jev 91.4% → 94.9% (strict) → 98.8% (cleaned). Sonnet 98.0%, DeepSeek 96.3%. Order unchanged. Official results untouched. Results: `results/results_table_cleaned.csv`.
 - _2026-10-03:_ DeepSeek V4 Flash (contender J) done: Jev wins at the 70% row (88.0% vs 91.4%). DeepSeek is 8x cheaper but ~45 more silent errors per 1,000. Details in `CHANGELOG.md`. Not on the site yet.
 
 ## Next session
-0. **Dan:** review the 206 drafts in `review/relabel_test.csv` (how-to: `review/README.md`). Then `python cleaned_scores.py` gives the approved numbers, and we decide whether they go on the site (as a clearly marked secondary result). Also decide whether DeepSeek goes on the site.
+0. **Dan:** decide whether the cleaned-key numbers (as a clearly marked secondary result, with the "Claude's verdicts, bulk-approved" caveat) and DeepSeek go on the site. Either could also feed LinkedIn post 4.
 1. **Dan:** create Modal and Hugging Face accounts, add `MODAL_TOKEN_ID`, `MODAL_TOKEN_SECRET` and `HF_TOKEN` to the cloud environment, and start a new session. Steps are in the spec, "What Dan needs to do".
 2. **Dan:** decide SemIf **A** (widen to 77 labels; recommended) or **B** (report "can't do 77 as shipped").
 3. Finish the Laya runs if the container was reclaimed. The same commands resume where they stopped (listed in the spec).
