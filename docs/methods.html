@@ -30,6 +30,7 @@
       <a href="./">Overview</a>
       <a href="./#findings">Findings</a>
       <a href="methods.html">Technical report</a>
+      <a href="labels.html">Label audit</a>
     </div>
     <a class="nav-cta" href="https://github.com/danielwipert/jev.sorter">GitHub ↗</a>
   </div>
@@ -182,6 +183,10 @@ Reply with JSON only, in this form: {"category": "&lt;exact category name&gt;", 
       <li><strong>Scoring:</strong> thresholds unchanged. <em>Cleaned</em> accepts any accepted label (both, where both fit). <em>Strict</em>, added after the draft numbers were seen, treats "both fit" as the official key only, so only clear relabels count. It's a lower bound.</li>
     </ol>
     <div class="table-wrap"><table id="r-cleaned"></table></div>
+    <h3>Jev minus DeepSeek, by answer key</h3>
+    <p class="note">Added 2026-10-14 after a reader's suggestion; exploratory, not pre-registered. Each model's <i>n</i> most confident answers that pass checks 1–3 (matched coverage). Ranges are paired 95% bootstrap intervals over the 1,000 test messages (2,000 resamples, seed 0) with each model's accepted set held fixed. They reflect which messages were sampled, not run-to-run model variation (one run per model).</p>
+    <div class="table-wrap"><table id="r-gap"></table></div>
+    <p>Reading: fixing clear label errors leaves the gap essentially unchanged (6.2 → 5.9 points at Jev's 70% volume), because those errors cost both models about equally. Accepting either label where both fit narrows it (to 4.1 points, and about 2 points among the 500–600 most confident answers). The reason is confidence, not label choice: over all 86 both-fit messages the two models pick the alternative about equally often (Jev 64, DeepSeek 66), but DeepSeek is far more confident on them. Among each model's 500 most confident answers, 19 of DeepSeek's 39 original-key errors are both-fit messages, against 1 of Jev's 12. At Jev's 70% volume (731 answers), DeepSeek has 45 more original-key errors than Jev: 13 more on both-fit messages, 4 more on clearly mislabeled ones, and <b>28 more on messages nobody disputed</b> (37 vs 9). The interval excludes zero on every key at every volume of 400 or more. Every reviewed label, with what each model said, is listed on the <a href="labels.html">label audit page</a> and in <a href="https://github.com/danielwipert/jev.sorter/blob/main/results/label_changes.csv"><code>results/label_changes.csv</code></a> (<code>python label_audit.py</code>).</p>
     <p><strong>Caveats:</strong> one reviewer (Claude, approved by the author); only messages where models agreed against the key were reviewed, which favors popular answers and can't catch errors no model disagreed with. The contenders' order is the same under all three keys. Files: <a href="https://github.com/danielwipert/jev.sorter/tree/main/review"><code>review/</code></a>, <code>cleaned_scores.py</code>, <code>results/results_table_cleaned.csv</code>.</p>
 
     <h2 id="limits">Limitations</h2>

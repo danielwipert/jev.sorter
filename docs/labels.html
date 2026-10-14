@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Daniel Wipert">
+<meta property="og:title" content="Jev vs. the Frontier: label audit">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://danielwipert.github.io/jev.sorter/labels.html">
+<meta property="og:image" content="https://danielwipert.github.io/jev.sorter/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+<meta property="og:image:alt" content="Jev vs. the Frontier: same accuracy on automated decisions, one-fiftieth of the cost.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://danielwipert.github.io/jev.sorter/og.png">
+<title>Label Audit · Jev vs. the Frontier</title>
+<meta name="description" content="Every Banking77 test label we re-checked for the Jev vs. the Frontier benchmark: the original label, the alternative, the verdict, and what each model said.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%232a78d6'/><path d='M9 17l5 5 9-12' stroke='white' stroke-width='3.2' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a class="brand" href="./"><span class="brand-mark"></span><span>Jev <span class="brand-vs">vs.</span> the Frontier</span></a>
+    <div class="nav-links">
+      <a href="./">Overview</a>
+      <a href="./#findings">Findings</a>
+      <a href="methods.html">Technical report</a>
+      <a href="labels.html">Label audit</a>
+    </div>
+    <a class="nav-cta" href="https://github.com/danielwipert/jev.sorter">GitHub ↗</a>
+  </div>
+</nav>
+
+<div class="wrap labels-page">
+  <header class="labels-head">
+    <div class="eyebrow eyebrow-accent">Label audit · secondary result</div>
+    <h1>Every label we re-checked</h1>
+    <p>For Finding 8 we re-checked <b><span data-count="all"></span></b> test labels: the messages where at least 2 of the 4 models agreed on a different category than the Banking77 answer key. Each was judged blind, with the two labels shown in random order. This page lists every verdict, so you can check our calls.</p>
+    <ul class="labels-notes">
+      <li><b>Changed</b> (<span data-count="changed"></span>): the alternative is right. <b>Both fit</b> (<span data-count="both fit"></span>): either is fair. <b>Original kept</b> (<span data-count="original kept"></span>) and <b>unclear</b> (<span data-count="unclear (original kept)"></span>): the official label stays.</li>
+      <li><b>Who decided:</b> Claude drafted every verdict without seeing which label was official or which model said what; the author approved them in bulk, without overrides. The rule was <a href="https://github.com/danielwipert/jev.sorter/blob/main/CHANGELOG.md">written down before any re-scoring</a>.</li>
+      <li>In the model columns, <code class="alt">this style</code> means the model picked the alternative, plain means the original label, and <code class="other">this style</code> means something else.</li>
+      <li>Download: <a href="https://github.com/danielwipert/jev.sorter/blob/main/results/label_changes.csv">label_changes.csv</a> · re-score yourself with <code>python label_audit.py</code> · results on the <a href="./#findings">overview (Finding 8)</a> and in the <a href="methods.html#cleaned">technical report</a>.</li>
+    </ul>
+  </header>
+  <div class="seg" id="l-filter" role="group" aria-label="Filter by verdict">
+    <button data-f="all" aria-pressed="true">All</button>
+    <button data-f="changed" aria-pressed="false">Changed</button>
+    <button data-f="both fit" aria-pressed="false">Both fit</button>
+    <button data-f="original kept" aria-pressed="false">Original kept</button>
+    <button data-f="unclear (original kept)" aria-pressed="false">Unclear</button>
+  </div>
+  <input id="l-search" class="l-search" type="search" placeholder="Search messages or labels" aria-label="Search messages or labels">
+  <p class="l-count">Showing <span id="l-shown"></span> labels</p>
+  <div class="table-wrap"><table id="l-table" class="l-table"></table></div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <span>Jev vs. the Frontier · Label audit · by <a href="https://www.linkedin.com/in/daniel-wipert/">Daniel Wipert</a></span>
+    <span><a href="./">Overview</a> · <a href="methods.html">Technical report</a> · <a href="https://github.com/danielwipert/jev.sorter">GitHub</a></span>
+  </div>
+</footer>
+
+<div class="tip" id="tip"></div>
+<script src="app.js"></script>
+</body>
+</html>

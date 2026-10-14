@@ -370,30 +370,37 @@
     <div class="finding reveal">
       <div>
         <div class="finding-n">FINDING 8 · SECONDARY</div>
-        <h3>Many of the "mistakes" are mistakes in the answer key.</h3>
+        <h3>Some "mistakes" are the answer key's. Jev's lead isn't.</h3>
         <div class="body">
-          <p>When Jev was confidently wrong, DeepSeek usually picked <strong>the exact same wrong category</strong> (<span data-k="ds-same"></span>). Two very different models agreeing against the answer key suggests the key, not the model, is often the problem.</p>
-          <p>So we re-checked 206 doubtful labels, blind to which model said what. On a cleaned key, <strong>Jev is right on 95–99% of what it auto-accepts</strong>, not 91.4%. Every model goes up, and the order stays the same.</p>
+          <p>When Jev was confidently wrong, DeepSeek usually picked <strong>the exact same wrong category</strong> (<span data-k="ds-same"></span>). That points at the answer key, so we re-checked 206 doubtful labels, blind to which model said what, and <a href="labels.html">published every verdict</a>.</p>
+          <p>On a corrected key every model scores higher, but <strong>Jev stays ahead of DeepSeek</strong> at every level of automation. Fixing clearly wrong labels barely changes the gap. Accepting either label where both fit shrinks it, because DeepSeek is very confident on ambiguous messages and Jev isn't. Of DeepSeek's 45 extra mistakes, <strong>28 are on messages nobody disputed</strong>.</p>
         </div>
       </div>
       <div>
         <div class="figure">
           <div class="figure-head">
             <div>
-              <div class="figure-title">Accuracy on auto-accepted, official vs cleaned answer key</div>
-              <div class="figure-sub">70% setting, test set. Bar runs from the strict to the generous cleaned score.</div>
+              <div class="figure-title">Accuracy vs how much gets automated, by answer key</div>
+              <div class="figure-sub">Test set. Pick a key; dashed lines show the original key for comparison. Hover to compare.</div>
             </div>
-            <div class="legend"><span><i class="ring"></i>Official</span><span><i class="key" style="background:var(--ink-2)"></i>Strict → cleaned</span></div>
+            <div class="legend"><span><i class="key k1"></i>Jev</span><span><i class="key k4"></i>DeepSeek</span></div>
           </div>
-          <div class="chart" id="cleaned"></div>
+          <div class="seg" id="keyseg" role="group" aria-label="Answer key">
+            <button data-key="original" aria-pressed="true">Original key</button>
+            <button data-key="strict" aria-pressed="false">Corrected: clear errors</button>
+            <button data-key="cleaned" aria-pressed="false">Corrected: both-fit too</button>
+          </div>
+          <div class="chart" id="keycurve"></div>
         </div>
         <details class="more">
           <summary>Show the numbers</summary>
           <div class="more-body">
-            <p><b>Which labels were checked:</b> the 206 test messages where at least 2 of the 4 models (Jev, Sonnet 5, Haiku 4.5, DeepSeek) agreed on a different category than the answer key. Each was shown with the two labels in random order, without saying which was official.</p>
-            <p><b>Verdicts:</b> the official label kept <span data-k="cl-key"></span> times, the other label <span data-k="cl-alt"></span>, both fit <span data-k="cl-both"></span>, unclear <span data-k="cl-unclear"></span> (official kept). <b>Strict</b> counts only clear relabels. <b>Cleaned</b> also accepts either label where both fit.</p>
+            <p><b>How much of the gap is the labels?</b> Jev minus DeepSeek, comparing each model's <i>n</i> most confident answers, on each key. The range is a 95% bootstrap interval over the test messages; with one run per model, it doesn't cover run-to-run variation.</p>
+            <div class="table-wrap"><table id="t-gap"></table></div>
+            <p><b>Which labels were checked:</b> the 206 test messages where at least 2 of the 4 models (Jev, Sonnet 5, Haiku 4.5, DeepSeek) agreed on a different category than the answer key. Each was shown with the two labels in random order, without saying which was official. Verdicts: original kept <span data-k="cl-key"></span>, changed <span data-k="cl-alt"></span>, both fit <span data-k="cl-both"></span>, unclear <span data-k="cl-unclear"></span> (original kept). <a href="labels.html">See every label →</a></p>
+            <p><b>All four models at the 70% setting:</b></p>
             <div class="table-wrap"><table id="t-cleaned"></table></div>
-            <p><b>Read with care:</b> this is a secondary result, and the official numbers above don't change. The verdicts were drafted by Claude and approved by the author in bulk, not row by row. Only messages where models agreed against the key were reviewed, which favors "popular" answers. The rules were <a href="https://github.com/danielwipert/jev.sorter/blob/main/CHANGELOG.md">written down before any cleaned score was computed</a>; the strict column was added afterwards as a lower bound.</p>
+            <p><b>Read with care:</b> this is a secondary result; the official numbers above don't change. The verdicts were drafted by Claude and approved by the author in bulk, not row by row. Only messages where models agreed against the key were reviewed, which favors "popular" answers. The re-scoring rule was <a href="https://github.com/danielwipert/jev.sorter/blob/main/CHANGELOG.md">written down before any corrected score was computed</a>; the clear-errors-only key, the full curves and the gap intervals were added afterwards.</p>
           </div>
         </details>
       </div>
@@ -450,6 +457,7 @@
     <div class="deeper">
       <a href="methods.html" class="reveal"><div class="eyebrow">Layer 3</div><div class="t">Technical report</div><div class="d">Data splits, prompts word for word, gate logic, threshold procedure, the pre-registered rule, all six contenders and robustness checks.</div><div class="go">Read the report →</div></a>
       <a href="https://github.com/danielwipert/jev.sorter" class="reveal"><div class="eyebrow">Code &amp; data</div><div class="t">Repository</div><div class="d">The harness, every decision log (one row per message per run), every description version, and the results tables.</div><div class="go">Open on GitHub ↗</div></a>
+      <a href="labels.html" class="reveal"><div class="eyebrow">Label audit</div><div class="t">Every re-checked label</div><div class="d">The 206 answer-key labels we re-checked for Finding 8: original, alternative, verdict, and what each model said.</div><div class="go">See the labels →</div></a>
       <a href="https://github.com/danielwipert/jev.sorter/blob/main/CHANGELOG.md" class="reveal"><div class="eyebrow">Audit trail</div><div class="t">Changelog &amp; pre-commitments</div><div class="d">Every description version, every gate decision, and each pre-commitment, time-stamped in git before the data existed.</div><div class="go">View the changelog ↗</div></a>
     </div>
   </div>
