@@ -19,7 +19,7 @@ _Rewritten at the end of every session. Keep it short._
 - _2026-10-03:_ DeepSeek V4 Flash (contender J) done: Jev wins at the 70% row (88.0% vs 91.4%). DeepSeek is 8x cheaper but ~45 more silent errors per 1,000. Details in `CHANGELOG.md`. Not on the site yet.
 
 ## Next session
-0. **Done 2026-10-14:** DeepSeek (Finding 7) and the cleaned key (Finding 8) are on the site. Next optional: use them in LinkedIn post 4.
+0. **Dan:** LinkedIn post 4 now uses DeepSeek and the cleaned key (`promo/linkedin-post-4-road-to-99.md`, image `promo/cascade-2.png`). Before posting, read the 8 messages in its notes (or skim `review/relabel_test.csv`) so "re-checked" is fully yours.
 1. **Dan:** create Modal and Hugging Face accounts, add `MODAL_TOKEN_ID`, `MODAL_TOKEN_SECRET` and `HF_TOKEN` to the cloud environment, and start a new session. Steps are in the spec, "What Dan needs to do".
 2. **Dan:** decide SemIf **A** (widen to 77 labels; recommended) or **B** (report "can't do 77 as shipped").
 3. Finish the Laya runs if the container was reclaimed. The same commands resume where they stopped (listed in the spec).
