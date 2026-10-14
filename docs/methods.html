@@ -48,6 +48,8 @@
       <li><a href="#criterion">Pre-registered criterion</a></li>
       <li><a href="#results">Results</a></li>
       <li><a href="#robustness">Robustness checks</a></li>
+      <li><a href="#round2">Round 2: DeepSeek</a></li>
+      <li><a href="#cleaned">Cleaned answer key</a></li>
       <li><a href="#limits">Limitations</a></li>
       <li><a href="#repro">Reproducibility</a></li>
     </ol>
@@ -139,7 +141,7 @@ Reply with JSON only, in this form: {"category": "&lt;exact category name&gt;", 
 
     <h2 id="results">Results</h2>
     <h3>All contenders, test set (1,000 messages)</h3>
-    <p class="note">A: Jev, v1 · B: Jev, v2 (final) · C: Sonnet 5, v2 · D: Haiku 4.5, v2 · F: Sonnet 5, v1 (tilt check). Soft hallucination = 1 − accuracy on auto-accepted. Hard hallucination = share of all answers failing check 1. The highlighted rows decide the verdict.</p>
+    <p class="note">A: Jev, v1 · B: Jev, v2 (final) · C: Sonnet 5, v2 · D: Haiku 4.5, v2 · F: Sonnet 5, v1 (tilt check) · J: DeepSeek V4 Flash, v2 (round 2) · K: DeepSeek V4 Flash, v1. Soft hallucination = 1 − accuracy on auto-accepted. Hard hallucination = share of all answers failing check 1. The highlighted rows decide the verdict.</p>
     <div class="table-wrap"><table id="r-results"></table></div>
     <h3>Cascade (E): Jev if auto-accepted, otherwise Sonnet 5</h3>
     <p class="note">Computed from the B and C logs, with no additional calls. Cost = Jev on all messages + Sonnet on the non-accepted share.</p>
@@ -161,6 +163,27 @@ Reply with JSON only, in this form: {"category": "&lt;exact category name&gt;", 
     <h3>Tuning vs test</h3>
     <p>On the tuning set, Jev led Sonnet by 3.6 points on all answers (83.0% vs 79.4%). On the test set, Sonnet was 0.7 points ahead (82.3% vs 81.6%). Part of the tuning-set lead was overfitting to the messages the descriptions were rewritten from, which is why thresholds and descriptions were fixed before the test set was opened.</p>
 
+    <h2 id="round2">Round 2: DeepSeek V4 Flash (contender J)</h2>
+    <p>Pre-registered on 2026-10-02, before the full run. Model <code>deepseek/deepseek-v4-flash</code> via OpenRouter, provider pinned to <code>streamlake/fp8</code> with no fallbacks, reasoning off, the same prompt as Claude. <strong>Confidence</strong> is the model's own probability for the category text it wrote (the product of that text's token probabilities, from log-probabilities) × 100. Its self-reported number was logged as a secondary score. Same sets, gate, keywords and threshold procedure; the win condition is the same 70% row, against Jev B.</p>
+    <ul>
+      <li><strong>Result:</strong> accuracy on auto-accepted 91.6 / 88.0 / 80.9% at the 50 / 70 / 85% rows, against Jev's 97.0 / 91.4 / 87.4%. All answers 74.7% vs 81.6%. Cost $0.013 vs $0.10 per 1,000 (8× cheaper). Median latency 1,460 ms vs 219 ms. <strong>Jev wins.</strong></li>
+      <li><strong>Same volume:</strong> each model's 731 most confident answers that pass checks 1–3: Jev 91.4%, DeepSeek 85.2%, about 45 more wrong auto-accepted answers per 1,000 messages.</li>
+      <li><strong>Calibration:</strong> 45% of DeepSeek's answers scored ≥ 99.9, and 93.8% of those were right.</li>
+      <li><strong>Shared mistakes:</strong> of Jev's 63 wrong auto-accepted answers at the 70% setting, DeepSeek picked the same wrong category on 56. Requiring both models to agree barely changes accuracy, so a second model doesn't work as a fact-checker here.</li>
+      <li><strong>Secondary:</strong> with v1 descriptions (K vs Jev A) DeepSeek trails by 4.2 / 3.7 / 5.3 points. With its self-reported confidence, it auto-accepted 83.9% at 81.4% accuracy at the 70% row. Total DeepSeek spend: $0.036.</li>
+    </ul>
+
+    <h2 id="cleaned">Secondary: cleaned answer key</h2>
+    <p>Pre-registered on 2026-10-13, before any cleaned score was computed. The official results above are unchanged.</p>
+    <ol>
+      <li><strong>Candidates:</strong> the 206 test messages where at least 2 of the 4 v2 runs (Jev B, Sonnet C, Haiku D, DeepSeek J) picked the same category, different from the answer key. Ties between alternatives go to the alphabetically first.</li>
+      <li><strong>Blind review:</strong> each message shown with the key and the alternative as "label 1" and "label 2" in random order (seed 13), without saying which is official or which models picked what. Verdict: label 1, label 2, both fit, or unclear (unclear keeps the key).</li>
+      <li><strong>Who decided:</strong> Claude drafted every verdict; the author approved all 206 in bulk without overriding any. Outcome: key kept 55, other label 48, both fit 86, unclear 17.</li>
+      <li><strong>Scoring:</strong> thresholds unchanged. <em>Cleaned</em> accepts any accepted label (both, where both fit). <em>Strict</em>, added after the draft numbers were seen, treats "both fit" as the official key only, so only clear relabels count. It's a lower bound.</li>
+    </ol>
+    <div class="table-wrap"><table id="r-cleaned"></table></div>
+    <p><strong>Caveats:</strong> one reviewer (Claude, approved by the author); only messages where models agreed against the key were reviewed, which favors popular answers and can't catch errors no model disagreed with. The contenders' order is the same under all three keys. Files: <a href="https://github.com/danielwipert/jev.sorter/tree/main/review"><code>review/</code></a>, <code>cleaned_scores.py</code>, <code>results/results_table_cleaned.csv</code>.</p>
+
     <h2 id="limits">Limitations</h2>
     <ul>
       <li>Single task type (closed-set, 77-way intent classification) on short chat messages. Not evidence about email, open-ended generation or reasoning.</li>
@@ -168,13 +191,14 @@ Reply with JSON only, in this form: {"category": "&lt;exact category name&gt;", 
       <li>Claude confidence is a single self-reported number. Sampling-based agreement or log-probability methods might give finer, better-calibrated scores.</li>
       <li>Jev is a beta product (launched September 2026), and its benchmarks are vendor-run. Pricing, limits and versions may change.</li>
       <li>Descriptions were tuned only on Jev's errors, and Haiku was not given an F-style check.</li>
-      <li>Banking77 has some label noise (for example, near-duplicate intents such as <code>card_arrival</code> and <code>card_delivery_estimate</code>), which caps every model.</li>
+      <li>Banking77 has some label noise (for example, near-duplicate intents such as <code>card_arrival</code> and <code>card_delivery_estimate</code>), which caps every model. The <a href="#cleaned">cleaned-key check</a> estimates its size.</li>
     </ul>
 
     <h2 id="repro">Reproducibility</h2>
     <pre>pip install -r requirements.txt
 python test_gate.py            # gate unit tests
 python analyze.py              # recompute every table from the committed logs (no API calls)
+python cleaned_scores.py       # secondary: re-score against the cleaned answer key
 python build_site_data.py      # rebuild docs/data.json for this site
 
 # re-run a model (costs money; needs OPENROUTER_API_KEY)
@@ -184,7 +208,7 @@ python run.py --model sonnet --set test   --categories v2 --confirm-test</pre>
       <li><strong>Decision logs</strong> (one row per message per run, with prediction, confidence, gate result, correctness, latency and cost): <a href="https://github.com/danielwipert/jev.sorter/tree/main/logs"><code>logs/</code></a></li>
       <li><strong>Description versions:</strong> <a href="https://github.com/danielwipert/jev.sorter/tree/main/categories"><code>categories/</code></a>; <strong>keyword lists:</strong> <a href="https://github.com/danielwipert/jev.sorter/tree/main/keywords"><code>keywords/</code></a></li>
       <li><strong>Decisions and pre-commitments:</strong> <a href="https://github.com/danielwipert/jev.sorter/blob/main/CHANGELOG.md"><code>CHANGELOG.md</code></a>; <strong>original spec:</strong> <a href="https://github.com/danielwipert/jev.sorter/tree/main/planning"><code>planning/</code></a></li>
-      <li><strong>Total API spend for the whole project:</strong> $16.05 (Sonnet 5 $12.73, Haiku 4.5 $2.86, Jev $0.32, description drafting $0.14).</li>
+      <li><strong>Total API spend for the whole project:</strong> $16.09 (Sonnet 5 $12.73, Haiku 4.5 $2.86, Jev $0.32, description drafting $0.14, DeepSeek V4 Flash $0.04).</li>
     </ul>
   </article>
 </div>

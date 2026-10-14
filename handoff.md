@@ -5,6 +5,7 @@ _Rewritten at the end of every session. Keep it short._
 **Last session:** 2026-10-14
 
 ## Where things stand
+- **Site now has 8 findings** (7: DeepSeek, 8: cleaned answer key).
 - **Round 1 is done and live:** Jev beat Sonnet 5 at the 70% row (91.4% vs 91.0%, 52× cheaper). Site: https://danielwipert.github.io/jev.sorter/
 - **Round 2 started: Jev vs. open alternatives (Laya, SemIf, Bespoke Nimble).** The full plan, rules and findings so far are in **`planning/round2-open-alternatives-spec.md`**. It's pre-registered in `CHANGELOG.md` (2026-09-30).
 
@@ -18,7 +19,7 @@ _Rewritten at the end of every session. Keep it short._
 - _2026-10-03:_ DeepSeek V4 Flash (contender J) done: Jev wins at the 70% row (88.0% vs 91.4%). DeepSeek is 8x cheaper but ~45 more silent errors per 1,000. Details in `CHANGELOG.md`. Not on the site yet.
 
 ## Next session
-0. **Dan:** decide whether the cleaned-key numbers (as a clearly marked secondary result, with the "Claude's verdicts, bulk-approved" caveat) and DeepSeek go on the site. Either could also feed LinkedIn post 4.
+0. **Done 2026-10-14:** DeepSeek (Finding 7) and the cleaned key (Finding 8) are on the site. Next optional: use them in LinkedIn post 4.
 1. **Dan:** create Modal and Hugging Face accounts, add `MODAL_TOKEN_ID`, `MODAL_TOKEN_SECRET` and `HF_TOKEN` to the cloud environment, and start a new session. Steps are in the spec, "What Dan needs to do".
 2. **Dan:** decide SemIf **A** (widen to 77 labels; recommended) or **B** (report "can't do 77 as shipped").
 3. Finish the Laya runs if the container was reclaimed. The same commands resume where they stopped (listed in the spec).

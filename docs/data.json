@@ -25,7 +25,7 @@
    ],
    "accuracy_all": 79.3,
    "hard_hallucinations": 0,
-   "cost_per_1000": 0.07,
+   "cost_per_1000": 0.0709,
    "cost_per_million": 71,
    "median_ms": 221
   },
@@ -54,7 +54,7 @@
    ],
    "accuracy_all": 81.6,
    "hard_hallucinations": 0,
-   "cost_per_1000": 0.1,
+   "cost_per_1000": 0.1001,
    "cost_per_million": 100,
    "median_ms": 219
   },
@@ -83,7 +83,7 @@
    ],
    "accuracy_all": 82.3,
    "hard_hallucinations": 0,
-   "cost_per_1000": 5.25,
+   "cost_per_1000": 5.2533,
    "cost_per_million": 5253,
    "median_ms": 1831
   },
@@ -112,7 +112,7 @@
    ],
    "accuracy_all": 76.9,
    "hard_hallucinations": 2,
-   "cost_per_1000": 1.9,
+   "cost_per_1000": 1.904,
    "cost_per_million": 1904,
    "median_ms": 854
   },
@@ -141,7 +141,7 @@
    ],
    "accuracy_all": 80.4,
    "hard_hallucinations": 0,
-   "cost_per_1000": 3.23,
+   "cost_per_1000": 3.2314,
    "cost_per_million": 3231,
    "median_ms": 2306
   },
@@ -170,7 +170,7 @@
    ],
    "accuracy_all": 74.7,
    "hard_hallucinations": 0,
-   "cost_per_1000": 0.01,
+   "cost_per_1000": 0.0129,
    "cost_per_million": 13,
    "median_ms": 1460
   },
@@ -199,7 +199,7 @@
    ],
    "accuracy_all": 72.4,
    "hard_hallucinations": 1,
-   "cost_per_1000": 0.01,
+   "cost_per_1000": 0.0108,
    "cost_per_million": 11,
    "median_ms": 1306
   }
@@ -1136,5 +1136,194 @@
   70,
   85
  ],
- "cost_ratio_sonnet_jev": 52.5
+ "cost_ratio_sonnet_jev": 52.5,
+ "deepseek": {
+  "same_volume_n": 731,
+  "same_volume": {
+   "B": 91.4,
+   "J": 85.2
+  },
+  "jev_confident_wrong": 63,
+  "deepseek_same_wrong": 56
+ },
+ "cleaned": {
+  "approved": true,
+  "reviewed": 206,
+  "sides": {
+   "key": 55,
+   "alternative": 48,
+   "both": 86,
+   "unclear": 17
+  },
+  "contenders": {
+   "A": {
+    "rows": [
+     {
+      "target": 50,
+      "official": 96.0,
+      "strict": 98.5,
+      "cleaned": 99.3
+     },
+     {
+      "target": 70,
+      "official": 90.5,
+      "strict": 94.1,
+      "cleaned": 97.9
+     },
+     {
+      "target": 85,
+      "official": 85.7,
+      "strict": 89.1,
+      "cleaned": 94.2
+     }
+    ],
+    "all_official": 79.3,
+    "all_cleaned": 88.8
+   },
+   "B": {
+    "rows": [
+     {
+      "target": 50,
+      "official": 97.0,
+      "strict": 99.6,
+      "cleaned": 99.8
+     },
+     {
+      "target": 70,
+      "official": 91.4,
+      "strict": 94.9,
+      "cleaned": 98.8
+     },
+     {
+      "target": 85,
+      "official": 87.4,
+      "strict": 90.8,
+      "cleaned": 96.1
+     }
+    ],
+    "all_official": 81.6,
+    "all_cleaned": 91.9
+   },
+   "C": {
+    "rows": [
+     {
+      "target": 50,
+      "official": 93.8,
+      "strict": 96.3,
+      "cleaned": 99.2
+     },
+     {
+      "target": 70,
+      "official": 91.0,
+      "strict": 93.8,
+      "cleaned": 98.0
+     },
+     {
+      "target": 85,
+      "official": 87.4,
+      "strict": 91.2,
+      "cleaned": 97.1
+     }
+    ],
+    "all_official": 82.3,
+    "all_cleaned": 92.6
+   },
+   "D": {
+    "rows": [
+     {
+      "target": 50,
+      "official": 89.4,
+      "strict": 92.3,
+      "cleaned": 95.6
+     },
+     {
+      "target": 70,
+      "official": 84.6,
+      "strict": 88.0,
+      "cleaned": 93.1
+     },
+     {
+      "target": 85,
+      "official": 81.6,
+      "strict": 85.1,
+      "cleaned": 91.1
+     }
+    ],
+    "all_official": 76.9,
+    "all_cleaned": 87.7
+   },
+   "F": {
+    "rows": [
+     {
+      "target": 50,
+      "official": 91.4,
+      "strict": 94.0,
+      "cleaned": 97.5
+     },
+     {
+      "target": 70,
+      "official": 90.1,
+      "strict": 92.9,
+      "cleaned": 97.0
+     },
+     {
+      "target": 85,
+      "official": 86.6,
+      "strict": 90.1,
+      "cleaned": 95.5
+     }
+    ],
+    "all_official": 80.4,
+    "all_cleaned": 90.1
+   },
+   "J": {
+    "rows": [
+     {
+      "target": 50,
+      "official": 91.6,
+      "strict": 93.8,
+      "cleaned": 97.9
+     },
+     {
+      "target": 70,
+      "official": 88.0,
+      "strict": 91.4,
+      "cleaned": 96.3
+     },
+     {
+      "target": 85,
+      "official": 80.9,
+      "strict": 84.7,
+      "cleaned": 91.0
+     }
+    ],
+    "all_official": 74.7,
+    "all_cleaned": 85.3
+   },
+   "K": {
+    "rows": [
+     {
+      "target": 50,
+      "official": 91.8,
+      "strict": 94.9,
+      "cleaned": 98.8
+     },
+     {
+      "target": 70,
+      "official": 86.8,
+      "strict": 89.7,
+      "cleaned": 94.6
+     },
+     {
+      "target": 85,
+      "official": 80.4,
+      "strict": 83.5,
+      "cleaned": 88.6
+     }
+    ],
+    "all_official": 72.4,
+    "all_cleaned": 80.7
+   }
+  }
+ }
 }
