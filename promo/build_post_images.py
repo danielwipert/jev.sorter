@@ -1,7 +1,7 @@
 """Render the LinkedIn post images: each promo/<name>.html -> promo/<name>.png (one slide)
 or promo/<name>-1.png, -2.png, ... (several slides).
 
-Pages: confidence-60.html (post 2), cascade.html (posts 3-4) and jev-vs-deepseek.html (post 5).
+Pages: confidence-60.html (post 2), cascade.html (posts 3-4), jev-vs-deepseek.html and jev-vs-deepseek-hero.html (post 5).
 Needs Node + Playwright (same setup as build_carousel.py).
 Fonts load from Google Fonts; pass a folder with Fontsource files to render offline:
   python promo/build_post_images.py [path/to/fonts]
@@ -12,7 +12,7 @@ import sys
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-PAGES = ["confidence-60", "cascade", "jev-vs-deepseek"]
+PAGES = ["confidence-60", "cascade", "jev-vs-deepseek", "jev-vs-deepseek-hero"]
 
 RENDER_JS = r"""
 const { chromium } = require(process.env.PLAYWRIGHT || 'playwright');

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Jev vs DeepSeek: 45 more mistakes</title>
+<!-- Build with: python promo/build_post_images.py (renders promo/jev-vs-deepseek-hero.png).
+     Mobile-first: 1080x1350 (4:5), smallest text 30px so it stays readable at phone width.
+     Numbers: each model's 731 most confident answers that pass gate checks 1-3, test set, v2 descriptions.
+     Jev 63 wrong, DeepSeek 108 wrong (45 more). Cost per 1,000: $0.10 vs $0.013. -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,500;1,6..72,500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0e1117; --panel: #161a22; --line: #262c37; --ink: #f4f2ec; --ink-2: #b4b9c2; --muted: #8a919d;
+    --jev: #4a90f0; --base: #7d8696; --extra: #f25c48;
+    --serif: "Newsreader", Georgia, serif; --sans: "Inter", system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; }
+  body { background: var(--bg); color: var(--ink); font-family: var(--sans); }
+  .slide { width: 1080px; height: 1350px; position: relative; overflow: hidden; padding: 76px 80px 0; background: var(--bg); }
+  .slide::before { content: ""; position: absolute; inset: 0; z-index: 0;
+    background: radial-gradient(50% 32% at 0% 0%, rgba(74,144,240,.22), transparent 70%),
+                radial-gradient(45% 30% at 100% 100%, rgba(242,92,72,.16), transparent 70%); }
+  .slide > * { position: relative; z-index: 1; }
+  .eyebrow { font: 700 28px/1 var(--sans); letter-spacing: .14em; text-transform: uppercase; color: var(--ink-2); }
+  h1 { font: 500 112px/0.98 var(--serif); letter-spacing: -.035em; margin: 26px 0 22px; }
+  h1 .hot { color: var(--extra); font-style: italic; }
+  .sub { font: 400 34px/1.32 var(--sans); color: var(--ink-2); }
+  .sub b { color: var(--ink); font-weight: 600; }
+  .panels { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 40px; }
+  .panel { background: var(--panel); border: 2px solid var(--line); border-radius: 32px; padding: 28px 30px 26px; display: flex; flex-direction: column; }
+  .panel.jev { border-color: rgba(74,144,240,.55); box-shadow: 0 0 0 8px rgba(74,144,240,.10); }
+  .who { font: 700 40px/1.1 var(--sans); }
+  .cost { font: 500 30px/1.2 var(--sans); color: var(--muted); margin-top: 6px; }
+  .dots { flex: 1; display: flex; flex-wrap: wrap-reverse; align-content: flex-start; gap: 10px; margin: 22px 0 18px; height: 456px; }
+  .dots i { width: 28px; height: 28px; border-radius: 50%; background: var(--base); }
+  .dots i.x { background: var(--extra); }
+  .count { font: 500 96px/0.9 var(--serif); letter-spacing: -.03em; }
+  .count small { font: 600 32px/1 var(--sans); letter-spacing: 0; color: var(--ink-2); margin-left: 8px; }
+  .jev .count { color: var(--ink); }
+  .ds .count { color: var(--extra); }
+  .tag { display: inline-block; margin-top: 10px; font: 700 30px/1 var(--sans); color: var(--extra); }
+  .tag.ok { color: var(--jev); }
+  .foot { position: absolute; left: 80px; right: 80px; bottom: 54px; display: flex; justify-content: space-between; align-items: baseline; font: 500 30px/1 var(--sans); color: var(--muted); }
+  .foot b { color: var(--ink); font-weight: 600; }
+</style>
+</head>
+<body>
+<section class="slide">
+  <div class="eyebrow">Jev vs DeepSeek V4 Flash</div>
+  <h1>8× cheaper.<br><span class="hot">45 more mistakes.</span></h1>
+  <p class="sub"><b>Unchecked</b> wrong answers, per 1,000 messages.</p>
+
+  <div class="panels">
+    <div class="panel jev">
+      <div class="who">Jev</div>
+      <div class="cost">$0.10 per 1,000</div>
+      <div class="dots" id="dots-jev" aria-label="63 wrong answers"></div>
+      <div class="count">63<small>wrong</small></div>
+      <div class="tag ok">91% right</div>
+    </div>
+    <div class="panel ds">
+      <div class="who">DeepSeek</div>
+      <div class="cost">$0.013 per 1,000</div>
+      <div class="dots" id="dots-ds" aria-label="108 wrong answers, 45 more than Jev"></div>
+      <div class="count">108<small>wrong</small></div>
+      <div class="tag">+45 vs Jev · 85% right</div>
+    </div>
+  </div>
+
+  <div class="foot"><span>Saving 9¢ isn't worth it.</span><b>danielwipert.github.io/jev.sorter</b></div>
+</section>
+<script>
+  const fill = (id, base, extra) => {
+    const box = document.getElementById(id);
+    box.innerHTML = '<i></i>'.repeat(base) + '<i class="x"></i>'.repeat(extra);
+  };
+  fill('dots-jev', 63, 0);
+  fill('dots-ds', 63, 45);
+</script>
+</body>
+</html>
