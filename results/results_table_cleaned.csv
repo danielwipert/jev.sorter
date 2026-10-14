@@ -1,22 +1,22 @@
 contender,model,target_auto_accept,realized_auto_accept,accuracy_on_auto_accepted,strict_accuracy_on_auto_accepted,cleaned_accuracy_on_auto_accepted,accuracy_all_answers,cleaned_accuracy_all_answers,status
-A,"Jev, descriptions v1",50%,54.7%,96.0%,98.5%,99.3%,79.3%,88.8%,draft
-A,"Jev, descriptions v1",70%,72.5%,90.5%,94.1%,97.9%,79.3%,88.8%,draft
-A,"Jev, descriptions v1",85%,86.0%,85.7%,89.1%,94.2%,79.3%,88.8%,draft
-B,"Jev, final descriptions (v2)",50%,54.2%,97.0%,99.6%,99.8%,81.6%,91.9%,draft
-B,"Jev, final descriptions (v2)",70%,73.1%,91.4%,94.9%,98.8%,81.6%,91.9%,draft
-B,"Jev, final descriptions (v2)",85%,86.2%,87.4%,90.8%,96.1%,81.6%,91.9%,draft
-C,"Sonnet 5, final descriptions (v2)",50%,64.5%,93.8%,96.3%,99.2%,82.3%,92.6%,draft
-C,"Sonnet 5, final descriptions (v2)",70%,75.3%,91.0%,93.8%,98.0%,82.3%,92.6%,draft
-C,"Sonnet 5, final descriptions (v2)",85%,87.4%,87.4%,91.2%,97.1%,82.3%,92.6%,draft
-D,"Haiku 4.5, final descriptions (v2)",50%,58.7%,89.4%,92.3%,95.6%,76.9%,87.7%,draft
-D,"Haiku 4.5, final descriptions (v2)",70%,81.4%,84.6%,88.0%,93.1%,76.9%,87.7%,draft
-D,"Haiku 4.5, final descriptions (v2)",85%,89.1%,81.6%,85.1%,91.1%,76.9%,87.7%,draft
-F,"Sonnet 5, descriptions v1",50%,68.7%,91.4%,94.0%,97.5%,80.4%,90.1%,draft
-F,"Sonnet 5, descriptions v1",70%,73.5%,90.1%,92.9%,97.0%,80.4%,90.1%,draft
-F,"Sonnet 5, descriptions v1",85%,85.2%,86.6%,90.1%,95.5%,80.4%,90.1%,draft
-J,"DeepSeek V4 Flash, final descriptions (v2)",50%,51.4%,91.6%,93.8%,97.9%,74.7%,85.3%,draft
-J,"DeepSeek V4 Flash, final descriptions (v2)",70%,67.6%,88.0%,91.4%,96.3%,74.7%,85.3%,draft
-J,"DeepSeek V4 Flash, final descriptions (v2)",85%,86.0%,80.9%,84.7%,91.0%,74.7%,85.3%,draft
-K,"DeepSeek V4 Flash, descriptions v1",50%,51.1%,91.8%,94.9%,98.8%,72.4%,80.7%,draft
-K,"DeepSeek V4 Flash, descriptions v1",70%,72.7%,86.8%,89.7%,94.6%,72.4%,80.7%,draft
-K,"DeepSeek V4 Flash, descriptions v1",85%,85.2%,80.4%,83.5%,88.6%,72.4%,80.7%,draft
+A,"Jev, descriptions v1",50%,54.7%,96.0%,98.5%,99.3%,79.3%,88.8%,approved
+A,"Jev, descriptions v1",70%,72.5%,90.5%,94.1%,97.9%,79.3%,88.8%,approved
+A,"Jev, descriptions v1",85%,86.0%,85.7%,89.1%,94.2%,79.3%,88.8%,approved
+B,"Jev, final descriptions (v2)",50%,54.2%,97.0%,99.6%,99.8%,81.6%,91.9%,approved
+B,"Jev, final descriptions (v2)",70%,73.1%,91.4%,94.9%,98.8%,81.6%,91.9%,approved
+B,"Jev, final descriptions (v2)",85%,86.2%,87.4%,90.8%,96.1%,81.6%,91.9%,approved
+C,"Sonnet 5, final descriptions (v2)",50%,64.5%,93.8%,96.3%,99.2%,82.3%,92.6%,approved
+C,"Sonnet 5, final descriptions (v2)",70%,75.3%,91.0%,93.8%,98.0%,82.3%,92.6%,approved
+C,"Sonnet 5, final descriptions (v2)",85%,87.4%,87.4%,91.2%,97.1%,82.3%,92.6%,approved
+D,"Haiku 4.5, final descriptions (v2)",50%,58.7%,89.4%,92.3%,95.6%,76.9%,87.7%,approved
+D,"Haiku 4.5, final descriptions (v2)",70%,81.4%,84.6%,88.0%,93.1%,76.9%,87.7%,approved
+D,"Haiku 4.5, final descriptions (v2)",85%,89.1%,81.6%,85.1%,91.1%,76.9%,87.7%,approved
+F,"Sonnet 5, descriptions v1",50%,68.7%,91.4%,94.0%,97.5%,80.4%,90.1%,approved
+F,"Sonnet 5, descriptions v1",70%,73.5%,90.1%,92.9%,97.0%,80.4%,90.1%,approved
+F,"Sonnet 5, descriptions v1",85%,85.2%,86.6%,90.1%,95.5%,80.4%,90.1%,approved
+J,"DeepSeek V4 Flash, final descriptions (v2)",50%,51.4%,91.6%,93.8%,97.9%,74.7%,85.3%,approved
+J,"DeepSeek V4 Flash, final descriptions (v2)",70%,67.6%,88.0%,91.4%,96.3%,74.7%,85.3%,approved
+J,"DeepSeek V4 Flash, final descriptions (v2)",85%,86.0%,80.9%,84.7%,91.0%,74.7%,85.3%,approved
+K,"DeepSeek V4 Flash, descriptions v1",50%,51.1%,91.8%,94.9%,98.8%,72.4%,80.7%,approved
+K,"DeepSeek V4 Flash, descriptions v1",70%,72.7%,86.8%,89.7%,94.6%,72.4%,80.7%,approved
+K,"DeepSeek V4 Flash, descriptions v1",85%,85.2%,80.4%,83.5%,88.6%,72.4%,80.7%,approved
